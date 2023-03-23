@@ -1,0 +1,31 @@
+---
+permalink: config-admin/deleting-performance-policies.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果您認為效能原則不再適用於監控網路中的物件、可以刪除該原則。 
+---
+= 刪除效能原則
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您認為效能原則不再適用於監控網路中的物件、可以刪除該原則。
+
+
+
+== 步驟
+
+. 在瀏覽器中開啟Insight。
+. 從*管理*功能表中、選取*效能原則*。
++
+隨即顯示「效能原則」頁面。
+
+. 將游標停留在物件效能原則清單中的原則名稱上。
+. 按一下 image:../media/oci-delete-policy-threshold-icon.gif[""]。
++
+此時會出現一則訊息、詢問您是否要刪除原則。
+
+. 按一下「*確定*」。
+

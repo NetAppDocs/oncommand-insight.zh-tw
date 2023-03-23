@@ -1,0 +1,69 @@
+---
+permalink: install-linux/remote-acquisition-unit-server-requirements.html 
+sidebar: sidebar 
+keywords: redhat 
+summary: 您必須安裝遠端擷取單元（Rau）、才能從防火牆後的SAN裝置、遠端站台、私有網路或不同網路區段中取得資訊。在安裝Rau之前、您應確保環境符合Rau作業系統、CPU、記憶體及磁碟空間需求。 
+---
+= 遠端擷取單元伺服器需求
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必須安裝遠端擷取單元（Rau）、才能從防火牆後的SAN裝置、遠端站台、私有網路或不同網路區段中取得資訊。在安裝Rau之前、您應確保環境符合Rau作業系統、CPU、記憶體及磁碟空間需求。
+
+|===
+
+
+| 元件 | 需求 
+
+
+ a| 
+作業系統
+ a| 
+執行下列其中一種授權版本的電腦、不執行其他應用程式層級的軟體：
+
+* Red Hat Enterprise Linux 7.3、7.4、7.5、7.6、7.7、 7.8、7.9、8.1、8.2、8.3、 8.4、8.5
+* CentOS 7.2、7.5、7.6、7.7、7.8、 7.9、CentOS 8串流
+* Oracle Enterprise Linux 7.5、7.6、7.7、7.8、7.9、 8.1、8.2、8.3、8.4、8.5
+
+
+建議使用專屬伺服器。
+
+
+
+ a| 
+CPU
+ a| 
+4個CPU核心
+
+
+
+ a| 
+記憶體
+ a| 
+16 GB RAM
+
+
+
+ a| 
+可用磁碟空間
+ a| 
+40 GB
+
+
+
+ a| 
+網路
+ a| 
+100 Mbps / 1 Gbps乙太網路連線、靜態IP位址、所有FC裝置的IP連線、OnCommand Insight 以及連接至該伺服器的必要連接埠（80或443）。
+
+
+
+ a| 
+權限
+ a| 
+Rau伺服器上的Sudo權限
+
+|===

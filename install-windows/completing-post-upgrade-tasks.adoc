@@ -1,0 +1,14 @@
+---
+permalink: install-windows/completing-post-upgrade-tasks.html 
+sidebar: sidebar 
+keywords:  
+summary: 升級至最新版本的Insight之後、您必須完成其他工作。 
+---
+= 完成升級後的工作
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+升級至最新版本的Insight之後、您必須完成其他工作。

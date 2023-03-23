@@ -1,0 +1,24 @@
+---
+permalink: dwh/troubleshooting-data-warehouse.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以執行與疑難排解資料倉儲相關的各種工作。 
+---
+= 疑難排解資料倉儲
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以執行與疑難排解資料倉儲相關的各種工作。
+
+* 使用OnCommand Insight SASUP。
+* 檢視OnCommand Insight 資訊記錄。
+* 解決與升級和企業實體相關的問題。
+* 解決與整合多OnCommand Insight 個支援服務器有關的問題。
+
+
+您可以將多OnCommand Insight 個支援功能的伺服器整合到同一個資料倉儲資料庫中。許多組態可能會從多個連接器回報相同的物件（亦即、兩OnCommand Insight 個版本中存在相同的交換器）。在這種情況下、Data倉儲會將多個物件合併成一個（選擇主要連接器、而且物件的資料只會從該連接器取得）。
+
+儲存管理員可以使用「疑難排解」頁面來解決與整合問題相關的問題。

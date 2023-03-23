@@ -1,0 +1,149 @@
+---
+permalink: config-admin/emc-xtremeio-data-source.html 
+sidebar: sidebar 
+keywords:  
+summary: 若要設定EMC XtremIO（HTTP）資料來源、您必須擁有XtremIO管理伺服器（XMS\）主機位址、以及具有系統管理員權限的帳戶。 
+---
+= EMC XtremIO資料來源
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+若要設定EMC XtremIO（HTTP）資料來源、您必須擁有XtremIO管理伺服器（XMS）主機位址、以及具有系統管理員權限的帳戶。
+
+
+
+== 術語
+
+從EMC XtremIO資料來源取得下列庫存資訊OnCommand Insight 。對於Insight取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料來源時、請謹記下列術語：
+
+|===
+
+
+| 廠商/模型術語 | Insight術語 
+
+
+ a| 
+磁碟（SSD）
+ a| 
+磁碟
+
+
+
+ a| 
+叢集
+ a| 
+儲存設備
+
+
+
+ a| 
+控制器
+ a| 
+儲存節點
+
+
+
+ a| 
+Volume
+ a| 
+Volume
+
+
+
+ a| 
+LUN對應
+ a| 
+Volume Map
+
+
+
+ a| 
+啟動器、目標
+ a| 
+Volume遮罩
+
+|===
+[NOTE]
+====
+這些只是通用的術語對應、可能不代表此資料來源的每個案例。
+
+====
+
+
+== 需求
+
+* 每個XtremIO管理伺服器的IP位址
+* 具有管理員權限的帳戶
+* 存取連接埠443（HTTPS）
+
+
+
+
+== 組態
+
+|===
+
+
+| 欄位 | 說明 
+
+
+ a| 
+XMS主機
+ a| 
+XtremIO管理伺服器的IP位址或完整網域名稱
+
+
+
+ a| 
+使用者名稱
+ a| 
+XtremIO管理伺服器的使用者名稱
+
+
+
+ a| 
+密碼
+ a| 
+XtremIO管理伺服器的密碼
+
+|===
+
+
+== 進階組態
+
+|===
+
+
+| 欄位 | 說明 
+
+
+ a| 
+TCP連接埠
+ a| 
+TCP連接埠用於連線至XTremIO管理伺服器（預設443）
+
+
+
+ a| 
+庫存輪詢時間間隔（分鐘）
+ a| 
+庫存輪詢之間的時間間隔（預設為60分鐘）
+
+
+
+ a| 
+連線逾時（秒）
+ a| 
+連線逾時（預設為60秒）
+
+
+
+ a| 
+效能意見調查時間間隔（秒）
+ a| 
+效能輪詢之間的時間間隔（預設為300秒）
+
+|===

@@ -1,0 +1,25 @@
+---
+permalink: config-admin/bundling-logs-for-support.html 
+sidebar: sidebar 
+keywords:  
+summary: 疑難排解Insight軟體的問題時、您可以快速產生記錄檔的壓縮檔（使用「gz」格式）、並將擷取記錄傳送給NetApp客戶支援部門。 
+---
+= 將記錄套用以取得支援
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+疑難排解Insight軟體的問題時、您可以快速產生記錄的壓縮檔（使用「gz」格式）、並將擷取記錄傳送給NetApp客戶支援。
+
+
+
+== 步驟
+
+. 在Insight工具列上、按一下*管理*。
+. 按一下*疑難排解*。
+. 在「傳送/收集資料」區段中、按一下「*產品組合記錄*」。
+. 按一下*儲存檔案*。
+. 按一下「*確定*」。
+

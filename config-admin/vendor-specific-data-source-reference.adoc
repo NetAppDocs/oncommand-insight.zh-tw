@@ -1,0 +1,16 @@
+---
+permalink: config-admin/vendor-specific-data-source-reference.html 
+sidebar: sidebar 
+keywords:  
+summary: 組態詳細資料會因所新增資料來源的廠商和機型而有所不同。 
+---
+= 廠商專屬的資料來源參考
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+組態詳細資料會因所新增資料來源的廠商和機型而有所不同。
+
+如果廠商的資料來源需要進階的Insight組態指示、例如特殊需求和特定命令、則本節將會提供這些資訊。

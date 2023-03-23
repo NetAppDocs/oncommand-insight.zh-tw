@@ -1,0 +1,39 @@
+---
+permalink: install-linux/upgrading-the-anomaly-detection-engine.html 
+sidebar: sidebar 
+keywords:  
+summary: 從版本7.3.9開始OnCommand Insight 、您可以執行異常偵測軟體的即時升級。線上升級可保留您的異常偵測資料和異常分數。 
+---
+= 升級異常偵測引擎
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+從版本7.3.9開始OnCommand Insight 、您可以執行異常偵測軟體的即時升級。線上升級可保留您的異常偵測資料和異常分數。
+
+
+
+== 開始之前
+
+* 系統必須執行OnCommand Insight 的是更新版本的版本。
+* 建議OnCommand Insight 您在升級Anomaly Detection Engine之前、先升級此伺服器。
+
+
+
+
+== 關於這項工作
+
+請使用下列步驟進行升級：
+
+
+
+== 步驟
+
+. 瀏覽至安裝程式所在的目錄： `cd oci-prelert-<version>-linux-x86_64`
+. 安裝異常偵測升級軟體： `sudo ./oci-prelert-install.sh`
++
+異常偵測軟體已成功登錄OnCommand Insight 到伺服器。
+
+

@@ -1,0 +1,48 @@
+---
+permalink: config-admin/configuring-your-asup-processing.html 
+sidebar: sidebar 
+keywords:  
+summary: 所有NetApp產品均具備自動化功能、可為客戶提供最佳支援。自動化支援（ASUP）會定期傳送預先定義的特定資訊給客戶支援。您可以控制要轉送給NetApp的資訊、以及傳送的頻率。 
+---
+= 設定ASUP處理
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+所有NetApp產品均具備自動化功能、可為客戶提供最佳支援。自動化支援（ASUP）會定期傳送預先定義的特定資訊給客戶支援部門。您可以控制要轉送給NetApp的資訊、以及傳送的頻率。
+
+
+
+== 開始之前
+
+您必須先設定OnCommand Insight 支援功能、才能在傳送任何資料之前轉寄資料。
+
+
+
+== 關於這項工作
+
+ASUP資料會使用HTTPS傳輸協定進行轉送。
+
+
+
+== 步驟
+
+. 在Insight工具列上、按一下*管理*。
+. 按一下*設定*。
+. 按一下「* ASUP & Proxy*」標籤。
+. 在「* ASUP*」區段中、選取「*啟用ASUP*」以啟動ASUP功能。
+. 如果您想要變更公司資訊、請更新下列欄位：
++
+** *公司名稱*
+** *站台名稱*
+** *要傳送的內容*：記錄、組態資料、效能資料
+
+
+. 按一下「*測試連線*」以確保您指定的連線正常運作。
+. 按一下「 * 儲存 * 」。
+. 在* Proxy*區段中、選擇是否要*啟用Proxy*、然後指定您的Proxy *主機*、*連接埠*和*使用者*資訊。
+. 按一下「*測試連線*」以確保您指定的Proxy正常運作。
+. 按一下「 * 儲存 * 」。
+

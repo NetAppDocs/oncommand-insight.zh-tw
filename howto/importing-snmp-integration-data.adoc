@@ -1,0 +1,50 @@
+---
+permalink: howto/importing-snmp-integration-data.html 
+sidebar: sidebar 
+keywords:  
+summary: 您OnCommand Insight 可以使用Web UI將SNMP整合套件匯入到S不明 環境。整合套件是以郵遞區號檔案所含integration.json組態檔中定義的「integrationPackName」值來識別。 
+---
+= 匯入SNMP整合套件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您OnCommand Insight 可以使用Web UI將SNMP整合套件匯入到S不明 環境。整合套件會以中定義的「integrationPackName」值來識別 `integration.json` 包含在ZIP檔案中的組態檔。
+
+
+
+== 開始之前
+
+您必須建立格式正確的ZIP檔案、其中包含您要匯入OnCommand Insight 到該伺服器的整合套件。
+
+
+
+== 關於這項工作
+
+請使用下列步驟將SNMP整合套件匯入Insight伺服器。
+
+
+
+== 步驟
+
+. 按一下*管理*>*設定*>* SNMP整合*
++
+系統會顯示匯入SNMP套件畫面： image:../media/oci-import-snmp.gif[""]
+
+. 按一下*選取檔案*以選取包含SNMP套件的本機檔案。
++
+您選取的檔案會顯示在「檔案」方塊中。
+
++
+[NOTE]
+====
+任何具有相同名稱的現有整合套件都會遭到覆寫。
+
+====
+. 按一下*匯入*
++
+檔案會匯入Insight伺服器。
+
+

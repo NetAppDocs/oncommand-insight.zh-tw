@@ -1,0 +1,34 @@
+---
+permalink: config-admin/enabling-performance-archive.html 
+sidebar: sidebar 
+keywords:  
+summary: 若要啟用效能資料歸檔、請遵循下列步驟。 
+---
+= 實現效能歸檔
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+若要啟用效能資料歸檔、請遵循下列步驟。
+
+
+
+== 步驟
+
+. 在工具列上、按一下*管理*>*設定*。
+. 選取*備份與歸檔*索引標籤。
+. 在「效能歸檔」區段中、確認已勾選「*啟用效能歸檔*」。
+. 指定有效的歸檔位置。
++
+您無法在Insight安裝資料夾下指定資料夾。
+
++
+最佳實務做法：請勿指定與Insight備份位置相同的歸檔資料夾。
+
+. 按一下「 * 儲存 * 」。
++
+歸檔程序會在背景中處理、不會干擾其他Insight活動。
+
+

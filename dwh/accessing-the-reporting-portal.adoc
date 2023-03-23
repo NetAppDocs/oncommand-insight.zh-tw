@@ -1,0 +1,22 @@
+---
+permalink: dwh/accessing-the-reporting-portal.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可從Data倉儲入口網站存取報告入口網站、在其中使用工作區進階和報告工作室等報告撰寫工具來建立自訂報告。 
+---
+= 存取報告入口網站
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可從Data倉儲入口網站存取報告入口網站、在其中使用工作區進階和報告工作室等報告撰寫工具來建立自訂報告。
+
+
+
+== 步驟
+
+. 在資料倉儲工具列上、按一下 image:../media/oci-reporting-portal-icon.gif[""] 開啟Insight報告入口網站。
+. 輸入您的使用者名稱和密碼、然後按一下*登入*。
+

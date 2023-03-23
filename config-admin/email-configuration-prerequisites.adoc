@@ -1,0 +1,20 @@
+---
+permalink: config-admin/email-configuration-prerequisites.html 
+sidebar: sidebar 
+keywords:  
+summary: 在設定OnCommand Insight 支援使用電子郵件系統的功能之前、您必須先探索主機名稱或IP位址、以識別（SMTP或Exchange）郵件伺服器、並分配電子郵件帳戶以供OnCommand Insight 使用。 
+---
+= 電子郵件組態先決條件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在設定OnCommand Insight 支援存取電子郵件系統的功能之前、您必須先探索主機名稱或IP位址、以識別（SMTP或Exchange）郵件伺服器、並為OnCommand Insight 其分配電子郵件帳戶以供提交靜態報告。
+
+請您的電子郵件管理員建立OnCommand Insight 一個電子郵件帳戶以供使用。您需要下列資訊：
+
+* 用於識別組織所使用（SMTP或Exchange）郵件伺服器的主機名稱或IP位址。您可以透過用來讀取電子郵件的應用程式來尋找此資訊。例如、在Microsoft Outlook中、您可以檢視帳戶組態來尋找伺服器名稱：工具-電子郵件帳戶-檢視或變更現有的電子郵件帳戶。
+* 電子郵件帳戶名稱OnCommand Insight 、透過此電子郵件帳戶、即可寄送定期報告。帳戶必須是貴組織中有效的電子郵件地址。（除非訊息是由有效使用者傳送、否則大部分的郵件系統都不會傳送訊息。） 如果電子郵件伺服器需要使用者名稱和密碼才能傳送郵件、請向系統管理員索取此資訊。
+

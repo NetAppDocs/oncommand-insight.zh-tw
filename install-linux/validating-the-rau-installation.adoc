@@ -1,0 +1,26 @@
+---
+permalink: install-linux/validating-the-rau-installation.html 
+sidebar: sidebar 
+keywords:  
+summary: 若要驗證遠端擷取設備的正確安裝、您可以檢視連線至伺服器的遠端擷取設備狀態。 
+---
+= 驗證遠端擷取單元安裝
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+若要驗證遠端擷取設備的正確安裝、您可以檢視連線至伺服器的遠端擷取設備狀態。
+
+
+
+== 步驟
+
+. 在Insight工具列上、按一下*管理*。
+. 按一下*擷取單位*。
+. 確認新的遠端擷取設備已正確登錄、且其狀態為「Connected（已連線）」。
++
+如果沒有、您必須聯絡技術支援部門。
+
+

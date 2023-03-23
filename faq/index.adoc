@@ -1,0 +1,12 @@
+---
+permalink: faq/index.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= 常見問題集
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+

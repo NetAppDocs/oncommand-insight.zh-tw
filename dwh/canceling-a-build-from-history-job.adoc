@@ -1,0 +1,23 @@
+---
+permalink: dwh/canceling-a-build-from-history-job.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以取消所有已規劃的工作。工作狀態變成「已中止」。 
+---
+= 取消歷史工作的建置
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以取消所有已規劃的工作。工作狀態會變成「已中止」。
+
+
+
+== 步驟
+
+. 登入資料倉儲入口網站： `+https://hostname/dwh+`、其中 `hostname` 是OnCommand Insight 安裝了IsName Data倉儲的系統名稱。
+. 在左側的導覽窗格中、按一下*從歷史記錄建置*。
+. 按一下*取消*。
+

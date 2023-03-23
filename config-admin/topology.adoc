@@ -1,0 +1,20 @@
+---
+permalink: config-admin/topology.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果是應用程式對資產的拓撲區段、可讓您查看基礎資產與其相關資產的連線方式。 
+---
+= 拓撲
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+拓撲區段（若適用於資產）可讓您查看基礎資產與其相關資產的連線方式。
+
+以下是虛擬機器資產頁面的「拓撲」區段可能顯示的範例。
+
+image::../media/topology-section.gif[拓撲區段]
+
+如果資產的拓撲大於該部分所能容納的範圍、則會顯示*按一下連結以查看拓撲*超連結。

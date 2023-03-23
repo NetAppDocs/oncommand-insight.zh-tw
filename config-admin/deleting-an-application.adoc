@@ -1,0 +1,27 @@
+---
+permalink: config-admin/deleting-an-application.html 
+sidebar: sidebar 
+keywords:  
+summary: 當應用程式不再滿足您環境中的需求時、您可能會想要刪除它。 
+---
+= 刪除應用程式
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+當應用程式不再滿足您環境中的需求時、您可能會想要刪除它。
+
+
+
+== 步驟
+
+. 登入Insight Web UI。
+. 單擊*管理*並選擇*應用程序*。
+. 將游標放在您要刪除的應用程式上、然後按一下 image:../media/trash-can-query.gif[""]。
++
+隨即顯示確認對話方塊、詢問您是否要刪除應用程式。
+
+. 按一下「*確定*」。
+

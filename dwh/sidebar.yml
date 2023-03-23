@@ -1,0 +1,153 @@
+---
+section: dwh
+title: 資料倉儲管理
+entries:
+- title: 歡迎使用OnCommand Insight Data倉儲
+  url: "/dwh/welcome-to-data-warehouse.html"
+  entries:
+  - title: 資料倉儲功能
+    url: "/dwh/data-warehouse-features.html"
+  - title: 資料倉儲元件
+    url: "/dwh/data-warehouse-components.html"
+    entries:
+    - title: 您可以使用Data倉儲入口網站執行什麼操作
+      url: "/dwh/oncommand-insight-data-warehouse-portal.html"
+    - title: 資料倉儲軟體元件
+      url: "/dwh/data-warehouse-software-components.html"
+  - title: 資料倉儲程序
+    url: "/dwh/data-warehouse-processes.html"
+  - title: 資料倉儲擷取資料的方式
+    url: "/dwh/how-data-warehouse-extracts-data.html"
+  - title: ETL頻率和日期資料
+    url: "/dwh/etl-frequency.html"
+  - title: 如何在資料倉儲中保留歷史資料
+    url: "/dwh/historical-data-retention-in-data-warehouse.html"
+    entries:
+    - title: 資料保留、ETL和時間週期
+      url: "/dwh/data-retention-and-time-periods.html"
+- title: 資料倉儲入門
+  url: "/dwh/getting-started-with-data-warehouse.html"
+  entries:
+  - title: 存取資料倉儲入口網站
+    url: "/dwh/accessing-the-data-warehouse-portal.html"
+  - title: 管理資料倉儲與報告使用者帳戶
+    url: "/dwh/managing-data-warehouse-and-reporting-user-accounts.html"
+    entries:
+    - title: 存取資料倉儲與報告入口網站
+      url: "/dwh/accessing-the-data-warehouse-and-reporting.html"
+    - title: 報告使用者角色
+      url: "/dwh/reporting-user-roles.html"
+    - title: 新增報告使用者
+      url: "/dwh/adding-a-reporting-user.html"
+    - title: 管理使用者帳戶
+      url: "/dwh/managing-user-accounts.html"
+    - title: 設定LDAP以供報告
+      url: "/dwh/configuring-reporting-ldap.html"
+  - title: 將Data倉儲連線OnCommand Insight 至不支援的伺服器
+    url: "/dwh/connecting-data-warehouse-to-oncommand-insight-servers.html"
+  - title: 從歷史記錄總覽建立資料倉儲資料庫
+    url: "/dwh/data-warehouse-database-build-from-history-overview.html"
+    entries:
+    - title: 新增從歷史記錄建立資料倉儲資料庫的工作
+      url: "/dwh/adding-a-build-from-history-job.html"
+    - title: 取消歷史工作的建置
+      url: "/dwh/canceling-a-build-from-history-job.html"
+  - title: 備份資料倉儲資料庫
+    url: "/dwh/backing-up-the-data-warehouse-database.html"
+  - title: 備份自訂報告和報告成品
+    url: "/dwh/backing-up-custom-reports-and-report-artifacts.html"
+  - title: 還原資料倉儲資料庫
+    url: "/dwh/restoring-the-data-warehouse-database.html"
+  - title: 在報告中設定多個租戶
+    url: "/dwh/setting-up-multiple-tenancy-in-reporting.html"
+    entries:
+    - title: 設定使用者帳戶
+      url: "/dwh/configuring-user-accounts.html"
+    - title: 將使用者指派給企業實體
+      url: "/dwh/assigning-users-to-business-entities.html"
+  - title: 疑難排解設定問題
+    url: "/dwh/troubleshooting-setup-issues.html"
+    entries:
+    - title: 為什麼我看不到註釋
+      url: "/dwh/why-i-cannot-see-my-annotations.html"
+      entries:
+      - title: 強制更新Data倉儲的註釋
+        url: "/dwh/forcing-an-update-of-annotations-for-data-warehouse.html"
+      - title: 產生手動資料倉儲建置
+        url: "/dwh/generating-a-manual-data-warehouse-build.html"
+      - title: 將使用者定義的註釋匯入資料倉儲
+        url: "/dwh/importing-user-defined-annotations-into-data-warehouse.html"
+    - title: 如何處理失敗的歷史建置點
+      url: "/dwh/what-to-do-with-failing-historical-build-points.html"
+- title: 您可以使用Data倉儲執行的管理工作
+  url: "/dwh/administrative-tasks-you-can-perform-using-data-warehouse.html"
+  entries:
+  - title: 管理工作
+    url: "/dwh/managing-jobs.html"
+  - title: 監控資料倉儲健全狀況
+    url: "/dwh/monitoring-data-warehouse-health.html"
+  - title: 排程每日建置
+    url: "/dwh/scheduling-daily-builds.html"
+  - title: 設定每週排程
+    url: "/dwh/configuring-a-weekly-schedule.html"
+  - title: 排程每日備份
+    url: "/dwh/scheduling-daily-backups.html"
+  - title: 在Data倉儲中執行自訂指令碼
+    url: "/dwh/running-external-scripts-in-data-warehouse.html"
+  - title: 您可以使用註釋執行的操作
+    url: "/dwh/annotations.html"
+    entries:
+    - title: 正在OnCommand Insight 填寫註釋
+      url: "/dwh/preparing-annotations-in-oncommand-insight.html"
+    - title: 將使用者定義的註釋匯入資料倉儲
+      url: "/dwh/importing-user-defined-annotations-into-data-warehouse.html"
+    - title: 檢視「工作」清單中的「附註」工作
+      url: "/dwh/viewing-the-annotations-job-in-the-jobs-list.html"
+    - title: 在資料庫架構中顯示註釋變更
+      url: "/dwh/seeing-the-annotation-changes-in-the-database-schema.html"
+  - title: 設定電子郵件通知
+    url: "/dwh/setting-email-notifications.html"
+  - title: 存取報告入口網站
+    url: "/dwh/accessing-the-reporting-portal.html"
+  - title: 檢視資料倉儲資料庫架構文件
+    url: "/dwh/viewing-the-data-warehouse-documentation.html"
+  - title: 檢視資料倉儲資料庫架構
+    url: "/dwh/viewing-the-data-warehouse-database-schema.html"
+  - title: 檢視系統資訊
+    url: "/dwh/editing-the-site-name-and-viewing-system-information.html"
+  - title: 進階選項
+    url: "/dwh/advanced-options.html"
+    entries:
+    - title: 跳過失敗的建置
+      url: "/dwh/skipping-failed-builds.html"
+    - title: 重設資料倉儲資料庫或報告伺服器
+      url: "/dwh/resetting-the-data-warehouse-database.html"
+    - title: 還原及升級6.3之前版本的報告
+      url: "/dwh/restoring-and-upgrading-reports-for-versions-prior-to-6-3.html"
+    - title: 使用命令列介面存取MySQL
+      url: "/dwh/accessing-mysql-using-the-command-line-interface-valid.html"
+    - title: 疑難排解資料倉儲
+      url: "/dwh/troubleshooting-data-warehouse.html"
+      entries:
+      - title: ASUP問題解決方案
+        url: "/dwh/issue-resolution-with-autosupport-asup.html"
+        entries:
+        - title: 停用自動ASUP傳輸
+          url: "/dwh/configuring-your-asup-processing.html"
+        - title: 包括資料倉儲資料庫的備份
+          url: "/dwh/including-the-data-warehouse-database.html"
+        - title: 將Insight記錄傳送至ASUP
+          url: "/dwh/sending-oncommand-insight-logs-to-asup.html"
+      - title: 檢視OnCommand Insight 資訊記錄
+        url: "/dwh/viewing-oncommand-insight-logs.html"
+      - title: 多個伺服器機箱整合問題
+        url: "/dwh/multiple-server-chassis-consolidation-issues.html"
+        entries:
+        - title: 檢視主機和介面卡整合問題
+          url: "/dwh/viewing-hosts-and-adapters-consolidation-issues.html"
+        - title: 檢視儲存陣列整合問題
+          url: "/dwh/viewing-storage-arrays-consolidation-issues.html"
+        - title: 檢視交換器整合問題
+          url: "/dwh/viewing-switches-consolidation-issues.html"
+      - title: 解決多個伺服器附註整合問題
+        url: "/dwh/resolving-multiple-server-annotation-consolidation-issues.html"

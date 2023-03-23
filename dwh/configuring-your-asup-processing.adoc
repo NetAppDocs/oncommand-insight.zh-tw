@@ -1,0 +1,25 @@
+---
+permalink: dwh/configuring-your-asup-processing.html 
+sidebar: sidebar 
+keywords:  
+summary: 所有NetApp產品均具備自動化功能、可提供最佳支援、協助您疑難排解環境中發生的問題。ASUP會定期將預先定義的特定資訊傳送給客戶支援部門。依預設、ASUP已啟用資料倉儲；不過、如果您不想再傳送資訊、可以停用ASUP。 
+---
+= 停用自動ASUP傳輸
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+所有NetApp產品均具備自動化功能、可提供最佳支援、協助您疑難排解環境中發生的問題。ASUP會定期將預先定義的特定資訊傳送給客戶支援部門。依預設、ASUP已啟用資料倉儲；不過、如果您不想再傳送資訊、可以停用ASUP。
+
+
+
+== 步驟
+
+. 在左側的導覽窗格中、按一下*疑難排解*。
+. 按一下「*停用*」以防止ASUP傳送每日報告。
++
+畫面會顯示一則訊息、指出ASUP已停用。
+
+

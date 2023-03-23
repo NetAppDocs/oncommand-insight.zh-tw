@@ -1,0 +1,87 @@
+---
+permalink: config-admin/microsoft-azure-netapp-files-data-source.html 
+sidebar: sidebar 
+keywords:  
+summary: 此資料來源會取得Azure NetApp Files 庫存和效能資料、以供更新（anf\）之用。 
+---
+= 資料來源Azure NetApp Files
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+此資料來源會擷取庫存和效能資料以供Azure NetApp Files 使用（ANF）。
+
+
+
+== 需求
+
+以下是設定此資料來源的需求：
+
+* 連接埠需求：443 HTTPS
+* Azure管理REST IP（management.azure.com）
+* Azure服務主要應用程式（用戶端）ID（使用者帳戶）
+* Azure服務主要驗證金鑰（使用者密碼）
+* 您必須設定Azure帳戶Cloud Insights 才能進行不必要的探索。
++
+一旦帳戶設定正確、並在Azure中註冊應用程式、您就會擁有必要的認證資料、以便使用Cloud Insights 下列功能探索Azure執行個體。下列連結說明如何設定帳戶以進行探索：
+
++
+https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal[]
+
+
+
+
+
+== 組態
+
+|===
+
+
+| 欄位 | 說明 
+
+
+ a| 
+Azure服務主要應用程式（用戶端）ID
+ a| 
+Azure的登入ID
+
+
+
+ a| 
+Azure租戶ID
+ a| 
+Azure租戶ID
+
+
+
+ a| 
+Azure服務主要驗證金鑰
+ a| 
+登入驗證金鑰
+
+
+
+ a| 
+我瞭解Microsoft向我索取API要求
+ a| 
+請勾選此選項、確認您瞭解Microsoft會針對Insight Polling所提出的API要求向您提出帳單。
+
+|===
+
+
+== 進階組態
+
+|===
+
+
+| 欄位 | 說明 
+
+
+ a| 
+庫存輪詢時間間隔（分鐘）
+ a| 
+預設為60分鐘
+
+|===

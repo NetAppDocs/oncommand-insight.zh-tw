@@ -1,0 +1,27 @@
+---
+permalink: howto/introduction-to-configuring-your-system-for-chargeback.html 
+sidebar: sidebar 
+keywords:  
+summary: 計費報告會依主機、應用程式和企業實體提供儲存容量計費和責任資訊、並同時包含目前和歷史資料。 
+---
+= 設定系統以報告計費資料
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+計費報告會依主機、應用程式和企業實體提供儲存容量計費和責任資訊、並同時包含目前和歷史資料。
+
+本指南說明如何設定Insight以產生計費報告、以提供服務層級成本和儲存使用成本的責任歸屬。本指南旨在提供建立簡單計費報告所需的步驟、並讓Insight使用者熟悉在其獨特環境中設定計費時可用的選項。
+
+針對每個應用程式、範例報告會識別資源已配置的資源及資源成本。在Insight中定義下列資料、即可建立報告的輸出
+
+* 儲存層
+* 與每個儲存層相關的成本
+* 已配置的儲存容量
+* 服務層級
+* 每個服務層級的成本
+
+
+以下各節將說明設定此資料的必要步驟、以便Insight報告存取。

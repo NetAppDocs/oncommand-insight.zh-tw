@@ -1,0 +1,106 @@
+---
+permalink: dwh/viewing-oncommand-insight-logs.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以在OnCommand Insight 畫面上檢視各種資料倉儲和Cognos記錄。 
+---
+= 檢視OnCommand Insight 資訊記錄
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在OnCommand Insight 畫面上檢視各種資料倉儲和Cognos記錄。
+
+
+
+== 關於這項工作
+
+您可以檢查Cognos和Data倉儲記錄檔中的疑難排解和狀態資訊。
+
+
+
+== 步驟
+
+. 登入資料倉儲入口網站： `+https://hostname/dwh+`、其中 `hostname` 是OnCommand Insight 安裝了IsName Data倉儲的系統名稱。
+. 在左側的導覽窗格中、按一下*疑難排解*。
+. 在「*記錄*」區段中、按一下「*記錄檔*」。
++
+將顯示下列記錄檔：
+
++
+|===
+
+
+ a| 
+dwh.log
+
+
+
+ a| 
+列出資料倉儲工作的狀態
+
+
+
+ a| 
+wildfly.log
+
+
+
+ a| 
+提供有關Wildfly應用程式伺服器的資訊
+
+
+
+ a| 
+dwh_升級 記錄
+
+
+
+ a| 
+提供資料倉儲升級的相關資訊
+
+
+
+ a| 
+ldap.log
+
+
+
+ a| 
+記錄與LDAP驗證相關的訊息
+
+
+
+ a| 
+dwh_troubleshoot.log
+
+
+
+ a| 
+記錄有助於疑難排解DWH問題的訊息
+
+
+
+ a| 
+sanscreenap.log
+
+
+
+ a| 
+提供伺服器連線、驗證及Cognos儲存庫存取的相關資訊、以及其他程序的相關資訊
+
+
+
+ a| 
+cognosserver.log
+
+
+
+ a| 
+Cognos記錄
+
+|===
+. 按一下您要檢視的記錄檔名稱。
+

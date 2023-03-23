@@ -1,0 +1,29 @@
+---
+permalink: config-admin/editing-data-source-information.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以快速編輯資料來源設定資訊。 
+---
+= 編輯資料來源資訊
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以快速編輯資料來源設定資訊。
+
+
+
+== 步驟
+
+. 按一下「*管理*」、然後瀏覽至資料來源清單檢視
+. 找出您要編輯的資料來源。
+. 使用下列其中一種方法開始變更：
++
+** 按一下所選資料來源右側的*編輯資料來源*。
+** 按一下所選資料來源的連結名稱、然後按一下*編輯*。這兩種方法都會開啟「編輯資料來源」對話方塊。
+
+
+. 進行所需的變更、然後按一下*「Save（儲存）」*。
+

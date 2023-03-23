@@ -1,0 +1,33 @@
+---
+permalink: dwh/forcing-an-update-of-annotations-for-data-warehouse.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以從OnCommand Insight 「功能性」更新註釋至「資料倉儲」。 
+---
+= 強制更新Data倉儲的註釋
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以從OnCommand Insight 「功能性」更新註釋至「資料倉儲」。
+
+
+
+== 關於這項工作
+
+您可以使用下列兩個選項之一來更新註釋：
+
+* 包括刪除的物件：這包括已移除的主機、儲存陣列或交換器等不再存在的裝置相關資料。如果您想要使用歷史資料點來建置資料倉儲資料、則需要此功能。
+* 不包括刪除的物件：如果您要排除刪除的物件、請選擇此選項。
+
+
+
+
+== 步驟
+
+. 以系統管理員身分登入OnCommand Insight 到The效益分析入口網站 `+https://hostname+`、其中 `hostname` 是OnCommand Insight 安裝了IsName的系統名稱。
+. 按一下「*管理*>*疑難排解*」。在頁面底部、按一下*進階疑難排解*。
+. 在「* Actions *（動作*）」索引標籤中、按一下「* Update DWH annotations（Include deleted）*（*更新DWH附註
+

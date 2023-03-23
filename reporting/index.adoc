@@ -1,0 +1,12 @@
+---
+permalink: reporting/index.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= 《報告指南OnCommand Insight 》（適用於更新版本的版本）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+

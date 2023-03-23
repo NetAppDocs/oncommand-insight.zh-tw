@@ -1,0 +1,80 @@
+---
+permalink: config-admin/netapp-clustered-data-ontap-for-unified-manager-data-source.html 
+sidebar: sidebar 
+keywords:  
+summary: 此資料來源會從ONTAP Unified Manager（UM\）6.0以上的資料庫中收集R2.1.x資料。Insight會使用此資料來源、探索在UM中設定和填入的所有叢集。為了提高效率、Insight不會在叢集本身上呼叫ZAPI。此資料來源不支援效能。 
+---
+= 適用於Unified Manager資料來源的NetApp叢集Data ONTAP 式功能
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+此資料來源會從ONTAP Unified Manager（UM）6.0以上資料庫收集R2.1.x資料。Insight會使用此資料來源、探索在UM中設定和填入的所有叢集。為了提高效率、Insight不會在叢集本身上呼叫ZAPI。此資料來源不支援效能。
+
+
+
+== 組態
+
+[NOTE]
+====
+此資料收集器已不再提供OnCommand Insight 、從版本號為e.7.3.11開始。
+
+====
+|===
+
+
+| *欄位* | *說明* 
+
+
+ a| 
+Unified Manager IP
+ a| 
+Unified Manager的IP位址或完整網域名稱
+
+
+
+ a| 
+使用者名稱
+ a| 
+Unified Manager的使用者名稱
+
+
+
+ a| 
+密碼
+ a| 
+Unified Manager密碼
+
+
+
+ a| 
+連接埠
+ a| 
+用於與Unified Manager通訊的連接埠（預設3306）
+
+|===
+
+
+== 進階組態
+
+|===
+
+
+| *欄位* | *說明* 
+
+
+ a| 
+庫存輪詢時間間隔（分鐘）
+ a| 
+庫存輪詢之間的時間間隔（預設為15分鐘）
+
+
+
+ a| 
+排除叢集
+ a| 
+要排除的叢集IP清單以逗號分隔
+
+|===

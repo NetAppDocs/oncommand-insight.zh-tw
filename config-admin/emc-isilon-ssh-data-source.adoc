@@ -1,0 +1,155 @@
+---
+permalink: config-admin/emc-isilon-ssh-data-source.html 
+sidebar: sidebar 
+keywords:  
+summary: Isilon SSH資料來源會從EMC Isilon橫向擴充NAS儲存設備收集庫存和效能。 
+---
+= EMC Isilon資料來源
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Isilon SSH資料來源會從EMC Isilon橫向擴充NAS儲存設備收集庫存和效能。
+
+
+
+== 術語
+
+從EMC Isilon資料來源取得下列庫存資訊OnCommand Insight 。對於Insight取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料來源時、請謹記下列術語：
+
+|===
+
+
+| 廠商/模型術語 | Insight術語 
+
+
+ a| 
+磁碟機
+ a| 
+磁碟
+
+
+
+ a| 
+叢集
+ a| 
+儲存設備
+
+
+
+ a| 
+節點
+ a| 
+儲存節點
+
+
+
+ a| 
+檔案系統
+ a| 
+內部Volume
+
+|===
+[NOTE]
+====
+這些只是通用的術語對應、可能不代表此資料來源的每個案例。
+
+====
+
+
+== 需求
+
+* Isilon儲存設備的系統管理員權限
+* 使用驗證存取 `telnet` 連接埠22
+
+
+
+
+== 組態
+
+|===
+
+
+| 欄位 | 說明 
+
+
+ a| 
+IP 位址
+ a| 
+Isilon叢集的IP位址或完整網域名稱
+
+
+
+ a| 
+使用者名稱
+ a| 
+Isilon叢集的使用者名稱
+
+
+
+ a| 
+密碼
+ a| 
+Isilon叢集的密碼
+
+|===
+
+
+== 進階組態
+
+|===
+
+
+| 欄位 | 說明 
+
+
+ a| 
+庫存輪詢時間間隔（分鐘）
+ a| 
+庫存輪詢之間的時間間隔（預設為20分鐘）
+
+
+
+ a| 
+效能意見調查時間間隔（秒）
+ a| 
+效能輪詢之間的時間間隔（預設為300秒）
+
+
+
+ a| 
+SSH程序等候逾時
+ a| 
+SSH程序逾時（預設為60秒）
+
+
+
+ a| 
+SSH連接埠
+ a| 
+SSH服務連接埠
+
+|===
+
+
+== 執行CLI命令
+
+從版本7.3.11和Service Pack 9開始OnCommand Insight 、EMC Isilon資料來源包含一項增強功能、可讓Insight執行更多CLI命令。如果您在資料來源中使用非root使用者、您可能已設定「sudoers」檔案、以授予該使用者帳戶透過SSH執行特定CLI命令的能力。
+
+為了讓Insight瞭解EMC的「存取區域」功能、Insight現在將另外執行下列新的CLI命令：
+
+* `sudo isi zone zones list --format json –verbose`
+* `sudo isi zone zones list`
+
+
+Insight會剖析這些命令的輸出、並執行更多現有命令的執行個體、以取得位於非預設存取區域的物件邏輯組態、例如qtree、配額和NAS共用/匯出。Insight現在會針對非預設存取區域報告這些物件、因為這項增強功能。當Insight透過執行現有命令（使用不同選項）來取得資料時、不需要變更任何資料即可正常運作；只有在上述新命令推出後、才需要變更。
+
+請更新您的sudoers檔案、以便Insight服務帳戶在升級至此Insight版本之前執行這些命令。否則、您的Isilon資料來源將會失敗。
+
+
+
+== 「檔案系統」統計資料
+
+EMC Isilon資料收集器從OnCommand Insight 功能完善的7.3.12開始、針對EMC Isilon的節點物件引進「檔案系統」統計資料。由ENetApp報告的現有節點統計資料OnCommand Insight 是以「磁碟」為基礎、例如、對於IOPs和儲存節點的處理量、此節點中的磁碟在集合體中有什麼作用？但對於快取記憶體中的讀取和/或壓縮正在使用中的工作負載、檔案系統工作負載可能遠高於實際達到磁碟的工作負載、因此壓縮5：1的資料集可能會有「檔案系統讀取處理量」值、即儲存節點讀取處理量的5倍、 當後者測量磁碟的讀取時、當節點解壓縮資料以服務用戶端的讀取要求時、磁碟的讀取量會增加5倍。

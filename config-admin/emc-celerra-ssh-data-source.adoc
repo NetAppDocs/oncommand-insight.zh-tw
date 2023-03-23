@@ -1,0 +1,156 @@
+---
+permalink: config-admin/emc-celerra-ssh-data-source.html 
+sidebar: sidebar 
+keywords:  
+summary: Celerra（SSH）資料來源會從Celerra儲存設備收集庫存資訊。對於組態設定、此資料來源需要儲存處理器的IP位址、以及唯讀使用者名稱和密碼。 
+---
+= EMC Celerra資料來源
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Celerra（SSH）資料來源會從Celerra儲存設備收集庫存資訊。對於組態、此資料來源需要儲存處理器的IP位址、以及_唯讀_使用者名稱和密碼。
+
+
+
+== 術語
+
+從EMC Celerra資料來源取得下列庫存資訊OnCommand Insight 。對於Insight取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料來源時、請謹記下列術語：
+
+|===
+
+
+| 廠商/模型術語 | Insight術語 
+
+
+ a| 
+Celerra網路伺服器
+ a| 
+儲存設備
+
+
+
+ a| 
+Celerra中繼磁碟區/ Celerra儲存資源池
+ a| 
+儲存資源池
+
+
+
+ a| 
+檔案系統
+ a| 
+內部Volume
+
+
+
+ a| 
+資料移轉
+ a| 
+控制器
+
+
+
+ a| 
+掛載在Data Mover上的檔案系統
+ a| 
+檔案共用
+
+
+
+ a| 
+CIFS與NFS匯出
+ a| 
+分享
+
+
+
+ a| 
+磁碟區
+ a| 
+後端LUN
+
+|===
+[NOTE]
+====
+這些只是通用的術語對應、可能不代表此資料來源的每個案例。
+
+====
+
+
+== 需求
+
+* 儲存處理器的IP位址
+* 唯讀使用者名稱和密碼
+* SSH連接埠22
+
+
+
+
+== 組態
+
+|===
+
+
+| 欄位 | 說明 
+
+
+ a| 
+Celerra的位址
+ a| 
+Celerra裝置的IP位址或完整網域名稱
+
+
+
+ a| 
+使用者名稱
+ a| 
+用於登入Celerra裝置的名稱
+
+
+
+ a| 
+密碼
+ a| 
+用於登入Celerra裝置的密碼
+
+|===
+
+
+== 進階組態
+
+|===
+
+
+| 欄位 | 說明 
+
+
+ a| 
+庫存輪詢時間間隔（分鐘）
+ a| 
+庫存輪詢之間的時間間隔（預設為20分鐘）
+
+
+
+ a| 
+SSH程序等待逾時（秒）
+ a| 
+SSH程序逾時（預設為600秒）
+
+
+
+ a| 
+重試次數
+ a| 
+嘗試進行庫存重試的次數
+
+
+
+ a| 
+SSH橫幅等待逾時（秒）
+ a| 
+SSH橫幅等待逾時（預設為20秒）
+
+|===

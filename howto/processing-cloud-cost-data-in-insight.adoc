@@ -1,0 +1,22 @@
+---
+permalink: howto/processing-cloud-cost-data-in-insight.html 
+sidebar: sidebar 
+keywords:  
+summary: Insight會從上個月的AWS帳單報告中收集每月一次資料、並反映該月的最終雲端成本。 
+---
+= 在Insight中處理AWS雲端成本資料
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Insight會從上個月的AWS帳單報告中收集每月一次資料、並反映該月的最終雲端成本。
+
+設定AWS Cloud Cost資料來源之後、如果您已將帳單報告產生至S3、則在第一次資料來源輪詢之後、您將會立即收到最多三個月的過去資料。
+
+Insight每月收集AWS「final」資料一次。此收集作業會在上個月結束後數天進行、讓AWS有時間完成實際資料。
+
+AWS帳單資料會傳送至Insight的資料倉儲、以供報告使用。
+
+請記住、每個資料來源都必須設定為單一計費帳戶/使用者。

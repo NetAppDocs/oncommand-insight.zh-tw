@@ -1,0 +1,20 @@
+---
+permalink: config-admin/advanced-troubleshooting.html 
+sidebar: sidebar 
+keywords: Legacy portal 
+summary: 若要完成OnCommand Insight 您的不完整組態、您必須使用進階疑難排解工具。這些工具會在瀏覽器中執行、並從「管理」->「疑難排解」頁面開啟。 
+---
+= 進階疑難排解
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+若要完成OnCommand Insight 您的不完整組態、您必須使用進階疑難排解工具。這些工具會在瀏覽器中執行、並從*管理*>*疑難排解*頁面開啟。
+
+若要在瀏覽器中開啟進階疑難排解工具、請按一下頁面底部的*進階疑難排解*連結。
+
+進階疑難排解工具可讓您檢視各種報告、系統資訊、安裝的套件和記錄、以及執行許多動作、例如重新啟動伺服器或擷取單位、更新DWH註釋、以及匯入註釋。
+
+請參閱「進階疑難排解」頁面以取得所有可用選項。

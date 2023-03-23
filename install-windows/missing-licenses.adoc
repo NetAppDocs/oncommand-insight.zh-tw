@@ -1,0 +1,16 @@
+---
+permalink: install-windows/missing-licenses.html 
+sidebar: sidebar 
+keywords:  
+summary: 不同OnCommand Insight 的功能需要不同的授權。您在OnCommand Insight 畫面上看到的內容是由安裝的授權所控制。如OnCommand Insight 需每個授權所控制功能的相關資訊、請參閱「支援服務」一節。 
+---
+= 遺失授權
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+不同OnCommand Insight 的功能需要不同的授權。您在OnCommand Insight 畫面上看到的內容是由安裝的授權所控制。如OnCommand Insight 需每個授權所控制功能的相關資訊、請參閱「支援服務」一節。
+
+如OnCommand Insight 需每個授權所控制功能的相關資訊、請參閱「支援服務」一節。

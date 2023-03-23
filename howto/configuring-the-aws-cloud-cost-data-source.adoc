@@ -1,0 +1,50 @@
+---
+permalink: howto/configuring-the-aws-cloud-cost-data-source.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以設定AWS Cloud成本資料來源、就像設定任何Insight資料來源一樣。 
+---
+= 設定AWS Cloud成本資料來源
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以設定AWS Cloud成本資料來源、就像設定任何Insight資料來源一樣。
+
+
+
+== 開始之前
+
+您必須已設定Amazon AWS帳戶、並準備好進行Insight資料收集、並備妥下列資訊。
+
+* 報告名稱
+* S3儲存區名稱
+* S3儲存區所在的AWS區域。
+* 報告路徑前置詞
+
+
+
+
+== 關於這項工作
+
+當您的AWS帳戶準備好並擁有適當的權限集之後、您就可以設定OnCommand Insight 用來收集帳單報告資料的功能。
+
+[NOTE]
+====
+您需要為每個想要從中擷取帳單資料的計費使用者/帳戶、新增個別的AWS Cloud Cost資料來源。
+
+====
+
+
+== 步驟
+
+. 以系統管理員身分登入OnCommand Insight 到無法使用的功能。
+. 按一下「*管理*>*資料來源*」以開啟「Insight Data來源」頁面。
+. 按一下「*+新增*」以新增資料來源。選擇* Amazon *並選擇* AWS Cloud Cost *。
+. 在「*組態*」區段中、填寫_報告名稱_、_ S3 Bucket名稱、_ S3 Region _（必須是S3儲存區所在的區域）、_報告路徑前置碼_、_AWS IAM存取金鑰ID_和_ AWS IAM秘密存取金鑰_。如果您不確定其中任何一項、請洽詢您的雲端供應商或AWS帳戶持有人。
+. 按一下核取方塊、確認您瞭解AWS會向您收取Insight資料來源所做的API要求和資料傳輸費用。
+. 在*進階組態*中、輸入HTTP連線和通訊端逾時。預設值為300秒。
+. 按一下「 * 儲存 * 」。
+

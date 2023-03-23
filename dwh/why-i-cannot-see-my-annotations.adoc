@@ -1,0 +1,16 @@
+---
+permalink: dwh/why-i-cannot-see-my-annotations.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果在Data倉儲中看不到註釋、您可能需要強制更新註釋、然後啟動Data倉儲建置。 
+---
+= 為什麼我看不到註釋
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果在Data倉儲中看不到註釋、您可能需要強制更新註釋、然後啟動Data倉儲建置。
+
+遺失的附註會影響資料匯入資料倉儲的方式、並會顯示在報告中。例如、如果「層」註釋無法使用、您將無法在「資料倉儲」報告中依層級分組儲存系統。

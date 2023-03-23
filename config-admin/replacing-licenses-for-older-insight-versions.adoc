@@ -1,0 +1,16 @@
+---
+permalink: config-admin/replacing-licenses-for-older-insight-versions.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果您購買的新Insight版本與舊版產品不相容、則必須以新授權取代舊版授權。 
+---
+= 取代舊版Insight的授權
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您購買的新Insight版本與舊版產品不相容、則必須以新授權取代舊版授權。
+
+安裝新授權時、您必須先選取*取代*作業、然後再儲存授權金鑰文字。

@@ -1,0 +1,186 @@
+---
+permalink: config-admin/ibm-xiv-cli-data-source.html 
+sidebar: sidebar 
+keywords:  
+summary: IBM XIV（CLI）資料來源資源清冊是使用XIV命令列介面來執行。XIV效能是透過撥打SMI-S呼叫XIV陣列來達成、XIV陣列在連接埠5989上執行SMI-S供應商。 
+---
+= IBM XIV資料來源
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+IBM XIV（CLI）資料來源詳細目錄是使用XIV命令列介面來執行。XIV效能是透過撥打SMI-S呼叫XIV陣列來達成、XIV陣列在連接埠5989上執行SMI-S供應商。
+
+
+
+== 術語
+
+從IBM XIV資料來源取得下列庫存資訊OnCommand Insight 。對於Insight取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料來源時、請謹記下列術語：
+
+|===
+
+
+| 廠商/模型術語 | Insight術語 
+
+
+ a| 
+磁碟
+ a| 
+磁碟
+
+
+
+ a| 
+儲存系統
+ a| 
+儲存設備
+
+
+
+ a| 
+儲存資源池
+ a| 
+儲存資源池
+
+
+
+ a| 
+Volume
+ a| 
+Volume
+
+|===
+[NOTE]
+====
+這些只是通用的術語對應、可能不代表此資料來源的每個案例。
+
+====
+
+
+== 需求
+
+* 連接埠需求：TCP連接埠7778
+* XIV管理介面的IP位址
+* 唯讀使用者名稱和密碼
+* XIV CLI必須安裝在Insight伺服器或Rau上
+* 存取驗證：使用使用者名稱和密碼、從Insight伺服器登入XIV使用者介面。
+
+
+
+
+== 組態
+
+|===
+
+
+| *欄位* | *說明* 
+
+
+ a| 
+IP位址
+ a| 
+XIV儲存設備的IP位址或完整網域名稱
+
+
+
+ a| 
+使用者名稱
+ a| 
+XIV儲存設備的使用者名稱
+
+
+
+ a| 
+密碼
+ a| 
+XIV儲存設備的密碼
+
+
+
+ a| 
+XIV CLI目錄的完整路徑
+ a| 
+XIV CLI目錄的完整路徑
+
+|===
+
+
+== 進階組態
+
+|===
+
+
+| *欄位* | *說明* 
+
+
+ a| 
+庫存輪詢時間間隔（分鐘）
+ a| 
+庫存輪詢之間的時間間隔（預設為40分鐘）
+
+
+
+ a| 
+CLI程序等待逾時（毫秒）
+ a| 
+CLI處理逾時（預設值為7200000 ms）
+
+
+
+ a| 
+SMI-S主機IP
+ a| 
+SMI-S Provider主機的IP位址
+
+
+
+ a| 
+SMI-S連接埠
+ a| 
+SMI-S Provider Host使用的連接埠
+
+
+
+ a| 
+SMI-S傳輸協定
+ a| 
+用於連線至SMI-S供應商的傳輸協定
+
+
+
+ a| 
+SMI-S命名空間
+ a| 
+SMI-S命名空間
+
+
+
+ a| 
+使用者名稱
+ a| 
+SMI-S Provider主機的使用者名稱
+
+
+
+ a| 
+密碼
+ a| 
+SMI-S Provider主機的密碼
+
+
+
+ a| 
+效能意見調查時間間隔（秒）
+ a| 
+效能輪詢之間的時間間隔（預設為300秒）
+
+
+
+ a| 
+SMI-S連線重試次數
+ a| 
+SMI-S連線重試次數
+
+|===

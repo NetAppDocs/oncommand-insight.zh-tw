@@ -1,0 +1,195 @@
+---
+permalink: config-admin/openstack-data-source.html 
+sidebar: sidebar 
+keywords:  
+summary: OpenStack（REST API / KVM）資料來源會收集OpenStack硬體執行個體的相關資訊。此資料來源會收集所有OpenStack執行個體的庫存資料、以及VM效能資料（可選）。 
+---
+= OpenStack資料來源
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+OpenStack（REST API / KVM）資料來源會收集OpenStack硬體執行個體的相關資訊。此資料來源會收集所有OpenStack執行個體的庫存資料、以及VM效能資料（可選）。
+
+
+
+== 需求
+
+以下是設定OpenStack資料來源的需求。
+
+* OpenStack控制器的IP位址
+* 建議使用OpenStack管理員角色認證和Sudo存取Linux KVM Hypervisor。
++
+[NOTE]
+====
+如果您沒有使用管理員帳戶或與管理員同等的權限、您仍可從資料來源取得資料。您需要修改原則組態檔（例如etc/nova/policy.json）、以允許具有非管理員角色的使用者呼叫API：
+
+====
++
+** "OS_compute _API:os-Availability：區域：詳細資料"："
+** "OS_compute _API:os-hypervisor（OS運算API：OS Hypervisor）"："
+** OS_compute _API：伺服器：詳細資料：Get_all_租 戶"：""
+
+
+* 為了收集效能、必須安裝並設定OpenStack Ceilometer模組。設定Ceilometer的方法是編輯 `nova.conf` 為每個Hypervisor建立檔案、然後在每個Hypervisor上重新啟動Nova運算服務。不同OpenStack版本的選項名稱會變更：
++
+** 冰屋
+** Juno
+** 公斤
+** 自由
+** Mitaka
+** Newton
+** 八田市
+
+
+* 對於CPU統計資料、運算節點上的/etc/nova/nova.conf必須開啟「compute_mones=ComputeDriverCPUMonitor」。
+* 連接埠需求：
++
+** http為5000、https為13000、Keystone服務為13000
+** 22適用於KVM SSH
+** 8774適用於Nova Compute Service
+** 8776適用於Cinder Block Service
+** 8777適用於Ceilometer Performance Service
+** 9292適用於Glance Image Service
++
+[NOTE]
+====
+連接埠會繫結至特定服務、服務可能會在控制器或其他大型環境中的主機上執行。
+
+====
+
+
+
+
+
+
+== 組態
+
+|===
+
+
+| *欄位* | *說明* 
+
+
+ a| 
+OpenStack控制器IP位址
+ a| 
+OpenStack控制器的IP位址或完整網域名稱
+
+
+
+ a| 
+OpenStack管理員
+ a| 
+OpenStack管理的使用者名稱
+
+
+
+ a| 
+OpenStack密碼
+ a| 
+OpenStack管理所用的密碼
+
+
+
+ a| 
+OpenStack管理員租戶
+ a| 
+OpenStack管理員租戶
+
+
+
+ a| 
+KVM Sudo使用者
+ a| 
+KVM Sudo使用者名稱
+
+
+
+ a| 
+選擇「密碼」或「OpenSSH金鑰檔」以指定認證類型
+ a| 
+用於透過SSH連線至裝置的認證類型
+
+
+
+ a| 
+完整的庫存私密金鑰路徑
+ a| 
+完整的庫存私密金鑰路徑
+
+
+
+ a| 
+KVM Sudo密碼
+ a| 
+KVM Sudo密碼
+
+|===
+
+
+== 進階組態
+
+|===
+
+
+| *欄位* | *說明* 
+
+
+ a| 
+透過SSH啟用Hypervisor庫存探索
+ a| 
+核取此選項、即可透過SSH啟用Hypervisor庫存探索
+
+
+
+ a| 
+OpenStack管理URL連接埠
+ a| 
+OpenStack管理URL連接埠
+
+
+
+ a| 
+使用HTTPS
+ a| 
+核取以使用安全HTTP
+
+
+
+ a| 
+HTTP連線逾時（秒）
+ a| 
+HTTP連線逾時（預設為300秒）
+
+
+
+ a| 
+SSH連接埠
+ a| 
+用於SSH的連接埠
+
+
+
+ a| 
+SSH程序等待逾時（秒）
+ a| 
+SSH程序逾時（預設30秒）
+
+
+
+ a| 
+SSH程序重試
+ a| 
+嘗試進行庫存重試的次數
+
+
+
+ a| 
+庫存輪詢時間間隔（分鐘）
+ a| 
+庫存輪詢之間的時間間隔（預設為20分鐘）
+
+|===

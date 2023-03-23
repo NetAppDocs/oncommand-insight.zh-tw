@@ -1,0 +1,39 @@
+---
+permalink: config-admin/configuring-your-email-for-insight.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果使用者想要在電子郵件帳戶中接收Insight報告、您必須設定電子郵件伺服器才能啟用此功能。 
+---
+= 設定Insight電子郵件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果使用者想要在電子郵件帳戶中接收Insight報告、您必須設定電子郵件伺服器才能啟用此功能。
+
+
+
+== 步驟
+
+. 在Insight工具列上、按一下*管理*、然後選取*通知*。
+. 向下捲動至頁面的*電子郵件*區段。
+. 在「*伺服器*」方塊中、輸入您組織中的SMTP伺服器名稱、此名稱是使用主機名稱或IP位址（_nn.n.n.n.nn.nnn_格式）來識別。
++
+如果您指定主機名稱、請確定名稱可以透過DNS解析。
+
+. 在*使用者名稱*方塊中、輸入您的使用者名稱。
+. 在「*密碼*」方塊中、輸入存取電子郵件伺服器的密碼、僅當您的SMTP伺服器受密碼保護時才需要輸入密碼。這是您用來登入應用程式的相同密碼、可讓您讀取電子郵件。如果需要密碼、您必須再次輸入密碼進行驗證。
+. 在「*寄件者電子郵件*」方塊中、輸入在所有OnCommand Insight 的報告中、將被識別為寄件者的寄件者電子郵件帳戶。
++
+此帳戶必須是貴組織內有效的電子郵件帳戶。
+
+. 在「*電子郵件簽名*」方塊中、輸入您要插入每封電子郵件的文字。
+. 在「收件者」方塊中、按一下 image:../media/add-email-recipient-icon.gif[""]輸入電子郵件地址、然後按一下*確定*。
++
+若要編輯電子郵件地址、請選取地址、然後按一下 image:../media/edit-recipient-icon.gif[""]。若要刪除電子郵件地址、請選取地址、然後按一下 image:../media/delete-recipient-icon.gif[""]。
+
+. 若要傳送測試電子郵件給指定的收件者、請按一下 image:../media/test-email-icon.gif[""]。
+. 按一下「 * 儲存 * 」。
+

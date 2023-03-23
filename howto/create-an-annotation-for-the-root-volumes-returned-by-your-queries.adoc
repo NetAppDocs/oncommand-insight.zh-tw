@@ -1,0 +1,35 @@
+---
+permalink: howto/create-an-annotation-for-the-root-volumes-returned-by-your-queries.html 
+sidebar: sidebar 
+keywords:  
+summary: 附註是您指派給資產的專屬附註、可讓您根據資產附註來篩選資產。您所建立的註釋將用於識別您環境中的NetApp根集合體、並確保它們不會包含在特定報告中。 
+---
+= 為查詢傳回的根磁碟區建立附註
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+附註是您指派給資產的專屬附註、可讓您根據資產附註來篩選資產。您所建立的註釋將用於識別您環境中的NetApp根集合體、並確保它們不會包含在特定報告中。
+
+
+
+== 開始之前
+
+您必須已識別出要從「高I/O密度」報告中排除的所有根Aggregate。
+
+
+
+== 步驟
+
+. 建立附註、以關聯您使用查詢所識別的所有NetApp根集合體：*管理*>*附註*
+. 按一下「*新增*」
++
+.. 輸入註釋名稱：* RootAggr*
+.. 輸入註釋說明：*從「高I/O密度」報告中移除根Aggregate *
+.. 輸入註釋類型：*布林*
+
+
+. 按一下「*儲存*」
+

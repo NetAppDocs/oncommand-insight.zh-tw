@@ -1,0 +1,24 @@
+---
+permalink: config-admin/calculating-the-number-of-database-objects.html 
+sidebar: sidebar 
+keywords:  
+summary: 若要判斷OnCommand Insight 還原資料庫中的物件數量、請使用「計算比例」功能。 
+---
+= 計算資料庫物件數目
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+若要判斷OnCommand Insight 還原資料庫中的物件數量、請使用「計算比例」功能。
+
+
+
+== 步驟
+
+. 在Insight工具列上、按一下*管理*、然後選取*疑難排解*。
+. 在頁面底部的「其他工作」區域中、按一下「*進階疑難排解*」連結。
+. 在「進階疑難排解」頁面上、按一下「*報告*」索引標籤。
+. 按一下*計算比例*。
+

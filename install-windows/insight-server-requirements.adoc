@@ -1,0 +1,165 @@
+---
+permalink: install-windows/insight-server-requirements.html 
+sidebar: sidebar 
+keywords: redhat 
+summary: 建議使用專屬伺服器。請勿在安裝任何其他應用程式的伺服器上安裝Insight。實體與虛擬伺服器均受支援、但必須符合產品需求。 
+---
+= Insight伺服器需求
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+建議使用專屬伺服器。請勿在安裝任何其他應用程式的伺服器上安裝Insight。實體與虛擬伺服器均受支援、但必須符合產品需求。
+
+您必須擁有本機管理員權限、才能安裝OnCommand Insight 此功能。
+
+[NOTE]
+====
+規模調整功能具有多種相依性、例如資料來源類型和大小、環境中的資產數量、輪詢時間間隔等OnCommand Insight 。下列規模調整範例僅為準則、代表已測試Insight的部分環境。變更環境中的任何這些或其他因素、都可能改變Insight的規模調整需求。這些準則包括最多90天效能歸檔資料的磁碟空間。
+
+====
+建議在安裝或升級Insight之前、先聯絡您的銷售工程師以取得詳細的規模調整指導。
+
+*範例：*
+
+|===
+
+
+| 環境因素： | 已測試的磁碟空間、CPU和記憶體： 
+
+
+ a| 
+80個儲存陣列4、000個磁碟區
+
+4、000部VM
+
+4、000個交換器連接埠
+ a| 
+250 GB磁碟空間8個核心
+
+32 GB RAM
+
+
+
+ a| 
+160個儲存陣列40、000個磁碟區
+
+8、000部VM
+
+8、000個交換器連接埠
+ a| 
+1 TB磁碟空間12個核心
+
+48 GB RAM
+
+|===
+*要求：*
+
+|===
+
+
+| 元件 | 必要 
+
+
+ a| 
+作業系統
+ a| 
+執行64位元Microsoft Windows Server 2012、2012 R2、2016或2019的電腦、搭配最新的Service Pack。
+
+Windows Server 2012推出的彈性檔案系統（Refs）與Refinible不相容OnCommand Insight 。僅NTFS檔案系統支援Windows OnCommand Insight 安裝功能。
+
+建議使用專屬伺服器。
+
+
+
+ a| 
+虛擬機器（VM）
+ a| 
+只要保留執行個體的CPU和記憶體資源、此元件就能在虛擬環境中執行。
+
+
+
+ a| 
+記憶體與CPU
+ a| 
+24 - 256 GB RAM
+
+8 - 32核心
+
+強烈建議將分頁檔大小設為「Windows託管」。小型固定大小的分頁檔可能會干擾Insight效能資料的成功儲存。
+
+
+
+ a| 
+可用磁碟空間
+ a| 
+100 GB - 3 TB安裝磁碟空間
+
+50 GB - 1 TB效能歸檔磁碟空間
+
+建議在Insight安裝空間使用SSD磁碟。
+
+
+
+ a| 
+網路
+ a| 
+乙太網路連線與連接埠：
+
+* 100 Mbps或1 Gbps乙太網路連線、具備專屬（靜態）IP位址和IP連線能力、可連線至SAN中的所有元件、包括FC裝置和遠端擷取單元。
+* 連接埠要求OnCommand Insight 適用於整個過程、包括80、443、1090至1100、3873、8083、 4444至4446、5445、5455、4712至4714、5500、 和5501。
+* 擷取程序的連接埠需求為12123和5679。
+* MySQL的連接埠需求為3306。
+* 彈性搜尋的連接埠需求為9200和9310/9
+* Win2008/2012的動態連接埠需求為49152到6555
+
+
+連接埠443和3306需要透過任何防火牆進行外部存取。
+
+
+
+ a| 
+權限
+ a| 
+需要在本地管理員權限才能使用OnCommand Insight 此功能。
+
+如果下列任一資料夾是符號連結、請確定目的地目錄具有「755」權限。
+
+* /opp/netapp
+* /var/lib/netapp
+* /var/log/NetApp
+
+
+
+
+ a| 
+遠端連線
+ a| 
+網際網路連線功能可讓WebEx存取或遠端桌面連線、以利安裝及安裝後的支援。
+
+
+
+ a| 
+存取能力
+ a| 
+需要HTTPS存取。
+
+
+
+ a| 
+掃毒
+ a| 
+安裝OnCommand Insight 此元件期間、您必須完全停用所有的掃毒程式。安裝之後、Insight元件（安裝、備份和歸檔程式路徑）所使用的路徑必須排除在掃毒範圍之外。
+
+此外、您也必須在安裝後、將IBM/DB2資料夾（例如_C:\Program Files\IBM\DB2_）排除在防毒掃描之外。
+
+
+
+ a| 
+HTTP或HTTPS伺服器
+ a| 
+Microsoft Internet Information Services（IIS）或其他HTTPS伺服器不應競用與OnCommand Insight 該伺服器相同的連接埠（443）、也不應自動啟動。如果必須接聽連接埠443、則必須將OnCommand Insight 該伺服器設定為使用其他連接埠。
+
+|===

@@ -1,0 +1,78 @@
+---
+permalink: howto/finding-the-right-assets.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以在Widget篩選器和搜尋中參考的Insight資產會因資產類型而異。 
+---
+= 最佳實務做法：找出適當的資產
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在Widget篩選器和搜尋中參考的Insight資產會因資產類型而異。
+
+在儀表板中、您要建置小工具的資產類型會決定您可以篩選或新增欄的其他資產類型計數器。建置小工具時、請謹記下列事項：
+
+|===
+
+
+| 此資產類型/計數器： | 可篩選下列資產： 
+
+
+ a| 
+虛擬機器
+ a| 
+VMDK
+
+
+
+ a| 
+資料存放區
+ a| 
+內部Volume VMDK
+
+虛擬機器
+
+Volume
+
+
+
+ a| 
+Hypervisor
+ a| 
+虛擬機器
+
+
+
+ a| 
+是Hypervisor
+ a| 
+主機
+
+
+
+ a| 
+主機
+ a| 
+內部Volume
+
+
+
+ a| 
+叢集
+ a| 
+主機虛擬機器
+
+
+
+ a| 
+網路
+ a| 
+連接埠
+
+|===
+這不是完整的清單。
+
+最佳實務做法：如果您篩選的是清單中未顯示的特定資產類型、請嘗試針對替代資產類型建立查詢。

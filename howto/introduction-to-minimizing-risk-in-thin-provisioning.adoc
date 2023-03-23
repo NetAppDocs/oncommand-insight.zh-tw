@@ -1,0 +1,16 @@
+---
+permalink: howto/introduction-to-minimizing-risk-in-thin-provisioning.html 
+sidebar: sidebar 
+keywords:  
+summary: 在現今的混合式IT資料中心中、系統管理員必須運用容量效率技術（例如精簡配置）來控制資源配置、並運用過去無法使用的容量、將資源使用率延伸到實體範圍之外。 
+---
+= 精簡配置風險降至最低的簡介
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在現今的混合式IT資料中心中、系統管理員必須運用容量效率技術（例如精簡配置）來控制資源配置、並運用過去無法使用的容量、將資源使用率延伸到實體範圍之外。
+
+在IT服務堆疊內的多個精簡配置層中、往往能提供近乎即時的容量使用量與使用率詳細資料OnCommand Insight 。未能妥善管理超額訂閱風險、可能導致業務停機時間不及時。

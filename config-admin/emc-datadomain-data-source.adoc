@@ -1,0 +1,149 @@
+---
+permalink: config-admin/emc-datadomain-data-source.html 
+sidebar: sidebar 
+keywords:  
+summary: 此資料來源會從EMC Data Domain重複資料刪除儲存系統收集儲存與組態資訊。若要新增資料來源、您必須使用特定的組態指示和命令、並注意資料來源需求和使用建議。 
+---
+= EMC Data Domain資料來源
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+此資料來源會從EMC Data Domain重複資料刪除儲存系統收集儲存與組態資訊。若要新增資料來源、您必須使用特定的組態指示和命令、並注意資料來源需求和使用建議。
+
+
+
+== 術語
+
+從EMC Data Domain資料來源取得下列庫存資訊OnCommand Insight 。對於Insight取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料來源時、請謹記下列術語：
+
+|===
+
+
+| 廠商/模型術語 | Insight術語 
+
+
+ a| 
+磁碟
+ a| 
+磁碟
+
+
+
+ a| 
+陣列
+ a| 
+儲存設備
+
+
+
+ a| 
+連接埠
+ a| 
+連接埠
+
+
+
+ a| 
+檔案
+ a| 
+內部Volume
+
+
+
+ a| 
+Mtree
+ a| 
+qtree
+
+
+
+ a| 
+配額
+ a| 
+配額
+
+
+
+ a| 
+NFS與CIFS共用
+ a| 
+檔案共享
+
+|===
+[NOTE]
+====
+這些只是通用的術語對應、可能不代表此資料來源的每個案例。
+
+====
+
+
+== 需求
+
+* 資料網域裝置的IP位址
+* Data Domain儲存設備的唯讀使用者名稱和密碼
+* SSH連接埠22
+
+
+
+
+== 組態
+
+|===
+
+
+| 欄位 | 說明 
+
+
+ a| 
+IP 位址
+ a| 
+Data Domain儲存陣列的IP位址或完整網域名稱
+
+
+
+ a| 
+使用者名稱
+ a| 
+Data Domain儲存陣列的使用者名稱
+
+
+
+ a| 
+密碼
+ a| 
+Data Domain儲存陣列的密碼
+
+|===
+
+
+== 進階組態
+
+|===
+
+
+| 欄位 | 說明 
+
+
+ a| 
+庫存輪詢時間間隔（分鐘）
+ a| 
+庫存輪詢之間的時間間隔（預設為20分鐘）
+
+
+
+ a| 
+SSH程序等待逾時（秒）
+ a| 
+SSH程序逾時（預設為180秒）
+
+
+
+ a| 
+SSH連接埠
+ a| 
+SSH服務連接埠
+
+|===

@@ -1,0 +1,192 @@
+---
+permalink: config-admin/dell-emc-powerstore-data-source.html 
+sidebar: sidebar 
+keywords:  
+summary: Dell EMC PowerStore資料收集器會從Dell EMC PowerStore儲存設備收集庫存資訊。對於組態、資料收集器需要儲存處理器的IP位址、以及唯讀使用者名稱和密碼。 
+---
+= Dell EMC PowerStore資料來源
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Dell EMC PowerStore資料收集器會從Dell EMC PowerStore儲存設備收集庫存資訊。對於組態、資料收集器需要儲存處理器的IP位址、以及唯讀使用者名稱和密碼。
+
+
+
+== 術語
+
+從EMC Data Domain資料來源取得下列庫存資訊OnCommand Insight 。對於Insight取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料來源時、請謹記下列術語：
+
+|===
+
+
+| 廠商/模型術語 | Insight術語 
+
+
+ a| 
+主機
+ a| 
+主機
+
+
+
+ a| 
+主機磁碟區對應
+ a| 
+主機磁碟區對應
+
+
+
+ a| 
+硬體（在「Extra _details」（額外詳細資料）物件下有磁碟機）：磁碟機
+ a| 
+磁碟
+
+
+
+ a| 
+應用裝置
+ a| 
+StoragePool
+
+
+
+ a| 
+叢集
+ a| 
+儲存陣列
+
+
+
+ a| 
+節點
+ a| 
+StorageNode
+
+
+
+ a| 
+FC_port
+ a| 
+連接埠
+
+
+
+ a| 
+Volume
+ a| 
+Volume
+
+
+
+ a| 
+內部Volume
+ a| 
+檔案系統
+
+
+
+ a| 
+檔案
+ a| 
+內部Volume
+
+
+
+ a| 
+Mtree
+ a| 
+qtree
+
+
+
+ a| 
+配額
+ a| 
+配額
+
+
+
+ a| 
+NFS與CIFS共用
+ a| 
+檔案共享
+
+|===
+[NOTE]
+====
+這些只是通用的術語對應、可能不代表此資料來源的每個案例。
+
+====
+
+
+== 需求
+
+* 儲存處理器的IP位址或完整網域名稱
+* 唯讀使用者名稱和密碼
+
+
+
+
+== 父序號說明
+
+傳統上Insight能夠報告儲存陣列序號或個別儲存節點序號。不過、有些儲存陣列架構並未完全符合此要求。PowerStore叢集可由1-4個應用裝置組成、每個應用裝置有2個節點。如果應用裝置本身有序號、則該序號既不是叢集的序號、也不是節點的序號。
+
+儲存節點物件上的「父序號」屬性會針對Dell/EMC PowerStore陣列適當填入、當個別節點位於僅屬於大型叢集一部分的中繼應用裝置/機箱內時。
+
+
+
+== 組態
+
+|===
+
+
+| 欄位 | 說明 
+
+
+ a| 
+PowerStore閘道
+ a| 
+PowerStore儲存設備的IP位址或完整網域名稱
+
+
+
+ a| 
+使用者名稱
+ a| 
+PowerStore的使用者名稱
+
+
+
+ a| 
+密碼
+ a| 
+PowerStore使用的密碼
+
+|===
+
+
+== 進階組態
+
+|===
+
+
+| 欄位 | 說明 
+
+
+ a| 
+HTTPS連接埠
+ a| 
+預設值為443
+
+
+
+ a| 
+庫存輪詢時間間隔（分鐘）
+ a| 
+庫存輪詢之間的時間間隔。預設值為60分鐘。
+
+|===
+利用PowerStore的5分鐘精細資料來源、即可獲得VMware Insight的PowerStore效能集合OnCommand 。因此、Insight會每五分鐘輪詢一次該資料、而且這是無法設定的。

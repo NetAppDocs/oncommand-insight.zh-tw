@@ -1,0 +1,25 @@
+---
+permalink: config-admin/manually-backing-up-the-oci-database.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果您啟用OnCommand Insight 每週的還原資料庫備份、您會自動產生複本、以便在必要時還原資料庫。如果您需要在還原作業之前建立備份、或是傳送給NetApp技術支援以尋求協助、您可以手動建立備份.Zip檔案。 
+---
+= 手動備份OnCommand Insight 支援資料庫
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您啟用OnCommand Insight 每週的還原資料庫備份、您會自動產生複本、以便在必要時還原資料庫。如果您需要在還原作業之前建立備份、或是傳送給NetApp技術支援以尋求協助、您可以建立備份 `.zip` 手動檔案。
+
+
+
+== 步驟
+
+. 在Insight工具列上、按一下*管理*。
+. 按一下*疑難排解*。
+. 在「傳送/收集資料」區段中、按一下「*備份*」。
+. 按一下*儲存檔案*。
+. 按一下「*確定*」。
+

@@ -1,0 +1,14 @@
+---
+permalink: howto/your-corporate-structure-setting-up-business-entities-and-applications.html 
+sidebar: sidebar 
+keywords:  
+summary: 瞭解企業架構的要素、有助於追蹤資產使用狀況、並報告成本。 
+---
+= 您的企業架構：設定企業實體和應用程式
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+瞭解企業架構的要素、有助於追蹤資產使用狀況、並報告成本。

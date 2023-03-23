@@ -1,0 +1,16 @@
+---
+permalink: dwh/welcome-to-data-warehouse.html 
+sidebar: sidebar 
+keywords:  
+summary: 「Data倉儲」是一個集中儲存庫、可儲存來自多個伺服器的資料、並將資料轉換成通用的多維資料模型、以供查詢和分析OnCommand Insight OnCommand Insight 。 
+---
+= 歡迎使用OnCommand Insight Data倉儲
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「Data倉儲」是一個集中儲存庫、可儲存來自多個伺服器的資料、並將資料轉換成通用的多維資料模型、以供查詢和分析OnCommand Insight OnCommand Insight 。
+
+利用此功能、您可以存取由數個資料市場所組成的開放式資料庫、以便產生自訂容量與效能報告、例如計費報告、含歷史資料的趨勢報告、使用分析及預測報告OnCommand Insight 。

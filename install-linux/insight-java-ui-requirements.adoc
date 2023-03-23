@@ -1,0 +1,45 @@
+---
+permalink: install-linux/insight-java-ui-requirements.html 
+sidebar: sidebar 
+keywords:  
+summary: 由於《The InsightJava UI Client》OnCommand 是在電腦上的Java執行時間環境中運作、因此務必確保環境符合特定的作業系統、CPU和記憶體需求。 
+---
+= Insight Java UI需求
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+由於《The InsightJava UI Client》OnCommand 是在電腦上的Java執行時間環境中運作、因此務必確保環境符合特定的作業系統、CPU和記憶體需求。
+
+若要存取Java UI用戶端、您必須在電腦上安裝Java執行時間環境（JRE）。
+
+針對NetApp 7.3.2及更新版本、執行Insight Java用戶端需要64位元版本的Java執行時間環境（JRE）OnCommand Insight 。
+
+|===
+
+
+| 元件 | 需求 
+
+
+ a| 
+作業系統
+ a| 
+任何啟用Java 8的機器。Java型用戶端支援Windows、Mac及Linux平台。
+
+
+
+ a| 
+CPU
+ a| 
+需要1.8 GHz或更快的速度。
+
+
+
+ a| 
+記憶體
+ a| 
+建議使用2 GB以上的容量。如果您要監控複雜資料中心的效能（超過50、000個交換器連接埠）、伺服器需要更多記憶體。這僅適用於安裝「執行」授權的情況。
+
+|===

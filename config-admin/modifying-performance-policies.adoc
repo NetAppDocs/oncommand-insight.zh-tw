@@ -1,0 +1,35 @@
+---
+permalink: config-admin/modifying-performance-policies.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以編輯現有和預設的效能原則、以變更Insight監控網路中您感興趣的條件。例如，您可能想要變更原則的臨界值。 
+---
+= 編輯效能原則
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以編輯現有和預設的效能原則、以變更Insight監控網路中您感興趣的條件。例如、您可能想要變更原則的臨界值。
+
+
+
+== 步驟
+
+. 在瀏覽器中開啟Insight。
+. 從*管理*功能表中、選取*效能原則*。
++
+隨即顯示「效能原則」頁面。
+
+. 將游標停留在物件效能原則清單中的原則名稱上。
+. 按一下 image:../media/oci-edit-threshold-policy-icon.gif[""]。
++
+隨即顯示「編輯原則」對話方塊。
+
+. 進行必要的變更。
++
+如果您變更原則名稱以外的任何選項、Insight會刪除該原則的所有現有違規。
+
+. 按一下「*儲存。*」
+

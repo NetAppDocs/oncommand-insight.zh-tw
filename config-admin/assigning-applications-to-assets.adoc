@@ -1,0 +1,40 @@
+---
+permalink: config-admin/assigning-applications-to-assets.html 
+sidebar: sidebar 
+keywords: bulk edit 
+summary: 定義應用程式之後、無論是否有商業實體、您都可以將應用程式與資產建立關聯。 
+---
+= 將應用程式指派給資產
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+定義應用程式之後、無論是否有商業實體、您都可以將應用程式與資產建立關聯。
+
+
+
+== 步驟
+
+. 登入OnCommand Insight 到The W不明 網路UI。
+. 執行下列其中一項動作、找出您要套用應用程式的資產（主機、虛擬機器、Volume或內部Volume）：
++
+** 按一下*儀表板*、選取*資產儀表板*、然後按一下資產。
+** 按一下 image:../media/icon-sanscreen-magnifying-glass-gif.gif[""] 在工具列上顯示*搜尋資產*方塊、輸入資產名稱、然後從清單中選取資產。
+
+
+. 在資產頁面的「*使用者資料*」區段中、將游標放在目前指派給資產的應用程式名稱上（如果未指派應用程式、則會顯示*「無」*）、然後按一下 image:../media/pencil-icon-landing-page-be.gif[""] （編輯應用程式）。
++
+所選資產顯示的可用應用程式清單。目前與資產相關聯的應用程式前面會有核取符號。
+
+. 您可以在「搜尋」方塊中輸入以篩選應用程式名稱、也可以向下捲動清單。
+. 選取您要與資產建立關聯的應用程式。
++
+您可以將多個應用程式指派給主機、虛擬機器和內部磁碟區、但是您只能將一個應用程式指派給磁碟區。
+
+. 按一下 image:../media/check-box-ok.gif[""] 可將選定的應用程序或應用程序分配給資產。
++
+應用程式名稱會顯示在「使用者資料」區段中；如果應用程式與企業實體相關聯、則該企業實體的名稱也會顯示在此區段中。
+
+

@@ -1,0 +1,144 @@
+---
+permalink: config-admin/netapp-clustered-data-ontap-data-source.html 
+sidebar: sidebar 
+keywords:  
+summary: 此資料來源應用於使用叢集Data ONTAP 式功能的儲存系統、且需要使用系統管理員帳戶進行唯讀API呼叫。 
+---
+= NetApp叢集Data ONTAP 式功能資料來源
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+此資料來源應用於使用叢集Data ONTAP 式功能的儲存系統、且需要使用系統管理員帳戶進行唯讀API呼叫。
+
+
+
+== 術語
+
+從叢集式的「叢集式功能」資料來源取得下列庫存資訊Data ONTAP OnCommand Insight 。對於Insight取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料來源時、請謹記下列術語：
+
+|===
+
+
+| 廠商/模型術語 | Insight術語 
+
+
+ a| 
+磁碟
+ a| 
+磁碟
+
+
+
+ a| 
+RAID群組
+ a| 
+磁碟群組
+
+
+
+ a| 
+叢集
+ a| 
+儲存設備
+
+
+
+ a| 
+節點
+ a| 
+儲存節點
+
+
+
+ a| 
+Aggregate
+ a| 
+儲存資源池
+
+
+
+ a| 
+LUN
+ a| 
+Volume
+
+
+
+ a| 
+Volume
+ a| 
+內部Volume
+
+|===
+[NOTE]
+====
+這些只是通用的術語對應、可能不代表此資料來源的每個案例。
+
+====
+
+
+== 需求
+
+* 用於唯讀API呼叫的系統管理員帳戶
+* 目標IP是叢集管理LIF
+* 用於登入NetApp叢集的使用者名稱（使用預設Vserver的ontapi應用程式唯讀角色名稱）和密碼
+* 連接埠需求：80或443
+* 授權要求：探索所需的FCP授權和對應/遮罩磁碟區
+
+
+
+
+== 組態
+
+|===
+
+
+| *欄位* | *說明* 
+
+
+ a| 
+NetApp管理IP
+ a| 
+NetApp叢集的IP位址或完整網域名稱
+
+
+
+ a| 
+使用者名稱
+ a| 
+NetApp叢集的使用者名稱
+
+
+
+ a| 
+密碼
+ a| 
+NetApp叢集的密碼
+
+|===
+
+
+== 進階組態
+
+|===
+
+
+| *欄位* | *說明* 
+
+
+ a| 
+庫存輪詢時間間隔（分鐘）
+ a| 
+庫存輪詢之間的時間間隔（預設為20分鐘）
+
+
+
+ a| 
+效能意見調查時間間隔（秒）
+ a| 
+效能輪詢之間的時間間隔（預設為300秒）
+
+|===

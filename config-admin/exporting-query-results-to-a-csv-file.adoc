@@ -1,0 +1,65 @@
+---
+permalink: config-admin/exporting-query-results-to-a-csv-file.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可能想要將查詢結果匯出至.CSV檔案、以便將資料匯入其他應用程式。 
+---
+= 將查詢結果匯出至.CSV檔案
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可能想要將查詢結果匯出至.CSV檔案、以便將資料匯入其他應用程式。
+
+
+
+== 步驟
+
+. 登入OnCommand Insight 到The W不明 網路UI。
+. 按一下*查詢*、然後選取*顯示所有查詢*。
++
+隨即顯示「查詢」頁面。
+
+. 按一下查詢。
+. 按一下 image:../media/export-to-csv.gif[""] 將查詢結果匯出至``.CSV`` 檔案：
+. 執行下列其中一項：
++
+** 按一下「*開啟方式*」、然後按一下「*確定*」、以Microsoft Excel開啟檔案、並將檔案儲存至特定位置。
+** 按一下*「Save file*（儲存檔案*）」、然後按*「OK*（確定）」將檔案儲存至「Downloads（下載）」資料夾。只會匯出顯示欄的屬性。某些顯示的欄位、尤其是屬於複雜巢狀關係的欄位、不會匯出。
+
+
++
+[NOTE]
+====
+當資產名稱中出現一個逗號時、匯出會以引號括住名稱、並保留資產名稱和適當的.csf格式。
+
+====
++
++匯出查詢結果時、請注意、結果表中的*全部*列將會匯出、而不只是畫面上選取或顯示的列、最多可匯出10、000列。
+
++
++
+
++
+[NOTE]
+====
+使用Excel開啟匯出的.CSV檔案時、如果您有NN格式的物件名稱或其他欄位（兩位數加上一個分號、再加上兩位數）、Excel有時會將該名稱解譯為時間格式、而非文字格式。這可能導致Excel在這些欄中顯示不正確的值。例如、在Excel中、名為「81：45」的物件會顯示為「81：45：00」。若要解決此問題、請使用下列步驟將.CSV匯入Excel：
+
++
+
+....
+-   Open a new sheet in Excel.
+-   On the "Data" tab, choose "From Text".
+-   Locate the desired .CSV file and click "Import".
+-   In the Import wizard, choose "Delimited" and click Next.
+-   Choose "Comma" for the delimiter and click Next.
+-   Select the desired columns and choose "Text" for the column data format.
+-   Click Finish.
+Your objects should show in Excel in the proper format.
+....
++
+
+====
+

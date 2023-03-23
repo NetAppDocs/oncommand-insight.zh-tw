@@ -1,0 +1,37 @@
+---
+permalink: install-linux/verifying-new-insight-services-linux.html 
+sidebar: sidebar 
+keywords:  
+summary: 安裝之後、您應該確認伺服器上是否有新元件。 
+---
+= 確認已安裝新的Insight元件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+安裝之後、您應該確認伺服器上是否有新元件。
+
+
+
+== 步驟
+
+. 若要顯示目前在您登入之伺服器上運作的服務清單、請輸入：
++
+`sudo oci-service.sh status all`
+
+. 視您登入的伺服器而定、請檢查清單中是否有下列Insight服務、並確定其狀態為「'Running」（正在執行）。
++
+** Insight伺服器：wildfly、擷取、mySQL、彈性搜尋
+** 資料倉儲伺服器：wildfly、mysql
+** 遠端擷取伺服器：擷取
+
+
+
+
+
+
+== 結果
+
+如果未列出這些元件、請聯絡技術支援部門。

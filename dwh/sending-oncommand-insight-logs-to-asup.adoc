@@ -1,0 +1,30 @@
+---
+permalink: dwh/sending-oncommand-insight-logs-to-asup.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以將ASUP記錄傳送給技術支援部門、以協助疑難排解。Data倉儲的ASUP設定為自動執行。在Data倉儲入口網站中、您可以停用自動傳送程序、選擇包含Data倉儲資料庫的備份、或是啟動傳輸至ASUP。當您申請ASUP報告時、報告要求會在「Data倉儲入口網站工作」頁面中顯示為工作。 
+---
+= 將Insight記錄傳送至ASUP
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以將ASUP記錄傳送給技術支援部門、以協助疑難排解。Data倉儲的ASUP設定為自動執行。在Data倉儲入口網站中、您可以停用自動傳送程序、選擇包含Data倉儲資料庫的備份、或是啟動傳輸至ASUP。當您申請ASUP報告時、報告要求會在「Data倉儲入口網站工作」頁面中顯示為工作。
+
+
+
+== 關於這項工作
+
+工作由工作佇列管理、類似於處理其他工作。如果ASUP工作已處於「擱置中」或「執行中」狀態、則會出現錯誤訊息、指出無法將ASUP報告要求新增至工作要求、因為工作佇列包含擱置或執行中的要求。
+
+
+
+== 步驟
+
+. 登入資料倉儲入口網站： `+https://hostname/dwh+`、其中 `hostname` 是OnCommand Insight 安裝了IsName Data倉儲的系統名稱。
+. 在左側的導覽窗格中、按一下*疑難排解*。
+. 在*疑難排解*頁面的* OnCommand Insight 《*》ASUP*區段中、按一下*下載DWH疑難排解報告*以擷取疑難排解報告。
+. 若要將報告傳送至OnCommand Insight Data Warehouse Portal * Connector*頁面中列為第一個連接器的「Setf2伺服器」、請按一下「*立即傳送*」。
+

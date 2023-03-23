@@ -1,0 +1,23 @@
+---
+permalink: howto/introduction-to-root-volume-isolation.html 
+sidebar: sidebar 
+keywords:  
+summary: 在NetApp儲存系統中、根Aggregate包含根磁碟區。根磁碟區包含用於管理和控制儲存系統的特殊目錄和組態檔。管理和控制作業可能會導致根Aggregate中的大量活動。當您查詢Insight系統中IO密度最高的前10個內部磁碟區時、您的結果可能包括NetApp根集合體為前10名的成員。 
+---
+= 確保IO密度報告僅說明內部資料磁碟區
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在NetApp儲存系統中、根Aggregate包含根磁碟區。根磁碟區包含用於管理和控制儲存系統的特殊目錄和組態檔。管理和控制作業可能會導致根Aggregate中的大量活動。當您查詢Insight系統中IO密度最高的前10個內部磁碟區時、您的結果可能包括NetApp根集合體為前10名的成員。
+
+監控環境時、更重要的是判斷哪些內部資料磁碟區產生高I/O密度的數字。為了準確識別資料磁碟區、您必須將NetApp內部磁碟區與用來監控I/O密度的查詢區隔離開來。
+
+本指南說明如何輕鬆識別NetApp根集合體、將其與內部Volume查詢結果區隔、以及建立規則、以在新增至系統時排除任何新的NetApp根集合體。下列Insight功能可確保您的I/O密度報告是從內部資料磁碟區衍生而來。
+
+* 系統會建立查詢、以識別Insight監控的所有NetApp根集合體。
+* 每個NetApp根集合體都會指派附註。
+* 建立註釋規則以排除NetApp Aggregate
+

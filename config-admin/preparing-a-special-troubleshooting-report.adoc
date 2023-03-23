@@ -1,0 +1,16 @@
+---
+permalink: config-admin/preparing-a-special-troubleshooting-report.html 
+sidebar: sidebar 
+keywords:  
+summary: Insight會透過安裝軟體後所設定的ASUP系統、自動將資訊傳送給NetApp客戶支援部門。不過、您可能想要建立疑難排解報告、並向支援團隊開啟特定問題的案例。 
+---
+= 準備特殊的疑難排解報告
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Insight會透過安裝軟體後所設定的ASUP系統、自動將資訊傳送給NetApp客戶支援部門。不過、您可能想要建立疑難排解報告、並向支援團隊開啟特定問題的案例。
+
+您可以使用Insight中的工具來執行手動Insight備份、將記錄套用、然後將該資訊傳送給NetApp客戶支援部門。

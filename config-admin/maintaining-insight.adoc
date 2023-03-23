@@ -1,0 +1,23 @@
+---
+permalink: config-admin/maintaining-insight.html 
+sidebar: sidebar 
+keywords:  
+summary: 無論您是Insight新手、需要設定新系統、或是系統已運作一段時間、您都必須採取步驟來維持Insight和網路的順暢運作。主要的維護概念是、在Insight中通常需要調整網路的變更。 
+---
+= 維持洞見
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+無論您是Insight新手、需要設定新系統、或是系統已運作一段時間、您都必須採取步驟來維持Insight和網路的順暢運作。主要的維護概念是、在Insight中通常需要調整網路的變更。
+
+以下是最常見的維護工作：
+
+* 維護Insight備份
+* 正在更新過期的Insight授權
+* 協調資料來源修補程式
+* 更新所有擷取單位的Insight版本
+* 從Insight刪除移除的資料來源
+

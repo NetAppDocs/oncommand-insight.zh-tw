@@ -1,0 +1,14 @@
+---
+permalink: config-admin/managing-annotation-types.html 
+sidebar: sidebar 
+keywords:  
+summary: 提供一些預設的註釋類型、例如資產生命週期（生日或生命週期結束）、建置或資料中心位置、以及階層、您可以自訂以顯示在報告中OnCommand Insight 。您可以定義預設註釋類型的值、或建立自己的自訂註釋類型。您稍後可以編輯這些值。 
+---
+= 管理註釋類型
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+提供一些預設的註釋類型、例如資產生命週期（生日或生命週期結束）、建置或資料中心位置、以及階層、您可以自訂以顯示在報告中OnCommand Insight 。您可以定義預設註釋類型的值、或建立自己的自訂註釋類型。您稍後可以編輯這些值。

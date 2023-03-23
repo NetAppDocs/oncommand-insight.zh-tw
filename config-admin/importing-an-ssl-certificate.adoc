@@ -1,0 +1,132 @@
+---
+permalink: config-admin/importing-an-ssl-certificate.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以新增SSL憑證來啟用增強的驗證和加密功能、以增強OnCommand Insight 您的支援環境的安全性。 
+---
+= 匯入SSL憑證
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以新增SSL憑證來啟用增強的驗證和加密功能、以增強OnCommand Insight 您的支援環境的安全性。
+
+
+
+== 開始之前
+
+您必須確保系統符合所需的最低位元層級（1024位元）。
+
+
+
+== 關於這項工作
+
+[NOTE]
+====
+在嘗試執行此程序之前、您應該先備份現有的 `server.keystore` 檔案、並命名備份 `server.keystore.old`。毀損或毀損 `server.keystore` 重新啟動Insight伺服器後、檔案可能導致Insight伺服器無法運作。如果您建立備份、當發生問題時、可以還原至舊檔案。
+
+====
+
+
+== 步驟
+
+. 建立原始Keystore檔案的複本： `cp c:\Program Files\SANscreen\wildfly\standalone\configuration\server.keystore "c:\Program Files\SANscreen\wildfly\standalone\configuration\server.keystore.old`
+. 列出Keystore的內容： `C:\Program Files\SANscreen\java64\bin\keytool.exe -list -v -keystore "c:\Program Files\SANscreen\wildfly\standalone\configuration\server.keystore"`
++
+.. 當系統提示輸入密碼時、請輸入 `changeit`。
+
+
++
+系統會顯示Keystore的內容。金鑰庫中至少應有一個憑證、 `"ssl certificate"`。
+
+. 刪除 `"ssl certificate"`： `keytool -delete -alias "ssl certificate" -keystore c:\Program Files\SANscreen\wildfly\standalone\configuration\server.keystore`
+. 產生新金鑰： `C:\Program Files\SANscreen\java64\bin\keytool.exe -genkey -alias "ssl certificate" -keyalg RSA -keysize 2048 -validity 365 -keystore "c:\Program Files\SANscreen\wildfly\standalone\configuration\server.keystore"`
++
+.. 當系統提示輸入名字和姓氏時、請輸入您要使用的完整網域名稱（FQDN）。
+.. 提供下列組織與組織架構的相關資訊：
++
+*** 國家/地區：您所在國家/地區的雙字母ISO縮寫（例如美國）
+*** 州或省：貴組織總公司所在州或省的名稱（例如、麻塞諸塞州）
+*** 地區：貴組織總公司所在城市的名稱（例如Waltham）
+*** 組織名稱：擁有網域名稱的組織名稱（例如NetApp）
+*** 組織單位名稱：將使用憑證的部門或群組名稱（例如Support）
+*** 網域名稱/一般名稱：用於伺服器DNS查詢的FQDN（例如www.example.com）系統會以類似下列的資訊回應： `Is CN=www.example.com, OU=support, O=NetApp, L=Waltham, ST=MA, C=US correct?`
+
+
+.. 輸入 `Yes` 當「Common Name（CN）（一般名稱（CN））」等於FQDN時。
+.. 當系統提示輸入金鑰密碼時、請輸入密碼、或按Enter鍵以使用現有的金鑰庫密碼。
+
+
+. 產生憑證要求檔案： `C:\Program Files\SANscreen\java64\bin\keytool.exe -certreq -alias "ssl certificate" -keystore "c:\Program Files\SANscreen\wildfly\standalone\configuration\server.keystore" -file c:\localhost.csr`
++
+。 `c:\localhost.csr` 檔案是新產生的憑證要求檔案。
+
+. 提交 `c:\localhost.csr` 歸檔至您的憑證授權單位（CA）以供核准。
++
+一旦憑證要求檔案獲得核准、您就會想要在中傳回憑證給您 `.der` 格式。檔案可能會傳回、也可能不會傳回 `.der` 檔案：預設檔案格式為 `.cer` 適用於Microsoft CA服務。
+
++
+大多數組織的CA都使用信任鏈模式、包括通常離線的根CA。它只簽署了少數子CA的憑證、稱為中繼CA。
+
++
+您必須取得整個信任鏈的公開金鑰（憑證）、即簽署OnCommand Insight 該伺服器憑證的CA憑證、以及該CA與組織根CA之間的所有憑證。
+
++
+在某些組織中、當您提交簽署要求時、可能會收到下列其中一項：
+
++
+** 包含您簽署的憑證及信任鏈中所有公開憑證的PKCS12檔案
+** 答 `.zip` 包含個別檔案（包括您簽署的憑證）和信任鏈中所有公開憑證的檔案
+** 只有您簽署的憑證
++
+您必須取得公開憑證。
+
+
+
+. 匯入伺服器.keystore的核准憑證： `C:\Program Files\SANscreen\java64\bin\keytool.exe -importcert -alias OCI.hostname.com -file c:\localhost2.DER -keystore "c:\Program Files\SANscreen\wildfly\standalone\configuration\server.keystore"`
++
+.. 出現提示時、請輸入Keystore密碼。
++
+畫面會顯示下列訊息： `Certificate reply was installed in keystore`
+
+
+
+. 匯入伺服器的核准憑證.trustore： `C:\Program Files\SANscreen\java64\bin\keytool.exe -importcert -alias OCI.hostname.com -file c:\localhost2.DER -keystore "c:\Program Files\SANscreen\wildfly\standalone\configuration\server.trustore"`
++
+.. 出現提示時、請輸入信任密碼。
++
+畫面會顯示下列訊息： `Certificate reply was installed in trustore`
+
+
+
+. 編輯 `SANscreen\wildfly\standalone\configuration\standalone-full.xml` 檔案：
++
+替換下列別名字串： `alias="cbc-oci-02.muccbc.hq.netapp.com"`。例如：
+
++
+`<keystore path="server.keystore" relative-to="jboss.server.config.dir" keystore-password="${VAULT::HttpsRealm::keystore_password::1}" alias="cbc-oci-02.muccbc.hq.netapp.com" key-password="${VAULT::HttpsRealm::key_password::1}"/>`
+
+. 重新啟動SANscreen 伺服器服務。
++
+執行Insight之後、您可以按一下掛鎖圖示來檢視系統上安裝的憑證。
+
++
+如果您看到的憑證包含「核發給」資訊、且該資訊符合「核發者」資訊、您仍安裝自我簽署的憑證。Insight安裝程式產生的自我簽署憑證已過期100年。
+
++
+NetApp無法保證此程序會移除數位憑證警告。NetApp無法控制終端使用者工作站的設定方式。請考慮下列案例：
+
++
+** Microsoft Internet Explorer和Google Chrome都使用Microsoft在Windows上的原生憑證功能。
++
+這表示、如果Active Directory管理員將組織的CA憑證推入終端使用者的憑證信任器、則OnCommand Insight 當以內部CA基礎架構簽署的更新版本取代自我簽署的憑證時、這些瀏覽器的使用者將會看到憑證警告消失。
+
+** Java和Mozilla Firefox都有自己的憑證存放區。
++
+如果系統管理員未將CA憑證自動擷取至這些應用程式的信任憑證存放區、則使用Insight Java用戶端或Firefox瀏覽器可能會因為不受信任的憑證而持續產生憑證警告、即使自行簽署的憑證已被取代。將組織的憑證鏈結安裝到信任關係中、是另一項需求。
+
+
+
+

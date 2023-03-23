@@ -1,0 +1,27 @@
+---
+permalink: install-windows/backing-up-custom-data-warehouse-reports.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果您已建立自訂報告、但沒有這些報告的.xml來源檔案、則應在升級之前備份這些報告。然後將它們複製到Data倉儲伺服器以外的伺服器。 
+---
+= 備份自訂資料倉儲報告
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您已建立自訂報告、但沒有 `.xml` 然後您應該在升級之前備份這些報告。然後將它們複製到Data倉儲伺服器以外的伺服器。
+
+
+
+== 步驟
+
+. 登入資料倉儲入口網站： `+https://fqdn/dwh+`。
+. 在資料倉儲工具列上、按一下 image:../media/oci-reporting-portal-icon.gif[""] 開啟報告入口網站並登入。
+. 選擇*檔案*>*開啟*。
+. 選取報告所在的資料夾、選取報告、然後按一下「*開啟*」。
+. 選擇*工具*>*複製報告至剪貼簿*。
+. 開啟文字編輯器、貼上報告內容、然後將檔案另存為 `report_name.txt`、其中 `report _name` 為報告名稱。
+. 將報告儲存在資料倉儲伺服器以外的伺服器上。
+

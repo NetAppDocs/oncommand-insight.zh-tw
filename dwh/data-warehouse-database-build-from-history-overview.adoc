@@ -1,0 +1,28 @@
+---
+permalink: dwh/data-warehouse-database-build-from-history-overview.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用OnCommand Insight 您的伺服器上的歷史資料來建置Data倉儲資料庫。Data倉儲會從OnCommand Insight 支援服務器中擷取資料、並根據歷史記錄排程建置資料倉儲資料市場。 
+---
+= 從歷史記錄總覽建立資料倉儲資料庫
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用OnCommand Insight 您的伺服器上的歷史資料來建置Data倉儲資料庫。Data倉儲會從OnCommand Insight 支援服務器中擷取資料、並根據歷史記錄排程建置資料倉儲資料市場。
+
+此選項不需要特殊授權、而且建置中包含庫存資料。不過OnCommand Insight 、為了建立容量資訊、需要使用「The簽署計劃」和OnCommand Insight 「執行流程」授權。
+
+如果已執行任何建置（從歷史記錄或目前建置）、則無法在最後一個工作之前的日期完成建置。這表示如果您執行目前的建置、就無法從歷史記錄建立。更具體地說、如果您是根據2012年1月1日結束的歷史建置來執行建置、您就無法在2011年執行任何建置。
+
+如果建立歷程記錄不包含一兩天的任何不成功ETL程序、請勿在這幾天內嘗試建立歷程記錄。歷史資料的時間較長、一兩天的趨勢不會大幅改變。如果您確實想要從歷程中重新建置、請重新建置整個歷程記錄。
+
+「從歷史建置」檢視會顯示所有連接器的所有建置工作。例如、檢視可能會顯示每個連接器的庫存工作、每個建置執行的連接埠容量工作、以及註釋工作。
+
+在您設定「從歷史建置」之前、必須先執行下列動作：
+
+* 必須設定連接器。
+* 註釋應輸入OnCommand Insight 到更新檔中、並可使用舊OnCommand Insight 版的「更新DWH註釋」選項*手動更新、或在設定後15分鐘自動更新註釋。
+

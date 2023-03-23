@@ -1,0 +1,16 @@
+---
+permalink: dwh/what-to-do-with-failing-historical-build-points.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以從歷史記錄建立、啟用「跳過歷史記錄建置失敗」選項、忽略任何失敗的建置。 
+---
+= 如何處理失敗的歷史建置點
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以從歷史記錄建立、啟用*跳過歷史建置失敗*選項、忽略任何失敗的建置。
+
+如果您這麼做、就會繼續從歷史建置。如果建置失敗且啟用此選項、Data倉儲會繼續建置並忽略任何失敗的建置。在這種情況下、任何跳過的建置在歷史資料中都沒有資料點。如果您未啟用此選項且建置失敗、則所有後續工作都會中止。

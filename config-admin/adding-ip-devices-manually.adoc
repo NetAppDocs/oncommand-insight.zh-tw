@@ -1,0 +1,34 @@
+---
+permalink: config-admin/adding-ip-devices-manually.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以OnCommand Insight 使用IP識別畫面中的手動新增功能、將IP裝置手動新增至支援功能。 
+---
+= 手動新增IP裝置
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以OnCommand Insight 使用IP識別畫面中的手動新增功能、將IP裝置手動新增至支援功能。
+
+
+
+== 步驟
+
+. 登入Insight Web UI。
+. 按一下「*管理*>*裝置解析度*」
+. 按一下「* IP識別*」索引標籤。
+. 按一下「新增」按鈕。
++
+隨即顯示Add Device（新增裝置）對話方塊
+
+. 輸入位址、IP位址和唯一的裝置名稱。
+
+
+
+
+== 結果
+
+您輸入的裝置會新增至「IP識別」索引標籤中的裝置清單。

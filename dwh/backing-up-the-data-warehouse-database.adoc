@@ -1,0 +1,262 @@
+---
+permalink: dwh/backing-up-the-data-warehouse-database.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以將資料倉儲資料庫（也包括Cognos備份）備份至檔案、之後再使用資料倉儲入口網站還原。這類備份可讓您移轉至不同的資料倉儲伺服器、或升級至新的資料倉儲版本。 
+---
+= 備份資料倉儲資料庫
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以將資料倉儲資料庫（也包括Cognos備份）備份至檔案、之後再使用資料倉儲入口網站還原。這類備份可讓您移轉至不同的資料倉儲伺服器、或升級至新的資料倉儲版本。
+
+
+
+== 步驟
+
+. 登入資料倉儲入口網站： `+https://fqdn/dwh+`。
+. 從左側的導覽窗格中、選取*備份/還原*。
+. 按一下*備份*並選取您的備份組態：
++
+.. 除Performance Datamart以外的所有Datamarts
+.. 所有Datamarts
+
+
++
+此作業可能需要30分鐘以上。
+
++
++ Data倉儲會建立備份檔案並顯示其名稱。
+
+. 以滑鼠右鍵按一下備份檔案、然後將其儲存至您要的位置。
++
+您可能不想變更檔案名稱、但應將檔案儲存在Data倉儲安裝路徑之外。
+
++
+資料倉儲備份檔案包括DWH執行個體的MySQL、自訂架構（MySQL DB）與表格、LDAP組態、連接Cognos與MySQL資料庫的資料來源（而非連接Insight伺服器與裝置以取得資料的資料來源）； 匯入和匯出匯入或匯出報告的工作；報告安全角色、群組和命名空間；使用者帳戶； 任何已修改的報告入口網站報告、以及任何自訂報告、無論報告儲存位置為何、甚至是在「我的資料夾」目錄中。不會備份Cognos系統組態參數、例如：SMTP伺服器設定和Cognos自訂記憶體設定。
+
++
+備份自訂表格的預設架構包括下列項目：
+
++
+|===
+
+
+ a| 
+dwh_capcap處理 能力
+
+
+
+ a| 
+dwh_capid_staging
+
+
+
+ a| 
+dwh_dimize..
+
+
+
+ a| 
+dwh_fs_util
+
+
+
+ a| 
+dwh_inventory
+
+
+
+ a| 
+dwh_inventory_staging
+
+
+
+ a| 
+dwh_inventory_for瞬 態
+
+
+
+ a| 
+dwh_management
+
+
+
+ a| 
+Dwh_Performance
+
+
+
+ a| 
+dwh_formation_staging
+
+
+
+ a| 
+dwh_port
+
+
+
+ a| 
+dwh_reports
+
+
+
+ a| 
+dwh_sa_staging
+
+
+
+ a| 
+
+
+
+ a| 
+
+
+
+ a| 
+
+|===
++
+將自訂表格排除在備份之外的架構包括下列項目：
+
++
+|===
+
+
+ a| 
+資訊架構
+
+
+
+ a| 
+併購
+
+
+
+ a| 
+Cloud模式
+
+
+
+ a| 
+主機資料
+
+
+
+ a| 
+InnoDB
+
+
+
+ a| 
+庫存
+
+
+
+ a| 
+庫存_私有
+
+
+
+ a| 
+庫存時間
+
+
+
+ a| 
+記錄
+
+
+
+ a| 
+管理
+
+
+
+ a| 
+MySQL
+
+
+
+ a| 
+NAS
+
+
+
+ a| 
+效能
+
+
+
+ a| 
+效能架構
+
+
+
+ a| 
+效能檢視
+
+
+
+ a| 
+SANscreen
+
+
+
+ a| 
+清理
+
+
+
+ a| 
+服務保證
+
+
+
+ a| 
+測試
+
+
+
+ a| 
+暫存
+
+
+
+ a| 
+工作平台
+
+
+
+ a| 
+
+
+
+ a| 
+
+
+
+ a| 
+
+|===
++
+在任何手動啟動的備份中 `.zip` 建立包含下列檔案的檔案：
+
++
+** 每日備份 `.zip` 檔案、其中包含Cognos報告定義
+** 報告備份 `.zip` 檔案、其中包含Cognos中的所有報告、包括「我的資料夾」目錄中的報告
+** Data倉儲資料庫備份檔案除了可隨時執行的手動備份之外、Cognos也會建立每日備份（每天自動產生至名為的檔案） `DailyBackup.zip`）、包括報告定義。每日備份包括產品隨附的主要資料夾和套件。Cognos備份不包含My Folders目錄和您在產品的主要資料夾之外建立的任何目錄。
+
+
++
+[NOTE]
+====
+由於Insight命名中的檔案的方式 `.zip` 檔案、部分解壓縮程式會顯示檔案在開啟時是空的。只要 `.zip` 檔案大小大於0、結尾不為 `.bad` 擴充 `.zip` 檔案有效。您可以使用7-Zip或WinZipR等其他解壓縮程式來開啟檔案。
+
+====
+

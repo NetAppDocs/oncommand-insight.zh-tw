@@ -1,0 +1,16 @@
+---
+permalink: howto/setting-up-notifications.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以設定Insight、透過電子郵件、SNMP或Syslog傳送有關效能原則、全域路徑或容量違規等觸發事件的通知。您也可以設定Insight、針對資料來源錯誤或擷取設備故障等系統層級事件傳送電子郵件通知。 
+---
+= 設定通知
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以設定Insight、透過電子郵件、SNMP或Syslog傳送有關效能原則、全域路徑或容量違規等觸發事件的通知。您也可以設定Insight、針對資料來源錯誤或擷取設備故障等系統層級事件傳送電子郵件通知。
+
+這些是基本指示。如需通知的詳細資訊、請參閱組態與管理> Insight組態與管理>設定Insight。

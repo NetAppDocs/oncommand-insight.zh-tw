@@ -1,0 +1,69 @@
+---
+permalink: install-windows/remote-acquisition-unit-server-requirements.html 
+sidebar: sidebar 
+keywords: redhat 
+summary: 您必須安裝遠端擷取單元（Rau）、才能從防火牆後的SAN裝置、遠端站台、私有網路或不同網路區段中取得資訊。在安裝Rau之前、您應確保環境符合Rau作業系統、CPU、記憶體及磁碟空間需求。 
+---
+= 遠端擷取單元伺服器需求
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必須安裝遠端擷取單元（Rau）、才能從防火牆後的SAN裝置、遠端站台、私有網路或不同網路區段中取得資訊。在安裝Rau之前、您應確保環境符合Rau作業系統、CPU、記憶體及磁碟空間需求。
+
+|===
+
+
+| 元件 | 需求 
+
+
+ a| 
+作業系統
+ a| 
+執行64位元Microsoft Windows Server 2012、2012 R2、2016或2019的電腦、搭配最新的Service Pack
+
+
+
+ a| 
+CPU
+ a| 
+4個CPU核心
+
+
+
+ a| 
+記憶體
+ a| 
+16 GB RAM
+
+
+
+ a| 
+可用磁碟空間
+ a| 
+40 GB
+
+
+
+ a| 
+網路
+ a| 
+100 Mbps / 1 Gbps乙太網路連線、靜態IP位址、所有FC裝置的IP連線、OnCommand Insight 以及連接至該伺服器的必要連接埠（80或443）。
+
+
+
+ a| 
+權限
+ a| 
+Rau伺服器上的本機系統管理員權限
+
+
+
+ a| 
+掃毒
+ a| 
+安裝OnCommand Insight 此元件期間、您必須完全停用所有的掃毒程式。安裝之後、Insight元件所使用的路徑必須排除在掃毒範圍之外。此外、您也必須在安裝後、將IBM/DB2資料夾（例如_C:\Program Files\IBM\DB2_）排除在防毒掃描之外。
+
+|===

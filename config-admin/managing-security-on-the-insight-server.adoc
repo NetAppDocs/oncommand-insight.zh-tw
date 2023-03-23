@@ -1,0 +1,106 @@
+---
+permalink: config-admin/managing-security-on-the-insight-server.html 
+sidebar: sidebar 
+keywords:  
+summary: 安全性管理工具可讓您管理Insight伺服器上的安全性選項。安全管理包括變更密碼、產生新金鑰、儲存及還原您建立的安全組態、或將組態還原為預設設定。 
+---
+= 管理Insight伺服器上的安全性
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+。 `securityadmin` 工具可讓您管理Insight伺服器上的安全選項。安全管理包括變更密碼、產生新金鑰、儲存及還原您建立的安全組態、或將組態還原為預設設定。
+
+
+
+== 關於這項工作
+
+您可以使用 `securityadmin` 管理安全性的工具：
+
+* Windows - `C:\Program Files\SANscreen\securityadmin\bin\securityadmin.bat`
+* Linux - `/bin/oci-securityadmin.sh`
+
+
+
+
+== 步驟
+
+. 遠端登入Insight伺服器。
+. 以互動模式啟動安全管理工具： `securityadmin -i`
++
+系統會要求登入認證資料。
+
+. 輸入具有「admin」認證的帳戶使用者名稱和密碼。
+. 選取*伺服器*。
++
+提供下列伺服器組態選項：
+
++
+** *備份*
++
+建立包含所有密碼和金鑰的資料保險箱備份壓縮檔、並將檔案放置在使用者指定的位置、或是下列預設位置：
+
++
+*** Windows - `C:\Program Files\SANscreen\backup\vault`
+*** Linux - `/var/log/netapp/oci/backup/vault`
+
+
+** *還原*
++
+還原所建立之資料保存庫的壓縮備份。還原之後、所有密碼和金鑰都會還原為建立備份時的現有值。
+
++
+[NOTE]
+====
+還原可用於同步多個伺服器上的密碼和金鑰、例如：-變更單一伺服器上的伺服器加密金鑰-建立資料庫備份-將資料庫備份還原至第二個伺服器
+
++
+
+====
+** *變更加密金鑰*
++
+變更用來加密或解密Proxy使用者密碼、SMTP使用者密碼、LDAP使用者密碼等的伺服器加密金鑰。
+
++
+[NOTE]
+====
+變更加密金鑰時、您應該備份新的安全性組態、以便在升級或安裝之後還原。
+
+====
+** *更新密碼*
++
+變更Insight使用的內部帳戶密碼。畫面會顯示下列選項：
+
++
+*** 內部_
+*** 併購
+*** Cogns_admin
+*** dwh_internal
+*** 主機
+*** 庫存
+*** 根
+
+
+
+
++
+[NOTE]
+====
+有些帳戶需要在密碼變更時進行同步處理。例如、如果您變更伺服器上「擷取」使用者的密碼、則需要變更劉、Rau和DWH上「擷取」使用者的密碼以進行比對。此外、當您變更密碼時、也應該備份新的安全組態、以便在升級或安裝之後還原。
+
+====
++
+** *重設為預設值*
++
+將金鑰和密碼重設為預設值。預設值為安裝期間提供的值。
+
+** *退出*
++
+結束 `securityadmin` 工具：
+
+
+
+. 選擇您要變更的選項、然後依照提示進行。
+

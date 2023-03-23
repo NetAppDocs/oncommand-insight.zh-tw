@@ -1,0 +1,153 @@
+---
+permalink: config-admin/violin-memory-data-source.html 
+sidebar: sidebar 
+keywords:  
+summary: Violin 6000系列Flash記憶體陣列（HTTP）資料來源會收集網路資訊、以供Violin 6000系列Flash記憶體陣列進行分析和驗證。 
+---
+= 小提琴Flash Memory Array資料來源
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Violin 6000系列Flash記憶體陣列（HTTP）資料來源會收集網路資訊、以供Violin 6000系列Flash記憶體陣列進行分析和驗證。
+
+
+
+== 術語
+
+[NOTE]
+====
+此資料收集器已不再提供OnCommand Insight 、從版本號為e.7.3.11開始。
+
+====
+從Violin 6000系列Flash Memory Array資料來源取得下列庫存資訊OnCommand Insight 。對於Insight取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料來源時、請謹記下列術語：
+
+|===
+
+
+| 廠商/模型術語 | Insight術語 
+
+
+ a| 
+小提琴智慧型記憶體模組（VIMMM）
+ a| 
+磁碟
+
+
+
+ a| 
+容器
+ a| 
+儲存設備
+
+
+
+ a| 
+記憶體閘道
+ a| 
+儲存節點
+
+
+
+ a| 
+LUN
+ a| 
+Volume
+
+
+
+ a| 
+啟動器、啟動器群組、目標
+ a| 
+Volume Map、Volume Mask
+
+|===
+[NOTE]
+====
+這些只是通用的術語對應、可能不代表此資料來源的每個案例。
+
+====
+
+
+== 需求
+
+* 您需要儲存設備的唯讀使用者名稱和密碼。
+* 使用儲存IP位址、以網頁瀏覽器驗證存取。
+
+
+
+
+== 組態
+
+|===
+
+
+| 欄位 | 說明 
+
+
+ a| 
+Violin記憶體陣列主閘道的IP位址或FQDN
+ a| 
+Violin記憶體陣列主閘道的IP位址或完整網域名稱
+
+
+
+ a| 
+使用者名稱
+ a| 
+Violin記憶體陣列主閘道的使用者名稱
+
+
+
+ a| 
+密碼
+ a| 
+Violin記憶體陣列主閘道的密碼
+
+|===
+
+
+== 進階組態
+
+|===
+
+
+| 欄位 | 說明 
+
+
+ a| 
+通訊連接埠
+ a| 
+用於與Violin陣列通訊的連接埠
+
+
+
+ a| 
+HTTPS已啟用
+ a| 
+選取以使用HTTPS
+
+
+
+ a| 
+庫存輪詢時間間隔（分鐘）
+ a| 
+庫存輪詢之間的時間間隔（預設為20分鐘）
+
+
+
+ a| 
+連線逾時（秒）
+ a| 
+連線逾時（預設為60秒）
+
+
+
+ a| 
+效能意見調查時間間隔（秒）
+ a| 
+效能輪詢之間的時間間隔（預設為300秒）
+
+|===

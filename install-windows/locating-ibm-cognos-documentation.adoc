@@ -1,0 +1,25 @@
+---
+permalink: install-windows/locating-ibm-cognos-documentation.html 
+sidebar: sidebar 
+keywords:  
+summary: 如需如何啟動及停止報告入口網站軟體等基本資訊、請參閱隨產品一起安裝的IBM Cognos文件。您可以使用網頁瀏覽器搜尋任何IBM Cognos報告產品的相關資訊、例如位於資訊中心內的IBM網站上的Query Studio、Report Studio、Business Insight或Business Insight Advanced、以取得這些軟體產品的相關資訊。 
+---
+= 尋找IBM Cognos文件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如需如何啟動及停止報告入口網站軟體等基本資訊、請參閱隨產品一起安裝的IBM Cognos文件。您可以使用網頁瀏覽器搜尋任何IBM Cognos報告產品的相關資訊、例如位於資訊中心內的IBM網站上的Query Studio、Report Studio、Business Insight或Business Insight Advanced、以取得這些軟體產品的相關資訊。
+
+
+
+== 步驟
+
+. 若要找出安裝OnCommand Insight 有支援此功能的IBM Cognos文件、請瀏覽此目錄。
++
+`<install_dir\>\cognos\c10_64\webcontent\documentation\help_docs.html`
+
+. 您也可以顯示主題、說明OnCommand Insight 使用於《資訊報告入口網站」的個別IBM Cognos視窗。按一下視窗工具列上的*？*圖示。
+

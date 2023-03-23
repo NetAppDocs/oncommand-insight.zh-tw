@@ -1,0 +1,30 @@
+---
+permalink: config-admin/configuring-performance-and-assurance-violation-notifications.html 
+sidebar: sidebar 
+keywords:  
+summary: 支援效能通知、確保違規OnCommand Insight 。根據預設、Insight不會針對這些違規事件傳送通知；您必須設定Insight以傳送電子郵件、傳送系統記錄訊息至系統記錄伺服器、或在發生違規時傳送SNMP通知。 
+---
+= 設定效能並確保違規通知
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+支援效能通知、確保違規OnCommand Insight 。根據預設、Insight不會針對這些違規事件傳送通知；您必須設定Insight以傳送電子郵件、傳送系統記錄訊息至系統記錄伺服器、或在發生違規時傳送SNMP通知。
+
+
+
+== 開始之前
+
+您必須已設定電子郵件、系統記錄和SNMP傳送方法、以處理違規事件。
+
+
+
+== 步驟
+
+. 按一下*管理*>*通知*。
+. 按一下「*事件*」。
+. 在「*效能違規事件*」或「*保證違規事件*」區段中、按一下您要的通知方法（*電子郵件*、*系統日誌*或* SNMP *）清單、然後針對違規選取嚴重性等級（*警告及以上*或*嚴重*）。
+. 按一下「 * 儲存 * 」。
+

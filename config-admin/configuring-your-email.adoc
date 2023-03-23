@@ -1,0 +1,14 @@
+---
+permalink: config-admin/configuring-your-email.html 
+sidebar: sidebar 
+keywords:  
+summary: 您必須設定OnCommand Insight 支援以存取電子郵件系統、OnCommand Insight Server才能使用您的電子郵件來傳送報告（您訂閱的報告）、並將疑難排解支援資訊傳送給NetApp技術支援部門。 
+---
+= 設定您的電子郵件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必須設定OnCommand Insight 支援以存取電子郵件系統、OnCommand Insight Server才能使用您的電子郵件來傳送報告（您訂閱的報告）、並將疑難排解支援資訊傳送給NetApp技術支援部門。

@@ -1,0 +1,30 @@
+---
+permalink: dwh/administrative-tasks-you-can-perform-using-data-warehouse.html 
+sidebar: sidebar 
+keywords:  
+summary: 「資料倉儲」是網路型使用者介面、可讓使用者設定及疑難排解「資料倉儲」中的資料、並設定從VMware擷取資料的排程OnCommand Insight OnCommand Insight OnCommand Insight 。 
+---
+= 您可以使用Data倉儲執行的管理工作
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「資料倉儲」是網路型使用者介面、可讓使用者設定及疑難排解「資料倉儲」中的資料、並設定從VMware擷取資料的排程OnCommand Insight OnCommand Insight OnCommand Insight 。
+
+使用Data倉儲入口網站、您可以執行下列管理工作：
+
+* 檢查目前執行中工作或查詢的狀態
+* 管理註釋
+* 設定電子郵件通知
+* 存取及建立自訂報告
+* 檢閱資料倉儲文件與資料庫架構
+* 編輯站台名稱
+* 識別資料倉儲版本和升級歷程記錄
+* 從歷史記錄建立資料倉儲資料
+* 重設資料倉儲資料庫
+* 備份及還原資料倉儲資料庫
+* 疑難排解資料倉儲問題並查看OnCommand Insight 資訊記錄
+* 管理使用者帳戶
+

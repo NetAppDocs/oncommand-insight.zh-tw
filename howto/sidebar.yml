@@ -1,0 +1,235 @@
+---
+section: howto
+title: 使用方法指南
+entries:
+- title: Insight快速入門
+  url: "/howto/getting-started-with-insight.html"
+  entries:
+  - title: 設定通知
+    url: "/howto/setting-up-notifications.html"
+    entries:
+    - title: 設定通知電子郵件
+      url: "/howto/setting-up-email-for-notifications.html"
+    - title: 設定記錄的Syslog
+      url: "/howto/setting-up-syslog-for-notifications.html"
+    - title: 設定SNMP以取得通知
+      url: "/howto/setting-up-snmp-for-notifications.html"
+  - title: 準備資產：註釋
+    url: "/howto/preparing-assets-annotating.html"
+    entries:
+    - title: 為企業建立註釋
+      url: "/howto/assigning-annotations-to-assets.html"
+    - title: 設定資料中心附註
+      url: "/howto/configuring-data-center-annotations.html"
+    - title: 設定層級註釋
+      url: "/howto/configure-tier-annotations.html"
+    - title: 設定服務層級附註
+      url: "/howto/configure-service-level-annotations.html"
+    - title: 設定自訂環境註釋
+      url: "/howto/configure-custom-environment-annotations.html"
+  - title: 尋找資產：查詢
+    url: "/howto/finding-assets-querying.html"
+    entries:
+    - title: 使用查詢為資產加上附註
+      url: "/howto/using-queries-to-annotate-your-assets.html"
+    - title: 查詢及註釋資料中心
+      url: "/howto/querying-and-annotating-data-centers.html"
+    - title: 查詢及註釋階層
+      url: "/howto/querying-and-annotating-tiers.html"
+    - title: 服務層級與環境註釋
+      url: "/howto/service-level-and-environment.html"
+  - title: 您的企業架構：設定企業實體和應用程式
+    url: "/howto/your-corporate-structure-setting-up-business-entities-and-applications.html"
+    entries:
+    - title: 為貴公司設定商業實體
+      url: "/howto/configuring-business-entities-for-your-company.html"
+    - title: 為貴公司設定應用程式
+      url: "/howto/configuring-applications-for-your-company.html"
+  - title: 建立警示效能原則
+    url: "/howto/creating-a-performance-policy-for-alerting.html"
+  - title: 使用儀表板反白顯示資料
+    url: "/howto/viewing-data-on-a-dashboard-how-to.html"
+- title: 建立自訂儀表板
+  url: "/howto/custom-dashboards.html"
+  entries:
+  - title: 自訂儀表板概念
+    url: "/howto/custom-dashboard-concepts.html"
+    entries:
+    - title: 儀表板變數
+      url: "/howto/custom-dashboard-variables.html"
+      entries:
+      - title: 儀表板變數的詳細資訊
+        url: "/howto/more-on-dashboard-variables.html"
+    - title: 顯示小工具圖例
+      url: "/howto/displaying-widget-legends.html"
+    - title: 儀表板Widget查詢與篩選器
+      url: "/howto/custom-dashboard-queries-and-filters.html"
+    - title: 彙總與集合
+      url: "/howto/custom-dashboard-roll-up.html"
+    - title: 在儀表板小工具中顯示上/下結果
+      url: "/howto/custom-dashboard-top-bottom-results.html"
+    - title: 在表格小工具中分組
+      url: "/howto/custom-dashboard-group-by.html"
+      entries:
+      - title: 分組範例（說明彙總）
+        url: "/howto/grouping-example-with-rollup-explained.html"
+    - title: 覆寫個別Widget的儀表板時間
+      url: "/howto/custom-dashboard-override-dashboard-time.html"
+    - title: 主要軸和次要軸說明
+      url: "/howto/primary-and-secondary-axis-explained.html"
+    - title: 儀表板小工具中的運算式
+      url: "/howto/expressions-in-dashboard-widgets.html"
+      entries:
+      - title: 運算式範例：讀取IOPS百分比
+        url: "/howto/expressions-example-read-iops-percentage.html"
+      - title: 運算式範例：「系統」I/O
+        url: "/howto/expressions-example-system-i-o.html"
+  - title: 自訂儀表板：虛擬機器效能
+    url: "/howto/custom-dashboard-vm-performance.html"
+  - title: 儲存節點使用率儀表板範例、其中含有變數
+    url: "/howto/custom-dashboard-example-with-variables.html"
+    entries:
+    - title: 節點儀表板範例Widget設定
+      url: "/howto/node-dashboard-example-widget-settings.html"
+  - title: 儀表板和小工具的最佳實務做法
+    url: "/howto/best-practices-for-dashboards-and-widgets.html"
+    entries:
+    - title: 最佳實務做法：找出正確的指標
+      url: "/howto/finding-the-right-metric.html"
+    - title: 最佳實務做法：找出適當的資產
+      url: "/howto/finding-the-right-assets.html"
+    - title: Scatter繪圖 範例：瞭解您的軸
+      url: "/howto/scatterplot-example-knowing-your-axis.html"
+- title: 建立效能原則
+  url: "/howto/creating-performance-policies.html"
+  entries:
+  - title: 設定效能並確保違規通知
+    url: "/howto/configuring-performance-and-assurance-violation-notifications.html"
+  - title: 監控網路中的違規行為
+    url: "/howto/opening-the-violations-dashboard.html"
+- title: 疑難排解Fibre Channel寬頻點數0錯誤
+  url: "/howto/how-to-troubleshoot-fibre-channel-bb-credit-0-errors.html"
+  entries:
+  - title: 建立連接埠的效能原則和臨界值
+    url: "/howto/creating-performance-policies-and-thresholds-for-ports.html"
+- title: 分析您的基礎架構
+  url: "/howto/analyzing-your-infrastructure.html"
+  entries:
+  - title: 觀察物件隨時間變化的行為
+    url: "/howto/observe-an-objects-behavior-over-time.html"
+  - title: 比較物件與前10大延遲總和、以及所有類似物件的平均延遲
+    url: "/howto/compare-objects-with-the-top-10-latency-total-to-the-average-latency-for-all-like-objects.html"
+  - title: 比較一個物件的延遲總和與前10大物件的延遲總和
+    url: "/howto/compare-one-object-s-latency-total-to-the-latency-total-of-the-top-10-objects.html"
+  - title: 比較指標A與指標B、以顯示類別和異常狀況
+    url: "/howto/compare-metrics-a-against-metrics-b-to-show-categories-and-anomalies.html"
+  - title: 使用運算式來識別替代度量
+    url: "/howto/use-an-expression-to-identify-alternate-metrics.html"
+- title: 精簡配置風險降至最低的簡介
+  url: "/howto/introduction-to-minimizing-risk-in-thin-provisioning.html"
+  entries:
+  - title: 監控儲存資源池
+    url: "/howto/monitoring-the-storage-pool.html"
+  - title: 監控資料存放區
+    url: "/howto/monitoring-the-data-stores.html"
+  - title: 建立儀表板以監控精簡配置的環境
+    url: "/howto/create-dashboards-to-monitor-thin-provisioned-environments.html"
+  - title: 使用效能原則來降低精簡配置的風險
+    url: "/howto/using-performance-policies-to-reduce-risk-in-thin-provisioning.html"
+  - title: 為儲存資源池建立效能原則
+    url: "/howto/creating-policies-and-thresholds-for-storage-pools.html"
+  - title: 建立資料存放區的效能原則
+    url: "/howto/creating-performance-policies-for-datastores.html"
+- title: 收集主機與VM檔案系統使用率資料
+  url: "/howto/host-and-vm-filesystem-utilization.html"
+  entries:
+  - title: 設定Insight以供檔案系統集合使用
+    url: "/howto/configure-insight-for-filesystem-collection.html"
+  - title: 檔案系統計費與報告
+    url: "/howto/file-system-utilization-chargeback.html"
+- title: 設定系統以報告計費資料
+  url: "/howto/introduction-to-configuring-your-system-for-chargeback.html"
+  entries:
+  - title: 定義附註以搭配計費使用
+    url: "/howto/defining-annotations.html"
+  - title: 定義與計費搭配使用的應用程式
+    url: "/howto/defining-applications-how-to-chargeback.html"
+  - title: 將應用程式指派給資產
+    url: "/howto/assigning-application-to-assets-how-to-chargeback.html"
+    entries:
+    - title: 使用臨機操作方法將應用程式指派給資產
+      url: "/howto/assigning-applications-using-an-ad-hoc-method.html"
+    - title: 使用查詢將應用程式指派給資產
+      url: "/howto/assigning-applications-using-a-query.html"
+  - title: 建立簡單的計費報告
+    url: "/howto/creating-a-simple-chargeback-report.html"
+- title: 確保IO密度報告僅說明內部資料磁碟區
+  url: "/howto/introduction-to-root-volume-isolation.html"
+  entries:
+  - title: 建立查詢以識別您環境中的NetApp根集合體
+    url: "/howto/creating-a-query-to-identify-netapp-root-aggregates.html"
+  - title: 為查詢傳回的根磁碟區建立附註
+    url: "/howto/create-an-annotation-for-the-root-volumes-returned-by-your-queries.html"
+  - title: 建立註釋規則、將特定Aggregate排除在I/O密度報告之外、予以自動化
+    url: "/howto/create-an-annotation-rule-to-automate-excluding-specific-aggregates-from-your-query.html"
+- title: 收集整合資料
+  url: "/howto/collecting-integration-data.html"
+  entries:
+  - title: 收集SNMP整合資料
+    url: "/howto/collecting-snmp-integration-data.html"
+    entries:
+    - title: 匯入SNMP整合套件
+      url: "/howto/importing-snmp-integration-data.html"
+    - title: 建立SNMP整合資料來源
+      url: "/howto/adding-the-snmp-integration-data-source.html"
+    - title: Integration。json檔案資訊
+      url: "/howto/integration-code-sample.html"
+- title: 分析應用程式效能問題
+  url: "/howto/analyzing-an-application-performance-problem.html"
+  entries:
+  - title: 檢查內部磁碟區
+    url: "/howto/examining-the-internal-volume.html"
+  - title: 檢查資源的貪度
+    url: "/howto/examining-the-greedy-resource.html"
+  - title: 檢查儲存資源池
+    url: "/howto/examining-the-details-of-the-storage-pool.html"
+  - title: 檢查磁碟區
+    url: "/howto/examining-the-server-volume.html"
+  - title: 檢查VM
+    url: "/howto/examining-the-vm.html"
+- title: 收集和報告AWS帳單資料
+  url: "/howto/collecting-aws-billing-data.html"
+  entries:
+  - title: 準備AWS進行Insight資料收集
+    url: "/howto/preparing-aws-for-insight-collection.html"
+  - title: 設定AWS Cloud成本資料來源
+    url: "/howto/configuring-the-aws-cloud-cost-data-source.html"
+  - title: 在Insight中處理AWS雲端成本資料
+    url: "/howto/processing-cloud-cost-data-in-insight.html"
+  - title: 在Insight中報告雲端成本資料
+    url: "/howto/reporting-on-cloud-cost-data-task.html"
+- title: 與ServiceNow整合
+  url: "/howto/integrating-with-servicenow.html"
+  entries:
+  - title: 立即服務整合的準備與先決條件
+    url: "/howto/preparation-and-prerequisites-for-servicenow-integration.html"
+    entries:
+    - title: 正在下載ServiceNow Python連接器
+      url: "/howto/downloading-the-servicenow-connector.html"
+  - title: 設定ServiceNow以進行整合
+    url: "/howto/configuring-servicenow-for-integration.html"
+    entries:
+    - title: 提升角色
+      url: "/howto/servicenow-integration-elevate-role.html"
+    - title: 安裝更新集
+      url: "/howto/servicenow-integration-install-update-set.html"
+    - title: ServiceNow整合-設定使用者
+      url: "/howto/servicenow-integration-set-up-user.html"
+    - title: 安裝Python和程式庫
+      url: "/howto/servicenow-integration-install-python-and-libraries.html"
+    - title: 設定Python中介軟體
+      url: "/howto/servicenow-integration-python-middleware-setup.html"
+    - title: 正在同步連接器
+      url: "/howto/servicenow-integration-syncing-the-connector.html"
+    - title: 排程每日同步
+      url: "/howto/servicenow-integration-scheduling-daily-sync.html"

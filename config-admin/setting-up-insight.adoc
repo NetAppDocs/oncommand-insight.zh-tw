@@ -1,0 +1,25 @@
+---
+permalink: config-admin/setting-up-insight.html 
+sidebar: sidebar 
+keywords:  
+summary: 若要設定Insight、您必須啟動Insight授權、設定資料來源、定義使用者和通知、啟用備份、以及執行任何必要的進階組態步驟。 
+---
+= 設定Insight
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+若要設定Insight、您必須啟動Insight授權、設定資料來源、定義使用者和通知、啟用備份、以及執行任何必要的進階組態步驟。
+
+安裝完這個系統後、您必須執行下列設定工作OnCommand Insight ：
+
+* 安裝Insight授權。
+* 在Insight中設定您的資料來源。
+* 設定使用者帳戶。
+* 設定您的電子郵件。
+* 視需要定義SNMP、電子郵件或系統記錄通知。
+* 啟用Insight資料庫的每週自動備份。
+* 執行任何必要的進階組態步驟、包括定義註釋和臨界值。
+

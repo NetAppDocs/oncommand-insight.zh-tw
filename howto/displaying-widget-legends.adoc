@@ -1,0 +1,24 @@
+---
+permalink: howto/displaying-widget-legends.html 
+sidebar: sidebar 
+keywords:  
+summary: 儀表板中的小工具可以顯示或不顯示圖例。 
+---
+= 顯示小工具圖例
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+儀表板中的小工具可以顯示或不顯示圖例。
+
+小工具中的圖例可透過以下兩種方法之一在儀表板上開啟或關閉：
+
+. 建立或編輯小工具本身時、請勾選「圖例」核取方塊、然後儲存小工具。
+. 在儀表板處於編輯模式時、按一下小工具上的「選項」按鈕、然後核取功能表中的「圖例」核取方塊。
+
+
+當您編輯及變更Widget中顯示的資料時、該Widget的圖例會動態更新。
+
+顯示圖例時、如果可以瀏覽圖例所示資產的登陸頁面、則圖例會顯示為該資產頁面的連結。

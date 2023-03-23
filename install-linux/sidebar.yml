@@ -1,0 +1,99 @@
+---
+section: install-linux
+title: Linux安裝
+entries:
+- title: 安裝先決條件
+  url: "/install-linux/installation-prerequisites.html"
+  entries:
+  - title: 規劃部署
+    url: "/install-linux/planning-the-installation.html"
+    entries:
+    - title: 資料來源支援資訊
+      url: "/install-linux/data-source-support-information.html"
+    - title: 裝置識別與資料來源規劃
+      url: "/install-linux/device-identification-and-data-source-planning.html"
+    - title: 網路流量是OnCommand Insight 由功能不整的
+      url: "/install-linux/network-traffic-generated-by-oncommand-insight.html"
+  - title: 正在解除安裝MariaDB
+    url: "/install-linux/uninstalling-mariadb.html"
+  - title: Insight伺服器需求
+    url: "/install-linux/insight-server-requirements.html"
+  - title: 資料倉儲伺服器需求
+    url: "/install-linux/data-warehouse-server-requirements-linux.html"
+  - title: 遠端擷取單元伺服器需求
+    url: "/install-linux/remote-acquisition-unit-server-requirements.html"
+  - title: 異常偵測需求
+    url: "/install-linux/anomaly-detection-requirements.html"
+  - title: Insight Java UI需求
+    url: "/install-linux/insight-java-ui-requirements.html"
+  - title: 支援的瀏覽器OnCommand Insight
+    url: "/install-linux/insight-browser-support.html"
+- title: Insight安裝說明
+  url: "/install-linux/oncommand-insight-installation-instructions.html"
+  entries:
+  - title: 正在下載OnCommand Insight 此安裝程式
+    url: "/install-linux/downloading-the-oncommand-insight-installer.html"
+  - title: 安裝OnCommand Insight The功能
+    url: "/install-linux/installing-the-oncommand-insight-server-linux.html"
+  - title: 安裝OnCommand Insight 支援資料倉儲
+    url: "/install-linux/installing-oncommand-insight-data-warehouse-linux.html"
+  - title: 安裝遠端擷取單元
+    url: "/install-linux/installing-a-remote-acquisition-unit-rau-linux.html"
+    entries:
+    - title: 驗證遠端擷取單元安裝
+      url: "/install-linux/validating-the-rau-installation.html"
+  - title: 安裝異常偵測軟體
+    url: "/install-linux/installing-the-anomaly-detection-software.html"
+  - title: 安裝乙太網路監控單元
+    url: "/install-linux/installing-an-ethernet-monitoring-unit-linux.html"
+  - title: 檢查安裝
+    url: "/install-linux/checking-the-installation.html"
+    entries:
+    - title: 確認已安裝新的Insight元件
+      url: "/install-linux/verifying-new-insight-services-linux.html"
+    - title: Insight記錄
+      url: "/install-linux/insight-logs.html"
+    - title: 存取Web UI
+      url: "/install-linux/opening-insight.html"
+    - title: 安裝Insight授權
+      url: "/install-linux/installing-your-insight-licenses.html"
+      entries:
+      - title: 不需要授權OnCommand Insight
+        url: "/install-linux/oncommand-insight-licenses.html"
+  - title: 疑難排解安裝
+    url: "/install-linux/troubleshooting-installations.html"
+    entries:
+    - title: 遺失授權
+      url: "/install-linux/missing-licenses.html"
+    - title: 提交線上技術支援要求
+      url: "/install-linux/submitting-an-online-technical-support-request.html"
+- title: 升級Insight
+  url: "/install-linux/upgrading-insight-linux.html"
+  entries:
+  - title: 將Insight升級至7.3.12版或更新版本- Linux
+    url: "/install-linux/upgrading-insight-to-version-7-3-12-or-later-linux.html"
+  - title: 升級Insight Server軟體
+    url: "/install-linux/upgrading-insight-server-software.html"
+  - title: 升級Data倉儲軟體
+    url: "/install-linux/upgrading-data-warehouse.html"
+  - title: 升級遠端擷取單元軟體
+    url: "/install-linux/upgrading-remote-acquisition-units.html"
+  - title: 升級異常偵測引擎
+    url: "/install-linux/upgrading-the-anomaly-detection-engine.html"
+  - title: 升級乙太網路監控單元軟體
+    url: "/install-linux/upgrading-ethernet-monitoring-units.html"
+  - title: 從Windows移轉至Linux
+    url: "/install-linux/migrating-from-windows-to-linux.html"
+- title: 解除安裝OnCommand Insight
+  url: "/install-linux/uninstalling-oncommand-insight.html"
+  entries:
+  - title: 解除安裝OnCommand Insight The Un
+    url: "/install-linux/uninstalling-insight.html"
+  - title: 正在解除安裝Data倉儲
+    url: "/install-linux/uninstalling-data-warehouse.html"
+  - title: 解除安裝遠端擷取單元
+    url: "/install-linux/uninstalling-a-remote-acquisition-unit-rau.html"
+  - title: 解除安裝乙太網路監控單元
+    url: "/install-linux/uninstalling-an-ethernet-monitoring-unit-emu-linux.html"
+  - title: 解除安裝異常偵測引擎
+    url: "/install-linux/uninstalling-the-anomaly-detection-engine-linux.html"

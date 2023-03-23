@@ -1,0 +1,43 @@
+---
+permalink: install-windows/verifying-new-oncommand-insight-services.html 
+sidebar: sidebar 
+keywords:  
+summary: 成功安裝之後、您應該確認Insight元件的服務正在伺服器上運作。 
+---
+= 驗證新的Insight服務
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+成功安裝之後、您應該確認Insight元件的服務正在伺服器上運作。
+
+
+
+== 步驟
+
+. 若要顯示目前運作的服務清單：
++
+.. 單擊* Start*（開始）按鈕。
+.. 按一下「*執行*」。
+.. 輸入下列項目：
++
+`cmd`
+
+.. 按Enter。
+.. 在*命令提示字元*視窗中輸入下列命令：
++
+`net start`
+
+
+
+. 請在清單中查看下列Insight服務：
++
+** *《伺服器*》SANscreen
+** * SANscreen 《Accq*》（擷取程序）
+** * MySQL*（Insight SQL資料庫）
+** * Elasticsearch*（Data store for Insight data）如果清單中未顯示這些服務、請聯絡技術支援部門。
+
+
+

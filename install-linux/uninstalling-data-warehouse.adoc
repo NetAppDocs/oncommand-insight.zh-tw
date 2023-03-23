@@ -1,0 +1,36 @@
+---
+permalink: install-linux/uninstalling-data-warehouse.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以視需要解除安裝Data倉儲。 
+---
+= 正在解除安裝Data倉儲
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以視需要解除安裝Data倉儲。
+
+
+
+== 開始之前
+
+備份OnCommand Insight 目前版本的《The》（DWH）資料倉儲（DWH）資料庫。
+
+
+
+== 關於這項工作
+
+解除安裝OnCommand Insight 《The UnstoreData倉儲（資料倉儲）」會永久刪除所有先前收集的資料。
+
+
+
+== 步驟
+
+. 使用具有Sudo權限的帳戶登入資料倉儲伺服器。
+. 確保所有OnCommand Insight 的窗口都已關閉。
+. 您可以檢視的語法、命令引數及參數使用量 `uninstall.sh` 輸入下列命令： `sudo /usr/bin/oci-uninstall.sh --help`
+. 輸入下列命令： `sudo /usr/bin/oci-uninstall.sh`
+

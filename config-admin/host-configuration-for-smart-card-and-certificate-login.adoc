@@ -1,0 +1,87 @@
+---
+permalink: config-admin/host-configuration-for-smart-card-and-certificate-login.html 
+sidebar: sidebar 
+keywords:  
+summary: 您必須修改OnCommand Insight 支援Smart Card（CAC）和憑證登入的整套主機組態。 
+---
+= 設定主機以進行智慧卡和憑證登入
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必須修改OnCommand Insight 支援Smart Card（CAC）和憑證登入的整套主機組態。
+
+
+
+== 開始之前
+
+* 必須在系統上啟用LDAP。
+* LDAP `User principal account name` 屬性必須符合包含使用者ID的LDAP欄位。
+
+
+[NOTE]
+====
+如需最新的CAC和憑證指示、請參閱下列知識庫文章（需要支援登入）：
+
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Infrastructure_Management/OnCommand_Suite/How_to_configure_Common_Access_Card_(CAC)_authentication_for_NetApp_OnCommand_Insight["如何設定OnCommand Insight 通用存取卡（CAC）驗證以供使用"]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Infrastructure_Management/OnCommand_Suite/How_to_configure_Common_Access_Card_(CAC)_authentication_for_NetApp_OnCommand_Insight_DataWarehouse["如何設定OnCommand Insight 適用於《支援不支援資料倉儲》的通用存取卡（CAC）驗證"]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Infrastructure_Management/OnCommand_Suite/How_to_create_and_import_a_Certificate_Authority_(CA)_signed_certificate_into_OCI_and_DWH_7.3.X["如何建立及匯入已簽署的憑證授權單位（CA）憑證至OnComand Insight及OnCommand Insight 《Data Warehouse 7.3.x》"]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Infrastructure_Management/OnCommand_Suite/How_to_create_a_Self_Signed_Certificate_within_OnCommand_Insight_7.3.X_installed_on_a_Windows_Host["如何在OnCommand Insight 安裝在Windows主機上的Se.7.3.x內建立自我簽署的憑證"]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Infrastructure_Management/OnCommand_Suite/How_to_import_a_Cognos_Certificate_Authority_(CA)_signed_certificate_into_DWH_7.3.3_and_later["如何將Cognos憑證授權單位（CA）簽署的憑證匯入OnCommand 到EWdatawarehouse 7.3.3及更新版本"]
+
+
+====
+
+
+== 步驟
+
+. 使用 `regedit` 用於修改中登錄值的公用程式 `HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Apache Software Foundation\Procrun2.0\SANscreen Server\Parameters\Java`：
++
+.. 變更JVM_Option `DclientAuth=false` 至 `DclientAuth=true.`
+
+
+. 備份Keystore檔案： `C:\Program Files\SANscreen\wildfly\standalone\configuration\server.keystore`
+. 開啟命令提示字元以指定 `Run as administrator`
+. 刪除自行產生的憑證： `C:\Program Files\SANscreen\java64\bin\keytool.exe -delete -alias "ssl certificate" -keystore C:\Program Files\SANscreen\wildfly\standalone\configuration\server.keystore`
+. 產生新的憑證： `C:\Program Files\SANscreen\java64\bin\keytool.exe -genkey -alias "alias_name" -keyalg RSA -sigalg SHA1withRSA -keysize 2048 -validity 365 -keystore "C:\Program Files\SANscreen\wildfly\standalone\configuration\server.keystore" -dname "CN=commonName,OU=orgUnit,O=orgName,L=localityNameI,S=stateName,C=countryName"`
+. 產生憑證簽署要求（CSR）： `C:\Program Files\SANscreen\java64\bin\keytool.exe -certreq -sigalg SHA1withRSA -alias "alias_name" -keystore "C:\Program Files\SANscreen\wildfly\standalone\configuration\server.keystore" -file C:\temp\server.csr"`
+. 在步驟6中傳回CSR之後、匯入憑證、然後以Base -64格式匯出憑證、並將其放入其中 `"C:\temp" named servername.cer`。
+. 從Keystore擷取憑證：``C:\Program Files\SANscreen\java64\bin\keytool.exe -v -importkeystore -srckeystore "C:\Program Files\SANscreen\wildfly\standalone\configuration\server.keystore" -srcalias "alias_name" -destkeystore "C:\temp\file.p12" -deststoretype PKCS12``
+. 從p12檔案擷取私密金鑰： `openssl pkcs12 -in "C:\temp\file.p12" -out "C:\temp\servername.private.pem"`
+. 將您在步驟7中匯出的Base 64憑證與私密金鑰合併： `openssl pkcs12 -export -in "<folder>\<certificate>.cer" -inkey "C:\temp\servername.private.pem" -out "C:\temp\servername.new.p12" -name "servername.abc.123.yyy.zzz"`
+. 將合併的憑證匯入Keystore： `C:\Program Files\SANscreen\java64\bin\keytool.exe -importcert -destkeystore "C:\Program Files\SANscreen\wildfly\standalone\configuration\server.keystore" -srckeystore "C:\temp\servername.new.p12" -srcstoretype PKCS12 -alias "alias_name"`
+. 匯入根憑證： `C:\Program Files\SANscreen\java64\bin\keytool.exe -importcert -keystore "C:\Program Files\SANscreen\wildfly\standalone\configuration\server.keystore" -file "C:\<root_certificate>.cer" -trustcacerts -alias "alias_name"`
+. 將根憑證匯入server.trustore： `C:\Program Files\SANscreen\java64\bin\keytool.exe -importcert -keystore "C:\Program Files\SANscreen\wildfly\standalone\configuration\server.trustore" -file "C:\<email_certificate>.cer" -trustcacerts -alias "alias_name"`
+. 匯入中繼憑證： `C:\Program Files\SANscreen\java64\bin\keytool.exe -importcert -keystore "C:\Program Files\SANscreen\wildfly\standalone\configuration\server.trustore" -file "C:\<intermediate_certificate>.cer" -trustcacerts -alias "alias_name"`
++
+對所有中繼憑證重複此步驟。
+
+. 在LDAP中指定與此範例相符的網域。
+. 在伺服器上OnCommand Insight `wildfly/standalone/configuration/standalone-full.xml` 檔案必須透過將驗證用戶端更新為中的「要求的」來修改 ``/subsystem=undertow/server=default-server/https-listener=default-https``以啟用CAC。執行適當的命令：
++
+|===
+
+
+| 作業系統 | 指令碼 
+
+
+ a| 
+Windows
+ a| 
+wildfly \bin\enableCACforRemoteEJB.bat <install dir>
+
+
+
+ a| 
+Linux
+ a| 
+/opp/NetApp/OCI /萬用里/賓/ enableCACforRemoteEJB.sh
+
+|===
++
+執行指令碼之後、請等到重新載入wildfly伺服器完成之後、再繼續下一步。
+
+. 重新啟動伺服器。
+

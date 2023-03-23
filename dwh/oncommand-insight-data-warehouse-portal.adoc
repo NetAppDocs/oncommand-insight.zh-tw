@@ -1,0 +1,32 @@
+---
+permalink: dwh/oncommand-insight-data-warehouse-portal.html 
+sidebar: sidebar 
+keywords:  
+summary: Data倉儲入口網站是網路型使用者介面、可用來設定選項、並設定固定的排程來擷取資料。您也可以從Data倉儲入口網站存取OnCommand Insight 《關於資料的報告》入口網站。 
+---
+= 您可以使用Data倉儲入口網站執行什麼操作
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Data倉儲入口網站是網路型使用者介面、可用來設定選項、並設定固定的排程來擷取資料。您也可以從Data倉儲入口網站存取OnCommand Insight 《關於資料的報告》入口網站。
+
+使用Data倉儲入口網站、您可以執行下列動作：
+
+* 存取OnCommand Insight 《The》報告入口網站、以檢視預先設計的報告、或使用報告撰寫工具建立自訂報告。
+* 整合多OnCommand Insight 個支援資料庫。
+* 管理OnCommand Insight 與伺服器的連線。
+* 檢查目前執行中工作或查詢的狀態。
+* 排程資料倉儲建置。
+* 編輯站台名稱。
+* 檢視資料倉儲版本與升級歷程記錄、包括模組版本、站台及授權等特定資訊。
+* 匯入註釋。
+* 根據歷史記錄設定建置。
+* 檢視資料倉儲文件和資料庫架構。
+* 重設資料倉儲資料庫。
+* 備份及還原資料倉儲資料庫。
+* 疑難排解資料倉儲問題。
+* 管理使用者帳戶。
+

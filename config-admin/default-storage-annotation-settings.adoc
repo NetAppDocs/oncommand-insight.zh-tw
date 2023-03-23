@@ -1,0 +1,28 @@
+---
+permalink: config-admin/default-storage-annotation-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: 為了加速將儲存附註指派給資源、OnCommand Insight 包含21項預設附註規則、可將層級與儲存層模式建立關聯。在您的環境中擷取資產時、所有的儲存資源都會自動與某個層級建立關聯。 
+---
+= 預設儲存附註規則
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+為了加速將儲存附註指派給資源、OnCommand Insight 包含21項預設附註規則、可將層級與儲存層模式建立關聯。在您的環境中擷取資產時、所有的儲存資源都會自動與某個層級建立關聯。
+
+預設的附註規則會以下列方式套用階層附註：
+
+* 第1層、儲存品質層
++
+第1層註釋適用於下列廠商及其指定系列：EMC（Symmetrix）、HDS（HDS9500V、HDS9900V、HDS9900V、R600、 R700、USP r、USP V）、IBM（DS8000）、NetApp（FAS6000或FAS6200）及Violin（記憶體）。
+
+* 第2層、儲存品質層
++
+第2層註釋適用於下列廠商及其指定系列：HP（3PAR StoreServ或Eva）、EMC（CLARiiON）、HDS（AMS或D800）、IBM（XIV）及NetApp（FAS3000、FAS3100及FAS3200）。
+
+
+
+您可以編輯這些規則的預設設定、以符合您的層級要求、也可以在不需要時移除這些設定。

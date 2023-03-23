@@ -1,0 +1,62 @@
+---
+permalink: config-admin/ibm-totalstorage-ds4000-data-source.html 
+sidebar: sidebar 
+keywords:  
+summary: 此資料來源會收集庫存和效能資訊。有兩種可能的組態（韌體6.x和7.x+）、兩者都有相同的值。API會收集Volume資料統計資料。 
+---
+= IBM TotalStorage DS4000資料來源
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+此資料來源會收集庫存和效能資訊。有兩種可能的組態（韌體6.x和7.x+）、兩者都有相同的值。API會收集Volume資料統計資料。
+
+
+
+== 組態
+
+|===
+
+
+| *欄位* | *說明* 
+
+
+ a| 
+以逗號分隔的陣列SANtricity 資訊控制器IP清單
+ a| 
+控制器的IP位址或完整網域名稱、以逗號分隔
+
+|===
+
+
+== 需求
+
+* 每個DS5或FAStT陣列的IP位址
+* 存取驗證：Ping每個陣列上兩個控制器的IP位址。
+
+
+
+
+== 進階組態
+
+|===
+
+
+| *欄位* | *說明* 
+
+
+ a| 
+庫存輪詢時間間隔（分鐘）
+ a| 
+庫存輪詢之間的時間間隔（預設為30分鐘）
+
+
+
+ a| 
+效能意見調查時間間隔（最多3、600秒）
+ a| 
+效能輪詢之間的時間間隔（預設為300秒）
+
+|===

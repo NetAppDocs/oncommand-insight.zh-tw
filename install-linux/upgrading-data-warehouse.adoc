@@ -1,0 +1,38 @@
+---
+permalink: install-linux/upgrading-data-warehouse.html 
+sidebar: sidebar 
+keywords:  
+summary: 升級Insight伺服器軟體之後、您必須升級資料倉儲軟體。 
+---
+= 升級Data倉儲軟體
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+升級Insight伺服器軟體之後、您必須升級資料倉儲軟體。
+
+
+
+== 步驟
+
+. 使用具有Sudo權限的帳戶登入資料倉儲（DWH）伺服器。
+. 從NetApp 支援網站 The停止下載Insight DWH軟體。
+. 瀏覽至下載目錄、然後輸入下列命令：
++
+`unzip oci-dwh-<version>-linux-x86_64.zip`
+
++
+請確定安裝檔案的版本編號正確無誤。
+
+. 您可以檢視的語法、命令引數及參數使用量 `oci-install.sh` ：
++
+`sudo ./oci-dwh-<version>-linux-x86_64/oci-install.sh --help`
+
+. 執行安裝指令碼：
++
+`sudo ./oci-dwh-<version>-linux-x86_64/oci-install.sh`
+
+. 接受授權合約、並依照提示進行。
+

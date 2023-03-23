@@ -1,0 +1,40 @@
+---
+permalink: howto/create-an-annotation-rule-to-automate-excluding-specific-aggregates-from-your-query.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用註釋規則、自動將註釋套用至多個資產、作為手動套用註釋至個別資產的替代方法。附註規則是根據您建立的查詢而定、當在系統上執行時、會將新資產新增至現有的資產集。當這些資產集合從報告中排除時、新資產也會自動排除在外。 
+---
+= 建立註釋規則、將特定Aggregate排除在I/O密度報告之外、予以自動化
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用註釋規則、自動將註釋套用至多個資產、作為手動套用註釋至個別資產的替代方法。附註規則是根據您建立的查詢而定、當在系統上執行時、會將新資產新增至現有的資產集。當這些資產集合從報告中排除時、新資產也會自動排除在外。
+
+
+
+== 開始之前
+
+您必須建立並儲存查詢、以識別您在環境中識別的NetApp根集合體。
+
+
+
+== 步驟
+
+. 登入OnCommand Insight 到The W不明 網路UI。
+. 按一下「*管理*>*註釋規則*」
+. 按一下「*新增*」
++
+此時會顯示「新增規則」對話方塊。
+
+. 請執行下列動作：
++
+.. 在名稱方塊中、輸入描述規則的唯一名稱：「'RootAggrExclude'」
+.. 按一下「查詢」、然後選取Insight應使用的查詢、將註釋規則套用至：「」Aggregate0'
+.. 按一下「註釋」、然後選取「root agg exclude」
+.. 按一下「Value（值）」並輸入「True
+
+
+

@@ -1,0 +1,33 @@
+---
+permalink: config-admin/updating-expired-licenses.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果一個或多個Insight授權過期、您可以使用與原先安裝授權相同的程序來快速更新授權。 
+---
+= 正在更新過期的授權
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果一個或多個Insight授權過期、您可以使用與原先安裝授權相同的程序來快速更新授權。
+
+
+
+== 步驟
+
+. 在文字編輯器（例如「記事本」）中、開啟您從NetApp Support收到的新授權檔案、然後將授權金鑰文字複製到Windows剪貼簿。
+. 在OnCommand Insight 瀏覽器中開啟
+. 按一下工具列上的*管理*。
+. 按一下*設定*。
+. 按一下「*授權*」索引標籤。
+. 按一下 * 更新授權 * 。
+. 將授權金鑰文字複製到*授權*文字方塊中。
+. 選取*更新（最常見）*作業。
++
+此作業會將您的新授權新增至任何目前使用中的Insight授權。
+
+. 按一下「 * 儲存 * 」。
+. 如果您使用的是Insight Consumption授權模式、則必須勾選「使用率」區段中的「*啟用傳送使用資訊給NetApp*」方塊。您的環境必須正確設定並啟用Proxy。
+

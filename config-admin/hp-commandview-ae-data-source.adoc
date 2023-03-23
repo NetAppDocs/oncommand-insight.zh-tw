@@ -1,0 +1,277 @@
+---
+permalink: config-admin/hp-commandview-ae-data-source.html 
+sidebar: sidebar 
+keywords:  
+summary: HP CommandView Advanced Edition（AE）和CommandView AE CLI/SMI（AE Lit\）資料來源可從CommandView（也稱為「1TB」）Device Manager伺服器支援庫存和效能。 
+---
+= HP CommandView AE資料來源
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+HP CommandView Advanced Edition（AE）和CommandView AE CLI/SMI（AE精簡版）資料來源可從CommandView（又稱為「1TB」）Device Manager伺服器支援庫存和效能。
+
+
+
+== 術語
+
+從HP CommandView AE和AE精簡版資料來源取得下列庫存資訊OnCommand Insight 。對於Insight取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料來源時、請謹記下列術語：
+
+|===
+
+
+| 廠商/模型術語 | Insight術語 
+
+
+ a| 
+PDEV
+ a| 
+磁碟
+
+
+
+ a| 
+日誌集區
+ a| 
+磁碟群組
+
+
+
+ a| 
+儲存陣列
+ a| 
+儲存設備
+
+
+
+ a| 
+連接埠控制器
+ a| 
+儲存節點
+
+
+
+ a| 
+Array Group、DP Pool
+ a| 
+儲存資源池
+
+
+
+ a| 
+邏輯單元、LDEV
+ a| 
+Volume
+
+|===
+[NOTE]
+====
+這些只是通用的術語對應、可能不代表此資料來源的每個案例。
+
+====
+
+
+== 庫存需求
+
+* Hndvice Manager伺服器的IP位址
+* CommandView AE軟體和對等權限的唯讀使用者名稱和密碼
+* 設備管理程式的CommandView AE精簡版只有CLI授權
+* 連接埠需求：2001年
+
+
+
+
+== 效能要求
+
+* HDS USP、USP V和VSP效能
++
+** 效能監視器必須獲得授權。
+** 必須啟用監控交換器。
+** 匯出工具 (`Export.exe`）必須複製到OnCommand Insight The樣部伺服器。
+** 匯出工具版本必須符合目標陣列的微碼版本。
+
+
+* HDS AMS效能
++
+** 效能監視器必須獲得授權。
+** 儲存導覽器模組2（SNM2）CLI公用程式需要安裝在OnCommand Insight SView Server上。
+** 您必須使用OnCommand Insight 下列命令、登錄所有需要由VMware取得效能的AMS、wms、SMS儲存陣列：
++
+
+
+** 您必須確保您註冊的所有陣列都列在此命令的輸出中： `auunitref.exe`。
+
+
+
+
+
+
+== 組態
+
+|===
+
+
+| *欄位* | *說明* 
+
+
+ a| 
+和服務器
+ a| 
+Hndvice Manager伺服器的IP位址或完整網域名稱
+
+
+
+ a| 
+使用者名稱
+ a| 
+使用者名稱。
+
+
+
+ a| 
+密碼
+ a| 
+用於HiCommand Device Manager伺服器的密碼。
+
+
+
+ a| 
+裝置：USP、USP V、VSP/R600儲存
+ a| 
+VSP G1000（R800）、VSP（R700）、Hus VM（HM700）和USP儲存設備清單。每個儲存設備都需要：
+
+* 陣列的IP：儲存設備的IP位址
+* 使用者名稱：儲存設備的使用者名稱
+* 密碼：儲存設備的密碼
+* 包含匯出公用程式Jar檔案的資料夾：包含匯出公用程式的資料夾 `.jar` 檔案
+
+
+
+
+ a| 
+SNM2Device - WMS/SMS/AMS儲存
+ a| 
+WMS/SMS/AMS儲存設備清單。每個儲存設備都需要：
+
+* 陣列的IP：儲存設備的IP位址
+* Storage Navigator CLI路徑：SNM2 CLI路徑
+* 帳戶驗證有效：選取以選擇有效的帳戶驗證
+* 使用者名稱：儲存設備的使用者名稱
+* 密碼：儲存設備的密碼
+
+
+
+
+ a| 
+選擇「效能調校管理程式」
+ a| 
+選擇「調校管理程式」以獲得效能、並覆寫其他效能選項
+
+
+
+ a| 
+調校管理程式主機
+ a| 
+調整管理程式的IP位址或完整網域名稱
+
+
+
+ a| 
+調校管理器連接埠
+ a| 
+用於調整管理程式的連接埠
+
+
+
+ a| 
+調校管理程式使用者名稱
+ a| 
+調整管理程式的使用者名稱
+
+
+
+ a| 
+調校管理員密碼
+ a| 
+調整管理程式的密碼
+
+|===
+[NOTE]
+====
+在HDS USP、USP V和VSP中、任何磁碟都可以屬於多個陣列群組。
+
+====
+
+
+== 進階組態
+
+|===
+
+
+| 欄位 | 說明 
+
+
+ a| 
+Hndl伺服器連接埠
+ a| 
+用於「HiCommand Device Manager」的連接埠
+
+
+
+ a| 
+HTTPS已啟用
+ a| 
+選取以啟用HTTPS
+
+
+
+ a| 
+庫存輪詢時間間隔（分鐘）
+ a| 
+庫存輪詢之間的時間間隔（預設為40分鐘）
+
+
+
+ a| 
+選擇「排除」或「包含」以指定清單
+ a| 
+指定在收集資料時是否要納入或排除下列陣列清單
+
+
+
+ a| 
+排除或包含裝置
+ a| 
+要包含或排除的裝置ID或陣列名稱清單、以逗號分隔
+
+
+
+ a| 
+查詢主機管理程式
+ a| 
+選取以查詢主機管理程式
+
+
+
+ a| 
+HTTP逾時（秒）
+ a| 
+HTTP連線逾時（預設為60秒）
+
+
+
+ a| 
+效能輪詢時間間隔（秒）
+ a| 
+效能輪詢之間的時間間隔（預設為300秒）
+
+
+
+ a| 
+匯出逾時（以秒為單位）
+ a| 
+匯出公用程式逾時（預設為300秒）
+
+|===

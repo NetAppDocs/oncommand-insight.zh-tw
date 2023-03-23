@@ -1,0 +1,118 @@
+---
+permalink: config-admin/importing-ca-signed-ssl-certificates-for-cognos-and-dwh-insight-7-3-10-and-later.html 
+sidebar: sidebar 
+keywords: CAC,Cognos 11,SSL certificates 
+summary: 您可以新增SSL憑證、為Data倉儲和Cognos環境啟用增強的驗證和加密功能。 
+---
+= 匯入Cognos和DWH的CA簽署SSL憑證（Insight 7.3.10及更新版本）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以新增SSL憑證、為Data倉儲和Cognos環境啟用增強的驗證和加密功能。
+
+
+
+== 開始之前
+
+此程序適用於執行OnCommand Insight 支援更新版本的系統。
+
+[NOTE]
+====
+如需最新的CAC和憑證指示、請參閱下列知識庫文章（需要支援登入）：
+
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Infrastructure_Management/OnCommand_Suite/How_to_configure_Common_Access_Card_(CAC)_authentication_for_NetApp_OnCommand_Insight["如何設定OnCommand Insight 通用存取卡（CAC）驗證以供使用"]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Infrastructure_Management/OnCommand_Suite/How_to_configure_Common_Access_Card_(CAC)_authentication_for_NetApp_OnCommand_Insight_DataWarehouse["如何設定OnCommand Insight 適用於《支援不支援資料倉儲》的通用存取卡（CAC）驗證"]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Infrastructure_Management/OnCommand_Suite/How_to_create_and_import_a_Certificate_Authority_(CA)_signed_certificate_into_OCI_and_DWH_7.3.X["如何建立及匯入已簽署的憑證授權單位（CA）憑證至OnComand Insight及OnCommand Insight 《Data Warehouse 7.3.x》"]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Infrastructure_Management/OnCommand_Suite/How_to_create_a_Self_Signed_Certificate_within_OnCommand_Insight_7.3.X_installed_on_a_Windows_Host["如何在OnCommand Insight 安裝在Windows主機上的Se.7.3.x內建立自我簽署的憑證"]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Infrastructure_Management/OnCommand_Suite/How_to_import_a_Cognos_Certificate_Authority_(CA)_signed_certificate_into_DWH_7.3.3_and_later["如何將Cognos憑證授權單位（CA）簽署的憑證匯入OnCommand 到EWdatawarehouse 7.3.3及更新版本"]
+
+
+====
+
+
+== 關於這項工作
+
+您必須擁有管理權限才能執行此程序。
+
+
+
+== 步驟
+
+. 使用IBM Cognos組態工具來停止Cognos。關閉Cognos。
+. 建立的備份 `..\SANScreen\cognos\analytics\configuration` 和 `..\SANScreen\cognos\analytics\temp\cam\freshness` 資料夾：
+. 從Cognos產生憑證加密要求。在管理CMD視窗中、執行：
++
+.. CD `“\Program Files\sanscreen\cognos\analytics\bin”`
+.. `ThirdPartyCertificateTool.bat -java:local -c -e -p NoPassWordSet -a RSA -r c:\temp\encryptRequest.csr -d “CN=server.domain.com,O=NETAPP,C=US” -H “server.domain.com” -I “ipaddress”`。附註：此處-H和-I是新增subectAltNames、例如DNS和IP地址。
+
+
+. 開啟 `c:\temp\encryptRequest.csr` 歸檔並複製產生的內容。
+. 輸入加密Request。CSR內容、並使用CA簽署入口網站產生憑證。
+. 使用PKCS7格式加入根憑證、即可下載鏈結憑證
++
+這會下載FQDN。p7b檔案
+
+. 從CA取得.p7b格式的憑證。使用名稱將其標示為Cognos Webserver的憑證。
+. ThirdPartyCertificateTool.bat無法匯入整個鏈結、因此匯出所有憑證需要執行多個步驟。請依照下列步驟個別匯出鏈結：
++
+.. 在「加密Shell Extensions」中開啟.p7b憑證。
+.. 在左窗格中瀏覽至「憑證」。
+.. 在根CA上按一下滑鼠右鍵>「All Tasks（所有工作）」>「Export（匯出
+.. 選取Base64輸出。
+.. 輸入檔案名稱、將其識別為根憑證。
+.. 重複步驟8a到8e、分別將所有憑證匯出至.cer檔案。
+.. 將檔案命名為merginate.cer和Cogns.cer。
+
+
+. 如果您只有一個CA憑證、請忽略此步驟、否則請將root.cer和merinateX.cer合併成一個檔案。
++
+.. 使用「記事本」開啟root.cer並複製內容。
+.. 使用「記事本」開啟mender.cer、然後附加9a的內容（中間第一和下一）。
+.. 將檔案另存為chain .cer。
+
+
+. 使用管理CMD提示將憑證匯入Cognos Keystore：
++
+.. CD「Program Files\SANSANSANSANSANSANPC\Cognos /分析\BIN'」
+.. ThirdPartyCertificateTool.bat -Java:local -I -t-r c：\temp\root.cer
+.. ThirdPartyCertificateTool.bat -Java:local -I -T -r c：\temp\minter.cer
+.. ThirdPartyCertificateTool.bat -Java:local -i -e -r c：\emp\Cogns.cer -t c：\emp\chain .cer
+
+
+. 開啟IBM Cognos組態。
++
+.. 選取「本機組態」->「安全性」->「密碼編譯」->「Cognos」
+.. 變更「Use third party CA？」 為真。
+.. 儲存組態。
+.. 重新啟動Cognos
+
+
+. 使用管理CMD提示字元、將最新的Cognos憑證匯出至Cognos。CRT：
++
+.. CD「'C:\Program Files\SANSANSANSANSAND"
+.. Java\BIN\keytool.exe -exportcert -file c：\temp\Cogns.crt -keystore Cognos \分析\組態\ certs\CAMKeystore -storetype PKCS12 -storepass NoPassWordSet -alias加密
+
+
+. 備份DWH伺服器信任資源``..\SANscreen\wildfly\standalone\configuration\server.trustore``
+. 使用管理CMD提示視窗、將「'c:\emp\Cognes.crt'」匯入DWH信任區、以建立Cognos與DWH之間的SSL通訊。
++
+.. CD「'C:\Program Files\SANSANSANSANSAND"
+.. Java\BIN\keytool.exe -importcert -file c:\emp\Cognos.crt -keystore wildfly\sisonal\configuration \server.trustore -storepass changit -alias cognos3rca
+
+
+. 重新啟動SANscreen 此服務。
+. 執行DWH備份、確保DWH與Cognos通訊。
+. 即使只變更「sSL憑證」、而且預設的Cognos憑證保持不變、仍應執行下列步驟。否則、Cognos可能會抱怨新SANscreen 的不合格證書、或無法建立DWH備份。
++
+.. `cd “%SANSCREEN_HOME%cognos\analytics\bin\”`
+.. `“%SANSCREEN_HOME%java64\bin\keytool.exe” -exportcert -file “c:\temp\sanscreen.cer” -keystore “%SANSCREEN_HOME%wildfly\standalone\configuration\server.keystore” -storepass changeit -alias “ssl certificate”`
+.. `ThirdPartyCertificateTool.bat -java:local -i -T -r “c:\temp\sanscreen.cer”`
+
+
++
+這些步驟通常是在中所述的Cognos憑證匯入程序中執行 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Infrastructure_Management/OnCommand_Suite/How_to_import_a_Cognos_Certificate_Authority_(CA)_signed_certificate_into_DWH_7.3.3_and_later["如何將Cognos憑證授權單位（CA）簽署的憑證匯入OnCommand 到EWdatawarehouse 7.3.3及更新版本"]
+
+

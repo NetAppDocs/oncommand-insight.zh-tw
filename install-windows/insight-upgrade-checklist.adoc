@@ -1,0 +1,148 @@
+---
+permalink: install-windows/insight-upgrade-checklist.html 
+sidebar: sidebar 
+keywords: 6.4 
+summary: 您可以使用所提供的檢查清單、在準備升級時記錄您的進度。這些工作旨在協助降低升級失敗的風險、並加速恢復與還原工作。 
+---
+= 升級檢查清單OnCommand Insight
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用所提供的檢查清單、在準備升級時記錄您的進度。這些工作旨在協助降低升級失敗的風險、並加速恢復與還原工作。
+
+
+
+== 準備升級的檢查清單（必填）
+
+|===
+
+
+| 條件 | 完成？ 
+
+
+ a| 
+請確定您在所有Insight伺服器上擁有執行升級程序所需的Windows本機系統管理員權限。
+ a| 
+
+
+
+ a| 
+如果Insight、Data倉儲或遠端擷取單元伺服器位於32位元平台上、則必須將伺服器升級至64位元平台。從Insight 7.x開始、升級僅適用於64位元平台。
+ a| 
+
+
+
+ a| 
+確保您擁有修改或停用環境中所有伺服器上防毒軟體的必要權限。若要避免因為主動式病毒掃描軟體而導致升級失敗、您必須排除Insight安裝目錄 (`disk drive:\install directory\sanscreen` 從升級期間的存取到防毒掃描。升級所有元件之後、您可以安全地重新啟動防毒軟體；不過、請務必將掃描設定為仍排除Insight安裝目錄中的所有項目。
+
+此外、您也必須在安裝後、將IBM/DB2資料夾（例如_C:\Program Files\IBM\DB2_）排除在防毒掃描之外。
+ a| 
+
+|===
+
+
+== 準備升級的檢查清單（最佳實務做法）
+
+|===
+
+
+| 條件 | 完成？ 
+
+
+ a| 
+計畫升級時間、請考量到大多數的升級至少需要4到8小時；大型企業需要更長的時間。升級時間可能會因可用資源（架構、CPU和記憶體）、資料庫大小以及環境中監控的物件數量而有所不同。
+ a| 
+
+
+
+ a| 
+請聯絡您的客戶代表、瞭解您的升級計畫、並提供您所安裝的Insight版本、以及您想要升級的版本。
+ a| 
+
+
+
+ a| 
+確保分配給Insight、Data倉儲及遠端擷取設備的目前資源仍符合建議的規格。請參閱所有伺服器的建議規模調整準則。此外、您也可以聯絡客戶代表、討論規模調整準則。
+ a| 
+
+
+
+ a| 
+請確定您有足夠的磁碟空間來執行資料庫備份與還原程序。備份與還原程序所需的磁碟空間約為Insight與Data倉儲伺服器上備份檔案所使用的五倍。例如、50 GB的備份需要250到300 GB的可用磁碟空間。
+ a| 
+
+
+
+ a| 
+備份Insight與Data倉儲資料庫時、請務必存取Firefox®或Chrome™瀏覽器。不建議使用Internet Explorer、因為在上傳和下載大於4 GB的檔案時會遇到一些問題。
+ a| 
+
+
+
+ a| 
+刪除 `.tmp` Insight伺服器上的檔案、您可在下列位置找到： `<install directory>\SANscreen\wildfly\standalone\tmp`。
+ a| 
+
+
+
+ a| 
+從Insight用戶端移除重複的資料來源和停用的資料來源。移除已停用或重複的資料來源、可減少執行升級所需的時間、並減少資料毀損的機會。
+ a| 
+
+
+
+ a| 
+如果您已修改Insight隨附的任何預設報告、則應以不同名稱儲存報告、然後將其儲存至Customer Reports資料夾、以免在升級或還原系統時遺失修改過的報告。
+ a| 
+
+
+
+ a| 
+如果您或專業服務建立了任何自訂或修改過的資料倉儲報告、請將其匯出至XML、然後將其移至「客戶報告」資料夾、以建立備份。請確定備份並未位於Data倉儲伺服器上。如果您未將報告移至建議的資料夾、則升級程序可能不會備份這些報告。若為舊版Insight、若未在適當的資料夾中找到報告、可能會導致自訂報告和修改報告遺失。
+ a| 
+
+
+
+ a| 
+請在IBM Cognos組態公用程式中記錄所有設定、因為這些設定並未包含在Data倉儲備份中；您必須在升級後重新設定這些設定。公用程式位於 `disk drive:\install directory\SANscreen\cognos\c10_64\bin64` 資料倉儲伺服器上的目錄、您可以使用執行 `cogconfigw` Command。或者、您也可以執行Cognos的完整備份、然後匯入所有設定。如需詳細資訊、請參閱IBM Cognos文件。
+ a| 
+
+|===
+
+
+== 準備升級的檢查清單（若適用）
+
+|===
+
+
+| 條件 | 完成？ 
+
+
+ a| 
+如果您已使用內部憑證授權單位簽署的憑證取代Insight安裝所建立的自我簽署憑證、請備份位於下列位置的Keystore檔案： `disk drive:\install directory\SANscreen\wildfly\standalone\configuration` 並在升級後還原。這會取代Insight以您簽署的憑證所建立的自我簽署憑證。
+ a| 
+
+
+
+ a| 
+如果您的環境已修改任何資料來源、但您不確定要升級的Insight版本是否提供這些修改、請複製下列目錄、以便在發生還原問題時進行疑難排解： `disk drive:\install directory\SANscreen\wildfly\standalone\deployments\datasources.war`。
+ a| 
+
+
+
+ a| 
+使用備份所有自訂的資料庫表格和檢視 `mysqldump` 命令列工具。若要還原自訂資料庫表格、必須存取具有權限的資料庫。如需還原這些表格的協助、請聯絡技術支援部門。
+ a| 
+
+
+
+ a| 
+請確定未在中儲存Insight資料來源、備份或任何其他必要資料所需的自訂整合指令碼、協力廠商元件 `disk drive:\install directory\sanscreen` 目錄、因為升級程序會刪除此目錄的內容。請確定您從移除這些項目 `\sanscreen` 目錄至其他位置。例如、如果您的環境包含自訂整合指令碼、請務必將下列檔案複製到以外的目錄 `\sanscreen` 目錄：
+
+`\install_dir\SANscreen\wildfly\standalone\deployments\datasources.war\new_disk_models.txt`。
+ a| 
+
+|===

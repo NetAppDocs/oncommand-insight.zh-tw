@@ -1,0 +1,24 @@
+---
+permalink: install-windows/uninstalling-the-remote-acquisition-unit-software.html 
+sidebar: sidebar 
+keywords:  
+summary: 您必須先解除安裝現有版本的遠端擷取單元軟體、才能升級至新版本。您應該在環境中的所有遠端擷取單元伺服器上執行此工作。 
+---
+= 解除安裝遠端擷取單元軟體
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必須先解除安裝現有版本的遠端擷取單元軟體、才能升級至新版本。您應該在環境中的所有遠端擷取單元伺服器上執行此工作。
+
+
+
+== 步驟
+
+. 登入遠端擷取單元伺服器。
+. 確保OnCommand Insight 伺服器上的所有資訊窗口都已關閉。
+. 從控制面板開啟*解除安裝程式*功能、然後選取OnCommand Insight 要移除的「停止遠端擷取單元」程式。
+. 按一下「*解除安裝*」、然後依照提示進行。
+

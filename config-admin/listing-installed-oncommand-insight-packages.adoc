@@ -1,0 +1,24 @@
+---
+permalink: config-admin/listing-installed-oncommand-insight-packages.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以顯示已安裝OnCommand Insight 的各種元件清單、包括庫存、容量、尺寸、 以及資料倉儲檢視。客戶支援部門可能會要求您提供此資訊、或者您可能想要查看安裝的軟體版本及安裝時間。 
+---
+= 列出安裝OnCommand Insight 的元件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以顯示已安裝OnCommand Insight 的各種元件清單、包括庫存、容量、尺寸、 以及資料倉儲檢視。客戶支援部門可能會要求您提供此資訊、或者您可能想要查看安裝的軟體版本及安裝時間。
+
+
+
+== 步驟
+
+. 在Insight工具列上、按一下*管理*、然後選取*疑難排解*。
+. 在頁面底部的「其他工作」區域中、按一下「*進階疑難排解*」連結。
+. 在「進階疑難排解」頁面上、按一下「*報告*」索引標籤。
+. 按一下*安裝的軟體套件*。
+

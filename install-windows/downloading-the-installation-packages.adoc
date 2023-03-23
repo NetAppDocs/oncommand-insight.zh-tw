@@ -1,0 +1,57 @@
+---
+permalink: install-windows/downloading-the-installation-packages.html 
+sidebar: sidebar 
+keywords:  
+summary: 您應在選擇升級的日期之前、下載Insight、Data倉儲及遠端擷取單元（若適用）的安裝套件。套件（.msi檔案）的下載時間會因可用頻寬而異。 
+---
+= 正在下載OnCommand Insight 安裝套件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您應在選擇升級的日期之前、下載Insight、Data倉儲及遠端擷取單元（若適用）的安裝套件。套裝軟體的下載時間 (`.msi` 檔案）會因可用頻寬而異。
+
+
+
+== 關於這項工作
+
+您可以使用Insight WebUI下載安裝套件、或從瀏覽至適當OnCommand Insight 的鏈結 http://support.netapp.com/NOW/cgi-bin/software[]。
+
+若要從Insight伺服器下載安裝套件、請執行下列步驟：
+
+
+
+== 步驟
+
+. 開啟Web瀏覽器並輸入下列其中一項、即可開啟Insight Web UI：
++
+** 在Insight伺服器上： `+https://localhost+`
+** 從任何位置： `+https://IP Address:port or fqdn:port+`
++
+連接埠號碼為443或安裝Insight伺服器時所設定的連接埠。如果您未在URL中指定連接埠號碼、連接埠號碼預設為443。
+
+
+
+. 登入Insight。
+. 按一下「說明」圖示、然後選取*「檢查更新」*。
+. 如果偵測到較新的版本、請依照訊息方塊中的指示進行。
++
+您將會前往InsightDescription（瀏覽說明）頁面、查看較新版本。
+
+. 在「*說明*」頁面上、按一下「*繼續*」。
+. 顯示終端使用者授權合約（EULA）時、按一下*接受*。
+. 按一下每個元件的安裝套件連結（Insight伺服器、資料倉儲、遠端擷取單元等）、然後按一下*「Save As」（另存新檔）以儲存安裝套件。
++
+在升級之前、您應確保將Data倉儲和遠端擷取單元安裝套件複製到各自伺服器的本機磁碟。
+
+. 按一下* Checksum *、並記下與每個安裝套件相關的數值。
+. 請確認安裝套件已完成、而且在下載後不會發生錯誤。
++
+不完整的檔案傳輸可能會導致升級程序發生問題。
+
++
+若要為安裝套件產生md5雜湊值、您可以使用第三方公用程式、例如Microsoft的link:HTTP://SUPPORT.MICROSOFT.COM/KB/841290["檔案ChecksumIntegrity驗證工具"] 公用程式：
+
+

@@ -1,0 +1,33 @@
+---
+permalink: config-admin/restarting-the-oncommand-insight-server-or-acquisition-unit.html 
+sidebar: sidebar 
+keywords:  
+summary: 當您重新啟動OnCommand Insight 伺服器時、請重新整理頁面、OnCommand Insight 然後再次登入此功能。 
+---
+= 重新啟動OnCommand Insight 伺服器
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+當您重新啟動OnCommand Insight 伺服器時、請重新整理頁面、OnCommand Insight 然後再次登入此功能。
+
+
+
+== 關於這項工作
+
+[NOTE]
+====
+這兩種選項僅應在NetApp客戶支援部門提出要求時使用。重新啟動之前不會進行任何確認。
+
+====
+
+
+== 步驟
+
+. 在Insight工具列上、按一下*管理*、然後選取*疑難排解*。
+. 在頁面底部的「其他工作」區域中、按一下「*進階疑難排解*」連結。
+. 在「進階」功能表的下一頁、按一下「*動作*」索引標籤。
+. 按一下*重新啟動伺服器*。
+

@@ -1,0 +1,16 @@
+---
+permalink: config-admin/device-resolution-ip-identify.html 
+sidebar: sidebar 
+keywords:  
+summary: IP識別畫面會顯示所有已透過自動裝置解析或手動裝置解析識別的iSCSI和CIFS或NFS共用。也會顯示未識別的裝置。此畫面包含裝置的IP位址、名稱、狀態、iSCSI節點和共用名稱。也會顯示已成功識別的裝置百分比。 
+---
+= IP裝置解析度
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+IP識別畫面會顯示所有已透過自動裝置解析或手動裝置解析識別的iSCSI和CIFS或NFS共用。也會顯示未識別的裝置。此畫面包含裝置的IP位址、名稱、狀態、iSCSI節點和共用名稱。也會顯示已成功識別的裝置百分比。
+
+image::../media/ipidentify.gif[IPidentify]

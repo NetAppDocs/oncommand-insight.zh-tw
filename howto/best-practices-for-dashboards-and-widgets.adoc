@@ -1,0 +1,14 @@
+---
+permalink: howto/best-practices-for-dashboards-and-widgets.html 
+sidebar: sidebar 
+keywords:  
+summary: 協助您充分發揮儀表板和小工具強大功能的秘訣和技巧。 
+---
+= 儀表板和小工具的最佳實務做法
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+協助您充分發揮儀表板和小工具強大功能的秘訣和技巧。

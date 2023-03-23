@@ -1,0 +1,45 @@
+---
+permalink: install-linux/upgrading-insight-server-software.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以在OnCommand Insight 登入伺服器後檢查是否有更新的功能。 
+---
+= 升級Insight Server軟體
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在OnCommand Insight 登入伺服器後檢查是否有更新的功能。
+
+
+
+== 步驟
+
+. 在Insight工具列上、按一下*說明*圖示。
+. 選擇*檢查更新*。
+. 如果是、請按一下「*確定*」 `Version is up to date` 訊息隨即顯示。
+. 如果偵測到較新的版本、請按一下訊息方塊中的*下載於此處*連結。
+. 在*下載*頁面中、按一下*下載*。記下下載目錄位置。
++
+您也可以從NetApp 支援網站 更新版本的更新版本下載。
+
+. 使用具有Sudo權限的帳戶登入Insight伺服器。
+. 瀏覽至下載目錄、然後輸入下列命令：
++
+`unzip oci-<version>-linux-x86_64.zip`
+
++
+請確定安裝檔案的版本編號正確無誤。
+
+. 您可以檢視的語法、命令引數及參數使用量 `oci-install.sh` ：
++
+`sudo ./oci-<version>-linux-x86_64/oci-install.sh --help`
+
+. 執行安裝指令碼：
++
+`sudo ./oci-<version>-linux-x86_64/oci-install.sh`
+
+. 接受授權合約、並依照提示進行。
+

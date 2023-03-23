@@ -1,0 +1,32 @@
+---
+permalink: dwh/data-warehouse-software-components.html 
+sidebar: sidebar 
+keywords:  
+summary: 資料倉儲包含數個軟體元件OnCommand Insight 。 
+---
+= 資料倉儲軟體元件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+資料倉儲包含數個軟體元件OnCommand Insight 。
+
+* MySQL資料庫
++
+資料倉儲表格的後端儲存庫
+
+* IBM Cognos
++
+適用於整個過程的報告引擎OnCommand Insight
+
+* Apache Derby資料庫
++
+用於儲存Cognos組態和內容
+
+* Wildfly
++
+裝載OnCommand Insight 各種元件的Java Enterprise應用程式伺服器
+
+

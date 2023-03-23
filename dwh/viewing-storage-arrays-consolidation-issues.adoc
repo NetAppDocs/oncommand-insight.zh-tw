@@ -1,0 +1,63 @@
+---
+permalink: dwh/viewing-storage-arrays-consolidation-issues.html 
+sidebar: sidebar 
+keywords:  
+summary: 儲存陣列的報告資料是從Inventory Data mart衍生而來。對於所有儲存陣列、每個報告的連接器都有一列、以及每個陣列的主要連接器。 
+---
+= 檢視儲存陣列整合問題
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+儲存陣列的報告資料是從Inventory Data mart衍生而來。對於所有儲存陣列、每個報告的連接器都有一列、以及每個陣列的主要連接器。
+
+
+
+== 步驟
+
+. 登入資料倉儲入口網站： `+https://hostname/dwh+`、其中 `hostname` 是OnCommand Insight 安裝了IsName Data倉儲的系統名稱。
+. 在左側的導覽窗格中、按一下*疑難排解*。
+. 在「*機箱整合*」區段中、按一下「* SAN儲存陣列*」。
+. 或者、若要篩選此檢視中的資料、請在「篩選」方塊中輸入一部分文字、然後按一下「*篩選*」。若要清除篩選、請刪除「篩選」方塊中的文字、然後按一下「*篩選*」。您可以依儲存名稱、儲存IP、廠商機型或OnCommand Insight 物件ID進行篩選。
++
+篩選器區分大小寫。
+
+. 檢閱下列資料：
++
+** * GUID*
++
+此類整合式裝置（儲存陣列）的全域唯一識別碼
+
+** *名稱*
++
+合併儲存陣列在資料倉儲中的名稱
+
+** * IP*
++
+整合式儲存陣列的IP位址
+
+** *廠商與型號*
++
+銷售整合式儲存陣列及製造商型號的廠商名稱
+
+** *主要連接器*
++
+實際資料來源的連接器名稱OnCommand Insight
+
+** *可用的連接器*
++
+整合式儲存陣列所在的所有OnCommand Insight 連接器
+
+** * Insight ID*
++
+主連接器所在之機箱上整合式儲存陣列的ID OnCommand Insight
+
+** * Insight變更時間*
++
+當儲存陣列的更新發生在OnCommand Insight 更新中、且其他OnCommand Insight 的伺服器已更新相同的儲存陣列時
+
+
+
+

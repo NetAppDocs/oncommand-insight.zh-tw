@@ -1,0 +1,20 @@
+---
+permalink: howto/custom-dashboard-override-dashboard-time.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以覆寫個別Widget中的主儀表板時間範圍設定。這些小工具會根據設定的時間範圍顯示資料、而非儀表板時間範圍。 
+---
+= 覆寫個別Widget的儀表板時間
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以覆寫個別Widget中的主儀表板時間範圍設定。這些小工具會根據設定的時間範圍顯示資料、而非儀表板時間範圍。
+
+若要覆寫儀表板時間並強制Widget使用自己的時間範圍、請在Widget的編輯模式中、將*置換儀表板時間*設為*開啟*、然後為Widget選取時間範圍。*將小工具儲存至儀表板。
+
+不論您在儀表板上選取的時間範圍為何、Widget都會根據時間範圍集顯示其資料。
+
+您為一個小工具設定的時間範圍不會影響儀表板上的任何其他小工具。

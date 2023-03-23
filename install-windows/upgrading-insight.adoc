@@ -1,0 +1,42 @@
+---
+permalink: install-windows/upgrading-insight.html 
+sidebar: sidebar 
+keywords:  
+summary: 完成所有必要的工作之後、請登入Insight伺服器並執行安裝套件以完成升級。升級程序會解除安裝現有軟體、安裝新軟體、然後重新啟動伺服器。 
+---
+= 升級Insight
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+完成所有必要的工作之後、請登入Insight伺服器並執行安裝套件以完成升級。升級程序會解除安裝現有軟體、安裝新軟體、然後重新啟動伺服器。
+
+
+
+== 開始之前
+
+Insight安裝套件必須位於伺服器上。
+
+
+
+== 步驟
+
+. 使用具有Windows本機系統管理員權限的帳戶登入Insight伺服器。
+. 找到Insight安裝套件 (`SANscreenServer-x64-version_number-build_number.msi`）使用Windows檔案總管、然後按兩下。
++
+畫面會顯示「視覺安裝精靈」OnCommand 。
+
+. 將進度視窗從畫面中央移開、並遠離*設定*精靈視窗、如此一來、所有產生的錯誤都不會隱藏在畫面上。
+. 依照安裝精靈的提示進行。
++
+最佳做法是選擇所有預設值。
+
+
+
+
+
+== 完成後
+
+若要驗證升級是否成功或是否產生錯誤、請檢查下列位置的升級記錄： `<install directory>\SANscreen\wildfly\standalone\log`。

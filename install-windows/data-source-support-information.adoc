@@ -1,0 +1,20 @@
+---
+permalink: install-windows/data-source-support-information.html 
+sidebar: sidebar 
+keywords:  
+summary: 在進行組態規劃時、您應確保Insight能夠監控環境中的裝置。若要這麼做、您可以查看資料來源支援對照表、以取得作業系統、特定裝置和傳輸協定的詳細資料。部分資料來源可能無法在所有作業系統上使用。 
+---
+= 資料來源支援資訊
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在進行組態規劃時、您應確保Insight能夠監控環境中的裝置。若要這麼做、您可以查看資料來源支援對照表、以取得作業系統、特定裝置和傳輸協定的詳細資料。部分資料來源可能無法在所有作業系統上使用。
+
+
+
+== 最新版資料來源支援對照表的位置
+
+每個Service Pack版本都會更新《支援資料來源對照表》OnCommand Insight 。如需最新版本的文件、請參閱 https://mysupport.netapp.com/api/content-service/staticcontents/content/products/oncommandinsight/DatasourceSupportMatrix_7.3.x.pdf["NetApp 支援網站"]。。

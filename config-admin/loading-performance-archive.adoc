@@ -1,0 +1,34 @@
+---
+permalink: config-admin/loading-performance-archive.html 
+sidebar: sidebar 
+keywords:  
+summary: 若要載入效能資料歸檔、請依照下列步驟進行。 
+---
+= 正在載入效能歸檔
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+若要載入效能資料歸檔、請依照下列步驟進行。
+
+
+
+== 開始之前
+
+在載入效能資料歸檔之前、您必須先還原有效的每週或手動備份。
+
+
+
+== 步驟
+
+. 在工具列上、按一下*管理*>*疑難排解*。
+. 在「還原」區段的「*載入效能歸檔*」下、按一下「*載入*」。
++
+[NOTE]
+====
+歸檔載入會在背景中處理。載入完整歸檔可能需要很長時間、因為每天的歸檔效能資料都會填入Insight中。歸檔載入的狀態會顯示在此頁面的歸檔區段中。
+
+====
+

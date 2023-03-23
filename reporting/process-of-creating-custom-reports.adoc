@@ -1,0 +1,21 @@
+---
+permalink: reporting/process-of-creating-custom-reports.html 
+sidebar: sidebar 
+keywords:  
+summary: 建立特別報告的程序涉及數項工作。 
+---
+= 建立報告的程序
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+建立特別報告的程序涉及數項工作。
+
+* 規劃報告的結果。
+* 識別資料以支援您的結果。
+* 選取包含資料的資料模型（例如、調配資料模型、庫存資料模型等）。
+* 選取報告的資料元素。
+* 選擇性地格式化、排序及篩選報告結果。
+

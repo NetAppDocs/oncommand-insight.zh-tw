@@ -1,0 +1,26 @@
+---
+permalink: reporting/welcome-to-oncommand-insight-reporting.html 
+sidebar: sidebar 
+keywords:  
+summary: 利用此商業智慧工具、您可以檢視預先定義的報告或建立自訂報告OnCommand Insight 。利用資料倉儲（DWH\）資料產生報告OnCommand Insight 。 
+---
+= 歡迎使用OnCommand Insight 本報告
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+利用此商業智慧工具、您可以檢視預先定義的報告或建立自訂報告OnCommand Insight 。利用資料倉儲（DWH）資料產生報告OnCommand Insight 。
+
+利用此功能、您可以執行下列工作OnCommand Insight ：
+
+* 執行預先定義的報告
+* 建立自訂報告
+* 自訂報告格式和交付方法
+* 排程報告以自動執行
+* 電子郵件報告
+* 使用色彩來表示資料的臨界值
+
+
+預先定義的報告是標準OnCommand Insight 的報告。本指南說明所有產品授權所提供的預先定義報告。

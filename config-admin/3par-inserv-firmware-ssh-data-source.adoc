@@ -1,0 +1,207 @@
+---
+permalink: config-admin/3par-inserv-firmware-ssh-data-source.html 
+sidebar: sidebar 
+keywords:  
+summary: 使用3PAR InServ（韌體2.2.2+、SSH\）資料來源、探索HP 3PAR StoreServ儲存陣列的庫存OnCommand Insight 。 
+---
+= 3PAR InServ資料來源
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+使用3PAR InServ（韌體2.2.2+、SSH）資料來源、探索HP 3PAR StoreServ儲存陣列的庫存OnCommand Insight 。
+
+
+
+== 術語
+
+從3PAR InServ資料來源取得下列庫存資訊OnCommand Insight 。對於Insight取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料來源時、請謹記下列術語：
+
+|===
+
+
+| 廠商/模型術語 | Insight術語 
+
+
+ a| 
+實體磁碟
+ a| 
+磁碟
+
+
+
+ a| 
+儲存系統
+ a| 
+儲存設備
+
+
+
+ a| 
+控制器節點
+ a| 
+儲存節點
+
+
+
+ a| 
+通用資源配置群組
+ a| 
+儲存資源池
+
+
+
+ a| 
+虛擬Volume
+ a| 
+Volume
+
+|===
+[NOTE]
+====
+這些只是通用的術語對應、可能不代表此資料來源的每個案例。
+
+====
+
+
+== 需求
+
+* InServ叢集的IP位址或FQDN
+* 針對庫存、InServ伺服器的唯讀使用者名稱和密碼。
+* 為達到效能、請將使用者名稱和密碼讀寫至InServ伺服器。
+* 連接埠需求：22（庫存收集）、5988或5989（效能收集）[附註：InServ OS 3.x+支援3PAR效能]
+* 若要收集效能、請透過SSH登入3PAR陣列、確認SMI-S已啟用。
+
+
+
+
+== 組態
+
+|===
+
+
+| 欄位 | 說明 
+
+
+ a| 
+叢集IP
+ a| 
+InServ叢集的IP位址或完整網域名稱
+
+
+
+ a| 
+使用者名稱
+ a| 
+InServ伺服器的使用者名稱
+
+
+
+ a| 
+密碼
+ a| 
+InServ伺服器使用的密碼
+
+
+
+ a| 
+SMI-S主機IP
+ a| 
+SMI-S Provider主機的IP位址
+
+
+
+ a| 
+SMI-S使用者名稱
+ a| 
+SMI-S Provider主機的使用者名稱
+
+
+
+ a| 
+SMI-S密碼
+ a| 
+SMI-S Provider主機使用的密碼
+
+|===
+
+
+== 進階組態
+
+|===
+
+
+| 欄位 | 說明 
+
+
+ a| 
+庫存輪詢時間間隔（分鐘）
+ a| 
+庫存輪詢之間的時間間隔（預設為40分鐘）
+
+
+
+ a| 
+排除裝置
+ a| 
+要排除的裝置IP清單以逗號分隔
+
+
+
+ a| 
+SSH程序等待逾時（秒）
+ a| 
+SSH程序逾時（預設為60秒）
+
+
+
+ a| 
+SSH重試次數
+ a| 
+SSH重試嘗試次數
+
+
+
+ a| 
+SSH橫幅等待逾時（秒）
+ a| 
+SSH橫幅等待逾時（預設為20秒）
+
+
+
+ a| 
+SMI-S連接埠
+ a| 
+SMI-S Provider Host使用的連接埠
+
+
+
+ a| 
+傳輸協定
+ a| 
+用於連線至SMI-S供應商的傳輸協定
+
+
+
+ a| 
+SMI-S命名空間
+ a| 
+SMI-S命名空間
+
+
+
+ a| 
+效能意見調查時間間隔（秒）
+ a| 
+效能輪詢之間的時間間隔（預設為300秒）
+
+
+
+ a| 
+SMI-S連線重試次數
+ a| 
+SMI-S連線重試次數
+
+|===

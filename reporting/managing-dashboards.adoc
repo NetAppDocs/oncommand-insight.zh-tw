@@ -1,0 +1,20 @@
+---
+permalink: reporting/managing-dashboards.html 
+sidebar: sidebar 
+keywords:  
+summary: 以動態儀表板的形式提供報告群組、以顯示與特定管理考量有關的不同資料檢視OnCommand Insight 。按一下儀表板中的元素會顯示更詳細的資訊。 
+---
+= 管理儀表板
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+以動態儀表板的形式提供報告群組、以顯示與特定管理考量有關的不同資料檢視OnCommand Insight 。按一下儀表板中的元素會顯示更詳細的資訊。
+
+關於此工作、儀表板會將相關主題的資訊分組、並提供下列動態功能：
+
+按一下圖表項目以重新產生圖表、顯示所選項目的詳細資料。連結至其他報告及更詳細的資訊。如果您有最愛的儀表板、可以使用下列其中一種方法來新增索引標籤：
+
+從公用資料夾新增儀表板索引標籤。從「使用者偏好設定」新增儀表板索引標籤。

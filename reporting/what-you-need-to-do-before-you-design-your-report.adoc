@@ -1,0 +1,23 @@
+---
+permalink: reporting/what-you-need-to-do-before-you-design-your-report.html 
+sidebar: sidebar 
+keywords:  
+summary: 在設計自訂報告之前、您必須先完成一些必要的工作。如果您未完成這些作業、報告可能不準確或不完整。 
+---
+= 您在設計報告之前需要做的事
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在設計自訂報告之前、您必須先完成一些必要的工作。如果您未完成這些作業、報告可能不準確或不完整。
+
+例如、如果您未完成裝置識別程序、您的容量報告將不準確。或者、如果您尚未完成設定註釋（例如階層、業務單位和資料中心）、您的自訂報告可能無法準確報告整個網域的資料、而且某些資料點可能會顯示「N/A」（不適用）。
+
+在您設計報告之前、請先完成下列工作：
+
+* 設定所有資料來源。如需詳細資訊、請參閱《_ OnCommand Insight 關於組態與管理的指南_》。
+* 在環境中的裝置和資源上輸入附註（例如階層、資料中心和業務單位）。在產生報告之前、讓註釋保持穩定是有益的、因為OnCommand Insight 這個資料倉儲會收集歷史資訊。
+* 設定OnCommand Insight 「支援資料倉儲」、以便在OnCommand Insight 「擷取」、「轉換」及「載入」（ETL）程序中、接受來自「支援資料中心」伺服器的資料。
+

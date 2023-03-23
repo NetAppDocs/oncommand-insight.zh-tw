@@ -1,0 +1,18 @@
+---
+permalink: config-admin/licenses-no-longer-compliant.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果您在Insight授權頁面上看到「不合規」訊息、則Insight的管理TB數將超過貴公司授權的TB數。 
+---
+= 授權不再符合法規要求
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您在Insight授權頁面上看到「不合規」訊息、則Insight的管理TB數將超過貴公司授權的TB數。
+
+「不合規」的訊息代表貴公司所支付的TB數低於Insight目前所管理的TB數。託管TB與授權TB數之間的差異會顯示在非法規遵循訊息旁。
+
+Insight系統的運作不受影響、但您應聯絡NetApp代表以增加授權範圍並更新適當的授權。

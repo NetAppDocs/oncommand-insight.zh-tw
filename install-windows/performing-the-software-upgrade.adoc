@@ -1,0 +1,14 @@
+---
+permalink: install-windows/performing-the-software-upgrade.html 
+sidebar: sidebar 
+keywords:  
+summary: 完成所有必要工作之後、您可以在每部伺服器上下載並執行適用的安裝套件、將所有Insight元件升級至新版本。 
+---
+= 執行軟體升級
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+完成所有必要工作之後、您可以在每部伺服器上下載並執行適用的安裝套件、將所有Insight元件升級至新版本。

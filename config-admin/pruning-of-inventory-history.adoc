@@ -1,0 +1,16 @@
+---
+permalink: config-admin/pruning-of-inventory-history.html 
+sidebar: sidebar 
+keywords:  
+summary: 從7.3.2版開始、Insight會將庫存（基礎）變更記錄保留90天。先前版本的Insight會保留安裝時的所有庫存變更記錄。從舊版Insight升級之後、舊版的庫存記錄會保留至90天。 
+---
+= 資源清冊歷史記錄的剪除
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+從7.3.2版開始、Insight會將庫存（基礎）變更記錄保留90天。先前版本的Insight會保留安裝時的所有庫存變更記錄。從舊版Insight升級之後、舊版的庫存記錄會保留至90天。
+
+升級OnCommand Insight 至目前版本的更新版本之後、歷史記錄會被刪除至最近的90天。洞見會以每天一次的30天時間區塊、從最早的區塊開始、將歷史刪除、直到90天的歷史仍有其價值。因此、為了維持90天的庫存變更歷史記錄、我們每天都會刪除歷史記錄。

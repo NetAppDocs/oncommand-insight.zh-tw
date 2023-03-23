@@ -1,0 +1,12 @@
+---
+permalink: install-windows/index.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= Microsoft®Windows®安裝指南
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+

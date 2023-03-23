@@ -1,0 +1,43 @@
+---
+permalink: config-admin/nas-path-for-vms.html 
+sidebar: sidebar 
+keywords:  
+summary: 支援NAS路徑、可讓虛擬機器連接至儲存共享區OnCommand Insight 。這些路徑類似於主機到儲存共用的NAS路徑。當允許VM的IP位址存取共用區時、就會建立NAS路徑。 
+---
+= VM的NAS路徑
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+支援NAS路徑、可讓虛擬機器連接至儲存共享區OnCommand Insight 。這些路徑類似於主機到儲存共用的NAS路徑。當允許VM的IP位址存取共用區時、就會建立NAS路徑。
+
+虛擬機器的NAS路徑會顯示在「內部磁碟區」登陸頁面上。此頁面包含來賓掛載儲存資源Widget、可識別VM可存取的內部Volume。
+
+* 當虛擬機器能夠存取後端共用時、就會建立NAS路徑。不知道虛擬機器是否存取共用區。
+* 關聯計算是以延遲和IOPs為基礎、不包括VM有NAS路徑可通往後端儲存設備的情況。
+* 使用者可以依啟動器IP位址查詢共用區、但不支援依路徑查詢。
+
+
+「內部Volume」的「運算資源」表現在也會顯示具有NAS路徑的VM。針對每個VM、CPU和記憶體、都會提供使用率和效能資料。
+
+
+
+== 資料倉儲影響
+
+升級OnCommand Insight 到版本號為37的7.3版之後、資料倉儲的變更內容如下：
+
+* 會從Inventory資料倉儲中移除dwh_inventory.ns_logical表格、並以檢視取代。
++
+所有包含NFS路徑表的Insight 7.2.x報告都會保留下來。
+
+* 會將dwh_inventory.ns_cr_logical表格新增至Inventory資料倉儲、其中包含下列項目：
++
+** 運算資源
+** 內部Volume
+** 儲存設備
+** NAS共用
+
+
+

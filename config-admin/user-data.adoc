@@ -1,0 +1,18 @@
+---
+permalink: config-admin/user-data.html 
+sidebar: sidebar 
+keywords:  
+summary: 資產頁面的「使用者資料」區段隨即顯示、並可讓您變更任何使用者定義的資料、例如應用程式、商業實體和註釋。 
+---
+= 使用者資料
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+資產頁面的「使用者資料」區段隨即顯示、並可讓您變更任何使用者定義的資料、例如應用程式、商業實體和註釋。
+
+下列範例顯示當應用程式、企業實體及註釋指派給資產時、虛擬機器資產頁面的「使用者資料」區段可能會顯示的內容：
+
+image::../media/user-data-section.bmp[使用者資料區段]

@@ -1,0 +1,23 @@
+---
+permalink: config-admin/capacity-as-time-series.html 
+sidebar: sidebar 
+keywords:  
+summary: 利用NetApp 7.3.1、容量資訊會報告並記錄為時間序列資料OnCommand Insight 。 
+---
+= 容量即時間序列
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+利用NetApp 7.3.1、容量資訊會報告並記錄為時間序列資料OnCommand Insight 。
+
+過去、從資料來源取得的容量資訊只是「時間點」（PIT）資料、這表示無法在圖表中作為時間序列資料使用。現在、資產的容量值可透過下列方式做為時間序列資料：
+
+* 以表格、小工具、專家檢視和時間序列資料顯示的任何位置製作圖表
+* 使用現有的語義、套用至效能臨界值、但有違規情形
+* 在適當的情況下、用於運算式與其他效能計數器
+
+
+請注意、如果您從先前版本的Insight升級、查詢或自訂儀表板篩選器中使用的舊PIT容量值將會被時間序列容量資料取代。相較於先前Insight版本中的同等資料、這可能會導致容量資料的報告或篩選方式發生小幅變更。

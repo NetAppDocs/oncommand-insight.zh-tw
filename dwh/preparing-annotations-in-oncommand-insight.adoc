@@ -1,0 +1,23 @@
+---
+permalink: dwh/preparing-annotations-in-oncommand-insight.html 
+sidebar: sidebar 
+keywords:  
+summary: 註釋必須先以OnCommand Insight 不必要的形式準備、才能匯入資料倉儲。 
+---
+= 正在OnCommand Insight 填寫註釋
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+註釋必須先以OnCommand Insight 不必要的形式準備、才能匯入資料倉儲。
+
+
+
+== 步驟
+
+. 以系統管理員身分登入OnCommand Insight 到The效益分析入口網站 `+https://hostname+`、其中 `hostname` 是OnCommand Insight 安裝了IsName的系統名稱。
+. 按一下「*管理*>*疑難排解*」。在頁面底部、按一下*進階疑難排解*。
+. 在「* Actions *（動作*）」索引標籤中、按一下「* Update DWH annotations（Include deleted）*（*更新DWH附註
+

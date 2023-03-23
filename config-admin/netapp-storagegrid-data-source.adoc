@@ -1,0 +1,79 @@
+---
+permalink: config-admin/netapp-storagegrid-data-source.html 
+sidebar: sidebar 
+keywords:  
+summary: 此資料來源會收集庫存和效能資料StorageGRID 以供使用。 
+---
+= NetApp StorageGRID 產品資料來源
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+此資料來源會收集庫存和效能資料StorageGRID 以供使用。
+
+
+
+== 需求
+
+以下是設定此資料來源的需求：
+
+* 主機IP位址StorageGRID
+* 已指派「度量查詢」和「租戶存取」角色的使用者使用者名稱和密碼
+* 連接埠443
+
+
+
+
+== 組態
+
+|===
+
+
+| 欄位 | 說明 
+
+
+ a| 
+主機IP位址（MVIP StorageGRID ）
+ a| 
+主機IP位址StorageGRID
+
+
+
+ a| 
+使用者名稱
+ a| 
+用來登入StorageGRID 此功能的名稱
+
+
+
+ a| 
+密碼
+ a| 
+用於登入StorageGRID 資訊區的密碼
+
+|===
+
+
+== 進階組態
+
+|===
+
+
+| 欄位 | 說明 
+
+
+ a| 
+庫存輪詢時間間隔（分鐘）
+ a| 
+庫存輪詢之間的時間間隔（預設為60分鐘）
+
+
+
+ a| 
+效能意見調查時間間隔（秒）
+ a| 
+效能輪詢之間的時間間隔（預設為900秒）
+
+|===

@@ -1,0 +1,16 @@
+---
+permalink: install-linux/uninstalling-oncommand-insight.html 
+sidebar: sidebar 
+keywords:  
+summary: 如有需要、您可以解除安裝OnCommand Insight 這些元件。您必須OnCommand Insight 個別解除安裝這些元件。 
+---
+= 解除安裝OnCommand Insight
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如有需要、您可以解除安裝OnCommand Insight 這些元件。您必須OnCommand Insight 個別解除安裝這些元件。
+
+每個元件都會個別解除安裝。

@@ -1,0 +1,30 @@
+---
+permalink: install-windows/uninstalling-insight.html 
+sidebar: sidebar 
+keywords:  
+summary: 如有需要、您可以解除安裝OnCommand Insight 此伺服器。 
+---
+= 解除安裝OnCommand Insight The Un
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如有需要、您可以解除安裝OnCommand Insight 此伺服器。
+
+
+
+== 開始之前
+
+最佳實務做法：在解除安裝Insight之前、請先備份OnCommand Insight 該資料庫。
+
+
+
+== 步驟
+
+. 使用具有系統管理員權限的帳戶登入OnCommand Insight 支援服務器。
+. 請確定已關閉伺服器上的所有Insight視窗。
+. 從控制面板開啟*解除安裝程式*功能、然後選取OnCommand Insight 要移除的應用程式。
+. 按一下「*解除安裝*」、然後依照提示進行。
+

@@ -1,0 +1,25 @@
+---
+permalink: howto/downloading-the-servicenow-connector.html 
+sidebar: sidebar 
+keywords:  
+summary: 您必須下載Python Connector for ServiceNow整合、並將其擷取至您選擇的位置。 
+---
+= 正在下載ServiceNow Python連接器
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必須下載Python Connector for ServiceNow整合、並將其擷取至您選擇的位置。
+
+
+
+== 步驟
+
+. 請從下載* ServiceNow Integration Connector * https://automationstore.netapp.com/onCommandInsight.shtml["NetApp Storefront"]。
+. 例如、將.zip檔案解壓縮至資料夾 `c:\OCI2SNOW`。
++
+整合連接器指令碼的名稱為 `oci_snow_sync.pyz`。
+
+

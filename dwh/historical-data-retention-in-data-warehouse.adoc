@@ -1,0 +1,243 @@
+---
+permalink: dwh/historical-data-retention-in-data-warehouse.html 
+sidebar: sidebar 
+keywords:  
+summary: 資料會根據排程在資料倉儲中進行維護。隨著資料變舊、資料記錄保留也會減少。 
+---
+= 如何在資料倉儲中保留歷史資料
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+資料會根據排程在資料倉儲中進行維護。隨著資料變舊、資料記錄保留也會減少。
+
+資料倉儲會根據資料的保存量和精細度來保留歷史資料、如下表所示。
+
+|===
+
+
+| 資料倉儲 | 量測的物件 | 精細度 | 保留期間 
+
+
+ a| 
+效能目標
+ a| 
+磁碟區和內部磁碟區
+ a| 
+每小時
+ a| 
+14天
+
+
+
+ a| 
+效能目標
+ a| 
+磁碟區和內部磁碟區
+ a| 
+每日
+ a| 
+13個月
+
+
+
+ a| 
+效能目標
+ a| 
+應用程式
+ a| 
+每小時
+ a| 
+13個月
+
+
+
+ a| 
+效能目標
+ a| 
+主機
+ a| 
+每小時
+ a| 
+13個月
+
+
+
+ a| 
+效能目標
+ a| 
+連接埠的交換器效能
+ a| 
+每小時
+ a| 
+5週
+
+
+
+ a| 
+效能目標
+ a| 
+交換器效能、適用於主機、儲存設備和磁帶
+ a| 
+每小時
+ a| 
+13個月
+
+
+
+ a| 
+效能目標
+ a| 
+儲存節點
+ a| 
+每小時
+ a| 
+14天
+
+
+
+ a| 
+效能目標
+ a| 
+儲存節點
+ a| 
+每日
+ a| 
+13個月
+
+
+
+ a| 
+效能目標
+ a| 
+VM效能
+ a| 
+每小時
+ a| 
+14天
+
+
+
+ a| 
+效能目標
+ a| 
+VM效能
+ a| 
+每日
+ a| 
+13個月
+
+
+
+ a| 
+效能目標
+ a| 
+Hypervisor效能
+ a| 
+每小時
+ a| 
+14天
+
+
+
+ a| 
+效能目標
+ a| 
+Hypervisor效能
+ a| 
+每日
+ a| 
+13個月
+
+
+
+ a| 
+效能目標
+ a| 
+VMDK效能
+ a| 
+每小時
+ a| 
+14天
+
+
+
+ a| 
+效能目標
+ a| 
+VMDK效能
+ a| 
+每日
+ a| 
+13個月
+
+
+
+ a| 
+效能目標
+ a| 
+磁碟效能
+ a| 
+每小時
+ a| 
+14天
+
+
+
+ a| 
+效能目標
+ a| 
+磁碟效能
+ a| 
+每日
+ a| 
+13個月
+
+
+
+ a| 
+容量市場
+ a| 
+全部（個別磁碟區除外）
+ a| 
+每日
+ a| 
+13個月
+
+
+
+ a| 
+容量市場
+ a| 
+全部（個別磁碟區除外）
+ a| 
+每月代表
+ a| 
+14個月以上
+
+
+
+ a| 
+庫存市場
+ a| 
+個別磁碟區
+ a| 
+目前狀態
+ a| 
+1天（或直到下一個ETL）
+
+|===
+13個月後（可設定）、資料倉儲每個月只會保留一筆記錄、而不會在下列資料表中保留一筆容量、效能和資源資料記錄：
+
+* 計費事實表（dwh_capacity.chargeback_fact）
+* 檔案系統使用率事實表（dwh_fs_util.fs_util_事實上）
+* 主機事實表（dwh_sa.sa_host_事實上）
+* 內部Volume容量資料表（dwh_capacity.internal_volume_capacity_fact）
+* 連接埠事實表（dwh_ports。連接埠_事實上）
+* qtree容量事實表（dwh_capiture.qtree _capization_事實上）
+* 儲存與儲存資源池容量資料表（dwh_capsure.Storage_and_Storage_Pool_capization_f事實上）
+* Volume容量資料表（dwh_capize.vm_capization_事實上）
+* 儲存節點每小時效能（Storage_node_Hour_Performance_事實上）和儲存節點每日效能（Storage_node_dent_Performance_事實上）資料表
+

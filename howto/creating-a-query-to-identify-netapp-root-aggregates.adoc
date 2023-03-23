@@ -1,0 +1,36 @@
+---
+permalink: howto/creating-a-query-to-identify-netapp-root-aggregates.html 
+sidebar: sidebar 
+keywords:  
+summary: 查詢可根據使用者選取的條件、提供精細的搜尋層級。使用查詢可讓您搜尋環境中包含NetApp根Aggregate的內部磁碟區。 
+---
+= 建立查詢以識別您環境中的NetApp根集合體
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+查詢可根據使用者選取的條件、提供精細的搜尋層級。使用查詢可讓您搜尋環境中包含NetApp根Aggregate的內部磁碟區。
+
+
+
+== 步驟
+
+. 在這個Web UI中、建立查詢來識別您環境中的NetApp根集合體：*查詢*>*新查詢*>*選取資源類型* OnCommand Insight
+. 按一下*儲存資源池*
+. 輸入根Aggregate的名稱
++
+此範例使用「'aggr0'」做為名稱。建立Aggregate時、只能遵循下列名稱需求：
+
++
+** 必須以字母或底線開頭（_）。
+** 它只能包含字母、數字和底線。
+** 可以少於250個字元。在大多數情況下、Aggr0、aggr_0或類似名稱。可能需要迭代程序來識別環境中的所有NetApp根集合體。
+
+
+. 按一下「*儲存*」、然後輸入新查詢的名稱。
++
+如前所述、這可能是一個迭代程序、需要多個查詢來識別所有NetApp根集合體。
+
+

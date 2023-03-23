@@ -1,0 +1,184 @@
+---
+permalink: config-admin/emc-vnxe-data-source.html 
+sidebar: sidebar 
+keywords:  
+summary: EMC VNXe資料來源為EMC VNXe和Unity統一化儲存陣列提供庫存支援。 
+---
+= EMC VNXe資料來源
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+EMC VNXe資料來源為EMC VNXe和Unity統一化儲存陣列提供庫存支援。
+
+此資料來源是以CLI為基礎、您必須在VNXe資料來源所在的擷取設備上安裝適用於VNXe CLI（uemcli．exe）的Uner主機。uemcli.exe使用HTTPS作為傳輸傳輸傳輸傳輸協定、因此擷取單位必須能夠起始與VNXe/Unity陣列的HTTPS連線。您必須至少有唯讀使用者、才能供資料來源使用。
+
+
+
+== 術語
+
+從EMC VNXe資料來源取得下列庫存資訊OnCommand Insight 。對於Insight取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料來源時、請謹記下列術語：
+
+|===
+
+
+| 廠商/模型術語 | Insight術語 
+
+
+ a| 
+磁碟
+ a| 
+磁碟
+
+
+
+ a| 
+儲存陣列
+ a| 
+儲存設備
+
+
+
+ a| 
+處理器
+ a| 
+儲存節點
+
+
+
+ a| 
+儲存資源池
+ a| 
+儲存資源池
+
+
+
+ a| 
+一般iSCSI區塊資訊、VMware VMFS
+ a| 
+Volume
+
+
+
+ a| 
+共享資料夾
+ a| 
+內部Volume
+
+
+
+ a| 
+CIFS共用、NFS共用、從VMware NFS資料存放區共用
+ a| 
+分享
+
+
+
+ a| 
+複寫遠端系統
+ a| 
+同步
+
+
+
+ a| 
+iSCSI節點
+ a| 
+iSCSI目標節點
+
+
+
+ a| 
+iSCSI啟動器
+ a| 
+iSCSI目標啟動器
+
+|===
+[NOTE]
+====
+這些只是通用的術語對應、可能不代表此資料來源的每個案例。
+
+====
+
+
+== 需求
+
+以下是設定及使用此資料來源的需求：
+
+* VNXe資料收集器是以CLI為基礎；您必須將Unaeris for VNXe CLI（uemcli．exe）安裝到VNXe資料收集器所在的擷取單元上。
+* uemcli.exe使用HTTPS作為傳輸傳輸傳輸傳輸協定、因此擷取單位必須能夠啟動HTTPS連線至VNXe。
+* 您必須至少有唯讀使用者、才能供資料來源使用。
+* 管理解決方案促成者伺服器的IP位址。
+* 連接埠443需要HTTPS
+* EMC VNXe資料收集器提供NAS與iSCSI的庫存支援；光纖通道磁碟區將會被探索、但Insight不會報告FC對應、遮罩或儲存連接埠。
+
+
+
+
+== 組態
+
+|===
+
+
+| 欄位 | 說明 
+
+
+ a| 
+VNXe儲存設備
+ a| 
+VNXe裝置的IP位址或完整網域名稱
+
+
+
+ a| 
+使用者名稱
+ a| 
+VNXe裝置的使用者名稱
+
+
+
+ a| 
+密碼
+ a| 
+VNXe裝置的密碼
+
+
+
+ a| 
+uemcli執行檔的完整路徑
+ a| 
+的完整路徑 `uemcli.exe` 執行檔
+
+|===
+
+
+== 進階組態
+
+|===
+
+
+| 欄位 | 說明 
+
+
+ a| 
+庫存輪詢時間間隔（分鐘）
+ a| 
+庫存輪詢之間的時間間隔（預設為40分鐘）
+
+
+
+ a| 
+VNXe CLI連接埠
+ a| 
+用於VNXe CLI的連接埠
+
+
+
+ a| 
+庫存外部處理逾時（秒）
+ a| 
+外部處理程序逾時（預設值1800秒）
+
+|===

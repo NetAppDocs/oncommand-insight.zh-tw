@@ -1,0 +1,14 @@
+---
+permalink: dwh/multiple-server-chassis-consolidation-issues.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以檢視報告主機、介面卡、SAN交換器和儲存陣列的連接器。您也可以查看報告物件的各種連接器、並識別主要連接器、也就是為物件選擇的連接器。 
+---
+= 多個伺服器機箱整合問題
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以檢視報告主機、介面卡、SAN交換器和儲存陣列的連接器。您也可以查看報告物件的各種連接器、並識別主要連接器、也就是為物件選擇的連接器。

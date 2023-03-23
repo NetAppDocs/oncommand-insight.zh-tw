@@ -1,0 +1,20 @@
+---
+permalink: faq/faq-environment-management.html 
+sidebar: sidebar 
+keywords:  
+summary: 本常見問題集可解答有關管理OnCommand Insight 各種環境的常見問題。 
+---
+= 管理環境
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+本常見問題集可解答有關管理OnCommand Insight 各種環境的常見問題。
+
+
+
+== 我可以將OCI的存取權限授予特定使用者、同時將檢視限制為僅限特定資源（例如SVM及相關磁碟區、VM、伺服器）？
+
+OCI提供角色型存取。例如、透過OCI的資料倉儲報告來控制對報告的存取。報告可以排程、以PDF、HTML或CSV的形式以電子郵件寄送、也可以寄送至檔案共用區、甚至是URL、要求使用者在檢視前先進行驗證。以系統管理員、使用者和來賓的形式授予使用者型存取權。也提供Active Directory / LDAP支援。

@@ -1,0 +1,36 @@
+---
+permalink: install-windows/testing-the-connectors.html 
+sidebar: sidebar 
+keywords:  
+summary: 升級後、您想要測試連接器、以確保從OnCommand Insight 「心庫」連線到OnCommand Insight 「心庫」伺服器。 
+---
+= 測試連接器
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+升級後、您想要測試連接器、以確保從OnCommand Insight 「心庫」連線到OnCommand Insight 「心庫」伺服器。
+
+
+
+== 步驟
+
+. 登入資料倉儲入口網站： `+https://fqdn/dwh+`。
+. 在左側的導覽窗格中、按一下* Connectors *。
+. 選取第一個連接器。
++
+此時會顯示「編輯連接器」頁面。
+
+. 按一下* Test*。
+. 如果測試成功、請按一下「*關閉*」；如果測試失敗、請在「*名稱*」欄位中輸入Insight伺服器的名稱、並在「*主機*」欄位中輸入其IP位址、然後按一下「*測試*」。
+. 當Data倉儲與Insight伺服器之間的連線成功時、請按一下「*儲存*」。
++
+如果連線失敗、請檢查連線組態、確定Insight伺服器沒有任何問題。
+
+. 按一下* Test*。
++
+資料倉儲會測試連線。
+
+

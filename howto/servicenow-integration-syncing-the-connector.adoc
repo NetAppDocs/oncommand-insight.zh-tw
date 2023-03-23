@@ -1,0 +1,23 @@
+---
+permalink: howto/servicenow-integration-syncing-the-connector.html 
+sidebar: sidebar 
+keywords:  
+summary: 正確設定ServiceNow、Insight和連接器之後、即可同步連接器。 
+---
+= 正在同步連接器
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+正確設定ServiceNow、Insight和連接器之後、即可同步連接器。
+
+
+
+== 步驟
+
+. 開啟cmd提示字元並變更至\OCI2SNOW資料夾。
+. 執行下列命令兩次。第一次同步會更新項目、第二次同步會更新關係： `oci_snow_sync.pyz sync`
+. 確認已填入ServiceNow執行個體中的Storage Server表格。開啟儲存伺服器、確認已列出與該儲存設備相關的資源。
+

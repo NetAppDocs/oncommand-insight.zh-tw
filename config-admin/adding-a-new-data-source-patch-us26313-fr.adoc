@@ -1,0 +1,33 @@
+---
+permalink: config-admin/adding-a-new-data-source-patch-us26313-fr.html 
+sidebar: sidebar 
+keywords:  
+summary: 新的資料來源會以修補程式檔案形式發佈、並使用修補程序程序程序載入系統。此程序可讓OnCommand Insight 您在預定發行的版本之間取得新的資料來源。 
+---
+= 透過修補程式新增資料來源
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+新的資料來源會以修補程式檔案形式發佈、並使用修補程序程序程序載入系統。此程序可讓OnCommand Insight 您在預定發行的版本之間取得新的資料來源。
+
+
+
+== 開始之前
+
+您必須上傳要安裝的修補程式檔案。
+
+
+
+== 步驟
+
+. 在Insight工具列上、按一下*管理*。
+. 選擇*修補程式*。
+. 選取*「動作*」>*「安裝Service Pack或修補程式*」。
+. 在「*安裝Service Pack或修補程式*」對話方塊中、按一下「*瀏覽*」以找出並選取您上傳的修補程式檔案。
+. 按一下「*修補摘要*」對話方塊中的「*下一步*」。
+. 檢閱*讀取本人*資訊、然後按*下一步*繼續。
+. 在「*安裝*」對話方塊中、按一下「*完成*」。
+

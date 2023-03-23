@@ -1,0 +1,16 @@
+---
+permalink: install-windows/verifying-that-business-intelligence-tools-are-running.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果適用、您應該確認商業智慧工具在升級後仍在執行及擷取資料。 
+---
+= 驗證商業智慧工具是否正在執行
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果適用、您應該確認商業智慧工具在升級後仍在執行及擷取資料。
+
+確認BMC Atrium和ServiceNow等商業智慧工具正在執行、而且能夠擷取資料。這包括BMC連接器和運用REST的解決方案。

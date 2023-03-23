@@ -1,0 +1,33 @@
+---
+permalink: config-admin/moving-mysql-data-using-the-migrate-option.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用將MySQL資料目錄移轉到不同的目錄。您可以保留目前的資料目錄。您可以使用疑難排解功能表上的移轉選項、也可以使用命令列。本程序說明如何使用疑難排解>>移轉MySQL資料選項。 
+---
+= 使用移轉選項移動MySQL資料
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用將MySQL資料目錄移轉到不同的目錄。您可以保留目前的資料目錄。您可以使用疑難排解功能表上的移轉選項、也可以使用命令列。本程序說明如何使用*疑難排解*>*移轉MySQL資料*選項。
+
+
+
+== 關於這項工作
+
+如果您保留目前的資料目錄、它將保留為備份並重新命名。
+
+
+
+== 步驟
+
+. 在Web UI中、按一下「*管理*」、然後選取「*疑難排解*」。
+. 按一下*進階疑難排解*。
+. 選擇* Actions *（操作*）選項卡
+. 選擇*移轉MySQL Data*。
+. 輸入您要移轉資料的路徑。
+. 若要保留現有的資料目錄、請勾選*保留現有的資料目錄。*
+. 按一下*移轉*。
+

@@ -1,0 +1,24 @@
+---
+indexpage:
+  lead: 此解決方案可簡化混合式IT基礎架構的作業管理、適用於內部部署環境、以及公有雲和私有雲OnCommand Insight 。
+  tiles:
+  - title: 開始使用
+    links:
+    - title: 安裝（Windows）
+      url: install-windows/installation-prerequisites.html
+    - title: 安裝（Linux）
+      url: install-linux/installation-prerequisites.html
+    - title: 組態與管理
+      url: config-admin/setting-up-insight.html
+  - title: 報告
+    links:
+    - title: 資料倉儲管理
+      url: dwh/welcome-to-data-warehouse.html
+    - title: 報告
+      url: reporting/welcome-to-oncommand-insight-reporting.html
+  - title: 使用方法與常見問題集
+    links:
+    - title: 使用方法
+      url: howto/getting-started-with-insight.html
+    - title: 常見問題集
+      url: faq/faq-general-insight-questions.html

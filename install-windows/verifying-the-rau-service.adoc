@@ -1,0 +1,22 @@
+---
+permalink: install-windows/verifying-the-rau-service.html 
+sidebar: sidebar 
+keywords:  
+summary: 成功安裝遠端擷取單元（Rau）之後、OnCommand Insight Microsoft Windows服務環境中應該會提供此功能。 
+---
+= 驗證遠端擷取單元服務
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+成功安裝遠端擷取單元（Rau）之後、OnCommand Insight Microsoft Windows服務環境中應該會提供此功能。
+
+
+
+== 步驟
+
+. 若要驗證Rau是否已新增至Windows服務、請開啟Windows「開始」功能表、然後選取*「控制台」*>*「系統管理工具」*>*「服務」*。
+. 在OnCommand Insight 清單中找到*《The *》《The *》《The *》《The *》《OnCommand The *》《The Insight》的遠端擷取單元（Rau）*》。
+

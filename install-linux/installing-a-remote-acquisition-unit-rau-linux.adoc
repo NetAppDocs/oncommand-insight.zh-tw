@@ -1,0 +1,57 @@
+---
+permalink: install-linux/installing-a-remote-acquisition-unit-rau-linux.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以在OnCommand Insight 自己的環境中安裝一或多個遠端擷取單元（Raus\）。擷取單位會在網路中執行、透過稱為資料來源的模組存取\、並從資料中心的不同裝置收集資料。 
+---
+= 安裝遠端擷取單元
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在OnCommand Insight 自己的環境中安裝一或多個遠端擷取單元（Raus）。擷取單元會在網路中執行、透過稱為data _sources_的模組存取、並從資料中心的不同裝置收集資料。
+
+
+
+== 開始之前
+
+您必須已完成所有安裝先決條件。
+
+Rau伺服器和OnCommand Insight 支援該伺服器之間必須至少開啟一個連接埠、才能將變更資訊轉送到伺服器。如果您不確定、請在Rau電腦上開啟網頁瀏覽器並將其導向OnCommand Insight 到該伺服器來驗證：
+
+[listing]
+----
+ https://< OnCommand Insight Server hostname >:< acquisition_port >
+----
+擷取連接埠預設為443、但在伺服器安裝期間可能有所變更。如果連線成功、您會看到OnCommand Insight 一個「支援資訊」回應頁面、指出Rau與OnCommand Insight 該伺服器之間有一個開放且可用的連接埠。
+
+對於使用網路位址轉譯或連接埠位址轉譯（NAT/PAT：即IP位址的任何轉譯）的環境、Insight僅支援在NAT與裝置之間插入Rau。
+
+* 支援：OnCommand Insight 功能支援：功能表\-> NAT \-> Rau \->裝置
+* 不支援：OnCommand Insight 功能不支援：功能不支援-> Rau \-> NAT \->裝置
+
+
+
+
+== 步驟
+
+. 使用具有Sudo權限的帳戶登入Rau伺服器。
+. 瀏覽至安裝檔案所在伺服器上的目錄、然後輸入下列命令：
++
+`unzip oci-rau-<version>-linux-x86_64.zip`
+
+. 您可以檢視的語法、命令引數及參數使用量 `oci-install.sh`：
++
+`sudo ./oci-rau-<version>-linux-x86_64/oci-install.sh --help`
+
+. 執行安裝指令碼：
++
+`sudo ./oci-rau-<version>-linux-x86_64/oci-install.sh`
+
+. 閱讀授權合約、接受合約、然後依照提示進行。
++
+在您回答所有提示之後、安裝將會開始、大約需要10分鐘、視安裝的應用程式而定。
+
+

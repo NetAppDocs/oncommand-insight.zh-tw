@@ -1,0 +1,27 @@
+---
+permalink: config-admin/checking-the-status-of-server-resources.html 
+sidebar: sidebar 
+keywords:  
+summary: 此選項會顯示OnCommand Insight 支援伺服器的資訊、包括伺服器記憶體、磁碟空間、作業系統、以及CPU和OnCommand Insight 包含InnoDB資料大小和資料庫所在磁碟可用空間等資料庫資訊。 
+---
+= 檢查伺服器資源的狀態
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+此選項會顯示OnCommand Insight 支援伺服器的資訊、包括伺服器記憶體、磁碟空間、作業系統、以及CPU和OnCommand Insight 包含InnoDB資料大小和資料庫所在磁碟可用空間等資料庫資訊。
+
+
+
+== 步驟
+
+. 在Insight工具列上、按一下*管理*、然後選取*疑難排解*。
+. 在頁面底部的「其他工作」區域中、按一下「* OnCommand Insight 」「Portal *」連結。
+. 在「進階」功能表的下一頁、按一下「*疑難排解*」連結。
+. 按一下*伺服器資源狀態*。
++
+*對於進階OnCommand Insight 版的支援對象：*系統管理員可以執行一些SQL測試、從資訊摘要結尾的按鈕檢查資料庫和伺服器的回應時間。如果伺服器資源不足、此選項會顯示警告。
+
+

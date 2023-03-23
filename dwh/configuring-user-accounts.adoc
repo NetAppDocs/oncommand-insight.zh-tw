@@ -1,0 +1,23 @@
+---
+permalink: dwh/configuring-user-accounts.html 
+sidebar: sidebar 
+keywords:  
+summary: 您必須完成數個步驟才能設定使用者帳戶。 
+---
+= 設定使用者帳戶
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必須完成數個步驟才能設定使用者帳戶。
+
+
+
+== 步驟
+
+. 登入資料倉儲入口網站： `+https://hostname/dwh+`、其中 `hostname` 是OnCommand Insight 安裝了IsName Data倉儲的系統名稱。
+. 在左側的導覽窗格中、按一下*使用者管理*。
+. 設定每個使用者帳戶。
+

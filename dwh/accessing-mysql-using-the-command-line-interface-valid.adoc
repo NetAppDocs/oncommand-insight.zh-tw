@@ -1,0 +1,71 @@
+---
+permalink: dwh/accessing-mysql-using-the-command-line-interface-valid.html 
+sidebar: sidebar 
+keywords:  
+summary: 除了透過報告撰寫工具存取資料倉儲資料元素之外、您也可以直接以MySQL使用者身分連線、以取得資料倉儲資料元素的存取權。您可能想要以MySQL使用者的身分連線、以便在自己的應用程式中使用資料元素。 
+---
+= 使用命令列介面存取MySQL
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+除了透過報告撰寫工具存取資料倉儲資料元素之外、您也可以直接以MySQL使用者身分連線、以取得資料倉儲資料元素的存取權。您可能想要以MySQL使用者的身分連線、以便在自己的應用程式中使用資料元素。
+
+
+
+== 關於這項工作
+
+有許多連線方式。下列步驟有一種方法。
+
+存取MySQL時、請連線至安裝Data倉儲的機器上的MySQL資料庫。MySQL連接埠預設為3306；不過、您可以在安裝期間加以變更。使用者名稱和密碼為dwhuser/netapp123。
+
+
+
+== 步驟
+
+. 在安裝資料倉儲的機器上、開啟命令列視窗。
+. 存取OnCommand Insight 位於資訊目錄的MySQL目錄。
+. 輸入下列使用者名稱和密碼： `mysql -udwhuser -pnetapp123`
++
+視資料倉儲的安裝位置而定、會顯示下列項目：
+
++
+[listing]
+----
+c:\Program Files\SANscreen\mysql\bin> mysql -udwhuser -pnetapp123
+----
++
+[listing]
+----
+Welcome to the MySQL monitor. Commands end with ; or \g.
+Your MySQL connection id is 882
+Server version: 5.1.28-rc-community MySQL Community Server (GPL)
+----
++
+[listing]
+----
+Type 'help;' or '\h' for help. Type '\c' to clear the buffer.
+----
+. 顯示資料倉儲資料庫： `show databases;`
++
+畫面會顯示下列項目：
+
++
+[listing]
+----
+mysql> show databases;
++-------------------------+
+| Database                |
++-------------------------+
+| information_schema      |
+| dwh_capacity            |
+| dwh_capacity_efficiency |
+| dwh_fs_util             |
+| dwh_inventory           |
+| dwh_performance         |
+| dwh_ports               |
++-------------------------+
+----
+

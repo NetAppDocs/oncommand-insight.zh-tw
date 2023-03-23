@@ -1,0 +1,22 @@
+---
+permalink: dwh/accessing-the-data-warehouse-and-reporting.html 
+sidebar: sidebar 
+keywords:  
+summary: Data倉儲入口網站提供管理選項的存取權限。您也可以從資料倉儲入口網站存取報告入口網站。 
+---
+= 存取資料倉儲與報告入口網站
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Data倉儲入口網站提供管理選項的存取權限。您也可以從資料倉儲入口網站存取報告入口網站。
+
+
+
+== 步驟
+
+. 以系統管理員身分登入資料倉儲入口網站、網址為 `+https://hostname/dwh+`、其中 `hostname` 是OnCommand Insight 安裝了IsName Data倉儲的系統名稱。
+. 在資料倉儲工具列上、按一下 image:../media/oci-reporting-portal-icon.gif[""] 開啟報告入口網站。
+

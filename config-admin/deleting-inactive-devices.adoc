@@ -1,0 +1,37 @@
+---
+permalink: config-admin/deleting-inactive-devices.html 
+sidebar: sidebar 
+keywords:  
+summary: 刪除非作用中的裝置、有助於保持資料更乾淨、更容易瀏覽。 
+---
+= 刪除非使用中的裝置
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+刪除非作用中的裝置、有助於保持資料更乾淨、更容易瀏覽。
+
+
+
+== 關於這項工作
+
+若要從Insight刪除非使用中的裝置、請執行下列步驟：
+
+
+
+== 步驟
+
+. 建立新查詢或開啟現有查詢。
+. 選擇_通用設備_、_host_、_storage _、_switch_或_tape _資產類型。
+. 新增*為作用中*的篩選條件、並將篩選條件設為*否*。
++
+結果表僅顯示未啟用的資產。
+
+. 選取您要刪除的裝置。
+. 按一下「*動作*」按鈕、然後選取「*刪除非使用中的裝置*」。
++
+您的非使用中裝置將會刪除、而不會再顯示在Insight中。
+
+

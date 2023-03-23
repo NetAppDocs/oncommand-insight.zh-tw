@@ -1,0 +1,29 @@
+---
+permalink: config-admin/deleting-a-data-source-from-the-monitoring-environment.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果您已從環境中移除資料來源、也必須將其從OnCommand Insight 停止監控環境中刪除。 
+---
+= 刪除資料來源
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您已從環境中移除資料來源、也必須將其從OnCommand Insight 停止監控環境中刪除。
+
+
+
+== 步驟
+
+. 在Insight工具列上、按一下*管理*。
++
+資料來源清單隨即開啟。
+
+. 選取您要刪除的資料來源。
+. 按一下連結的資料來源名稱。
+. 請檢查摘要頁面上所選資料來源的資訊、確定該資料來源是您要刪除的資料來源。
+. 按一下*刪除*。
+. 單擊*確定*確認操作。
+

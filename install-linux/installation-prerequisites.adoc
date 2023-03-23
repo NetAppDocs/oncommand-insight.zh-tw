@@ -1,0 +1,30 @@
+---
+permalink: install-linux/installation-prerequisites.html 
+sidebar: sidebar 
+keywords:  
+summary: 在安裝OnCommand Insight 支援程式之前、您必須先下載目前的軟體版本、取得適當的授權、然後設定環境。 
+---
+= 安裝先決條件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在安裝OnCommand Insight 支援程式之前、您必須先下載目前的軟體版本、取得適當的授權、然後設定環境。
+
+安裝OnCommand Insight 過程中、請先確認您具備下列條件：
+
+* 下載安裝套件中針對目前版本的軟體檔案OnCommand Insight
+* 操作下載OnCommand Insight 的版本的授權
+* 最低的硬體與軟體環境
++
+目前的產品可能會耗用其他硬體資源（因為OnCommand Insight 強化的功能性）、而OnCommand Insight 這些資源並未用於舊版的整合式功能。
+
+* 部署計畫、包括OnCommand Insight 適用於「支援伺服器」、「資料倉儲與報告」、以及遠端擷取單元的硬體與網路組態。
+* Java 8 OnCommand Insight for the Java UI。
++
+
+NOTE: 包含Java SE 8的付費Oracle授權OnCommand Insight 。客戶不需要購買任何額外的Java SE 8授權。本授權涵蓋Java SE 8搭配所有OCI元件的使用。請參閱 http://docs.netapp.com/oci-73/topic/com.netapp.ndc.notices/GUID-93BE9A1E-D79E-4A97-87A2-4DBE31372A16.html["通知"] 頁面以取得特定詳細資料。
+
+

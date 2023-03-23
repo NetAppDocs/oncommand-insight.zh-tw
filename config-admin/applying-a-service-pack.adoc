@@ -1,0 +1,37 @@
+---
+permalink: config-admin/applying-a-service-pack.html 
+sidebar: sidebar 
+keywords:  
+summary: 定期提供Service Pack、您可以申請使用這些Service Pack來修復OnCommand Insight 及增強功能。 
+---
+= 套用Service Pack
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+定期提供Service Pack、您可以申請使用這些Service Pack來修復OnCommand Insight 及增強功能。
+
+
+
+== 開始之前
+
+* 您必須已下載Service Pack檔案（例如、 `7.2service_pack_1.patch`）從NOW站點開始。
+* 您必須已核准所有修補程式。
+
+
+
+
+== 步驟
+
+. 在Insight工具列上、按一下*管理*。
+. 按一下*修補程式*。
+. 從「動作」按鈕選取*「套用修補程式」*。
+. 在「*套用資料來源修補程式*」對話方塊中、按一下「*瀏覽*」以找出Service Pack檔案。
+. 請查看*修補程式名稱*、*說明*、*受影響的資料來源類型*、其中顯示是否有任何資料來源受到影響、以及*詳細資料*、其中說明Service Pack所含的增強功能。
+. 如果選取的Service Pack正確、請按一下*套用修補程式*。
++
+Service Pack會自動核准、不需要採取進一步行動。
+
+

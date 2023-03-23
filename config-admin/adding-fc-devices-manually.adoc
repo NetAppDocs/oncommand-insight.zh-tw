@@ -1,0 +1,46 @@
+---
+permalink: config-admin/adding-fc-devices-manually.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以OnCommand Insight 使用「裝置解析度FC識別」索引標籤中的手動新增功能、將光纖通道裝置手動新增至支援功能。此程序可用於預先識別預期未來會探索的裝置。 
+---
+= 手動新增Fibre Channel裝置
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以OnCommand Insight 使用「裝置解析度FC識別」索引標籤中的手動新增功能、將光纖通道裝置手動新增至支援功能。此程序可用於預先識別預期未來會探索的裝置。
+
+
+
+== 開始之前
+
+若要成功將裝置識別新增至系統、您必須知道WWN或IP位址和裝置名稱。
+
+
+
+== 關於這項工作
+
+您可以手動新增主機、儲存設備、磁帶或未知的光纖通道裝置。
+
+
+
+== 步驟
+
+. 登入Insight Web UI
+. 按一下「*管理*>*裝置解析度*」
+. 按一下「* FC identi*」索引標籤。
+. 按一下「新增」按鈕。
++
+隨即顯示Add Device（新增裝置）對話方塊
+
+. 輸入WWN或IP位址、裝置名稱、然後選取裝置類型。
+
+
+
+
+== 結果
+
+您輸入的裝置會新增至FC識別索引標籤中的裝置清單。「Rule」被識別為「Manual」（手動）。

@@ -1,0 +1,24 @@
+---
+permalink: config-admin/cac-configuration-for-linux.html 
+sidebar: sidebar 
+keywords:  
+summary: 在Linux OnCommand Insight 支援伺服器上啟用CAC需要進行一些修改。 
+---
+= 在Linux伺服器上啟用CAC
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在Linux OnCommand Insight 支援伺服器上啟用CAC需要進行一些修改。
+
+
+
+== 步驟
+
+. 瀏覽至 `/opt/netapp/oci/conf/`
+. 編輯 `wildfly.properties` 並變更的值 `CLIENT_AUTH_ENABLED` 至「真」
+. 匯入下的「root憑證」 `/opt/netapp/oci/wildfly/standalone/configuration/server.keystore`
+. 重新啟動伺服器
+

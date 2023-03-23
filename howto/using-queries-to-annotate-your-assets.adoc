@@ -1,0 +1,16 @@
+---
+permalink: howto/using-queries-to-annotate-your-assets.html 
+sidebar: sidebar 
+keywords:  
+summary: 現在您已經建立了初始註釋、現在我們來看看如何將這些註釋與特定資產建立關聯。 
+---
+= 使用查詢為資產加上附註
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+現在您已經建立了初始註釋、現在我們來看看如何將這些註釋與特定資產建立關聯。
+
+在後續範例中、我們會將這些附註套用至特定資產。例如、我們會建立一個查詢、列出位於特定資料中心的所有儲存陣列、並以適當的註釋來標記這些陣列。然後我們也會針對屬於特定層級和服務層級的資產執行相同的作業。

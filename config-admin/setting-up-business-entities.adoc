@@ -1,0 +1,43 @@
+---
+permalink: config-admin/setting-up-business-entities.html 
+sidebar: sidebar 
+keywords:  
+summary: 為貴公司設計企業實體階層之後、您可以設定應用程式、然後將商業實體與應用程式建立關聯。此程序可在OnCommand Insight 您的資料庫中建立業務實體架構。 
+---
+= 建立商業實體
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+為貴公司設計企業實體階層之後、您可以設定應用程式、然後將商業實體與應用程式建立關聯。此程序可在OnCommand Insight 您的資料庫中建立業務實體架構。
+
+
+
+== 關於這項工作
+
+將應用程式與商業實體建立關聯是選擇性的、不過這是最佳實務做法。
+
+
+
+== 步驟
+
+. 登入Insight Web UI。
+. 按一下「*管理*」、然後選取「*商業實體*」。
++
+隨即顯示「商業實體」頁面。
+
+. 按一下 image:../media/add-annotation-icon.gif[""] 開始建立新的實體。
++
+此時將顯示「*新增營業實體*」對話方塊。
+
+. 對於每個實體層級（租戶、業務單位、業務單位和專案）、您可以執行下列任一項：
++
+** 按一下實體層級清單、然後選取一個值。
+** 輸入新值、然後按Enter。
+** 如果您不想將實體層級用於企業實體、請將實體層級值保留為N/A。
+
+
+. 按一下「 * 儲存 * 」。
+

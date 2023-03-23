@@ -1,0 +1,92 @@
+---
+permalink: install-windows/verifying-the-data-warehouse-and-reporting-installation.html 
+sidebar: sidebar 
+keywords:  
+summary: 成功OnCommand Insight 安裝完「更新資料倉儲」之後、您應該確保所有的DWH和報告服務都能在Microsoft Windows服務中使用。 
+---
+= 驗證資料倉儲與報告安裝
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+成功OnCommand Insight 安裝完「更新資料倉儲」之後、您應該確保所有的DWH和報告服務都能在Microsoft Windows服務中使用。
+
+
+
+== 步驟
+
+. 從Windows「開始」功能表中、選取功能表：「控制台」[「系統與安全性」>「系統管理工具」>「服務」]。
+. 確認服務清單中顯示下列項目：
++
+|===
+
+
+| 名稱/狀態 | 說明 
+
+
+ a| 
+*《伺服器/執行中*》SANscreen
+ a| 
+The WSHDWH伺服器OnCommand Insight
+
+
+
+ a| 
+* MySQL /執行中*
+ a| 
+這個功能就是SQL資料庫OnCommand Insight
+
+
+
+ a| 
+* IBM Cognos /執行*
+ a| 
+IBM Cognos內容資料庫
+
+
+
+ a| 
+* DB2 - DB2COPY1 - DB2.0 /執行中*
+ a| 
+管理DB2資料庫
+
+
+
+ a| 
+* DB2管理員（DB2COPY1）/未執行*
+ a| 
+收集連接至DB2資料庫之應用程式的統計資料。
+
+
+
+ a| 
+* DB2授權伺服器（DB2COPY1）/未執行*
+ a| 
+監控DB2授權法規遵循。
+
+
+
+ a| 
+* DB2管理服務（DB2COPY1）/執行中*
+ a| 
+管理DB2登錄項目、以與舊版DB2複本相容。
+
+
+
+ a| 
+* DB2遠端命令伺服器（DB2COPY1）/執行中*
+ a| 
+支援遠端DB2命令執行。
+
+
+
+ a| 
+* IBM Secure Shell Server for Windows / Not Running *
+ a| 
+適用於Windows的IBM Secure Shell伺服器
+
+|===
+

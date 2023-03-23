@@ -1,0 +1,16 @@
+---
+permalink: install-windows/preserving-custom-settings-when-upgrading-data-warehouse.html 
+sidebar: sidebar 
+keywords:  
+summary: 自訂Cognos設定（例如非預設的SMTP電子郵件設定）不會自動備份為資料倉儲升級的一部分。您需要手動記錄、然後在升級後還原自訂設定。 
+---
+= 在資料倉儲升級期間保留自訂Cognos設定
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+自訂Cognos設定（例如非預設的SMTP電子郵件設定）不會自動備份為資料倉儲升級的一部分。您需要手動記錄、然後在升級後還原自訂設定。
+
+在升級Data倉儲之前、請先準備一份檢查清單、列出您要保留的任何自訂Cognos設定、並在升級系統之前檢閱清單。升級完成後、您可以手動還原這些值、將其還原至原始組態中的設定。

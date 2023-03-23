@@ -1,0 +1,31 @@
+---
+permalink: install-windows/updating-disk-models.html 
+sidebar: sidebar 
+keywords:  
+summary: 升級後、您應該擁有任何更新的磁碟機型；不過、如果Insight因為某些原因無法探索新的磁碟機型、您可以手動更新。 
+---
+= 正在更新磁碟機型
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+升級後、您應該擁有任何更新的磁碟機型；不過、如果Insight因為某些原因無法探索新的磁碟機型、您可以手動更新。
+
+
+
+== 開始之前
+
+您必須已取得技術支援 `.zip` 包含最新資料來源修補程式的檔案。
+
+
+
+== 步驟
+
+. 停止SANscreen 功能不再是功能不再的服務。
+. 瀏覽至下列目錄： `<install directory>\SANscreen\wildfly\standalone\deployments\datasources.war`。
+. 移動目前的 `diskmodels.jar` 檔案移至不同位置。
+. 複製新的 `diskmodels.jar` 檔案至 `datasources.war` 目錄。
+. 啟動SANscreen 《The》（《The》）《The》（《The
+

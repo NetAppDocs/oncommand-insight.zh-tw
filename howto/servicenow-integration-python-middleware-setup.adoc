@@ -1,0 +1,51 @@
+---
+permalink: howto/servicenow-integration-python-middleware-setup.html 
+sidebar: sidebar 
+keywords:  
+summary: 現在已經安裝Python和必要的程式庫、您可以設定中介軟體連接器、以便與OnCommand Insight 下列項目進行通訊： 
+---
+= 設定Python中介軟體
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+現在已經安裝Python和必要的程式庫、您可以設定中介軟體連接器、以便與OnCommand Insight 下列項目進行通訊：
+
+
+
+== 步驟
+
+. 在您下載連接器軟體的主機或VM上、以系統管理員身分開啟cmd視窗、然後變更為 `\OCI2SNOW\` 資料夾。
+. 您必須初始化指令碼、才能產生一個空白的* config.ini*檔案。執行下列命令： `oci_snow_sync.pyz init`
+. 在文字編輯器中開啟** config.ini**file、並在[OCI ]區段中進行下列變更：
++
+** 將* url*設為 `https://<name.domain>` 或 `https://<ip address>` 適用於Insight執行個體。
+** 將*使用者*和*密碼*設為建立的Insight使用者、例如OCI2SNOW。
+** 將* include_off_VMS*設為*假*
+
+
+. 在[snow（白雪）]區段中、進行下列變更：
++
+** 將* Instance*設為ServiceNow執行個體的FQDN或IP位址
+** 將*使用者*和*密碼*設為ServiceNow服務帳戶使用者、例如OCI2SNOW。
+** 在OCI URL*的*欄位下、將* URL*欄位設定為「'u_OCI URL」。此欄位是以連接器OCI更新集的一部分建立。您可以在客戶環境中變更此設定、但如果您這麼做、則必須在此處和ServiceNow中進行修改。最佳實務做法是保持此欄位不變。
+** 將*篩選器狀態*欄位設定為「已安裝、庫存」。如果您的狀態不同、則必須在此設定該狀態、以便在上傳新記錄之前、取得與Insight記錄相符的所有記錄。在大多數情況下、此欄位應保持不變。
+** 將「stale_stStatus」設為「'retired」。
+
+
+. 只有在使用Proxy伺服器時、才需要[Proxy]區段。如果您需要使用本節、請確定下列設定：
++
+** ；https = http://<host>:<port>[]
+** ；http = http://<host>:<port>[]
+** ；include_OCI =真
+** ；include_snow =真
+
+
+. 只有在需要更深入的偵錯資訊時、才編輯[Log]區段。
+. 若要測試連接器、請以系統管理員身分開啟cmd提示字元、然後變更至\OCI2SNOW資料夾。執行下列命令： `oci_snow_sync.pyz test`
++
+如需詳細資料、請參閱 `logs\` 資料夾。
+
+

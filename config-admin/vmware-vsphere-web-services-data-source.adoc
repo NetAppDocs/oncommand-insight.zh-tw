@@ -1,0 +1,190 @@
+---
+permalink: config-admin/vmware-vsphere-web-services-data-source.html 
+sidebar: sidebar 
+keywords:  
+summary: VMware vSphere（Web服務）資料來源會收集ESX主機資訊、並要求虛擬中心內所有物件的唯讀權限。 
+---
+= VMware vSphere資料來源
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+VMware vSphere（Web服務）資料來源會收集ESX主機資訊、並要求虛擬中心內所有物件的_唯讀_權限。
+
+
+
+== 術語
+
+從VMware vSphere資料來源取得下列庫存資訊OnCommand Insight 。對於Insight取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料來源時、請謹記下列術語：
+
+|===
+
+
+| 廠商/模型術語 | Insight術語 
+
+
+ a| 
+虛擬磁碟
+ a| 
+磁碟
+
+
+
+ a| 
+主機
+ a| 
+主機
+
+
+
+ a| 
+虛擬機器
+ a| 
+虛擬機器
+
+
+
+ a| 
+資料儲存區
+ a| 
+資料儲存區
+
+
+
+ a| 
+LUN
+ a| 
+LUN
+
+
+
+ a| 
+Fibre Channel連接埠
+ a| 
+連接埠
+
+|===
+[NOTE]
+====
+這些只是通用的術語對應、可能不代表此資料來源的每個案例。
+
+====
+
+
+== 需求
+
+* Virtual Center伺服器的IP位址
+* Virtual Center中的唯讀使用者名稱和密碼
+* 虛擬中心內所有物件的唯讀權限。
+* 存取Virtual Center伺服器上的SDK
+* 連接埠需求：https-80 https-443
+* 使用您的使用者名稱和密碼登入Virtual Center Client、並輸入以下命令驗證是否已啟用SDK、藉此驗證存取 `telnet <vc_ip\> 443`。
+
+
+
+
+== 組態
+
+|===
+| *欄位* 
+
+
+| *說明* 
+
+
+ a| 
+虛擬中心位址
+
+
+
+ a| 
+虛擬中心或vSphere伺服器的網路位址、指定為IP _（nnn.n.n.n.nn.nnn_格式）位址或可透過DNS解析的主機名稱。
+
+
+
+ a| 
+使用者名稱
+
+
+
+ a| 
+VMware伺服器的使用者名稱。
+
+
+
+ a| 
+密碼
+
+
+
+ a| 
+VMware伺服器的密碼。
+
+|===
+
+
+== 進階組態
+
+|===
+
+
+| *欄位* | *說明* 
+
+
+ a| 
+庫存輪詢時間間隔（分鐘）
+ a| 
+庫存輪詢之間的時間間隔（預設為20分鐘）
+
+
+
+ a| 
+連線逾時（毫秒）
+ a| 
+連線逾時（預設為60000毫秒）
+
+
+
+ a| 
+依篩選VM
+ a| 
+選擇如何篩選VM
+
+
+
+ a| 
+選擇「排除」或「包含」以指定清單
+ a| 
+指定在收集資料時是否要納入或排除下列VM清單
+
+
+
+ a| 
+要篩選的虛擬機器清單（以英文分隔、若值中使用以英文分隔、則以分號分隔）
+ a| 
+要包含或排除在輪詢中的虛擬機器清單、以逗號分隔或以分號分隔
+
+
+
+ a| 
+vCenter要求的重試次數
+ a| 
+vCenter要求重試嘗試次數
+
+
+
+ a| 
+通訊連接埠
+ a| 
+用於VMware伺服器的連接埠
+
+
+
+ a| 
+效能意見調查時間間隔（秒）
+ a| 
+效能輪詢之間的時間間隔（預設為300秒）
+
+|===

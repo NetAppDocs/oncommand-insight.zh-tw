@@ -1,0 +1,22 @@
+---
+permalink: dwh/backing-up-custom-reports-and-report-artifacts.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果您在早於7.0的Insight版本中建立自訂報告、而且想要升級至最新的Insight版本、則應在升級安裝之前備份報告並報告成品、並在升級安裝後還原。您也應該注意用來儲存報告成品的資料夾。 
+---
+= 備份自訂報告和報告成品
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您在早於7.0的Insight版本中建立自訂報告、而且想要升級至最新的Insight版本、則應在升級安裝之前備份報告並報告成品、並在升級安裝後還原。您也應該注意用來儲存報告成品的資料夾。
+
+
+
+== 關於這項工作
+
+如果您對預先設計的報告進行變更、請在另一個資料夾中建立您自己的報告複本。如此一來、當您更新預先設計的成品時、就不會覆寫變更。
+
+如果「我的資料夾」區域中有報告、您應該將報告複製到「自訂報告」資料夾、以免遺失。

@@ -1,0 +1,101 @@
+---
+permalink: config-admin/managing-security-on-an-rau.html 
+sidebar: sidebar 
+keywords: rekey 
+summary: 安全性管理工具可讓您管理Rous上的安全性選項。您可能需要備份或還原資料保險箱組態、變更加密金鑰、或更新擷取單位的密碼。 
+---
+= 管理Rau的安全性
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+。 `securityadmin` 工具可讓您管理Rous上的安全選項。您可能需要備份或還原資料保險箱組態、變更加密金鑰、或更新擷取單位的密碼。
+
+
+
+== 關於這項工作
+
+您可以使用 `securityadmin` 管理安全性的工具：
+
+* Windows - `C:\Program Files\SANscreen\securityadmin\bin\securityadmin.bat`
+* Linux - `/bin/oci-securityadmin.sh`
+
+
+更新Lau安全性組態的其中一種案例是、在伺服器上變更該使用者的密碼時、更新「擷取」使用者密碼。所有的Raus和Lau都使用與伺服器「擷取」使用者相同的密碼來與伺服器通訊。
+
+[NOTE]
+====
+
+====
+「擷取」使用者僅存在於Insight伺服器上。當Rau或Lau連線至伺服器時、會以該使用者的身分登入。
+
+請使用下列步驟來管理Rau上的安全性選項：
+
+
+
+== 步驟
+
+. 遠端登入執行Rau的伺服器
+. 以互動模式啟動安全管理工具： `Windows - C:\Program Files\SANscreen\securityadmin\bin\securityadmin.bat -i``Linux - /bin/oci-securityadmin.sh -i`
++
+系統會要求登入認證資料。
+
+. 輸入具有「admin」認證的帳戶使用者名稱和密碼。
++
+系統會顯示Rau功能表。
+
++
+** *備份*
++
+建立包含所有密碼和金鑰的資料保險箱備份壓縮檔、並將檔案放置在使用者指定的位置、或是下列預設位置：
+
++
+*** Windows - `C:\Program Files\SANscreen\backup\vault`
+*** Linux - `/var/log/netapp/oci/backup/vault`
+
+
+** *還原*
++
+還原所建立之資料保存庫的壓縮備份。還原之後、所有密碼和金鑰都會還原為建立備份時的現有值。
+
++
+[NOTE]
+====
+還原可用於同步多個伺服器上的密碼和金鑰、例如：-變更一部伺服器上的加密金鑰-建立資料庫備份-將資料庫備份還原至第二部伺服器
+
++
+
+====
+** *變更加密金鑰*
++
+變更用來加密或解密裝置密碼的Rau加密金鑰。
+
++
+[NOTE]
+====
+變更加密金鑰時、您應該備份新的安全性組態、以便在升級或安裝之後還原。
+
+====
+** *更新密碼*
++
+變更「擷取」使用者帳戶的密碼。
+
++
+[NOTE]
+====
+有些帳戶需要在密碼變更時進行同步處理。例如、如果您變更伺服器上「擷取」使用者的密碼、則需要變更劉、Rau和DWH上「擷取」使用者的密碼以進行比對。此外、當您變更密碼時、也應該備份新的安全組態、以便在升級或安裝之後還原。
+
+====
+** *重設為預設值*
++
+將加密金鑰和密碼重設為預設值。預設值為安裝期間提供的值。
+
+** *退出*
++
+結束 `securityadmin` 工具：
+
+
+
+

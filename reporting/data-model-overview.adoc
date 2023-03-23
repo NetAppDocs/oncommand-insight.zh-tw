@@ -1,0 +1,20 @@
+---
+permalink: reporting/data-model-overview.html 
+sidebar: sidebar 
+keywords:  
+summary: 提供多種資料模型、可用於報告開發OnCommand Insight 。每個資料模型都是彙總資料的集合體、以便進行查詢和搜尋。例如、關於容量規劃的報告會使用容量資料模型。 
+---
+= 資料模型總覽
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+提供多種資料模型、可用於報告開發OnCommand Insight 。每個資料模型都是彙總資料的集合體、以便進行查詢和搜尋。例如、關於容量規劃的報告會使用容量資料模型。
+
+這個功能強大的企業級報告資料模型可提供資料元素、以及資料元素之間的互動關係、讓您能夠看到資料的商業觀點OnCommand Insight 。使用資料元素和關係、您可以使用NetApp建議的IBM Cognos分析報告產生工具來建立報告。
+
+此外、本產品還提供資料市場、可用來開發您自己的SQL查詢OnCommand Insight 。這些SQL查詢資料市場與報告中使用的資料模型之間有差異。個別OnCommand Insight 的功能性報告資料模型會使用OnCommand Insight 資料中心所提供的基礎功能性資料庫架構、不過資料模型會使用額外的表格、有時也會在表格中使用新的元素。例如、資料模型會在儲存容量資料模型中包含每月容量資料表、該資料表是根據資料庫架構和資料倉儲中的容量事實資料表。資料模型會篩選資料庫架構表格中的值、僅顯示月份資訊。
+
+另一個在資料標記和資料模型中使用的資料庫架構差異範例、是在違規表格和違規類型欄中。資料模型會轉譯資料庫中以程式設計命名的值、以符合OnCommand Insight 顯示在畫面上的文字。

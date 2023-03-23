@@ -1,0 +1,40 @@
+---
+permalink: howto/node-dashboard-example-widget-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: 節點儀表板的Widget設定、含變數範例。 
+---
+= 節點儀表板範例Widget設定
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+節點儀表板的Widget設定、含變數範例。
+
+以下是儲存節點儀表板範例中每個小工具的設定。
+
+節點使用率：
+
+image:../media/nodeutilchart.gif[""] image:../media/nodeutiltable.gif[""]
+
+節點延遲：
+
+image:../media/nodelatencychart.gif[""] image:../media/nodelatencytable.gif[""]
+
+儲存資源池使用率：
+
+image:../media/poolutilchart.gif[""] image:../media/poolutiltable.gif[""]
+
+儲存資源池處理量：
+
+image:../media/poolthroughputchart.gif[""] image:../media/poolthroughputtable.gif[""]
+
+Volume延遲：
+
+image:../media/vollatencychart.gif[""] image:../media/vollatencytable.gif[""]
+
+Volume IOPS：
+
+image:../media/voliopschart.gif[""] image:../media/voliopstable.gif[""]

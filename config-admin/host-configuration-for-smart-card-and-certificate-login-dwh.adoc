@@ -1,0 +1,89 @@
+---
+permalink: config-admin/host-configuration-for-smart-card-and-certificate-login-dwh.html 
+sidebar: sidebar 
+keywords:  
+summary: 您必須修改OnCommand Insight 「支援Smart Card（CAC）」和憑證登入的「支援資料倉儲」組態。 
+---
+= 設定資料倉儲以進行智慧卡和憑證登入
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必須修改OnCommand Insight 「支援智慧卡（CAC）」和「憑證登入」的「支援資料倉儲」組態。
+
+
+
+== 開始之前
+
+* 必須在系統上啟用LDAP。
+* LDAP `User principal account name` 屬性必須符合包含使用者政府ID號碼的LDAP欄位。
++
+儲存在政府核發之CAC上的一般名稱（CN）通常採用下列格式： `first.last.ID`。對於某些LDAP欄位、例如 `sAMAccountName`、格式太長。對於這些欄位OnCommand Insight 、只會從CNS擷取ID號碼。
+
+
+
+[NOTE]
+====
+如需最新的CAC和憑證指示、請參閱下列知識庫文章（需要支援登入）：
+
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Infrastructure_Management/OnCommand_Suite/How_to_configure_Common_Access_Card_(CAC)_authentication_for_NetApp_OnCommand_Insight["如何設定OnCommand Insight 通用存取卡（CAC）驗證以供使用"]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Infrastructure_Management/OnCommand_Suite/How_to_configure_Common_Access_Card_(CAC)_authentication_for_NetApp_OnCommand_Insight_DataWarehouse["如何設定OnCommand Insight 適用於《支援不支援資料倉儲》的通用存取卡（CAC）驗證"]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Infrastructure_Management/OnCommand_Suite/How_to_create_and_import_a_Certificate_Authority_(CA)_signed_certificate_into_OCI_and_DWH_7.3.X["如何建立及匯入已簽署的憑證授權單位（CA）憑證至OnComand Insight及OnCommand Insight 《Data Warehouse 7.3.x》"]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Infrastructure_Management/OnCommand_Suite/How_to_create_a_Self_Signed_Certificate_within_OnCommand_Insight_7.3.X_installed_on_a_Windows_Host["如何在OnCommand Insight 安裝在Windows主機上的Se.7.3.x內建立自我簽署的憑證"]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Infrastructure_Management/OnCommand_Suite/How_to_import_a_Cognos_Certificate_Authority_(CA)_signed_certificate_into_DWH_7.3.3_and_later["如何將Cognos憑證授權單位（CA）簽署的憑證匯入OnCommand 到EWdatawarehouse 7.3.3及更新版本"]
+
+
+====
+
+
+== 步驟
+
+. 使用RegEdit修改中的登錄值 `HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Apache Software Foundation\Procrun2.0\SANscreen Server\Parameters\Java`
++
+.. 變更JVM_Option `-DclientAuth=false` 至 `-DclientAuth=true`。
+
+
++
+若為Linux、請修改 `clientAuth` 參數輸入 `/opt/netapp/oci/scripts/wildfly.server`
+
+. 將憑證授權單位（CA）新增至資料倉儲信任庫：
++
+.. 在命令視窗中、前往 `..\SANscreen\wildfly\standalone\configuration`。
+.. 使用 `keytool` 列出信任CA的公用程式： `C:\Program Files\SANscreen\java64\bin\keytool.exe -list -keystore server.trustore -storepass changeit`
++
+每行的第一個字表示CA別名。
+
+.. 如有必要、請提供CA憑證檔案、通常是 `.pem` 檔案：若要將客戶的CA納入資料倉儲信任的CA、請前往 `..\SANscreen\wildfly\standalone\configuration` 並使用 `keytool` 匯入命令： `C:\Program Files\SANscreen\java64\bin\keytool.exe -importcert -keystore server.trustore -alias my_alias -file 'path/to/my.pem' -v -trustcacerts`
++
+my_alias通常是容易識別中CA的別名``keytool -list`` 營運。
+
+
+
+. 在伺服器上OnCommand Insight `wildfly/standalone/configuration/standalone-full.xml` 檔案必須透過將驗證用戶端更新為中的「要求的」來修改 ``/subsystem=undertow/server=default-server/https-listener=default-https``以啟用CAC。登入Insight伺服器並執行適當的命令：
++
+|===
+
+
+| 作業系統 | 指令碼 
+
+
+ a| 
+Windows
+ a| 
+wildfly \bin\enableCACforRemoteEJB.bat <install dir>
+
+
+
+ a| 
+Linux
+ a| 
+/opp/NetApp/OCI /萬用里/賓/ enableCACforRemoteEJB.sh
+
+|===
++
+執行指令碼之後、請等到重新載入wildfly伺服器完成之後、再繼續下一步。
+
+. 重新啟動OnCommand Insight 伺服器。
+

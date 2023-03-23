@@ -1,0 +1,14 @@
+---
+permalink: config-admin/assigning-annotations-to-assets-using-annotation-rules.html 
+sidebar: sidebar 
+keywords:  
+summary: 若要根據您定義的準則自動指派資產附註、請設定附註規則。根據這些規則、將註釋指派給資產OnCommand Insight 。Insight也提供兩種預設註釋規則、您可以根據需求進行修改、或是在不想使用時加以移除。 
+---
+= 使用註釋規則指派註釋給資產
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+若要根據您定義的準則自動指派資產附註、請設定附註規則。根據這些規則、將註釋指派給資產OnCommand Insight 。Insight也提供兩種預設註釋規則、您可以根據需求進行修改、或是在不想使用時加以移除。

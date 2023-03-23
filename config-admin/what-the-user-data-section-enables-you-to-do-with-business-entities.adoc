@@ -1,0 +1,39 @@
+---
+permalink: config-admin/what-the-user-data-section-enables-you-to-do-with-business-entities.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以定義企業實體、以更精細的層級追蹤及報告環境資料。資產頁面的「使用者資料」區段可讓您變更指派給資產的企業實體、或是從資產中移除企業實體。 
+---
+= 使用「使用者資料」區段來指派或修改商業實體
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以定義企業實體、以更精細的層級追蹤及報告環境資料。資產頁面的「使用者資料」區段可讓您變更指派給資產的企業實體、或是從資產中移除企業實體。
+
+
+
+== 步驟
+
+. 登入OnCommand Insight 到The W不明 網路UI。
+. 執行下列其中一項動作、找出資產頁面：
++
+** 在Insight工具列上、按一下 image:../media/icon-sanscreen-magnifying-glass-gif.gif[""]，輸入資產名稱，然後從清單中選取資產。
+** 按一下*儀表板*、選取*資產儀表板*、找出資產名稱、然後按一下。隨即顯示「資產」頁面。
+
+
+. 您可以執行下列動作：
++
+** 若要變更指派的實體或指派實體、請按一下 image:../media/pencil-icon-landing-page-be.gif[""] 然後從清單中選取一個實體。
+** 若要移除企業實體、請按一下 image:../media/trash-can-query.gif[""]。
++
+[NOTE]
+====
+您無法移除從指派給資產的應用程式衍生的實體。
+
+====
+
+
+

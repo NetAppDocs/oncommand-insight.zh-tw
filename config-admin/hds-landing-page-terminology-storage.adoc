@@ -1,0 +1,28 @@
+---
+permalink: config-admin/hds-landing-page-terminology-storage.html 
+sidebar: sidebar 
+keywords:  
+summary: 適用於HDS儲存資產登陸頁面上可能找到的物件或參考的詞彙。 
+---
+= HDS儲存設備
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+適用於HDS儲存資產登陸頁面上可能找到的物件或參考的詞彙。
+
+
+
+== HDS儲存術語
+
+下列詞彙適用於HDS儲存資產登陸頁面上可能找到的物件或參考資料。其中許多術語也適用於其他資料收集器。
+
+* 名稱：直接來自HDS HndhvDevice Manager的「名稱」屬性、透過GetStorageArray XML API呼叫
+* 機型：直接來自HDS HndyDevice Manager的「arrayType」屬性、透過GetStorageArray XML API呼叫
+* 廠商：HDS
+* 系列產品：直接來自HDS HndyDevice Manager的「arrayFamily」屬性、透過GetStorageArray XML API呼叫
+* IP—這是陣列的管理IP位址、並非陣列上所有IP位址的詳盡清單
+* 原始容量：代表此系統中所有磁碟總容量之和的BASE2值、無論磁碟角色為何。
+

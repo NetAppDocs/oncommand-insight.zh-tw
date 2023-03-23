@@ -1,0 +1,22 @@
+---
+permalink: dwh/viewing-the-annotations-job-in-the-jobs-list.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以在「工作」清單中檢視「附註」工作、並將附註變更套用至「資料倉儲」資料標記。 
+---
+= 檢視「工作」清單中的「附註」工作
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在「工作」清單中檢視「附註」工作、並將附註變更套用至「資料倉儲」資料標記。
+
+
+
+== 步驟
+
+. 以系統管理員身分登入資料倉儲入口網站、網址為 `+https://hostname/dwh+`、其中 `hostname` 是OnCommand Insight 安裝了IsName Data倉儲的系統名稱。
+. 在左側的導覽窗格中、按一下「*工作*」。
+

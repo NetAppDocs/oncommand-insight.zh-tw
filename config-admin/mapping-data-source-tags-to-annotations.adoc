@@ -1,0 +1,18 @@
+---
+permalink: config-admin/mapping-data-source-tags-to-annotations.html 
+sidebar: sidebar 
+keywords:  
+summary: 當資料來源設定為輪詢標記資料時、Insight會自動設定現有Insight附註的附註值、其名稱與標記相同。 
+---
+= 將資料來源標記對應至註釋
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+當資料來源設定為輪詢標記資料時、Insight會自動設定現有Insight附註的附註值、其名稱與標記相同。
+
+如果Insight附註存在於資料來源中啟用標籤之前、資料來源標籤資料會自動新增至Insight附註。
+
+當您在啟用標記之後建立註釋時、資料來源的初始輪詢不會自動更新註釋。更換或填入Insight附註所需的時間會延遲。為了避免延遲、您可以延後再恢復資料來源、強制標記更新註釋。

@@ -1,0 +1,46 @@
+---
+permalink: config-admin/what-the-user-data-section-enables-you-to-do-with-annotations.html 
+sidebar: sidebar 
+keywords:  
+summary: 自訂OnCommand Insight 功能時、若要根據公司需求追蹤資料、您可以定義專業的附註、稱為附註、並將其指派給您的資產。資產頁面的「使用者資料」區段會顯示指派給資產的附註、並可讓您變更指派給該資產的附註。 
+---
+= 使用「使用者資料」區段來指派或修改附註
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+自訂OnCommand Insight 功能時、若要根據公司需求追蹤資料、您可以定義專業的附註、稱為_annotations、然後將其指派給您的資產。資產頁面的「使用者資料」區段會顯示指派給資產的附註、並可讓您變更指派給該資產的附註。
+
+
+
+== 步驟
+
+. 登入OnCommand Insight 到The W不明 網路UI。
+. 執行下列其中一項動作、找出資產頁面：
++
+** 在Insight工具列上、按一下 image:../media/icon-sanscreen-magnifying-glass-gif.gif[""]，輸入資產名稱，然後從清單中選取資產。
+** 按一下*儀表板*、選取*資產儀表板*、找出資產名稱、然後按一下。隨即顯示「資產」頁面。
+
+
+. 在資產頁面的*使用者資料*區段中、按一下 image:../media/add-annotation-icon.gif[""]。
++
+此時會顯示「新增附註」對話方塊。
+
+. 按一下*註釋*、然後從清單中選取註釋。
+. 按一下*值*、然後根據您選取的註釋類型執行下列任一項：
++
+** 如果註釋類型為清單、日期或布林值、請從清單中選取一個值。
+** 如果註釋類型為文字、請輸入一個值。
+
+
+. 按一下「 * 儲存 * 」。
++
+註釋會指派給資產。您稍後可以使用查詢來篩選資產。如果您要依附註將資產分組、則必須使用Java UI。
+
+. 如果您要在指派註釋後變更其值、請按一下 image:../media/change-annotation-value.gif[""] 並選取不同的值。
++
+如果註釋屬於清單類型、且已選取「*在註釋指派時動態新增值*」選項、則除了選取現有值之外、您也可以輸入新值。
+
+

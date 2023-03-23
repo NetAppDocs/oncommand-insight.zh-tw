@@ -1,0 +1,55 @@
+---
+permalink: config-admin/what-s-included-in-the-autosupport-package.html 
+sidebar: sidebar 
+keywords:  
+summary: 此支援包含資料庫備份及延伸資訊AutoSupport 。 
+---
+= 包含在S甚麼（ASUP）套件中AutoSupport
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+此支援包含資料庫備份及延伸資訊AutoSupport 。
+
+此套件包含下列項目AutoSupport ：
+
+* 庫存資料
+* 效能資料（若已選取納入ASUP）
+* 資料來源和資料來源設定
+* 整合套件
+* 遠端擷取單元
+* 乙太網路監控單元
+* ASUP/ Proxy設定
+* 備份位置設定
+* 歸檔位置設定
+* 通知設定
+* 異常偵測分數和裝置
+* 異常偵測應用程式設定
+* 使用者
+* 效能原則
+* 企業實體與應用程式
+* 裝置解析度規則與設定
+* 儀表板與小工具
+* 自訂的資產頁面儀表板和小工具
+* 查詢
+* 註釋和註釋規則
+* 記錄
+* 授權
+* 擷取/資料來源狀態
+* MySQL狀態
+* 系統資訊
+
+
+此套件不包括AutoSupport ：
+
+* 安全工具設定/資料保存資訊（透過獨立的CLI程序備份）
+* 效能資料（若未選擇納入ASUP）
+
+
+[NOTE]
+====
+如果您選擇在ASUP中包含效能資料、則會包含最近七天的資料。如果啟用了該功能、其餘資料將會儲存在歸檔中。ASUP不包含歸檔資料。
+
+====

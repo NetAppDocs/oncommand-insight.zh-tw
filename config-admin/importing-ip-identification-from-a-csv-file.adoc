@@ -1,0 +1,62 @@
+---
+permalink: config-admin/importing-ip-identification-from-a-csv-file.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用CSV檔案中的裝置識別清單、將IP裝置識別碼手動匯入「裝置解析度」功能。 
+---
+= 從CSV檔案匯入IP裝置識別
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用CSV檔案中的裝置識別清單、將IP裝置識別碼手動匯入「裝置解析度」功能。
+
+
+
+== 開始之前
+
+您必須擁有正確格式的CSV檔案、才能匯入裝置識別碼。IP裝置的CSV檔案需要下列資訊：
+
+|===
+
+
+ a| 
+地址
+
+
+
+ a| 
+IP
+
+
+
+ a| 
+名稱
+
+|===
+[NOTE]
+====
+最佳實務做法是先將IP識別資訊匯出至CSV檔案、在該檔案中進行所需的變更、然後再將檔案匯入IP識別。如此可確保預期的欄位以適當的順序出現。
+
+====
+若要匯入IP識別資訊：
+
+
+
+== 步驟
+
+. 登入Insight Web UI。
+. 按一下「*管理*>*裝置解析度*」
+. 選取「* IP識別*」索引標籤。
+. 按一下*識別*>*識別檔案*
+. 
++
+.. 瀏覽至包含您要匯入之CSV檔案的資料夾、然後選取所需的檔案。
+
+
++
+您輸入的裝置會新增至「IP識別」索引標籤中的裝置清單。
+
+

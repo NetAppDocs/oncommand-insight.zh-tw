@@ -1,0 +1,37 @@
+---
+permalink: config-admin/adding-a-missing-disk-model.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果由於未知的磁碟機型而導致擷取失敗、您可以將遺失的磁碟機型新增至new_disk_models.txt檔案、然後再次執行擷取。 
+---
+= 新增遺失的磁碟機型
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果擷取因為不明的磁碟機型而失敗、您可以將遺失的磁碟機型新增至 `new_disk_models.txt` 歸檔並再次執行擷取。
+
+
+
+== 關於這項工作
+
+在以不完整的擷取方式輪詢儲存設備OnCommand Insight 時、會讀取儲存設備上的磁碟機型。如果廠商在陣列中新增Insight不知道的新磁碟機型、或是Insight尋找的型號與儲存裝置傳回的型號不符、則取得該資料來源將會失敗並顯示錯誤。為了避免這些錯誤、必須更新Insight已知的磁碟機型資訊。Insight新增了新的磁碟機型、提供更新、修補程式和維護版本。不過、您可能決定手動更新此資訊、而非等待修補程式或更新。
+
+由於每五分鐘就會讀取磁碟模型檔案、因此您輸入的任何新資料模型資訊都會自動更新OnCommand Insight 。您不需要重新啟動伺服器、變更才會生效、但您可以選擇重新啟動伺服器、以及任何遠端擷取設備（Raus）、讓變更在下次更新之前生效。
+
+磁碟模型更新會新增至 `new_disk_models.txt` 檔案位於``<SANScreenInstallDir>\wildfly\standalone\deployments\datasources.war`` 目錄。在更新之前、請先瞭解描述新磁碟模型所需的資訊 `new_disk_models.txt` 檔案：檔案中的資訊不準確會產生不正確的系統資料、並可能導致擷取失敗。
+
+請依照下列指示手動更新Insight磁碟機型：
+
+
+
+== 步驟
+
+. 找出適用於您磁碟機型的適當資訊。
+. 使用文字編輯器開啟 `new_disk_models.txt` 檔案：
+. 新增新資料來源的必要資訊。
+. 將檔案儲存在中 `<SANScreenInstallDir>\wildfly\standalone\deployments\datasources.war` 目錄。
+. 備份 `new_disk_models.txt` 檔案移至安全位置。在後續OnCommand Insight 任何的版本更新中、此檔案將會被覆寫。如果升級後的檔案中沒有您的磁碟機型資訊、您必須重新輸入。
+

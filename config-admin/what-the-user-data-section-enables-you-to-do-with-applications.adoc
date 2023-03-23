@@ -1,0 +1,37 @@
+---
+permalink: config-admin/what-the-user-data-section-enables-you-to-do-with-applications.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以將環境中執行的應用程式指派給特定資產（主機、虛擬機器、磁碟區、內部磁碟區和Hypervisor）。「使用者資料」區段可讓您變更指派給資產的應用程式、或將應用程式或其他應用程式指派給資產。 
+---
+= 使用「使用者資料」區段來指派或修改應用程式
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以將環境中執行的應用程式指派給特定資產（主機、虛擬機器、磁碟區、內部磁碟區和Hypervisor）。「使用者資料」區段可讓您變更指派給資產的應用程式、或將應用程式或其他應用程式指派給資產。
+
+
+
+== 步驟
+
+. 登入OnCommand Insight 到The W不明 網路UI。
+. 執行下列其中一項動作、找出資產頁面：
++
+** 在Insight工具列上、按一下 image:../media/icon-sanscreen-magnifying-glass-gif.gif[""]，輸入資產名稱，然後從清單中選取資產。
+** 按一下*儀表板*、選取*資產儀表板*、找出資產名稱、然後按一下。隨即顯示「資產」頁面。
+
+
+. 您可以執行下列動作：
++
+** 若要檢視應用程式的資產頁面、請按一下應用程式名稱。
+** 若要變更已指派的應用程式或指派應用程式或其他應用程式、請將游標放在應用程式名稱上方（如果已指派應用程式）、或將游標放在*無*上（如果未指派應用程式）、請按一下 image:../media/pencil-icon-landing-page-be.gif[""]下、輸入以搜尋應用程式、或從清單中選取應用程式、然後按一下 image:../media/check-box-ok.gif[""]。
++
+如果您選擇與企業實體相關聯的應用程式、則該企業實體會自動指派給該資產。在這種情況下、當您將游標放在企業實體名稱上時、會顯示「_推導_」一詞。如果您只想維護資產的實體、而不想維護相關應用程式、您可以手動覆寫應用程式的指派。
+
+** 若要移除應用程式、請按一下 image:../media/trash-can-query.gif[""]。
+
+
+

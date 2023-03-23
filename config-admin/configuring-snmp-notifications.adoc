@@ -1,0 +1,60 @@
+---
+permalink: config-admin/configuring-snmp-notifications.html 
+sidebar: sidebar 
+keywords:  
+summary: 支援SNMP通知、以進行組態和全域路徑原則變更、以及違規OnCommand Insight 。例如、當超過資料來源臨界值時、就會傳送SNMP通知。 
+---
+= 設定SNMP通知
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+支援SNMP通知、以進行組態和全域路徑原則變更、以及違規OnCommand Insight 。例如、當超過資料來源臨界值時、就會傳送SNMP通知。
+
+
+
+== 開始之前
+
+下列項目必須已完成：
+
+* 識別伺服器的IP位址、以整合每種事件類型的陷阱。
++
+您可能必須諮詢系統管理員以取得此資訊。
+
+* 識別指定機器取得每種事件類型SNMP設陷的連接埠號碼。
++
+SNMP設陷的預設連接埠為162。
+
+* 在您的站台上編譯mib。
++
+專屬的mib隨附安裝軟體、可支援OnCommand Insight 各種不必要的功能。NetApp MIB與所有標準SNMP管理軟體相容、可在的Insight伺服器上找到 `<install dir>\SANscreen\MIBS\sanscreen.mib`。
+
+
+
+
+
+== 步驟
+
+. 按一下「*管理*」、然後選取「*通知*」。
+. 向下捲動至頁面的「* SNMP *」區段。
+. 按一下「*動作*」、然後選取「*新增設陷來源*」。
+. 在「*新增SNMP設陷收件者*」對話方塊中、輸入下列值：
++
+** * IP*
++
+將SNMP設陷訊息傳送至OnCommand Insight 哪個IP位址。
+
+** *連接埠*
++
+將SNMP設陷訊息傳送至OnCommand Insight 哪個連接埠號碼。
+
+** *社群字串*
++
+使用「'public'」來顯示SNMP設陷訊息。
+
+
+
+. 按一下「 * 儲存 * 」。
+

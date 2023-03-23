@@ -1,0 +1,22 @@
+---
+permalink: dwh/viewing-the-data-warehouse-documentation.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以檢閱資料倉儲資料庫架構資訊。 
+---
+= 檢視資料倉儲資料庫架構文件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以檢閱資料倉儲資料庫架構資訊。
+
+
+
+== 步驟
+
+. 登入資料倉儲入口網站： `+https://hostname/dwh+`、其中 `hostname` 是OnCommand Insight 安裝了IsName Data倉儲的系統名稱。
+. 在資料倉儲工具列上、按一下 image:../media/oci-7-help-icon-gif.gif[""] 並選擇*架構*。
+

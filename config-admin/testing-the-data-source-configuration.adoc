@@ -1,0 +1,21 @@
+---
+permalink: config-admin/testing-the-data-source-configuration.html 
+sidebar: sidebar 
+keywords:  
+summary: 新增資料來源時、您可以在儲存或更新該資料來源之前、先驗證組態是否正確、以便與裝置通訊。 
+---
+= 測試資料來源組態
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+新增資料來源時、您可以在儲存或更新該資料來源之前、先驗證組態是否正確、以便與裝置通訊。
+
+當您按一下資料來源精靈中的* Test*按鈕時、就會檢查與指定裝置的通訊。測試會產生下列其中一項結果：
+
+* 通過：資料來源設定正確。
+* 警告：測試不完整、可能是因為處理期間逾時或擷取未執行。
+* 失敗：已設定的資料來源無法與指定的裝置通訊。檢查組態設定並重新測試。
+

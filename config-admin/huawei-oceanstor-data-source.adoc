@@ -1,0 +1,167 @@
+---
+permalink: config-admin/huawei-oceanstor-data-source.html 
+sidebar: sidebar 
+keywords:  
+summary: 利用Huawei OceanStor（REST / HTTPS）資料來源、探索Huawei OceanStor儲存設備的庫存OnCommand Insight 。 
+---
+= Huawei海洋儲存資料來源
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+本產品使用Huawei OceanStor（REST / HTTPS）資料來源來探索Huawei OceanStor儲存設備的庫存OnCommand Insight 。
+
+
+
+== 術語
+
+他向Huawei海洋儲存公司取得下列庫存與效能資訊OnCommand Insight 。針對由S仰賴 的每種資產類型OnCommand Insight 、會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：
+
+|===
+
+
+| 廠商/模型術語 | 詞彙OnCommand Insight 
+
+
+ a| 
+儲存資源池
+ a| 
+儲存資源池
+
+
+
+ a| 
+檔案系統
+ a| 
+內部Volume
+
+
+
+ a| 
+控制器
+ a| 
+儲存節點
+
+
+
+ a| 
+FC連接埠（對應）
+ a| 
+Volume Map
+
+
+
+ a| 
+主機FC啟動器（已對應）
+ a| 
+Volume遮罩
+
+
+
+ a| 
+NFS/CIFS共用
+ a| 
+分享
+
+
+
+ a| 
+分享
+ a| 
+iSCSI目標節點
+
+
+
+ a| 
+iSCSI連結啟動器
+ a| 
+iSCSI啟動器節點
+
+
+
+ a| 
+磁碟
+ a| 
+磁碟
+
+
+
+ a| 
+LUN
+ a| 
+Volume
+
+|===
+
+
+== 需求
+
+以下是設定及使用此資料收集器的需求：
+
+* 裝置IP
+* 存取海洋儲存設備管理程式的認證資料
+* 連接埠8088必須可用
+
+
+
+
+== 組態
+
+|===
+
+
+| 欄位 | 說明 
+
+
+ a| 
+海洋儲存主機IP位址
+ a| 
+海洋儲存裝置管理員的IP位址或完整網域名稱
+
+
+
+ a| 
+使用者名稱
+ a| 
+用於登入海洋儲存裝置管理員的名稱
+
+
+
+ a| 
+密碼
+ a| 
+用於登入海洋儲存裝置管理員的密碼
+
+|===
+
+
+== 進階組態
+
+|===
+
+
+| 欄位 | 說明 
+
+
+ a| 
+TCP連接埠
+ a| 
+TCP連接埠用於連線到海洋儲存裝置管理員（預設值8088）
+
+
+
+ a| 
+庫存輪詢時間間隔（分鐘）
+ a| 
+庫存輪詢之間的時間間隔（預設為60分鐘）
+
+
+
+ a| 
+連線逾時（秒）
+ a| 
+連線逾時（預設為60秒）
+
+|===

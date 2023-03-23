@@ -1,0 +1,19 @@
+---
+permalink: dwh/data-warehouse-components.html 
+sidebar: sidebar 
+keywords:  
+summary: 資料倉儲包含數個元件。 
+---
+= 資料倉儲元件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+資料倉儲包含數個元件。
+
+* 資料倉儲入口網站
+* 報告入口網站OnCommand Insight
+* 報告撰寫工具
+

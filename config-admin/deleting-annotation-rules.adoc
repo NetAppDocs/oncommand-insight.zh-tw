@@ -1,0 +1,36 @@
+---
+permalink: config-admin/deleting-annotation-rules.html 
+sidebar: sidebar 
+keywords:  
+summary: 當不再需要規則來監控網路中的物件時、您可以刪除註釋規則。 
+---
+= 刪除註釋規則
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+當不再需要規則來監控網路中的物件時、您可以刪除註釋規則。
+
+
+
+== 步驟
+
+. 登入OnCommand 到「無法使用者介面」。
+. 按一下*管理*、然後選取*註釋規則*。
++
+「附註規則」頁面會顯示現有附註規則的清單。
+
+. 找出您要刪除的規則：
++
+** 在「附註規則」頁面上、您可以在篩選方塊中輸入值來篩選附註規則。
+** 如果單一頁面上的規則超過頁面大小、請按一下頁碼、逐頁瀏覽註釋規則。
+
+
+. 將游標指向您要刪除的規則、然後按一下 image:../media/trash-can-query.gif[""]。
++
+隨即顯示確認訊息、提示您是否要刪除規則。
+
+. 按一下「*確定*」。
+

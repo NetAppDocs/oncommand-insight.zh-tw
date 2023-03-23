@@ -1,0 +1,26 @@
+---
+permalink: config-admin/monitoring-fabric-inventory-and-performance.html 
+sidebar: sidebar 
+keywords:  
+summary: 使用《Insight Fibre Channel》資產頁面、您可以監控環境中的Fabric效能與庫存、並留意可能造成問題的任何變更OnCommand 。 
+---
+= Fibre Channel環境監控
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+使用《Insight Fibre Channel》資產頁面、您可以監控環境中的Fabric效能與庫存、並留意可能造成問題的任何變更OnCommand 。
+
+
+
+== Fibre Channel資產頁面
+
+Insight的資產頁面提供有關資源、其拓撲（裝置及其連線）、效能圖表及相關資源表格的摘要資訊。您可以使用Fabric、交換器和連接埠資產頁面來監控光纖通道環境。在排除光纖通道問題時、特別實用的功能是每個連接埠資產的效能圖表、其中會顯示所選主要貢獻者連接埠的流量。此外、您也可以在此圖表中顯示緩衝區對緩衝區的信用度量和連接埠錯誤、Insight會針對每個度量顯示個別的效能圖表。
+
+
+
+== 連接埠度量的效能原則
+
+Insight可讓您建立效能原則、以監控網路的各種臨界值、並在超過臨界值時發出警示。您可以根據可用的連接埠度量來建立連接埠的效能原則。發生違反臨界值的情況時、Insight會在相關的資產頁面中顯示紅色圓圈、電子郵件警示（若已設定）、以及違規儀表板或任何報告違規的自訂儀表板中、偵測並報告臨界值。

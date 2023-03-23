@@ -1,0 +1,180 @@
+---
+permalink: config-admin/configuring-insight-for-ldap-s.html 
+sidebar: sidebar 
+keywords:  
+summary: 必須在公司LDAP網域中設定使用輕量型目錄存取傳輸協定（LDAP\）設定的支援OnCommand Insight 。 
+---
+= 設定LDAP的Insight
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+必須在公司LDAP網域中設定使用輕量型目錄存取傳輸協定（LDAP）設定OnCommand Insight 。
+
+在將Insight設定為搭配LDAP或安全LDAP（LDAPS）使用之前、請先記下公司環境中的Active Directory組態。Insight設定必須符合貴組織LDAP網域組態中的設定。在設定Insight與LDAP搭配使用之前、請先檢閱下列概念、並洽詢您的LDAP網域管理員、以瞭解您環境中要使用的適當屬性。
+
+對於所有安全的Active Directory（即LDAPS）使用者、您必須使用與憑證中定義完全相同的AD伺服器名稱。您無法使用IP位址進行安全的AD登入。
+
+[NOTE]
+====
+支援透過Microsoft Active Directory伺服器或Azure AD的LDAP和LDAPS OnCommand Insight 。其他LDAP實作可能仍可運作、但尚未符合Insight資格。本指南中的程序假設您使用的是Microsoft Active Directory版本2或3 LDAP（輕量型目錄存取傳輸協定）。
+
+====
+*使用者主要名稱屬性：*
+
+LDAP使用者主要名稱屬性（userPrincipalName）是Insight做為使用者名稱屬性的用途。使用者主要名稱保證在Active Directory（AD）樹系中具有全域唯一性、但在許多大型組織中、使用者的主要名稱可能並不立即顯而易見或已知。您的組織可能會針對主要使用者名稱使用User Principal Name屬性以外的其他選項。
+
+以下是使用者主要名稱屬性欄位的一些替代值：
+
+* * sAMAccountName*
++
+此使用者屬性是舊版Windows 2000 NT使用者名稱、這是大多數使用者習慣登入其個人Windows機器的方式。這在整個AD樹系中並不保證是全域唯一的。
+
++
+
+NOTE: SamAccountName對User主體名稱屬性區分大小寫。
+
+* *郵件*
++
+在使用MS Exchange的AD環境中、此屬性是終端使用者的主要電子郵件地址。這應該在整個AD樹系中具有全域唯一性（也適用於終端使用者）、不同於其userPrincipalName屬性。郵件屬性不存在於大多數非MS Exchange環境中。
+
+* *推薦*
++
+LDAP參照是網域控制器向用戶端應用程式指出它沒有所要求物件的複本（或更精確地說、 它不會保留目錄樹狀結構中該物件所在的區段（如果實際上存在）、並提供用戶端較有可能保留該物件的位置。用戶端會使用參照做為DNS搜尋網域控制器的基礎。理想情況下、參照一律會參照確實包含物件的網域控制器。不過、雖然通常不會花很長時間來發現物件不存在、並通知用戶端、但參照網域控制器仍有可能產生另一個參照。
+
+
+
+
+TIP: SamAccountName通常比使用者主要名稱更受歡迎。SamAccountName在網域中是唯一的（雖然在網域樹系中可能不是唯一的）、但它是使用者通常用於登入的字串網域（例如、_NetApp\username_）。辨別名稱是樹系中的唯一名稱、但使用者通常不知道。
+
+
+TIP: 在同一個網域的Windows系統部分、您可以隨時開啟命令提示字元、然後輸入set以尋找適當的網域名稱（USERDOMAIN=）。然後OCI登入名稱將會是 `USERDOMAIN\sAMAccountName`。
+
+如需網域名稱* mydomain.x.y.z.com、請使用 `DC=x,DC=y,DC=z,DC=com` 在Insight的Domain（網域）欄位中。
+
+*連接埠*：
+
+LDAP的預設連接埠為389、LDAPS的預設連接埠為636
+
+LDAPS的一般URL： `ldaps://<ldap_server_host_name>:636`
+
+記錄位於：``\\<install directory>\SANscreen\wildfly\standalone\log\ldap.log``
+
+根據預設、Insight會預期下列欄位中所註明的值。如果Active Directory環境中有這些變更、請務必在Insight LDAP組態中加以變更。
+
+|===
+
+
+ a| 
+角色屬性
+
+
+
+ a| 
+成員
+
+
+
+ a| 
+郵件屬性
+
+
+
+ a| 
+郵件
+
+
+
+ a| 
+辨別名稱屬性
+
+
+
+ a| 
+區分名稱
+
+
+
+ a| 
+推薦
+
+
+
+ a| 
+追蹤
+
+|===
+*群組：*
+
+若要驗證OnCommand Insight 使用者在支援對象架構和DWH伺服器中具有不同存取角色、您必須在Active Directory中建立群組、並在OnCommand Insight 支援對象架構和DWH伺服器中輸入這些群組名稱。下列群組名稱僅為範例、您在Insight中為LDAP設定的名稱必須符合為Active Directory環境設定的名稱。
+
+|===
+
+
+| Insight Group | 範例 
+
+
+ a| 
+Insight伺服器管理員群組
+ a| 
+insight.server.admins
+
+
+
+ a| 
+Insight系統管理員群組
+ a| 
+Insight。管理員
+
+
+
+ a| 
+Insight使用者群組
+ a| 
+insight.users
+
+
+
+ a| 
+Insight Guest群組
+ a| 
+Insight、訪客
+
+
+
+ a| 
+報告管理員群組
+ a| 
+INSIGHT。report.管理員
+
+
+
+ a| 
+報告專業作者群組
+ a| 
+insight.report.proauthors
+
+
+
+ a| 
+報告作者群組
+ a| 
+insight.report.business.authors
+
+
+
+ a| 
+報告使用者群組
+ a| 
+INSIGHT。report.business。消費者
+
+
+
+ a| 
+報告收件者群組
+ a| 
+INSIGHT。report.Recipients
+
+|===

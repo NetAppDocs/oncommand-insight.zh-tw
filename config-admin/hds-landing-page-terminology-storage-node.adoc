@@ -1,0 +1,24 @@
+---
+permalink: config-admin/hds-landing-page-terminology-storage-node.html 
+sidebar: sidebar 
+keywords:  
+summary: 適用於HDS儲存節點資產登陸頁面上可能找到的物件或參考的術語。 
+---
+= HDS儲存節點
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+適用於HDS儲存節點資產登陸頁面上可能找到的物件或參考的術語。
+
+
+
+== HDS儲存節點術語
+
+下列術語適用於HDS儲存節點資產登陸頁面上可能找到的物件或參考資料。其中許多術語也適用於其他資料收集器。
+
+* 名稱：單片陣列上的前端導向器（FED）或通道介面卡名稱、或模組化陣列上的控制器名稱。給定的HDS陣列將有2個以上的儲存節點
+* Volume（磁碟區）- Volume（磁碟區）表格會顯示對應至此儲存節點所擁有之任何連接埠的任何磁碟區
+

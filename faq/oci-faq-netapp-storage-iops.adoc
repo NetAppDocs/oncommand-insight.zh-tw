@@ -1,0 +1,36 @@
+---
+permalink: faq/oci-faq-netapp-storage-iops.html 
+sidebar: sidebar 
+keywords:  
+summary: 本常見問題集解答關於IOPS數據如何衍生自Data ONTAP 於NetApp儲存系統的常見問題。 
+---
+= 儲存IOPS Data ONTAP
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+本常見問題集解答關於IOPS數據如何衍生自Data ONTAP 於NetApp儲存系統的常見問題。
+
+
+
+== 儲存IOPS如何衍生自Data ONTAP NetApp儲存系統
+
+* 儲存陣列層級的IOPS會從內部Volume IOPS進行彙總
+* 儲存節點層級IOPS包括中繼資料OPS
+* 儲存資源池層級的IOPS不含中繼資料OPS；僅測量磁碟
+* 內部Volume層級IOPS包括讀取+寫入OPS（作業）+其他OPS
+
+
+
+
+== 問題：集合式IOPS有時會高於節點IOPS？
+
+CDOT 8.3.1之前、節點IOPS由傳輸協定IOPS組成。在CDOT 8.3.1中。之後、這些資料會由系統構成要素指標組成。其中包括「僅」的資料要求、透過前端提出的要求、但不包括快照鏡像、重複資料刪除等後端工作。另一方面、這些工作確實會產生磁碟IOPS、因此會彙總IOPS。因此您可能會看到集合IOPS高於節點IOPS。
+
+
+
+== 問題：如何計算中繼資料或其他OPS
+
+其他OPS =總計-（讀取+寫入）

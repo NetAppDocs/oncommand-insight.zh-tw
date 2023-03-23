@@ -1,0 +1,60 @@
+---
+permalink: config-admin/moving-mysql-data-using-the-command-line.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用將MySQL資料目錄移轉到不同的目錄。您可以保留目前的資料目錄。您可以使用疑難排解功能表上的移轉選項、也可以使用命令列。本程序說明如何使用命令列。 
+---
+= 使用命令列移動MySQL資料
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用將MySQL資料目錄移轉到不同的目錄。您可以保留目前的資料目錄。您可以使用疑難排解功能表上的移轉選項、也可以使用命令列。本程序說明如何使用命令列。
+
+
+
+== 關於這項工作
+
+如果您保留目前的資料目錄、它將保留為備份並重新命名。
+
+您可以使用「移轉MySQL資料」公用程式、也可以使用 `java -jar mysqldatamigrator.jar` 選項OnCommand Insight `\bin\mysqldatamigrator` 應使用下列參數的位置：
+
+* 必要參數
++
+** *路徑*
++
+將複製資料資料夾的新資料路徑。
+
+
+
+* 選用參數
++
+** * myCnf <my .cnf file> Set*
++
+.cnf檔案的路徑。預設值為 `<install path>\mysql\my.cnf`。僅當使用非預設MySQL時才使用此旗標。
+
+** *備份*
++
+如果設定此旗標、則會重新命名目前的資料資料夾、但不會刪除。
+
+
+
+
+
+
+
+== 步驟
+
+. 請至此處存取命令列工具： `<installation path>` \bin\mysqldatamigator\mysqldatamigator.jar`
+
+
+
+
+== 使用範例
+
+[listing]
+----
+java -jar mysqldatamigrator.jar -path "C:\<new path>" -doBackup
+----

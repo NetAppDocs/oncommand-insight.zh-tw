@@ -1,0 +1,87 @@
+---
+permalink: config-admin/emc-recoverpoint-data-source.html 
+sidebar: sidebar 
+keywords:  
+summary: EMC RecoverPoint資料來源會從EMC RecoverPoint儲存設備收集庫存資訊。對於組態設定、資料來源需要儲存處理器的IP位址、以及唯讀使用者名稱和密碼。 
+---
+= EMC RecoverPoint資料來源
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+EMC RecoverPoint資料來源會從EMC RecoverPoint儲存設備收集庫存資訊。對於組態、資料來源需要儲存處理器的IP位址、以及_唯讀_使用者名稱和密碼。
+
+EMC RecoverPoint資料來源會收集RecoverPoint在其他儲存陣列之間協調的磁碟區對磁碟區複寫關係。顯示每個RecoverPoint叢集的儲存陣列、並收集該叢集上節點和儲存連接埠的庫存資料OnCommand Insight 。不會收集儲存資源池或Volume資料。
+
+
+
+== 需求
+
+* 儲存處理器的IP位址或完整網域名稱
+* 唯讀使用者名稱和密碼
+* 透過連接埠443進行REST API存取
+* 透過Putty存取SSH
+
+
+
+
+== 組態
+
+|===
+
+
+| 欄位 | 說明 
+
+
+ a| 
+RecoverPoint的位址
+ a| 
+RecoverPoint叢集的IP位址或完整網域名稱
+
+
+
+ a| 
+使用者名稱
+ a| 
+RecoverPoint叢集的使用者名稱
+
+
+
+ a| 
+密碼
+ a| 
+RecoverPoint叢集的密碼
+
+|===
+
+
+== 進階組態
+
+|===
+
+
+| 欄位 | 說明 
+
+
+ a| 
+TCP連接埠
+ a| 
+用於連線至RecoverPoint叢集的TCP連接埠
+
+
+
+ a| 
+庫存輪詢時間間隔（分鐘）
+ a| 
+庫存輪詢之間的時間間隔（預設為20分鐘）
+
+
+
+ a| 
+排除的叢集
+ a| 
+輪詢時要排除的叢集ID或名稱清單、以逗號分隔
+
+|===

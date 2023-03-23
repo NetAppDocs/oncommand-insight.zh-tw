@@ -1,0 +1,21 @@
+---
+permalink: howto/integrating-with-servicenow.html 
+sidebar: sidebar 
+keywords: SNOW 
+summary: 與ServiceNow管理軟體整合、可提供比產品分開的更大價值OnCommand Insight 。 
+---
+= 與ServiceNow整合
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+與ServiceNow管理軟體整合、可提供比產品分開的更大價值OnCommand Insight 。
+
+Insight可使用Python指令碼將資料與ServiceNow整合、同步下列資訊：
+
+* ServiceNow伺服器的儲存資產資料
+* ServiceNow伺服器的主機和VM URL
+* 主機/ VM與儲存設備之間的關係
+

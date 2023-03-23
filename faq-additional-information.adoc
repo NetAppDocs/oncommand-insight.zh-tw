@@ -1,0 +1,50 @@
+---
+permalink: faq/faq-additional-information.html 
+sidebar: sidebar 
+keywords: redhat,Linux 
+summary: 哪裡可以找到其他資訊？ 
+---
+= 其他資訊
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+我可以在哪裡取得OnCommand Insight 更多資訊以供參考？
+
+
+
+== 資料來源支援
+
+如需Insight支援資料來源的相關資訊、請參閱OnCommand Insight 《支援資料來源對照表》。系統會提示您使用 NetApp 支援網站認證資料登入。
+
+link:https://mysupport.netapp.com/api/content-service/staticcontents/content/products/oncommandinsight/DatasourceSupportMatrix_7.3.x.pdf["《資料來源支援對照表》OnCommand Insight"]目前支援版本OnCommand Insight 的支援對照表。
+
+
+
+== 支援
+
+link:https://mysupport.netapp.com/matrix["NetApp互通性對照表工具IMT （不含）"]說明OnCommand Insight 支援的裝置與平台。
+
+link:https://mysupport.netapp.com/site/products/all/details/oncommand-insight/guideme-tab["NetApp引導式問題解決方案"]「引導式問題解決」提供精選的技術內容、操作方法資源、以及依產品、功能和工作來組織的疑難排解步驟。「聊天」可讓您快速解決問題、而無需開啟案例或致電技術支援。
+
+NetApp知識庫可讓您存取管理和管理產品的技術文章。知識庫的一小部分可供大眾使用。註冊使用者可存取更多技術知識庫文章。
+
+NetApp全球服務聯絡人請聯絡您所在地區的支援中心。
+
+
+
+== 社群
+
+NetApp Storefront從NetApp精選報告範本、解決方案套件、資料收集器及指令碼範例的廣泛集合下載OnCommand Insight 、以供參考。
+
+《關於我們的產品》影片播放清單中各種主題的影片OnCommand Insight OnCommand Insight 。
+
+Insight社群討論加入OnCommand Insight 關於這個主題的討論。
+
+
+
+== 其他
+
+IBM Cognos文檔（適用於Web上的IBM Cognos）。

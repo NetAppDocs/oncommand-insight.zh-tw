@@ -1,0 +1,31 @@
+---
+permalink: howto/servicenow-integration-install-update-set.html 
+sidebar: sidebar 
+keywords:  
+summary: 在整合ServiceNow與OnCommand Insight 更新功能的過程中、您必須安裝更新套件、將預先設定的資料載入ServiceNow、以便為連接器提供擷取和載入資料的特定欄位和表格。 
+---
+= 安裝更新集
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在整合ServiceNow與OnCommand Insight 更新功能的過程中、您必須安裝更新套件、將預先設定的資料載入ServiceNow、以便為連接器提供擷取和載入資料的特定欄位和表格。
+
+
+
+== 步驟
+
+. 搜尋「擷取的更新集」、瀏覽至ServiceNow中的遠端更新集表。
+. 按一下*從XML匯入更新集*。
+. 更新集位於先前下載至本機磁碟機的Python Connector .Zip檔案（範例中為 `C:\OCI2SNOW` 資料夾） `\update_sets` 子資料夾。按一下*選擇「檔案」*、然後選取此資料夾中的.xml檔案。按一下*上傳*。
+. 載入「更新集」後、請將其開啟、然後按一下「*預覽更新集*」。
++
+如果偵測到錯誤、您必須先修正錯誤、才能提交更新集。
+
+. 如果沒有錯誤、請按一下*提交更新集*。
++
+一旦提交更新集、它就會顯示在「*系統更新集*>*更新來源*」頁面上。
+
+

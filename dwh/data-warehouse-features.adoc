@@ -1,0 +1,28 @@
+---
+permalink: dwh/data-warehouse-features.html 
+sidebar: sidebar 
+keywords:  
+summary: 這個不受限制的資料庫是由數個資料市場所組成的獨立資料庫OnCommand Insight 。 
+---
+= 資料倉儲功能
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+這個不受限制的資料庫是由數個資料市場所組成的獨立資料庫OnCommand Insight 。
+
+資料倉儲包含下列功能：
+
+* 目前與歷史組態與庫存資料、可讓您建立趨勢報告、以利預測與規劃
+* 數個多維度歷史資料市場和額外的純目前庫存資料倉儲
+* 最佳化的資料庫、適用於預先定義的查詢或使用者定義的查詢
+* 與協力廠商報告和商業智慧引擎整合的平台、包括：
++
+** 組態管理資料庫
+** 財務會計系統
+** 資產管理系統
+
+
+

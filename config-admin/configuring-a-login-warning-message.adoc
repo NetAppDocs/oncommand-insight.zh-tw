@@ -1,0 +1,42 @@
+---
+permalink: config-admin/configuring-a-login-warning-message.html 
+sidebar: sidebar 
+keywords:  
+summary: 支援系統管理員設定自訂文字訊息、供使用者登入時顯示OnCommand Insight 。 
+---
+= 設定登入警告訊息
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+支援系統管理員設定自訂文字訊息、供使用者登入時顯示OnCommand Insight 。
+
+
+
+== 步驟
+
+. 若要在OnCommand Insight The傳達訊息的伺服器中設定訊息：
++
+.. 瀏覽至選單：管理[疑難排解>進階疑難排解>進階設定]。
+.. 在文字區域輸入您的登入訊息。
+.. 按一下*用戶端顯示登入警告訊息*核取方塊。
+.. 按一下「 * 儲存 * 」。
++
+所有使用者登入時都會顯示此訊息。
+
+
+
+. 若要在資料倉儲（DWH）和報告（Cognos）中設定訊息：
++
+.. 瀏覽至*系統資訊*、然後按一下*登入警告*索引標籤。
+.. 在文字區域輸入您的登入訊息。
+.. 按一下「 * 儲存 * 」。
++
+此訊息會在DWH和Cognos報告登入時顯示給所有使用者。
+
+
+
+

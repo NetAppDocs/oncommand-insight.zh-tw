@@ -1,0 +1,74 @@
+---
+permalink: faq/faq-integrating-insight-and-third-party-tools.html 
+sidebar: sidebar 
+keywords:  
+summary: 本常見問題集解答OnCommand Insight 有關將VMware與其他工具整合的常見問題。 
+---
+= 整合Insight與其他工具
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+本常見問題集解答OnCommand Insight 有關將VMware與其他工具整合的常見問題。
+
+
+
+== OCI能否與其他工具整合、以及有哪些整合點可用？
+
+是的、OCI是可延伸（廣泛開放）的解決方案、可與協力廠商協調、業務管理、變更控制和票證系統以及自訂的CMDB整合進行整合。OCI完整發佈的RESTful API和開放式MySQL資料庫主要整合點、可讓您輕鬆有效地移動資料、並讓使用者無縫存取資料。
+
+Insight的Swagger型API文件可在產品的*（？）下找到。 「說明」>「REST API文件」*。
+
+
+
+== 什麼是Insight BMC Connector？
+
+BMC版的《BMC版》整合了《BMC Atrium Configuration Management Database》（CMDB）和《The BMC Atrium Configuration Management Database》（DWH）OnCommand Insight OnCommand Insight 。Insight Connector for BMC可對應網路儲存系統（例如儲存單元、主機儲存服務、Vs儲存服務和VM儲存服務）的實體和邏輯儲存資料、以及它們與裝置（主機、儲存交換器、 和磁帶）、並將其匯入BMC CMDB、做為組態項目和關係。如需OnCommand Insight 更多關於BMC的資訊NetApp 支援網站 、請參閱《關於BMC的資訊》。
+
+
+
+== OCI是否能與SCOM或VROP搭配運作？
+
+是的、OCI是許多商業管理解決方案的補充、被視為資料中心的儲存、運算、Hypervisor和Fabric資訊的權威來源。OCI客戶運用OCI的RESTful API和可延伸的MySQL資料庫來強化許多應用程式、例如BMC的補救措施、ServiceNow、SCOM、Vrops和Splunk。 請舉幾個例子。OCI可從幾乎任何記錄來源匯入資訊、及/或將擷取的環境指標傳送至熱門的協力廠商監控、票證、CMDB帳單與協調系統、藉此擴充整合功能。
+
+
+
+== OCI是否能搭配我已使用或正在考慮使用的雲端服務？
+
+是的、OCI對傳統內部部署與敏捷混合雲環境的管理、可在判斷最符合貴企業服務需求的最佳、最具成本效益平台時、提供可見度。OCI可用於移轉前後的分析、協助識別適合雲端的工作負載。若要選擇適當的雲端服務、就必須掌握歷史容量趨勢、效能和成本。利用OCI的I/O密度和其他指標的服務設計研討會、也能協助您回答是否最佳化環境、以及雲端是否合理等問題。OCI持續擴充其涵蓋範圍、支援NetApp私有儲存設備、Cloud ONTAP Sfor、Amazon S3和OpenStack KVM。OCI持續在NetApp的雲端管理行銷活動中扮演重要角色、尤其是在對容量規劃、效能、服務品質和計費的可見度十分重要的領域。
+
+
+
+== OCI是否能在我們的事件管理解決方案中開啟事件？
+
+是的、OCI違規事件可透過SNMP作為陷阱或透過Syslog觸發及傳送至伺服器、部分則透過RESTful API傳送。許多協力廠商的事件管理與票證解決方案都能解譯所提供事件中的詳細資料。
+
+
+
+== 您可以將資源分配給業務單位或部門嗎？
+
+是的、OCI採用一種稱為「附註」的中繼資料標記方法。業務單位、業務單位、租戶及專案可指派給資料中心資源、以利更豐富的業務環境、涵蓋資產、容量規劃、疑難排解及報告等方面。
+
+
+
+== OCI是否與工作流程自動化器（WFA）搭配運作？
+
+OCI與第三方CMDB的整合功能、計費與協調技術是成功的關鍵價值、WFA也不例外。NetApp的專業服務部門已成功整合目前的WFA工作流程和OCI。NetApp Automation Storefront上有一個WFA連接器可供下載、以供OCI使用。
+
+
+
+== 效能資料的OCI保留時間有多長？
+
+OCI伺服器擁有90天近乎即時的效能、以及目前（時間點）的庫存（邏輯和實體架構）。
+
+OCI效能輪詢時間間隔可由使用者自行設定。大多數廠商的儲存效能通常每5分鐘設定一次。每天、效能/庫存資料會傳送至OCI資料倉儲（DWH）、以供長期歷史和預測報告。DWH會將此資料轉換成彙總資料（每小時、每日、每月彙總資料）。我們追蹤「變更」的能力、例如儲存/運算/網路組態/對應的監控環境歷史、目前並未定義任何限制。
+
+資料倉儲會根據資料市場和資料精細度來保留歷史資料。
+
+
+
+== 是否有任何效能規劃報告？
+
+是的、OCI提供數份報告、而我們的專業服務目錄中也有許多其他報告、視使用案例而定。資料倉儲模組也隨附一組Cognos報告撰寫工具、可讓使用者建立自己的報告。此外、NetApp Automation Storefront也提供社群產生的報告範本和其他下載項目的輔助功能。

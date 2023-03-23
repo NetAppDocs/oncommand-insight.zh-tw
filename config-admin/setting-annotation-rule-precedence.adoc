@@ -1,0 +1,33 @@
+---
+permalink: config-admin/setting-annotation-rule-precedence.html 
+sidebar: sidebar 
+keywords:  
+summary: 根據預設OnCommand Insight 、如果OnCommand Insight 您想讓Insight以特定順序評估規則、則可以依序評估附註規則、但是您可以設定以什麼順序來評估附註規則。 
+---
+= 設定註釋規則優先順序
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+根據預設OnCommand Insight 、如果OnCommand Insight 您想讓Insight以特定順序評估規則、則可以依序評估附註規則、但是您可以設定以什麼順序來評估附註規則。
+
+
+
+== 步驟
+
+. 登入InsightWeb UI。
+. 按一下「*管理*」、然後選取「*註釋規則*」。
++
+「附註規則」頁面會顯示現有附註規則的清單。
+
+. 將游標放在註釋規則上。
++
+優先順序箭頭會出現在規則的右側。
+
+. 若要在清單中上下移動規則、請按一下向上箭頭或向下箭頭。
++
+根據預設、新規則會依序新增至規則清單。Insight評估註釋規則時、在個別資產頁面上手動設定的註釋優先於規則型註釋。
+
+

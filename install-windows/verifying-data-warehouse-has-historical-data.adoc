@@ -1,0 +1,25 @@
+---
+permalink: install-windows/verifying-data-warehouse-has-historical-data.html 
+sidebar: sidebar 
+keywords:  
+summary: 還原自訂報告之後、您應該檢視自訂報告、確認資料倉儲正在收集歷史資料。 
+---
+= 驗證資料倉儲是否有歷史資料
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+還原自訂報告之後、您應該檢視自訂報告、確認資料倉儲正在收集歷史資料。
+
+
+
+== 步驟
+
+. 登入資料倉儲入口網站： `+https://fqdn/dwh+`。
+. 在資料倉儲工具列上、按一下 image:../media/oci-reporting-portal-icon.gif[""] 開啟Insight報告入口網站並登入。
+. 開啟包含自訂報告的資料夾（例如、自訂報告）。
+. 按一下 image:../media/run-with-options.gif[""] 可打開此報告的輸出格式選項。
+. 選取您想要的選項、然後按一下* Run*（執行*）、以確保這些選項已填入儲存、運算和交換器歷史資料。
+

@@ -1,0 +1,103 @@
+---
+permalink: dwh/connecting-data-warehouse-to-oncommand-insight-servers.html 
+sidebar: sidebar 
+keywords:  
+summary: 連接器可建立OnCommand Insight 從「不實資料倉儲」到OnCommand Insight 「不實伺服器」的連線。您可以將Data倉儲與一OnCommand Insight 或多個支援功能的伺服器相連。您可以新增或移除OnCommand Insight 連接至或從效益資料庫移除連線。 
+---
+= 將Data倉儲連線OnCommand Insight 至不支援的伺服器
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+連接器可建立OnCommand Insight 從「不實資料倉儲」到OnCommand Insight 「不實伺服器」的連線。您可以將Data倉儲與一OnCommand Insight 或多個支援功能的伺服器相連。您可以新增或移除OnCommand Insight 連接至或從效益資料庫移除連線。
+
+
+
+== 關於這項工作
+
+Data倉儲會將通用唯一ID指派給與連接器名稱搭配使用的連接器。新增連接器之後、Data倉儲會查詢OnCommand Insight 有關OnCommand Insight 該站台名稱和版本的資訊。
+
+您可以選擇使用或不使用SSL連線至資料來源。選擇安全資料來源會強制連線使用SSL、以便與OnCommand Insight 該等遠端資料庫通訊。
+
+資料倉儲可以整合檢視來自多OnCommand Insight 個版本安裝的資料。此整合式資料庫提供下列資訊：
+
+* 全域唯一識別碼
++
+每個物件都會指派一個全域唯一ID、獨立於個別站台所使用的ID、以避免發生ID衝突、並啟用重複偵測。這些ID會在所有資料集市之間共用。此ID是Inventory Data mart表格的Comment（註解）欄位中的全域唯一ID（GUID）。
+
+* 無重複資料
++
+存在於多OnCommand Insight 個支援資料庫中的實體、只會在整合式資料庫中登錄一次。
+
+* 目前記錄
++
+整合式資料庫（Inventory data mart）中的資料永遠是最新的資料。
+
+
+
+當您新增或編輯連線時、也可以測試連線。測試會執行下列動作：
+
+* 驗證主機IP位址、使用者名稱和密碼、並確保能夠建立連線。
++
+無效的連線會以紅色顯示。
+
+* 比較OnCommand Insight 此版本與Data倉儲版本。
++
+如果版本不相容、會出現錯誤訊息。
+
+* 驗證OnCommand Insight 上一次資料倉儲處理程序所見的、是否尚未變更或還原至不同的資料庫。如果有變更、就會出現錯誤訊息。
+
+
+
+
+== 步驟
+
+. 登入資料倉儲入口網站： `+https://hostname/dwh+`、其中 `hostname` 是OnCommand Insight 安裝了IsName Data倉儲的系統名稱。
+. 在左側的導覽窗格中、按一下* Connectors *。
++
+連接器表格一開始會顯示空白、並在您新增連接器之後顯示連接器資訊。
+
+. 按一下「*新增*」以新增連接器。
+. 輸入下列項目：
++
+** *加密*
++
+若要啟用使用SSL加密進行資料倉儲要求、請選取 `Enabled`。
+
+** *名稱*
++
+連接器名稱、用於識別「連接器」檢視中的連接器。
+
+** *主機*
++
+主機IP位址
+
+** *使用者名稱*
++
+「庫存」
+
++
+[NOTE]
+====
+使用此使用者名稱和密碼、您可以登入遠端OnCommand Insight 還原資料庫、並對資料執行查詢。
+
+====
+** *密碼*
++
+「0 SANscreen 」
+
+
+
+. 若要指定用於主機TCP連線的連接埠、請按一下*進階*、然後輸入TCP連接埠號碼。
+. 若要指定用於主機HTTPS連線的連接埠（預設連接埠除外）、請按一下*進階*、然後輸入連接埠號碼。
+. 按一下* Test*。
++
+資料倉儲會測試連線。
+
+. 按一下「 * 儲存 * 」。
++
+如果您為多個安裝輸入多個連線、Data倉儲會啟動獨立的建置程序、每個資料庫都會有一個連線、以便從中擷取資料。每個此類建置程序都會從OnCommand Insight 一套功能完整的資料庫擷取資料、然後將其載入整合式資料庫。
+
+

@@ -1,0 +1,30 @@
+---
+permalink: config-admin/deleting-queries.html 
+sidebar: sidebar 
+keywords:  
+summary: 當查詢不再收集有關您資產的實用資訊時、您可以刪除查詢。如果查詢用於註釋規則、則無法刪除查詢。 
+---
+= 刪除查詢
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+當查詢不再收集有關您資產的實用資訊時、您可以刪除查詢。如果查詢用於註釋規則、則無法刪除查詢。
+
+
+
+== 步驟
+
+. 登入InsightWeb UI。
+. 按一下*查詢*、然後選取*顯示所有查詢*。
++
+隨即顯示「查詢」頁面。
+
+. 將游標放在您要刪除的查詢上、然後按一下 image:../media/trash-can-query.gif[""]。
++
+隨即顯示確認訊息、詢問您是否要刪除查詢。
+
+. 按一下「*確定*」。
+

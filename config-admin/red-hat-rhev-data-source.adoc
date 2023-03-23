@@ -1,0 +1,84 @@
+---
+permalink: config-admin/red-hat-rhev-data-source.html 
+sidebar: sidebar 
+keywords:  
+summary: Red Hat Enterprise Virtualization（REST）資料來源會透過HTTPS收集RHEV執行個體的相關資訊。 
+---
+= Red Hat（RHEV）資料來源
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Red Hat Enterprise Virtualization（REST）資料來源會透過HTTPS收集RHEV執行個體的相關資訊。
+
+
+
+== 需求
+
+* 透過REST API透過連接埠443的RHEV伺服器IP位址
+* 唯讀使用者名稱和密碼
+* RHEV版本3.0+
+
+
+
+
+== 組態
+
+|===
+
+
+| 欄位 | 說明 
+
+
+ a| 
+RHEV伺服器IP位址
+ a| 
+RHEV伺服器的IP位址或完整網域名稱
+
+
+
+ a| 
+使用者名稱
+ a| 
+RHEV伺服器的使用者名稱
+
+
+
+ a| 
+密碼
+ a| 
+RHEV伺服器使用的密碼
+
+|===
+
+
+== 進階組態
+
+|===
+
+
+| 欄位 | 說明 
+
+
+ a| 
+HTTPS通訊連接埠
+ a| 
+用於HTTPS通訊至RHEV的連接埠
+
+
+
+ a| 
+庫存輪詢時間間隔（分鐘）
+ a| 
+庫存輪詢之間的時間間隔（預設為20分鐘）
+
+
+
+ a| 
+連線逾時（秒）
+ a| 
+連線逾時（預設為60秒）
+
+|===

@@ -1,0 +1,80 @@
+---
+permalink: install-windows/replacing-a-certificate-after-upgrading.html 
+sidebar: sidebar 
+keywords:  
+summary: 升級後開啟OnCommand Insight 的功能會導致認證警告。由於升級後無法使用有效的自我簽署憑證、因此會顯示警告訊息。為了避免日後顯示警告訊息、您可以安裝有效的自我簽署憑證來取代原始憑證。 
+---
+= 升級OnCommand Insight 後更換認證
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+升級後開啟OnCommand Insight 的功能會導致認證警告。由於升級後無法使用有效的自我簽署憑證、因此會顯示警告訊息。為了避免日後顯示警告訊息、您可以安裝有效的自我簽署憑證來取代原始憑證。
+
+
+
+== 開始之前
+
+您的系統必須符合最低加密位元層級（1024位元）。
+
+
+
+== 關於這項工作
+
+認證警告不會影響系統的使用性。在訊息提示下、您可以指出您瞭解風險、然後繼續使用Insight。
+
+
+
+== 步驟
+
+. 列出Keystore的內容： `C:\Program Files\SANscreen\java64\bin>keytool.exe -list -v -keystore "c:\Program Files\SANscreen\wildfly\standalone\configuration\server.keystore"`
++
+當系統提示輸入密碼時、請輸入 `changeit`。
+
++
+金鑰庫中至少應有一個憑證、 `ssl certificate`。
+
+. 刪除 `ssl certificate`： `keytool -delete -alias ssl certificate -keystore c:\ProgramFiles\SANscreen\wildfly\standalone\configuration\server.keystore`
+. 產生新金鑰： `keytool -genkey -alias OCI.hostname.com -keyalg RSA -keysize 2048 -keystore "c:\ProgramFiles\SANscreen\wildfly\standalone\configuration\server.keystore"`
++
+.. 當系統提示輸入名字和姓氏時、請輸入您要使用的完整網域名稱（FQDN）。
+.. 提供下列組織與組織架構的相關資訊：
++
+*** 國家/地區：您所在國家/地區的雙字母ISO縮寫（例如美國）
+*** 州或省：貴組織總公司所在州或省的名稱（例如、麻塞諸塞州）
+*** 地區：貴組織總公司所在城市的名稱（例如Waltham）
+*** 組織名稱：擁有網域名稱的組織名稱（例如NetApp）
+*** 組織單位名稱：將使用憑證的部門或群組名稱（例如Support）
+*** 網域名稱/一般名稱：用於伺服器DNS查詢的FQDN（例如www.example.com）系統會以類似下列的資訊回應： `Is CN=www.example.com, OU=support, O=NetApp, L=Waltham, ST=MA, C=US correct?`
+
+
+.. 輸入 `Yes` 當「Common Name（CN）（一般名稱（CN））」等於FQDN時。
+.. 當系統提示輸入金鑰密碼時、請輸入密碼、或按Enter鍵以使用現有的金鑰庫密碼。
+
+
+. 產生憑證要求檔案： `keytool -certreq -alias localhost -keystore "c:\Program Files\SANscreen\wildfly\standalone\configuration\server.keystore" -file c:\localhost.csr`
++
+。 `c:\localhost.csr` 檔案是新產生的憑證要求檔案。
+
+. 提交 `c:\localhost.csr` 請將其歸檔給您的認證授權單位（CA）以供核准。
++
+一旦憑證要求檔案獲得核准、您就會想要在中傳回憑證給您 `.der` 格式。檔案可能會傳回、也可能不會傳回 `.der` 檔案：預設檔案格式為 `.cer` 適用於Microsoft CA服務。
+
+. 匯入核准的憑證： `keytool -importcert -alias localhost -file c:\localhost2.DER -keystore "c:\Program Files\SANscreen\wildfly\standalone\configuration\server.keystore"`
++
+.. 當系統提示輸入密碼時、請輸入Keystore密碼。
++
+系統會顯示下列訊息： `Certificate reply was installed in keystore`
+
+
+
+. 重新啟動SANscreen 「伺服器」服務。
+
+
+
+
+== 結果
+
+網頁瀏覽器不再報告憑證警告。

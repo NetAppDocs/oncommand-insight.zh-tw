@@ -1,0 +1,26 @@
+---
+permalink: config-admin/finding-ghost-data-sources.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果您已移除裝置、但仍保留裝置資料、您可以找到任何重影資料來源、以便將其移除。 
+---
+= 尋找重影資料來源
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您已移除裝置、但仍保留裝置資料、您可以找到任何重影資料來源、以便將其移除。
+
+
+
+== 步驟
+
+. 在Web UI中、按一下「*管理*」、然後選取「*疑難排解*」。
+. 在頁面底部的「其他工作」區域中、按一下「*進階疑難排解*」連結。
+. 在* Reports*（報告）選項卡上，單擊* Ghost* Data Sources"（*重影資料來源）鏈接。
++
+用自己的裝置資訊製作一份原創者清單OnCommand Insight 。
+
+

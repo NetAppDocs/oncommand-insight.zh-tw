@@ -1,0 +1,35 @@
+---
+permalink: dwh/monitoring-data-warehouse-health.html 
+sidebar: sidebar 
+keywords: suppress 
+summary: 資料倉儲（DWH\）包含健全狀況監視器、可顯示DWH狀態的相關資訊。警報訊息會顯示在DWH的「連接器與工作」頁面上、並傳送至連線的Insight伺服器、在「管理」->「健全狀況」頁面上顯示這些訊息。 
+---
+= 監控資料倉儲健全狀況
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+資料倉儲（DWH）包含健全狀況監視器、可顯示DWH狀態的相關資訊。警報訊息會顯示在DWH的* Connectors *和* Jobs*頁面上、並傳送至連線的Insight伺服器、這些訊息會顯示在*管理*>* Health *頁面上。
+
+DWH每十分鐘收集一次指標、並在下列情況下顯示警示：
+
+* Insight伺服器連線中斷
+* 磁碟使用率超過90%
+* 報告（Cognos）服務中斷
+* 查詢會在任何資料表上長時間鎖定
+* 維護工作已停用
+* 自動備份已停用
+* 安全風險：偵測到預設加密金鑰
+
+
+資料倉儲中的健全狀況監視器警告最多可抑制30天。
+
+啟用電子郵件通知時、這些事件也會以電子郵件報告。請注意、電子郵件不含任何附件。
+
+這些事件會記錄在中 `dwh_troubleshoot.log` 檔案位於下列位置：
+
+* Windows： `<install dir>\SANscreen\Wildfly\Standalone\Logs`
+* Linux： `/var/log/netapp/oci/wildfly/`
+

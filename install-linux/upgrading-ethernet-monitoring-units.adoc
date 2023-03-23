@@ -1,0 +1,47 @@
+---
+permalink: install-linux/upgrading-ethernet-monitoring-units.html 
+sidebar: sidebar 
+keywords:  
+summary: 升級Insight伺服器軟體之後、您必須升級乙太網路監控軟體。 
+---
+= 升級乙太網路監控單元軟體
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+升級Insight伺服器軟體之後、您必須升級乙太網路監控軟體。
+
+
+
+== 關於這項工作
+
+[NOTE]
+====
+乙太網路監控單元（EMU）不支援OnCommand Insight 版本7.3.12及更新版本。
+
+====
+
+
+== 步驟
+
+. 使用具有Sudo權限的帳戶登入乙太網路監控單元（EMU）伺服器。
+. 請從NetApp 支援網站 下列網址下載Insight EMU軟體：
+. 瀏覽至下載目錄、然後輸入下列命令：
++
+`unzip oci-ethernet-<version>-linux-x86_64.zip`
+
++
+請確定安裝檔案的版本編號正確無誤。
+
+. 您可以檢視的語法、命令引數及參數使用量 `oci-install.sh` ：
++
+`sudo ./oci-ethernet-<version>-linux-x86_64/oci-install.sh --help`
+
+. 執行安裝指令碼：
++
+`sudo ./oci-ethernet-<version>-linux-x86_64/oci-install.sh`
+
+. 接受授權合約、並依照提示進行。
+

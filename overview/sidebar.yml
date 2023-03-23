@@ -1,0 +1,10 @@
+---
+section: overview
+title: 什麼是OnCommand Insight 功能？
+entries:
+- title: 概述OnCommand Insight
+  url: "/overview/oncommand-insight-overview.html"
+- title: Insight架構
+  url: "/overview/insight-architecture.html"
+- title: 系統管理員、經理和規劃人員如何使用Insight
+  url: "/overview/insight-for-administrators-and-planners.html"

@@ -1,0 +1,28 @@
+---
+permalink: config-admin/insight-data-source-management.html 
+sidebar: sidebar 
+keywords:  
+summary: 資料來源是用來維護OnCommand Insight 整個環境的最重要元件。由於這些資料來源是Insight的主要資訊來源、因此您必須將資料來源維持在執行中狀態。 
+---
+= Insight資料來源管理
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+資料來源是用來維護OnCommand Insight 整個環境的最重要元件。由於這些資料來源是Insight的主要資訊來源、因此您必須將資料來源維持在執行中狀態。
+
+您可以選取資料來源來檢查與其狀態相關的事件、並記下可能造成問題的任何變更、藉此監控網路中的資料來源。
+
+除了檢查個別資料來源之外、您還可以執行下列作業：
+
+* 複製資料來源、在Insight中建立許多類似的資料來源
+* 編輯資料來源資訊
+* 變更認證資料
+* 控制輪詢
+* 刪除資料來源
+* 安裝資料來源修補程式
+* 從修補程式安裝新的資料來源
+* 為NetApp客戶支援部門準備錯誤報告
+

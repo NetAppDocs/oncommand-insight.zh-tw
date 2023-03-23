@@ -1,0 +1,18 @@
+---
+permalink: reporting/colors-used-in-data-model-elements.html 
+sidebar: sidebar 
+keywords:  
+summary: 資料模型元素上的色彩有不同的指示。 
+---
+= 資料模型元素中使用的色彩
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+資料模型元素上的色彩有不同的指示。
+
+* 黃色資產：代表測量結果。
+* 非黃色資產：代表屬性。這些值不會集合在一起。
+

@@ -1,0 +1,171 @@
+---
+permalink: config-admin/importing-annotation-values.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果您在CSV檔案中保留SAN物件（例如儲存設備、主機和虛擬機器）的註釋、您可以將該資訊匯入OnCommand Insight 到VMware。您可以匯入應用程式、商業實體或註釋、例如階層和建置。 
+---
+= 匯入註釋值
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您在CSV檔案中保留SAN物件（例如儲存設備、主機和虛擬機器）的附註、您可以將該資訊匯入OnCommand Insight 到VMware。您可以匯入應用程式、商業實體或註釋、例如階層和建置。
+
+
+
+== 關於這項工作
+
+適用下列規則：
+
+* 如果註釋值為空白、則該註釋會從物件中移除。
+* 在註釋磁碟區或內部磁碟區時、物件名稱是使用破折號和箭頭（\->）分隔符號的儲存名稱和磁碟區名稱組合：
++
+[listing]
+----
+<storage_name>-><volume_name>
+----
+* 儲存設備、交換器或連接埠註解時、應用程式欄會被忽略。
+* 租戶、Line__of_Business、Business_Unit和Project等欄位組成企業實體。
++
+任何值都可以保留空白。如果應用程式已與不同於輸入值的企業實體相關、則應用程式會指派給新的企業實體。
+
+
+
+匯入公用程式支援下列物件類型和金鑰：
+
+|===
+
+
+| 類型 | 金鑰 
+
+
+ a| 
+主機
+ a| 
+`+id-><id>+` 或 `<Name>` 或 `<IP>`
+
+
+
+ a| 
+VM
+ a| 
+`+id-><id>+` 或 `<Name>`
+
+
+
+ a| 
+儲存資源池
+ a| 
+`+id-><id>+` 或 `<Storage_name>`\->``<Storage_Pool_name>``
+
+
+
+ a| 
+內部Volume
+ a| 
+`+id-><id>+` 或 `<Storage_name>`\->``<Internal_volume_name>``
+
+
+
+ a| 
+Volume
+ a| 
+`+id-><id>+` 或 `<Storage_name>`\->``<Volume_name>``
+
+
+
+ a| 
+儲存設備
+ a| 
+`+id-><id>+` 或 `<Name>` 或 `<IP>`
+
+
+
+ a| 
+交換器
+ a| 
+`+id-><id>+` 或 `<Name>` 或 `<IP>`
+
+
+
+ a| 
+連接埠
+ a| 
+`+id-><id>+` 或 `<WWN>`
+
+
+
+ a| 
+分享
+ a| 
+`+id-><id>+` 或 `+<Storage Name>-><Internal Volume Name>-><Share Name>-><Protocol>+` [`+-><Qtree Name >+`]`<Qtree>` 如果有預設qtree、則為選用。
+
+
+
+ a| 
+qtree
+ a| 
+`+id-><id>+` 或 `+<Storage Name>-><Internal Volume Name>-><Qtree Name>+`
+
+|===
+CSV檔案應使用下列格式：
+
+[listing]
+----
+, , <Annotation Type> [, <Annotation Type> ...]
+[, Application] [, Tenant] [, Line_Of_Business] [,
+Business_Unit] [, Project]
+
+<Object Type Value 1>, <Object Key 1>, <Annotation Value> [,
+<Annotation Value> ...] [, <Application>] [, <Tenant>] [,
+<Line_Of_Business>] [, <Business_Unit>] [, <Project>]
+
+...
+
+<Object Type Value N>, <Object Key N>, <Annotation Value> [,
+<Annotation Value> ...] [, <Application>] [, <Tenant>] [,
+<Line_Of_Business>] [, <Business_Unit>] [, <Project>]
+----
+
+
+== 步驟
+
+. 登入Insight Web UI。
+. 單擊*管理*並選擇*疑難排解*。
++
+隨即顯示「疑難排解」頁面。
+
+. 在頁面的*其他工作區段*中、按一下* OnCommand Insight 《Portal》*連結。
+. 按一下「* Insight Connect API*」。
+. 登入入口網站。
+. 按一下*註釋匯入公用程式*。
+. 儲存 `.zip` 將檔案解壓縮、然後讀取 `readme.txt` 檔案以取得更多資訊和範例。
+. 將CSV檔案放在與相同的資料夾中 `.zip` 檔案：
+. 在命令列視窗中、輸入下列命令：
++
+[listing]
+----
+java -jar rest-import-utility.jar [-uusername] [-ppassword]
+[-aserver name or IP address] [-bbatch size] [-ccase sensitive:true/false]
+[-lextra logging:true/false] csv filename
+----
++
+啟用額外記錄的-l選項和啟用區分大小寫的-c選項預設為假。因此、您只能在想要使用這些功能時才指定這些功能。
+
++
+[NOTE]
+====
+選項與其值之間沒有空格。
+
+====
++
+[NOTE]
+====
+下列關鍵字會保留、並防止使用者將其指定為註釋名稱：-應用程式- Application_Priority -租戶- Line__of_Business - Business_Unit -如果您嘗試使用其中一個保留關鍵字匯入註釋類型、就會產生專案錯誤。如果您已使用這些關鍵字建立註釋名稱、則必須加以修改、以便匯入公用程式工具能夠正常運作。
+
++
+
+====
+

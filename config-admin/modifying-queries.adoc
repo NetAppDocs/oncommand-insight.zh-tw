@@ -1,0 +1,36 @@
+---
+permalink: config-admin/modifying-queries.html 
+sidebar: sidebar 
+keywords:  
+summary: 當您想要變更查詢資產的搜尋準則時、可以變更與查詢相關的準則。 
+---
+= 修改查詢
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+當您想要變更查詢資產的搜尋準則時、可以變更與查詢相關的準則。
+
+
+
+== 步驟
+
+. 登入InsightWeb UI。
+. 按一下*查詢*、然後選取*顯示所有查詢*。
++
+隨即顯示「查詢」頁面。
+
+. 按一下查詢名稱。
+. 若要從查詢中移除準則、請按一下 image:../media/trash-can-query.gif[""]。
+. 若要新增條件至查詢、請按一下 image:../media/more-button.gif[""]，然後從清單中選取條件。
+. 執行下列其中一項：
++
+** 按一下「*儲存*」、以最初使用的名稱儲存查詢。
+** 按一下*「另存新檔」*、以其他名稱儲存查詢。
+** 按一下*重新命名*以變更您最初使用的查詢名稱。
+** 按一下*還原*、將查詢名稱變更回您最初使用的名稱。
+
+
+

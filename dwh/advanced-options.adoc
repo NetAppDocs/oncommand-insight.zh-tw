@@ -1,0 +1,14 @@
+---
+permalink: dwh/advanced-options.html 
+sidebar: sidebar 
+keywords:  
+summary: 資料倉儲包含各種進階選項。 
+---
+= 進階選項
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+資料倉儲包含各種進階選項。

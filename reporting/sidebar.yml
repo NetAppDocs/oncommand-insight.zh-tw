@@ -1,0 +1,61 @@
+---
+section: reporting
+title: 報告
+entries:
+- title: 歡迎使用OnCommand Insight 本報告
+  url: "/reporting/welcome-to-oncommand-insight-reporting.html"
+  entries:
+  - title: 存取OnCommand Insight 《銷售報告入口網站
+    url: "/reporting/accessing-the-oncommand-insight-reporting-portal.html"
+  - title: 因安裝的授權而異
+    url: "/reporting/variations-due-to-installed-licenses.html"
+  - title: 報告使用者角色
+    url: "/reporting/reporting-user-roles.html"
+  - title: 啟用安全標頭
+    url: "/reporting/enabling-security-headers.html"
+- title: 輕鬆報告
+  url: "/reporting/reporting-made-easy.html"
+  entries:
+  - title: 瀏覽至預先定義OnCommand Insight 的等化報告
+    url: "/reporting/navigating-to-the-pre-defined-oncommand-insight-reports-and-dashboards.html"
+  - title: Storage Manager儀表板的功能
+    url: "/reporting/storage-manager-dashboard.html"
+  - title: 使用預先定義的報告來回答常見問題
+    url: "/reporting/which-report-answers-your-question.html"
+  - title: 使用Cognos 11建立報告
+    url: "/reporting/creating-a-report-cognos-11.html"
+- title: 管理報告
+  url: "/reporting/managing-reports.html"
+  entries:
+  - title: 自訂報告的輸出格式與交付
+    url: "/reporting/customizing-a-report-s-output-format-and-delivery.html"
+  - title: 將報告複製到剪貼簿
+    url: "/reporting/copying-a-report-to-the-clipboard.html"
+  - title: 從剪貼簿開啟報告（XML）
+    url: "/reporting/importing-existing-reports-to-cognos-11.html"
+- title: 建立自訂的臨機操作報告
+  url: "/reporting/creating-custom-ad-hoc-reports.html"
+  entries:
+  - title: 您在設計報告之前需要做的事
+    url: "/reporting/what-you-need-to-do-before-you-design-your-report.html"
+  - title: 建立報告的程序
+    url: "/reporting/process-of-creating-custom-reports.html"
+    entries:
+    - title: 如何規劃自訂報告的結果
+      url: "/reporting/how-to-plan-the-results-of-your-custom-report.html"
+    - title: 設計報告的秘訣
+      url: "/reporting/tips-for-designing-reports.html"
+- title: 報告資料模式
+  url: "/reporting/reporting-data-model.html"
+  entries:
+  - title: 資料模型總覽
+    url: "/reporting/data-model-overview.html"
+    entries:
+    - title: 資料模型OnCommand Insight
+      url: "/reporting/oncommand-insight-data-model-descriptions.html"
+    - title: 資料模型事實與維度表
+      url: "/reporting/data-model-fact-and-dimension-tables.html"
+    - title: 資料模型元素中使用的色彩
+      url: "/reporting/colors-used-in-data-model-elements.html"
+    - title: 在一份報告中使用多個資料模型
+      url: "/reporting/using-multiple-data-models-in-one-report.html"

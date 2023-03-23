@@ -1,0 +1,22 @@
+---
+permalink: howto/servicenow-integration-elevate-role.html 
+sidebar: sidebar 
+keywords:  
+summary: 您必須先將ServiceNow角色提升為安全管理員、才能與Insight整合。 
+---
+= 提升角色
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必須先將ServiceNow角色提升為安全管理員、才能與Insight整合。
+
+
+
+== 步驟
+
+. 以系統管理員權限登入ServiceNow執行個體。
+. 在「*系統管理員*」下拉式清單中、選擇*提升角色*、然後將您的角色提升為安全管理員。按一下「確定」。
+

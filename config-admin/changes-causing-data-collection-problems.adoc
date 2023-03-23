@@ -1,0 +1,29 @@
+---
+permalink: config-admin/changes-causing-data-collection-problems.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果OnCommand Insight 您在使用無法收集資料的功能時遇到問題、可能是環境發生變更。一般而言、您也應該在Insight中因應環境中的任何變更。 
+---
+= 導致資料收集問題的變更
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果OnCommand Insight 您在使用無法收集資料的功能時遇到問題、可能是環境發生變更。一般而言、您也應該在Insight中因應環境中的任何變更。
+
+您可以使用此檢查清單來識別可能造成問題的網路變更：
+
+* 您有變更任何密碼嗎？這些密碼在Insight中是否有所變更？
+* 您是否從網路移除裝置？您也必須將此裝置從OnCommand Insight 更新中移除、以避免重新探索及重新導入。
+* 您是否升級了基礎架構軟體（例如HP CommandView Eva或EMC Solutions Enabler）？
++
+確認採購單位已安裝適當版本的用戶端工具。如果資料來源故障持續發生、您需要聯絡技術支援部門以尋求協助、甚至是資料來源修補程式。
+
+* 您的OnCommand Insight 所有采購單位是否都使用相同OnCommand Insight 的版本？如果遠端擷取單元和本機擷取單元執行不同OnCommand Insight 的版本、請在所有裝置上安裝相同版本、以修正資料收集問題。
++
+如果您需要在OnCommand Insight 所有的採購單位上安裝新版的更新版本、請前往支援網站下載正確版本。
+
+* 您是否變更任何網域名稱或新增網域？您必須更新裝置解析度（先前稱為自動解析）方法。
+

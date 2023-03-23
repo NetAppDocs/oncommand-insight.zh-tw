@@ -1,0 +1,152 @@
+---
+permalink: config-admin/microsoft-hyper-v-wmi-data-source.html 
+sidebar: sidebar 
+keywords:  
+summary: 對於組態、Microsoft Hyper-V資料來源需要實體主機（Hypervisor）的IP位址或可解析的DNS名稱。此資料來源使用PowerShell（先前使用的WMI\）。 
+---
+= Microsoft Hyper-V資料來源
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在組態方面、Microsoft Hyper-V資料來源需要實體主機（Hypervisor）的IP位址或可解析的DNS名稱。此資料來源使用PowerShell（先前使用的WMITM）。
+
+
+
+== 術語
+
+從Hyper-V資料來源取得下列庫存資訊OnCommand Insight 。對於Insight取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料來源時、請謹記下列術語：
+
+|===
+
+
+| 廠商/模型術語 | Insight術語 
+
+
+ a| 
+虛擬硬碟
+ a| 
+虛擬磁碟
+
+
+
+ a| 
+主機
+ a| 
+主機
+
+
+
+ a| 
+虛擬機器
+ a| 
+虛擬機器
+
+
+
+ a| 
+叢集共用磁碟區（CSV）、分割磁碟區
+ a| 
+資料儲存區
+
+
+
+ a| 
+網際網路SCSI裝置、多重路徑SCSI LUN
+ a| 
+LUN
+
+
+
+ a| 
+Fibre Channel連接埠
+ a| 
+連接埠
+
+|===
+[NOTE]
+====
+這些只是通用的術語對應、可能不代表此資料來源的每個案例。
+
+====
+
+
+== 需求
+
+* Hyper-V需要開啟連接埠5985才能進行資料收集和遠端存取/管理。
+* 叢集群組節點的IP位址
+* Hypervisor上的本機管理員使用者與密碼
+* 系統管理層級的使用者帳戶
+* 連接埠需求：連接埠135和動態TCP連接埠、分別為Windows 2003和舊版指派1024-65535和Windows 2008指派49152-65535。
+* 即使資料收集器只指向IP位址、DNS解析也必須成功。
+* 每個Hyper-V Hypervisor必須為每個VM、每個主機上的每個VM開啟「資源計量」。如此一來、每Cloud Insights 個Hypervisor都能在每個來賓作業系統上提供更多資料以供其使用。如果未設定、則會為每個來賓取得較少的效能指標。如需資源計量的詳細資訊、請參閱Microsoft文件：
++
+https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831661(v=ws.11)["Hyper-V資源計量概觀"]
+
++
+https://docs.microsoft.com/en-us/powershell/module/hyper-v/enable-vmresourcemetering?view=win10-ps["啟用VMResource記數"]
+
+
+
+
+
+== 組態
+
+|===
+
+
+| *欄位* | *說明* 
+
+
+ a| 
+實體主機IP位址
+ a| 
+實體主機（Hypervisor）的IP位址或完整網域名稱
+
+
+
+ a| 
+使用者名稱
+ a| 
+系統管理員使用者名稱是Hypervisor的名稱
+
+
+
+ a| 
+密碼
+ a| 
+Hypervisor密碼
+
+
+
+ a| 
+NT網域
+ a| 
+叢集中節點使用的DNS名稱
+
+|===
+
+
+== 進階組態
+
+|===
+
+
+| *欄位* | *說明* 
+
+
+ a| 
+庫存輪詢時間間隔（分鐘）
+ a| 
+庫存輪詢之間的時間間隔（預設為20分鐘）
+
+
+
+ a| 
+連線逾時（毫秒）
+ a| 
+連線逾時（預設為60000毫秒）
+
+|===

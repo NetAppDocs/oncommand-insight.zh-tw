@@ -1,0 +1,53 @@
+---
+permalink: install-windows/upgrading-remote-acquisition-servers.html 
+sidebar: sidebar 
+keywords:  
+summary: 完成所有必要的工作之後、您可以登入遠端擷取單元伺服器、然後執行安裝套件以完成升級。您必須在環境中的所有遠端擷取伺服器上執行此工作。 
+---
+= 升級遠端擷取單元伺服器
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+完成所有必要的工作之後、您可以登入遠端擷取單元伺服器、然後執行安裝套件以完成升級。您必須在環境中的所有遠端擷取伺服器上執行此工作。
+
+
+
+== 開始之前
+
+* 您必須升級OnCommand Insight 版的功能。
+* 此安裝套件必須位於伺服器上OnCommand Insight 。
+
+
+
+
+== 步驟
+
+. 使用具有Windows本機系統管理員權限的帳戶登入遠端擷取單元伺服器。
+. 找到Insight安裝套件 (`RAU-x64-version_number-build_number.msi`）使用Windows檔案總管、然後按兩下。
++
+畫面會顯示「BIOS設定精靈」OnCommand Insight 。
+
+. 將安裝精靈進度視窗移離螢幕中央、並遠離安裝精靈視窗、使產生的任何錯誤不會隱藏在檢視中。
+. 依照設定精靈的提示進行。
++
+最佳做法是選擇所有預設值。
+
+
+
+
+
+== 完成後
+
+* 若要驗證升級是否成功或是否產生錯誤、請檢查下列位置的升級記錄： `<install directory>\SANscreen\bin\log`。
+* 使用 `securityadmin` 還原儲存安全性的工具
++
+組態：如需更多資訊、OnCommand Insight 請在《The》中搜尋「安全管理」
+
++
+文件中心： http://docs.netapp.com/oci-73/index.jsp[]
+
+* 清除瀏覽器的快取和歷程記錄、確保您從伺服器接收到最新的資料。
+

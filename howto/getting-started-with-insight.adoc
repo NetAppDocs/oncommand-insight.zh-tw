@@ -1,0 +1,23 @@
+---
+permalink: howto/getting-started-with-insight.html 
+sidebar: sidebar 
+keywords:  
+summary: 完成安裝並獲得適當授權後OnCommand Insight 、您應該執行許多工作來開始準備環境、以展示對您而言重要的資料。 
+---
+= Insight快速入門
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+完成安裝並獲得適當授權後OnCommand Insight 、您應該執行許多工作來開始準備環境、以展示對您而言重要的資料。
+
+在典型環境中執行的部分工作包括：
+
+. *為您的資產加上註釋*、以便做好查詢和報告的準備。有用的初始註釋通常包括資料中心、層級和服務層級。
+. *建立查詢*以顯示重要資料並協助疑難排解
+. *將應用程式*和*商業實體*指派給資產
+. *針對違反這些原則的行為、建立效能原則*和*警示*
+. *建立自訂儀表板*、根據需求或使用者角色來強調顯示資料
+

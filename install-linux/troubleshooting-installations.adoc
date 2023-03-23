@@ -1,0 +1,16 @@
+---
+permalink: install-linux/troubleshooting-installations.html 
+sidebar: sidebar 
+keywords:  
+summary: 通常可透過安裝精靈來管理安裝OnCommand Insight 。不過、客戶可能會在升級期間遇到問題、或是因為電腦環境而發生衝突。 
+---
+= 疑難排解安裝
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通常可透過安裝精靈來管理安裝OnCommand Insight 。不過、客戶可能會在升級期間遇到問題、或是因為電腦環境而發生衝突。
+
+您也應該確定安裝OnCommand Insight 了所有必要的版本資訊、才能安裝軟體。

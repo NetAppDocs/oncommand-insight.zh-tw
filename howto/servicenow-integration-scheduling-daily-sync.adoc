@@ -1,0 +1,37 @@
+---
+permalink: howto/servicenow-integration-scheduling-daily-sync.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用Windows工作排程器自動同步ServiceNow連接器。 
+---
+= 排程每日同步
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用Windows工作排程器自動同步ServiceNow連接器。
+
+
+
+== 關於這項工作
+
+自動同步可確保Insight資料定期移至ServiceNow。您可以使用任何排程方法。下列步驟使用Windows工作排程器來完成自動同步。
+
+
+
+== 步驟
+
+. 在Windows畫面上、按一下* Start*（開始）、然後輸入* run *>* task scheduler *。
+. 按一下*建立基本工作...*
+. 輸入有意義的名稱、例如「OCI2SNOW Connector Sync」。輸入工作說明。單擊 * 下一步 * 。
+. 選取以執行工作*每日*。單擊 * 下一步 * 。
+. 選擇一天中的某個時間來執行工作。單擊 * 下一步 * 。
+. 對於「行動」、請選取*「啟動程式*」。單擊 * 下一步 * 。
+. 在*程式/指令碼*欄位中、輸入 `C:\OCI2SNOW\oci_snow_sync_pyz`。在*引數*欄位中、輸入 `sync`。在* Start In（開始於）*欄位中、輸入 `C:\OCI2SNOW`。按一下*下一步*。
+. 檢閱「摘要」詳細資料、然後按一下「*完成*」。
++
+同步作業現在排定每天執行。
+
+

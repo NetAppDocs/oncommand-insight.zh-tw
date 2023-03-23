@@ -1,0 +1,88 @@
+---
+permalink: config-admin/configuring-sso.html 
+sidebar: sidebar 
+keywords:  
+summary: 單一登入（SSO）可讓組織中的使用者使用OnCommand Insight 無法使用特殊帳戶的功能。 
+---
+= 設定單一登入（SSO）
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+單一登入（SSO）可讓組織中的使用者使用OnCommand Insight 、而不需要特殊帳戶。
+
+系統管理員可設定OnCommand Insight 支援*單一登入*（SSO）存取功能的支援伺服器、以供企業網域中的使用者存取。設定SSO後、任何擁有網域電子郵件地址的使用者都可以使用公司認證登入Insight。支援SSO的OpenID Connect（OIDC）傳輸協定OnCommand Insight 。
+
+[NOTE]
+====
+SSO僅適用於Insight Server網路型UI。SSO不適用於資料倉儲、報告或Java用戶端UI元件。
+
+====
+
+
+== 設定SSO的步驟
+
+* 瀏覽至功能表：管理[設定>使用者]
+* 輸入SSO組態URL以自動填入組態欄位（也稱為「OpenID組態」）。這是一個URI、提供描述身分識別提供者組態的Json。
+* 或者、針對下列身分識別供應商資源手動輸入SSO組態URL。如需這些資源的詳細資訊、請參閱本頁下方的「相關資訊」區段。
++
+** *授權端點*：提示使用者提供認證的身分識別提供者資源。一旦成功、身分識別就會核發授權給OnCommand Insight 功能驗證、讓它代表使用者執行動作。
+** * JWK Set URI*：提供用於簽署JWT權杖的公開金鑰。這可讓用戶端驗證JWT權杖是否確實由身分識別供應商發出、而非由第三方發出。
+** *權杖端點*：身分識別供應商資源、用戶端會在其中交易JWT權杖的授權。用戶端也必須提供用戶端ID和用戶端密碼（請參閱下文）。Insight使用的JWT標記是「身分識別權杖」、表示使用者的使用者名稱和角色。
+** *結束工作階段端點*：由身分識別提供者提供、用戶端（OCI）會讓瀏覽器重新導向、而身分識別提供者則會使使用者與身分識別提供者的工作階段失效。這表示使用者必須在下次登入時輸入認證資料。
+
+
+* *用戶端ID*：唯一識別用戶端（OCI）、並與身分識別供應商已知的其他用戶端區別。身分識別提供者會在為其建立應用程式時產生用戶端ID、而用戶端必須知道用戶端ID、因為它會在權杖要求中顯示該ID。
+* *用戶端機密*：僅供身分識別供應商和用戶端使用的隨機字串、可驗證用戶端給身分識別供應商、證明用戶端是其宣稱的應用程式、而非惡意的第三方。用戶端密碼連同用戶端ID一起、會在權杖要求中傳送給身分識別供應商。用戶端機密是由身分識別供應商所產生。Azure Active Directory允許多個用戶端機密。
+* *使用者名稱*的JWT請款：識別使用者使用者名稱的身分JWT權杖請款。宣告是JWT權杖的JSON有效負載中的金鑰值配對。設定的「使用者名稱的JTW宣告」為金鑰名稱、而對於每個身分識別權杖、此值為要驗證之使用者的使用者名稱。金鑰名稱可能因身分識別供應商而異。對於Azure Active Directory、報銷名稱通常為「prefereted_userName」。
+* *角色的JWT請款*：與上圖相同、但此請款的值為OCI角色清單、例如「來賓」、「使用者」、「admin」。對於Azure Active Directory、此金鑰稱為「角色」。
+
+
+
+
+== 管理SSL憑證
+
+您必須匯入身分識別供應商SSL憑證鏈結的根憑證。若要這麼做、請下載與權杖端點主機名稱相關聯的根憑證。（Azure Active Directory適用的login.microsoftonline.com）、並將其儲存至檔案。然後按一下「Certificates」（憑證）按鈕、使用「Manual」（手動）索引標籤選取檔案、並提供「se-root」等別名來匯入檔案。
+
+如果SSO已啟用、且您匯入新的憑證、則必須重新啟動SANscreen 該服務。
+
+
+
+== 在作業系統中啟用SSO
+
+若要在目前系統上啟用SSO、並透過升級來保留sosoauth系統內容、您必須執行下列動作。
+
+若要在Windows上啟用SSO、請瀏覽至登錄中的_HKEY_LOCAL_MACHINE\SOFTWARE\NetApp\SANSANSANSANSANW_。將sosoauth的值從假變更為真。此值會在升級期間讀取、並用於設定升級系統的sosoauth系統屬性。它不會影響目前執行個體；您也必須更新_local_machine\software\Wow6432Node\Apache Software Foundation\Procrun 2.0\SANscaveServer\Parameters\Java Options_中的soAUTH。
+
+若要在Linux上啟用SSO、請瀏覽至//opt/NetApp/OCI / conf/_並開啟檔案_wildfly.properties_。將_SSO_AUTH_enabled__的值從「假」變更為「真」。
+
+啟用SSO之後、請重新啟動SANscreen 該服務。
+
+
+
+== 疑難排解SSO問題
+
+如果您收到「未授權」錯誤、請查看server.log以取得詳細資料。如果Insight報告授權失敗、但身分識別供應商已正確驗證使用者、您可能會看到此錯誤。
+
+如果使用者無法以SSO登入、請以具有管理員權限的非SSO使用者身分登入、並修正SSO組態。您可以在<Your Insight URL> 瀏覽器視窗中輸入_fis**/uiserver/login.html#___來執行此動作。
+
+*相關資訊*
+
+https://ldapwiki.com/wiki/Openid-configuration[]
+
+https://ldapwiki.com/wiki/Authorization_endpoint[]
+
+https://ldapwiki.com/wiki/JWK%20Set[]
+
+https://ldapwiki.com/wiki/Token_endpoint[]
+
+https://ldapwiki.com/wiki/End_session_endpoint[]
+
+https://ldapwiki.com/wiki/Client_id[]
+
+https://ldapwiki.com/wiki/Client%20Secret[]
+
+https://ldapwiki.com/wiki/Identity%20Token[]

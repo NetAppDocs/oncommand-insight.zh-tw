@@ -1,0 +1,130 @@
+---
+permalink: install-windows/data-warehouse-and-reporting-server-requirements.html 
+sidebar: sidebar 
+keywords:  
+summary: 您必須在符合既有硬體和軟體需求的電腦上執行Data倉儲和報告伺服器、以確保此機器上尚未安裝Apache Web伺服器或報告軟體。 
+---
+= 資料倉儲與報告伺服器需求
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必須在符合既有硬體和軟體需求的電腦上執行Data倉儲和報告伺服器、以確保此機器上尚未安裝Apache Web伺服器或報告軟體。
+
+[NOTE]
+====
+針對功能需求調整規模OnCommand Insight 具有多種相依性、例如環境中的資產數量、保留的歷史資料量等。下列資料倉儲規模調整範例僅為準則、代表已測試Insight的部分環境。變更環境中的任何這些或其他因素、都可能改變Insight的規模調整需求。
+
+====
+建議在安裝或升級Insight之前、先聯絡您的銷售工程師以取得詳細的規模調整指導。
+
+*範例：*
+
+|===
+
+
+| 環境因素： | 已測試的磁碟空間、CPU和記憶體： 
+
+
+ a| 
+18部儲存設備3、400部VM
+
+4、500個交換器連接埠
+ a| 
+200 GB硬碟8核心
+
+32 GB RAM
+
+
+
+ a| 
+110部儲存設備11、500部VM
+
+14、500個交換器連接埠
+ a| 
+300 GB硬碟8核心
+
+48 GB RAM
+
+|===
+*要求：*
+
+|===
+
+
+| 元件 | 必要 
+
+
+ a| 
+作業系統
+ a| 
+執行64位元Microsoft Windows Server 2012、2012 R2、2016或2019的電腦、搭配最新的Service Pack。
+
+
+
+ a| 
+虛擬機器（VM）
+ a| 
+只要保留執行個體的CPU和記憶體資源、此元件就能在虛擬環境中執行。
+
+
+
+ a| 
+CPU
+ a| 
+8 - 40個CPU核心
+
+
+
+ a| 
+記憶體
+ a| 
+32 GB - 2 TB RAM最佳實務做法：強烈建議將分頁檔大小設為「Windows託管」。小型固定大小的分頁檔可能會干擾Insight效能資料的成功儲存。
+
+
+
+ a| 
+可用磁碟空間
+ a| 
+200 GB - 2 TB磁碟空間安裝在C：磁碟機上至少需要20 GB可用空間。
+
+
+NOTE: 在Windows上、Insight Data倉儲with Reporting需要在安裝磁碟機上啟用8DOt3名稱建立支援、才能進行安裝。依預設、C：磁碟機通常會啟用此功能。您可以執行下列命令來驗證目標安裝磁碟機是否已啟用8DOt3名稱建立（以D:取代目標安裝磁碟機）：
+
+fsutil 8dot3name查詢D：
+
+若要啟用8DOt3名稱建立、請執行下列命令（以D:取代目標安裝磁碟機）：
+
+fsutil8dot3name集D：0
+
+
+
+ a| 
+網路
+ a| 
+* 100 Mbps或1 Gbps乙太網路連線
+* 靜態IP位址
+* 在Windows上安裝Data倉儲與報告之前、連接埠50000必須可用
+* 針對支援此功能的OnCommand Insight 支援流程、連接埠80、443、1098、1099、 3873、8083及4444至4446
+* 適用於報告引擎、連接埠1527、9362、9300和9399
+* 適用於MySQL、連接埠3306
+* 執行以確保DNS正常運作 `nslookup` 針對主機
+
+
+
+
+ a| 
+掃毒
+ a| 
+安裝OnCommand Insight 此元件期間、您必須完全停用所有的掃毒程式。安裝之後、Insight元件（安裝、備份和歸檔程式路徑）和所有DWH元件安裝路徑SANscreen （例如、DB2和備份路徑）所使用的路徑、必須排除在掃毒範圍之外。
+
+
+
+ a| 
+Visual Studio
+ a| 
+Visual Studio 2019 https://docs.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist["可重新分配的產品"] 必須先安裝、才能在Windows上安裝Data倉儲與報告功能。
+
+|===

@@ -1,0 +1,26 @@
+---
+permalink: install-windows/planning-the-installation.html 
+sidebar: sidebar 
+keywords:  
+summary: 為了確保成功部署、您必須在安裝OnCommand Insight 完效益測試系統之前、先考量特定的系統元素。 
+---
+= 規劃部署
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+為了確保成功部署、您必須在安裝OnCommand Insight 完效益測試系統之前、先考量特定的系統元素。
+
+
+
+== 關於這項工作
+
+規劃Insight部署時、請考量下列系統要素：
+
+* Insight架構
+* 您要監控的網路元件
+* Insight安裝先決條件和伺服器需求
+* Insight網頁瀏覽器需求
+

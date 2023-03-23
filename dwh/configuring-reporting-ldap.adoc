@@ -1,0 +1,144 @@
+---
+permalink: dwh/configuring-reporting-ldap.html 
+sidebar: sidebar 
+keywords:  
+summary: 管理員可從Data倉儲入口網站設定資料倉儲與報告的LDAP使用量。 
+---
+= 設定LDAP以供報告
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+管理員可從Data倉儲入口網站設定資料倉儲與報告的LDAP使用量。
+
+
+
+== 開始之前
+
+您必須以系統管理員身分登入Insight才能執行此工作。
+
+對於所有安全的Active Directory（即LDAPS）使用者、您必須使用與憑證中定義完全相同的AD伺服器名稱。您無法使用IP位址進行安全的AD登入。
+
+
+
+== 步驟
+
+. 登入資料倉儲入口網站： `+https://hostname/dwh+`、其中 `hostname` 是OnCommand Insight 安裝了此系統的系統名稱。
+. 在左側的導覽窗格中、按一下*使用者管理*。
+. 按一下「* LDAP組態*」。
+. 選取*啟用LDAP*以啟動LDAP使用者驗證與授權程序。
+. 進行設定LDAP所需的任何變更。
++
+大部分欄位都包含預設值。預設設定對Active Directory有效。
+
++
+** *使用者主要名稱屬性*
++
+用於識別LDAP伺服器中每個使用者的屬性。預設為 `userPrincipalName`是全球獨一無二的。嘗試將此屬性的內容與上述提供的使用者名稱配對OnCommand Insight 。
+
+** *角色屬性*
++
+可識別使用者符合指定群組的LDAP屬性。預設為 `memberOf`。
+
+** *郵件屬性*
++
+用於識別使用者電子郵件地址的LDAP屬性。預設為 `mail`。如果您想訂閱OnCommand Insight 可從下列網站取得的報告、此功能非常實用：Insight會在每位使用者第一次登入時取回使用者的電子郵件地址、之後不會再尋找。
+
++
+[NOTE]
+====
+如果使用者的電子郵件地址在LDAP伺服器上變更、請務必在Insight中更新。
+
+====
+** *辨別名稱屬性*
++
+識別使用者辨別名稱的LDAP屬性。預設為 `distinguishedName`。
+
+** *推薦*
++
+指出如果企業中有多個網域、是否要遵循其他網域的路徑。您必須永遠使用預設值 `follow` 設定：
+
+** *超時*
++
+在逾時之前等待LDAP伺服器回應的時間長度（以毫秒為單位）。預設值為2、000、在所有情況下都足夠、不應修改。
+
+** * LDAP伺服器*
++
+這是用於識別LDAP伺服器的IP位址或DNS名稱。識別特定連接埠、位置 `ldap-server-address` 是LDAP伺服器的名稱、您可以使用下列格式：
+
++
+[listing]
+----
+ldap://ldap-server-address:port
+----
++
+若要使用預設連接埠、您可以使用下列格式：
+
++
+[listing]
+----
+ldap://ldap-server-address
+----
++
+[NOTE]
+====
+ When entering multiple LDAP servers in this field, separate entries with a comma, and ensure that the correct port number is used in each entry.
++若要匯入LDAP憑證、請按一下*匯入憑證*、然後自動匯入或手動尋找憑證檔案。
+
+====
+** *網域*
++
+應從LDAP節點OnCommand Insight 開始尋找LDAP使用者。通常這是組織的頂層網域。例如：
+
++
+[listing]
+----
+DC=<enterprise>,DC=com
+----
+** * Insight伺服器管理員群組*
++
+LDAP群組、適用於具有Insight Server Administrator權限的使用者。預設為 `insight.server.admins`。
+
+** * Insight系統管理員群組*
++
+LDAP群組、適用於具有Insight Administrator權限的使用者。預設為 `insight.admins`。
+
+** * Insight使用者群組*
++
+LDAP群組、適用於具有Insight使用者權限的使用者。預設為 `insight.users`。
+
+** * Insight Guest群組*
++
+LDAP群組、適用於具有Insight Guest權限的使用者。預設為 `insight.guests`。
+
+** *報告管理員群組*
++
+LDAP群組、適用於具有Insight報告管理員權限的使用者。預設為 `insight.report.admins`。
+
+** *報告專業作者群組*
++
+LDAP群組、適用於具有Insight報告專業作者權限的使用者。預設為 `insight.report.proauthors`。
+
+** *報告業務作者群組*
++
+LDAP群組、適用於具有Insight報告商業作者權限的使用者。預設為 `insight.report.business.authors`。
+
+** *報告商業消費者群組*
++
+LDAP群組、適用於具有Insight報告商業使用者權限的使用者。預設為 `insight.report.business.consumers`。
+
+** *報告收件者群組*
++
+LDAP群組、適用於具有Insight報告收件者權限的使用者。預設為 `insight.report.recipients`。
+
+
+
+. 如果您做了任何變更、請在*目錄查詢使用者*和*目錄查詢使用者密碼*欄位中輸入值。
++
+如果您未在這些欄位中輸入修訂後的值、您的變更將不會儲存。
+
+. 在*確認目錄查詢使用者密碼*欄位中重新輸入目錄查詢使用者密碼、然後按一下*驗證密碼*以驗證伺服器上的密碼。
+. 按一下*更新*以儲存變更。按一下*取消*以移除變更。
+

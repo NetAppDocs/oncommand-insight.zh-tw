@@ -1,0 +1,28 @@
+---
+permalink: config-admin/determining-data-source-acquisition-status.html 
+sidebar: sidebar 
+keywords:  
+summary: 由於資料來源是Insight的主要資訊來源、因此您必須確保資料來源保持在執行中狀態。 
+---
+= 判斷資料來源擷取狀態
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+由於資料來源是Insight的主要資訊來源、因此您必須確保資料來源保持在執行中狀態。
+
+您可以在每個資產頁面上、查看直接取得的所有資產的資料來源擷取狀態。可能發生下列任一擷取案例、狀態會顯示在資產頁面的右上角：
+
+* 已成功從資料來源取得
++
+顯示「擷取」狀態 `xxxx``", where `xxxx` 指出資產資料來源最近的擷取時間。
+
+* 發生擷取錯誤。
++
+顯示「擷取」狀態 `xxxx``", where `xxxx` 指出資產的一或多個資料來源最近使用的擷取時間 image:../media/acquisition-icon.gif[""]。當您按一下時 image:../media/acquisition-icon.gif[""]、視窗會顯示資產的每個資料來源、資料來源狀態、以及上次擷取資料的時間。按一下資料來源會顯示資料來源的詳細資料頁面。
+
+
+
+如果資產並非直接取得、則不會顯示任何狀態。

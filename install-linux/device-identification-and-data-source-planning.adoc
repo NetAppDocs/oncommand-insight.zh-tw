@@ -1,0 +1,31 @@
+---
+permalink: install-linux/device-identification-and-data-source-planning.html 
+sidebar: sidebar 
+keywords:  
+summary: 在部署規劃中、您應該收集環境中裝置的相關資訊。 
+---
+= 裝置識別與資料來源規劃
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在部署規劃中、您應該收集環境中裝置的相關資訊。
+
+您需要下列軟體、連線能力、以及環境中每個裝置的相關資訊：
+
+* OCI伺服器可解析的IP位址或主機名稱
+* 登入名稱和密碼
+* 裝置存取類型、例如控制器和管理站
++
+[NOTE]
+====
+大多數裝置的唯讀存取權限都已足夠、但有些裝置需要系統管理員權限。
+
+====
+* 視資料來源連接埠需求而定、連接埠可連線至裝置
+* 對於交換器、SNMP唯讀社群字串（提供交換器存取權的使用者ID或密碼）
+* 裝置上所需的任何協力廠商軟體、例如Solutions Enabler。
+* 如OnCommand Insight 需資料來源權限與需求的詳細資訊、請參閱網路UI說明或《_·0·設定與管理指南》中的「廠商專屬資料來源參考資料」。
+

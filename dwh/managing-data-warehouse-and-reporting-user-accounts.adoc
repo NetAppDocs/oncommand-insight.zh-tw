@@ -1,0 +1,22 @@
+---
+permalink: dwh/managing-data-warehouse-and-reporting-user-accounts.html 
+sidebar: sidebar 
+keywords:  
+summary: 使用者帳戶、使用者驗證及使用者授權OnCommand Insight 等功能、均可從資料倉儲（DWH\）中定義及管理。根據這些組態、使用者和管理員可以存取部分或全部可用OnCommand Insight 的功能表報告。 
+---
+= 管理資料倉儲與報告使用者帳戶
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+使用者帳戶、使用者驗證及使用者授權OnCommand Insight 等功能、均可從資料倉儲（DWH）進行定義及管理。根據這些組態、使用者和管理員可以存取部分或全部可用OnCommand Insight 的功能表報告。
+
+若要存取Data倉儲中的「使用者管理」、必須擁有系統管理員權限的帳戶。這包括：
+
+* 資料倉儲的完整管理功能
+* 設定及維護所有使用者帳戶
+* 資料庫的讀取存取權
+* 能夠在ETL中設定連接器、排程資料倉儲工作、重設資料庫、指派或變更角色、以及新增和移除使用者帳戶
+

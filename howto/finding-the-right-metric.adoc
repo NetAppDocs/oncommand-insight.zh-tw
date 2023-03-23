@@ -1,0 +1,116 @@
+---
+permalink: howto/finding-the-right-metric.html 
+sidebar: sidebar 
+keywords:  
+summary: 使用名稱擷取計數器和度量、名稱有時會因資料來源而異OnCommand Insight 。 
+---
+= 最佳實務做法：找出正確的指標
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+使用名稱擷取計數器和度量、名稱有時會因資料來源而異OnCommand Insight 。
+
+在搜尋儀表板小工具的正確度量或計數器時、請記住、您想要的度量可能與您想要的度量名稱不同。雖然下拉式OnCommand Insight 清單通常是以字母順序排列、但有時候清單中可能不會顯示您認為應該顯示的字詞。例如、「原始容量」和「已用容量」等詞彙不會出現在大多數清單中。
+
+最佳實務做法：在*篩選條件*等欄位中使用搜尋功能、或是欄選取器等位置 image:../media/column-picker-button.gif[""] 尋找您想要的產品。例如、搜尋「CAP」會顯示名稱中含有「容量」的所有度量、無論其發生在何處。然後、您可以從該簡短清單輕鬆選取所需的度量。
+
+以下是您在搜尋指標時可以嘗試的幾個替代詞彙：
+
+|===
+
+
+| 當您想要尋找： | 也請嘗試搜尋： 
+
+
+ a| 
+CPU
+ a| 
+處理器
+
+
+
+ a| 
+容量
+ a| 
+已用容量原始容量
+
+已配置的容量
+
+儲存資源池容量
+
+容量<other asset type>
+
+寫入容量
+
+
+
+ a| 
+磁碟速度
+ a| 
+最低磁碟速度執行磁碟類型的最快速度
+
+
+
+ a| 
+主機
+ a| 
+HypervisorHos
+
+
+
+ a| 
+Hypervisor
+ a| 
+主機管理程式
+
+
+
+ a| 
+微碼
+ a| 
+韌體
+
+
+
+ a| 
+名稱
+ a| 
+別名Hypervisor名稱
+
+儲存名稱
+
+名稱<other asset type>
+
+簡單名稱
+
+資源名稱
+
+網路別名
+
+
+
+ a| 
+讀取/寫入
+ a| 
+部分R/ WPending寫入
+
+IOPS：寫入
+
+寫入容量
+
+延遲-讀取
+
+快取使用率-讀取
+
+
+
+ a| 
+虛擬機器
+ a| 
+VMI虛擬化
+
+|===
+這不是完整的清單。這些只是可能的搜尋詞彙範例。

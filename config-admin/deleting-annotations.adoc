@@ -1,0 +1,30 @@
+---
+permalink: config-admin/deleting-annotations.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可能想要刪除不再使用的註釋。您無法刪除註釋規則、查詢或效能原則中使用的系統層級註釋或註釋。 
+---
+= 刪除註釋
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可能想要刪除不再使用的註釋。您無法刪除註釋規則、查詢或效能原則中使用的系統層級註釋或註釋。
+
+
+
+== 步驟
+
+. 登入OnCommand Insight 到The W不明 網路UI。
+. 按一下「*管理*」、然後選取「*註釋*」。
++
+此時會顯示「附註」頁面。
+
+. 將游標放在您要刪除的附註上、然後按一下 image:../media/trash-can-query.gif[""]。
++
+隨即顯示確認對話方塊。
+
+. 按一下「*確定*」。
+

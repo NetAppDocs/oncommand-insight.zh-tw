@@ -1,0 +1,16 @@
+---
+permalink: reporting/managing-reports.html 
+sidebar: sidebar 
+keywords:  
+summary: 對於每個報告、您可以在「動作」欄中選取「更多」連結、並存取所有的報告作業、例如設定報告內容、排程報告或以電子郵件傳送報告。系統管理員擁有比其他使用者更多的管理選項。 
+---
+= 管理報告
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+對於每個報告、您可以在「動作」欄中選取*更多*連結、並存取所有的報告作業、例如設定報告內容、排程報告或以電子郵件傳送報告。系統管理員擁有比其他使用者更多的管理選項。
+
+系統管理員可以根據OnCommand Insight 其自身的功能、為其他報告使用者設定權限。

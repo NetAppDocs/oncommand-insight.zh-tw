@@ -1,0 +1,21 @@
+---
+permalink: relnotes/index.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= 版本資訊
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+可在文件中心外部取得《發行說明》OnCommand Insight 。系統會提示您使用 NetApp 支援網站認證資料登入。
+
+版本資訊提供多種格式：
+
+link:https://library.netapp.com/ecmdocs/ECMLP2652943/html/frameset.html["html下載"^]
+
+link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2652943["PDF"^]
+
+link:https://library.netapp.com/ecm/ecm_get_file2/ECMLP2652943?Rendition=EPUB["EPUB"^]

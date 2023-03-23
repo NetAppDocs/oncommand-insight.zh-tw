@@ -1,0 +1,41 @@
+---
+permalink: install-windows/uninstalling-the-data-warehouse-software.html 
+sidebar: sidebar 
+keywords:  
+summary: 您必須先解除安裝Data倉儲軟體、才能進行升級。 
+---
+= 解除安裝Data倉儲軟體
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必須先解除安裝Data倉儲軟體、才能進行升級。
+
+
+
+== 開始之前
+
+如果您對想要保留的報告進行變更、請務必在解除安裝Data倉儲之前建立備份。解除安裝資料倉儲會永久刪除所有先前收集的資料、並移除所有報告、包括任何新建立或編輯的報告。
+
+
+
+== 步驟
+
+. 登入資料倉儲伺服器。
+. 請確定已關閉伺服器上的所有Insight視窗。
+. 若要使用「控制台」解除安裝：
++
+.. 從控制面板開啟*解除安裝程式*、然後選取OnCommand Insight 要移除的應用程式。按一下「*解除安裝*」、然後依照提示進行。
+.. 選取要移除的IBM DB2應用程式。按一下「*解除安裝*」、然後依照提示進行。
+.. 刪除DB2安裝資料夾（例如_C:\Program Files\IBM\DB2_）、以完全移除DB2資料庫。
+
+
+. 若要使用提供的指令碼解除安裝：
++
+.. 瀏覽至「_fesi\OCI <download location> 」、「wh」、「uninstall」、然後執行「_uninstall」、「OCI」、「wh」、「bat_」指令碼。
+
+
+. 重新啟動伺服器。
+

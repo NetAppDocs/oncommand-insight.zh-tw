@@ -1,0 +1,173 @@
+---
+permalink: config-admin/netapp-solidfire-data-source.html 
+sidebar: sidebar 
+keywords:  
+summary: NetApp SolidFire 支援iSCSI與Fibre Channel SolidFire 之間的整合、可同時進行庫存與效能收集。 
+---
+= NetApp SolidFire 產品資料來源
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp SolidFire 支援iSCSI與Fibre Channel SolidFire 之間的整合、可同時進行庫存與效能收集。
+
+該資料來源採用了The Rizest API SolidFire SolidFire 。資料來源所在的擷取單元、必須能夠啟動HTTPS連線至SolidFire 叢集管理IP位址上的TCP連接埠443。資料來源需要能夠在SolidFire 叢集上進行REST API查詢的認證資料。
+
+
+
+== 術語
+
+從NetApp供應資料來源取得下列庫存資訊SolidFire OnCommand Insight 。對於Insight取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料來源時、請謹記下列術語：
+
+|===
+
+
+| 廠商/模型術語 | Insight術語 
+
+
+ a| 
+磁碟機
+ a| 
+磁碟
+
+
+
+ a| 
+叢集
+ a| 
+儲存設備
+
+
+
+ a| 
+節點
+ a| 
+儲存節點
+
+
+
+ a| 
+Volume
+ a| 
+Volume
+
+
+
+ a| 
+Fibre Channel連接埠
+ a| 
+連接埠
+
+
+
+ a| 
+Volume存取群組、LUN指派
+ a| 
+Volume Map
+
+
+
+ a| 
+iSCSI工作階段
+ a| 
+Volume遮罩
+
+|===
+[NOTE]
+====
+這些只是通用的術語對應、可能不代表此資料來源的每個案例。
+
+====
+
+
+== 需求
+
+以下是設定此資料來源的需求：
+
+* 管理虛擬IP位址
+* 連接埠443
+
+
+
+
+== 組態
+
+|===
+
+
+| 欄位 | 說明 
+
+
+ a| 
+管理虛擬IP位址（MVIP）
+ a| 
+管理VMware叢集的虛擬IP位址SolidFire
+
+
+
+ a| 
+使用者名稱
+ a| 
+用來登入SolidFire 到Isname叢集的名稱
+
+
+
+ a| 
+密碼
+ a| 
+用於登入SolidFire 到故障叢集的密碼
+
+|===
+
+
+== 進階組態
+
+|===
+
+
+| 欄位 | 說明 
+
+
+ a| 
+庫存輪詢時間間隔（分鐘）
+ a| 
+庫存輪詢之間的時間間隔（預設為60分鐘）
+
+
+
+ a| 
+TCP連接埠
+ a| 
+TCP連接埠用於連線SolidFire 至伺服器（預設443）
+
+
+
+ a| 
+連線逾時（秒）
+ a| 
+連線逾時（預設為60秒）
+
+
+
+ a| 
+效能意見調查時間間隔（秒）
+ a| 
+效能輪詢之間的時間間隔（預設為300秒）
+
+|===
+
+
+== 疑難排解
+
+當支援報告錯誤時SolidFire 、會以OnCommand Insight 下列方式顯示在功能表中：
+
+`An error message was received from a SolidFire device while trying to retrieve data. The call was <method> (<parameterString> ). The error message from the device was (check the device manual): <message>`
+
+其中：
+
+* 方法是HTTP方法、例如GET或PUT。
+* 參數字串>是以逗號分隔的參數清單、包含在REST呼叫中。
+* 此為傳回的錯誤訊息。
+

@@ -1,0 +1,48 @@
+---
+permalink: install-linux/submitting-an-online-technical-support-request.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果您是Insight安裝的註冊支援客戶、則可以提交線上技術支援要求。 
+---
+= 提交線上技術支援要求
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您是Insight安裝的註冊支援客戶、則可以提交線上技術支援要求。
+
+
+
+== 開始之前
+
+您必須使用公司電子郵件地址註冊為支援客戶、才能取得線上支援服務。註冊是透過支援網站執行 (http://support.netapp.com)[]。
+
+
+
+== 關於這項工作
+
+為了協助客戶支援解決安裝問題、您應盡可能收集更多資訊、包括下列項目：
+
+* Insight序號
+* 問題說明
+* 所有Insight記錄檔
+* 任何錯誤訊息的螢幕擷取
+
+
+
+
+== 步驟
+
+. 建立 `.zip` 為建立疑難排解套件而收集的資訊檔案。
+. 登入支援網站： http://mysupport.netapp.com/["mysupport.netapp.com"] 並選擇*技術協助*。
+. 按一下*開啟案例*。
+. 請依照您的資料套件指示操作。
+
+
+
+
+== 完成後
+
+您可以使用技術協助頁面上的*檢查案例狀態*來追蹤您的要求。

@@ -1,0 +1,57 @@
+---
+permalink: install-windows/installing-a-remote-acquisition-unit-rau.html 
+sidebar: sidebar 
+keywords:  
+summary: 在OnCommand Insight 您的整個環境中安裝一或多個Raus。 
+---
+= 安裝遠端擷取單元（Rau）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在OnCommand Insight 您的整個環境中安裝一或多個Raus。
+
+
+
+== 開始之前
+
+您必須已完成所有安裝先決條件。
+
+Rau伺服器和OnCommand Insight 支援該伺服器之間至少需要開啟一個連接埠、才能將變更資訊轉送到伺服器。如果您不確定、請在Rau電腦上開啟網頁瀏覽器並將其導向OnCommand Insight 到該伺服器來驗證：
+
+[listing]
+----
+ https://< OnCommand Insight Server hostname >:< acquisition_port >
+----
+擷取連接埠預設為443、但在伺服器安裝期間可能已經變更。如果連線成功、您會看到OnCommand Insight 一個「支援功能」回應頁面、指出Rau與OnCommand Insight 該伺服器之間有一個開放且可用的連接埠。
+
+
+
+== 步驟
+
+. 使用具有系統管理員權限的帳戶登入Rau伺服器。
+. 開啟Windows檔案總管、然後瀏覽至Rau安裝檔案所在的目錄。
+. 按兩下 `.MSI` 檔案以開始安裝。
+. 單擊*下一步*繼續顯示許可協議的窗口。閱讀本協議並接受許可協議條款，然後單擊*下一步*。
+. 選取以在本機硬碟上安裝Rau、或在本機硬碟上安裝整個功能。（您可以查看「Disk使用量」（磁碟使用量）連結、以確保您有足夠的空間-需要11600MB的空間。） 單擊*下一步*。
+. 在「Configure（設定）」視窗中、設定您所在站台專屬的參數：
++
+** * OnCommand Insight 《伺服器名稱或位址*》-識別OnCommand Insight 該伺服器的主機名稱或IP位址。Rau使用此名稱/IP來開啟與伺服器的通訊連結。如果您指定主機名稱、請確定它可以透過DNS解析。
+** *擷取單位名稱*-識別Rau的唯一名稱。
+** *《受保護的遠端擷取連接埠（HTTPS）*》-遠端擷取單元用來將環境變更資訊傳送至該伺服器的連接埠OnCommand Insight OnCommand Insight 。此設定應符合安裝OnCommand Insight 此伺服器時輸入的值、且在所有Raus上必須相同。
+
+
+. 檢閱您的選擇。按一下*上一步*即可返回並進行變更。單擊 * 下一步 * 。
+. 按一下「*安裝*」開始安裝。
++
+等待安裝完成。這大約需要5到10分鐘。
+
+
+
+
+
+== 完成後
+
+安裝完成後、會出現最後一個視窗。按一下「*啟動遠端擷取服務*」方塊以啟動Rau、然後按一下「*完成*」以結束此作業。

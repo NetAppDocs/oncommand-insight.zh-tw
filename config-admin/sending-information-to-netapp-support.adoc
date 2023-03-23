@@ -1,0 +1,27 @@
+---
+permalink: config-admin/sending-information-to-netapp-support.html 
+sidebar: sidebar 
+keywords:  
+summary: NetApp自動化支援（ASUP）機構會將疑難排解資訊直接傳送給NetApp客戶支援團隊。您可以強制傳送特殊報告。 
+---
+= 傳送資訊給NetApp支援部門
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp自動化支援（ASUP）機構會將疑難排解資訊直接傳送給NetApp客戶支援團隊。您可以強制傳送特殊報告。
+
+
+
+== 步驟
+
+. 在Insight工具列上、按一下*管理*。
+. 按一下*設定*。
+. 單擊*備份/ASUP*選項卡。
+. 在「傳送/收集資料」區域中、按一下*「立即傳送ASUP」*、將您的記錄、錄音及備份提交給NetApp支援部門。
++
+image::../media/oci-7-backup-restore-gif.gif[備份與還原頁面]
+
+

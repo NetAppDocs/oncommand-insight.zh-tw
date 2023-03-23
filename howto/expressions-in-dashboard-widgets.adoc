@@ -1,0 +1,16 @@
+---
+permalink: howto/expressions-in-dashboard-widgets.html 
+sidebar: sidebar 
+keywords:  
+summary: 時間序列小工具中的運算式可讓您根據所選的度量來顯示資料。 
+---
+= 儀表板小工具中的運算式
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+時間序列小工具中的運算式可讓您根據所選的度量來顯示資料。
+
+在儀表板中、任何時間序列Widget（折線、不規則曲線、區域、堆疊區域）都可讓您從所選的度量建立運算式、並在單一圖表中顯示這些運算式的結果。下列範例使用運算式來解決特定問題。在第一個範例中、我們要將環境中所有儲存資產的讀取IOPS顯示為總IOPS的百分比。第二個範例讓我們清楚掌握環境中發生的「系統」或「負荷」IOPS、這些IOPS並非來自讀取或寫入資料。

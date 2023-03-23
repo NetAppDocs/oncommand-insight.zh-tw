@@ -1,0 +1,93 @@
+---
+permalink: install-windows/installing-the-oncommand-insight-server.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用「BIOS設定精靈」輕鬆安裝OnCommand Insight 「The效益伺服器OnCommand Insight 」。 
+---
+= 安裝OnCommand Insight The功能
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「BIOS設定精靈」輕鬆安裝OnCommand Insight 「The效益伺服器OnCommand Insight 」。
+
+
+
+== 開始之前
+
+您必須已完成所有安裝先決條件。
+
+
+
+== 步驟
+
+. 使用具有管理員權限的帳戶登入Insight伺服器。
+. 開啟Windows檔案總管、然後瀏覽至安裝檔案所在的目錄。
+. 按兩下 `.MSI` 您下載的檔案。
+. 單擊 * 下一步 * 繼續。
+. 閱讀授權合約、選取「*我接受授權合約*」核取方塊、然後按「*下一步*」。
+. 在「*客戶資訊*」視窗中輸入客戶名稱和網站名稱、然後按「*下一步*」。
++
+*最佳實務做法：*使用客戶名稱做為網站的前置詞：例如NetApp。
+
+. 在*客戶資訊：設定NetApp ASUP*視窗中、執行下列動作：
++
+.. 選取下列其中一個選項、以選取含有您要上傳至ASUP之資料的資料庫：
++
+*** *無資料庫備份*：不會將備份傳送至ASUP。
+*** *不含效能資料的備份*：進行備份並傳送至ASUP、但不包含效能資料。
+*** *使用效能資料備份*：備份包含效能資料、但可能會產生龐大的資料 `*.gz` 檔案：
+
+
+
+
++
+[NOTE]
+====
+ASUP是使用HTTPS傳輸協定來提供。
+
+====
++
+.. 在* Logs*中、選取不想要記錄、基礎記錄或延伸記錄、而這些記錄包含資料來源記錄。
+.. 單擊 * 下一步 * 。
+
+
+. 如果您使用的是Insight Consumption授權模式、則必須勾選「*傳送使用資訊*」區段中的「*允許傳送使用資訊給NetApp*」方塊。
+. 單擊*下一步*
+. 在* Configure Server*視窗中、選取或設定適當的組態參數以設定OnCommand Insight 「SURE Server：
++
+|===
+
+
+| 選項 | 說明 
+
+
+ a| 
+入口網站連接埠（HTTP）
+ a| 
+支援使用者Web服務的OnCommand Insight 連接埠、包括執行管理工作的入口網站。使用預設值（80）；不過、如果使用預設連接埠、請將其變更為其他連接埠。
+
+
+
+ a| 
+入口網站連接埠（HTTPS）
+ a| 
+遠端擷取設備所使用的連接埠OnCommand Insight 、可透過安全通道將SAN變更資訊傳送至該伺服器。使用預設值（443）；不過、如果預設連接埠正在使用中、請將其變更為其他連接埠。設定Raus時、請指定相同的連接埠號碼。
+
+
+
+ a| 
+內部資料庫連接埠（SQL）
+ a| 
+執行此功能的PC內部使用連接埠OnCommand Insight 、作為資料庫的存取點。使用預設值（3306）；不過、如果使用預設連接埠、請將其變更為其他連接埠。
+
+|===
+. 單擊 * 下一步 * 。
+. 按一下「*安裝*」繼續。
++
+視安裝的應用程式而定、安裝大約需要20分鐘。
+
+. 單擊*完成*。
+

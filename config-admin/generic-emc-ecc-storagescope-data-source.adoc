@@ -1,0 +1,87 @@
+---
+permalink: config-admin/generic-emc-ecc-storagescope-data-source.html 
+sidebar: sidebar 
+keywords:  
+summary: EMC ECC StorageScope裝置有三種類型的資料來源：5.x、6.0和6.1。 
+---
+= EMC ECC StorageScope資料來源
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+EMC ECC StorageScope裝置有三種類型的資料來源：5.x、6.0和6.1。
+
+
+
+== 組態
+
+[NOTE]
+====
+此資料收集器已不再提供OnCommand Insight 、從版本號為e.7.3.11開始。
+
+====
+|===
+
+
+| *欄位* | *說明* 
+
+
+ a| 
+ECC伺服器
+ a| 
+ECC伺服器的IP位址或完整網域名稱
+
+
+
+ a| 
+使用者名稱
+ a| 
+ECC伺服器的使用者名稱
+
+
+
+ a| 
+密碼
+ a| 
+ECC伺服器的密碼
+
+|===
+
+
+== 進階組態
+
+|===
+
+
+| *欄位* | *說明* 
+
+
+ a| 
+ECC連接埠
+ a| 
+用於ECC伺服器的連接埠
+
+
+
+ a| 
+庫存輪詢時間間隔（分鐘）
+ a| 
+庫存輪詢之間的時間間隔（預設為30分鐘）
+
+
+
+ a| 
+連接至資料庫的傳輸協定
+ a| 
+用於連線至資料庫的傳輸協定
+
+
+
+ a| 
+查詢檔案系統資訊
+ a| 
+選取以擷取WWN別名和檔案系統的詳細資料。
+
+|===

@@ -1,0 +1,14 @@
+---
+permalink: config-admin/related-assets.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果適用、資產頁面會顯示相關資產區段。例如、Volume Assets頁面可能會顯示儲存資源池、連接的交換器連接埠和運算資源等資產的相關資訊。每個區段都包含一個表格、其中列出該類別中的任何相關資產、以及其各自資產頁面的連結、以及與該資產相關的數個效能統計資料。 
+---
+= 相關資產
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果適用、資產頁面會顯示相關資產區段。例如、Volume Assets頁面可能會顯示儲存資源池、連接的交換器連接埠和運算資源等資產的相關資訊。每個區段都包含一個表格、其中列出該類別中的任何相關資產、以及其各自資產頁面的連結、以及與該資產相關的數個效能統計資料。

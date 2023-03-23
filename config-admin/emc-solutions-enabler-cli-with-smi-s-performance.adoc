@@ -1,0 +1,252 @@
+---
+permalink: config-admin/emc-solutions-enabler-cli-with-smi-s-performance.html 
+sidebar: sidebar 
+keywords:  
+summary: 利用Solutions Enabler SYMCLI命令搭配您環境中現有的Solutions Enabler伺服器、即可探索Symmetrix儲存陣列OnCommand Insight 。現有的Solutions Enabler伺服器可透過存取關守磁碟區、連線至Symmetrix儲存陣列。需要系統管理員權限才能存取此裝置。 
+---
+= EMC解決方案運用SMI-S效能資料來源來實現
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+利用Solutions Enabler探索Symmetrix儲存陣列OnCommand Insight `symcli` 命令搭配您環境中現有的Solutions Enabler伺服器。現有的Solutions Enabler伺服器可透過存取關守磁碟區、連線至Symmetrix儲存陣列。需要系統管理員權限才能存取此裝置。
+
+
+
+== 術語
+
+從EMC Solutions Enabler資料來源取得下列庫存資訊OnCommand Insight 。對於Insight取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料來源時、請謹記下列術語：
+
+|===
+
+
+| 廠商/模型術語 | Insight術語 
+
+
+ a| 
+磁碟
+ a| 
+磁碟
+
+
+
+ a| 
+磁碟群組
+ a| 
+磁碟群組
+
+
+
+ a| 
+儲存陣列
+ a| 
+儲存設備
+
+
+
+ a| 
+總監
+ a| 
+儲存節點
+
+
+
+ a| 
+裝置集區、儲存資源集區（SRP）
+ a| 
+儲存資源池
+
+
+
+ a| 
+裝置、TDev
+ a| 
+Volume
+
+|===
+[NOTE]
+====
+這些只是通用的術語對應、可能不代表此資料來源的每個案例。
+
+====
+
+
+== 需求
+
+在設定此資料來源之前、您應先確定OnCommand Insight 該伺服器已將TCP連線至現有Solutions Enabler伺服器上的連接埠2707。可探索此伺服器的所有「'local'」Symmetrix陣列、如該伺服器的「'symcfg list'」輸出所示OnCommand Insight 。
+
+* 必須安裝採用SMI-S供應商應用程式的EMC Solutions Enabler（CLI）、且版本必須與Solutions Enabler Server上執行的版本相符或早於該版本。
+* 正確設定 `+{installdir}\EMC\SYMAPI\config\netcnfg+` 檔案為必填。此檔案定義Solutions Enabler伺服器的服務名稱、以及存取方法（安全/ NOSEECURE /any）。
+* 如果您需要儲存節點層級的讀取/寫入延遲、SMI-S Provider必須與VMAX應用程式的Unif則 執行中執行個體通訊。
+* Solutions Enabler（SE）伺服器的系統管理員權限
+* SE軟體的唯讀使用者名稱和密碼
+* 解決方案促成伺服器6.5x需求：
++
+** SMI-S Provider 3.3.1（已安裝SMS-S V1.2）
+** 安裝後、請執行 `\Program Files\EMC\SYMCLI\bin>stordaemon start storsrvd`
+
+
+* VMAX應用程式的Un禁 用型錄必須執行、並收集由SMI-S Provider安裝所管理的Symmetrix VMAX儲存陣列統計資料
+* 存取驗證：確認SMI-S供應商正在執行： `telnet <se_server\> 5988`
+
+
+
+
+== 組態
+
+[NOTE]
+====
+如果SMI-S使用者驗證未啟用、OnCommand Insight 則會忽略支援資訊來源中的預設值。
+
+====
+在Symmetrix陣列上啟用symauth、可能會阻礙OnCommand Insight 執行支援功能。系統使用者可在與Solutions Enabler伺服器通訊的E/遠端擷取單元伺服器上執行OnCommand Insight OnCommand Insight 。如果hostname\system沒有symauth權限、OnCommand Insight 則無法探索陣列。
+
+EMC Solutions Enabler Symmetrix CLI資料來源支援精簡配置和Symmetrix Remote Data Facility（SRDF）的裝置組態。
+
+提供光纖通道和交換器效能套件的定義。
+
+|===
+
+
+| 欄位 | 說明 
+
+
+ a| 
+服務名稱
+ a| 
+netcnfg-file中指定的服務名稱
+
+
+
+ a| 
+CLI的完整路徑
+ a| 
+Symmetrix CLI的完整路徑
+
+|===
+
+
+== 進階組態
+
+|===
+
+
+| 欄位 | 說明 
+
+
+ a| 
+庫存輪詢時間間隔（分鐘）
+ a| 
+庫存輪詢之間的時間間隔（預設為40分鐘）
+
+
+
+ a| 
+選擇「排除」或「包含」以指定清單
+ a| 
+指定在收集資料時是否要納入或排除下列陣列清單
+
+
+
+ a| 
+庫存排除裝置
+ a| 
+要包含或排除的裝置ID清單、以逗號分隔
+
+
+
+ a| 
+連線快取
+ a| 
+選擇連線快取方法：
+
+* 本機是指OnCommand Insight 在Solutions Enabler伺服器上執行的「支援資料」服務、該伺服器具備光纖通道連線功能、可連線至您想要探索的Symmetrix陣列、並可存取關守磁碟區。部分遠端擷取設備（Rau）組態可能會出現此情形。
+* remide_bed是預設值、在大多數情況下都應該使用。這會使用NETCNFG檔案設定、使用IP連線至Solutions Enabler伺服器、該伺服器必須具備光纖通道連線至您要探索的Symmetrix陣列、並可存取Gatekeeper磁碟區。
+* 如果reme_clapped選項使CLI命令失敗、請使用遠端選項。請記住、這會拖慢擷取程序（在極端情況下可能會減至數小時甚至數天）。NETCNFG檔案設定仍可用於連接至Solutions Enabler伺服器的IP連線、該伺服器的Fibre Channel可連線至正在探索的Symmetrix陣列。
+
+
+[NOTE]
+====
+此設定不會變更OnCommand Insight 「symcfg清單」輸出中所列為遠端陣列的非功能性行為。僅在本命令顯示為本機的裝置上收集資料OnCommand Insight 。
+
+====
+
+
+ a| 
+CLI逾時（秒）
+ a| 
+CLI處理逾時（預設值為7200秒）
+
+
+
+ a| 
+SMI-S主機IP
+ a| 
+SMI-S Provider主機的IP位址
+
+
+
+ a| 
+SMI-S連接埠
+ a| 
+SMI-S Provider Host使用的連接埠
+
+
+
+ a| 
+傳輸協定
+ a| 
+用於連線至SMI-S供應商的傳輸協定
+
+
+
+ a| 
+SMI-S命名空間
+ a| 
+SMI-S供應商設定使用的互通性命名空間
+
+
+
+ a| 
+SMI-S使用者名稱
+ a| 
+SMI-S Provider主機的使用者名稱
+
+
+
+ a| 
+SMI-S密碼
+ a| 
+SMI-S Provider主機的使用者名稱
+
+
+
+ a| 
+效能輪詢時間間隔（秒）
+ a| 
+效能輪詢之間的時間間隔（預設為1000秒）
+
+
+
+ a| 
+效能篩選器類型
+ a| 
+指定在收集效能資料時、是否要納入或排除下列陣列清單
+
+
+
+ a| 
+效能篩選器裝置清單
+ a| 
+要包含或排除的裝置ID清單、以逗號分隔
+
+
+
+ a| 
+RPO輪詢時間間隔（秒）
+ a| 
+RPO輪詢之間的時間間隔（預設為300秒）
+
+|===

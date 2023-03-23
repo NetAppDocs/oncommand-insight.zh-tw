@@ -1,0 +1,107 @@
+---
+permalink: config-admin/ibm-tivoli-monitoring-data-source.html 
+sidebar: sidebar 
+keywords:  
+summary: 此資料來源僅用於檔案系統使用率。它直接與Tivoli監控資料庫通訊、也稱為Tivoli監控資料倉儲。支援Oracle和DB2資料庫。 
+---
+= IBM Tivoli監控資料來源
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+此資料來源僅用於檔案系統使用率。它直接與Tivoli監控資料庫通訊、也稱為Tivoli監控資料倉儲。支援Oracle和DB2資料庫。
+
+
+
+== Oracle錯誤訊息
+
+[NOTE]
+====
+此資料收集器已不再提供OnCommand Insight 、從版本號為e.7.3.11開始。
+
+====
+如果指定的SID導致嘗試連線時出現錯誤訊息「ORA-121554」、請仔細檢查Oracle DB網路服務組態。如果存取組態指定完整的主機名稱（例如「names.default_domain」）、請嘗試在SID欄位中插入完整的服務名稱。一個簡單的例子就是連線到SID `testdb` 失敗、且Oracle組態指定的網域``company.com``。您可以使用下列字串來取代基礎SID來嘗試連線： `testdb.company.com`。
+
+
+
+== 組態
+
+|===
+
+
+| 欄位 | 說明 
+
+
+ a| 
+Tivoli監控資料庫IP
+ a| 
+Tivoli監控伺服器的IP位址或完整網域名稱
+
+
+
+ a| 
+使用者名稱
+ a| 
+Tivoli監控伺服器的使用者名稱
+
+
+
+ a| 
+密碼
+ a| 
+Tivoli監控伺服器的密碼
+
+|===
+
+
+== 進階組態
+
+|===
+
+
+| 欄位 | 說明 
+
+
+ a| 
+Tivoli監控資料庫連接埠
+ a| 
+用於Tivoli監控資料庫的連接埠
+
+
+
+ a| 
+Oracle SID或DB2資料庫名稱
+ a| 
+Oracle接聽程式服務ID或DB2資料庫名稱
+
+
+
+ a| 
+庫存輪詢時間間隔（分鐘）
+ a| 
+庫存輪詢之間的時間間隔（預設為60分鐘）
+
+
+
+ a| 
+要使用的資料庫驅動程式
+ a| 
+選擇要使用的資料庫驅動程式
+
+
+
+ a| 
+用於連線至資料庫的傳輸協定
+ a| 
+用於連線至資料庫的傳輸協定
+
+
+
+ a| 
+資料庫架構
+ a| 
+輸入資料庫架構
+
+|===

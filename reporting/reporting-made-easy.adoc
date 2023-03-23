@@ -1,0 +1,38 @@
+---
+permalink: reporting/reporting-made-easy.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以從OnCommand Insight 《The Monitoring報告入口網站》產生預先定義的報告、以電子郵件寄送給其他使用者、甚至修改報告。多份報告可讓您依裝置、企業實體或階層篩選。報告工具使用IBM Cognos做為基礎、並提供許多資料呈現選項。 
+---
+= 輕鬆報告
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以從OnCommand Insight 《The Monitoring報告入口網站》產生預先定義的報告、以電子郵件寄送給其他使用者、甚至修改報告。多份報告可讓您依裝置、企業實體或階層篩選。報告工具使用IBM Cognos做為基礎、並提供許多資料呈現選項。
+
+* 此預先定義的報告可顯示您的庫存、儲存容量、計費、效能、儲存效率OnCommand Insight 、 以及雲端成本資料。您可以修改這些預先定義的報告、並儲存您的修改。
+
+
+您可以使用的報告資料有多項控管措施、包括：
+
+* 登入OnCommand Insight 即可存取由職務所定義的《支援不整報告入口網站》。
+* 設定用來儲存報告資料的「InsightData倉儲」OnCommand 。
+
+
+您可以產生各種格式的報告、包括HTML、PDF、CSV、XML、 和Excel。
+
+支援將使用者與業務單位建立關聯、藉此在報告中容納多個租賃OnCommand Insight 。有了這項功能、系統管理員可以根據使用者的屬性或其所屬關係來分隔資料或報告。
+
+[NOTE]
+====
+在Cognos 11.1.2版之後、報告URL不被視為「穩定」、可能會有所變更。如果您已將報告URL加入書籤、這些書籤可能會隨後失敗。如需詳細資訊、請參閱： http://queryvision.com/ibm-analytics-11-x-urls-they-are-a-changing/[]
+
+====
+[NOTE]
+====
+除非使用新的資料模組功能、否則不支援在IBM Cognos中使用套件建立的任何儀表板OnCommand Insight 。
+
+====

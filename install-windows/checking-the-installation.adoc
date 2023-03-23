@@ -1,0 +1,18 @@
+---
+permalink: install-windows/checking-the-installation.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以在支援的瀏覽器中開啟Insight來檢查安裝。您也可能想要檢查Insight記錄檔。 
+---
+= 檢查安裝
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在支援的瀏覽器中開啟Insight來檢查安裝。您也可能想要檢查Insight記錄檔。
+
+第一次開啟Insight時、會開啟授權設定頁面。輸入授權資訊之後、您必須設定資料來源。如OnCommand Insight 需輸入資料來源定義及設定Insight使用者與通知的相關資訊、請參閱《_支援組態與管理指南》。
+
+如果您遇到安裝問題、請聯絡技術支援部門、並提供所需的資訊。

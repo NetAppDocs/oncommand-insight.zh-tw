@@ -1,0 +1,38 @@
+---
+permalink: reporting/importing-existing-reports-to-cognos-11.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以開啟先前複製到剪貼簿的報告規格。 
+---
+= 從剪貼簿開啟報告（XML）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以開啟先前複製到剪貼簿的報告規格。
+
+
+
+== 關於這項工作
+
+您可以建立新報告或開啟現有報告、以進入「報告」使用者介面
+
+
+
+== 步驟
+
+. 開啟Cognos 11報告入口網站： https://server-name:9300/bi/[]
+. 在工具列中、按一下 image:../media/new-report.gif[""]
+. 按一下*報告*
+. 按一下*頁*圖示image:../media/pages-icon.gif[""]
++
+「*報告*」圖示 image:../media/report-icon.gif[""] 即會顯示
+
+. 左鍵單擊* Report（報告）*圖標
++
+隨即顯示報告選項。
+
+. 按一下*從剪貼簿開啟報告*。
+

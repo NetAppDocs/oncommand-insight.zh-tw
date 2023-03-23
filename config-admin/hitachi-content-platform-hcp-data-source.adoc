@@ -1,0 +1,134 @@
+---
+permalink: config-admin/hitachi-content-platform-hcp-data-source.html 
+sidebar: sidebar 
+keywords:  
+summary: 此資料收集器使用保健專業人員管理API支援Hitachi Content Platform（HCP\）。 
+---
+= Hitachi Content Platform（HCP）資料來源
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+此資料收集器使用保健專業人員管理API支援Hitachi內容平台（HCPs）。
+
+
+
+== 術語
+
+從保健專業人員資料來源取得下列庫存資訊OnCommand Insight 。對於Insight取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料來源時、請謹記下列術語：
+
+|===
+
+
+| 廠商/模型術語 | Insight術語 
+
+
+ a| 
+保健專業人員叢集
+ a| 
+儲存設備
+
+
+
+ a| 
+租戶
+ a| 
+儲存資源池
+
+
+
+ a| 
+命名空間
+ a| 
+內部Volume
+
+
+
+ a| 
+節點
+ a| 
+節點
+
+|===
+[NOTE]
+====
+這些只是通用的術語對應、可能不代表此資料來源的每個案例。
+
+====
+
+
+== 庫存需求
+
+* hcp.伺服器的IP位址
+* 用於保健專業人員軟體和對等權限的唯讀使用者名稱和密碼
+
+
+
+
+== 組態
+
+|===
+
+
+| *欄位* | *說明* 
+
+
+ a| 
+HCP主機
+ a| 
+hcp.主機的IP位址或完整網域名稱
+
+
+
+ a| 
+hcp.連接埠
+ a| 
+預設值為9090
+
+
+
+ a| 
+hcp.使用者ID
+ a| 
+hcp.主機的使用者名稱
+
+
+
+ a| 
+hcp.密碼
+ a| 
+用於保健專業人員主機的密碼
+
+
+
+ a| 
+HCP-驗證類型
+ a| 
+選擇HCP_local或active_directory
+
+|===
+
+
+== 進階組態
+
+|===
+
+
+| 欄位 | 說明 
+
+
+ a| 
+庫存輪詢時間間隔（分鐘）
+ a| 
+庫存輪詢之間的時間間隔（預設為60分鐘）
+
+
+
+ a| 
+效能輪詢時間間隔（秒）
+ a| 
+效能輪詢之間的時間間隔（預設為900秒）
+
+|===

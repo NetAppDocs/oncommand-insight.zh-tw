@@ -1,0 +1,28 @@
+---
+permalink: reporting/reporting-data-model.html 
+sidebar: sidebar 
+keywords:  
+summary: 您的企業可以從OnCommand Insight 發現並儲存在「資料倉儲」中的資料中獲益。The S跨 部門資料倉儲是集中儲存庫、可儲存多個資訊來源的資料、並將其轉換成通用的多維資料模型、以利有效率的查詢與分析OnCommand Insight 。 
+---
+= 報告資料模式
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您的企業可以從OnCommand Insight 發現並儲存在「資料倉儲」中的資料中獲益。The S跨 部門資料倉儲是集中儲存庫、可儲存多個資訊來源的資料、並將其轉換成通用的多維資料模型、以利有效率的查詢與分析OnCommand Insight 。
+
+您可以從此儲存庫產生自訂報告、例如計費、消費分析及預測報告、以回答下列問題：
+
+* 我有什麼庫存？
+* 我的庫存在哪裡？
+* 誰在使用我們的資產？
+* 分配給業務單位的儲存設備的計費方式為何？
+* 我在交換器連接埠上有多少保留空間？
+* 需要多長時間才能取得額外的儲存容量？
+* 業務單位是否與適當的儲存層一致？
+* 儲存設備配置如何在一個月、一季或一年內改變？
+
+
+使用OnCommand Insight 隨附於《資料報告》的資料模型、您可以使用報告撰寫工具來設計及排程報告。

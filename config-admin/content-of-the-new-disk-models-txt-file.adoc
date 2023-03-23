@@ -1,0 +1,40 @@
+---
+permalink: config-admin/content-of-the-new-disk-models-txt-file.html 
+sidebar: sidebar 
+keywords:  
+summary: new_disk_models.txt檔案有必填欄位和選用欄位。這些欄位以逗號分隔、因此請勿在欄位中使用逗號。 
+---
+= new_disk_models.txt檔案的內容
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+。 `new_disk_models.txt` 檔案有必填欄位和選用欄位。這些欄位以逗號分隔、因此請勿在欄位中使用逗號_within。
+
+除了搜尋時間、傳輸率和其他資訊以外、所有欄位都是必填欄位。如果有、請在「add_info」欄位中加入廠商/機型網站連結。
+
+使用文字編輯器、針對您要新增的每個新磁碟機型、依此順序輸入下列資訊（以逗號分隔）：
+
+. *金鑰*：使用機型編號（必填）
+. *廠商*：名稱（必填）
+. *型號*：完整數字（通常與「key」（機碼）相同）（必填）
+. 磁碟*的* rpm：例如10000或15000（必要）
+. *大小*：容量（單位：GB）（必填）
+. *介面類型*：ATA、SATA、FC、SAS、FATA、 SSD、其他（必要）
+. *搜尋時間*：單位為毫秒（選用）
+. *潛在傳輸率*：可能的傳輸率（以MB/秒為單位）磁碟本身的最大傳輸率。（選用）
+. *介面傳輸率*：主機往返主機的速率（以MB/秒為單位）（選用）。
+. *其他資訊*：您想要擷取的任何其他資訊。最佳實務做法是輸入找到規格的廠商頁面連結、以供參考（選用）
+
+
+對於任何保留空白的選用欄位、請務必包含逗號。
+
+範例（每一行均無空格）：
+
+`+ST373405,Seagate,ST373405,10000,73,FC,5.3,64,160,http://www.seagate.com/staticfiles/support/disc/manuals/enterprise/cheetah/73(LP)/100109943e.pdf+`
+
+`SLR5B-M400SS,HITACHI,SLR5B-M400SS,1000000,400,SSD,,,,`
+
+`+X477_THARX04TA07,TOSHIBA,X477_THARX04TA07,7200,4000,SATA,9.5,,,https://storage.toshiba.eu/export/sites/toshiba-sdd/media/products/datasheets/MG03ACAxxxY.pdf+`

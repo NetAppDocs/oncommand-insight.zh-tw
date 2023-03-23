@@ -1,0 +1,30 @@
+---
+permalink: config-admin/searching-your-environment-for-specific-assets.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用搜尋工具來尋找特定資產的相關資訊。例如、如果系統使用者聯絡儲存管理員、並對特定伺服器提出抱怨、則管理員可以搜尋伺服器名稱、並顯示資產頁面、摘要說明狀態並提供其他連結資訊。 
+---
+= 搜尋環境中的特定資產
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用搜尋工具來尋找特定資產的相關資訊。例如、如果系統使用者聯絡儲存管理員、並對特定伺服器提出抱怨、則管理員可以搜尋伺服器名稱、並顯示資產頁面、摘要說明狀態並提供其他連結資訊。
+
+
+
+== 步驟
+
+. 開啟OnCommand 「視覺瀏覽」UI。
+. 在工具列上、按一下 image:../media/search-assets-icon.gif[""]。
++
+此時會顯示「*搜尋資產*」方塊。
+
+. 輸入資產名稱或部分名稱。
+. 從搜尋結果中選取所需的資源。
++
+隨即顯示該資源的資產頁面。
+
+

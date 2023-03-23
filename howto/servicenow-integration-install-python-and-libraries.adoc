@@ -1,0 +1,52 @@
+---
+permalink: howto/servicenow-integration-install-python-and-libraries.html 
+sidebar: sidebar 
+keywords:  
+summary: Python可安裝在Insight伺服器或獨立主機或VM上。 
+---
+= 安裝Python和程式庫
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Python可安裝在Insight伺服器或獨立主機或VM上。
+
+
+
+== 步驟
+
+. 在VM或主機上、下載Python 3.6或更新版本。
+. 選擇自訂安裝、然後選擇下列選項。這些是正確連接器指令碼作業所需的、或是強烈建議使用。
++
+** 為所有使用者安裝啟動器
+** 將Python新增至路徑
+** 安裝pip（允許Python安裝其他套件）
+** 安裝tk/tCL並閒置
+** 安裝Python測試套件
+** 為所有使用者安裝py啟動器
+** 將檔案與Python建立關聯
+** 為已安裝的應用程式建立捷徑
+** 將python新增至環境變數
+** 預先編譯標準程式庫
+
+
+. 安裝Python之後、請安裝「資源回饋」和「psnow」Python程式庫。執行下列命令： `python -m pip install requests pysnow`
++
+*注意：*當您在Proxy環境中操作時、此命令可能會失敗。若要解決此問題、您必須手動下載每個Python程式庫、然後依正確順序逐一執行安裝要求。
+
++
+命令會安裝多個檔案。
+
+. 確認Python程式庫已正確安裝。使用下列其中一種方法啟動Python：
++
+** 開啟cmd提示字元並輸入 `python`
+** 在Windows上、開啟* Start*、然後選擇* Python *>* python -zetex*<version>
+
+
+. 在Python提示字元中、輸入 `modules`
++
+Python會要求您稍候、等待一段時間、再收集一份模組清單、然後再顯示。
+
+

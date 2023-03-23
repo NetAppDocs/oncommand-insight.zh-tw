@@ -1,0 +1,46 @@
+---
+permalink: install-windows/installing-your-insight-licenses.html 
+sidebar: sidebar 
+keywords:  
+summary: 從NetApp收到內含Insight授權金鑰的授權檔案後、您可以使用設定功能同時安裝所有授權。 
+---
+= 安裝Insight授權
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+從NetApp收到內含Insight授權金鑰的授權檔案後、您可以使用設定功能同時安裝所有授權。
+
+
+
+== 關於這項工作
+
+Insight授權金鑰儲存在中 `.txt` 或 `.lcn` 檔案：
+
+
+
+== 步驟
+
+. 在文字編輯器中開啟授權檔案、然後複製文字。
+. 在瀏覽器中開啟Insight。
+. 在Insight工具列上、按一下*管理*。
+. 按一下*設定*。
+. 按一下「*授權*」索引標籤。
+. 按一下 * 更新授權 * 。
+. 將授權金鑰文字複製到*授權*文字方塊中。
+. 選取*更新（最常見）*作業。
+. 按一下「 * 儲存 * 」。
+. 如果您使用的是Insight Consumption授權模式、則必須勾選「*傳送使用資訊*」區段中的「*允許傳送使用資訊給NetApp*」方塊。您的環境必須正確設定並啟用Proxy。
+
+
+
+
+== 完成後
+
+安裝授權之後、您可以執行下列組態工作：
+
+* 設定資料來源。
+* 建立OnCommand Insight 不一樣的使用者帳戶。
+

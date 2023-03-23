@@ -1,0 +1,25 @@
+---
+permalink: config-admin/setting-up-your-data-sources-in-insight.html 
+sidebar: sidebar 
+keywords:  
+summary: 資料來源是維護Insight環境最重要的元件。資料來源會探索用於分析和驗證的網路資訊。您需要在Insight中設定資料來源、以便在網路中監控。 
+---
+= 在Insight中設定您的資料來源
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+資料來源是維護Insight環境最重要的元件。資料來源會探索用於分析和驗證的網路資訊。您需要在Insight中設定資料來源、以便在網路中監控。
+
+對於每個資料來源、定義該資料來源的特定需求取決於對應裝置的廠商和機型。在新增資料來源之前、您需要所有裝置的網路位址、帳戶資訊和密碼、而且可能還需要這些額外詳細資料：
+
+* 交換器
+* 裝置管理站
+* 具備IP連線能力的儲存系統
+* 儲存管理站
+* 執行管理軟體的主機伺服器、適用於沒有IP連線的儲存裝置
+
+
+如需資料來源定義的詳細資訊、請參閱本節中的「廠商專屬資料來源參考」資訊。

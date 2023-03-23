@@ -1,0 +1,136 @@
+---
+permalink: config-admin/configuring-user-definitions-using-ldap.html 
+sidebar: sidebar 
+keywords:  
+summary: 若要從OnCommand Insight LDAP伺服器設定使用者驗證和授權的功能、您必須在LDAP伺服器中定義OnCommand Insight 為支援伺服器管理員的功能。 
+---
+= 使用LDAP設定使用者定義
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+若要從OnCommand Insight LDAP伺服器設定使用者驗證和授權的功能（OCI）、您必須在LDAP伺服器中定義OnCommand Insight 為「支援伺服器管理員」。
+
+
+
+== 開始之前
+
+您必須知道已在LDAP網域中針對Insight設定的使用者和群組屬性。
+
+對於所有安全的Active Directory（即LDAPS）使用者、您必須使用與憑證中定義完全相同的AD伺服器名稱。您無法使用IP位址進行安全的AD登入。
+
+
+
+== 關於這項工作
+
+支援透過Microsoft Active Directory伺服器的LDAP和LDAPS OnCommand Insight 。其他LDAP實作可能仍可運作、但尚未符合Insight資格。此程序假設您使用的是Microsoft Active Directory版本2或3 LDAP（輕量型目錄存取傳輸協定）。
+
+LDAP使用者與本機定義的使用者一起顯示在*管理*>功能表：設定[使用者]清單中。
+
+
+
+== 步驟
+
+. 在Insight工具列上、按一下*管理*。
+. 按一下*設定*。
+. 按一下「*使用者*」索引標籤。
+. 捲動至LDAP區段、如下所示。
++
+image::../media/ldap-setup.gif[LDAP設定]
+
+. 按一下*「啟用LDAP*」以允許LDAP使用者驗證與授權。
+. 填寫欄位：
++
+** `LDAP servers`：Insight接受以逗號分隔的LDAP URL列表。Insight會嘗試連線至提供的URL、但不驗證LDAP傳輸協定。
++
+[NOTE]
+====
+若要匯入LDAP憑證、請按一下*憑證*、然後自動匯入或手動尋找憑證檔案。
+
+====
++
+用於識別LDAP伺服器的IP位址或DNS名稱通常是以下列格式輸入：
+
++
+[listing]
+----
+ldap://<ldap-server-address>:port
+----
++
+或者、如果使用預設連接埠：
+
++
+[listing]
+----
+ ldap://<ldap-server-address>
+----
++
+在此欄位中輸入多個LDAP伺服器時、請確定每個項目都使用正確的連接埠號碼。
+
+** `User name`：輸入授權用於LDAP伺服器上目錄查詢的使用者認證。
+** `Password`：輸入上述使用者的密碼。若要在LDAP伺服器上確認此密碼、請按一下*驗證*。
+
+
+. 如果您想更精確地定義此LDAP使用者、請按一下*顯示更多*、然後填入所列屬性的欄位。
++
+這些設定必須符合LDAP網域中設定的屬性。如果您不確定要輸入這些欄位的值、請洽詢Active Directory管理員。
+
++
+** *管理員群組*
++
+LDAP群組、適用於具有Insight Administrator權限的使用者。預設為 `insight.admins`。
+
+** *使用者群組*
++
+LDAP群組、適用於具有Insight使用者權限的使用者。預設為 `insight.users`。
+
+** *來賓群組*
++
+LDAP群組、適用於具有Insight Guest權限的使用者。預設為 `insight.guests`。
+
+** *伺服器管理員群組*
++
+LDAP群組、適用於具有Insight Server Administrator權限的使用者。預設為 `insight.server.admins`。
+
+** *超時*
++
+在逾時之前等待LDAP伺服器回應的時間長度（以毫秒為單位）。預設值為2、000、在所有情況下都足夠、不應修改。
+
+** *網域*
++
+應從LDAP節點OnCommand Insight 開始尋找LDAP使用者。通常這是組織的頂層網域。例如：
+
++
+[listing]
+----
+DC=<enterprise>,DC=com
+----
+** *使用者主要名稱屬性*
++
+用於識別LDAP伺服器中每個使用者的屬性。預設為 `userPrincipalName`是全球獨一無二的。嘗試將此屬性的內容與上述提供的使用者名稱配對OnCommand Insight 。
+
+** *角色屬性*
++
+可識別使用者符合指定群組的LDAP屬性。預設為 `memberOf`。
+
+** *郵件屬性*
++
+用於識別使用者電子郵件地址的LDAP屬性。預設為 `mail`。如果您想訂閱OnCommand Insight 可從下列網站取得的報告、此功能非常實用：Insight會在每位使用者第一次登入時取回使用者的電子郵件地址、之後不會再尋找。
+
++
+[NOTE]
+====
+如果使用者的電子郵件地址在LDAP伺服器上變更、請務必在Insight中更新。
+
+====
+** *辨別名稱屬性*
++
+識別使用者辨別名稱的LDAP屬性。預設為 `distinguishedName`。
+
+
+
+. 按一下「 * 儲存 * 」。
+

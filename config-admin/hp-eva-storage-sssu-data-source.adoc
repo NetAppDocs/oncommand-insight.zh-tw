@@ -1,0 +1,201 @@
+---
+permalink: config-admin/hp-eva-storage-sssu-data-source.html 
+sidebar: sidebar 
+keywords:  
+summary: 對於組態設定、Eva Storage（SSSU）資料來源需要Command View（命令檢視）\（CV\）伺服器的IP位址、以及CV軟體的唯讀使用者名稱和密碼。使用者必須在CV軟體中定義。 
+---
+= HP EVA儲存資料來源
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+對於組態設定、Eva Storage（SSSU）資料來源需要Command View（CV）伺服器的IP位址、以及CV軟體的_read-only（唯讀）使用者名稱和密碼。使用者必須在CV軟體中定義。
+
+
+
+== 術語
+
+從HP EVA資料來源取得下列庫存資訊OnCommand Insight 。對於Insight取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料來源時、請謹記下列術語：
+
+|===
+
+
+| 廠商/模型術語 | Insight術語 
+
+
+ a| 
+磁碟
+ a| 
+磁碟
+
+
+
+ a| 
+磁碟群組
+ a| 
+磁碟群組（未建模）
+
+
+
+ a| 
+儲存單元
+ a| 
+儲存設備
+
+
+
+ a| 
+虛擬磁碟
+ a| 
+儲存資源池
+
+
+
+ a| 
+虛擬磁碟
+ a| 
+Volume
+
+|===
+[NOTE]
+====
+這些只是通用的術語對應、可能不代表此資料來源的每個案例。
+
+====
+
+
+== 庫存需求
+
+* CV伺服器的IP位址
+* CV軟體的唯讀使用者名稱和密碼。使用者必須在CV軟體中定義。
+* 安裝在OnCommand Insight 《The》伺服器/ Rau上的第三方軟體： `sssu.exe`。。 `sssu.exe` 版本應對應於CV版本。
+* 存取驗證：執行 `sssu.exe` 使用使用者名稱和密碼的命令。
+
+
+
+
+== 效能要求
+
+HP Storageworks Command View Eva軟體套件必須安裝在OnCommand Insight 該伺服器上。或者、您也可以在Eva伺服器上安裝遠端擷取裝置（Rau）：
+
+. 將HP Storageworks Command View Eva Software Suite安裝在OnCommand Insight The RisfServer上、或在Command View Eva伺服器上安裝遠端擷取裝置。
+. 找到 `evaperf.exe` 命令。例如、 `c:\Program Files\Hewlett-Packard\EVA Performance Monitor\`
+. 使用Command View伺服器的IP執行下列步驟：
++
+.. 在預設連接埠為860的情況下執行此命令 `Evaperf.exe server <Command View Server IP\> 860 <username\>`
+.. 在密碼提示字元中輸入Command View伺服器密碼。
++
+這應該會傳回命令列提示字元、而不會傳回其他項目。
+
+
+
+. 執行以驗證設定 `evaperf.exe ls`。
++
+您應該會看到由Command View伺服器管理的陣列或控制器清單。每一行都會顯示一個在一個Eva陣列上的控制器。
+
+
+
+
+
+== 組態
+
+|===
+
+
+| *欄位* | *說明* 
+
+
+ a| 
+CommandView伺服器
+ a| 
+Eva Storage Manager的IP位址或完整網域名稱
+
+
+
+ a| 
+使用者名稱
+ a| 
+Command View Manager的使用者名稱。名稱必須在Command View中定義。
+
+
+
+ a| 
+密碼
+ a| 
+用於Command View Manager的密碼。
+
+
+
+ a| 
+效能使用者名稱
+ a| 
+為了達到效能、命令檢視管理程式的使用者名稱。名稱必須在Command View中定義。
+
+
+
+ a| 
+效能密碼
+ a| 
+為了達到效能、命令檢視管理程式所使用的密碼。
+
+|===
+
+
+== 進階組態
+
+|===
+
+
+| *欄位* | *說明* 
+
+
+ a| 
+庫存輪詢時間間隔（分鐘）
+ a| 
+庫存輪詢之間的時間間隔（預設為40分鐘）
+
+
+
+ a| 
+CLI首頁
+ a| 
+CLI主目錄的完整路徑名稱（其中） `sssu.exe` 所在位置
+
+
+
+ a| 
+庫存排除裝置
+ a| 
+以逗號分隔的裝置名稱清單
+
+
+
+ a| 
+效能意見調查時間間隔（秒）
+ a| 
+效能輪詢之間的時間間隔（預設為300秒）
+
+
+
+ a| 
+高效能CLI首頁
+ a| 
+對於Array Performance（陣列效能）、請完整路徑名稱至sssu.exe所在的CLI主目錄。若要驗證存取、請執行 `sssu.exe`
+
+
+
+ a| 
+命令逾時（秒）
+ a| 
+`evaperf` 命令等待逾時（預設為600秒）
+
+
+
+ a| 
+效能排除裝置
+ a| 
+要從收集效能資料中排除的裝置名稱清單、以逗號分隔
+
+|===

@@ -1,0 +1,21 @@
+---
+permalink: config-admin/insight-user-roles.html 
+sidebar: sidebar 
+keywords:  
+summary: 每個使用者帳戶都會被指派三種可能的權限等級之一。 
+---
+= Insight使用者角色
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+每個使用者帳戶都會被指派三種可能的權限等級之一。
+
+* Guest可讓您登入Insight並檢視各種頁面。此帳戶類型不允許您執行識別一般裝置及定義Java UI中原則等動作。
+* 使用者允許所有來賓層級權限、以及存取Insight作業、例如定義原則和識別一般裝置。使用者帳戶類型不允許您執行資料來源作業、也不允許新增或編輯您自己以外的任何使用者帳戶。
+* 系統管理員可讓您執行任何作業、包括新增使用者及管理資料來源。
+
+
+*最佳實務做法：*為使用者或訪客建立大多數帳戶、以限制擁有系統管理員權限的使用者人數。

@@ -1,0 +1,14 @@
+---
+permalink: config-admin/using-queries.html 
+sidebar: sidebar 
+keywords:  
+summary: 查詢可讓您根據使用者選擇的條件（註釋和效能指標）、在環境中以精細的層級搜尋資產、藉此監控和疑難排解網路。此外、註釋規則會自動指派註釋給資產、因此需要查詢。 
+---
+= 查詢資產
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+查詢可讓您根據使用者選擇的條件（註釋和效能指標）、以精細的層級搜尋環境中的資產、藉此監控和疑難排解網路。此外、註釋規則會自動指派註釋給資產、因此需要查詢。

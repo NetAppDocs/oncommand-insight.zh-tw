@@ -1,0 +1,31 @@
+---
+permalink: dwh/editing-the-site-name-and-viewing-system-information.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以檢視系統、模組、授權和資料倉儲升級資訊。 
+---
+= 檢視系統資訊
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以檢視系統、模組、授權和資料倉儲升級資訊。
+
+
+
+== 步驟
+
+. 登入資料倉儲入口網站： `+https://hostname/dwh+`、其中 `hostname` 是OnCommand Insight 安裝了IsName Data倉儲的系統名稱。
+. 在左側的導覽窗格中、按一下*系統資訊*。
+. 在* System*（系統）索引標籤上、檢閱系統資訊並視需要編輯站台名稱、方法如下：
++
+.. 按一下*編輯站台名稱*
+.. 輸入新的站台名稱、然後按一下*「Save*（儲存*）」。
+
+
+. 若要查看應用程式資訊（應用程式名稱、模組、版本及安裝日期）、請按一下*應用程式資訊*索引標籤。
+. 若要查看授權資訊（傳輸協定、程式碼、到期日及數量）、請按一下「*授權*」標籤。
+. 若要查看應用程式升級資訊（應用程式名稱、從日期到日期、時間、使用者、 及檔案大小）、按一下*升級歷程記錄*。
+

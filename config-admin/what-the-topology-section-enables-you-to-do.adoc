@@ -1,0 +1,31 @@
+---
+permalink: config-admin/what-the-topology-section-enables-you-to-do.html 
+sidebar: sidebar 
+keywords:  
+summary: 「拓撲」區段可讓您檢視網路中的資產如何彼此連線、並顯示相關資產的相關資訊。 
+---
+= 使用拓撲區段
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「拓撲」區段可讓您檢視網路中的資產如何彼此連線、並顯示相關資產的相關資訊。
+
+
+
+== 步驟
+
+. 登入OnCommand Insight 到The W不明 網路UI。
+. 執行下列其中一項動作、找出資產頁面：
++
+** 在Insight工具列上、按一下 image:../media/icon-sanscreen-magnifying-glass-gif.gif[""]，輸入資產名稱，然後從清單中選取資產。
+** 按一下*儀表板*、選取*資產儀表板*、找出資產名稱、然後按一下。隨即顯示「資產」頁面。您可以在資產頁面的右上角找到「拓撲」區段。
+
+
++
+如果資產的拓撲大於該部分所需的範圍、請按一下*按一下連結以查看拓撲*超連結。
+
+. 若要檢視基礎資產相關資產的詳細資訊、請將游標放在拓撲中的相關資產上、然後按一下其名稱、即會顯示其資產頁面。
+

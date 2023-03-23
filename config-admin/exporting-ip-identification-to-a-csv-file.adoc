@@ -1,0 +1,49 @@
+---
+permalink: config-admin/exporting-ip-identification-to-a-csv-file.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用裝置解析功能、從Insight匯出現有的IP裝置識別碼。您可能想要匯出裝置識別碼、以便加以修改、然後將其匯入Insight、以便用來識別與匯出識別碼類似的裝置。 
+---
+= 將IP裝置識別匯出至CSV檔案
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用裝置解析功能、從Insight匯出現有的IP裝置識別碼。您可能想要匯出裝置識別碼、以便加以修改、然後將其匯入Insight、以便用來識別與匯出識別碼類似的裝置。
+
+
+
+== 關於這項工作
+
+當您將IP裝置識別碼匯出至CSV檔案時、檔案會依照所示順序包含下列資訊：
+
+|===
+
+
+ a| 
+地址
+
+
+
+ a| 
+IP
+
+
+
+ a| 
+名稱
+
+|===
+
+
+== 步驟
+
+. 登入Insight Web UI。
+. 按一下「*管理*>*裝置解析度*」
+. 選取「* IP識別*」索引標籤。
+. 選取您要匯出識別碼的IP裝置。
+. 按一下匯出 image:../media/export-to-csv.gif[""] 圖示。
+. 如果您要開啟CSV檔案或儲存檔案、請選擇此選項。
+

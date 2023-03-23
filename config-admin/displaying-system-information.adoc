@@ -1,0 +1,27 @@
+---
+permalink: config-admin/displaying-system-information.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以顯示OnCommand Insight 部署了該伺服器之系統的Microsoft Windows IP組態資訊。 
+---
+= 顯示系統資訊
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以顯示OnCommand Insight 部署了該伺服器之系統的Microsoft Windows IP組態資訊。
+
+
+
+== 步驟
+
+. 在Insight工具列上、按一下*管理*、然後選取*疑難排解*。
+. 在頁面底部的「其他工作」區域中、按一下「*進階疑難排解*」連結。
+. 在「進階疑難排解」頁面上、按一下「*報告*」索引標籤。
+. 按一下*系統資訊*。
++
+Windows IP組態包括主機名稱、DNS、IP位址、子網路遮罩、作業系統資訊、 記憶體、開機裝置和連線名稱。
+
+

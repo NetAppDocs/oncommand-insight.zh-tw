@@ -1,0 +1,32 @@
+---
+permalink: install-windows/verifying-the-extract-transform-and-load-process.html 
+sidebar: sidebar 
+keywords:  
+summary: 升級後、您應確保「擷取」、「轉換」及「載入」（ETL\）程序正在擷取OnCommand Insight 來自於The效益資料庫的資料、轉換資料、並將其儲存至資料市場。 
+---
+= 驗證擷取、轉換及載入排程
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+升級後、您應確保擷取、轉換及載入（ETL）程序正在擷取OnCommand Insight 來自於Reasure資料庫的資料、轉換資料、並將其儲存至資料市場。
+
+
+
+== 步驟
+
+. 登入資料倉儲入口網站： `+https://fqdn/dwh+`。
+. 在左側的導覽窗格中、按一下*排程*。
+. 按一下*編輯排程*。
+. 從*類型*清單中選取*每日*或*每週*。
++
+建議排程ETL每天執行一次。
+
+. 確認選取的時間是您要工作執行的時間。
++
+如此可確保建置工作自動執行。
+
+. 按一下「 * 儲存 * 」。
+

@@ -1,0 +1,105 @@
+---
+permalink: config-admin/emc-vnx-ssh-data-source.html 
+sidebar: sidebar 
+keywords:  
+summary: 對於組態設定、EMC VNX（SSH）資料來源需要Control Station的IP位址和唯讀使用者名稱和密碼。 
+---
+= EMC VNX資料來源
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+對於組態設定、EMC VNX（SSH）資料來源需要控制站的IP位址、以及_唯讀_使用者名稱和密碼。
+
+
+
+== 組態
+
+|===
+
+
+| 欄位 | 說明 
+
+
+ a| 
+VNX IP
+ a| 
+VNX Control Station的IP位址或完整網域名稱
+
+
+
+ a| 
+VNX使用者名稱
+ a| 
+VNX Control Station的使用者名稱
+
+
+
+ a| 
+VNX密碼
+ a| 
+VNX Control Station的密碼
+
+|===
+
+
+== 需求
+
+* Control Station的IP位址
+* 唯讀使用者名稱和密碼。
+* 存取驗證：透過Putty驗證SSH存取。
+
+
+
+
+== 進階組態
+
+|===
+
+
+| 欄位 | 說明 
+
+
+ a| 
+庫存輪詢時間間隔（分鐘）
+ a| 
+庫存輪詢之間的時間間隔（預設為40分鐘）
+
+
+
+ a| 
+VNX SSH程序等待逾時（秒）
+ a| 
+VNX SSH程序逾時（預設為600秒）
+
+
+
+ a| 
+Celerra命令重試嘗試次數
+ a| 
+Celerra命令重試嘗試次數
+
+
+
+ a| 
+庫存的CLARiiON外部程序逾時（秒）
+ a| 
+庫存的CLARiiON外部程序逾時（預設值為1800秒）
+
+
+
+ a| 
+效能意見調查時間間隔（秒）
+ a| 
+效能輪詢之間的時間間隔（預設為300秒）
+
+
+
+ a| 
+CLARiiON外部處理效能逾時（秒）
+ a| 
+CLARiiON外部處理逾時效能（預設為1800秒）
+
+|===

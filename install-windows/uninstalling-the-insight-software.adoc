@@ -1,0 +1,14 @@
+---
+permalink: install-windows/uninstalling-the-insight-software.html 
+sidebar: sidebar 
+keywords:  
+summary: 您必須解除安裝舊版的Data倉儲和遠端擷取軟體、才能安裝新版本。在您嘗試升級上述任何元件之前、請先執行此動作。Insight伺服器上的軟體會在原地升級期間解除安裝。 
+---
+= 解除安裝軟體
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必須解除安裝舊版的Data倉儲和遠端擷取軟體、才能安裝新版本。在您嘗試升級上述任何元件之前、請先執行此動作。Insight伺服器上的軟體會在原地升級期間解除安裝。

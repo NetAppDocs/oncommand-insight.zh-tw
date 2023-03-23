@@ -1,0 +1,145 @@
+---
+permalink: config-admin/hds-hnas-data-source.html 
+sidebar: sidebar 
+keywords:  
+summary: HDS NAS（HNAS）資料來源是一種庫存和組態資料來源、可支援探索HDS NAS叢集。Insight支援探索NFS與CIFS共用、檔案系統（Insight內部磁碟區）及跨區（Insight Storage Pools）。 
+---
+= HDS NAS（HNAS）資料來源
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+HDS NAS（HNAS）資料來源是一種庫存和組態資料來源、可支援探索HDS NAS叢集。Insight支援探索NFS和CIFS共用、檔案系統（Insight內部Volume）和跨區（Insight Storage Pools）。
+
+此資料來源為SSH型、因此裝載此資料的擷取單元必須能夠啟動SSH工作階段、以連線至HNAS本身或叢集所連線之系統管理單元（SMU）上的TCP 22。
+
+
+
+== 術語
+
+從HNAS資料來源取得下列庫存資訊OnCommand Insight 。對於Insight取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料來源時、請謹記下列術語：
+
+|===
+
+
+| 廠商/模型術語 | Insight術語 
+
+
+ a| 
+層級
+ a| 
+磁碟群組
+
+
+
+ a| 
+叢集
+ a| 
+儲存設備
+
+
+
+ a| 
+節點
+ a| 
+儲存節點
+
+
+
+ a| 
+跨距
+ a| 
+儲存資源池
+
+
+
+ a| 
+檔案系統
+ a| 
+內部Volume
+
+|===
+[NOTE]
+====
+這些只是通用的術語對應、可能不代表此資料來源的每個案例。
+
+====
+
+
+== 需求
+
+以下是設定及使用此資料來源的需求：
+
+* 裝置IP位址
+* 連接埠22、SSH傳輸協定
+* 使用者名稱與密碼-權限層級：supervisor
+* 附註：此資料收集器以SSH為基礎、因此主機必須能夠在HNAS本身或叢集所連接的系統管理單元（SMU）上、對TCP 22啟動SSH工作階段。
+
+
+[NOTE]
+====
+此資料收集器是以SSH為基礎、因此裝載它的AU必須能夠在HNAS本身或叢集所連線的系統管理單元（SMU）上、對TCP 22啟動SSH工作階段。
+
+====
+
+
+== 組態
+
+|===
+
+
+| 欄位 | 說明 
+
+
+ a| 
+HNAS主機
+ a| 
+HNAS管理主機的IP位址或完整網域名稱
+
+
+
+ a| 
+使用者名稱
+ a| 
+HNAS CLI的使用者名稱
+
+
+
+ a| 
+密碼
+ a| 
+HNAS CLI使用的密碼
+
+|===
+
+
+== 進階組態
+
+|===
+
+
+| 欄位 | 說明 
+
+
+ a| 
+庫存輪詢時間間隔（分鐘）
+ a| 
+庫存輪詢之間的時間間隔（預設為30分鐘）
+
+
+
+ a| 
+SSH橫幅等待逾時（秒）
+ a| 
+SSH橫幅等待逾時（預設15秒）
+
+
+
+ a| 
+SSH命令逾時（秒）
+ a| 
+SSH命令逾時（預設30秒）
+
+|===

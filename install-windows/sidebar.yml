@@ -1,0 +1,153 @@
+---
+section: install-windows
+title: 安裝Microsoft Windows
+entries:
+- title: 安裝先決條件
+  url: "/install-windows/installation-prerequisites.html"
+  entries:
+  - title: 規劃部署
+    url: "/install-windows/planning-the-installation.html"
+    entries:
+    - title: 資料來源支援資訊
+      url: "/install-windows/data-source-support-information.html"
+    - title: 裝置識別與資料來源規劃
+      url: "/install-windows/device-identification-and-data-source-planning.html"
+    - title: 網路流量是OnCommand Insight 由功能不整的
+      url: "/install-windows/network-traffic-generated-by-oncommand-insight.html"
+  - title: 防毒軟體停用
+    url: "/install-windows/disable-virus-scan-software.html"
+  - title: Insight伺服器需求
+    url: "/install-windows/insight-server-requirements.html"
+  - title: 資料倉儲與報告伺服器需求
+    url: "/install-windows/data-warehouse-and-reporting-server-requirements.html"
+  - title: 遠端擷取單元伺服器需求
+    url: "/install-windows/remote-acquisition-unit-server-requirements.html"
+  - title: 異常偵測需求
+    url: "/install-windows/anomaly-detection-requirements.html"
+  - title: Insight Java UI需求
+    url: "/install-windows/insight-java-ui-requirements.html"
+  - title: 支援的瀏覽器OnCommand Insight
+    url: "/install-windows/insight-browser-support.html"
+- title: Insight安裝說明
+  url: "/install-windows/oncommand-insight-installation-instructions.html"
+  entries:
+  - title: 正在下載OnCommand Insight 此安裝程式
+    url: "/install-windows/downloading-the-oncommand-insight-installer.html"
+  - title: 安裝OnCommand Insight The功能
+    url: "/install-windows/installing-the-oncommand-insight-server.html"
+  - title: 安裝OnCommand Insight 「資料倉儲與報告」
+    url: "/install-windows/installing-the-oncommand-insight-data-warehouse-and-reporting.html"
+    entries:
+    - title: 尋找IBM Cognos文件
+      url: "/install-windows/locating-ibm-cognos-documentation.html"
+    - title: 驗證資料倉儲與報告安裝
+      url: "/install-windows/verifying-the-data-warehouse-and-reporting-installation.html"
+  - title: 安裝遠端擷取單元（Rau）
+    url: "/install-windows/installing-a-remote-acquisition-unit-rau.html"
+    entries:
+    - title: 驗證遠端擷取單元服務
+      url: "/install-windows/verifying-the-rau-service.html"
+    - title: 驗證遠端擷取單元安裝
+      url: "/install-windows/validating-the-rau-installation.html"
+  - title: 安裝異常偵測軟體
+    url: "/install-windows/installing-the-anomaly-detection-software.html"
+  - title: 安裝乙太網路監控單元
+    url: "/install-windows/installing-an-ethernet-monitoring-unit-linux.html"
+  - title: 檢查安裝
+    url: "/install-windows/checking-the-installation.html"
+    entries:
+    - title: 驗證新的Insight服務
+      url: "/install-windows/verifying-new-oncommand-insight-services.html"
+    - title: Insight記錄
+      url: "/install-windows/insight-logs.html"
+    - title: 存取Web UI
+      url: "/install-windows/opening-insight.html"
+    - title: 安裝Insight授權
+      url: "/install-windows/installing-your-insight-licenses.html"
+      entries:
+      - title: 不需要授權OnCommand Insight
+        url: "/install-windows/oncommand-insight-licenses.html"
+  - title: 疑難排解安裝
+    url: "/install-windows/troubleshooting-installations.html"
+    entries:
+    - title: 遺失授權
+      url: "/install-windows/missing-licenses.html"
+    - title: 提交線上技術支援要求
+      url: "/install-windows/submitting-an-online-technical-support-request.html"
+- title: 升級OnCommand Insight
+  url: "/install-windows/upgrade-insight.html"
+  entries:
+  - title: 將Insight升級至7.3.12版或更新版本- Windows
+    url: "/install-windows/upgrading-insight-to-version-7-3-12-or-later-windows.html"
+  - title: 概述此升級程序OnCommand Insight
+    url: "/install-windows/overview-of-insight-upgrade-process.html"
+    entries:
+    - title: 升級檢查清單OnCommand Insight
+      url: "/install-windows/insight-upgrade-checklist.html"
+  - title: 正在下載OnCommand Insight 安裝套件
+    url: "/install-windows/downloading-the-installation-packages.html"
+  - title: 備份資料庫
+    url: "/install-windows/backing-up-databases.html"
+    entries:
+    - title: 備份資料倉儲資料庫
+      url: "/install-windows/backing-up-the-data-warehouse-database.html"
+    - title: 正在備份OnCommand Insight The支援資料庫
+      url: "/install-windows/backing-up-the-insight-server-database.html"
+  - title: 備份安全組態
+    url: "/install-windows/backing-up-the-security-configuration.html"
+  - title: 備份自訂資料倉儲報告
+    url: "/install-windows/backing-up-custom-data-warehouse-reports.html"
+  - title: 執行軟體升級
+    url: "/install-windows/performing-the-software-upgrade.html"
+    entries:
+    - title: 升級Insight
+      url: "/install-windows/upgrading-insight.html"
+    - title: 升級資料倉儲
+      url: "/install-windows/upgrading-data-warehouse.html"
+      entries:
+      - title: 在資料倉儲升級期間保留自訂Cognos設定
+        url: "/install-windows/preserving-custom-settings-when-upgrading-data-warehouse.html"
+    - title: 備份安全組態
+      url: "/install-windows/back-up-the-security-configuration.html"
+    - title: 升級遠端擷取單元伺服器
+      url: "/install-windows/upgrading-remote-acquisition-servers.html"
+    - title: 升級異常偵測引擎
+      url: "/install-windows/upgrading-the-anomaly-detection-engine.html"
+  - title: 完成升級後的工作
+    url: "/install-windows/completing-post-upgrade-tasks.html"
+    entries:
+    - title: 安裝資料來源修補程式
+      url: "/install-windows/installing-data-source-patches.html"
+    - title: 升級OnCommand Insight 後更換認證
+      url: "/install-windows/replacing-a-certificate-after-upgrading.html"
+    - title: 增加Cognos記憶體
+      url: "/install-windows/increasing-cognos-memory.html"
+    - title: 還原資料倉儲資料庫
+      url: "/install-windows/restoring-the-data-warehouse-database.html"
+    - title: 還原自訂資料倉儲報告
+      url: "/install-windows/restoring-custom-data-warehouse-reports.html"
+    - title: 驗證資料倉儲是否有歷史資料
+      url: "/install-windows/verifying-data-warehouse-has-historical-data.html"
+    - title: 還原效能歸檔
+      url: "/install-windows/restoring-the-performance-archive.html"
+    - title: 測試連接器
+      url: "/install-windows/testing-the-connectors.html"
+    - title: 驗證擷取、轉換及載入排程
+      url: "/install-windows/verifying-the-extract-transform-and-load-process.html"
+    - title: 正在更新磁碟機型
+      url: "/install-windows/updating-disk-models.html"
+    - title: 驗證商業智慧工具是否正在執行
+      url: "/install-windows/verifying-that-business-intelligence-tools-are-running.html"
+  - title: 疑難排解升級
+    url: "/install-windows/troubleshooting-an-upgrade.html"
+- title: 解除安裝軟體
+  url: "/install-windows/uninstalling-the-insight-software.html"
+  entries:
+  - title: 解除安裝OnCommand Insight The Un
+    url: "/install-windows/uninstalling-insight.html"
+  - title: 解除安裝Data倉儲軟體
+    url: "/install-windows/uninstalling-the-data-warehouse-software.html"
+  - title: 解除安裝遠端擷取單元軟體
+    url: "/install-windows/uninstalling-the-remote-acquisition-unit-software.html"
+  - title: 解除安裝異常偵測引擎
+    url: "/install-windows/uninstalling-the-anomaly-detection-engine-linux.html"

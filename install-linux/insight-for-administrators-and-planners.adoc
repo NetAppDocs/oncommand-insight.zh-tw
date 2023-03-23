@@ -1,0 +1,32 @@
+---
+permalink: install-linux/insight-for-administrators-and-planners.html 
+sidebar: sidebar 
+keywords:  
+summary: 提供儲存管理員、經理和儲存架構設計師執行疑難排解和分析時所需的重要資訊OnCommand Insight 。 
+---
+= 系統管理員、經理和規劃人員如何使用Insight
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+提供儲存管理員、經理和儲存架構設計師執行疑難排解和分析時所需的重要資訊OnCommand Insight 。
+
+經驗豐富的儲存管理員使用OnCommand Insight 支援功能、搭配他們的網路儲存知識來完成下列一般工作：
+
+* 管理SAN和NAS環境。
+* 與SAN工程師合作解決網路問題。
+* 評估、測試新的儲存技術、並將其整合到環境中。
+* 疑難排解效能問題、警示、原則外洩、違規及弱點。
+
+
+經理和網路規劃人員使用OnCommand Insight 此功能來執行下列業務工作：
+
+* 容量規劃
+* 制定專案預算和時間表。
+* 評估及修改專案計畫、以滿足不斷變化的專案需求。 
+* 管理專案規劃與費用。
+* 購買硬體與軟體。
+* 提供容量管理、扣款計費、適當規模調整及服務層級協議等業務報告。
+

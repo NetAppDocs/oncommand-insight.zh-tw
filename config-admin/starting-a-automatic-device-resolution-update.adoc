@@ -1,0 +1,24 @@
+---
+permalink: config-admin/starting-a-automatic-device-resolution-update.html 
+sidebar: sidebar 
+keywords:  
+summary: 裝置解析度更新會認可自上次執行全自動裝置解析以來所新增的手動變更。執行更新只能用來提交及執行新的手動項目、以供裝置解析度組態使用。不會執行完整的裝置解析度執行。 
+---
+= 開始自動更新裝置解析度
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+裝置解析度更新會認可自上次執行全自動裝置解析以來所新增的手動變更。執行更新只能用來提交及執行新的手動項目、以供裝置解析度組態使用。不會執行完整的裝置解析度執行。
+
+
+
+== 步驟
+
+. 登入Insight Web UI。
+. 按一下「*管理*>*裝置解析度*」
+. 在*設備分辨率*屏幕中，單擊*運行AR*按鈕中的向下箭頭。
+. 按一下「*更新*」開始更新。
+

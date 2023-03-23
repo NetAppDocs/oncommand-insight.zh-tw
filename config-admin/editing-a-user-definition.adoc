@@ -1,0 +1,40 @@
+---
+permalink: config-admin/editing-a-user-definition.html 
+sidebar: sidebar 
+keywords:  
+summary: 擁有系統管理員權限的使用者可以編輯使用者帳戶、以變更OnCommand Insight 電子郵件地址或角色、以利執行功能、包括功能更新或報告功能。 
+---
+= 編輯使用者定義
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+擁有系統管理員權限的使用者可以編輯使用者帳戶、以變更OnCommand Insight 電子郵件地址或角色、以利執行功能、包括功能更新或報告功能。
+
+
+
+== 開始之前
+
+判斷OnCommand Insight 需要變更的使用者帳戶類型（例如、DWH或組合）。
+
+
+
+== 關於這項工作
+
+對於LDAP使用者、您只能使用此方法修改電子郵件地址。
+
+
+
+== 步驟
+
+. 以系統管理員權限登入。
+. 在Insight工具列上、按一下*管理*。
+. 按一下*設定*。
+. 按一下「*使用者*」索引標籤。
+. 找出顯示您要修改之使用者帳戶的列。
+. 在使用者資訊的右側、按一下*編輯使用者帳戶*圖示。
+. 進行必要的變更。
+. 按一下「 * 儲存 * 」。
+

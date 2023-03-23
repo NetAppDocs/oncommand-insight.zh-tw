@@ -1,0 +1,25 @@
+---
+permalink: reporting/tips-for-designing-reports.html 
+sidebar: sidebar 
+keywords:  
+summary: 設計報告時、幾個秘訣可能會很有幫助。 
+---
+= 設計報告的秘訣
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+設計報告時、幾個秘訣可能會很有幫助。
+
+* 判斷您是否需要使用目前或歷史資料。
++
+大多數報告只需要報告資料倉儲中可用的最新資料。
+
+* 資料倉儲提供容量與效能的歷史資訊、但不包含在庫存上。
+* 每個人都能看到所有資料、但您可能需要將資料限制在特定對象。
++
+若要區隔不同使用者的資訊、您可以建立報告並設定其存取權限。
+
+

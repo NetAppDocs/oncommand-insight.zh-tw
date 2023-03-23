@@ -1,0 +1,39 @@
+---
+permalink: install-linux/uninstalling-insight.html 
+sidebar: sidebar 
+keywords:  
+summary: 如有需要、您可以解除安裝OnCommand Insight 此伺服器。 
+---
+= 解除安裝OnCommand Insight The Un
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如有需要、您可以解除安裝OnCommand Insight 此伺服器。
+
+
+
+== 開始之前
+
+最佳實務做法：在解除安裝Insight之前、請先備份OnCommand Insight 該資料庫。
+
+
+
+== 步驟
+
+. 使用具有Sudo權限的帳戶登入OnCommand Insight SURSserver。
+. 確保所有OnCommand Insight 的窗口都已關閉。
+. 您可以檢視的語法、命令引數及參數使用量 `oci-uninstall.sh` 輸入下列命令：
++
+`sudo /usr/bin/oci-uninstall.sh --help`
+
++
+正常解除安裝不會移除Insight授權或任何每日備份。若要移除整個安裝、請使用 `--purge` 請選擇``oci-install.sh`` 命令。
+
+. 輸入下列命令：
++
+`sudo /usr/bin/oci-uninstall.sh`
+
+

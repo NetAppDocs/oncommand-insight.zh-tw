@@ -1,0 +1,18 @@
+---
+permalink: reporting/variations-due-to-installed-licenses.html 
+sidebar: sidebar 
+keywords:  
+summary: 資料在功能表中的資料OnCommand Insight 是根據OnCommand Insight 您所購買的功能不實的授權。例如、如果沒有Plan授權、您會在Inventory datamart中取得時間點資料（今天）、以瞭解容量和效能、但您無法將（報告一段時間）任何裝置的容量或效能資料趨勢化。 
+---
+= 因安裝的授權而異
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+資料在功能表中的資料OnCommand Insight 是根據OnCommand Insight 您所購買的功能不實的授權。例如、如果沒有Plan授權、您就會在Inventory datamart中取得時間點資料（今日）、以瞭解容量和效能、但您無法將任何裝置的容量或效能資料（一段時間內報告）趨勢化。
+
+若無計畫授權、則無法建立新報告或編輯現有報告。您可能會發現OnCommand Insight 、與文件中的圖例相比、您所用的系統報告可能有所差異。這些差異是因為系統上安裝的授權與系統上用來建立圖例的授權之間的差異所致。
+
+如需授權的詳細資訊、請參閱OnCommand Insight 《The《The》《The《The》（《The》）《

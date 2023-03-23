@@ -1,0 +1,14 @@
+---
+permalink: howto/assigning-application-to-assets-how-to-chargeback.html 
+sidebar: sidebar 
+keywords:  
+summary: 定義應用程式之後、您需要將應用程式與特定資產建立關聯。您可以使用簡單的臨機操作方法、將應用程式套用至資產。想要大量套用應用程式的使用者、應使用查詢方法來識別要指派給應用程式的資產。 
+---
+= 將應用程式指派給資產
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+定義應用程式之後、您需要將應用程式與特定資產建立關聯。您可以使用簡單的臨機操作方法、將應用程式套用至資產。想要大量套用應用程式的使用者、應使用查詢方法來識別要指派給應用程式的資產。

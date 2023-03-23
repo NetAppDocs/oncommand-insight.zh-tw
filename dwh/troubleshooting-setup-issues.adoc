@@ -1,0 +1,14 @@
+---
+permalink: dwh/troubleshooting-setup-issues.html 
+sidebar: sidebar 
+keywords:  
+summary: 在設定期間、您可能會遇到註釋、建置和報告等常見問題。您可以依照所述步驟進行疑難排解。 
+---
+= 疑難排解設定問題
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在設定期間、您可能會遇到註釋、建置和報告等常見問題。您可以依照所述步驟進行疑難排解。

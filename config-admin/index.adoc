@@ -1,0 +1,12 @@
+---
+permalink: config-admin/index.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= 組態與管理指南
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+

@@ -1,0 +1,27 @@
+---
+permalink: config-admin/deleting-a-user-account.html 
+sidebar: sidebar 
+keywords:  
+summary: 任何具有系統管理員權限的使用者都可以刪除使用者帳戶、無論是不再使用（用於本機使用者定義）、或是強制OnCommand Insight 下次使用者登入（用於LDAP使用者）時重新探索使用者資訊。 
+---
+= 刪除使用者帳戶
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+任何擁有系統管理員權限的使用者都可以刪除使用者帳戶、無論是不再使用（用於本機使用者定義）、或是強制OnCommand Insight 下次使用者登入（用於LDAP使用者）時重新探索使用者資訊。
+
+
+
+== 步驟
+
+. 以系統管理員權限登入OnCommand Insight 支援功能。
+. 在Insight工具列上、按一下*管理*。
+. 按一下*設定*。
+. 按一下「*使用者*」索引標籤。
+. 找出顯示您要刪除之使用者帳戶的列。
+. 在使用者資訊右側、按一下*刪除使用者帳戶*「* x *」圖示。
+. 按一下「 * 儲存 * 」。
+

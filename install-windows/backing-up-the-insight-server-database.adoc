@@ -1,0 +1,30 @@
+---
+permalink: install-windows/backing-up-the-insight-server-database.html 
+sidebar: sidebar 
+keywords:  
+summary: 備份Insight資料庫、以確保在升級後發生問題時、您有最新的備份。在備份與還原階段、系統不會收集效能資料、因此備份應盡量接近升級時間。 
+---
+= 正在備份OnCommand Insight The支援資料庫
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+備份Insight資料庫、以確保在升級後發生問題時、您有最新的備份。在備份與還原階段、系統不會收集效能資料、因此備份應盡量接近升級時間。
+
+
+
+== 步驟
+
+. 在瀏覽器中開啟Insight。
+. 按一下*管理*>*疑難排解*。
+. 在*疑難排解*頁面上、按一下*備份*。
++
+備份資料庫的時間可能會因可用資源（架構、CPU和記憶體）、資料庫大小以及環境中監控的物件數目而有所不同。
+
++
+備份完成時、系統會詢問您是否要下載檔案。
+
+. 下載備份檔案。
+

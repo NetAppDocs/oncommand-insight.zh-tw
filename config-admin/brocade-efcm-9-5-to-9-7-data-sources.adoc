@@ -1,0 +1,140 @@
+---
+permalink: config-admin/brocade-efcm-9-5-to-9-7-data-sources.html 
+sidebar: sidebar 
+keywords:  
+summary: 支援使用Brocade Enterprise Fabric Connectivity Manager（EFCM）資料來源來探索Brocade EFCM交換器的庫存OnCommand Insight 。Insight支援EFCM 9.5、9.6及9.7版。 
+---
+= Brocade Enterprise Fabric Connectivity Manager資料來源
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+利用Brocade Enterprise Fabric Connectivity Manager（EFCM）資料來源、探索Brocade EFCM交換器的庫存OnCommand Insight 。Insight支援EFCM 9.5、9.6及9.7版。
+
+
+
+== 需求
+
+[NOTE]
+====
+此資料收集器無法從OnCommand Insight 功能介紹7.3.11開始使用。
+
+====
+* EFCM伺服器的網路位址或完整網域名稱
+* EFCM版本必須為9.5、9.6或9.7
+* EFCM伺服器的IP位址
+* EFCM伺服器的唯讀使用者名稱和密碼
+* 已驗證從Insight伺服器透過Telnet存取Connectrix交換器、使用連接埠51512上的唯讀使用者名稱和密碼
+
+
+
+
+== 組態
+
+|===
+
+
+| *欄位* | *說明* 
+
+
+ a| 
+EFC伺服器
+ a| 
+EFC伺服器的IP位址或完整網域名稱
+
+
+
+ a| 
+使用者名稱
+ a| 
+交換器的使用者名稱
+
+
+
+ a| 
+密碼
+ a| 
+用於交換器的密碼
+
+|===
+
+
+== 進階組態
+
+|===
+
+
+| *欄位* | *說明* 
+
+
+ a| 
+庫存輪詢時間間隔（分鐘）
+ a| 
+庫存輪詢之間的時間間隔（預設為15分鐘）
+
+
+
+ a| 
+網路名稱
+ a| 
+要由EFCM資料來源回報的網路名稱。保留空白以將網路名稱報告為WWN。
+
+
+
+ a| 
+通訊連接埠
+ a| 
+用於與交換器通訊的連接埠
+
+
+
+ a| 
+啟用資料綁定
+ a| 
+選取以在從裝置接收SNMP設陷時啟用擷取。如果您選取「啟用補漏白」、也必須啟動SNMP。
+
+
+
+ a| 
+設陷之間的最短時間（秒）
+ a| 
+擷取嘗試之間由陷阱觸發的最短時間（預設為15秒）
+
+
+
+ a| 
+非作用中的區域集
+ a| 
+除了在作用中分區集上執行擷取之外、還要在其上執行擷取的非作用中分區清單
+
+
+
+ a| 
+要使用的NIC
+ a| 
+指定在SAN裝置上報告時、應在Rau上使用哪個網路介面
+
+
+
+ a| 
+排除裝置
+ a| 
+要在輪詢中包含或排除的單位名稱以逗號分隔的清單
+
+
+
+ a| 
+使用EFCM交換器暱稱做為Insight交換器名稱
+ a| 
+選取以使用EFCM交換器暱稱做為Insight交換器名稱
+
+
+
+ a| 
+效能意見調查時間間隔（秒）
+ a| 
+效能輪詢之間的時間間隔（預設為300秒）
+
+|===

@@ -1,0 +1,28 @@
+---
+permalink: dwh/data-warehouse-processes.html 
+sidebar: sidebar 
+keywords:  
+summary: 資料倉儲可執行多種類型的程序。 
+---
+= 資料倉儲程序
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+資料倉儲可執行多種類型的程序。
+
+* * ETL程序*
++
+「擷取轉換與載入」（ETL）程序會從多OnCommand Insight 個多方面資料庫擷取資料、轉換資料、並將其儲存至資料倉儲。資料倉儲建置程序是ETL程序。
+
+* *工作*
++
+資料倉儲會針對下列工作執行及報告：庫存、維度、容量、連接埠容量、VM容量、 檔案系統使用率、效能、容量效率、授權、歷史建置、 動態附註、移除連接器、跳過建置、ASUP選項及維護工作。
+
+* *整合程序*
++
+Data倉儲支援將多OnCommand Insight 個支援的伺服器整合到同一個Data倉儲資料庫中。在許多組態中、可能會從多個連接器回報相同的物件（亦即、兩OnCommand Insight 個實例中存在相同的交換器）。在這種情況下、Data倉儲會將多個物件整合為一個物件（選擇主要連接器、而物件的資料僅從該連接器取得）。
+
+

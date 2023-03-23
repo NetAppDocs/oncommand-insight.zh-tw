@@ -1,0 +1,68 @@
+---
+permalink: dwh/issue-resolution-with-autosupport-asup.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以將ASUP記錄傳送給技術支援部門、以協助疑難排解。Data倉儲的ASUP設定為自動執行。在Data倉儲入口網站中、您可以停用自動傳送程序、選擇包含Data倉儲資料庫的備份、或是啟動傳輸至ASUP。 
+---
+= ASUP問題解決方案
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以將ASUP記錄傳送給技術支援部門、以協助疑難排解。Data倉儲的ASUP設定為自動執行。在Data倉儲入口網站中、您可以停用自動傳送程序、選擇包含Data倉儲資料庫的備份、或是啟動傳輸至ASUP。
+
+記錄中的資訊會使用HTTPS傳輸協定轉送給技術支援部門。除非您先在Insight Server上設定、否則不會使用ASUP轉送任何資料。
+
+Data倉儲會將記錄傳送至OnCommand Insight 「Data倉儲Portal Connector」（資料倉儲入口網站連接器）頁面中第一個連接器的「支援伺服器」。自動程序會傳送下列檔案：
+
+* 資料倉儲記錄、包括下列項目：
++
+** boot.log（包括備份）
+** dwh.log（包括dwh.log.1等備份）
+** dhw_troubleshoot.log
+** dwh_upgrade.log（包括備份）
+** WildFly.log（包括備份）
+** ldap.log（包括備份）
+** 資料倉儲管理資料庫的SQL傾印
+** MySQL：my.cnf、.err及查詢記錄緩慢
+** 完整InnoDB狀態
+
+
+* Cognos記錄、包括下列項目：
++
+** cognos-logs.zip
++
+包含中的Cognos記錄檔 `<install>\cognos\c10_64\logs` 目錄。其中也包含Cognos產生的記錄、OnCommand 以及包含登入和登出OnCommand Insight 之使用者所有記錄的InsightAP.log檔案。
+
+** DailyBackup.zip
++
+包含「公共資料夾」中報告成品的備份。我的資料夾內容未包含在此範圍內。
+
+** Cognos``version``_``site name``_content_store.zip
++
+包含Cognos內容儲存區的完整備份。
+
+
+
+
+
+您可以手動產生疑難排解報告。疑難排解報告.Zip檔案包含下列資料倉儲資訊：
+
+* boot.log（包括備份）
+* dwh.log（包括dwh.log.1等備份）
+* dwh_upgrade.log（包括備份）
+* wildfly.log（包括備份）
+* ldap.log（包括備份）
+* 將檔案傾印到C:\Program Files\SANSANSANSANSAND\wildflly\s獨立 式\log\dwh\中
+* 資料倉儲管理資料庫的SQL傾印
+* MySQL：my.cnf、.err及查詢記錄緩慢
+* 完整InnoDB狀態
+
+
+[NOTE]
+====
+ASUP不會自動將OnCommand Insight 一份關於該資料庫的備份傳送給技術支援部門。
+
+====

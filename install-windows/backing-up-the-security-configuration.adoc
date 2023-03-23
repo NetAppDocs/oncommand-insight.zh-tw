@@ -1,0 +1,20 @@
+---
+permalink: install-windows/backing-up-the-security-configuration.html 
+sidebar: sidebar 
+keywords:  
+summary: 當Insight元件使用非預設的安全性組態時、您必須備份安全性組態、然後在安裝新軟體之後、還原所有元件的組態。在還原資料倉儲資料庫備份之前、必須先還原安全性組態。 
+---
+= 備份安全組態
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+當Insight元件使用非預設的安全性組態時、您必須備份安全性組態、然後在安裝新軟體之後、還原所有元件的組態。在還原資料倉儲資料庫備份之前、必須先還原安全性組態。
+
+
+
+== 關於這項工作
+
+您可以使用 `securityadmin` 建立組態備份及還原儲存組態的工具。如需詳細資訊、請搜尋 `securityadmin` 在VMware文件中心OnCommand Insight ： http://docs.netapp.com/oci-73/index.jsp[]

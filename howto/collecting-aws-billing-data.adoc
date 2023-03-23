@@ -1,0 +1,22 @@
+---
+permalink: howto/collecting-aws-billing-data.html 
+sidebar: sidebar 
+keywords:  
+summary: Amazon AWS Cloud Cost資料來源會將Amazon產生的帳單資料匯入Insight、做為整合資料、讓資料倉儲能夠進行報告。 
+---
+= 收集和報告AWS帳單資料
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Amazon AWS Cloud Cost資料來源會將Amazon產生的帳單資料匯入Insight、做為整合資料、讓資料倉儲能夠進行報告。
+
+雲端計費資料可供Insight使用的部分有三個：
+
+驗證AWS帳戶資訊。
+
+在Insight中設定AWS Cloud Cost資料來源以收集資料。
+
+透過ETL將資料傳送至資料倉儲以供報告使用。

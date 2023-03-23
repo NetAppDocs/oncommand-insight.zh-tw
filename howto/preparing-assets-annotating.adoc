@@ -1,0 +1,14 @@
+---
+permalink: howto/preparing-assets-annotating.html 
+sidebar: sidebar 
+keywords:  
+summary: 註釋可讓您將特定標記或標籤與所選資產建立關聯、協助您管理及報告這些資產。 
+---
+= 準備資產：註釋
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+註釋可讓您將特定標記或標籤與所選資產建立關聯、協助您管理及報告這些資產。

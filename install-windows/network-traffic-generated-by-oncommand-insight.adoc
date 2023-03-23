@@ -1,0 +1,32 @@
+---
+permalink: install-windows/network-traffic-generated-by-oncommand-insight.html 
+sidebar: sidebar 
+keywords:  
+summary: 由於多種因素、導致網路流量OnCommand Insight 不OnCommand Insight 一、處理過網路的資料量、以及顯示在裝置上的負載各不相同。 
+---
+= 網路流量是OnCommand Insight 由功能不整的
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+由於多種因素、導致網路流量OnCommand Insight 不OnCommand Insight 一、處理過網路的資料量、以及顯示在裝置上的負載各不相同。
+
+流量、資料和負載因下列因素而異：
+
+* 原始資料
+* 裝置組態
+* 部署功能拓撲OnCommand Insight
+* 不同的庫存和效能資料來源輪詢時間間隔、可縮短、以便探索緩慢的裝置或保留頻寬
+
+
+不一定OnCommand Insight 會有很大的差異。
+
+下列範例說明組態資料的變化方式、以及流量、資料和負載如何受到許多組態因素的影響。例如、您可能有兩個陣列、每個陣列各有1、000個磁碟：
+
+* 陣列1：有1、000個SATA磁碟、大小均為1 TB。所有1、000個磁碟都位於一個儲存資源池中、共有1、000個LUN、全部呈現（對應和遮罩）到ESX叢集中的同一個32個節點。
+* 陣列2：擁有400個2-TB資料磁碟、560個600GB FC磁碟和40個SSD。有3個儲存資源池、但傳統RAID群組使用320個FC磁碟。RAID群組上的LUN使用傳統遮罩類型（symaskdb）、而精簡配置的集區型LUN則使用較新的遮罩類型（symaccess）。有600個LUN呈現給150個不同的主機。共有200個BCVs（600個LUN中有200個完整區塊複本磁碟區）。另有200個R2磁碟區、位於不同站台的陣列上的磁碟區遠端複本磁碟區。
+
+
+這些陣列各有1、000個磁碟和1、000個邏輯磁碟區。它們在資料中心的實際佔用機架空間量可能完全相同、甚至可能執行相同的韌體、但第二個陣列的組態比第一個陣列複雜得多。

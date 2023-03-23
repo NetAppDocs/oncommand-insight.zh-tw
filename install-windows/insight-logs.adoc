@@ -1,0 +1,16 @@
+---
+permalink: install-windows/insight-logs.html 
+sidebar: sidebar 
+keywords:  
+summary: Insight提供許多記錄檔來協助您進行研究和疑難排解。可用的記錄會列在記錄目錄中。您可能想要使用記錄監控工具（例如BareTail）一次顯示所有記錄。 
+---
+= Insight記錄
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Insight提供許多記錄檔來協助您進行研究和疑難排解。可用的記錄會列在記錄目錄中。您可能想要使用記錄監控工具（例如BareTail）一次顯示所有記錄。
+
+記錄檔位於 `<install directory>\SANscreen\wildfly\standalone\log` 目錄。擷取記錄位於 `<install directory>\SANscreen\Acq\Log` 目錄。

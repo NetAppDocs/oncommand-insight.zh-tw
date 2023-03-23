@@ -1,0 +1,35 @@
+---
+permalink: install-linux/uninstalling-mariadb.html 
+sidebar: sidebar 
+keywords:  
+summary: 您必須先在Insight或Data倉儲伺服器上解除安裝MariaDB、才能安裝OnCommand Insight 支援或Data倉儲；否則、您將無法繼續安裝。MySQL與MariaDB不相容。如果您在未移除MariaDB的情況下、嘗試在任一部伺服器上安裝、安裝會終止、並顯示錯誤訊息、指示您解除安裝MariaDB。 
+---
+= 正在解除安裝MariaDB
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必須先在Insight或Data倉儲伺服器上解除安裝MariaDB、才能安裝OnCommand Insight 支援或Data倉儲；否則、您將無法繼續安裝。MySQL與MariaDB不相容。如果您在未移除MariaDB的情況下、嘗試在任一部伺服器上安裝、安裝會終止、並顯示錯誤訊息、指示您解除安裝MariaDB。
+
+
+
+== 開始之前
+
+您必須擁有Sudo權限。
+
+
+
+== 步驟
+
+. 登入Insight伺服器。
+. 取得MariaDB元件清單：
++
+`rpm -qa | grep mariadb`
+
+. 針對伺服器上安裝的每個MariaDB元件、輸入下列命令：
++
+`yum remove component_name`
+
+

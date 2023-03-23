@@ -1,0 +1,46 @@
+---
+permalink: howto/reporting-on-cloud-cost-data-task.html 
+sidebar: sidebar 
+keywords:  
+summary: Insight所收集的每月雲端成本資料會傳送至資料倉儲、並可在雲端成本資料夾中取得、以供報告使用。 
+---
+= 在Insight中報告雲端成本資料
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Insight所收集的每月雲端成本資料會傳送至資料倉儲、並可在雲端成本資料夾中取得、以供報告使用。
+
+
+
+== 開始之前
+
+您必須設定資料來源、才能從AWS收集雲端成本資料。每個計費的使用者/帳戶都必須有個別的資料來源。
+
+讓Insight至少36小時開始收集資料。
+
+允許ETL在該時間之後至少執行一次、將資料傳送至資料倉儲。
+
+
+
+== 關於這項工作
+
+在收集資料並傳送至資料倉儲之後、您可以在任何預先設定的報告中檢視資料、或建立自訂報告。Insight會將資料儲存在自己的雲端成本資料檔案中。
+
+若要在其中一個預先設定的報告中檢視雲端成本資料：
+
+
+
+== 步驟
+
+. 下列其中一種方法開啟Insight報告：
++
+** 按一下報告入口網站圖示 image:../media/oci-reporting-portal-icon.gif[""] 在Insight伺服器Web UI或Data倉儲UI中。
+** 輸入下列URL、直接啟動報告： `https://<dwh_server_name\>:9300/p2pd/servlet/dispatch` 或 `https://<dwh_server_name\>:9300/bi (7.3.3 and later)`
+
+
+. 登入「報告」後、按一下「*公用資料夾*」、然後選取「*雲端成本*」。
+. 您可以在* Cloud Cost *資料夾中的可用報告中檢視AWS帳單資料、或使用* Packaget*資料夾中的* Cloud Cost datamart*建立您自己的自訂報告。
+

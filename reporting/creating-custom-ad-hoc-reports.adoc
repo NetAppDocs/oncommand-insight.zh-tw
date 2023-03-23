@@ -1,0 +1,21 @@
+---
+permalink: reporting/creating-custom-ad-hoc-reports.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用報告撰寫工具來建立自訂報告。建立報告之後、您可以儲存報告並定期執行。報告結果可透過電子郵件自動傳送給您自己和其他人。 
+---
+= 建立自訂的臨機操作報告
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用報告撰寫工具來建立自訂報告。建立報告之後、您可以儲存報告並定期執行。報告結果可透過電子郵件自動傳送給您自己和其他人。
+
+本節的範例說明下列程序、可用於OnCommand Insight 任何的各種不同的資料模型：
+
+* 找出要用報告回答的問題
+* 判斷支援結果所需的資料
+* 選取報告的資料元素
+

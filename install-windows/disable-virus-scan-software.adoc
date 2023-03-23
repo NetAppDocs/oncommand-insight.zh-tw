@@ -1,0 +1,18 @@
+---
+permalink: install-windows/disable-virus-scan-software.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果您的系統上有防毒軟體、OnCommand Insight 則無法執行安裝。您可以在安裝之前停用病毒掃描軟體、以避免此問題。 
+---
+= 防毒軟體停用
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您的系統上有防毒軟體、OnCommand Insight 則無法執行安裝。您可以在安裝之前停用病毒掃描軟體、以避免此問題。
+
+為了避免因主動式病毒掃描軟體而導致安裝失敗、在安裝每OnCommand Insight 個元件期間、您必須完全停用所有的掃毒程式。安裝之後、Insight元件（安裝、備份和歸檔程式路徑）所使用的路徑必須排除在掃毒範圍之外。
+
+此外、您也必須在安裝後、將IBM/DB2資料夾（例如_C:\Program Files\IBM\DB2_）排除在防毒掃描之外。

@@ -1,0 +1,50 @@
+---
+permalink: install-linux/installing-the-oncommand-insight-server-linux.html 
+sidebar: sidebar 
+keywords:  
+summary: 使用命令列安裝支援OnCommand Insight 。 
+---
+= 安裝OnCommand Insight The功能
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+使用命令列安裝支援OnCommand Insight 。
+
+
+
+== 開始之前
+
+您必須已完成所有安裝先決條件。
+
+
+
+== 步驟
+
+. 使用具有Sudo權限的帳戶登入Insight伺服器。
+. 瀏覽至安裝檔案所在伺服器上的目錄、然後輸入下列命令：
++
+`unzip oci-<version>-linux-x86_64.zip`
+
++
+請確定您已檢查安裝檔案的版本編號、版本編號可能與命令中所示的版本編號不同。
+
+. 您可以檢視的語法、命令引數及參數使用量 `oci-install.sh` ：
++
+`sudo ./oci-<version>-linux-x86_64/oci-install.sh --help`
+
+. 執行安裝指令碼：
++
+`sudo ./oci-<version>-linux-x86_64/oci-install.sh`
+
+. 請閱讀授權合約、接受並遵循提示進行。
+. 如果您使用的是Insight Consumption授權模式、則必須啟用傳送使用資訊給NetApp的功能。輸入 `Y` 在這個提示下。
+
+
+
+
+== 結果
+
+在您回答所有提示之後、安裝將會開始、大約需要10分鐘、視安裝的應用程式而定。

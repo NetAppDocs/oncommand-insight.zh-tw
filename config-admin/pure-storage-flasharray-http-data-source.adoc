@@ -1,0 +1,156 @@
+---
+permalink: config-admin/pure-storage-flasharray-http-data-source.html 
+sidebar: sidebar 
+keywords:  
+summary: Pure Storage FlashArray（HTTP）資料來源是用來收集Pure Storage Flash Array的資訊。Insight同時支援庫存管理和效能收集。 
+---
+= Pure Storage FlashArray資料來源
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pure Storage FlashArray（HTTP）資料來源是用來收集Pure Storage Flash Array的資訊。Insight同時支援庫存管理和效能收集。
+
+
+
+== 術語
+
+從Pure Storage FlashArray資料來源取得下列庫存資訊OnCommand Insight 。對於Insight取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料來源時、請謹記下列術語：
+
+|===
+
+
+| 廠商/模型術語 | Insight術語 
+
+
+ a| 
+磁碟機（SSD）
+ a| 
+磁碟
+
+
+
+ a| 
+陣列
+ a| 
+儲存設備
+
+
+
+ a| 
+控制器
+ a| 
+儲存節點
+
+
+
+ a| 
+Volume
+ a| 
+Volume
+
+
+
+ a| 
+連接埠
+ a| 
+連接埠
+
+
+
+ a| 
+LUN對應（主機、主機群組、目標連接埠）
+ a| 
+Volume Map、Volume Mask
+
+|===
+[NOTE]
+====
+這些只是通用的術語對應、可能不代表此資料來源的每個案例。
+
+====
+
+
+== 需求
+
+* 儲存系統IP位址
+* Pure儲存系統管理員帳戶的使用者名稱和密碼。
+* 連接埠需求：HTTP/HTTPS 80/443
+
+
+
+
+== 組態
+
+|===
+
+
+| *欄位* | *說明* 
+
+
+ a| 
+FlashArray主機
+ a| 
+FlashArray Management Server的IIP位址或完整網域名稱
+
+
+
+ a| 
+使用者名稱
+ a| 
+FlashArray管理伺服器的使用者名稱
+
+
+
+ a| 
+密碼
+ a| 
+FlashArray管理伺服器的密碼
+
+|===
+
+
+== 進階組態
+
+|===
+
+
+| *欄位* | *說明* 
+
+
+ a| 
+連線類型
+ a| 
+管理伺服器
+
+
+
+ a| 
+TCP連接埠
+ a| 
+TCP連接埠用於連線至FlashArray伺服器（預設443）
+
+
+
+ a| 
+連線逾時（秒）
+ a| 
+連線逾時（預設為60秒）
+
+
+
+ a| 
+庫存輪詢時間間隔（分鐘）
+ a| 
+庫存輪詢之間的時間間隔（預設為60分鐘）
+
+
+
+ a| 
+效能意見調查時間間隔（秒）
+ a| 
+效能輪詢之間的時間間隔（預設為300秒）
+
+|===

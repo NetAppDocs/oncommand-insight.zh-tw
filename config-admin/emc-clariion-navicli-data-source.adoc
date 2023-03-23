@@ -1,0 +1,183 @@
+---
+permalink: config-admin/emc-clariion-navicli-data-source.html 
+sidebar: sidebar 
+keywords:  
+summary: 在設定此資料來源之前、請先確定目標裝置和Insight伺服器上已安裝EMC Navisphere CLI。Navisphere CLI版本必須與控制器上的韌體版本相符。若要收集效能資料、必須開啟統計資料記錄功能。 
+---
+= EMC CLARiiON（NaviCLI）資料來源
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在設定此資料來源之前、請先確定目標裝置和Insight伺服器上已安裝EMC Navisphere CLI。Navisphere CLI版本必須與控制器上的韌體版本相符。若要收集效能資料、必須開啟統計資料記錄功能。
+
+
+
+== Navisphere Command Line介面語法
+
+[listing]
+----
+naviseccli.exe -h <IP address> -user <user> -password <password> -scope
+<scope,use 0 for global scope> -port <use 443 by default> command
+----
+
+
+== 術語
+
+從EMC CLARiiON資料來源取得下列庫存資訊OnCommand Insight 。對於Insight取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料來源時、請謹記下列術語：
+
+|===
+
+
+| 廠商/模型術語 | Insight術語 
+
+
+ a| 
+磁碟
+ a| 
+磁碟
+
+
+
+ a| 
+儲存設備
+ a| 
+儲存設備
+
+
+
+ a| 
+儲存處理器
+ a| 
+儲存節點
+
+
+
+ a| 
+精簡集區、RAID群組
+ a| 
+儲存資源池
+
+
+
+ a| 
+LUN
+ a| 
+Volume
+
+|===
+[NOTE]
+====
+這些只是通用的術語對應、可能不代表此資料來源的每個案例。
+
+====
+
+
+== 需求
+
+* 每個CLARiiON儲存處理器的IP位址
+* CLARiiON陣列的唯讀式Navisphere使用者名稱和密碼
+* navicli必須安裝在Insight伺服器/ Rau上
+* 存取驗證：使用上述使用者名稱和密碼、從Insight伺服器執行NaviCLI至每個陣列。
+* navicli版本應與陣列上最新的Flare程式碼相對應
+* 為了達到效能、必須開啟統計資料記錄功能。
+* 連接埠需求：80、443
+
+
+
+
+== 組態
+
+|===
+
+
+| 欄位 | 說明 
+
+
+ a| 
+CLARiiON儲存設備
+ a| 
+CLARiiON儲存設備的IP位址或完整網域名稱
+
+
+
+ a| 
+使用者名稱
+ a| 
+用於登入CLARiiON儲存設備的名稱。
+
+
+
+ a| 
+密碼
+ a| 
+用於登入CLARiiON儲存設備的密碼。
+
+
+
+ a| 
+通往navicli.exe路徑或naviseccli.exe路徑的CLI路徑
+ a| 
+的完整路徑 `navicli.exe` 或 `naviseccli.exe` 執行檔
+
+|===
+
+
+== 進階組態
+
+|===
+
+
+| 欄位 | 說明 
+
+
+ a| 
+庫存輪詢時間間隔（分鐘）
+ a| 
+庫存輪詢之間的時間間隔（預設為40分鐘）
+
+
+
+ a| 
+使用安全用戶端（naviseccli）
+ a| 
+選擇使用安全用戶端（navseccli）
+
+
+
+ a| 
+範圍
+ a| 
+安全的用戶端範圍。預設值為Global。
+
+
+
+ a| 
+CLARiiON CLI連接埠
+ a| 
+用於CLARiiON CLI的連接埠
+
+
+
+ a| 
+庫存外部處理逾時（秒）
+ a| 
+外部處理程序逾時（預設值1800秒）
+
+
+
+ a| 
+效能意見調查時間間隔（秒）
+ a| 
+效能輪詢之間的時間間隔（預設為300秒）
+
+
+
+ a| 
+效能外部處理逾時（秒）
+ a| 
+外部處理程序逾時（預設值1800秒）
+
+|===

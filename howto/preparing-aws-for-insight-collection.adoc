@@ -1,0 +1,56 @@
+---
+permalink: howto/preparing-aws-for-insight-collection.html 
+sidebar: sidebar 
+keywords:  
+summary: 您的AWS帳戶必須正確設定、以便Insight收集雲端成本資料。 
+---
+= 準備AWS進行Insight資料收集
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您的AWS帳戶必須正確設定、以便Insight收集雲端成本資料。
+
+
+
+== 關於這項工作
+
+下列步驟是透過AWS帳戶執行。如需詳細資訊、請參閱Amazon文件： https://docs.aws.amazon.com["http://docs.aws.amazon.com"]。如果您不熟悉設定AWS雲端帳戶、請聯絡您的雲端供應商尋求協助。
+
+[NOTE]
+====
+此處提供這些步驟是為了提供禮賓服務、並相信在發佈時正確無誤。NetApp不保證這些步驟的正確性。如需設定AWS帳戶的相關資訊或協助、請聯絡您的雲端供應商或AWS帳戶持有人。
+
+====
+最佳實務做法：Insight建議您在上傳帳單報告的S3儲存區所屬帳戶上建立主要IAM使用者、並使用此使用者來設定及收集AWS帳單資料。
+
+若要將AWS帳戶設定為允許Insight收集資料、請執行下列步驟：
+
+
+
+== 步驟
+
+. 以身分識別存取管理（IAM）使用者的身分登入AWS帳戶。若要正確收集、請登入主要IAM帳戶、而非群組IAM帳戶。
+. 請前往* Amazon S3 *建立您的儲存庫。輸入唯一的儲存貯體名稱、並確認正確的區域。
+. 開啟Amazon成本與使用量報告。請參閱 https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-reports-gettingstarted-turnonreports.html[] 以取得資訊。
++
+.. 前往AWS *帳單與成本管理儀表板*、然後選擇*報告*。
+.. 按一下*建立報告*、然後輸入報告名稱。若為*時間單位*、請選擇「每日」。勾選「包含*資源ID*」方塊、然後按「*下一步*」。
+.. 按一下「選取交付選項」頁面中的「*範例原則*」連結。將方塊中的範例原則文字複製到剪貼簿。按一下 * 關閉 * 。
+.. 返回所建立的S3時段、按一下「*權限*」索引標籤、然後選取「*時段原則*」按鈕。
+.. 貼上範例原則中的文字、然後加以取代 `<bucketname>` 在每一行中包含您的實際庫位名稱、其中包含下列項目： `"Resource": "arn:aws:s3:: <bucketname>"`。*儲存*原則。
+.. 返回「Create Report（建立報告）」畫面、在S3儲存區中輸入、然後按一下「* Verify（驗證）」按鈕。單擊 * 下一步 * 。
+.. 確認您的資訊、然後按一下*「Review and完整*（檢閱並完成*）」。
+
+
+. 您必須授予權限、Insight才能從AWS收集資料。下列連結提供如何授予*列出所有鏟斗*（步驟4.1）權限的詳細資料、以及如何設定資料夾中物件的權限（步驟5.2）： https://docs.aws.amazon.com/AmazonS3/latest/dev/walkthrough1.html[]。
+. 在IAM主控台中、移至* Policies *、然後按一下* Create policies *。
+. 在*原則名稱*欄位中輸入名稱、然後按一下底部的*建立原則*。
+. 在IAM主控台中、選取您的使用者、然後選取畫面底部的*新增內嵌原則*。
+. 按一下*選擇服務*、然後選取S3。
+. 移至* JSON*索引標籤。將AWS逐步解說步驟5.1.2.g的Json範例文字複製到Json方塊中。
+. 將Json中的「_公司桶_」和「_開發_」欄位取代為您的S3資訊。
+. 按一下*檢閱原則*以檢閱原則設定。
+

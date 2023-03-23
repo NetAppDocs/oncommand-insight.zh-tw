@@ -1,0 +1,20 @@
+---
+permalink: config-admin/performance-data-archiving.html 
+sidebar: sidebar 
+keywords:  
+summary: 介紹能夠每日歸檔效能資料的功能OnCommand Insight 。這是對組態和有限效能資料備份的補充。 
+---
+= 效能資料歸檔
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+介紹能夠每日歸檔效能資料的功能OnCommand Insight 。這是對組態和有限效能資料備份的補充。
+
+支援多達90天的效能和違規資料OnCommand Insight 。不過、建立該資料的備份時、備份中只會包含最新的資訊。歸檔可讓您儲存其餘的效能資料、並視需要載入。
+
+設定歸檔位置並啟動歸檔之後、Insight會每天將所有物件的前一天效能資料歸檔到歸檔位置。每天的歸檔資料都會保留在個別檔案的歸檔資料夾中。歸檔會在背景中進行、只要Insight正在執行、就會繼續進行。
+
+系統會保留最近90天的歸檔資料；在建立較新的歸檔資料時、會刪除90天之前的歸檔檔案。

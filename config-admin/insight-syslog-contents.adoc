@@ -1,0 +1,38 @@
+---
+permalink: config-admin/insight-syslog-contents.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以在伺服器上啟用syslog、以收集Insight違規和效能警示訊息、包括使用率和流量資料。 
+---
+= Insight syslog內容
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在伺服器上啟用syslog、以收集Insight違規和效能警示訊息、包括使用率和流量資料。
+
+
+
+== 訊息類型
+
+Insight syslog列出三種類型的訊息：
+
+* SAN路徑違規
+* 一般違規
+* 效能警示
+
+
+
+
+== 提供的資料
+
+違規說明包括所涉及的元素、事件時間、以及違規的相對嚴重性或優先順序。
+
+效能警示包括下列資料：
+
+* 使用率百分比
+* 流量類型
+* 流量以MB為單位
+

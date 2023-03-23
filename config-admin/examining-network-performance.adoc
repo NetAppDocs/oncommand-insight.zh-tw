@@ -1,0 +1,66 @@
+---
+permalink: config-admin/examining-network-performance.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以檢查儲存環境的效能、找出使用率過低和過度使用的資源、並在風險變成問題之前加以識別。 
+---
+= 檢查網路效能
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以檢查儲存環境的效能、找出使用率過低和過度使用的資源、並在風險變成問題之前加以識別。
+
+Insight可協助您解決或預防透過收集的儲存資料所揭露的效能與可用度問題。
+
+您可以使用Insight來執行下列效能管理工作：
+
+* 監控整個環境的效能
+* 找出影響其他裝置效能的資源
+
+
+
+
+== 連接埠的重要性
+
+Insight Server和Data倉儲（DWH）伺服器可能需要大量的TCP連接埠才能正常運作、以確保可靠運作。其中有些連接埠僅用於繫結至localhost介面卡（127.0.0.1）的處理程序、但核心服務仍需可靠運作。所需的連接埠數量是跨網路使用的連接埠的超集合。
+
+
+
+== Insight伺服器連接埠
+
+Insight Server可以安裝軟體防火牆。需要開啟的「孔」如下所述。
+
+*傳入HTTPS 443*-假設您在TCP 443上執行Insight WebUI、您必須揭露此資訊、以允許下列任何及所有使用者：
+
+* WebUI的深入分析使用者
+* 尋求連線至Insight伺服器的遠端擷取單位
+* OCI DWH伺服器搭配此Insight伺服器的連接器。
+* 與Insight REST API的任何程式化互動
+* 異常狀況偵測引擎尋求取得Insight效能資料來呈現異常狀況資訊
+
+
+對於任何想要實作Insight伺服器主機層級防火牆的人、我們的一般建議是允許HTTPS存取所有公司網路IP區塊。
+
+*傳入MySQL（TCP 3306）*。此連接埠僅需暴露於任何具有連接器的Insight DWH伺服器
+
+雖然Insight擁有數十個資料收集器、但它們都是以輪詢為基礎的、但Insight會讓收購單位（Aus）開始傳出通訊至各種裝置。只要您的主機型防火牆具有「狀態」功能、允許傳回流量通過防火牆、Insight Server上的主機型防火牆就不應影響資料擷取。
+
+
+
+== 資料倉儲連接埠
+
+對於Insight DWH伺服器：
+
+*傳入HTTPS 443*-假設您在TCP 443上執行Insight WebUI、您必須公開該AS以允許下列使用者：
+
+* DWH管理入口網站的Insight管理使用者
+
+
+*傳入HTTPS（TCP 9300*）*：這是Cognos報告介面。如果您要讓使用者與Cognos報告介面互動、則必須從遠端公開。
+
+我們可以想像DWH可能不需要曝光的環境、可能是報告作者只是將RDP連線到DWH伺服器、然後在那裡製作和排程報告、同時將所有報告排程為透過SMTP傳送、或寫入遠端檔案系統。
+
+*傳入MySQL（TCP 3306）*。只有當貴組織與DWH資料有任何MySQL型整合時、才需要公開此連接埠、您是否要從各種DWH資料夾擷取資料、以便擷取至其他應用程式、例如CMDB、計費系統等

@@ -1,0 +1,46 @@
+---
+permalink: howto/collecting-integration-data.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以將整合資料匯入OnCommand Insight 您的整個系統。您可以使用collectd開放原始碼軟體匯入資料、此軟體可做為監控程式來收集效能資料、或是使用整合式SNMP資料來源來收集一般SNMP資料。 
+---
+= 收集整合資料
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以將整合資料匯入OnCommand Insight 您的整個系統。您可以使用collectd開放原始碼軟體匯入資料、此軟體可做為監控程式來收集效能資料、或是使用整合式SNMP資料來源來收集一般SNMP資料。
+
+
+
+== 整合資料的資料流
+
+以下內容適用於允許提供給OnCommand Insight 該伺服器的整合資料總量：
+
+* 保留100通通話的佇列。
++
+當用戶端在佇列中等候超過一分鐘時、就會發生逾時錯誤。
+
+* 建議的整合資料擷取速度為每個用戶端每分鐘一次。
+* 允許的整合物件類型上限為300個。
+
+
+
+
+== 存取collectd軟體與文件
+
+您可以在NetApp的GitHub網站存取collectd的輸出寫入器外掛軟體與文件： https://github.com/NetApp/OCI_collectd[]
+
+
+
+== 整合資料的備份與還原
+
+整合資料的備份與還原是以OnCommand Insight 效能不彰的資料備份與還原原則為建模。當為效能資料設定備份時、整合資料也會包含在備份中。與效能備份一樣、最近七天的整合資料也會包含在備份中。備份中的任何整合資料都會在還原作業中還原。
+
+
+
+== 授權
+
+需要執行授權才能報告整合資料。如果不存在執行授權、則會出現錯誤訊息「Perform license required to report Integration data（執行報告整合資料所需的授權）」。

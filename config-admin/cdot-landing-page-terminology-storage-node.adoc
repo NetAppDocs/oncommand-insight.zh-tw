@@ -1,0 +1,34 @@
+---
+permalink: config-admin/cdot-landing-page-terminology-storage-node.html 
+sidebar: sidebar 
+keywords:  
+summary: 適用於NetApp叢集式Data ONTAP儲存節點資產登陸頁面上可能找到的物件或參考的術語。 
+---
+= 叢集Data ONTAP 式功能儲存節點
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+適用於NetApp叢集式Data ONTAP儲存節點資產登陸頁面上可能找到的物件或參考的術語。
+
+
+
+== 叢集Data ONTAP 式的功能區儲存節點術語
+
+下列詞彙適用於您在NetApp叢集Data ONTAP 式物件庫資產登陸頁面上可能找到的物件或參考資料。其中許多術語也適用於其他資料收集器。
+
+* Storage（儲存設備）-此節點屬於何種儲存陣列。必填。
+* HA合作夥伴：在節點容錯移轉至一個節點、而只有一個節點的平台上、通常會顯示於此處。
+* State（狀態）-節點的健全狀況。只有當陣列健全狀況足以由資料來源進行庫存時、才能使用。
+* 模型-節點的模型名稱。
+* 版本-裝置的版本名稱。
+* 序號：節點序號。
+* Memory（記憶體）- base 2記憶體（若有）。
+* 使用率- ONTAP 在功能方面、這是專屬演算法的控制器壓力索引。每次效能意見調查都會報告0到100%之間的數字、這是WAFL 指較高的VMware磁碟爭用或平均CPU使用率。如果您觀察到持續值> 50%、這表示容量偏低、可能是控制器/節點不夠大、或旋轉磁碟不足以吸收寫入工作負載。
+* IOPS -直接衍生自ONTAP 節點物件上的RzZAPI呼叫。
+* 延遲-直接衍生自ONTAP 節點物件上的RzZAPI呼叫。
+* 處理量：直接衍生自ONTAP 節點物件上的RzZAPI呼叫。
+* 處理器- CPU數量。
+
