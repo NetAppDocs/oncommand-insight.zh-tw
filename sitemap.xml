@@ -230,14 +230,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/anomaly-detection-requirements.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-windows/anomaly-detection-requirements.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-windows/anomaly-detection-requirements.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/anomaly-detection-requirements.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
@@ -384,14 +384,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/dwh/backing-up-the-data-warehouse-database.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-windows/backing-up-the-data-warehouse-database.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-windows/backing-up-the-data-warehouse-database.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/dwh/backing-up-the-data-warehouse-database.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
@@ -566,14 +566,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/checking-the-installation.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-windows/checking-the-installation.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-windows/checking-the-installation.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/checking-the-installation.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
@@ -860,14 +860,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/dwh/configuring-your-asup-processing.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/config-admin/configuring-your-asup-processing.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/config-admin/configuring-your-asup-processing.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/dwh/configuring-your-asup-processing.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
@@ -1154,7 +1154,7 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/data-source-support-information.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/config-admin/data-source-support-information.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
@@ -1168,7 +1168,7 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/config-admin/data-source-support-information.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/data-source-support-information.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
@@ -1343,14 +1343,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/device-identification-and-data-source-planning.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-windows/device-identification-and-data-source-planning.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-windows/device-identification-and-data-source-planning.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/device-identification-and-data-source-planning.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
@@ -1406,14 +1406,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/downloading-the-oncommand-insight-installer.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-windows/downloading-the-oncommand-insight-installer.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-windows/downloading-the-oncommand-insight-installer.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/downloading-the-oncommand-insight-installer.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
@@ -2127,35 +2127,7 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/overview/</loc>
-      
-      <lastmod>2023-03-23T21:28:18+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/relnotes/</loc>
-      
-      <lastmod>2023-03-23T21:28:18+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/</loc>
-      
-      <lastmod>2023-03-23T21:28:18+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/dwh/</loc>
-      
-      <lastmod>2023-03-23T21:28:18+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/faq/</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/config-admin/</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
@@ -2169,7 +2141,21 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/config-admin/</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/reporting/</loc>
+      
+      <lastmod>2023-03-23T21:28:18+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/dwh/</loc>
+      
+      <lastmod>2023-03-23T21:28:18+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
@@ -2183,7 +2169,21 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/reporting/</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/relnotes/</loc>
+      
+      <lastmod>2023-03-23T21:28:18+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/overview/</loc>
+      
+      <lastmod>2023-03-23T21:28:18+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/faq/</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
@@ -2192,33 +2192,12 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/oncommand-insight/</loc>
       
-      <lastmod>2023-03-29T19:07:55+00:00</lastmod>
+      <lastmod>2023-04-04T13:24:49+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/oncommand-insight/config-admin/infinidat-infinibox-http-data-source.html</loc>
-      
-      <lastmod>2023-03-23T21:28:18+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/overview/insight-architecture.html</loc>
-      
-      <lastmod>2023-03-23T21:28:18+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/insight-architecture.html</loc>
-      
-      <lastmod>2023-03-23T21:28:18+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-windows/insight-architecture.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
@@ -2232,7 +2211,21 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/insight-browser-support.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-windows/insight-architecture.html</loc>
+      
+      <lastmod>2023-03-23T21:28:18+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/insight-architecture.html</loc>
+      
+      <lastmod>2023-03-23T21:28:18+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/overview/insight-architecture.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
@@ -2246,28 +2239,14 @@
     </url>
   
     <url>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/insight-browser-support.html</loc>
+      
+      <lastmod>2023-03-23T21:28:18+00:00</lastmod>
+      
+    </url>
+  
+    <url>
       <loc>https://docs.netapp.com/zh-tw/oncommand-insight/config-admin/insight-data-source-management.html</loc>
-      
-      <lastmod>2023-03-23T21:28:18+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/overview/insight-for-administrators-and-planners.html</loc>
-      
-      <lastmod>2023-03-23T21:28:18+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/insight-for-administrators-and-planners.html</loc>
-      
-      <lastmod>2023-03-23T21:28:18+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-windows/insight-for-administrators-and-planners.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
@@ -2281,7 +2260,21 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/insight-java-ui-requirements.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-windows/insight-for-administrators-and-planners.html</loc>
+      
+      <lastmod>2023-03-23T21:28:18+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/insight-for-administrators-and-planners.html</loc>
+      
+      <lastmod>2023-03-23T21:28:18+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/overview/insight-for-administrators-and-planners.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
@@ -2295,7 +2288,7 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/insight-logs.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/insight-java-ui-requirements.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
@@ -2309,7 +2302,7 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/insight-server-requirements.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/insight-logs.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
@@ -2317,6 +2310,13 @@
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-windows/insight-server-requirements.html</loc>
+      
+      <lastmod>2023-03-23T21:28:18+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/insight-server-requirements.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
@@ -2344,14 +2344,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/installation-prerequisites.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-windows/installation-prerequisites.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-windows/installation-prerequisites.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/installation-prerequisites.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
@@ -2379,14 +2379,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/installing-an-ethernet-monitoring-unit-linux.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-windows/installing-an-ethernet-monitoring-unit-linux.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-windows/installing-an-ethernet-monitoring-unit-linux.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/installing-an-ethernet-monitoring-unit-linux.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
@@ -2407,14 +2407,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/installing-the-anomaly-detection-software.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-windows/installing-the-anomaly-detection-software.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-windows/installing-the-anomaly-detection-software.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/installing-the-anomaly-detection-software.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
@@ -2442,7 +2442,7 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/installing-your-insight-licenses.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/config-admin/installing-your-insight-licenses.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
@@ -2456,7 +2456,7 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/config-admin/installing-your-insight-licenses.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/installing-your-insight-licenses.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
@@ -2694,14 +2694,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/missing-licenses.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-windows/missing-licenses.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-windows/missing-licenses.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/missing-licenses.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
@@ -2869,14 +2869,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/network-traffic-generated-by-oncommand-insight.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-windows/network-traffic-generated-by-oncommand-insight.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-windows/network-traffic-generated-by-oncommand-insight.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/network-traffic-generated-by-oncommand-insight.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
@@ -2918,13 +2918,6 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/oncommand-insight-installation-instructions.html</loc>
-      
-      <lastmod>2023-03-23T21:28:18+00:00</lastmod>
-      
-    </url>
-  
-    <url>
       <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-windows/oncommand-insight-installation-instructions.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
@@ -2932,14 +2925,7 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/oncommand-insight-licenses.html</loc>
-      
-      <lastmod>2023-03-23T21:28:18+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-windows/oncommand-insight-licenses.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/oncommand-insight-installation-instructions.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
@@ -2953,21 +2939,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/overview/oncommand-insight-overview.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-windows/oncommand-insight-licenses.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/oncommand-insight-overview.html</loc>
-      
-      <lastmod>2023-03-23T21:28:18+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-windows/oncommand-insight-overview.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/oncommand-insight-licenses.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
@@ -2981,7 +2960,28 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/opening-insight.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-windows/oncommand-insight-overview.html</loc>
+      
+      <lastmod>2023-03-23T21:28:18+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/oncommand-insight-overview.html</loc>
+      
+      <lastmod>2023-03-23T21:28:18+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/overview/oncommand-insight-overview.html</loc>
+      
+      <lastmod>2023-03-23T21:28:18+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/config-admin/opening-insight.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
@@ -2995,7 +2995,7 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/config-admin/opening-insight.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/opening-insight.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
@@ -3065,14 +3065,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/planning-the-installation.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-windows/planning-the-installation.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-windows/planning-the-installation.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/planning-the-installation.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
@@ -3205,14 +3205,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/remote-acquisition-unit-server-requirements.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-windows/remote-acquisition-unit-server-requirements.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-windows/remote-acquisition-unit-server-requirements.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/remote-acquisition-unit-server-requirements.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
@@ -3254,14 +3254,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/dwh/reporting-user-roles.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/reporting/reporting-user-roles.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/reporting/reporting-user-roles.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/dwh/reporting-user-roles.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
@@ -3310,14 +3310,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/dwh/restoring-the-data-warehouse-database.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-windows/restoring-the-data-warehouse-database.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-windows/restoring-the-data-warehouse-database.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/dwh/restoring-the-data-warehouse-database.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
@@ -3389,7 +3389,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/oncommand-insight//search.html</loc>
       
-      <lastmod>2023-03-29T19:08:12+00:00</lastmod>
+      <lastmod>2023-04-04T13:25:02+00:00</lastmod>
       
     </url>
   
@@ -3590,14 +3590,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/submitting-an-online-technical-support-request.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-windows/submitting-an-online-technical-support-request.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-windows/submitting-an-online-technical-support-request.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/submitting-an-online-technical-support-request.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
@@ -3667,14 +3667,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/troubleshooting-installations.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-windows/troubleshooting-installations.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-windows/troubleshooting-installations.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/troubleshooting-installations.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
@@ -3723,14 +3723,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/uninstalling-insight.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-windows/uninstalling-insight.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-windows/uninstalling-insight.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/uninstalling-insight.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
@@ -3751,14 +3751,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/uninstalling-the-anomaly-detection-engine-linux.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-windows/uninstalling-the-anomaly-detection-engine-linux.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-windows/uninstalling-the-anomaly-detection-engine-linux.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/uninstalling-the-anomaly-detection-engine-linux.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
@@ -3807,14 +3807,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/upgrading-data-warehouse.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-windows/upgrading-data-warehouse.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-windows/upgrading-data-warehouse.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/upgrading-data-warehouse.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
@@ -3877,14 +3877,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/upgrading-the-anomaly-detection-engine.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-windows/upgrading-the-anomaly-detection-engine.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-windows/upgrading-the-anomaly-detection-engine.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/upgrading-the-anomaly-detection-engine.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
@@ -3947,14 +3947,14 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/validating-the-rau-installation.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-windows/validating-the-rau-installation.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-windows/validating-the-rau-installation.html</loc>
+      <loc>https://docs.netapp.com/zh-tw/oncommand-insight/install-linux/validating-the-rau-installation.html</loc>
       
       <lastmod>2023-03-23T21:28:18+00:00</lastmod>
       
