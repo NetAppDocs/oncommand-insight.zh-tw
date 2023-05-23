@@ -35,9 +35,9 @@ summary: 用戶端機器需要中介軟體和瀏覽器修改、才能使用智�
 
 以下是一般用戶端組態需求：
 
-* 安裝Smart Card中介軟體、例如ActivClient（請參閱 http://militarycac.com/activclient.htm)[]
-* 修改IE瀏覽器（請參閱 http://militarycac.com/files/Making_AKO_work_with_Internet_Explorer_color.pdf)[]
-* 修改Firefox瀏覽器（請參閱 https://militarycac.com/firefox2.htm)[]
+* 安裝Smart Card中介軟體、例如ActivClient（請參閱
+* 修改IE瀏覽器（請參閱
+* 修改Firefox瀏覽器（請參閱
 
 
 其他組態步驟包括：
