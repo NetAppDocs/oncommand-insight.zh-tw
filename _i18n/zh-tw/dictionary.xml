@@ -8205,6 +8205,42 @@
   <block id="135cca1b87ae0b4a874f6d6184055603" category="sidebar">觀察物件隨時間變化的行為</block>
   <block id="a8ccc3b97766b616055316a691052a65" category="sidebar">比較一個物件的延遲總和與前10大物件的延遲總和</block>
   <block id="1e6ff685c4fea5f20ae54d736f584efe" category="sidebar">自訂報告的輸出格式與交付</block>
-  <block id="782e478a3967380e548c616b53e48fa3" category="paragraph">支援跨網域、多廠商資源管理與分析的單一解決方案、適用於實體與虛擬環境中的網路、儲存設備及伺服器OnCommand Insight 。Insight可協助您最佳化目前的基礎架構、讓您擁有適當規模的作業來滿足業務需求。它簡化了決定購買內容和購買時間的程序。它也能識別哪些工作負載是雲端移轉的候選對象、藉此降低複雜技術移轉（例如移轉至混合雲）期間的風險。有了Insight、您可以將資源整合到公司的整個IT服務供應鏈中、將IT基礎架構管理為端點對端點服務。</block>
   <block id="9a94b99275970f0f82451969eeccb836" category="sidebar">HDS Ops Center</block>
+  <block id="8020d56a67ade967a3254ada824b1406" category="summary">設定HDS Ops Center資料收集器。</block>
+  <block id="edfa0366cb6c25de6aa46576a0e54251" category="doc">Hitachi Ops Center資料收集器</block>
+  <block id="317ca49a534ef6dc0317a60fdf058fef" category="paragraph">此資料收集器使用Hitachi Ops Center的整合式應用程式套件來存取多個儲存設備的庫存和效能資料。針對庫存和容量探索、您的Ops Center安裝必須同時包含「Common Services」（通用服務）和「Administrator」（管理員）元件。為了收集效能、您還必須部署「分析器」。</block>
+  <block id="aa274d02dd5bbca295ce4b6cd3594c6d" category="paragraph">OnCommand Insight 會從此資料收集器取得下列庫存資訊。對於所取得的每種資產類型、都會顯示此資產最常用的術語。檢視或疑難排解此資料收集器時、請謹記下列術語：</block>
+  <block id="5c6ab1284b6b7a5a7102854a969c99be" category="cell">儲存系統</block>
+  <block id="6fa6e2299a829e04bba19b10e38dc56c" category="cell">同位元檢查群組</block>
+  <block id="7f47ab518e59deb2aed009c3db49ddbd" category="cell">儲存資源池（RAID）、磁碟群組</block>
+  <block id="88bda324c3afff84ed43de6af0cfdc82" category="cell">儲存資源池（精簡、快照）</block>
+  <block id="b539957d5ac5efa3c17ecf122d0aef01" category="cell">外部同位元檢查群組</block>
+  <block id="8d574b46d24459c09062877c134e14a5" category="cell">儲存資源池（後端）、磁碟群組</block>
+  <block id="08aa09e012efb5b185b38b15d4ded675" category="cell">儲存節點→控制器節點→連接埠</block>
+  <block id="a18b5712dface3f20bce7750886350d3" category="cell">主機群組</block>
+  <block id="5b52c3da7acdc6837b619fa0e7beb98b" category="cell">Volume對應與遮罩</block>
+  <block id="b4a20e3a6be7e6cd6f8e3dcdd45cb2a8" category="cell">Volume配對</block>
+  <block id="561b06d0d233f84983c474e6cd225d20" category="paragraph">附註：這些只是通用的術語對應、可能不代表此資料收集器的每個案例。</block>
+  <block id="ea9460ea7afc9634eafcb42137ae3f7b" category="paragraph">您必須具備下列條件才能收集庫存資料：</block>
+  <block id="d96f025cc7db5db06dd47e78c55d8f1e" category="list-text">裝載「Common Services」元件之Ops Center伺服器的IP位址或主機名稱</block>
+  <block id="8281bdee16e3d690812d635a332bd2cf" category="list-text">裝載Ops Center元件的所有伺服器上都有root / Sysadmin使用者帳戶和密碼。HDS在Ops Center 10.8+之前、並未針對LDAP/SSO使用者實作REST API支援</block>
+  <block id="fdfceedcfadaa8fc4e641a9271ff7595" category="section-title">效能要求</block>
+  <block id="8f2fd5a7846dd234e704c033378310ab" category="paragraph">若要收集效能資料、必須符合下列要求：</block>
+  <block id="d3a405c96e9fcea92b0929c28b531e59" category="list-text">必須安裝 HDS Ops Center 「 Analyzer 」模組</block>
+  <block id="e71e6bc0f8f44471c52859083251c1b7" category="list-text">儲存陣列必須提供 Ops Center 「分析器」模組</block>
+  <block id="8f4ab816532074b60c2865f1089b6d38" category="cell">Hitachi Ops Center IP位址</block>
+  <block id="211ba4facc37bc8a85949c753a2fcfbd" category="cell">裝載「Common Services」元件之Ops Center伺服器的IP位址或完整網域名稱</block>
+  <block id="8db0f231405345684c1dab98cc049f52" category="cell">Ops Center伺服器的使用者名稱。</block>
+  <block id="18bf6f2c111fb8ac2dbe99d3445cbadd" category="cell">Ops Center伺服器使用的密碼。</block>
+  <block id="bc742a3b20c159bc11ea844e4d798e34" category="cell">預設為HTTPS（連接埠443）</block>
+  <block id="d394f4a37cee9ff0a48907bfdacc4a9f" category="cell">置換TCP連接埠</block>
+  <block id="cd5f584259d833ff583a4824164dfbc3" category="cell">如果不是預設、請指定要使用的連接埠</block>
+  <block id="4908467e27b4191d95f9c906a4d8dcd3" category="cell">庫存輪詢之間的時間間隔。預設值為40。</block>
+  <block id="07570853d28c7dc0401130aea747f9fb" category="cell">指定在收集資料時是否要納入或排除下列陣列清單。</block>
+  <block id="e245ed75c6b828ee4ae338a39e57c9bc" category="cell">篩選裝置清單</block>
+  <block id="0f6a3a02976086b90f48da7e5992aa82" category="cell">要包含或排除的裝置序號以逗號分隔的清單</block>
+  <block id="7cde90d1aea7fffbc619c41625a35c52" category="cell">效能輪詢之間的時間間隔。預設值為300。</block>
+  <block id="5ea8c0bc0f3ff2ad5a8ecd87179c69f1" category="inline-link-macro">資料收集器支援對照表</block>
+  <block id="b13fdf15118fa90916588b42c9eab20f" category="paragraph">如需其他資訊、請參閱 <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> 頁面或中的 <block ref="6bcd41b5488d3cd417d31b80921f5af9" category="inline-link-macro-rx"></block>。</block>
+  <block id="16d15d3f29508a543513f5bccddd527e" category="paragraph">支援跨網域、多廠商資源管理與分析的單一解決方案、適用於實體與虛擬環境中的網路、儲存設備及伺服器OnCommand Insight 。Insight可協助您最佳化目前的基礎架構、讓您擁有適當規模的作業來滿足業務需求。它簡化了決定購買內容和購買時間的程序。它也能識別哪些工作負載是雲端移轉的候選對象、藉此降低複雜技術移轉（例如移轉至混合雲）期間的風險。有了Insight、您可以將資源整合到公司的整個IT服務供應鏈中、將IT基礎架構管理為端點對端點服務。</block>
 </blocks>
