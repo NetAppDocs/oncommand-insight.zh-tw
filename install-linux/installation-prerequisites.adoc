@@ -25,6 +25,6 @@ summary: 在安裝OnCommand Insight 支援程式之前、您必須先下載目�
 * Java 8 OnCommand Insight for the Java UI。
 +
 
-NOTE: 包含Java SE 8的付費Oracle授權OnCommand Insight 。客戶不需要購買任何額外的Java SE 8授權。本授權涵蓋Java SE 8搭配所有OCI元件的使用。請參閱 http://docs.netapp.com/oci-73/topic/com.netapp.ndc.notices/GUID-93BE9A1E-D79E-4A97-87A2-4DBE31372A16.html["通知"] 頁面以取得特定詳細資料。
+NOTE: 包含Java SE 8的付費Oracle授權OnCommand Insight 。客戶不需要購買任何額外的Java SE 8授權。本授權涵蓋Java SE 8搭配所有OCI元件的使用。請參閱 link:legal-notices.html["通知"] 頁面以取得特定詳細資料。
 
 

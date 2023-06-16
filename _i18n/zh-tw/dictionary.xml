@@ -228,7 +228,6 @@
   <block id="f54e475559c1e0bbea40068043297640" category="list-text">部署計畫、包括OnCommand Insight 適用於「支援伺服器」、「資料倉儲與報告」、以及遠端擷取單元的硬體與網路組態。</block>
   <block id="3f8a6e68b00f22c533895ece22d473da" category="list-text">Java 8 OnCommand Insight for the Java UI。</block>
   <block id="d254861f20bb59d58db872722e57ba9c" category="inline-link">通知</block>
-  <block id="699321795769c28cf1c69b5372a7d45b" category="admonition">包含Java SE 8的付費Oracle授權OnCommand Insight 。客戶不需要購買任何額外的Java SE 8授權。本授權涵蓋Java SE 8搭配所有OCI元件的使用。請參閱<block ref="def4fc5b0e06154939b4ae3afd91bf54" category="inline-link-rx"></block> 頁面以取得特定詳細資料。</block>
   <block id="b9f2c94d18eb493993627757483e8d1e" category="summary">從NetApp收到內含Insight授權金鑰的授權檔案後、您可以使用設定功能同時安裝所有授權。</block>
   <block id="595e865728eb02f9590430ea2511cab5" category="doc">安裝Insight授權</block>
   <block id="fad1f300af08a9c525cdac95524a08aa" category="paragraph">Insight授權金鑰儲存在中<block ref="be4117b0c842c4be8f9960294bdc2cd1" prefix=" " category="inline-code"></block> 或<block ref="38d7925a50d5b22cb1c850b0d12c9086" prefix=" " category="inline-code"></block> 檔案：</block>
@@ -8240,7 +8239,6 @@
   <block id="e245ed75c6b828ee4ae338a39e57c9bc" category="cell">篩選裝置清單</block>
   <block id="0f6a3a02976086b90f48da7e5992aa82" category="cell">要包含或排除的裝置序號以逗號分隔的清單</block>
   <block id="7cde90d1aea7fffbc619c41625a35c52" category="cell">效能輪詢之間的時間間隔。預設值為300。</block>
-  <block id="5ea8c0bc0f3ff2ad5a8ecd87179c69f1" category="inline-link-macro">資料收集器支援對照表</block>
-  <block id="b13fdf15118fa90916588b42c9eab20f" category="paragraph">如需其他資訊、請參閱 <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> 頁面或中的 <block ref="6bcd41b5488d3cd417d31b80921f5af9" category="inline-link-macro-rx"></block>。</block>
   <block id="16d15d3f29508a543513f5bccddd527e" category="paragraph">支援跨網域、多廠商資源管理與分析的單一解決方案、適用於實體與虛擬環境中的網路、儲存設備及伺服器OnCommand Insight 。Insight可協助您最佳化目前的基礎架構、讓您擁有適當規模的作業來滿足業務需求。它簡化了決定購買內容和購買時間的程序。它也能識別哪些工作負載是雲端移轉的候選對象、藉此降低複雜技術移轉（例如移轉至混合雲）期間的風險。有了Insight、您可以將資源整合到公司的整個IT服務供應鏈中、將IT基礎架構管理為端點對端點服務。</block>
+  <block id="ee3e2c17548456b388eeca1c8945d0fb" category="admonition">包含Java SE 8的付費Oracle授權OnCommand Insight 。客戶不需要購買任何額外的Java SE 8授權。本授權涵蓋Java SE 8搭配所有OCI元件的使用。請參閱 <block ref="22f0bd9eac0233f917b202967c553066" category="inline-link-macro-rx"></block> 頁面以取得特定詳細資料。</block>
 </blocks>
