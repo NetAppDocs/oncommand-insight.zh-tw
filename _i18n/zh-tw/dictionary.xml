@@ -8241,4 +8241,5 @@
   <block id="7cde90d1aea7fffbc619c41625a35c52" category="cell">效能輪詢之間的時間間隔。預設值為300。</block>
   <block id="16d15d3f29508a543513f5bccddd527e" category="paragraph">支援跨網域、多廠商資源管理與分析的單一解決方案、適用於實體與虛擬環境中的網路、儲存設備及伺服器OnCommand Insight 。Insight可協助您最佳化目前的基礎架構、讓您擁有適當規模的作業來滿足業務需求。它簡化了決定購買內容和購買時間的程序。它也能識別哪些工作負載是雲端移轉的候選對象、藉此降低複雜技術移轉（例如移轉至混合雲）期間的風險。有了Insight、您可以將資源整合到公司的整個IT服務供應鏈中、將IT基礎架構管理為端點對端點服務。</block>
   <block id="ee3e2c17548456b388eeca1c8945d0fb" category="admonition">包含Java SE 8的付費Oracle授權OnCommand Insight 。客戶不需要購買任何額外的Java SE 8授權。本授權涵蓋Java SE 8搭配所有OCI元件的使用。請參閱 <block ref="22f0bd9eac0233f917b202967c553066" category="inline-link-macro-rx"></block> 頁面以取得特定詳細資料。</block>
+  <block id="e465e42419c3405f98dfba07fa9da3fc" category="paragraph">OnCommand Insights 僅支援含 * Azure Active Directory* 的 SSO 。</block>
 </blocks>

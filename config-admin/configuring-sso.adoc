@@ -20,6 +20,8 @@ summary: 單一登入（SSO）可讓組織中的使用者使用OnCommand Insight
 ====
 SSO僅適用於Insight Server網路型UI。SSO不適用於資料倉儲、報告或Java用戶端UI元件。
 
+OnCommand Insights 僅支援含 * Azure Active Directory* 的 SSO 。
+
 ====
 
 
