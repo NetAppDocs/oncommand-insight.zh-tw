@@ -25,10 +25,6 @@ summary: 安全性管理工具可讓您管理Rous上的安全性選項。您可�
 
 更新Lau安全性組態的其中一種案例是、在伺服器上變更該使用者的密碼時、更新「擷取」使用者密碼。所有的Raus和Lau都使用與伺服器「擷取」使用者相同的密碼來與伺服器通訊。
 
-[NOTE]
-====
-
-====
 「擷取」使用者僅存在於Insight伺服器上。當Rau或Lau連線至伺服器時、會以該使用者的身分登入。
 
 請使用下列步驟來管理Rau上的安全性選項：
@@ -38,9 +34,14 @@ summary: 安全性管理工具可讓您管理Rous上的安全性選項。您可�
 == 步驟
 
 . 遠端登入執行Rau的伺服器
-. 以互動模式啟動安全管理工具： `Windows - C:\Program Files\SANscreen\securityadmin\bin\securityadmin.bat -i``Linux - /bin/oci-securityadmin.sh -i`
+. 以互動模式啟動安全管理工具：
++
+** Windows - `C:\Program Files\SANscreen\securityadmin\bin\securityadmin.bat -i`
+** Linux - `/bin/oci-securityadmin.sh -i`
 +
 系統會要求登入認證資料。
+
+
 
 . 輸入具有「admin」認證的帳戶使用者名稱和密碼。
 +
@@ -64,8 +65,6 @@ summary: 安全性管理工具可讓您管理Rous上的安全性選項。您可�
 [NOTE]
 ====
 還原可用於同步多個伺服器上的密碼和金鑰、例如：-變更一部伺服器上的加密金鑰-建立資料庫備份-將資料庫備份還原至第二部伺服器
-
-+
 
 ====
 ** *變更加密金鑰*

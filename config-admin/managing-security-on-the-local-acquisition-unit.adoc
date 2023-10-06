@@ -34,9 +34,14 @@ summary: 安全性管理工具可讓您管理本機擷取使用者（Lau）的�
 == 步驟
 
 . 遠端登入Insight伺服器。
-. 以互動模式（-I）啟動安全管理工具。
+. 以互動模式啟動安全管理工具：
++
+** Windows - `C:\Program Files\SANscreen\securityadmin\bin\securityadmin.bat -i`
+** Linux - `/bin/oci-securityadmin.sh -i`
 +
 系統會要求登入認證資料。
+
+
 
 . 輸入具有「admin」認證的帳戶使用者名稱和密碼。
 . 選取*本機擷取單位*以重新設定本機擷取單位安全性組態。
@@ -61,8 +66,6 @@ summary: 安全性管理工具可讓您管理本機擷取使用者（Lau）的�
 [NOTE]
 ====
 還原可用於同步多個伺服器上的密碼和金鑰、例如：-變更Lau上的加密金鑰-建立資料庫備份-將資料庫備份還原至每個Raus
-
-+
 
 ====
 ** *變更加密金鑰*

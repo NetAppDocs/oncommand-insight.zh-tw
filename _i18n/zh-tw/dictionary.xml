@@ -3376,7 +3376,6 @@
   <block id="ae5ec4adfd829d0ce42eda85f1bf19f3" category="list-text">Windows -<block ref="09b50f27173fab90f2f09515f3322532" prefix=" " category="inline-code"></block></block>
   <block id="6d43f414975e3172b0e6b0387f3c9660" category="list-text">Linux -<block ref="9363a944a51c65486664aed0f6e192fa" prefix=" " category="inline-code"></block></block>
   <block id="2d805e40f048f8ac5921fd582a426f41" category="list-text">遠端登入資料倉儲伺服器。</block>
-  <block id="92c5c92115fe622170841b7252788aa3" category="list-text">以互動模式啟動安全管理工具：<block ref="977ec0e53c2f0026946e460f126d1758" prefix=" " category="inline-code"></block></block>
   <block id="1e0243d49be54f99f7eef9855a7cee80" category="paragraph">系統會要求登入認證資料。</block>
   <block id="445ee2e4288af83712e4c04825cf6c34" category="list-text">輸入具有「admin」認證的帳戶使用者名稱和密碼。</block>
   <block id="c10f995fef645bfed0597a66f5e22e68" category="paragraph">系統會顯示資料倉儲的安全管理功能表：</block>
@@ -4404,7 +4403,6 @@
   <block id="166ace9389f2989154d4edf8ca669668" category="doc">管理Insight伺服器上的安全性</block>
   <block id="d71586f0584584e73897bf02e9802afa" category="paragraph">。<block ref="4924cdf1992856713a11ebac184ceb81" prefix=" " category="inline-code"></block> 工具可讓您管理Insight伺服器上的安全選項。安全管理包括變更密碼、產生新金鑰、儲存及還原您建立的安全組態、或將組態還原為預設設定。</block>
   <block id="34466f85207045ded27b393581889d20" category="list-text">遠端登入Insight伺服器。</block>
-  <block id="0bc4782a44f12c3fb60ecc61006b818c" category="list-text">以互動模式啟動安全管理工具：<block ref="095b9dfc195e5bbeafd5a7c2bb0ccd3f" prefix=" " category="inline-code"></block></block>
   <block id="4b2f543780a949ab3938618b76a6aeb5" category="list-text">選取*伺服器*。</block>
   <block id="15cf432cc55f528ff3c57c6406d8bcd4" category="paragraph">提供下列伺服器組態選項：</block>
   <block id="55ef7bc8b50b24453b764be4b80da043" category="paragraph">建立包含所有密碼和金鑰的資料保險箱備份壓縮檔、並將檔案放置在使用者指定的位置、或是下列預設位置：</block>
@@ -6252,7 +6250,6 @@
   <block id="0a03d1757c591cb47b67e3867b2aa573" category="doc">管理本地採購單位的安全性</block>
   <block id="1843d0ce10aa71f1d72edd6683f93064" category="paragraph">。<block ref="4924cdf1992856713a11ebac184ceb81" prefix=" " category="inline-code"></block> 此工具可讓您管理本機擷取使用者（Lau）的安全選項。安全管理包括管理金鑰和密碼、儲存及還原您建立的安全組態、或將組態還原為預設設定。</block>
   <block id="70ba259bdcb1df4b8b8840343db3ba72" category="paragraph">您必須擁有<block ref="21232f297a57a5a743894a0e4a801fc3" prefix=" " category="inline-code"></block> 執行安全組態工作的權限。</block>
-  <block id="19ba4ac9871bca5c94c0fac78e3c3a9b" category="list-text">以互動模式（-I）啟動安全管理工具。</block>
   <block id="bf598265068097bdfb964fb65b464993" category="list-text">選取*本機擷取單位*以重新設定本機擷取單位安全性組態。</block>
   <block id="3efa8859202eff1b280ec70c247e9ef0" category="paragraph">畫面會顯示下列選項：</block>
   <block id="db48c1af350671c4ffd32d01200d5950" category="paragraph">還原可用於同步多個伺服器上的密碼和金鑰、例如：-變更Lau上的加密金鑰-建立資料庫備份-將資料庫備份還原至每個Raus</block>
@@ -8242,4 +8239,7 @@
   <block id="16d15d3f29508a543513f5bccddd527e" category="paragraph">支援跨網域、多廠商資源管理與分析的單一解決方案、適用於實體與虛擬環境中的網路、儲存設備及伺服器OnCommand Insight 。Insight可協助您最佳化目前的基礎架構、讓您擁有適當規模的作業來滿足業務需求。它簡化了決定購買內容和購買時間的程序。它也能識別哪些工作負載是雲端移轉的候選對象、藉此降低複雜技術移轉（例如移轉至混合雲）期間的風險。有了Insight、您可以將資源整合到公司的整個IT服務供應鏈中、將IT基礎架構管理為端點對端點服務。</block>
   <block id="ee3e2c17548456b388eeca1c8945d0fb" category="admonition">包含Java SE 8的付費Oracle授權OnCommand Insight 。客戶不需要購買任何額外的Java SE 8授權。本授權涵蓋Java SE 8搭配所有OCI元件的使用。請參閱 <block ref="22f0bd9eac0233f917b202967c553066" category="inline-link-macro-rx"></block> 頁面以取得特定詳細資料。</block>
   <block id="e465e42419c3405f98dfba07fa9da3fc" category="paragraph">OnCommand Insights 僅支援含 * Azure Active Directory* 的 SSO 。</block>
+  <block id="1cb3ec988e29678c641cba59564947b3" category="list-text">以互動模式啟動安全管理工具：</block>
+  <block id="f098be646546d6fe2a75059a01c330f7" category="list-text">Windows -<block ref="6fc3ad2c3aa4e51a6e001ff98a533c91" prefix=" " category="inline-code"></block></block>
+  <block id="a8b0a56b2ae62eec476aea5806960a1a" category="list-text">Linux -<block ref="7e8977b89fc4dcb2507a133fc2b8b1fe" prefix=" " category="inline-code"></block></block>
 </blocks>

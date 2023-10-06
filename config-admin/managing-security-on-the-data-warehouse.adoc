@@ -28,9 +28,14 @@ summary: 安全性管理工具可讓您管理資料倉儲伺服器上的安全�
 == 步驟
 
 . 遠端登入資料倉儲伺服器。
-. 以互動模式啟動安全管理工具： `Windows - C:\Program Files\SANscreen\securityadmin\bin\securityadmin.bat -i``Linux - /bin/oci-securityadmin.sh -i`
+. 以互動模式啟動安全管理工具：
++
+** Windows - `C:\Program Files\SANscreen\securityadmin\bin\securityadmin.bat -i`
+** Linux - `/bin/oci-securityadmin.sh -i`
 +
 系統會要求登入認證資料。
+
+
 
 . 輸入具有「admin」認證的帳戶使用者名稱和密碼。
 +
