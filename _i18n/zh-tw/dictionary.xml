@@ -8242,4 +8242,6 @@
   <block id="1cb3ec988e29678c641cba59564947b3" category="list-text">以互動模式啟動安全管理工具：</block>
   <block id="f098be646546d6fe2a75059a01c330f7" category="list-text">Windows -<block ref="6fc3ad2c3aa4e51a6e001ff98a533c91" prefix=" " category="inline-code"></block></block>
   <block id="a8b0a56b2ae62eec476aea5806960a1a" category="list-text">Linux -<block ref="7e8977b89fc4dcb2507a133fc2b8b1fe" prefix=" " category="inline-code"></block></block>
+  <block id="f648cec7948633bd979fd848cdf2369a" category="paragraph">如果沒有連線狀態、請嘗試重新啟動服務。登入 Remote Acquisition Unit 系統並執行下列命令：</block>
+  <block id="ddf4df92bd698540e3e452308e7fb41e" category="paragraph">如果仍無法連線、請聯絡技術支援部門。</block>
 </blocks>
