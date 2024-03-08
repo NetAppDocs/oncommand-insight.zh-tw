@@ -55,13 +55,6 @@
   <block id="f4c7a3c5ae1df7a6c170973ba1bdce85" category="paragraph"><block ref="f4c7a3c5ae1df7a6c170973ba1bdce85" category="inline-link-rx"></block></block>
   <block id="5dd03e8d039863e563e049be198c3fd3" category="doc">版本資訊</block>
   <block id="496375f0bbb802e5ea6f5a6fcba708e1" category="paragraph">可在文件中心外部取得《發行說明》OnCommand Insight 。系統會提示您使用 NetApp 支援網站認證資料登入。</block>
-  <block id="780faab1d39b349a032166dec7a6c49f" category="paragraph">版本資訊提供多種格式：</block>
-  <block id="4c4ad5fca2e7a3f74dbb1ced00381aa4" category="inline-link-macro">html下載</block>
-  <block id="ca4a20095a4196847c38723518c7f153" category="paragraph"><block ref="ca4a20095a4196847c38723518c7f153" category="inline-link-macro-rx"></block></block>
-  <block id="bcd1b68617759b1dfcff0403a6b5a8d1" category="inline-link-macro">PDF</block>
-  <block id="581e802e571932f8696ad5f4752d825c" category="paragraph"><block ref="581e802e571932f8696ad5f4752d825c" category="inline-link-macro-rx"></block></block>
-  <block id="5c31b30ee6cc376dbc6882ca038161e5" category="inline-link-macro">EPUB</block>
-  <block id="341629fb64cec57ecb7f6465ced3c4ac" category="paragraph"><block ref="341629fb64cec57ecb7f6465ced3c4ac" category="inline-link-macro-rx"></block></block>
   <block id="b1ff5704b48e42d700d43961dd415064" category="doc">商標</block>
   <block id="a93bc0a57623c2facaa010825c808507" category="paragraph"><block ref="a93bc0a57623c2facaa010825c808507" category="inline-link-rx"></block></block>
   <block id="44255ed683c528ba0c41166a56d37b96" category="summary">此解決方案可簡化混合式IT基礎架構的作業管理、適用於內部部署環境、以及公有雲和私有雲OnCommand Insight 。</block>
@@ -7926,4 +7919,6 @@
   <block id="604712f524f66ebbf730593255d579b0" category="list-text">CentOS 7.2 、 7.5 、 7.6 、 7.7 、 7.8 、 7.9 、 CentOS 8 Stream 、 CentOS 9 Stream</block>
   <block id="ca69e87e6021e18fe43c490a1c0bff02" category="list-text">Oracle Enterprise Linux 7.5 、 7.6 、 7.7 、 7.8 、 7.9 、 8.1 、 8.2 、 8.3 、 8.4 、 8.5 、 8.8.8</block>
   <block id="1767cf140ccb13b28bdcc76c42d20028" category="summary">安裝需要安裝數個 OnCommand Insight 元件、 Insight Server 和 Data Warehouse 。</block>
+  <block id="91d2987029cf3cc4274c5eb4680b41dc" category="inline-link-macro">版本資訊 .PDF</block>
+  <block id="698989a8d25ebae051898deae3187b3f" category="paragraph"><block ref="698989a8d25ebae051898deae3187b3f" category="inline-link-macro-rx"></block></block>
 </blocks>
