@@ -22,10 +22,6 @@ entries:
     url: "/install-linux/data-warehouse-server-requirements-linux.html"
   - title: 遠端擷取單元伺服器需求
     url: "/install-linux/remote-acquisition-unit-server-requirements.html"
-  - title: 異常偵測需求
-    url: "/install-linux/anomaly-detection-requirements.html"
-  - title: Insight Java UI需求
-    url: "/install-linux/insight-java-ui-requirements.html"
   - title: 支援的瀏覽器OnCommand Insight
     url: "/install-linux/insight-browser-support.html"
 - title: Insight安裝說明
@@ -42,10 +38,6 @@ entries:
     entries:
     - title: 驗證遠端擷取單元安裝
       url: "/install-linux/validating-the-rau-installation.html"
-  - title: 安裝異常偵測軟體
-    url: "/install-linux/installing-the-anomaly-detection-software.html"
-  - title: 安裝乙太網路監控單元
-    url: "/install-linux/installing-an-ethernet-monitoring-unit-linux.html"
   - title: 檢查安裝
     url: "/install-linux/checking-the-installation.html"
     entries:
@@ -78,10 +70,6 @@ entries:
     url: "/install-linux/upgrading-data-warehouse.html"
   - title: 升級遠端擷取單元軟體
     url: "/install-linux/upgrading-remote-acquisition-units.html"
-  - title: 升級異常偵測引擎
-    url: "/install-linux/upgrading-the-anomaly-detection-engine.html"
-  - title: 升級乙太網路監控單元軟體
-    url: "/install-linux/upgrading-ethernet-monitoring-units.html"
   - title: 從Windows移轉至Linux
     url: "/install-linux/migrating-from-windows-to-linux.html"
 - title: 解除安裝OnCommand Insight
@@ -93,7 +81,3 @@ entries:
     url: "/install-linux/uninstalling-data-warehouse.html"
   - title: 解除安裝遠端擷取單元
     url: "/install-linux/uninstalling-a-remote-acquisition-unit-rau.html"
-  - title: 解除安裝乙太網路監控單元
-    url: "/install-linux/uninstalling-an-ethernet-monitoring-unit-emu-linux.html"
-  - title: 解除安裝異常偵測引擎
-    url: "/install-linux/uninstalling-the-anomaly-detection-engine-linux.html"

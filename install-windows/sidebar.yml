@@ -22,10 +22,6 @@ entries:
     url: "/install-windows/data-warehouse-and-reporting-server-requirements.html"
   - title: 遠端擷取單元伺服器需求
     url: "/install-windows/remote-acquisition-unit-server-requirements.html"
-  - title: 異常偵測需求
-    url: "/install-windows/anomaly-detection-requirements.html"
-  - title: Insight Java UI需求
-    url: "/install-windows/insight-java-ui-requirements.html"
   - title: 支援的瀏覽器OnCommand Insight
     url: "/install-windows/insight-browser-support.html"
 - title: Insight安裝說明
@@ -49,10 +45,6 @@ entries:
       url: "/install-windows/verifying-the-rau-service.html"
     - title: 驗證遠端擷取單元安裝
       url: "/install-windows/validating-the-rau-installation.html"
-  - title: 安裝異常偵測軟體
-    url: "/install-windows/installing-the-anomaly-detection-software.html"
-  - title: 安裝乙太網路監控單元
-    url: "/install-windows/installing-an-ethernet-monitoring-unit-linux.html"
   - title: 檢查安裝
     url: "/install-windows/checking-the-installation.html"
     entries:
@@ -111,8 +103,6 @@ entries:
       url: "/install-windows/back-up-the-security-configuration.html"
     - title: 升級遠端擷取單元伺服器
       url: "/install-windows/upgrading-remote-acquisition-servers.html"
-    - title: 升級異常偵測引擎
-      url: "/install-windows/upgrading-the-anomaly-detection-engine.html"
   - title: 完成升級後的工作
     url: "/install-windows/completing-post-upgrade-tasks.html"
     entries:
@@ -149,5 +139,3 @@ entries:
     url: "/install-windows/uninstalling-the-data-warehouse-software.html"
   - title: 解除安裝遠端擷取單元軟體
     url: "/install-windows/uninstalling-the-remote-acquisition-unit-software.html"
-  - title: 解除安裝異常偵測引擎
-    url: "/install-windows/uninstalling-the-anomaly-detection-engine-linux.html"

@@ -18,5 +18,3 @@ entries:
   url: "/faq/faq-integrating-insight-and-third-party-tools.html"
 - title: 儲存IOPS Data ONTAP
   url: "/faq/oci-faq-netapp-storage-iops.html"
-- title: 異常偵測
-  url: "/faq/faq-anomaly-detection.html"

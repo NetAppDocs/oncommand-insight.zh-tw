@@ -45,28 +45,6 @@ summary: 您應該定期查看健全狀況頁面、查看Insight系統元件的�
 
 
  a| 
-異常偵測引擎
- a| 
-引擎容量
- a| 
-監控異常偵測的應用程式數
- a| 
-在48個可能的應用程式中、監控的應用程式數量和百分比。
-
-
-
- a| 
-異常偵測引擎
- a| 
-引擎狀態
- a| 
-異常偵測引擎狀態
- a| 
-如果未偵測到錯誤、則會顯示「OK」（確定）、否則會顯示任何錯誤的相關資訊。請參閱 `prelert.log` 如需詳細資訊、請參閱檔案。
-
-
-
- a| 
 DWH
  a| 
 備份
@@ -263,12 +241,4 @@ Service Pack可用度
 如果啟用每週備份、「'OK'」會顯示「每週備份未啟用」。
 
 |===
-+
-[NOTE]
-====
-如果異常偵測引擎顯示錯誤、請參閱 `prelert.log` 如需詳細資訊、請參閱下列位置的檔案：- Windows： `disk drive:\install directory\SANscreen\Wildfly\Standalone\Logs`- Linux： `/var/log/netapp/oci/wildfly/`
-
-+
-
-====
 

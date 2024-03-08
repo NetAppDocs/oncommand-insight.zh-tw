@@ -28,8 +28,6 @@ entries:
       url: "/config-admin/editing-a-user-definition.html"
     - title: 刪除使用者帳戶
       url: "/config-admin/deleting-a-user-account.html"
-    - title: 設定單一登入（SSO）
-      url: "/config-admin/configuring-sso.html"
   - title: 設定登入警告訊息
     url: "/config-admin/configuring-a-login-warning-message.html"
   - title: Insight Security
@@ -125,17 +123,6 @@ entries:
       url: "/config-admin/editing-applications.html"
     - title: 刪除應用程式
       url: "/config-admin/deleting-an-application.html"
-  - title: 功能異常偵測的運作方式OnCommand Insight
-    url: "/config-admin/about-oncommand-insight-anomaly-detection.html"
-    entries:
-    - title: 設定應用程式以偵測異常狀況
-      url: "/config-admin/configuring-anomaly-detection-for-applications.html"
-    - title: 使用「異常」區段
-      url: "/config-admin/what-the-anomalies-section-enables-you-to-do.html"
-    - title: 異常偵測監控狀態
-      url: "/config-admin/anomaly-detection-monitoring-status.html"
-    - title: 建立應用程式效能原則
-      url: "/config-admin/creating-an-application-performance-policy.html"
   - title: 您的企業實體階層架構
     url: "/config-admin/your-business-entities-hierarchy.html"
     entries:
@@ -274,17 +261,6 @@ entries:
   url: "/config-admin/importing-ca-signed-ssl-certificates-for-cognos-and-dwh-insight-7-3-10-and-later.html"
 - title: 匯入SSL憑證
   url: "/config-admin/importing-an-ssl-certificate.html"
-- title: 功能異常偵測的運作方式OnCommand Insight
-  url: "/config-admin/about-oncommand-insight-anomaly-detection.html"
-  entries:
-  - title: 設定應用程式以偵測異常狀況
-    url: "/config-admin/configuring-anomaly-detection-for-applications.html"
-  - title: 使用「異常」區段
-    url: "/config-admin/what-the-anomalies-section-enables-you-to-do.html"
-  - title: 異常偵測監控狀態
-    url: "/config-admin/anomaly-detection-monitoring-status.html"
-  - title: 建立應用程式效能原則
-    url: "/config-admin/creating-an-application-performance-policy.html"
 - title: 您的企業實體階層架構
   url: "/config-admin/your-business-entities-hierarchy.html"
   entries:
@@ -635,8 +611,6 @@ entries:
         url: "/config-admin/moving-mysql-data-using-the-command-line.html"
     - title: 強制註釋更新
       url: "/config-admin/forcing-annotation-updates.html"
-    - title: 設定用戶端設定
-      url: "/config-admin/configuring-client-settings.html"
     - title: 檢查伺服器資源的狀態
       url: "/config-admin/checking-the-status-of-server-resources.html"
     - title: 尋找重影資料來源
@@ -688,11 +662,6 @@ entries:
           url: "/config-admin/what-the-user-data-section-enables-you-to-do-with-business-entities.html"
         - title: 使用「使用者資料」區段來指派或修改附註
           url: "/config-admin/what-the-user-data-section-enables-you-to-do-with-annotations.html"
-      - title: 異常
-        url: "/config-admin/anomalies.html"
-        entries:
-        - title: 使用「異常」區段
-          url: "/config-admin/what-the-anomalies-section-enables-you-to-do.html"
       - title: 專家觀點
         url: "/config-admin/expert-view.html"
         entries:

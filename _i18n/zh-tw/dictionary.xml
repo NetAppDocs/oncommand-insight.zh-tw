@@ -22,7 +22,6 @@
   <block id="bc9a0e53201a78084f3be6cdf223f01a" category="summary">典型的安裝功能包括資料擷取和資料倉儲及報告、所有這些都可從網路型UI輕鬆存取OnCommand Insight 。若要提升環境安全、可透過遠端擷取設備進行採購。</block>
   <block id="cbea0ec44d983322187da72ec3f19bea" category="doc">Insight架構</block>
   <block id="781a537eede3e8ece2962e9cd24b7941" category="paragraph">Insight架構的主要元件如下圖所示：</block>
-  <block id="94dae305678ebf7c49e41fb9babba0f5" category="image-alt">OCI架構2022</block>
   <block id="41079d2bf9c42be7f9b826bdc85bd684" category="list-text">*《伺服器*》OnCommand Insight</block>
   <block id="848f42b0b2f85d3064eca1534e89e858" category="paragraph">此伺服器OnCommand Insight 包含主要的資料儲存庫和分析元件。伺服器持續建置環境的端點對端點拓撲、分析環境、並在偵測到事件或違規時產生警示。</block>
   <block id="0fff5955a40293ce774a0dcf3f20fbf6" category="list-text">*併購*</block>
@@ -32,8 +31,6 @@
   <block id="5fa4293becd1dc0f9074e7539e9121bb" category="paragraph">API允許從外部代理程式收集資料。您可以使用查詢和小工具、在Web UI中檢視整合資料。儀表板可包含「原生」Insight資料和整合資料。您可以將篩選、彙總和分組套用至這些儀表板中的資料。</block>
   <block id="d1d5b0ca67cfe96cd1bace50b8b15cbd" category="list-text">*網路Ui*</block>
   <block id="cb92e9f684eeb01c0e2f96d06e7bfb7b" category="paragraph">適用於Insight的HTML5網路型使用者介面可讓您設定資料來源和監控環境、包括原則、臨界值和警示。接著、您可以使用網路UIasset儀表板和資產頁面來識別及研究潛在問題。您可以使用各種小工具來建立自訂儀表板、每個小工具都能在顯示、分析及記錄資料方面提供廣泛的靈活度。</block>
-  <block id="843442d2cf2a90606f3b5ca2e83a789c" category="list-text">*異常偵測*</block>
-  <block id="3016ad8d2d8300c62d831340f8bc6f21" category="paragraph">異常狀況是應用程式基礎架構中的效能變更事件、不符合先前觀察到的和預期的模式。異常狀況偵測是針對服務應用程式的基礎架構、找出處理模式和行為的變更。這些週期性處理模式包括在營業時間和非業務營運期間、工作負載效能中的歷史「退潮和流程」。</block>
   <block id="f5faf2242b2fa14be9da1261a449bfc8" category="list-text">*資料倉儲*</block>
   <block id="66a29ca2dfa0af940b3a90e6e776089d" category="paragraph">「Data倉儲」是一個集中儲存庫、可儲存來自多個Insight伺服器OnCommand Insight 的資料、並將資料轉換成通用的多維資料模型、以供查詢和分析。</block>
   <block id="076d5bf5b62eeeaa4319e542f79e4560" category="paragraph">利用此功能、您可以存取由數個資料市場所組成的開放式資料庫、以便產生自訂容量與效能報告、例如計費報告、含歷史資料的趨勢報告、使用分析及預測報告OnCommand Insight 。</block>
@@ -125,9 +122,6 @@
   <block id="9b97b7bd5e0a87be7bf218224ada83cf" category="cell">需求</block>
   <block id="696c660ff8d9323e55146a6dbd4e4088" category="paragraph">作業系統</block>
   <block id="8a4d13d55f6e75b3d004e5743a5c869b" category="paragraph">執行下列其中一種授權版本的電腦、不執行其他應用程式層級的軟體：</block>
-  <block id="1f1d8f11db83c344a83879c06b935ece" category="list-text">Red Hat Enterprise Linux 7.3、7.4、7.5、7.6、7.7、 7.8、7.9、8.1、8.2、8.3、 8.4、8.5</block>
-  <block id="640d398d83076931a5e8ba7e56d308e7" category="list-text">CentOS 7.2、7.5、7.6、7.7、7.8、 7.9、CentOS 8串流</block>
-  <block id="086e2db98b4f27929bc5419ade609f8d" category="list-text">Oracle Enterprise Linux 7.5、7.6、7.7、7.8、7.9、 8.1、8.2、8.3、8.4、8.5</block>
   <block id="280b84c0bc94d426f1fbfd859453e4d5" category="paragraph">建議使用專屬伺服器。</block>
   <block id="2b55387dd066c5bac646ac61543d152d" category="paragraph">CPU</block>
   <block id="805053e0ff5abb1e01f2d2ce7d07ad96" category="paragraph">4個CPU核心</block>
@@ -139,15 +133,7 @@
   <block id="4a2496d2431df297a6e6be29d518b18e" category="paragraph">100 Mbps / 1 Gbps乙太網路連線、靜態IP位址、所有FC裝置的IP連線、OnCommand Insight 以及連接至該伺服器的必要連接埠（80或443）。</block>
   <block id="d08ccf52b4cdd08e41cfb99ec42e0b29" category="paragraph">權限</block>
   <block id="8f183e2caf65e03a6564fdef21b08d24" category="paragraph">Rau伺服器上的Sudo權限</block>
-  <block id="bf2f43c35cde6e5c19db645f8fb01c64" category="summary">從版本7.3.9開始OnCommand Insight 、您可以執行異常偵測軟體的即時升級。線上升級可保留您的異常偵測資料和異常分數。</block>
-  <block id="ff353bc31f9e942f91e265c4c6cdb480" category="doc">升級異常偵測引擎</block>
-  <block id="d620a4ac58d591c29b3d57850e7c8bb9" category="list-text">系統必須執行OnCommand Insight 的是更新版本的版本。</block>
-  <block id="4618c7bb0bcf2623a8802c1f09840b64" category="list-text">建議OnCommand Insight 您在升級Anomaly Detection Engine之前、先升級此伺服器。</block>
   <block id="bbe48fb854ea022537208eeeff822f91" category="section-title">關於這項工作</block>
-  <block id="8e567eee290247a8b5cdfaf6b60cb3b7" category="paragraph">請使用下列步驟進行升級：</block>
-  <block id="220e3f5f6896809a6a533ed1e63e77c9" category="list-text">瀏覽至安裝程式所在的目錄：<block ref="06820b4fd3f4bf8c967137556e1150fb" prefix=" " category="inline-code"></block></block>
-  <block id="d533cfd77fcdf443cb180b0b32392d78" category="list-text">安裝異常偵測升級軟體：<block ref="2c3986ab79d3334f9a4beeaceaf24845" prefix=" " category="inline-code"></block></block>
-  <block id="325b219be2599832e340062321c04a8a" category="paragraph">異常偵測軟體已成功登錄OnCommand Insight 到伺服器。</block>
   <block id="79a890d8a842e529a6d57170b0308abc" category="summary">您可以OnCommand Insight 從NetApp 支援網站 下列網址下載此解決方法：</block>
   <block id="525ca5d315c08990716e433bdc084590" category="doc">正在下載OnCommand Insight 此安裝程式</block>
   <block id="0373910e51252c7b97dcbea9f4942604" category="inline-link">mysupport.netapp.com</block>
@@ -226,8 +212,6 @@
   <block id="f561dcdac12278d2256171cb6859083d" category="list-text">最低的硬體與軟體環境</block>
   <block id="ec0dd3456d02ca0b59c297320522cb69" category="paragraph">目前的產品可能會耗用其他硬體資源（因為OnCommand Insight 強化的功能性）、而OnCommand Insight 這些資源並未用於舊版的整合式功能。</block>
   <block id="f54e475559c1e0bbea40068043297640" category="list-text">部署計畫、包括OnCommand Insight 適用於「支援伺服器」、「資料倉儲與報告」、以及遠端擷取單元的硬體與網路組態。</block>
-  <block id="3f8a6e68b00f22c533895ece22d473da" category="list-text">Java 8 OnCommand Insight for the Java UI。</block>
-  <block id="d254861f20bb59d58db872722e57ba9c" category="inline-link">通知</block>
   <block id="b9f2c94d18eb493993627757483e8d1e" category="summary">從NetApp收到內含Insight授權金鑰的授權檔案後、您可以使用設定功能同時安裝所有授權。</block>
   <block id="595e865728eb02f9590430ea2511cab5" category="doc">安裝Insight授權</block>
   <block id="fad1f300af08a9c525cdac95524a08aa" category="paragraph">Insight授權金鑰儲存在中<block ref="be4117b0c842c4be8f9960294bdc2cd1" prefix=" " category="inline-code"></block> 或<block ref="38d7925a50d5b22cb1c850b0d12c9086" prefix=" " category="inline-code"></block> 檔案：</block>
@@ -244,26 +228,13 @@
   <block id="3b3a1364f4d7af4c83d5eab1d2b1776f" category="paragraph">安裝授權之後、您可以執行下列組態工作：</block>
   <block id="ade6ff4e161cfd839a5428d635d1bca3" category="list-text">設定資料來源。</block>
   <block id="d55d4730cd63d101a4e51a4282bf05d3" category="list-text">建立OnCommand Insight 不一樣的使用者帳戶。</block>
-  <block id="f6ffcbcbdf564d6f53be9910e4d17f57" category="summary">安裝時需要安裝多OnCommand Insight 個支援元件、Insight Server、Data倉儲和Anomaly Detection。</block>
   <block id="b13dc29b3567d9719c2a677b9ba384b1" category="doc">Insight安裝說明</block>
   <block id="155cfd2cd5ce68ad7c458534598fcb46" category="paragraph">安裝包括下列主要工作：</block>
   <block id="a0e020d70e82199a322efedd30084efd" category="list-text">安裝OnCommand Insight 伺服器</block>
   <block id="da08000a35f4680a65966e1fe3c95486" category="list-text">安裝授權</block>
   <block id="c6cea39478c5ecaec1792e230203316c" category="list-text">或者、安裝DWH和報告（必須安裝在獨立的機器或虛擬機器上）。報告需要Microsoft Windows。）</block>
   <block id="0bc2dc363cfebaf04ba22eff9615f811" category="list-text">或者、安裝遠端擷取單元（Rau）、從位於防火牆後方的裝置資源取得資訊、位於遠端站台、或位於私有網路上</block>
-  <block id="8d8e2cae309055710b39782a331d0f9f" category="list-text">或者、安裝異常偵測引擎（必須安裝在獨立的機器或虛擬機器上）。</block>
   <block id="6aa3b5caf5c77980d08c1c82a9c9fb08" category="paragraph">安裝之後、您必須設定Insight以取得環境的相關資訊。所需的工作請參閱《_ OnCommand Insight 關於組態與系統管理的指南_》。</block>
-  <block id="7624a3bc50a4d0e7472bb915c27d2528" category="summary">包含將機器學習異常偵測套用至Insight資料的軟體OnCommand Insight 。您可以將此軟體與其他OnCommand Insight 的元件分開安裝。</block>
-  <block id="7138043116ac72ce6b70cc089d607b0d" category="doc">安裝異常偵測軟體</block>
-  <block id="f4fb1a5be6f4ab38f541a0753ff751bb" category="list-text">使用具有Sudo權限的帳戶登入異常偵測伺服器。</block>
-  <block id="3d232d0981c4a74ccbb055b4b11bd2fc" category="list-text">複製<block ref="daf4de58883c030f033f07e61debf025" prefix=" " category="inline-code"></block> 包含異常偵測軟體至Linux伺服器的檔案。</block>
-  <block id="607a0bca574134a62394b9a0a8d421f3" category="list-text">將檔案解壓縮至<block ref="509215294dc791fec13862cd98fdd51d" prefix=" " category="inline-code"></block> 目錄。</block>
-  <block id="48e8966586449f0ab7ad4b8bc01aab4c" category="list-text">安裝異常偵測軟體：<block ref="2c3986ab79d3334f9a4beeaceaf24845" prefix=" " category="inline-code"></block></block>
-  <block id="2b88f82b270731d6c14e480e9c6034b4" category="paragraph">在安裝期間、系統會提示您輸入OnCommand Insight 支援管理員權限之帳戶的伺服器名稱或IP位址、以及使用者名稱和密碼。</block>
-  <block id="6272a37b6fdabba84394dea70270fba1" category="paragraph">您可以使用下列命令移除異常偵測軟體：<block ref="ac7386cfa93ad2dc9268c8ce22d2c086" prefix=" " category="inline-code"></block></block>
-  <block id="379ea1020cfa1fefd08f3baf8674f5a6" category="paragraph">軟體會自動以OnCommand Insight 安裝中指定的功能執行個體登錄。軟體只能與OnCommand Insight 登錄的實例進行通訊、OnCommand Insight 只能在一個伺服器上註冊一個軟體執行個體。</block>
-  <block id="2aa5be30c9d6ffba27ddab864539b209" category="paragraph">如果您重新啟動執行異常偵測軟體的伺服器或Insight伺服器、異常偵測程序會自動重新啟動。</block>
-  <block id="29a28089a03ac433768852fb647d8ebb" category="paragraph">如果您透過命令列提供參數來安裝異常偵測軟體、而不是讓install提示您輸入參數、則除非您提供下列參數、否則無法向Insight伺服器註冊：<block ref="9db3fa6492070a7f5c8b2a4fca743443" prefix=" " category="inline-code"></block></block>
   <block id="34c35869eb43400af70a2554de9dc787" category="summary">建議使用專屬伺服器。請勿在安裝任何其他應用程式的伺服器上安裝Insight。實體與虛擬伺服器均受支援、但必須符合產品需求。</block>
   <block id="9d774d9c58d17f970889f6c9505ef606" category="doc">Insight伺服器需求</block>
   <block id="0b5d8c19207e5aff16cf65d249beaba0" category="paragraph">您必須擁有Sudo權限才能安裝OnCommand Insight 此功能。</block>
@@ -365,7 +336,6 @@
   <block id="406866f84eff43cbb296fa4c0265b16c" category="cell">不含執行授權</block>
   <block id="e498749f3c42246d50b15c81c101d988" category="paragraph">應用程式</block>
   <block id="93cba07454f06a4a960172bbd6e2a435" category="paragraph">是的</block>
-  <block id="efcdcc7ca5e8471040c8d52a89ca2d1d" category="paragraph">無效能資料或圖表；無異常偵測相關小工具</block>
   <block id="76c3fe1d90eec0f4dbe5dd8bf85ff05b" category="paragraph">虛擬機器</block>
   <block id="ef7835f79624e5935e6b99dcc37cc0e8" category="paragraph">無效能資料或圖表</block>
   <block id="1b21b0d71706897b69f108572c444d40" category="paragraph">Hypervisor</block>
@@ -433,13 +403,6 @@
   <block id="41b6085022627901ddc49814d96fa6ed" category="paragraph"><block ref="65fe9c4eef3cd5c95369411a4c5013a0" prefix="" category="inline-code"></block></block>
   <block id="ca82149b3c900ed1ef7cb1f26d4e10d2" category="list-text">閱讀授權合約、接受合約、然後依照提示進行。</block>
   <block id="3b6525d4cad4ffe9869d6800e84d2a55" category="list-text">評估及修改專案計畫、以滿足不斷變化的專案需求。 </block>
-  <block id="e6d1eb43f2a4d493b93c2395a7cc2494" category="summary">由於《The InsightJava UI Client》OnCommand 是在電腦上的Java執行時間環境中運作、因此務必確保環境符合特定的作業系統、CPU和記憶體需求。</block>
-  <block id="224c83e4bf7c3768700dae5e8bea10d2" category="doc">Insight Java UI需求</block>
-  <block id="8fae3a40bd4aed9df9620c7ee712dd16" category="paragraph">若要存取Java UI用戶端、您必須在電腦上安裝Java執行時間環境（JRE）。</block>
-  <block id="90c7c2e8790783f1df2f971c2f5b02c0" category="paragraph">針對NetApp 7.3.2及更新版本、執行Insight Java用戶端需要64位元版本的Java執行時間環境（JRE）OnCommand Insight 。</block>
-  <block id="8e8abb541e6fc5d7f99f14fd0607fc26" category="paragraph">任何啟用Java 8的機器。Java型用戶端支援Windows、Mac及Linux平台。</block>
-  <block id="1a07a013eadb3ab60faf25ccacf16775" category="paragraph">需要1.8 GHz或更快的速度。</block>
-  <block id="87874218ec3bb5db996e43a45f181387" category="paragraph">建議使用2 GB以上的容量。如果您要監控複雜資料中心的效能（超過50、000個交換器連接埠）、伺服器需要更多記憶體。這僅適用於安裝「執行」授權的情況。</block>
   <block id="4ba7db96b2ad7862c83e11f59933ef05" category="summary">不同OnCommand Insight 的功能需要不同的授權。您在OnCommand Insight 畫面上看到的內容是由安裝的授權所控制。如OnCommand Insight 需每個授權所控制功能的相關資訊、請參閱「支援服務」一節。</block>
   <block id="e1e36e8b51e875a3cdd8f0d3850c0eb8" category="doc">遺失授權</block>
   <block id="a9ae48078e4a4ccb77db833f427555a5" category="paragraph">如OnCommand Insight 需每個授權所控制功能的相關資訊、請參閱「支援服務」一節。</block>
@@ -509,14 +472,6 @@
   <block id="636740feec1ee5c4f219654054619f6d" category="list-text">靜態IP位址</block>
   <block id="1a4dca0ecb55f15433fc3f3f9d5e3a92" category="list-text">針對支援此功能的OnCommand Insight 支援流程、連接埠80、443、1098、1099、 3873、8083及4444至4446</block>
   <block id="bbbd911efb95702c0a202151aa574995" category="list-text">適用於MySQL、連接埠3306</block>
-  <block id="e24260dd60095c9796b28e259a6ca74d" category="summary">升級Insight伺服器軟體之後、您必須升級乙太網路監控軟體。</block>
-  <block id="97723dc8c17493bf52db72800135701f" category="doc">升級乙太網路監控單元軟體</block>
-  <block id="3b73f8663024a0e063eca1e294fc98f4" category="paragraph">乙太網路監控單元（EMU）不支援OnCommand Insight 版本7.3.12及更新版本。</block>
-  <block id="fb9d25acc517d7b6ba7c8039069446c5" category="list-text">使用具有Sudo權限的帳戶登入乙太網路監控單元（EMU）伺服器。</block>
-  <block id="3d9c8167d76a9ce4f52ec5f905602f72" category="list-text">請從NetApp 支援網站 下列網址下載Insight EMU軟體：</block>
-  <block id="4d1c58c5fe9e87b8420bd247e9f791ce" category="paragraph"><block ref="87892477e01d42648297f3aea55ef62e" prefix="" category="inline-code"></block></block>
-  <block id="5e9dbee21b81812266404f2352a90f1b" category="paragraph"><block ref="d0dfcb070be407e3d044bc020c0e3a9b" prefix="" category="inline-code"></block></block>
-  <block id="08204cf84ff096bbb388860058565467" category="paragraph"><block ref="c5c6ee300c874e23342cd2bbe56228e6" prefix="" category="inline-code"></block></block>
   <block id="17f903a116974e5c503ba3dcc7053a74" category="summary">升級Insight伺服器軟體之後、您必須升級資料倉儲軟體。</block>
   <block id="1654456e05fc33c06405518594fac63f" category="doc">升級Data倉儲軟體</block>
   <block id="5ee345c5a2ed00921029e18fa737313e" category="list-text">使用具有Sudo權限的帳戶登入資料倉儲（DWH）伺服器。</block>
@@ -529,54 +484,6 @@
   <block id="7d32fb61572925204d9ecf7cadb86889" category="list-text">還原舊版的資料庫。</block>
   <block id="db3b528881272e817778653bd6a3086f" category="paragraph">如OnCommand Insight 需如何還原OCI資料庫的相關資訊、請參閱《_此功能的組態與管理指南》。</block>
   <block id="7a745dc6cd7e2c6c16aae1759a02f021" category="list-text">解除安裝舊版的Insight for Windows。</block>
-  <block id="38621ba07cef79ec6aa410095fb2eebd" category="summary">您可以在不再需要乙太網路監控單元時將其解除安裝。</block>
-  <block id="2b952128a8cee52c6fdffc4a72bb3b6f" category="doc">解除安裝乙太網路監控單元</block>
-  <block id="292196811d703e0bff4c2bd8b81b5385" category="list-text">使用具有Sudo權限的帳戶登入乙太網路監控單元伺服器。</block>
-  <block id="c5eb4cf71b7064e79828daece8a7afa4" category="list-text">解除安裝完成後、請重新啟動伺服器。</block>
-  <block id="b35bbce7dc492045760ce7fa507074b9" category="summary">您可以在不再需要異常偵測引擎時、將其解除安裝。</block>
-  <block id="f746f5a2d25b97546fe1a7c859e97087" category="doc">解除安裝異常偵測引擎</block>
-  <block id="a436f9dc1756324adb0972934e1a9462" category="list-text">使用具有Sudo權限的帳戶、登入安裝異常偵測引擎軟體的伺服器。</block>
-  <block id="4ee722845930f9667aaa28ce0f170f58" category="list-text">您可以檢視的語法、命令引數及參數使用量<block ref="ee7b9555ff30b697996b5e8e02a0fd1d" prefix=" " category="inline-code"></block> 輸入下列命令：<block ref="c99387845efec9ce94a51e8dacf099c4" prefix=" " category="inline-code"></block></block>
-  <block id="e2144205ae05b45f64e46125af81b3da" category="list-text">輸入下列命令：<block ref="ac7386cfa93ad2dc9268c8ce22d2c086" prefix=" " category="inline-code"></block></block>
-  <block id="5f2915400cefff705af2a5947418808a" category="summary">異常偵測軟體需要特定的作業系統、記憶體容量、CPU核心和磁碟空間。您必須遵守特定要求、才能成功安裝異常偵測軟體。</block>
-  <block id="340c5cfe5dd78574fcc6c7c57e251b62" category="doc">異常偵測需求</block>
-  <block id="68c6865e99a13f429d0ef3610804fb97" category="list-text">CentOS 7.5、7.6、7.7、7.8、7.9、 CentOS 8串流</block>
-  <block id="bc1ed03cfb434285fd82f3aaaa6c01fd" category="list-text">SUSE Enterprise Linux 15.1,15.2、15.3</block>
-  <block id="c169d0ffbdf13fe5ee2e914fa7deaaa3" category="list-text">openSUSE 15.1、15.2、15.3</block>
-  <block id="4f04a278096f25c44bc09412f264cc40" category="paragraph">授權版本可確保作業系統自動解決安裝所需的相依性。</block>
-  <block id="4000cb5b6e8dbd4e1f61e27a4950635c" category="paragraph">只要保留執行個體的CPU和記憶體資源、異常偵測就能在虛擬環境中執行。</block>
-  <block id="b2d235f3dc23acbfc894802c4044bfcd" category="paragraph">CPU與記憶體</block>
-  <block id="194137ea2fa86e64e693e332c626a4c7" category="paragraph">8核心。64 GB記憶體伺服器。</block>
-  <block id="c422b91d850ba8416935d17e6e7186e4" category="paragraph">伺服器需要200 GB的可用磁碟空間、磁碟空間分區如下：</block>
-  <block id="85ce5af400f8522f4251269d11f27999" category="list-text">150 GB英里<block ref="b480d3110c6a45441d70aa3c54676c8b" prefix=" " category="inline-code"></block></block>
-  <block id="3148ac8dddf10f5ed498f44bff0045dd" category="list-text">25 GB英里<block ref="72ab0dd25459f7bfe6f0f90e0af20861" prefix=" " category="inline-code"></block></block>
-  <block id="1454022f75a08aa8dfa8f1fa88fd2a5d" category="list-text">25 GB英里<block ref="68ab1268abb7e5f5688810968df97d6b" prefix=" " category="inline-code"></block></block>
-  <block id="7b45788f1f9dfcf2c229f724c2d5ecb0" category="paragraph">軟體安裝需要下列磁碟空間：</block>
-  <block id="38d65ea4e1f69551ace9d32cf07f62d8" category="list-text">5 GB英里<block ref="b480d3110c6a45441d70aa3c54676c8b" prefix=" " category="inline-code"></block></block>
-  <block id="c6600db0f87a60a62502c29074712033" category="paragraph">這是安裝的最佳實務做法 <block ref="68ab1268abb7e5f5688810968df97d6b" prefix="" category="inline-code"></block>和<block ref="ca905eb4a00d34150573153a09e2e79b" prefix=" " category="inline-code"></block> 在獨立於根檔案系統的磁碟上 <block ref="6666cd76f96956469e7be39d750cc7d9" prefix="(" category="inline-code"></block>）。</block>
-  <block id="3907348898ee326f746e8eb5cefef444" category="paragraph">需要Sudo權限才能安裝異常偵測軟體。</block>
-  <block id="7a5b99fbf19b5e11aad9413912155a47" category="paragraph">您要安裝異常偵測軟體的Insight伺服器、必須與執行異常偵測引擎的伺服器位於同一個網路、或至少位於同一個站台或資料中心。異常偵測軟體不支援廣域網路（WAN）的組態設定。</block>
-  <block id="c2c92b9ed2945d54ee78a7714b09d2e5" category="paragraph">TCP連接埠8080和9200必須在VM上開啟。</block>
-  <block id="ee68e5b99222bbc29a480fcb0d1d6ee2" category="paragraph">先決條件</block>
-  <block id="77437f92a095a2c97460e08307b7a98b" category="paragraph">您必須擁有有效的Perform授權。您必須擁有要安裝異常偵測軟體的Insight伺服器IP位址。</block>
-  <block id="85665b4cdefab49172e9209dddac198b" category="paragraph">如果不接受預設連接埠、則Insight伺服器上必須有替代連接埠號碼。</block>
-  <block id="12b9a8427b4a12d44b8d19723f23ca39" category="paragraph">您必須擁有VM上具有管理員權限之帳戶的使用者名稱和密碼。</block>
-  <block id="2674d486addedfcb5c8e510f29b39e44" category="paragraph">您必須輸入兩個反斜槓（company \使用者）作為使用者名稱、其中包含單一反斜槓（company \使用者）。</block>
-  <block id="d006050f39831f55ac5643ec358ada88" category="paragraph">使用者名稱不可在反斜槓（company）後面加上「t」。</block>
-  <block id="1d1e71bf81fc1e2059c4409d58e7c111" category="paragraph">您必須與NetApp代表討論並驗證所有規模調整建議。</block>
-  <block id="85c3b2701090123a1e1b551f0f106170" category="summary">「乙太網路監控單元（emus）會檢查您環境中的網路封包、以便針對從主機到儲存資源的網路流量、進行效能疑難排解。</block>
-  <block id="4495966a4888c6423d7d04683e706087" category="doc">安裝乙太網路監控單元</block>
-  <block id="775558fc56e3bb2b08bfc6acfbb041c6" category="paragraph">「乙太網路監控單元（emus）會檢查您環境中的網路封包、以便針對從主機到儲存資源的網路流量、進行效能疑難排解。</block>
-  <block id="7517703d81b39b4b3888c290947ec7d0" category="list-text">使用具有Sudo權限的帳戶登入EMU伺服器。</block>
-  <block id="ec78855ad720e56fd5da0d7e2afa0e59" category="paragraph">其中<block ref="3d689bd3819ead35ed794427bd12f459" prefix=" " category="inline-code"></block> 是您下載檔案名稱中指定的版本號碼。</block>
-  <block id="8d9888bd2cf66f5b517f744ec7c53747" category="list-text">閱讀授權合約並接受。</block>
-  <block id="2e3fa9daeff00cd4d08ed0c4d53dd207" category="list-text">回答每個提示：</block>
-  <block id="2978cdc3f549cee1f2c6a92e712dbe95" category="list-text">* OnCommand Insight 《伺服器名稱或IP位址*》-用於識別OnCommand Insight 該伺服器的主機名稱或IP位址。EMU使用此名稱/IP來開啟與伺服器的通訊連結。如果您指定主機名稱、請確定它可以透過DNS解析。</block>
-  <block id="b23ac01c5706fb8402e195e7af46a14e" category="list-text">*擷取單位名稱*-識別EMU的唯一名稱。</block>
-  <block id="b182773dee4f1f78162d2a36514e911a" category="list-text">*受保護的遠端擷取連接埠（HTTPS）*- EMU用來將環境變更資訊傳送至該伺服器的連接埠OnCommand Insight OnCommand Insight 。此設定應符合安裝OnCommand Insight 此伺服器時所輸入的值、且在所有emus上必須相同。</block>
-  <block id="152cbc93d194114259b771e7993f9364" category="list-text">*乙太網路PPA輸出目錄*-輸入PPA輸出資料夾。</block>
-  <block id="5996b4d9b1d9a9a1efe0ba6b0017fe19" category="list-text">*要監控的乙太網路PA介面*-輸入您要監控其流量的介面。</block>
-  <block id="5a3c856eeae701d28b7e70462f2ba441" category="list-text">*啟用巨型封包*-如果客戶環境使用巨型封包、EMU會建立大型封包緩衝區來讀取這些封包。否則、EMU會將可用的記憶體資源池用於標準的乙太網路封包。在您回答所有提示之後、安裝將會開始、大約需要10分鐘、視安裝的應用程式而定。</block>
   <block id="95bd0c51d31fb4204601caf8ac855be2" category="summary">如有需要、您可以解除安裝OnCommand Insight 此伺服器。</block>
   <block id="3a3c1ae45f93b1b15b3b83e2868fffa0" category="doc">解除安裝OnCommand Insight The Un</block>
   <block id="4527ee0ef14ff21e47d16ba2f687d22b" category="paragraph">最佳實務做法：在解除安裝Insight之前、請先備份OnCommand Insight 該資料庫。</block>
@@ -863,7 +770,6 @@
   <block id="fa0baea08d471f5235209d11c1c16001" category="paragraph">若要確保OnCommand Insight 在資料倉儲中包含輸入的註釋、必須執行下列主要程序：</block>
   <block id="5d28b1f66348bd05c1360eeaa8c7b2ab" category="list-text">在您將註釋匯入資料倉儲之前、您必須先確保註釋已準備好OnCommand Insight 在物件中。</block>
   <block id="ffea450e9dc50566850f1e414b34912d" category="paragraph">若要這麼做、您可以手動執行*疑難排解*&gt;*強制更新資料倉儲註釋*選項、或等到下次排程的暫時性資料執行程序為止。當您強制更新註釋時、您會強制OnCommand Insight 支援還原伺服器計算暫態資料（例如註釋值）並將其放入資料庫表格、以便資料倉儲ETL程序能夠讀取資料。註釋資料每隔15分鐘會自動更新一次、不過您可以強制更新頻率更高。</block>
-  <block id="eb7ed7bc43f909498c484e4e3a536f4f" category="list-text">然後使用Data Warehouse（資料倉儲）** annotations**（註釋）選項將註釋匯入資料倉儲。</block>
   <block id="dd822aa76d01a149ccb27a9510bb1ac4" category="list-text">如果您想要在使用OnCommand Insight 《支援報告入口網站》報告撰寫工具所建立的報告中加入附註、您必須更新OnCommand Insight 《支援報告中繼資料模型》。</block>
   <block id="ab19c424b12a6dc2e8268117b4b7ad86" category="paragraph">升級Data倉儲時、註釋工作會在資料庫還原程序期間自動執行。註釋工作也會在Wildfly啟動時自動執行。</block>
   <block id="93dc65e8ce56da7735d08370cf946fa4" category="paragraph">Wildfly是OnCommand Insight 一款應用程式伺服器、可執行各種功能的Java程式碼、OnCommand Insight 同時適用於支援支援此功能的伺服器和Data倉儲。</block>
@@ -1614,60 +1520,13 @@
   <block id="b53285194b50bada9843000857addf73" category="paragraph">次要ETL程序的主要用途是預先擷取「批次」資料、以便更複雜的報告能夠更快產生、或排定每日執行。</block>
   <block id="a503bd4b23ed032a2b9e3803ca6e917c" category="paragraph">本次ETL是OnCommand Insight 除了《支援資料倉儲管理指南》中詳述的建議「每日一次」ETL之外的其他功能。</block>
   <block id="f60a6bc0addfc95b66fb77718350b706" category="paragraph">NetApp專業服務部門有資格設定次要ETL指令碼、以避免影響現有OnCommand Insight 的還原報告排程、自動備份、擴充性或其他系統效能活動。如需有關ETL指令碼或資料驗證需求的其他資訊、請聯絡您的NetApp銷售代表、並討論NetApp專業服務如何協助您。</block>
-  <block id="db23f703aa889a1f3cf53cc765a90ef5" category="summary">本常見問題集可解答OnCommand Insight 有關「非正常現象偵測」的常見問題。</block>
-  <block id="3cb419a6c2fe5ee9b38f7630c73ca83b" category="doc">異常偵測</block>
-  <block id="7eb0dc15e7fa3f8fdf3e34ca0478a8cc" category="section-title">什麼是異常？</block>
-  <block id="74da89ee751f40f3f320aa98bf5e5fef" category="paragraph">異常狀況是IOPS、延遲、使用率、緩衝區對緩衝區點數和CPU的效能變更事件、不符合先前觀察到的和預期的模式。OCI異常狀況偵測的目標是應用程式基礎架構服務應用程式、以尋找處理模式和行為的變更。這些週期性處理模式包括在營業時間和週末的工作負載效能中、有歷史的「退潮和流量」。OCI的異常偵測引擎使用機器學習情報來建立「正常」的基礎模式、並偵測定義的應用程式是否偏離預期行為。</block>
-  <block id="e14a3017867886b2ef4123521705dcae" category="section-title">異常偵測如何在OCI中運作？</block>
-  <block id="ae94cf437fa9a281fd2ea5a3260f0304" category="paragraph">OCI「異常偵測」是一種主動監控方法、利用機器學習情報、根據歷史資訊進行監控。其偵測新興效能異常狀況的能力遠低於傳統臨界值、可讓系統管理員在應用程式SLO或資料中心服務受到影響之前、有更多時間討論、規劃及減輕疑慮。</block>
-  <block id="d4d9e3e91ce086c00424f6d87fff37fb" category="paragraph">Insight會探索並自動對應整個基礎架構堆疊、以支援應用程式、從運算資源開始、透過交換器架構向下對應至儲存資源。OCI收集關鍵效能計數器、包括IOPS、延遲、節點資訊、儲存資源池使用率、Hypervisor CPU、 然後將每個資源的BB Credit Zero提供給異常偵測引擎、以供應用程式異常分析使用。異常結果每小時更新兩次、可在應用程式儀表板、應用程式登陸頁面及查詢表小工具上取得。異常評分會逐資源執行、並會針對整個應用程式基礎架構提供整體重要分數。</block>
-  <block id="f7e2ba308ea591917e2d9cf0f9b11ab6" category="section-title">哪些OCI版本支援異常偵測？</block>
-  <block id="704a4ac8b4bcedb3ae9c669cb21fdd47" category="paragraph">OCI 7.2及更新版本支援異常偵測。</block>
-  <block id="8226e00812d9e7bc5bb34b6e78ec1b40" category="section-title">OCI可為多少個應用程式啟用異常偵測？</block>
-  <block id="e970dc438f7706d3c00e7a18eabeed7c" category="paragraph">OCI支援監控多達48個業務關鍵應用程式。</block>
-  <block id="9ca1166d41c924c85021bafe5c18cc1a" category="section-title">可以部署多少個異常偵測引擎（ADE）？</block>
-  <block id="751fe7a94289461047c1fb44e1cd75f4" category="paragraph">每個OCI作業伺服器一個異常偵測引擎。</block>
-  <block id="f46a3a23d7a7fc2803a0703086445f99" category="section-title">如果我有48個以上的應用程式、是否可以部署其他異常偵測引擎？</block>
-  <block id="e1637958ee330d7ee5354ed1e180eacd" category="paragraph">是的、目前OCI支援每個OCI伺服器配對一個異常偵測引擎。在多個OCI伺服器環境中、可以「配對」的方式部署額外的異常偵測引擎和OCI作業伺服器。每部伺服器只有在啟用異常偵測功能的情況下、才能看到其應用程式。</block>
-  <block id="5df55d095e1c7d20e23822671f3ac3f9" category="section-title">應用程式叢集/群組的大小是否有擴充限制？</block>
-  <block id="0be4ed81769ca138fbcec30c03b41a9f" category="paragraph">OCI工程部門使用Insight異常偵測功能、提供最佳操作與擴充的一般準則如下：每部Insight伺服器支援一個異常偵測引擎。OCI最多可監控48個應用程式。應用程式基礎架構最多可包含4000個物件。資源不足將會降低整體規模。</block>
-  <block id="da5af8c9b73348d917b2949ff4d3ae8f" category="section-title">異常偵測需要哪些OCI授權？</block>
-  <block id="642d60601e92c15da97d3d7c9c039fee" category="paragraph">異常偵測分析需要「探索」和「執行授權」。</block>
-  <block id="54aff691d390320d22aedbeb95f1bc8e" category="section-title">開始偵測異常並查看結果需要多久時間？</block>
-  <block id="9cd54228cb0142e4ade95623826ea372" category="paragraph">啟用應用程式監控後、異常評分結果只要2-3小時就會出現。</block>
-  <block id="c1f0bf21fd0a41dddcc01d985a9b8655" category="section-title">我應該等多久才能操作結果？</block>
-  <block id="1cd4bb45fd471f914fc95f951c2fb803" category="paragraph">異常狀況偵測引擎結果的品質和準確度會隨著時間（週、月、季等）而改善。週期性評估（週期性）通常會在第三週左右開始。對於時間長度較長的模式（例如每月）、引擎必須在調整異常分數之前觀察重複事件。</block>
-  <block id="3a5c8708bf9f54349548881e9b3d2012" category="section-title">異常狀況偵測引擎會保留多久的學習時間？</block>
-  <block id="84952acec52cd08ad87a4224e7ec753a" category="paragraph">異常狀況偵測引擎在儲存學習資訊的方式上、效率極高。統計學習可在數月內測量物件異常行為。Insight中的典型資料集並不像一般人所想像的那樣「資料」。異常狀況偵測引擎會根據時間來學習及儲存判定為「重大統計」的資料、並在必要時將不重要的資料取出。這種機制可大幅延長學習時間、同時減少儲存資料所需的資源和執行分析所需的時間</block>
-  <block id="3438d1d617cc7f8656026e7108c53c92" category="section-title">如果我今天啟用異常偵測、是否能告訴我上週發生了什麼異常？</block>
-  <block id="32b41e6e5fc5801116711e9f10b8f26f" category="paragraph">否、當異常偵測初始化時、Insight伺服器會從Insight伺服器載入任何現有的效能資料、以提升異常偵測引擎對受監控應用程式及其基礎架構的瞭解程度。擷取的「預先存在的」效能資料將不會出現異常狀況。只有新的傳入資料會根據預先存在的資料進行分析時、才會報告異常狀況。新偵測到的異常情況將在幾小時內開始顯示。</block>
-  <block id="41f8d936acf8ae72b0965cc312dfbb69" category="section-title">異常分數如何計算？</block>
-  <block id="75baa529dad5b0b8d550686d70386c4d" category="paragraph">每個應用程式異常分數都是根據各種個別資產分數的總和來計算。異常狀況偵測引擎運用30多種複雜演算法和公式來判斷異常狀況、並提供分數。使用者可以將這類分析評分技術與類似的醫療評分技術進行比較、例如「體內質量指數（BMI）」分數、其中包含許多變數和測量結果（重量、年齡、高度、密度等）。</block>
-  <block id="2393ac0f2f029d7de6c8b0c336a21572" category="section-title">每個藍色長條代表什麼？</block>
-  <block id="d2397c20a1818a882ed55f82a212c540" category="paragraph">每區塊3個長條圖代表一項資源及其異常意義範圍。藍色長條越多、觀察到的行為變化就越大。按一下區塊即可顯示（異常）、個別資源和計數器的重要性。</block>
-  <block id="2841281eb009cc3d138b141610fa8e3f" category="section-title">為什麼個別資源分數未加到總應用程式分數？</block>
-  <block id="20cb46bc2562d264a0c91317f74afd91" category="paragraph">每個資源都會根據其在觀察到的行為上的差異而個別評分。個別資源評分的重要性在應用程式總評分中確實扮演著重要角色、但也可能包括其他分析和數學因素。</block>
-  <block id="62c42547f71e62e3fc6b235c951e15b4" category="section-title">我可以設定異常偵測、以監控已指派附註的商業實體或物件嗎？</block>
-  <block id="4bef39c9cbf3971a10fbf73262ed11ca" category="paragraph">現在、只能在已定義的應用程式上啟用異常偵測。任何可指派給應用程式（VM、Hypervisor、伺服器、磁碟區和內部磁碟區）的物件、都可以進行群組和監控。</block>
-  <block id="64e455a29abaeff838dcd5b078388803" category="section-title">OCI是否能提供高異常分數的通知？</block>
-  <block id="b57bab09d216c6083ce6a76fec176e20" category="paragraph">是的、您可以根據應用程式的異常分數來建立應用程式效能原則。跨越原則中定義的臨界值會觸發警示、通知您應用程式中的資源相關問題。</block>
-  <block id="d146893fcca2fab21a99666fa0ebccec" category="section-title">當我關閉應用程式的異常偵測時、會發生什麼事？</block>
-  <block id="2c4bad1364ef5d6937abbff97969e580" category="paragraph">應用程式基礎架構的所有已學習（歷史異常）資訊都會從異常偵測引擎中清除。所有異常偵測結果都會從Insight作業資料庫中清除。</block>
-  <block id="62a8c8aa9b391c9e596d31f627cfe974" category="section-title">何時應該使用靜態臨界值？</block>
-  <block id="5e5ab656895ab2782f76be6ec563f7ea" category="paragraph">靜態臨界值非常適合用於最佳實務做法的基礎架構資源限制警示、以及識別事件持續時間。此外、它們也有助於管理服務層級、並針對各種錯誤計數器指標發出警示、例如連結重設、類別3捨棄和失去同步。</block>
-  <block id="9e3706cf72c2f55381a585976ee9e6c5" category="section-title">有哪些計畫可將其他指標納入異常狀況偵測？</block>
-  <block id="4cd4db5e487b63317b77a719d7c872f8" category="paragraph">隨著新的統計資料、使用者意見回饋和產品改善、Anomaly機器學習模式和演算法將會持續改善或調整。</block>
-  <block id="fa39e32dd68dbf5bb5afc784adf16558" category="section-title">資料倉儲（DWH）是否提供異常結果？</block>
-  <block id="c6ec8326693f64373138558d339d1999" category="paragraph">今天的異常結果不會傳送（ETL-ed）至OCI資料倉儲。使用者可在OCI應用程式登陸頁面或使用者定義的查詢表小工具中找到結果。</block>
   <block id="f1f3de9bc18b35afb61808b1e74dc9c9" category="summary">本常見問題集可解答OnCommand Insight 有關「效能排除」的常見問題。</block>
   <block id="8b144775fbdd9a0db9657c91289d2a0d" category="doc">效能疑難排解</block>
   <block id="98841a1c07ce00fcf821c5bf40b9f3ac" category="section-title">如何建立環境中所有貪資源的清單？</block>
-  <block id="531620c9e8218a953c76cb31d8a69246" category="paragraph">OCI的關聯分析有助於識別指定服務路徑的貪用和降級資源。關聯功能所產生的分析會在檢視每個物件時即時執行。所提供的分析可大幅縮短疑難排解效能問題和找出根本原因所需的時間。探索所產生的違反已定義效能原則的行為、是探索貪資源或降級資源的一項入門。OCI的異常狀況偵測功能也可做為更主動的方法、在應用程式基礎架構的資源變為服務中斷之前、先識別出其貪婪或降級的資源。使用最新查詢功能的小工具和儀表板都有助於篩選、排序及視覺化資源、其IOPS（貪系）、使用率或延遲均高於預期。</block>
   <block id="db597168b0dfca5f0b711271cea76cb0" category="section-title">OCI是否能提供一個診斷效能問題的地方？</block>
   <block id="967d5ff3b4f5a6278f1a5b2ef2cbb04a" category="paragraph">是的。在OCI中進行效能疑難排解的方法有多種。OCI有許多可能的警示方法。通常會使用SNMP、Syslog和電子郵件警示。「電子郵件警示」可讓使用者快速點選並啟動OCI中受影響的資源。全域搜尋視窗可讓系統管理員只要輸入資源名稱、就能開始分析情況。</block>
   <block id="cd06252607ecc864183a495e049a8f3a" category="paragraph">OCI的違規儀表板可讓使用者根據事件數量、持續時間和時間來排定工作優先順序。各種警示類型的範例包括延遲、IOPS、使用率、嚴重性、業務單位、甚至相關的應用程式。</block>
   <block id="9d605fd673bd3f16ebdf995b804ff61c" category="paragraph">OCI的關聯分析可協助系統管理員比較與受影響資源相關的物件、並判斷其對IOPS、延遲、使用率、CPU和寬帶點數的影響。</block>
-  <block id="1c821f04129d90610236ba0dbc8197bd" category="paragraph">OCI在異常狀況偵測與乙太網路監控方面的最新進展、可提供更積極主動的方法、在資源行為變成服務中斷或停機之前偵測異常狀況。</block>
   <block id="866c6c563cd9943ca59a85c04e85141f" category="paragraph">OCI的查詢技術和Widget儀表板可在有組織的檢視中找出具體細節、以鎖定資料中心內的問題領域。</block>
   <block id="efa346ae02b5e51d0f6ecdb0f01a2e3f" category="section-title">OCI是否能協助我進行7-mode到cDOT的移轉？</block>
   <block id="33f39151af921e442ef5ce8e1a2d5ee1" category="paragraph">是的、OCI對於現有的工作負載需求和移轉後驗證、提供無價的瞭解。OCI在現代化資料中心方面所扮演的角色、可進行變更管理模擬、移轉前最佳化規劃、以及定義適當的服務層級。只要按幾下滑鼠、OCI就能輕鬆收集並關聯多家廠商環境中數千個NFS共用區和光纖通道路徑的業務影響。從移轉到技術更新、OCI提供可靠、規模適當的移轉途徑、並減輕非計畫性的服務中斷。</block>
@@ -1684,7 +1543,6 @@
   <block id="06253f8bec8251fd2a1f41886772cee4" category="paragraph">為了避免資料誤報、您應該在備份Insight資料庫之前、先備份Data倉儲資料庫。此外、如果您有測試環境、建議您務必先還原備份、再繼續升級。</block>
   <block id="1606cde56de5cd11ed0f639599c9fe7d" category="summary">您必須解除安裝舊版的Data倉儲和遠端擷取軟體、才能安裝新版本。在您嘗試升級上述任何元件之前、請先執行此動作。Insight伺服器上的軟體會在原地升級期間解除安裝。</block>
   <block id="5380853f4b2c7127f5436cdd96b77adb" category="doc">解除安裝軟體</block>
-  <block id="4aec3f70447bcadb808d3ade522e24ca" category="paragraph">執行64位元Microsoft Windows Server 2012、2012 R2、2016或2019的電腦、搭配最新的Service Pack</block>
   <block id="86b0d014fabe411527fb8284c7836844" category="paragraph">Rau伺服器上的本機系統管理員權限</block>
   <block id="a384384c4103a010e40624e68f0c4c80" category="paragraph">掃毒</block>
   <block id="b5692b132a8ba857f2aeca99b3926e30" category="paragraph">安裝OnCommand Insight 此元件期間、您必須完全停用所有的掃毒程式。安裝之後、Insight元件所使用的路徑必須排除在掃毒範圍之外。此外、您也必須在安裝後、將IBM/DB2資料夾（例如_C:\Program Files\IBM\DB2_）排除在防毒掃描之外。</block>
@@ -1706,9 +1564,7 @@
   <block id="4e895e686b27efcf32f29db921c626e8" category="paragraph">成功安裝遠端擷取單元（Rau）之後、OnCommand Insight Microsoft Windows服務環境中應該會提供此功能。</block>
   <block id="9abf250f68fcac7f115d6b24dea9f2f0" category="list-text">若要驗證Rau是否已新增至Windows服務、請開啟Windows「開始」功能表、然後選取*「控制台」*&gt;*「系統管理工具」*&gt;*「服務」*。</block>
   <block id="e4e2c48a81c68478a644630908689b08" category="list-text">在OnCommand Insight 清單中找到*《The *》《The *》《The *》《The *》《OnCommand The *》《The Insight》的遠端擷取單元（Rau）*》。</block>
-  <block id="d39a1a20afabb8acfe59b657ce52285a" category="summary">通常、升級必須在所有Insight伺服器（Insight伺服器、Data倉儲伺服器、遠端擷取裝置、乙太網路監控單元）上執行、但執行Anomaly Detection軟體的伺服器除外。如需OnCommand Insight 更新版本的更新需求、請務必參閱版本說明。</block>
   <block id="4a6995709f46bf6bd65ee584c5bc1d19" category="doc">升級OnCommand Insight</block>
-  <block id="22d9e5686c3b0be4a5d95ca2969c9b59" category="paragraph">通常、除了執行Anomaly Detection軟體的伺服器之外、所有Insight伺服器（Insight伺服器、Data倉儲伺服器、遠端擷取裝置、乙太網路監控裝置）都必須執行升級。如需OnCommand Insight 更新版本的更新需求、請務必參閱版本說明。</block>
   <block id="1a4047683a46d41ff22b37684e340a16" category="paragraph">除非另有說明、否則從Insight 7.x升級至目前版本的Insight時、必須遵循相關要求與程序。如果您要從7.0之前的版本升級、請聯絡您的客戶代表。</block>
   <block id="eefc095d8a400ce6fc3822f263273188" category="summary">如果適用、您應該安裝資料來源可用的最新修補程式、以充分利用最新功能與增強功能。上傳資料來源修補程式之後、您可以將其安裝在相同類型的所有資料來源上。</block>
   <block id="357857dd0d9c52dcecf2dfd202cbfbc3" category="doc">安裝資料來源修補程式</block>
@@ -1812,12 +1668,9 @@
   <block id="170837dd211761972cd14568af3aa7dc" category="list-text">如果出現提示、請允許Windows繼續進行DB2安裝。</block>
   <block id="04ef90f6b4c5a4885431b93ba2ceacb1" category="list-text">DB2安裝完成後、DWH安裝精靈將會執行。依照指示安裝DWH with Report.</block>
   <block id="2f94571e43053b7d02efa6081ee3e05c" category="paragraph">安裝報告的資料倉儲可能需要一小時才能完成。</block>
-  <block id="99bc24bf47764cabee50a37ec7dbc3b7" category="summary">安裝時需要安裝多OnCommand Insight 個支援元件、包括Insight Server、Data倉儲和報告、以及Anomaly偵測。</block>
   <block id="63b19e640180b57cf63d97da8ceb75f8" category="list-text">或者、安裝DWH和報告（必須安裝在獨立的機器或虛擬機器上）</block>
-  <block id="b4a98913ccf70402c20b2289747148f7" category="list-text">或者、安裝異常偵測引擎（必須安裝在執行Linux的獨立機器或虛擬機器上）。</block>
   <block id="cc851c8a6713658cfd4b84e673221265" category="list-text">如需升級、請升級OnCommand Insight 功能報告。</block>
   <block id="035ec6c085ea2eb920aad50541715052" category="paragraph">您必須擁有本機管理員權限、才能安裝OnCommand Insight 此功能。</block>
-  <block id="134a422ed090e8e30df012c1ab214400" category="paragraph">執行64位元Microsoft Windows Server 2012、2012 R2、2016或2019的電腦、搭配最新的Service Pack。</block>
   <block id="0a619ec621b3cab647ce66b216e9fc76" category="paragraph">Windows Server 2012推出的彈性檔案系統（Refs）與Refinible不相容OnCommand Insight 。僅NTFS檔案系統支援Windows OnCommand Insight 安裝功能。</block>
   <block id="a7cc526f0d97e18ae65832b170d2d6b7" category="paragraph">強烈建議將分頁檔大小設為「Windows託管」。小型固定大小的分頁檔可能會干擾Insight效能資料的成功儲存。</block>
   <block id="2cb22e178960ff204e22391c6a8195f0" category="list-text">Win2008/2012的動態連接埠需求為49152到6555</block>
@@ -2034,7 +1887,6 @@
   <block id="ab615b758d23efd69f034ee6bb6a62cc" category="list-text">從控制面板開啟*解除安裝程式*功能、然後選取OnCommand Insight 要移除的應用程式。</block>
   <block id="126d387fa8a0f736e14d682aafafb6f3" category="summary">您必須在符合既有硬體和軟體需求的電腦上執行Data倉儲和報告伺服器、以確保此機器上尚未安裝Apache Web伺服器或報告軟體。</block>
   <block id="2366cd77368c4727d52f4f22ead4ccb5" category="doc">資料倉儲與報告伺服器需求</block>
-  <block id="6cae01f909e84054026b421d673a882c" category="paragraph">執行64位元Microsoft Windows Server 2012、2012 R2、2016或2019的電腦、搭配最新的Service Pack。</block>
   <block id="3b267310a6d544c439461b657a080ecf" category="paragraph">32 GB - 2 TB RAM最佳實務做法：強烈建議將分頁檔大小設為「Windows託管」。小型固定大小的分頁檔可能會干擾Insight效能資料的成功儲存。</block>
   <block id="cc0e5807211f4e00f5283c0ffdcd50b5" category="paragraph">200 GB - 2 TB磁碟空間安裝在C：磁碟機上至少需要20 GB可用空間。</block>
   <block id="23929d0a3e02ce0bfd06c26a22b2c8ca" category="admonition">在Windows上、Insight Data倉儲with Reporting需要在安裝磁碟機上啟用8DOt3名稱建立支援、才能進行安裝。依預設、C：磁碟機通常會啟用此功能。您可以執行下列命令來驗證目標安裝磁碟機是否已啟用8DOt3名稱建立（以D:取代目標安裝磁碟機）：</block>
@@ -2309,7 +2161,6 @@
   <block id="b241a29800bee2abc1305c0e32e9ea16" category="list-text">匯入中繼憑證：<block ref="64c5001becd1c8c9e2fd5b67de6b09f3" prefix=" " category="inline-code"></block></block>
   <block id="c1213d1dd6d45773d3d63830af7cf2e1" category="paragraph">對所有中繼憑證重複此步驟。</block>
   <block id="a40f45de27bebf86db5e6b6ae5556f62" category="list-text">在LDAP中指定與此範例相符的網域。</block>
-  <block id="a43b7a2df0b1341cd86cb0144993b6f2" category="list-text">在伺服器上OnCommand Insight<block ref="da35e257d259856481d737aea8d8f5cd" prefix=" " category="inline-code"></block> 檔案必須透過將驗證用戶端更新為中的「要求的」來修改 <block ref="9ff9416c4e4d8ca052fe5d50a2470f1e" prefix="" category="inline-code"></block>以啟用CAC。執行適當的命令：</block>
   <block id="17bc10091293fdc562a6db69940ee924" category="cell">作業系統</block>
   <block id="f907e651164789346ae0a1e257c462d8" category="cell">指令碼</block>
   <block id="aea23489ce3aa9b6406ebb28e0cda430" category="paragraph">Windows</block>
@@ -3369,7 +3220,6 @@
   <block id="f9afa2a7eedd4833defddc8f1606136e" category="list-text">按一下<block ref="75a7c16580f00220caa67427de5582af" category="inline-image-macro-rx" type="image"></block> 以新增其他值。</block>
   <block id="18dffee81a991488c6660efec4a33072" category="list-text">按一下 <block ref="00e914ba1d7e4046febf7bcf7f41a087" category="inline-image-macro-rx" type="image"></block> 移除值。</block>
   <block id="31a67a922d508bff761f1546a6cf146d" category="paragraph">您的註釋會出現在「註釋」頁面的清單中。</block>
-  <block id="fec935c64a61b073ba00264022037842" category="paragraph">在Web UI中、註釋可立即使用。若要在Java用戶端中使用註釋、您必須重新啟動任何執行中的Java用戶端、才能套用註釋。如果您要新增或變更註釋值、或是刪除註釋類型、則不需要重新啟動Java用戶端。</block>
   <block id="543148022feabaf6610e2a499a3a33ef" category="summary">安全性管理工具可讓您管理資料倉儲伺服器上的安全性選項。安全管理包括更新DWH伺服器上內部使用者的內部密碼、建立安全組態備份、或將組態還原為預設設定。</block>
   <block id="0a842bd6c1de060739a30730c52673c1" category="paragraph">。<block ref="4924cdf1992856713a11ebac184ceb81" prefix=" " category="inline-code"></block> 工具可讓您管理資料倉儲伺服器上的安全選項。安全管理包括更新DWH伺服器上內部使用者的內部密碼、建立安全組態備份、或將組態還原為預設設定。</block>
   <block id="a7b579a25b5d41da716ab5133bb4ef4c" category="paragraph">您可以使用<block ref="4924cdf1992856713a11ebac184ceb81" prefix=" " category="inline-code"></block> 管理安全性的工具：</block>
@@ -3597,13 +3447,6 @@
   <block id="574b874bff5c8b543b2b4e931b30cffe" category="paragraph">庫存資料處理</block>
   <block id="bf34e6ba640656bc1ece3e86a696bdef" category="paragraph">本地擷取單位的狀態</block>
   <block id="e7312dcfd25d244db881a8174439a4c3" category="paragraph">如果並行輪詢資料來源數量少於執行集區上限的75%（預設上限為30）、則會顯示「OK」（確定）。若使用量大於75%、則「擷取作業正忙」、並建議增加輪詢時間間隔或新增更多遠端擷取單位。</block>
-  <block id="9291f918c276953b93f3d5ef9387fb7d" category="paragraph">異常偵測引擎</block>
-  <block id="c1f49b4803015204bbe3db2bd1755bfe" category="paragraph">引擎容量</block>
-  <block id="1945d7ebba74abb84ec3a9503f833958" category="paragraph">監控異常偵測的應用程式數</block>
-  <block id="09d4dc3ea823ef9a3ddef42663d8043f" category="paragraph">在48個可能的應用程式中、監控的應用程式數量和百分比。</block>
-  <block id="f5dba70ca71838311479fc89fb17d8ba" category="paragraph">引擎狀態</block>
-  <block id="989d61cf9389664ae3df75f9514ee803" category="paragraph">異常偵測引擎狀態</block>
-  <block id="9b11f45b7155d5cb5f979bbb192cddef" category="paragraph">如果未偵測到錯誤、則會顯示「OK」（確定）、否則會顯示任何錯誤的相關資訊。請參閱<block ref="2a49dda7e88ebe6fe391b83e8b3f70cd" prefix=" " category="inline-code"></block> 如需詳細資訊、請參閱檔案。</block>
   <block id="3ea68ef43ed0e576f2b250d8f5ba321f" category="paragraph">DWH</block>
   <block id="3500ba09d0538297440ca620c9dd46bf" category="paragraph">備份</block>
   <block id="4a012752d35686fc02f623320de8cdfa" category="paragraph">資料倉儲排程備份的狀態</block>
@@ -3663,7 +3506,6 @@
   <block id="b69c211bae0e0fecd10501a9fd8799a3" category="paragraph">每週備份</block>
   <block id="13bc89399b9cc7a6cf9fc98252a08d61" category="paragraph">每週備份狀態</block>
   <block id="ad21755009cace9e1f83910329b279c4" category="paragraph">如果啟用每週備份、「'OK'」會顯示「每週備份未啟用」。</block>
-  <block id="1fdeba68fabc633565533dd082397314" category="paragraph">如果異常偵測引擎顯示錯誤、請參閱<block ref="2a49dda7e88ebe6fe391b83e8b3f70cd" prefix=" " category="inline-code"></block> 如需詳細資訊、請參閱下列位置的檔案：- Windows：<block ref="562fe7f82b9a3ad4c5d064609c34f6e4" prefix=" " category="inline-code"></block>- Linux：<block ref="ad290fcae09a97f7015bee6f80280059" prefix=" " category="inline-code"></block></block>
   <block id="eb392e0128210366d39101ad8f0d021c" category="summary">「效能原則」頁面會依物件類型將原則分組、而Insight會根據原則在物件效能原則清單中的顯示順序來評估原則。您可以變更Insight評估原則的順序、以顯示網路中最重要的資訊。</block>
   <block id="44ff1d5bdec78f77728a15dbc8dae984" category="doc">效能原則評估優先</block>
   <block id="77bae3cf26635b55ed60139ced3d1891" category="paragraph">「效能原則」頁面會依物件類型將原則分組、而Insight會根據原則在物件效能原則清單中的顯示順序來評估原則。您可以變更Insight評估原則的順序、以顯示網路中最重要的資訊。</block>
@@ -3677,7 +3519,6 @@
   <block id="afa0e0705cd46b2a13705802d58c55b1" category="doc">智慧卡與憑證登入支援</block>
   <block id="a77b08f68559cec9da3a91a8bbb5bebc" category="paragraph">支援使用智慧卡（CAC）和憑證來驗證登入Insight伺服器的使用者OnCommand Insight 。您必須設定系統才能啟用這些功能。</block>
   <block id="01b6b5961bc9a7e1748173d3d6401c7e" category="paragraph">設定系統以支援CAC和憑證之後、瀏覽OnCommand Insight 至新的階段作業時、瀏覽器會顯示原生對話方塊、提供使用者可選擇的個人憑證清單。這些憑證會根據OnCommand Insight 由受到該伺服器信任的CA所發行的一組個人憑證進行篩選。通常只有單一選擇。根據預設、如果只有一個選項、Internet Explorer就會跳過此對話方塊。</block>
-  <block id="325ebdda697e1bf5e42275135d5c3afa" category="paragraph">對於Java用戶端、無論發行者為何、都會顯示自訂對話方塊、其中包含所有個人憑證。</block>
   <block id="5c6f0a6f7b6eb92ba48ed7a8b49e68ce" category="paragraph">對於CAC使用者、智慧卡包含多個憑證、其中只有一個可與信任的CA相符。的CAC憑證<block ref="1ca739d412d91cf579ef698321d0fd6e" prefix=" " category="inline-code"></block> 應使用。</block>
   <block id="78c385133cad36566669e8eeb77ee57d" category="summary">您可以快速編輯資料來源設定資訊。</block>
   <block id="1cf4d6307fb70c90beff68fa9766c9c5" category="doc">編輯資料來源資訊</block>
@@ -3769,42 +3610,6 @@
   <block id="bc97ac97f619880b74746adf31c65ee0" category="list-text">*刪除* Insight監控環境中的資料來源。</block>
   <block id="0918bf5a234827dfe0ec4a74872f543b" category="summary">若要根據您定義的準則自動指派資產附註、請設定附註規則。根據這些規則、將註釋指派給資產OnCommand Insight 。Insight也提供兩種預設註釋規則、您可以根據需求進行修改、或是在不想使用時加以移除。</block>
   <block id="c70a88cc52ef034687aa19a6698f3198" category="doc">使用註釋規則指派註釋給資產</block>
-  <block id="be2c4dccda639b5216ada7fa6d9a0be1" category="summary">單一登入（SSO）可讓組織中的使用者使用OnCommand Insight 無法使用特殊帳戶的功能。</block>
-  <block id="53d3097603482a9c24b6a7d4fd7c3a34" category="doc">設定單一登入（SSO）</block>
-  <block id="3887ec5f11463645770593e7dc9124e6" category="paragraph">單一登入（SSO）可讓組織中的使用者使用OnCommand Insight 、而不需要特殊帳戶。</block>
-  <block id="26d52dba4affd8982d640fac42efefdb" category="paragraph">系統管理員可設定OnCommand Insight 支援*單一登入*（SSO）存取功能的支援伺服器、以供企業網域中的使用者存取。設定SSO後、任何擁有網域電子郵件地址的使用者都可以使用公司認證登入Insight。支援SSO的OpenID Connect（OIDC）傳輸協定OnCommand Insight 。</block>
-  <block id="88bd16a17ddf9d2f72ca16f5fa011b6d" category="paragraph">SSO僅適用於Insight Server網路型UI。SSO不適用於資料倉儲、報告或Java用戶端UI元件。</block>
-  <block id="a8b0a9ad987b4b23384f9ff35252d556" category="section-title">設定SSO的步驟</block>
-  <block id="7f0f1dcd00185783c85b90e7195857f5" category="list-text">瀏覽至功能表：管理[設定&gt;使用者]</block>
-  <block id="63bdc03465aa31fce1980d420d41d63b" category="list-text">輸入SSO組態URL以自動填入組態欄位（也稱為「OpenID組態」）。這是一個URI、提供描述身分識別提供者組態的Json。</block>
-  <block id="1c74013df55742c38d6c7e619bfbf879" category="list-text">或者、針對下列身分識別供應商資源手動輸入SSO組態URL。如需這些資源的詳細資訊、請參閱本頁下方的「相關資訊」區段。</block>
-  <block id="f5f5ec06b5a064b130c5b528d6158ee9" category="list-text">*授權端點*：提示使用者提供認證的身分識別提供者資源。一旦成功、身分識別就會核發授權給OnCommand Insight 功能驗證、讓它代表使用者執行動作。</block>
-  <block id="286a78aa62a9638d7fe3806a91c278fc" category="list-text">* JWK Set URI*：提供用於簽署JWT權杖的公開金鑰。這可讓用戶端驗證JWT權杖是否確實由身分識別供應商發出、而非由第三方發出。</block>
-  <block id="3638338d423b16df98c6be307aed1796" category="list-text">*權杖端點*：身分識別供應商資源、用戶端會在其中交易JWT權杖的授權。用戶端也必須提供用戶端ID和用戶端密碼（請參閱下文）。Insight使用的JWT標記是「身分識別權杖」、表示使用者的使用者名稱和角色。</block>
-  <block id="b9cb72bc580c170b0173e6dd3ca31a9e" category="list-text">*結束工作階段端點*：由身分識別提供者提供、用戶端（OCI）會讓瀏覽器重新導向、而身分識別提供者則會使使用者與身分識別提供者的工作階段失效。這表示使用者必須在下次登入時輸入認證資料。</block>
-  <block id="5af0b03e5b715ecdd177d980f7c1ab73" category="list-text">*用戶端ID*：唯一識別用戶端（OCI）、並與身分識別供應商已知的其他用戶端區別。身分識別提供者會在為其建立應用程式時產生用戶端ID、而用戶端必須知道用戶端ID、因為它會在權杖要求中顯示該ID。</block>
-  <block id="8cfcf89cac75b602ad613407164c8fbe" category="list-text">*用戶端機密*：僅供身分識別供應商和用戶端使用的隨機字串、可驗證用戶端給身分識別供應商、證明用戶端是其宣稱的應用程式、而非惡意的第三方。用戶端密碼連同用戶端ID一起、會在權杖要求中傳送給身分識別供應商。用戶端機密是由身分識別供應商所產生。Azure Active Directory允許多個用戶端機密。</block>
-  <block id="398927bed9fa20b47ca771a78403df66" category="list-text">*使用者名稱*的JWT請款：識別使用者使用者名稱的身分JWT權杖請款。宣告是JWT權杖的JSON有效負載中的金鑰值配對。設定的「使用者名稱的JTW宣告」為金鑰名稱、而對於每個身分識別權杖、此值為要驗證之使用者的使用者名稱。金鑰名稱可能因身分識別供應商而異。對於Azure Active Directory、報銷名稱通常為「prefereted_userName」。</block>
-  <block id="dbea617046c3978f232b7c8558fdd764" category="list-text">*角色的JWT請款*：與上圖相同、但此請款的值為OCI角色清單、例如「來賓」、「使用者」、「admin」。對於Azure Active Directory、此金鑰稱為「角色」。</block>
-  <block id="4d97faf5a7530a75b0d532f29425fa1a" category="section-title">管理SSL憑證</block>
-  <block id="2d3d761a4d59f839f68a586734af77ca" category="paragraph">您必須匯入身分識別供應商SSL憑證鏈結的根憑證。若要這麼做、請下載與權杖端點主機名稱相關聯的根憑證。（Azure Active Directory適用的login.microsoftonline.com）、並將其儲存至檔案。然後按一下「Certificates」（憑證）按鈕、使用「Manual」（手動）索引標籤選取檔案、並提供「se-root」等別名來匯入檔案。</block>
-  <block id="6c50435837466ae1510aba14855eadb5" category="paragraph">如果SSO已啟用、且您匯入新的憑證、則必須重新啟動SANscreen 該服務。</block>
-  <block id="9505eb74831c3b18d5eff86efad28575" category="section-title">在作業系統中啟用SSO</block>
-  <block id="a132cc81226783cae3a50be1cc9f3230" category="paragraph">若要在目前系統上啟用SSO、並透過升級來保留sosoauth系統內容、您必須執行下列動作。</block>
-  <block id="3b9060d4fb37a97e67e1d36879247e49" category="paragraph">若要在Windows上啟用SSO、請瀏覽至登錄中的_HKEY_LOCAL_MACHINE\SOFTWARE\NetApp\SANSANSANSANSANW_。將sosoauth的值從假變更為真。此值會在升級期間讀取、並用於設定升級系統的sosoauth系統屬性。它不會影響目前執行個體；您也必須更新_local_machine\software\Wow6432Node\Apache Software Foundation\Procrun 2.0\SANscaveServer\Parameters\Java Options_中的soAUTH。</block>
-  <block id="a4e555142fa9ae06077dbf84ccb341d2" category="paragraph">若要在Linux上啟用SSO、請瀏覽至//opt/NetApp/OCI / conf/_並開啟檔案_wildfly.properties_。將_SSO_AUTH_enabled__的值從「假」變更為「真」。</block>
-  <block id="e7a969f9757456f852a86102f959d732" category="paragraph">啟用SSO之後、請重新啟動SANscreen 該服務。</block>
-  <block id="380324d089f540ab8f85d3f38710d7ef" category="section-title">疑難排解SSO問題</block>
-  <block id="19daf9c09f088971fc16ab331a70a4ca" category="paragraph">如果您收到「未授權」錯誤、請查看server.log以取得詳細資料。如果Insight報告授權失敗、但身分識別供應商已正確驗證使用者、您可能會看到此錯誤。</block>
-  <block id="f8752a4ed02f5df6b0d28677ea061484" category="paragraph">如果使用者無法以SSO登入、請以具有管理員權限的非SSO使用者身分登入、並修正SSO組態。您可以在&lt;Your Insight URL&gt; 瀏覽器視窗中輸入_fis**/uiserver/login.html#___來執行此動作。</block>
-  <block id="788a69c84c07db9972601ba80426eb4e" category="paragraph"><block ref="788a69c84c07db9972601ba80426eb4e" category="inline-link-rx"></block></block>
-  <block id="2ab33d35bcd8829d8e6eeaf4d1a6d4b1" category="paragraph"><block ref="2ab33d35bcd8829d8e6eeaf4d1a6d4b1" category="inline-link-rx"></block></block>
-  <block id="4e12b10e429b53275ca4864672083071" category="paragraph"><block ref="4e12b10e429b53275ca4864672083071" category="inline-link-rx"></block></block>
-  <block id="68edfc51eda3db3ade9391cc5b9d938b" category="paragraph"><block ref="68edfc51eda3db3ade9391cc5b9d938b" category="inline-link-rx"></block></block>
-  <block id="1095e3553d3b8411067a1984ccf69a5d" category="paragraph"><block ref="1095e3553d3b8411067a1984ccf69a5d" category="inline-link-rx"></block></block>
-  <block id="a390d318043a30dd277f2712a48c3389" category="paragraph"><block ref="a390d318043a30dd277f2712a48c3389" category="inline-link-rx"></block></block>
-  <block id="3d1a2299e5d2755bc6248b89e18aaed4" category="paragraph"><block ref="3d1a2299e5d2755bc6248b89e18aaed4" category="inline-link-rx"></block></block>
-  <block id="071ed88c63467004c131b02ec44d0a6e" category="paragraph"><block ref="071ed88c63467004c131b02ec44d0a6e" category="inline-link-rx"></block></block>
   <block id="3844f4d0389de102cc024c2dd7d3d2d3" category="summary">提供一些預設的註釋類型、例如資產生命週期（生日或生命週期結束）、建置或資料中心位置、以及階層、您可以自訂以顯示在報告中OnCommand Insight 。您可以定義預設註釋類型的值、或建立自己的自訂註釋類型。您稍後可以編輯這些值。</block>
   <block id="f0bd3fe7fa785a29bc7e4f2def123fc7" category="doc">管理註釋類型</block>
   <block id="b56fb628aec5572d4e3d25305f9f4930" category="paragraph">提供一些預設的註釋類型、例如資產生命週期（生日或生命週期結束）、建置或資料中心位置、以及階層、您可以自訂以顯示在報告中OnCommand Insight 。您可以定義預設註釋類型的值、或建立自己的自訂註釋類型。您稍後可以編輯這些值。</block>
@@ -4275,28 +4080,7 @@
   <block id="ceab4b8447619407d3d5690350daf3f3" category="list-text">是：如果OnCommand Insight 已經安裝了此功能、請選取「是」、而且不需要其他步驟來產生資料來源資訊。</block>
   <block id="5dc4e6b4e4cf7450a9185b51738f97b6" category="list-text">若要驗證新增的資料來源、請在瀏覽器中開啟Insight。</block>
   <block id="fd3cfc7d8c00afcaaa8f27545da4a7ce" category="list-text">檢查您匯入的資料來源清單。</block>
-  <block id="5928ab857d72f0cb4d64e504798411bf" category="summary">包含機器學習異常偵測分析功能、可清楚掌握應用程式的基礎架構、並在效能異常狀況變成服務中斷之前予以識別OnCommand Insight 。</block>
-  <block id="b85fd3d4e64f472e90def7d8eb2c4330" category="doc">功能異常偵測的運作方式OnCommand Insight</block>
-  <block id="2c8d740abf59ef0fbcff94e1bca52901" category="paragraph">包含機器學習異常偵測分析功能、可清楚掌握應用程式的基礎架構、並在效能異常狀況變成服務中斷之前予以識別OnCommand Insight 。</block>
-  <block id="9e556ee489af22c8233b945272285d3d" category="paragraph">異常分析可協助您識別應用程式的正常作業工作負載範圍、並在效能變更超出預期層級時通知您。應用程式異常狀況偵測引擎會擷取Insight收集的效能指標、並識別應用程式基礎架構中的異常狀況。</block>
-  <block id="6c4d6c9c87764dd60db3a3a1acaefc16" category="paragraph">您可以使用異常偵測來執行下列工作：</block>
-  <block id="e676e1ac59b48db65dabd891fb9ac773" category="list-text">識別應用程式基礎架構行為的重大變更</block>
-  <block id="90dfdd7675e583fe40296d55d17ce7e5" category="list-text">追蹤整個堆疊和多個計數器的應用程式</block>
-  <block id="35a3f09751920aec6957942ad149030e" category="list-text">診斷應用程式工作負載中定期發生事件的原因</block>
-  <block id="0502501c19b99ff91ba143fedada5399" category="list-text">與使用靜態臨界值的效能計數器資料相比、提供更完整的資訊集</block>
-  <block id="56e9e5d92341e969ad6296442c3904f3" category="list-text">以改良的被動模式監控、透過端點對端點的拓撲檢視、以及專注於最異常行為的能力。</block>
-  <block id="8918f4a668d9e2fa74686dc7bb91ba4d" category="paragraph">異常狀況偵測引擎使用Insight資料進行應用程式分析。首次啟動監控時、分析引擎最多可擷取14天的歷史效能資料。收集資料的時間長達數週甚至數月、可提供更準確的特定資源資料。這些資料包括下列計數器的總計：</block>
-  <block id="c8308b1eba7ba926a61b8fd802194386" category="cell">物件</block>
-  <block id="64d129224a5377b63e9727479ec987d9" category="cell">計數器</block>
   <block id="583a65df9db4119165f5ea0abaa50281" category="paragraph">VM</block>
-  <block id="9d317124b9509ca639c0c11db71ba4a2" category="paragraph">延遲、IOPS</block>
-  <block id="9bd6f2bedc64f40d72667cb2d281c260" category="paragraph">CPU使用率、IOPS</block>
-  <block id="5a5176ba1cb1aedddc6762eab54fad2f" category="paragraph">邊際連接埠</block>
-  <block id="32dc1143f0936b80d1404bc2a541cefa" category="paragraph">零的寬帶點數</block>
-  <block id="0104b3456d159eee4ab768154b7f7aad" category="paragraph">延遲、使用率、IOPS</block>
-  <block id="2abdae292ce7f838f85712c612296158" category="paragraph">IOPS、使用率</block>
-  <block id="3b58f00af9c884051fad20eae3fc2868" category="paragraph">在Insight伺服器上啟用效能資料歸檔時、會歸檔由異常偵測引擎收集的資料。請參閱「系統健全狀況」頁面、以判斷是否已啟用歸檔。</block>
-  <block id="fc248355141747c8b5f5db576a3f5efb" category="paragraph">異常偵測引擎是在獨立於Insight伺服器的伺服器上執行。可在實體機器或VM上設定。如OnCommand Insight 需詳細資訊、請參閱《適用於Windows或Linux的《支援》。</block>
   <block id="1eb6b3f1bf5afffed975d2dfa2c01e0f" category="summary">您可以新增SSL憑證來啟用增強的驗證和加密功能、以增強OnCommand Insight 您的支援環境的安全性。</block>
   <block id="813a61b4e43a1832a3809c259191c6e1" category="doc">匯入SSL憑證</block>
   <block id="ba1fbbc5012eec189f464eca8296aa73" category="paragraph">您必須確保系統符合所需的最低位元層級（1024位元）。</block>
@@ -4331,7 +4115,6 @@
   <block id="051ab68131f3a60184de312fbd05ae96" category="list-text">Microsoft Internet Explorer和Google Chrome都使用Microsoft在Windows上的原生憑證功能。</block>
   <block id="991c1a32d9c6040a199aed73cedef51d" category="paragraph">這表示、如果Active Directory管理員將組織的CA憑證推入終端使用者的憑證信任器、則OnCommand Insight 當以內部CA基礎架構簽署的更新版本取代自我簽署的憑證時、這些瀏覽器的使用者將會看到憑證警告消失。</block>
   <block id="29b9969a8248e1b740b3d1e4b75a7a76" category="list-text">Java和Mozilla Firefox都有自己的憑證存放區。</block>
-  <block id="fc5e33aba0ca159eafa8f81e9519cb92" category="paragraph">如果系統管理員未將CA憑證自動擷取至這些應用程式的信任憑證存放區、則使用Insight Java用戶端或Firefox瀏覽器可能會因為不受信任的憑證而持續產生憑證警告、即使自行簽署的憑證已被取代。將組織的憑證鏈結安裝到信任關係中、是另一項需求。</block>
   <block id="3b6d843fed0461df3afda79856a30ece" category="summary">如果適用、資產頁面會顯示相關資產區段。例如、Volume Assets頁面可能會顯示儲存資源池、連接的交換器連接埠和運算資源等資產的相關資訊。每個區段都包含一個表格、其中列出該類別中的任何相關資產、以及其各自資產頁面的連結、以及與該資產相關的數個效能統計資料。</block>
   <block id="3bb6296fdfa3f122e8d35d48dd7f30b4" category="doc">相關資產</block>
   <block id="921a7ab277b185dfdbb44095b69dd0ca" category="summary">「違規」區段可讓您檢視及管理指派給資產的效能原則所造成的任何網路違規事件。</block>
@@ -4355,19 +4138,6 @@
   <block id="8cb639685ef57018af2300a58c1b0854" category="list-text">選擇*嚴重性*（警告或嚴重）作為事件通知。</block>
   <block id="f4221a0597b37f2362360b77ab3ea8e8" category="list-text">依預設、電子郵件通知會傳送至全域電子郵件收件者清單、您也可以按一下提供的連結來覆寫全域清單、並傳送通知給特定的收件者。</block>
   <block id="23cd5015b18d4eb3764c52713d807c6c" category="list-text">按一下「儲存」以新增警示。</block>
-  <block id="26fe3a18cd3ace3093b9f68c8f18ddd5" category="summary">異常偵測監控狀態可在應用程式查詢、小工具和資產頁面中使用。</block>
-  <block id="67d5063d43ec9fcdfd2e368174cd2125" category="doc">異常偵測監控狀態</block>
-  <block id="d2993528538607874f0c4e24d30833bf" category="paragraph">對於每個應用程式、您會看到下列其中一項：</block>
-  <block id="d894f72fcb26b6e46eaec333d56fc64c" category="list-text">*確定*</block>
-  <block id="c8fdcaa7261dd7888f63caa4a9887ab0" category="paragraph">未偵測到問題。</block>
-  <block id="f66fe203e861868ff0fae48b3714ce53" category="list-text">*學習*</block>
-  <block id="e0e886fc220af004d5265de041bd94d4" category="paragraph">異常偵測伺服器擷取最多14天的效能資料、並將其載入異常偵測引擎。</block>
-  <block id="fa7fd9444706860a57085eb35ff1de7f" category="list-text">*超過最大資產*</block>
-  <block id="eb4fda0917afdea0b3c6be5db9cdf88e" category="paragraph">已超過監控應用程式的資產上限。對於應用程式、最多可監控4000項資產。監控會暫停、直到資產數量小於或等於4000為止。減少受監控的資產數量、以繼續監控。</block>
-  <block id="f44027b669999f97854e8ef8c8215f16" category="list-text">*失敗*</block>
-  <block id="90f37c14d730f52c076417e877b25dc8" category="paragraph">與異常偵測伺服器的連線失敗。</block>
-  <block id="006bb9b8c04f7b6d87302a88f6342428" category="list-text">*未監控*</block>
-  <block id="40cb97dbdc303dfc1fc9db63ea34a41d" category="paragraph">應用程式的監控功能已關閉。在查詢和小工具中、此欄位會保留空白。</block>
   <block id="c999e61d37a88ade7d20874a6b491622" category="summary">擷取單位畫面提供您所有擷取單位的檢視、包括狀態和任何錯誤。</block>
   <block id="1d3e50715b5104d1f952a551aac3c81c" category="doc">擷取單位狀態</block>
   <block id="6353eae6fe8eaa52ec351d4d93dff6ee" category="paragraph">連線至伺服器的Insight採購單位狀態會顯示在*管理*&gt;*擷取單位*表格中。下表顯示每個擷取單位的下列資訊：</block>
@@ -4464,22 +4234,6 @@
   <block id="d6d94de2956e4579e7edadf35832ba56" category="list-text">如果此類資料來源通常需要更詳細的資訊才能在網路中設定、請按一下*進階組態*連結以輸入其他資訊。</block>
   <block id="bf22aff674e838a4d9407d625fb8349c" category="list-text">如需特定資料來源所需或可用的組態或進階組態資訊詳細資訊、請參閱 <block ref="3d3141ba472fdd3aa41cb4fe5fbe64e3" category="inline-link-macro-rx"></block>。</block>
   <block id="9f2c56b8c47763f8c44055863b959886" category="list-text">按一下「* Test*」連結、確定資料來源已正確設定。</block>
-  <block id="4669f07ebe8713a371f06445666ca8bf" category="summary">「異常」區段僅會顯示在應用程式資產頁面上、可深入瞭解應用程式基礎架構、並可讓您識別可能導致服務中斷的異常行為。</block>
-  <block id="c8d962223951308758a0aa72176b81c1" category="doc">使用「異常」區段</block>
-  <block id="5899e9779bd9ed4a768c82586cd15a9d" category="list-text">開啟所需應用程式的異常監控功能、並允許其收集資料。</block>
-  <block id="b9ae369e5fc354301f3df8c8522c245b" category="list-text">當異常偵測引擎正在執行時、您可以在應用程式資產頁面的* Anomalies*區段中檢視下列資訊：</block>
-  <block id="c6d6386470cbd8b63bcf007dadbfd4a2" category="list-text">異常偵測分數會以藍色長條顯示、代表0到100之間的分數。評分會逐資源執行、並逐一進行計數、進而為整個應用程式基礎架構提供整體重要分數。</block>
-  <block id="2b45e10156dd938acd5ed41c19301402" category="list-text">應用程式資產檢視</block>
-  <block id="0485bf3d8662246f6b211add08a8fcd1" category="paragraph">位於異常偵測分數下方、顯示所有資產對目前異常分數的貢獻。如果某項資產未大幅提高異常分數、則會以表示 <block ref="c562cd770f770cbe21563f84a6da0949" category="inline-image-macro-rx" type="image"></block>。如果資產造成異常分數的重要性、則會出現1、2或3個藍色長條、例如： <block ref="8703ad7c2d7958e5ec1a38462cb6789f" category="inline-image-macro-rx" type="image"></block>。以長條數表示的值表示該資產對異常分數的貢獻意義、如下所示：1長條= 1-33；2長條= 34至67；3長條= 68至100。</block>
-  <block id="062f321d7f51802bdde9c8d129dec671" category="paragraph">指派給應用程式（主機、虛擬機器、磁碟區、內部磁碟區和Hypervisor）的資產、以及基礎架構中以某種方式連接至指派資產（例如節點、連接埠等）的資產、都有助於形成異常偵測分數。這兩種造成特定異常狀況的資產都會顯示出來、因為分配的應用程式資源中的資料可能會流經這些資產。</block>
-  <block id="a411886674e332d8643d7bd0eb9d1499" category="paragraph">如果一種類型的資產超過60項、則會顯示*更多*按鈕、您可以按一下按鈕來顯示其餘資產。這些剩餘資產的狀態、例如 <block ref="0afaa1939eee8ac0bcafbcf65977fae8" category="inline-image-macro-rx" type="image"></block>，顯示在* More（更多）*按鈕旁邊。此範例指出、在未顯示的129項資產中、有124項資產並未構成異常分數、但其中有5項資產確實對異常分數有某種程度的影響。</block>
-  <block id="12092f6fe0d9078cf257183488d25400" category="list-text">異常圖表</block>
-  <block id="f4609f55a800e7d82a818ee58f8496a0" category="paragraph">異常圖表會顯示時間範圍內的最高異常分數、以橘色圓圈表示（3小時、24小時、3天、7天、30天、 或自訂時間範圍）。您可以將指標拖曳到圖表上、查看時間範圍內其他點的異常分數（以藍色圓圈表示）、然後按一下藍色圓圈。 這會更新應用程式資產檢視、以顯示當時分數的相關資產。</block>
-  <block id="1331cbd8a7a2675def50c9ac87f1eb65" category="list-text">若要協助您疑難排解資產效能、您可以執行下列動作、將應用程式資產檢視中的資產新增至應用程式資產頁面的專家檢視圖表：</block>
-  <block id="667b03c15ab79da59c6ab3be4f922971" category="list-text">按一下應用程式資產檢視中的資產圖示。</block>
-  <block id="ae32cf9016d23e5ee19e0716e055b59f" category="paragraph">以下顯示：資產名稱（即資產頁面的超連結）、造成異常狀況的指標、資產貢獻的重要性、以及可讓您將資產新增至專家檢視圖表的按鈕。</block>
-  <block id="b487c0ade678a131e5dbb91a2378e60d" category="list-text">按一下 <block ref="4690824eaf120cdcb2bf7069204ca307" category="inline-image-macro-rx" type="image"></block>。</block>
-  <block id="e78784cd8e53518dff62ff24bf72ade0" category="paragraph">資產即會新增至專家檢視圖表。</block>
   <block id="a14b9738cdec9e6d515e07fc282fa7c3" category="summary">若要解決平衡問題、請使用資產頁面找出問題、並找出未充分使用的大容量磁碟區。</block>
   <block id="2517f08cdc93369a7bf14b1419e6c88a" category="doc">平衡網路資源</block>
   <block id="0e6cc5785504fc7692da3dbeff5cb582" category="list-text">在瀏覽器中開啟「資產儀表板」。</block>
@@ -4601,7 +4355,6 @@
   <block id="43a4485688412a4e4e4fab069e3e9921" category="list-text">選取您要匯出識別碼的IP裝置。</block>
   <block id="5d6878a4624d5cb78bffc75188475f83" category="summary">每個使用者帳戶都會被指派三種可能的權限等級之一。</block>
   <block id="f9028f8e6a3198524555cde540df3f4a" category="doc">Insight使用者角色</block>
-  <block id="95a62fb3cd9909e345b27bd8265e2c51" category="list-text">Guest可讓您登入Insight並檢視各種頁面。此帳戶類型不允許您執行識別一般裝置及定義Java UI中原則等動作。</block>
   <block id="9faf65c23678a8ada7e4d3bbe439702d" category="list-text">使用者允許所有來賓層級權限、以及存取Insight作業、例如定義原則和識別一般裝置。使用者帳戶類型不允許您執行資料來源作業、也不允許新增或編輯您自己以外的任何使用者帳戶。</block>
   <block id="93a2244697ebcf94e0df7ee3308f7945" category="list-text">系統管理員可讓您執行任何作業、包括新增使用者及管理資料來源。</block>
   <block id="0e13283fd798f77f08359fbd63fa3dd9" category="paragraph">*最佳實務做法：*為使用者或訪客建立大多數帳戶、以限制擁有系統管理員權限的使用者人數。</block>
@@ -5007,7 +4760,6 @@
   <block id="502b4cf4df1b5fede1217b7c17f3fa46" category="list-text">尋求連線至Insight伺服器的遠端擷取單位</block>
   <block id="0273b82291f8f60218b04d1f65265745" category="list-text">OCI DWH伺服器搭配此Insight伺服器的連接器。</block>
   <block id="fa63b4aff5a51b11a6a0270bc2eb4ea6" category="list-text">與Insight REST API的任何程式化互動</block>
-  <block id="bec32e7e3498c0280610e19fae35f913" category="list-text">異常狀況偵測引擎尋求取得Insight效能資料來呈現異常狀況資訊</block>
   <block id="0afc901892bf1871537bba32f6517213" category="paragraph">對於任何想要實作Insight伺服器主機層級防火牆的人、我們的一般建議是允許HTTPS存取所有公司網路IP區塊。</block>
   <block id="87abf6449f196d8902aa1c0c578f5988" category="paragraph">*傳入MySQL（TCP 3306）*。此連接埠僅需暴露於任何具有連接器的Insight DWH伺服器</block>
   <block id="8a91bfb9277aececde40c2ad00092979" category="paragraph">雖然Insight擁有數十個資料收集器、但它們都是以輪詢為基礎的、但Insight會讓收購單位（Aus）開始傳出通訊至各種裝置。只要您的主機型防火牆具有「狀態」功能、允許傳回流量通過防火牆、Insight Server上的主機型防火牆就不應影響資料擷取。</block>
@@ -5088,17 +4840,7 @@
   <block id="4fa315e5b29dfdb8f82f1868c0a1de5f" category="paragraph">外部儲存設備的IP位址</block>
   <block id="e071ed8c236cffb19cf488375af0496c" category="paragraph">外部儲存設備的使用者名稱</block>
   <block id="ca83982ca73f47dd0ddc21032bbf19f7" category="paragraph">用於sternus的密碼</block>
-  <block id="a1c8b197f4130bee4dd339d3e860160e" category="summary">您必須開啟異常偵測功能、才能監控應用程式的基礎架構是否出現異常行為。異常偵測監控功能只會針對應用程式開啟或關閉。</block>
-  <block id="a126d7b0d8696cc2e6f92658f64883c9" category="doc">設定應用程式以偵測異常狀況</block>
-  <block id="de003c4d2b75ac830d42e8c83845b096" category="paragraph">您必須開啟異常偵測功能、才能監控應用程式的基礎架構是否出現異常行為。異常偵測監控功能只會針對應用程式開啟或關閉。</block>
-  <block id="f38b40e0c1cfebddac518dbeb08b9369" category="list-text">您必須安裝並設定異常偵測引擎。</block>
-  <block id="e8c4ded7d8354aa52c080a4918e833b9" category="list-text">您必須為任何想要異常偵測資訊的資產、將應用程式指派給運算資源（虛擬機器或主機）。Insight會自動探索其餘資源。</block>
-  <block id="479084c8750781ff99a898a44455acd8" category="list-text">找出指派給運算資源的應用程式。</block>
-  <block id="b2d96987fc3830b5bb9331c24ece5e9b" category="list-text">在「*異常*」區段中、確定區段右上角的*監控*控制方塊顯示*開啟*而非*關閉*；如果沒有、請按一下*監控*控制方塊中的任何位置、將控制項切換為*開啟*。</block>
-  <block id="8856ee009707b90782238fcef507d0e9" category="paragraph">您可以同時監控多達48個應用程式的異常狀況。</block>
-  <block id="07794d0f3df7516dbb2d5c2b21ce7811" category="paragraph">此區段中的狀態顯示「Learning」至少一小時；異常偵測引擎會預先載入任何現有效能資料的14天、讓引擎瞭解您環境的行為。在Insight伺服器對環境資產執行第一次輪詢之後、異常偵測引擎會在該時間內計算並傳回應用程式的分數。</block>
   <block id="9bf2dd1afa4d073358de477920a2956b" category="inline-link-macro">將應用程式指派給資產</block>
-  <block id="f8f5a01495bdae73bbbbcc05f3d1b1d6" category="paragraph"><block ref="f8f5a01495bdae73bbbbcc05f3d1b1d6" category="inline-link-macro-rx"></block></block>
   <block id="d94838b2dfffb3c008f39a72c3186fc8" category="summary">安全性管理工具可讓您管理Rous上的安全性選項。您可能需要備份或還原資料保險箱組態、變更加密金鑰、或更新擷取單位的密碼。</block>
   <block id="d969be87e8535562a9e12a2651976423" category="doc">管理Rau的安全性</block>
   <block id="9cd06773848a6fa21bbf5d50dac47783" category="paragraph">。<block ref="4924cdf1992856713a11ebac184ceb81" prefix=" " category="inline-code"></block> 工具可讓您管理Rous上的安全選項。您可能需要備份或還原資料保險箱組態、變更加密金鑰、或更新擷取單位的密碼。</block>
@@ -5139,20 +4881,6 @@
   <block id="f6b6f201347dce2fab1a49983f9169f9" category="list-text">安裝Smart Card中介軟體、例如ActivClient（請參閱<block ref="0e9e7934a6d3075da2d5925613c859dc" category="inline-link-rx"></block></block>
   <block id="62e01a33e9a1fa3f567a6c76fdc5f2e1" category="list-text">修改IE瀏覽器（請參閱<block ref="e634bcd91d7f3284fe7cd9ba4eae6cce" category="inline-link-rx"></block></block>
   <block id="b1768d884db86bb90579edbd8763aece" category="list-text">修改Firefox瀏覽器（請參閱<block ref="66a85fe9065bb80b3afe2913b8cc0476" category="inline-link-rx"></block></block>
-  <block id="17b53ab317fd8a484f4048d9a2264a3f" category="paragraph">其他組態步驟包括：</block>
-  <block id="f958a7054cf45cc345b3045582b17b8c" category="list-text">在啟動Java用戶端時停用不必要的對話方塊快顯：</block>
-  <block id="180ad2ed6f61ef941a659b5a55ff31c8" category="list-text">開啟「'Java'」控制面板。</block>
-  <block id="d40ebdb017f0f854f6e8942393552593" category="list-text">選取「Advanced（進階）」索引標籤。</block>
-  <block id="50f98bdb6c257bac621938b5bc478b27" category="list-text">選取「進階安全性設定」。</block>
-  <block id="afd9e02ee6c106bd093b4796f07ff23c" category="list-text">清除「Use certificates and keys in瀏覽器Keystore」（在瀏覽器Keystore中使用憑證和金鑰）選項</block>
-  <block id="d1d3fa74b3ee43633b5ed1f1ce2c71e8" category="list-text">使用Chrome瀏覽器將軟式憑證匯入使用者的個人憑證：</block>
-  <block id="0dc4c3cd8a960c046b91fc3476730ed0" category="list-text">瀏覽至「進階設定」。</block>
-  <block id="92d56680692141fcc322a35373b4f4fb" category="list-text">選取「管理憑證」</block>
-  <block id="b922565d2f6472dc88052cce66fdc1c7" category="list-text">選取「個人」憑證索引標籤。</block>
-  <block id="f5af79eac83b32a48a3460e409df028b" category="list-text">選取「匯入...」。</block>
-  <block id="25d4c855c460ebda32438e68e4b7509b" category="list-text">選擇.p12檔案。</block>
-  <block id="2fbc199977a517f4597d9942d5064fe8" category="list-text">完成精靈、請務必在密碼欄位中填入用來建立憑證的密碼。</block>
-  <block id="d5f31db624c6bb3f17db0f40414866d9" category="paragraph">設定Internet Explorer和Firefox瀏覽器時、需要執行類似的步驟。</block>
   <block id="852c59acad6f972ef27f03daf8c20249" category="summary">在設定OnCommand Insight 支援使用電子郵件系統的功能之前、您必須先探索主機名稱或IP位址、以識別（SMTP或Exchange）郵件伺服器、並分配電子郵件帳戶以供OnCommand Insight 使用。</block>
   <block id="db8ddf6e224ba37d070df299af6d1b17" category="doc">電子郵件組態先決條件</block>
   <block id="164f5420079e6a2595e67a7704f52f09" category="paragraph">在設定OnCommand Insight 支援存取電子郵件系統的功能之前、您必須先探索主機名稱或IP位址、以識別（SMTP或Exchange）郵件伺服器、並為OnCommand Insight 其分配電子郵件帳戶以供提交靜態報告。</block>
@@ -5435,15 +5163,6 @@
   <block id="e33356884228ae2df4d51ade2c93febd" category="list-text">如果您在「附註規則」頁面上、請將游標放在附註規則上、然後按一下 <block ref="a5f16cda8a02c640cc76d9b46bc997a6" category="inline-image-macro-rx" type="image"></block>。</block>
   <block id="bb8cfc6e9fcdea4ddae8bd428176f624" category="list-text">如果您在資產頁面上、請將游標放在與規則相關的註釋上、並在顯示規則名稱時將游標放在規則名稱上、然後按一下規則名稱。</block>
   <block id="3da4b6f098fa04768b0fbf11bf85f4fd" category="list-text">進行必要的變更、然後按一下*「Save（儲存）」*。</block>
-  <block id="8a6545ad41fb5fe3c4c12cb185393cb4" category="summary">「異常」區段僅會在安裝異常偵測引擎時顯示於應用程式資產頁面、可讓您識別應用程式的正常作業工作負載範圍、並識別效能變更何時超出預期層級。</block>
-  <block id="598bfc4232df4a5088ef3fe71fb1ed8f" category="doc">異常</block>
-  <block id="3b47b16c474758bd06f205c561566989" category="paragraph">異常分析可主動檢視支援業務關鍵應用程式的基礎架構、並在效能異常狀況變成服務中斷之前通知您。應用程式異常狀況偵測引擎會擷取Insight收集的效能指標、並識別應用程式基礎架構中的異常狀況。異常是不符合預期模式或其他項目的項目、事件或觀察。您可以使用異常偵測來：</block>
-  <block id="ac36a3240d7c57d86786d6238eef55a8" category="list-text">監控所選的關鍵應用程式。</block>
-  <block id="5a06819cdb6b3abea30260ecd3cc9ef7" category="list-text">識別應用程式基礎架構行為的重大變更。</block>
-  <block id="a4d9f90082e6d641e6be75c18f72446a" category="list-text">追蹤整個堆疊和多個計數器的應用程式。</block>
-  <block id="16db33d7ecc0aae3f3d300d1de791646" category="list-text">診斷應用程式工作負載中定期發生事件的原因。</block>
-  <block id="3a9280e95d66a22dd403512cba77b5fb" category="list-text">與使用靜態臨界值的效能計數器資料相比、提供更完整的資訊集。</block>
-  <block id="5015be1c0eb4576e34a8bcc476846fc8" category="list-text">透過拓撲的端點對端點檢視、以及專注於資料集中最異常行為的能力、來改善被動模式監控。</block>
   <block id="37ed20de366391188b858db0deb4f6dd" category="summary">如果您已變更註釋並想要立即在報告中使用註釋、請使用其中一個強制註釋選項。</block>
   <block id="bdde02d6c1c0cdce189e0d3bf2dc2052" category="doc">強制註釋更新</block>
   <block id="b54cd0f9f5ba86cbf5a46369c4d36d56" category="list-text">在頁面底部、按一下「*進階疑難排解*」連結。</block>
@@ -5669,13 +5388,10 @@
   <block id="ee1de44f4e2fe9dddf8320a96b6693e9" category="list-text">資料來源和資料來源設定</block>
   <block id="5d3382825aa296b2a9754f7b9a545752" category="list-text">整合套件</block>
   <block id="3717ba0d1ee7413201f2f9712af6bc46" category="list-text">遠端擷取單元</block>
-  <block id="1b431b1c65c0a4ff28d5d267364e93e8" category="list-text">乙太網路監控單元</block>
   <block id="9f97a8489fe88c7f82668c48f8fef019" category="list-text">ASUP/ Proxy設定</block>
   <block id="d62e8932e10d7f1532252d4df6383d82" category="list-text">備份位置設定</block>
   <block id="cbe966211727fd00f9265e45d3b7f83d" category="list-text">歸檔位置設定</block>
   <block id="018d963f1c49025140a70dac3b430a19" category="list-text">通知設定</block>
-  <block id="5682c529b2d863d34bdfa64d43103608" category="list-text">異常偵測分數和裝置</block>
-  <block id="0eca9f4ee41c1512c32931df3f721c54" category="list-text">異常偵測應用程式設定</block>
   <block id="f9aae5fda8d810a29f12d1e61b4ab25f" category="list-text">使用者</block>
   <block id="9d0a952eda13eeeab6af6776cf68cb5b" category="list-text">效能原則</block>
   <block id="48b9e4dddac4fb1b6ea0610710f4b0f8" category="list-text">企業實體與應用程式</block>
@@ -5879,46 +5595,9 @@
   <block id="acdcb578bbf55591673819446e93662f" category="list-text">儲存管理站</block>
   <block id="6d95d66b67eec9cb808400400994f7bd" category="list-text">執行管理軟體的主機伺服器、適用於沒有IP連線的儲存裝置</block>
   <block id="c07ee2c844db93bc79c3f99abc4179e4" category="paragraph">如需資料來源定義的詳細資訊、請參閱本節中的「廠商專屬資料來源參考」資訊。</block>
-  <block id="8e917c9777bc38722587a5dd644712a5" category="summary">您可以根據應用程式的異常分數來建立應用程式效能原則。跨越臨界值會觸發警示、通知您應用程式中的資源相關問題。</block>
-  <block id="f61751c5a7ea36667a34cf1520b04766" category="doc">建立應用程式效能原則</block>
-  <block id="7c09c50bd23a6306792e27aa01023a86" category="paragraph">異常偵測引擎必須在Insight伺服器上執行、才能監控應用程式效能原則中設定的臨界值。</block>
-  <block id="cf2a28cf2574a4fac8041d14a8f9c9e1" category="paragraph">您可以建立原則、針對您可能想要監控的不同類型異常分數提供警示：</block>
-  <block id="c68451d388c5c3666a93370a52012c59" category="list-text">若要識別任何異常尖峰、請建立原則、在第一次發生時發出警示、並將臨界值設為高異常分數（&gt;90）。</block>
-  <block id="e971b646114061409930bd4172efb7eb" category="list-text">若要識別一段時間內的行為變更、請建立原則、以中高異常分數在1小時後發出警示。此原則會根據3個連續異常偵測分數提供警示。</block>
-  <block id="946cf9ec388a69991e8c7164204002e6" category="list-text">按一下「*管理*&gt;*效能原則*」</block>
-  <block id="734c0f7728cb94cbf5b3c3fd3b4cd624" category="paragraph">隨即顯示「效能原則」頁面。</block>
-  <block id="1b0a79e8cd601590c967f5b89e235ee6" category="list-text">按一下「*+附加*」。</block>
-  <block id="63492455519342afe62c47edf5136588" category="list-text">在*原則名稱*欄位中輸入唯一的原則名稱。</block>
-  <block id="73ce2cac0ce1432beee51690ebbf6415" category="paragraph">您必須使用不同於物件所有其他原則名稱的名稱。</block>
-  <block id="e1bec390f4b4d7e5c29806025b649676" category="list-text">從「*套用至類型*的物件」清單中、選取「應用程式」。</block>
-  <block id="62860fc0e1de72139999e91ff2bb4876" category="list-text">從*應用程式優先順序*清單中選取應用程式優先順序。</block>
-  <block id="187d4b77ddd0074c2745421dc23bc713" category="paragraph">第一次出現選項會在第一分數超過臨界值時觸發警示。當臨界值超過一次且持續超過指定時間、所有其他選項都會觸發警示。</block>
-  <block id="9b5d4b888a9a3e64db8d1d4cc82d8ebd" category="paragraph">異常分數以30分鐘為間隔提供（超過小時5分鐘、超過小時35分鐘）、因此只能選擇30小時的時段。</block>
-  <block id="06c8cf2ce20f89544899073a3df948dc" category="cell">在的時間範圍之後套用</block>
-  <block id="b5e60e9c3fb6d5ad435da64669c6c9ef" category="cell">丟棄違規所需的儲存區數量</block>
-  <block id="2f69696f53c29a0e1274ef5939dfde69" category="paragraph">第一次發生</block>
-  <block id="4adcc26418f545df76ab44c53fc55702" category="paragraph">5分鐘</block>
-  <block id="70abb32fcb0c9e8194526d1eef15eb05" category="paragraph">10分鐘</block>
-  <block id="2a7bb67d9681d8b5c8241cd49c734772" category="paragraph">15分鐘</block>
-  <block id="0d714869027c4e08ea9b2943d9bd704e" category="paragraph">30分鐘</block>
-  <block id="d458c50f7918013e8c33c55263347901" category="paragraph">45分鐘</block>
-  <block id="eccbc87e4b5ce2fe28308fd9f2a7baf3" category="paragraph">3.</block>
-  <block id="72ab9d0304d3e84c6aa2dd15eda282f2" category="paragraph">1小時</block>
-  <block id="c6bf7c33a3f505b9c58020142656d783" category="paragraph">2小時</block>
-  <block id="a87ff679a2f3e71d9181a67b7542122c" category="paragraph">4.</block>
-  <block id="e19eb0472e1b64a4a447fc70b40328c5" category="list-text">從*警告*清單中、選取嚴重或警告</block>
-  <block id="4f71ec7f5c943d43c60fa07d2fd2d5b5" category="list-text">如果您要變更預設的電子郵件通知方法、請設定電子郵件。</block>
-  <block id="1c4e3b784fab4dadcd7a2629c32936f5" category="list-text">在「*建立警示條件*」區段中、選取運算子、然後輸入值以建立臨界值。異常分數是唯一用於應用程式效能原則的效能計數器。</block>
-  <block id="40a943d54a56bb3e013d81b4f1d37542" category="paragraph">您可以使用類似下列的範圍來建立一組警示：</block>
-  <block id="a92b4bfcf3b8fb93e7ba75d6a1d8f7ef" category="list-text">0-20警告警示</block>
-  <block id="887b0d9c90a4f64a38eec225e5a8e817" category="list-text">21至50個警告警示</block>
-  <block id="3e9dc2b744dbdd5d55a2d3435ff36116" category="list-text">51-80警告警示</block>
-  <block id="92fe78d9a7b26e55a69aa521352f3476" category="list-text">超過80個嚴重警示</block>
-  <block id="a6fd77103c5a8ada480a1e71d2507f0b" category="paragraph">通知並非檢視違規的唯一方法。違規會顯示在應用程式登陸頁面和違規儀表板上、您可以在其中進行篩選。您也可以建立儀表板、新增違規表小工具、並篩選效能原則名稱、以識別應用程式違規。</block>
   <block id="9a44ce84111f0b85289bd684f429890a" category="summary">自訂OnCommand Insight 功能時、若要根據公司需求追蹤資料、您可以定義專業的附註、稱為附註、並將其指派給您的資產。資產頁面的「使用者資料」區段會顯示指派給資產的附註、並可讓您變更指派給該資產的附註。</block>
   <block id="75fe6daf02320a7a9ee762011885ad71" category="doc">使用「使用者資料」區段來指派或修改附註</block>
   <block id="85482ed6df698a74efdde15f8da9e1a7" category="paragraph">自訂OnCommand Insight 功能時、若要根據公司需求追蹤資料、您可以定義專業的附註、稱為_annotations、然後將其指派給您的資產。資產頁面的「使用者資料」區段會顯示指派給資產的附註、並可讓您變更指派給該資產的附註。</block>
-  <block id="22cb978a585b33954bd57c81726962f8" category="paragraph">註釋會指派給資產。您稍後可以使用查詢來篩選資產。如果您要依附註將資產分組、則必須使用Java UI。</block>
   <block id="0a572742cfc6a7b870c93e4a3f824ef1" category="summary">如果您已選擇規則運算式方法作為來源命名策略、則可使用規則運算式範例作為OnCommand Insight 參考指南、以供您在自動解析方法中使用自己的運算式。</block>
   <block id="f3affd068b3b1c8b1c14040de68e962f" category="doc">規則運算式範例</block>
   <block id="29fcd384116085fb186a63a78e0b427c" category="section-title">格式化規則運算式</block>
@@ -6200,18 +5879,6 @@
   <block id="1b3582571ecb566d773bfda3b9a227e3" category="doc">手動備份OnCommand Insight 支援資料庫</block>
   <block id="28ac554464e58bca9cfa04748be5f508" category="paragraph">如果您啟用OnCommand Insight 每週的還原資料庫備份、您會自動產生複本、以便在必要時還原資料庫。如果您需要在還原作業之前建立備份、或是傳送給NetApp技術支援以尋求協助、您可以建立備份<block ref="daf4de58883c030f033f07e61debf025" prefix=" " category="inline-code"></block> 手動檔案。</block>
   <block id="58a3f211ad6551139071366c803bfa48" category="list-text">在「傳送/收集資料」區段中、按一下「*備份*」。</block>
-  <block id="e921b2ff14e98b22d6eb27b9b7ef940c" category="summary">您可以在OnCommand Insight 伺服器上設定適用於整個程式的選項。</block>
-  <block id="f975c4387e8445faa7dc8c55833444bb" category="doc">設定用戶端設定</block>
-  <block id="d3ee86c80756ec156a75ef0fbf9e7b54" category="list-text">在下一頁的「進階」功能表中、按一下「*進階設定*」索引標籤。</block>
-  <block id="c7511489afb31a4b183619850c3cd1ef" category="list-text">在*擷取動態屬性*中、輸入忽略動態屬性變更的小時數。</block>
-  <block id="246f13122222499dc55b3ad337b50626" category="list-text">在*設定用戶端設定*中輸入下列資訊。</block>
-  <block id="6c1cedddfc06d4577405d9492aa63c67" category="list-text">*初始堆大小*是在VM（虛擬機器）開始執行用戶端時所建立的堆疊大小。此數字用於建構<block ref="f199a574f09a2e6afb3eba8c597973b6" prefix="" category="inline-code"></block> 參數至<block ref="93f725a07423fe1c889f448b33d21f46" prefix=" " category="inline-code"></block>。減少此數目表示Java在啟動時佔用的記憶體較少。（不過、如果超過此數量（這是一項昂貴的作業）、則Java可能需要重新分配堆疊、因此您不想讓這個數字過小。）</block>
-  <block id="12760915c48eb87ccd4fd239129ad8d2" category="list-text">*最大堆大小*是Java允許堆在執行用戶端的VM中成長的最大容量。此數字用於建構<block ref="bd91a1699553d1584109fcdadb48d061" prefix="" category="inline-code"></block> 參數至<block ref="93f725a07423fe1c889f448b33d21f46" prefix=" " category="inline-code"></block>。</block>
-  <block id="007863fc3bb415981bf65592bfbc0d7a" category="list-text">記錄層級控制在用戶端記錄中產生的詳細資料量。可能的值有兩種：</block>
-  <block id="8b94abadadd31d5e7b38eef7a941c2ba" category="list-text">資訊-產生「正常」的資訊量。</block>
-  <block id="c4f5fc8bffcf7c4e796fab53a0fbda0e" category="list-text">偵錯：在用戶端記錄中產生更詳細的資訊、以協助偵錯。</block>
-  <block id="f56b765a08a5e32309279d696f339993" category="list-text">設定資料來源警示。</block>
-  <block id="a2c994ca3998a4dd858245ef9e6d43a2" category="list-text">設定用戶端顯示的登入警告訊息。</block>
   <block id="1633e47b6d0143015e37d0ef402b3c0b" category="summary">若要完成OnCommand Insight 您的不完整組態、您必須使用進階疑難排解工具。這些工具會在瀏覽器中執行、並從「管理」-&gt;「疑難排解」頁面開啟。</block>
   <block id="b6ce9729d11af39e8b6f2d4edafda452" category="doc">進階疑難排解</block>
   <block id="93e0cc23529a9e9e816f269d4eef37f4" category="paragraph">若要完成OnCommand Insight 您的不完整組態、您必須使用進階疑難排解工具。這些工具會在瀏覽器中執行、並從*管理*&gt;*疑難排解*頁面開啟。</block>
@@ -6261,7 +5928,6 @@
   <block id="197cbdbf26b402d599e24441ba7c4695" category="paragraph">如果您想要將應用程式與企業實體建立關聯、您必須已經建立企業實體。</block>
   <block id="e89fcb5314a588541f3077de890703f1" category="paragraph">您可以將應用程式與下列資產建立關聯：主機、虛擬機器、磁碟區、內部磁碟區、qtree、 共享區和Hypervisor。</block>
   <block id="a71bd88cf4db0850b9572f432b02292a" category="paragraph">定義應用程式之後、「應用程式」頁面會顯示應用程式的名稱、優先順序、以及與應用程式相關聯的企業實體（若適用）。</block>
-  <block id="d712dff34b1b48a7301dd5bbccec692c" category="paragraph">如果安裝了異常偵測引擎、「應用程式儀表板」頁面也會顯示應用程式的異常分數。如需安裝及設定異常狀況偵測引擎的詳細資訊、請參閱《_ OnCommand Insight 關於組態與系統管理的指南_》。</block>
   <block id="8358341ae527ee11b5b1dc8e8f22edea" category="paragraph">此時會顯示「新增應用程式」對話方塊。</block>
   <block id="53ea6fd4f85a346052db6fbc35f048f2" category="list-text">在「*名稱*」方塊中輸入應用程式的唯一名稱。</block>
   <block id="3381264de22216b9b453061fd4b784e2" category="list-text">按一下*優先順序*、然後選取您環境中應用程式的優先順序（嚴重、高、中或低）。</block>
@@ -8237,11 +7903,27 @@
   <block id="0f6a3a02976086b90f48da7e5992aa82" category="cell">要包含或排除的裝置序號以逗號分隔的清單</block>
   <block id="7cde90d1aea7fffbc619c41625a35c52" category="cell">效能輪詢之間的時間間隔。預設值為300。</block>
   <block id="16d15d3f29508a543513f5bccddd527e" category="paragraph">支援跨網域、多廠商資源管理與分析的單一解決方案、適用於實體與虛擬環境中的網路、儲存設備及伺服器OnCommand Insight 。Insight可協助您最佳化目前的基礎架構、讓您擁有適當規模的作業來滿足業務需求。它簡化了決定購買內容和購買時間的程序。它也能識別哪些工作負載是雲端移轉的候選對象、藉此降低複雜技術移轉（例如移轉至混合雲）期間的風險。有了Insight、您可以將資源整合到公司的整個IT服務供應鏈中、將IT基礎架構管理為端點對端點服務。</block>
-  <block id="ee3e2c17548456b388eeca1c8945d0fb" category="admonition">包含Java SE 8的付費Oracle授權OnCommand Insight 。客戶不需要購買任何額外的Java SE 8授權。本授權涵蓋Java SE 8搭配所有OCI元件的使用。請參閱 <block ref="22f0bd9eac0233f917b202967c553066" category="inline-link-macro-rx"></block> 頁面以取得特定詳細資料。</block>
-  <block id="e465e42419c3405f98dfba07fa9da3fc" category="paragraph">OnCommand Insights 僅支援含 * Azure Active Directory* 的 SSO 。</block>
   <block id="1cb3ec988e29678c641cba59564947b3" category="list-text">以互動模式啟動安全管理工具：</block>
   <block id="f098be646546d6fe2a75059a01c330f7" category="list-text">Windows -<block ref="6fc3ad2c3aa4e51a6e001ff98a533c91" prefix=" " category="inline-code"></block></block>
   <block id="a8b0a56b2ae62eec476aea5806960a1a" category="list-text">Linux -<block ref="7e8977b89fc4dcb2507a133fc2b8b1fe" prefix=" " category="inline-code"></block></block>
   <block id="f648cec7948633bd979fd848cdf2369a" category="paragraph">如果沒有連線狀態、請嘗試重新啟動服務。登入 Remote Acquisition Unit 系統並執行下列命令：</block>
   <block id="ddf4df92bd698540e3e452308e7fb41e" category="paragraph">如果仍無法連線、請聯絡技術支援部門。</block>
+  <block id="e276ba2c5bd80694669009690b87bf11" category="summary">通常、必須在所有 Insight 伺服器上執行升級（ Insight 伺服器、 Data Warehouse 伺服器、遠端擷取單元）。如需OnCommand Insight 更新版本的更新需求、請務必參閱版本說明。</block>
+  <block id="19a851f5755b0da57262c1e741895d63" category="paragraph">通常、必須在所有 Insight 伺服器（ Insight 伺服器、 Data Warehouse 伺服器、遠端擷取單元）上執行升級。如需OnCommand Insight 更新版本的更新需求、請務必參閱版本說明。</block>
+  <block id="4639e803c16722ca949a12d75760ea9e" category="paragraph">執行 64 位元 Microsoft Windows Server 2016 、 2019 或 2022 的電腦、附有最新的 Service Pack 。</block>
+  <block id="24eb1f52641cde599dfde45198fa8072" category="image-alt">OCI 架構 2024</block>
+  <block id="5921e1ea45be7b6035711356c873b5d7" category="summary">安裝時需要安裝數個 OnCommand Insight 元件、包括 Insight Server 、以及 Data Warehouse 和 Reporting 。</block>
+  <block id="1ff027229c4cca8959bcd6dfaae4b428" category="paragraph">安裝時需要安裝數個 OnCommand Insight 元件、包括 Insight Server 、以及 Data Warehouse 和 Reporting 。
+安裝包括下列主要工作：</block>
+  <block id="b104b5961f20250c71e591cfc4c90136" category="summary">安裝 OnCommand Insight 伺服器元件的需求。</block>
+  <block id="dd125cab0ba3f21f8ca824dc7a729268" category="paragraph">註釋會指派給資產。您稍後可以使用查詢來篩選資產。</block>
+  <block id="825022cf15a2b6ff4ca0b66c9e9bd426" category="admonition">註釋匯入公用程式需要 Java 8 或 Java 11 。在執行匯入公用程式之前、請先確定已安裝其中一項。建議使用最新的 OpenJDK 11 。</block>
+  <block id="03e9a48892f94faeb92420c756faf635" category="paragraph">如果系統管理員未將 CA 憑證自動擷取至這些應用程式的信任憑證存放區、則使用 Firefox 瀏覽器可能會因為不受信任的憑證而持續產生憑證警告、即使自行簽署的憑證已被取代。將組織的憑證鏈結安裝到信任關係中、是另一項需求。</block>
+  <block id="6a3a0531aeb37d13c9f75dc09613fbf5" category="list-text">Guest可讓您登入Insight並檢視各種頁面。</block>
+  <block id="b790ca7a49082e3bbad9cfbf5ececf5e" category="list-text">然後使用 Data Warehouse ** Annotations** 選項將註釋導入 Data Warehouse 。</block>
+  <block id="a822ae654536d773f803970c634e3b9b" category="paragraph">OCI的關聯分析有助於識別指定服務路徑的貪用和降級資源。關聯功能所產生的分析會在檢視每個物件時即時執行。所提供的分析可大幅縮短疑難排解效能問題和找出根本原因所需的時間。探索所產生的違反已定義效能原則的行為、是探索貪資源或降級資源的一項入門。使用最新查詢功能的小工具和儀表板都有助於篩選、排序及視覺化資源、其IOPS（貪系）、使用率或延遲均高於預期。</block>
+  <block id="b73694a08aa1e17986f7d2ef7a7619a7" category="list-text">Red Hat Enterprise Linux 7.3 、 7.4 、 7.5 、 7.6 、 7.7 、 7.8 、 7.9 、 8.1 、 8.2 、 8.3 、 8.4 、 8.5 、 8.8 、 9.2</block>
+  <block id="604712f524f66ebbf730593255d579b0" category="list-text">CentOS 7.2 、 7.5 、 7.6 、 7.7 、 7.8 、 7.9 、 CentOS 8 Stream 、 CentOS 9 Stream</block>
+  <block id="ca69e87e6021e18fe43c490a1c0bff02" category="list-text">Oracle Enterprise Linux 7.5 、 7.6 、 7.7 、 7.8 、 7.9 、 8.1 、 8.2 、 8.3 、 8.4 、 8.5 、 8.8.8</block>
+  <block id="1767cf140ccb13b28bdcc76c42d20028" category="summary">安裝需要安裝數個 OnCommand Insight 元件、 Insight Server 和 Data Warehouse 。</block>
 </blocks>

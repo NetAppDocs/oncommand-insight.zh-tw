@@ -39,7 +39,6 @@ Insight Server可以安裝軟體防火牆。需要開啟的「孔」如下所述
 * 尋求連線至Insight伺服器的遠端擷取單位
 * OCI DWH伺服器搭配此Insight伺服器的連接器。
 * 與Insight REST API的任何程式化互動
-* 異常狀況偵測引擎尋求取得Insight效能資料來呈現異常狀況資訊
 
 
 對於任何想要實作Insight伺服器主機層級防火牆的人、我們的一般建議是允許HTTPS存取所有公司網路IP區塊。

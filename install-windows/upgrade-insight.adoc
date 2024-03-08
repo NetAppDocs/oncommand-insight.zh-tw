@@ -2,7 +2,7 @@
 permalink: install-windows/upgrade-insight.html 
 sidebar: sidebar 
 keywords:  
-summary: 通常、升級必須在所有Insight伺服器（Insight伺服器、Data倉儲伺服器、遠端擷取裝置、乙太網路監控單元）上執行、但執行Anomaly Detection軟體的伺服器除外。如需OnCommand Insight 更新版本的更新需求、請務必參閱版本說明。 
+summary: 通常、必須在所有 Insight 伺服器上執行升級（ Insight 伺服器、 Data Warehouse 伺服器、遠端擷取單元）。如需OnCommand Insight 更新版本的更新需求、請務必參閱版本說明。 
 ---
 = 升級OnCommand Insight
 :allow-uri-read: 
@@ -11,6 +11,6 @@ summary: 通常、升級必須在所有Insight伺服器（Insight伺服器、Dat
 
 
 [role="lead"]
-通常、除了執行Anomaly Detection軟體的伺服器之外、所有Insight伺服器（Insight伺服器、Data倉儲伺服器、遠端擷取裝置、乙太網路監控裝置）都必須執行升級。如需OnCommand Insight 更新版本的更新需求、請務必參閱版本說明。
+通常、必須在所有 Insight 伺服器（ Insight 伺服器、 Data Warehouse 伺服器、遠端擷取單元）上執行升級。如需OnCommand Insight 更新版本的更新需求、請務必參閱版本說明。
 
 除非另有說明、否則從Insight 7.x升級至目前版本的Insight時、必須遵循相關要求與程序。如果您要從7.0之前的版本升級、請聯絡您的客戶代表。

@@ -2,7 +2,7 @@
 permalink: install-linux/oncommand-insight-installation-instructions.html 
 sidebar: sidebar 
 keywords:  
-summary: 安裝時需要安裝多OnCommand Insight 個支援元件、Insight Server、Data倉儲和Anomaly Detection。 
+summary: 安裝需要安裝數個 OnCommand Insight 元件、 Insight Server 和 Data Warehouse 。 
 ---
 = Insight安裝說明
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 安裝時需要安裝多OnCommand Insight 個支援元件、Insight Ser
 
 
 [role="lead"]
-安裝時需要安裝多OnCommand Insight 個支援元件、Insight Server、Data倉儲和Anomaly Detection。
+安裝需要安裝數個 OnCommand Insight 元件、 Insight Server 和 Data Warehouse 。
 
 安裝包括下列主要工作：
 
@@ -20,7 +20,6 @@ summary: 安裝時需要安裝多OnCommand Insight 個支援元件、Insight Ser
 * 安裝授權
 * 或者、安裝DWH和報告（必須安裝在獨立的機器或虛擬機器上）。報告需要Microsoft Windows。）
 * 或者、安裝遠端擷取單元（Rau）、從位於防火牆後方的裝置資源取得資訊、位於遠端站台、或位於私有網路上
-* 或者、安裝異常偵測引擎（必須安裝在獨立的機器或虛擬機器上）。
 
 
 安裝之後、您必須設定Insight以取得環境的相關資訊。所需的工作請參閱《_ OnCommand Insight 關於組態與系統管理的指南_》。

@@ -35,7 +35,7 @@ image::../media/search-exchange.gif[搜尋交換]
 ====
 . 當您從搜尋結果中選取「Exchange 2016」時、系統會顯示「應用程式」登陸頁面。
 +
-image::../media/exch2016-land-page.gif[exch2016年網頁]
+image::../media/exch2016-land-page.png[exch2016年網頁]
 
 +
 在「應用程式」登陸頁面中、您會感興趣下列資訊：

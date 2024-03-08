@@ -22,11 +22,6 @@ summary: 在安裝OnCommand Insight 支援程式之前、您必須先下載目�
 目前的產品可能會耗用其他硬體資源（因為OnCommand Insight 強化的功能性）、而OnCommand Insight 這些資源並未用於舊版的整合式功能。
 
 * 部署計畫、包括OnCommand Insight 適用於「支援伺服器」、「資料倉儲與報告」、以及遠端擷取單元的硬體與網路組態。
-* Java 8 OnCommand Insight for the Java UI。
-+
-
-NOTE: 包含Java SE 8的付費Oracle授權OnCommand Insight 。客戶不需要購買任何額外的Java SE 8授權。本授權涵蓋Java SE 8搭配所有OCI元件的使用。請參閱 link:legal-notices.html["通知"] 頁面以取得特定詳細資料。
-
 * 已停用掃毒軟體
 +
 在OnCommand Insight 安裝過程中、您必須完全停用所有的掃毒程式。安裝之後、Insight元件（安裝、備份和歸檔程式路徑）所使用的路徑、除了排除整個路徑之外、還必須排除在掃毒範圍之外 `sanscreen` 掃描中的目錄。

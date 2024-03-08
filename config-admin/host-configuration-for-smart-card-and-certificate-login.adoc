@@ -59,29 +59,7 @@ summary: 您必須修改OnCommand Insight 支援Smart Card（CAC）和憑證登�
 對所有中繼憑證重複此步驟。
 
 . 在LDAP中指定與此範例相符的網域。
-. 在伺服器上OnCommand Insight `wildfly/standalone/configuration/standalone-full.xml` 檔案必須透過將驗證用戶端更新為中的「要求的」來修改 ``/subsystem=undertow/server=default-server/https-listener=default-https``以啟用CAC。執行適當的命令：
-+
-|===
 
-
-| 作業系統 | 指令碼 
-
-
- a| 
-Windows
- a| 
-wildfly \bin\enableCACforRemoteEJB.bat <install dir>
-
-
-
- a| 
-Linux
- a| 
-/opp/NetApp/OCI /萬用里/賓/ enableCACforRemoteEJB.sh
-
-|===
-+
-執行指令碼之後、請等到重新載入wildfly伺服器完成之後、再繼續下一步。
 
 . 重新啟動伺服器。
 

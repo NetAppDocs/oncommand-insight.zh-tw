@@ -2,7 +2,7 @@
 permalink: install-windows/insight-server-requirements.html 
 sidebar: sidebar 
 keywords: redhat 
-summary: 建議使用專屬伺服器。請勿在安裝任何其他應用程式的伺服器上安裝Insight。實體與虛擬伺服器均受支援、但必須符合產品需求。 
+summary: 安裝 OnCommand Insight 伺服器元件的需求。 
 ---
 = Insight伺服器需求
 :allow-uri-read: 
@@ -66,7 +66,7 @@ summary: 建議使用專屬伺服器。請勿在安裝任何其他應用程式�
  a| 
 作業系統
  a| 
-執行64位元Microsoft Windows Server 2012、2012 R2、2016或2019的電腦、搭配最新的Service Pack。
+執行 64 位元 Microsoft Windows Server 2016 、 2019 或 2022 的電腦、附有最新的 Service Pack 。
 
 Windows Server 2012推出的彈性檔案系統（Refs）與Refinible不相容OnCommand Insight 。僅NTFS檔案系統支援Windows OnCommand Insight 安裝功能。
 

@@ -165,7 +165,9 @@ java -jar rest-import-utility.jar [-uusername] [-ppassword]
 ====
 下列關鍵字會保留、並防止使用者將其指定為註釋名稱：-應用程式- Application_Priority -租戶- Line__of_Business - Business_Unit -如果您嘗試使用其中一個保留關鍵字匯入註釋類型、就會產生專案錯誤。如果您已使用這些關鍵字建立註釋名稱、則必須加以修改、以便匯入公用程式工具能夠正常運作。
 
+====
 +
 
-====
+NOTE: 註釋匯入公用程式需要 Java 8 或 Java 11 。在執行匯入公用程式之前、請先確定已安裝其中一項。建議使用最新的 OpenJDK 11 。
+
 
