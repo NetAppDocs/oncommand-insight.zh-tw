@@ -2,7 +2,7 @@
 permalink: config-admin/configuring-sso.html 
 sidebar: sidebar 
 keywords:  
-summary: 單一登入（SSO）可讓組織中的使用者使用OnCommand Insight 無法使用特殊帳戶的功能。 
+summary: 單一登入（SSO）可讓組織中的使用者使用OnCommand Insight 、而不需要特殊帳戶。 
 ---
 = 設定單一登入（SSO）
 :allow-uri-read: 
