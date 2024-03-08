@@ -12,4 +12,4 @@ summary:
 
 可在文件中心外部取得《發行說明》OnCommand Insight 。系統會提示您使用 NetApp 支援網站認證資料登入。
 
-link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2652943["版本資訊 .PDF"^]
+link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2652943["版本資訊 .PDF"^] （在新視窗中開啟）
