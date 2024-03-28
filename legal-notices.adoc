@@ -44,4 +44,8 @@ https://www.netapp.com/us/legal/privacypolicy/index.aspx[]
 
 通知檔案提供有關 NetApp 軟體所使用之協力廠商版權與授權的資訊。
 
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2683210["關於此功能的注意事項OnCommand Insight"^]
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2887138["OnCommand Insight 7.3.15 注意事項"^]
+
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2882721["OnCommand Insight 7.3.14 注意事項"^]
+
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2881199["OnCommand Insight 7.3.13 注意事項"^]

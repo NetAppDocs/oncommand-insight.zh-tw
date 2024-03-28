@@ -51,8 +51,6 @@
   <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
   <block id="24efa7ee4511563b16144f39706d594f" category="section-title">注意</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知檔案提供有關 NetApp 軟體所使用之協力廠商版權與授權的資訊。</block>
-  <block id="96532acff98306bde184975084e9549c" category="inline-link">關於此功能的注意事項OnCommand Insight</block>
-  <block id="f4c7a3c5ae1df7a6c170973ba1bdce85" category="paragraph"><block ref="f4c7a3c5ae1df7a6c170973ba1bdce85" category="inline-link-rx"></block></block>
   <block id="5dd03e8d039863e563e049be198c3fd3" category="doc">版本資訊</block>
   <block id="496375f0bbb802e5ea6f5a6fcba708e1" category="paragraph">可在文件中心外部取得《發行說明》OnCommand Insight 。系統會提示您使用 NetApp 支援網站認證資料登入。</block>
   <block id="b1ff5704b48e42d700d43961dd415064" category="doc">商標</block>
@@ -7921,4 +7919,10 @@
   <block id="1767cf140ccb13b28bdcc76c42d20028" category="summary">安裝需要安裝數個 OnCommand Insight 元件、 Insight Server 和 Data Warehouse 。</block>
   <block id="91d2987029cf3cc4274c5eb4680b41dc" category="inline-link-macro">版本資訊 .PDF</block>
   <block id="4a72f4d610aba1b283b741c8990f9bb9" category="paragraph"><block ref="698989a8d25ebae051898deae3187b3f" category="inline-link-macro-rx"></block> （在新視窗中開啟）</block>
+  <block id="a025a7deda19d8febe29b4915330a80f" category="inline-link">OnCommand Insight 7.3.15 注意事項</block>
+  <block id="3c68b49692fae1f44d5bcc3f3ff40570" category="paragraph"><block ref="3c68b49692fae1f44d5bcc3f3ff40570" category="inline-link-rx"></block></block>
+  <block id="1eeac4787b3b9277406496e9c0b0460d" category="inline-link">OnCommand Insight 7.3.14 注意事項</block>
+  <block id="2d38b7c541c52f4778b0146ee5977422" category="paragraph"><block ref="2d38b7c541c52f4778b0146ee5977422" category="inline-link-rx"></block></block>
+  <block id="84cf7cbe773d4bdce52df2d271ec42ad" category="inline-link">OnCommand Insight 7.3.13 注意事項</block>
+  <block id="7b06c1df3904beda719ace07d24e5d2e" category="paragraph"><block ref="7b06c1df3904beda719ace07d24e5d2e" category="inline-link-rx"></block></block>
 </blocks>
