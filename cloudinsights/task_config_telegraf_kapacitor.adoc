@@ -1,0 +1,98 @@
+---
+sidebar: sidebar 
+permalink: task_config_telegraf_kapacitor.html 
+keywords: telegraf, installation, install, kapacitor 
+summary: kapacitor.組態 
+---
+= Kapacitor. Data Collector
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+本資料收集器可用來收集來自Influxdata Kapacitor. Cloud Insights
+
+
+
+== 安裝
+
+. 從 * 可伺服 > 收集器 * 、按一下 * + 資料收集器 * 。選擇 Kapacitor 。
++
+選取安裝Telegraf代理程式的作業系統或平台。
+
+. 如果您尚未安裝代理程式以供收集、或想要為不同的作業系統或平台安裝代理程式、請按一下「_顯示指示_」以展開 link:task_config_telegraf_agent.html["代理程式安裝"] 說明。
+. 選取要搭配此資料收集器使用的代理程式存取金鑰。您可以按一下「*+代理程式存取金鑰*」按鈕來新增代理存取金鑰。最佳實務做法：只有當您想要將資料收集器分組時、才使用不同的代理程式存取金鑰、例如依作業系統/平台。
+. 請依照組態步驟設定資料收集器。這些指示會因您用來收集資料的作業系統或平台類型而有所不同。
+
+
+image:KapacitorDCConfigWindows.png["Kapacitor.組態"]
+
+
+
+== 設定
+
+如需設定資訊、請參閱 https://docs.influxdata.com/kapacitor/v1.5/["Kapacitor.文件"]
+
+
+
+== 物件與計數器
+
+收集下列物件及其計數器：
+
+[cols="<.<,<.<,<.<,<.<"]
+|===
+| 物件 | 識別碼 | 屬性 | 資料點： 
+
+
+| Kapacitor | 命名空間
+節點名稱
+節點 IP | 作業系統架構
+作業系統名稱
+作業系統版本
+執行時間規格
+執行時間規格廠商
+執行階段規格版本
+正常運作時間
+Kapacitor 版本
+執行階段 VM 名稱
+執行階段 VM 廠商
+執行階段 VM 版本 | 已分配位元組
+降壓雜湊系統
+解放
+GC 系統
+GCC PU 分數
+堆分配
+堆積閒置
+堆使用
+堆物件
+堆已釋放
+堆系統
+上次 GC （ ns ）
+查詢
+Mallocs
+正在使用 Mcache
+Mcache 系統
+Mspan 正在使用中
+Mspan 系統
+下一個 GC （ ns ）
+NumGC
+其他系統
+暫停總計（ ns ）
+堆疊正在使用中
+堆疊系統
+系統位元組
+總分配位元組數
+平均執行時間（ ns ）
+錯誤 
+|===
+
+
+== 疑難排解
+
+如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面。

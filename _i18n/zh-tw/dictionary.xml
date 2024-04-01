@@ -7925,4 +7925,2914 @@
   <block id="2d38b7c541c52f4778b0146ee5977422" category="paragraph"><block ref="2d38b7c541c52f4778b0146ee5977422" category="inline-link-rx"></block></block>
   <block id="84cf7cbe773d4bdce52df2d271ec42ad" category="inline-link">OnCommand Insight 7.3.13 注意事項</block>
   <block id="7b06c1df3904beda719ace07d24e5d2e" category="paragraph"><block ref="7b06c1df3904beda719ace07d24e5d2e" category="inline-link-rx"></block></block>
+  <block id="18906ecb044421552f4c94c742621646" category="summary">kapacitor.組態</block>
+  <block id="d3761f3a03696694e546430b624f3542" category="doc">Kapacitor. Data Collector</block>
+  <block id="1d82355e9a49b0e00b0df8f87a981b73" category="paragraph">本資料收集器可用來收集來自Influxdata Kapacitor. Cloud Insights</block>
+  <block id="7cd8fb6e31cc946c078d2740c76a9899" category="section-title">安裝</block>
+  <block id="34328c30b9aeceaed8fcff2dfe3eec30" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。選擇 Kapacitor 。</block>
+  <block id="577ef588d3f183c37ef82368a6ff589c" category="paragraph">選取安裝Telegraf代理程式的作業系統或平台。</block>
+  <block id="1be0a2da8f4fd3b263e749ccf7b51da7" category="inline-link-macro">代理程式安裝</block>
+  <block id="16a55be69114dba2ac674b708e441474" category="list-text">如果您尚未安裝代理程式以供收集、或想要為不同的作業系統或平台安裝代理程式、請按一下「_顯示指示_」以展開 <block ref="f5c63eced10ddc346253829eec79c562" category="inline-link-macro-rx"></block> 說明。</block>
+  <block id="92d44d4b64d18fea589854680c8cd732" category="list-text">選取要搭配此資料收集器使用的代理程式存取金鑰。您可以按一下「*+代理程式存取金鑰*」按鈕來新增代理存取金鑰。最佳實務做法：只有當您想要將資料收集器分組時、才使用不同的代理程式存取金鑰、例如依作業系統/平台。</block>
+  <block id="d9f03c7fbabce6eb575b8ba4bbe299bc" category="list-text">請依照組態步驟設定資料收集器。這些指示會因您用來收集資料的作業系統或平台類型而有所不同。</block>
+  <block id="6501fa3c86462ded7187a4c119d46e5b" category="inline-image-macro">Kapacitor.組態</block>
+  <block id="dbf6b5b2cdedf021b5f438c1d0d94f55" category="paragraph"><block ref="dbf6b5b2cdedf021b5f438c1d0d94f55" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ad2376beebecdcf7846ba973fa1a005b" category="section-title">設定</block>
+  <block id="e711cd4bbd4573cce8f56f9019ee69f5" category="inline-link">Kapacitor.文件</block>
+  <block id="613c0ccc72426c675ba16888b7beb75b" category="paragraph">如需設定資訊、請參閱<block ref="4a1162f0f136a577fb8e0c35cb055638" category="inline-link-rx"></block></block>
+  <block id="a7a78b5087753fa02d45d7bbd76ed0d6" category="section-title">物件與計數器</block>
+  <block id="df3df39a15aeb5cf831a87d21a352935" category="paragraph">收集下列物件及其計數器：</block>
+  <block id="497031794414a552435f90151ac3b54b" category="cell">物件</block>
+  <block id="e2da36de4fe1aaf514aaef4ecca2c8ec" category="cell">識別碼</block>
+  <block id="287234a1ff35a314b5b6bc4e5828e745" category="cell">屬性</block>
+  <block id="9568886685b0148a2a42e61380688e11" category="cell">資料點：</block>
+  <block id="496e790e66d36d3bfbadd9eca21b9d6b" category="cell">Kapacitor</block>
+  <block id="8aff22b7ab299e63ad122521b8cce856" category="cell">命名空間
+節點名稱
+節點 IP</block>
+  <block id="3f6d224a7b20e18c557bf21bfe5ede71" category="cell">作業系統架構
+作業系統名稱
+作業系統版本
+執行時間規格
+執行時間規格廠商
+執行階段規格版本
+正常運作時間
+Kapacitor 版本
+執行階段 VM 名稱
+執行階段 VM 廠商
+執行階段 VM 版本</block>
+  <block id="1d3092a2cd5069209f6c8a3a894f204c" category="cell">已分配位元組
+降壓雜湊系統
+解放
+GC 系統
+GCC PU 分數
+堆分配
+堆積閒置
+堆使用
+堆物件
+堆已釋放
+堆系統
+上次 GC （ ns ）
+查詢
+Mallocs
+正在使用 Mcache
+Mcache 系統
+Mspan 正在使用中
+Mspan 系統
+下一個 GC （ ns ）
+NumGC
+其他系統
+暫停總計（ ns ）
+堆疊正在使用中
+堆疊系統
+系統位元組
+總分配位元組數
+平均執行時間（ ns ）
+錯誤</block>
+  <block id="28362762be9926ed2f769fa58e5451bf" category="paragraph">如需其他資訊、請參閱 <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> 頁面。</block>
+  <block id="4002c18c39606cdbd9ec7cf8e2a090ad" category="summary">Redis資料收集器組態</block>
+  <block id="001dce6e76a3b3b754db59e538750dd8" category="doc">Redis Data Collector</block>
+  <block id="0188f056a49bdb8c4c3a015b2229d13e" category="paragraph">使用此資料收集器從Redis收集數據。Cloud InsightsRedis是一種開放原始碼的記憶體內建資料結構存放區、可做為資料庫、快取和訊息代理程式、支援下列資料結構：字串、雜湊、清單、集等等。</block>
+  <block id="3c9d727e041ea1596d9e67f7568b3d4b" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。選擇 Redis 。</block>
+  <block id="602c395372ffc11185f0cc2291099c7f" category="inline-image-macro">Redis Data Collector組態</block>
+  <block id="5c452c3f36884795da26d34b96db691c" category="paragraph"><block ref="5c452c3f36884795da26d34b96db691c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6f6c7e0bd9df07afbd8f27f303fba934" category="inline-link-macro">Redis文件</block>
+  <block id="ae042fc4879ccb38022624b37b7c15bd" category="paragraph">如需相關資訊、請參閱 <block ref="f84fd6d9d2467b4d3f4dd370ee4175c5" category="inline-link-macro-rx"></block>。</block>
+  <block id="f322d46b7caf7e1252191f92e72ed682" category="cell">物件：</block>
+  <block id="7bb916f645305a34ea12c0e8306013e0" category="cell">識別碼：</block>
+  <block id="77174410b72decfd0b259961f1f65a8f" category="cell">屬性：</block>
+  <block id="e111446745a1825b862f8727ae63bce4" category="cell">紅皮</block>
+  <block id="f69f559468f0eeb001c1c4ac7e03ba16" category="cell">命名空間
+伺服器</block>
+  <block id="57e45a1f550d7e2a276b57b6bca05dca" category="summary">Netstat資料收集器組態</block>
+  <block id="38fe3e3fc1af1752c621d2c58ca1d537" category="doc">Netstat資料收集器</block>
+  <block id="1d90778793975e863bbd8302e8bebf4f" category="paragraph">使用此資料收集器來收集Netstat指標。Cloud Insights</block>
+  <block id="3d0738af358079dc547755789be4774a" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。選擇 Netstat 。</block>
+  <block id="fbe4c8006ab6084c9caa4749e31a48b2" category="inline-image-macro">Windows Netstat組態</block>
+  <block id="3b600482a8cf2d80423a46534f251590" category="paragraph"><block ref="3b600482a8cf2d80423a46534f251590" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5640ddf22fd2c345be7dd9bb71023b38" category="cell">Netstat</block>
+  <block id="c3e78df51911e54e9bf950f6adb83f17" category="cell">節點UUID</block>
+  <block id="f3149829d80f1010c9764cf219626e96" category="cell">節點 IP
+節點名稱</block>
+  <block id="3af2b23a1e0e5c8f8f71ba7f0645e753" category="summary">HAProxy資料收集器組態</block>
+  <block id="d7f6334a8fd2ef6e012df8e7d1bc1840" category="doc">HAProxy資料收集器</block>
+  <block id="f43901d1ca245307f30d36ef67a4ef53" category="paragraph">使用此資料收集器從HAProxy收集指標。Cloud Insights</block>
+  <block id="419697cbdba3ded9f042d2b7a045a7be" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。選擇 HAProxy 。</block>
+  <block id="6c1dacdba2adca5cfa22ff19b2d327fe" category="inline-image-macro">HAProxy組態</block>
+  <block id="00f9d91055267fed1b468bf28bbfbb04" category="paragraph"><block ref="00f9d91055267fed1b468bf28bbfbb04" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cb69e07b7e1dc3bc5864b07b79bba857" category="paragraph">Telegraf的HAProxy外掛程式仰賴HAProxy統計資料功能。這是HAProxy內建的組態、但並未隨裝即用。啟用後、HAProxy會顯示HTML端點、以便在瀏覽器上檢視或擷取所有HAProxy組態的狀態。</block>
+  <block id="427a02dad880facfe9fb816312194295" category="section-title">相容性：</block>
+  <block id="4be336e5cd4f5bf12e0746a849c25857" category="paragraph">組態是根據HAProxy 1.1.4版開發而成。</block>
+  <block id="0c3983f3904b2dc8bf6ac988603783d3" category="section-title">設定：</block>
+  <block id="376c8f5141386640268a2d2c2187ca53" category="paragraph">若要啟用統計資料、請編輯HaProxy組態檔案、並使用您自己的使用者/密碼和/或HaProxy URL、在「資料錯誤」區段之後新增下列行：</block>
+  <block id="06e964df53203dd063d51650b2e750c1" category="paragraph">以下是啟用統計資料的簡化範例組態檔：</block>
+  <block id="c3236962a66f7a46e03d64979b9d1600" category="inline-link-macro">HAProxy文件</block>
+  <block id="b4ba6dee394cc6642974efbba5297a9a" category="paragraph">如需完整且最新的指示、請參閱 <block ref="5a379a5f4fc2aff325e2186c5a680899" category="inline-link-macro-rx"></block>。</block>
+  <block id="cd1ff811c7eb5c250dc81f6a5286cf43" category="cell">HAProxy前端</block>
+  <block id="8dea80f14c6104c5733a52c154ef935e" category="cell">命名空間
+地址
+Proxy</block>
+  <block id="c45e1928ae65186fbbe90a9be80ee483" category="cell">節點 IP
+節點名稱
+Proxy ID
+模式
+處理序識別碼
+工作階段速率限制
+伺服器 ID
+工作階段限制
+狀態</block>
+  <block id="958c01b1efd28326ab76cd02bbd1597e" category="cell">位元組
+位元組輸出
+快取命中次數
+快取查詢
+略過壓縮位元組
+壓縮位元組
+壓縮位元組輸出
+壓縮回應
+連線速率
+連線速率上限
+連線總數
+連線規則拒絕的要求
+安全疑慮拒絕的要求
+因安全考量而拒絕回應
+工作階段規則拒絕的要求
+要求錯誤
+回應 1xx
+回應 2xx
+回應 3xx
+回應 4xx
+回應 5xx
+回應其他
+攔截的要求
+工作階段速率
+工作階段速率上限
+要求率
+申請費率上限
+申請總數
+工作階段
+工作階段上限
+工作階段總計
+要求重新寫入</block>
+  <block id="dada9c5c3057d3996c71c414bb95f293" category="cell">HAProxy伺服器</block>
+  <block id="b79b9d688e7feb386a427ddee600bf90" category="cell">命名空間
+地址
+Proxy
+伺服器</block>
+  <block id="5576d0777cc9aa03fb396cdae277dc93" category="cell">節點 IP
+節點名稱
+檢查完成時間
+檢查秋季組態
+檢查健全狀況值
+檢查 Rise 組態
+檢查狀態
+Proxy ID
+上次變更時間
+上次工作階段時間
+模式
+處理序識別碼
+伺服器 ID
+狀態
+重量</block>
+  <block id="7eb59f1dcd9a062c8263f5e4b2ebeb69" category="cell">作用中伺服器
+備份伺服器
+位元組
+位元組輸出
+檢查草場
+檢查失敗
+用戶端中止
+連線
+連線平均時間
+停機時間總計
+拒絕回應
+連線錯誤
+回應錯誤
+回應 1xx
+回應 2xx
+回應 3xx
+回應 4xx
+回應 5xx
+回應其他
+伺服器選取的總計
+佇列目前
+佇列上限
+佇列平均時間
+每秒工作階段數
+每秒工作階段數上限
+連線重複使用
+平均回應時間
+工作階段
+工作階段上限
+伺服器傳輸中止
+工作階段總計
+工作階段總時間平均
+要求重新分派
+要求重試
+要求重新寫入</block>
+  <block id="f7e484ed281631da8383d690f4eddd80" category="cell">HAProxy後端</block>
+  <block id="97147057d2a68260221e7116c41c9222" category="cell">節點 IP
+節點名稱
+Proxy ID
+上次變更時間
+上次工作階段時間
+模式
+處理序識別碼
+伺服器 ID
+工作階段限制
+狀態
+重量</block>
+  <block id="9a0ea7807c7dd21ed7a14f4f90d3e5ba" category="cell">作用中伺服器
+備份伺服器
+位元組
+位元組輸出
+快取命中次數
+快取查詢
+檢查草場
+用戶端中止
+略過壓縮位元組
+壓縮位元組
+壓縮位元組輸出
+壓縮回應
+連線
+連線平均時間
+停機時間總計
+安全疑慮拒絕的要求
+因安全考量而拒絕回應
+連線錯誤
+回應錯誤
+回應 1xx
+回應 2xx
+回應 3xx
+回應 4xx
+回應 5xx
+回應其他
+伺服器選取的總計
+佇列目前
+佇列上限
+佇列平均時間
+每秒工作階段數
+每秒工作階段數上限
+申請總數
+連線重複使用
+平均回應時間
+工作階段
+工作階段上限
+伺服器傳輸中止
+工作階段總計
+工作階段總時間平均
+要求重新分派
+要求重試
+要求重新寫入</block>
+  <block id="29f2c433c8324679db838494d114ace0" category="summary">彈性搜尋資料收集器組態</block>
+  <block id="b254328dbad8d7bef169a1d38f1b1bec" category="doc">彈性搜尋資料收集器</block>
+  <block id="7ad1c9b2a026e8cd588b98357fc68620" category="paragraph">使用此資料收集器從Elasticsearch收集指標。Cloud Insights</block>
+  <block id="c22bbce40f7866184fc5238e4cf0526d" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。選擇彈性搜尋。</block>
+  <block id="8dc7af6f97dac4ac46d66b12e0c86974" category="inline-image-macro">彈性搜尋組態</block>
+  <block id="5b3344ac5bf291f59c070db863943014" category="paragraph"><block ref="5b3344ac5bf291f59c070db863943014" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7423bcb1039be167bcf002d43ee6670e" category="inline-link-macro">彈性搜尋文件</block>
+  <block id="1cd7a99f1b7abd82e5c52da438eb8098" category="paragraph">如需相關資訊、請參閱 <block ref="bcfb5ea01b37890a7134cc470707e795" category="inline-link-macro-rx"></block>。</block>
+  <block id="824ae3473df67a0ffcc2e7213c8155ab" category="cell">彈性搜尋叢集</block>
+  <block id="b47ef76054c94c60d8ded4d3bf1ca5ae" category="cell">命名空間
+叢集</block>
+  <block id="89fc526a8bc54d6b35b9f537497ad12b" category="cell">節點 IP
+節點名稱
+叢集狀態</block>
+  <block id="8abf5b6d1ce731d469067e732db35e2c" category="cell">主節點計數
+總節點數
+檔案系統資料可用（位元組）
+檔案系統可用資料（位元組）
+檔案系統資料總計（位元組）
+JVM 執行緒
+OS 分配的處理器
+作業系統可用的處理器
+可用作業系統內存（位元組）
+OS 內存免費
+作業系統內存總計（位元組）
+使用的 OS 內存（字節）
+已使用 OS 內存
+處理 CPU
+索引完成大小（位元組）
+索引計數
+索引文件計數
+索引文件已刪除
+欄位資料遷離指數
+索引欄位資料記憶體大小（位元組）
+索引查詢快取計數
+索引快取大小
+索引區段計數
+索引區段文件值記憶體（位元組）
+索引標註索引主節點平均
+索引標註索引主節點最大
+索引可使索引主節點最小化
+索引可平均分佈索引複寫
+索引 Shards Index Replication Max
+索引可使索引複寫最小化
+平均指數
+索引 Shards Max
+索引可分佈主節點
+索引標誌複寫
+指數顯示總計
+索引儲存區大小（位元組）</block>
+  <block id="dc74b66d0fe6a965e5a23640119f3c60" category="cell">彈性搜尋節點</block>
+  <block id="673731fc48d3aeb518baecf281fb2c22" category="cell">命名空間
+叢集
+ES 節點 ID
+ES 節點 IP
+ES 節點</block>
+  <block id="ca7086c6ed2859db76f290c9cc1ed037" category="cell">區域ID</block>
+  <block id="63fa005b729d1d453dbcab794d84a459" category="cell">機器學習已啟用
+機器學習記憶體
+機器學習最大開放工作數
+已安裝 X-Pack
+斷路器會計估計大小（位元組）
+斷路器會計限制大小（位元組）
+斷路器會計負荷
+斷路器會計跳脫
+Breakers Field Data 預估大小（位元組）
+斷路器欄位資料限制大小（位元組）
+斷路器現場資料負荷
+斷路器 Field Data 跳脫
+斷路器在線估算大小（位元組）
+斷路器在線限制大小（位元組）
+斷路器在飛行中的額外負荷
+斷路器在飛行中跳脫
+斷路器父估計大小（位元組）
+斷路器父限制大小（位元組）
+斷路器父級開銷
+斷路器父跳閘
+Breakers Request Estimated Size （位元組）
+斷路器要求限制大小（位元組）
+斷路器要求額外負荷
+斷路器要求已跳脫
+檔案系統資料可用（位元組）
+檔案系統可用資料（位元組）
+檔案系統資料總計（位元組）
+檔案系統 IO 統計資料裝置作業
+檔案系統 IO 統計資料裝置讀取（ KB ）
+檔案系統 IO 統計資料裝置讀取作業
+檔案系統 IO 統計資料裝置 Erite （ KB ）
+檔案系統 IO 統計資料裝置寫入作業
+檔案系統 IO 統計總作業數
+檔案系統 IO 統計資料讀取總計（ KB ）
+檔案系統 IO 統計資料讀取作業
+檔案系統 IO 統計資料寫入總計（ KB ）
+檔案系統 IO 統計資料寫入作業
+檔案系統可用最少使用量預估（位元組）
+檔案系統最少使用量預估總計（位元組）
+檔案系統使用率最低的磁碟
+檔案系統可用的最大使用量預估（位元組）
+檔案系統最大使用量預估總計（位元組）
+檔案系統使用率最高的磁碟
+檔案系統可用總數（位元組）
+檔案系統可用空間總計（位元組）
+檔案系統總計（位元組）
+索引完成大小（位元組）
+索引文件計數
+索引文件已刪除
+欄位資料遷離指數
+索引欄位資料記憶體大小（位元組）
+定期清除索引
+指數「齊平總計」
+指數「排清總時間」
+索引取得最新資訊
+索引取得存在時間
+索引取得存在總計
+索引獲得總計
+索引索引刪除總計
+索引索引索引索引總計
+索引索引 Noop 更新總計
+索引索引節流時間
+HTTP 目前開啟
+HTTP 總開啟數
+JVM 緩衝區資源池直接計數
+JVM 類別目前載入的計數
+JVM GC 收集器舊集合計數
+JVM 內存堆已提交（字節）
+作業系統 CPU 平均負載 15 公尺
+作業系統 CPU
+可用作業系統內存（位元組）
+OS Swap Free （位元組）
+處理 CPU
+處理 CPU 總計
+處理序最大檔案描述元數
+處理序內存虛擬總計（位元組）
+執行緒集區分析作用中
+執行緒集區分析已完成
+執行緒集區分析最大
+執行緒集區分析佇列
+執行緒集區分析遭拒
+執行緒集區分析執行緒
+執行緒集區 Fetch Shard 已啟動 Active
+執行緒集區 Fetch Shard 已完成
+執行緒集區 Fetch Shard 開始規模最大
+執行緒集區擷取 Shard 已啟動佇列
+執行緒集區 Fetch Shard 已開始拒絕
+執行緒集區 Fetch Shard 已啟動 ShReads
+執行緒集區擷取 Shard Store Active
+執行緒集區擷取 Shard 儲存區已完成
+傳輸 RX （每秒）
+傳輸 RX 位元組（每秒）
+Transport Server Open
+傳輸 TX （每秒）
+傳輸 TX 位元組（每秒）</block>
+  <block id="1da80b1336c0c9594d16e3d3dab10d20" category="summary">Consul資料收集器組態</block>
+  <block id="c4079b6998dfb2e5f02a35b303e1acce" category="doc">Consul Data Collector</block>
+  <block id="44aa5a1c223b0773b5006801b857966b" category="paragraph">此資料收集器可用來收集來自Consul的數據。Cloud Insights</block>
+  <block id="6ed4f0f0b93d3def9b1fe51a22e44d7a" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。選擇「 Consul 」。</block>
+  <block id="90b5256380802f2feaca144a438190c3" category="inline-link-macro">安裝代理程式</block>
+  <block id="dc31f8b70f914e6d9f6e9267b53fb552" category="paragraph">如果您尚未設定收集的值機員、系統會提示您 <block ref="a1b69a79c96be75135c991d76ebf15bb" category="inline-link-macro-rx"></block> 在您的環境中。</block>
+  <block id="bfd9f9769236435b451e6625d2b38cd5" category="paragraph">如果您已設定代理程式、請選取適當的作業系統或平台、然後按一下*繼續*。</block>
+  <block id="bddbdda6ad83151063cda71734d4faf4" category="list-text">請依照「Consul Configuration」（儲存組態）畫面中的指示來設定資料收集器。這些指示會因您用來收集資料的作業系統或平台類型而有所不同。</block>
+  <block id="488f9e22c68fcc3e89060d2f5f537744" category="inline-link-macro">駐廠文件</block>
+  <block id="a47b0fae235ee24589e1075c2fe0daeb" category="paragraph">如需相關資訊、請參閱 <block ref="209f85ad7011f70864ffdec527911e92" category="inline-link-macro-rx"></block>。</block>
+  <block id="058912364976efe3be18dc926c430355" category="section-title">儲存器的物件和計數器</block>
+  <block id="52668346d353c3e6fdee1d0c1b711981" category="cell">駐港總領事</block>
+  <block id="24a1a9023bf78f02042ebc02aae1acda" category="cell">命名空間
+檢查 ID
+服務節點</block>
+  <block id="4cbed0b534c83a56e07762ba4b9a62f4" category="cell">節點 IP
+節點作業系統
+節點UUID
+節點名稱
+服務名稱
+檢查名稱
+服務ID
+狀態</block>
+  <block id="701fda79498070ea91a9c98bbdd1dd4e" category="cell">關鍵
+傳球
+警告</block>
+  <block id="aee1b49e2ea5679073623959ef024069" category="summary">HTTP 資料收集器組態</block>
+  <block id="d5418d1fa8d23d7e5951dbf339c3c5a8" category="doc">ActiveMQ資料收集器</block>
+  <block id="123afee47eb477e020c1546a00fd80a1" category="paragraph">使用此資料收集器從ActiveMQ收集數據。Cloud Insights</block>
+  <block id="4bcd3cf21ebb34b835f0e6aa0d638f54" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。選擇 ActiveMQ 。</block>
+  <block id="52e070f5418cead2f633bf0a2288946c" category="inline-image-macro">ActiveMQ組態</block>
+  <block id="21562149e2176820b6c8d39f6bf47011" category="paragraph"><block ref="21562149e2176820b6c8d39f6bf47011" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="16fc9b4d33f552995ec677b1a481fba5" category="inline-link">ActiveMQ文件</block>
+  <block id="af713bd2f304582c4b486e93a2e9e5a6" category="paragraph">如需相關資訊、請參閱<block ref="d9a53f438d966f90bfb05037caa61b81" category="inline-link-rx"></block></block>
+  <block id="8a07863586a1d1c6f2c552f72c46e180" category="cell">ActiveMQ佇列</block>
+  <block id="203da89ec2d37f8da5871651156dc15a" category="cell">命名空間
+佇列
+連接埠
+伺服器</block>
+  <block id="b76bb2de5529facad404eaf6a5c4b511" category="cell">節點名稱
+節點 IP
+節點UUID</block>
+  <block id="18734ab50531cecf383920035017d2cc" category="cell">使用者計數
+等量計數
+佇列計數
+佇列大小</block>
+  <block id="f0e7ed43fc90ff6a4e95ff91a0a7a480" category="cell">ActiveMQ訂購者</block>
+  <block id="e6ced1c4e8201f48dae7310d7e19b364" category="cell">用戶端ID
+連線 ID
+連接埠
+伺服器
+命名空間</block>
+  <block id="825eed3baabe97b7c40a52703d100946" category="cell">為使用中
+目的地
+節點名稱
+節點 IP
+節點UUID
+節點作業系統
+選取元
+訂購</block>
+  <block id="710583130d9d27b7a330a9eafed00d38" category="cell">等量計數
+已分派計數
+已分派佇列大小
+佇列計數
+擱置佇列大小</block>
+  <block id="31c61bb8a89aefd1e2819389798f7ec7" category="cell">ActiveMQ主題</block>
+  <block id="125e537310f9a240c5cd57e48866cfea" category="cell">主題
+連接埠
+伺服器
+命名空間</block>
+  <block id="22a6fbd49f601102da3f17cc56176d59" category="cell">節點名稱
+節點 IP
+節點UUID
+節點作業系統</block>
+  <block id="592897d62e3575026edb33cb4cb753ae" category="cell">使用者計數
+等量計數
+佇列計數
+尺寸</block>
+  <block id="9d2537f158357c95ae162019d658de08" category="doc">RethinkDB Data Collector</block>
+  <block id="86e303e0c497b52b7c3e448d2a739f78" category="paragraph">此資料收集器可用來從RethinkDB收集指標。Cloud Insights</block>
+  <block id="5ccd9dd8e50ca94f3cd4db51f6b42c50" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。選擇 RethinkDB 。</block>
+  <block id="10e1e1205ffd97adbe671ede9a7d4f2d" category="inline-image-macro">RedinkDB Data Collector組態</block>
+  <block id="dd379e6631df8e94fe26188b06220cf7" category="paragraph"><block ref="dd379e6631df8e94fe26188b06220cf7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7fc41d1df644e11b26a2696444f69499" category="inline-link-macro">RethinkDB文件</block>
+  <block id="61c63e4b6fa084c1807e368faaf150e4" category="paragraph">如需相關資訊、請參閱 <block ref="02af3cecada50a802d68e28a6a325991" category="inline-link-macro-rx"></block>。</block>
+  <block id="89be6ffd9cf2244c68503bbda41ae112" category="summary">Cloud Insights 支援 Telegraf 做為其收集整合資料的代理程式、並可在 Windows 或 Linux 上進行設定。</block>
+  <block id="2ddc4416c197500bc7619829b98c8b77" category="doc">設定代理程式以收集資料（ Windows/Linux ）</block>
+  <block id="bdb9a31f361d8d3be1c6915647e92d4d" category="inline-link-macro">Telegraf</block>
+  <block id="23da8c24c0f52acdf7f6f9c4a08997c8" category="paragraph">使用Cloud Insights <block ref="eed175bcf32f20f81ea47b9c982c2797" category="inline-link-macro-rx"></block> 做為收集整合資料的代理程式。Telegraf是外掛程式導向的伺服器代理程式、可用來收集及報告度量、事件及記錄。輸入外掛程式可透過直接存取系統/作業系統、呼叫協力廠商API或聆聽已設定的串流（例如 卡夫卡、塔斯D等）。輸出外掛程式可用來將收集到的度量、事件和記錄從代理程式傳送至Cloud Insights</block>
+  <block id="5186b139e52f7a5447ce73de13e4e524" category="paragraph">Cloud Insights 目前的 Telegraf 版本是 *1.24.0* 。</block>
+  <block id="8334797b9b3383d4f48d98178b8845ea" category="inline-link-macro">本頁</block>
+  <block id="6dac8d8f7e40ada8d5686e3e8192f90f" category="paragraph">如需在 Kubernetes 上安裝的相關資訊、請參閱 <block ref="36dbd85d6f83f853e5478a62019a359b" category="inline-link-macro-rx"></block>。</block>
+  <block id="ae2f2b5e87a12f1cd650f0e46b92e4ec" category="admonition">為確保稽核與資料報告的準確性、強烈建議您使用*網路時間傳輸協定（NTP）*或*簡易網路時間傳輸協定（SNTP）*來同步代理機器上的時間。</block>
+  <block id="f97f94f0ff0c35a96686e2fd00940ac8" category="admonition">如果您想在安裝代理程式之前驗證安裝檔案、請參閱以下的一節 <block ref="1d9f3d6343939e76574c60762a7f2fae" category="inline-xref-macro-rx"></block>。</block>
+  <block id="137bac1c26ca6d0b61bc783c9a2fcbbd" category="section-title">安裝代理程式</block>
+  <block id="a4c0f3c4bd8931418c028fb88c45e72f" category="paragraph">如果您正在安裝服務資料收集器、但尚未設定代理程式、系統會提示您先安裝適當作業系統的代理程式。本主題提供在下列作業系統上安裝Telegraf代理程式的說明：</block>
+  <block id="8d6f7baf6fd8e47d9316fcc507ab0f85" category="list-text"><block ref="85415f26af88eac138de6f713927df0c" category="inline-xref-macro-rx"></block></block>
+  <block id="95f68796200de884bc3186742179de85" category="list-text"><block ref="8311b71d9af22c435aebd4b15988ca17" category="inline-xref-macro-rx"></block></block>
+  <block id="d41bd76f36789e8fddb867c10a5eca40" category="list-text"><block ref="f0b8d86b1d5e602002cf4f7e7b6c1cac" category="inline-xref-macro-rx"></block></block>
+  <block id="4705018fb833a2cd4979b3acd0c3171f" category="paragraph">若要安裝代理程式、無論您使用的平台為何、都必須先執行下列動作：</block>
+  <block id="60e927136e016a2a126538b1a592e8c5" category="list-text">登入您要用於代理程式的主機。</block>
+  <block id="513f11f8d213c209a990a1bb086ea780" category="list-text">登入您的 Cloud Insights 環境、然後瀏覽至 * 可服務性 &gt; 收集器 * 。</block>
+  <block id="212039b527f83b6053ae8fd23bb11e26" category="list-text">按一下「*+資料收集器*」、然後選擇要安裝的資料收集器。</block>
+  <block id="72213a3f462eab56462e1fd1892f6fc0" category="list-text">為您的主機選擇適當的平台（ Windows 、 Linux ）</block>
+  <block id="0b5b60f6bf77a0318f6283c5d8ce5be7" category="list-text">請針對每個平台執行其餘步驟。</block>
+  <block id="09e0466fcc22c337dc6af8a799296033" category="admonition">在主機上安裝代理程式之後、您就不需要在該主機上重新安裝代理程式。</block>
+  <block id="4779eaa1340da59df6b8231755992886" category="inline-link-macro">「節點」度量</block>
+  <block id="02cec17a35aef41b0e1a09a9070bf893" category="admonition">在伺服器/ VM上安裝代理程式之後Cloud Insights 、除了從您設定的任何資料收集器收集資料、還會從該系統收集度量資料。這些指標的收集方式如下 <block ref="721decf63f7a81173878238d526f87a6" category="inline-link-macro-rx"></block>。</block>
+  <block id="2611d0720b029b968257661771d287e6" category="admonition">如果您使用的是Proxy、請先閱讀平台的Proxy指示、再安裝Telegraf代理程式。</block>
+  <block id="b2997605f7b826343b475f71837415f4" category="section-title">記錄位置</block>
+  <block id="21872dffda230726cb93a6dddff7dd00" category="paragraph">Telegraf 記錄訊息會從 STDout 重新導向至下列記錄檔為預設值：</block>
+  <block id="176f2e3b515143c4119028872457ab70" category="list-text">RHEL/CentOS ： /var/log/telegraf/telegraf.log</block>
+  <block id="dba98037ac90ffd514afa8ae59edc426" category="list-text">Ubuntu / Debian ： /var/log/telegraf/telegraf.log</block>
+  <block id="e6c0bd06ad9776dae0a5cf43e60b0ff4" category="list-text">Windows ： C:\Program Files\telegraf\telegraf.log</block>
+  <block id="e881539baa442c22144c7ae555cac843" category="list-text">必須安裝PowerShell</block>
+  <block id="2156565620990981867eac598ee8b32d" category="list-text">如果您使用的是Proxy、則必須遵循*設定Proxy支援for Windows *一節中的指示。</block>
+  <block id="77fe3eec7153b8f297a2bc358451e189" category="section-title">設定適用於Windows的Proxy支援</block>
+  <block id="f3dd6d7b854220a72089f42589f41cba" category="admonition">如果您的環境使用Proxy、請先閱讀本節再安裝。</block>
+  <block id="9b08a379d02da9e64bce4ee2389fc783" category="admonition">以下步驟概述設定_https_proxy/https_proxy_環境變數所需的動作。在某些Proxy環境中、使用者可能也需要設定_no_proxyEnvironments _變數。</block>
+  <block id="a5f3019989ce33b954d73eef96682b0a" category="paragraph">對於位於Proxy後的系統、請執行下列步驟、設定安裝Telegraf代理程式之前*的_https_proxy_和/或_https_proxy_環境變數：</block>
+  <block id="59c020eb3b2fac7b9a29161528b3da48" category="section-title">安裝代理程式</block>
+  <block id="8774ad5045a9c9dbd5af8443ad85146e" category="inline-image-macro">Windows代理程式安裝</block>
+  <block id="dcdaa0ef05a3fb89ab74a979905c80d2" category="paragraph"><block ref="dcdaa0ef05a3fb89ab74a979905c80d2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5002498d543f683aae80ee22af4a4919" category="list-title">在Windows上安裝代理程式的步驟：</block>
+  <block id="08c86f7c6085b75b443831ac2339b9eb" category="list-text">選擇代理程式存取金鑰。</block>
+  <block id="210f49b0f42e5dd87eb3a71d8a25532e" category="list-text">從代理程式安裝對話方塊複製命令區塊。您可以按一下剪貼簿圖示、將命令快速複製到剪貼簿。</block>
+  <block id="cc9e3ada3e15910f4f34f7dddee7971a" category="list-text">開啟PowerShell視窗</block>
+  <block id="19e2304cac236ec4b99e287bd1711c9a" category="list-text">將命令貼到PowerShell視窗中、然後按Enter鍵。</block>
+  <block id="72aaa179eba4eb63e2dc64b9a417771d" category="list-text">命令會下載適當的代理程式安裝程式、安裝並設定預設組態。完成後、它會重新啟動代理程式服務。此命令具有唯一的金鑰、有效時間為24小時。</block>
+  <block id="ffd71ae6a321e93c38ab5f9b79ceb31a" category="list-text">單擊*完成*或*繼續*</block>
+  <block id="4fa34467eb66080db7c23f897ac4b8af" category="paragraph">安裝代理程式之後、您可以使用下列命令來啟動/停止服務：</block>
+  <block id="573a1cc1840c9732e7145a21d3f3734d" category="section-title">解除安裝代理程式</block>
+  <block id="d19721dc26042ef4a2f9474f15fd9551" category="paragraph">若要在Windows上解除安裝代理程式、請在PowerShell視窗中執行下列動作：</block>
+  <block id="a8e0b2a2a3d514566af06fa837684d99" category="list-text">停止並刪除Telegraf服務：</block>
+  <block id="b5de2c13f95171f5dc8fed7123f4fd51" category="list-text">從信任來源移除憑證：</block>
+  <block id="f68c6450fe9cbf9bcf2153b40c67f142" category="list-text">刪除_C:\Program Files\Telewraf_資料夾、以移除二進位檔、記錄檔和組態檔</block>
+  <block id="482671fee2a539ceb19e6bc08e0b0655" category="list-text">從登錄中移除_system\CurrentControlSet\Services\EventLog\Application\Telewraf_機碼</block>
+  <block id="bc72b4980d123f85b510df4ebcab83bf" category="section-title">升級代理程式</block>
+  <block id="8cf39a7fcad49926187638c2ef3888e4" category="paragraph">若要升級Telewraf代理程式、請執行下列步驟：</block>
+  <block id="2131151d9623bddef4c64eb9b42c4c1e" category="list-text">停止並刪除Telewraf服務：</block>
+  <block id="307db1eaa318a5a19e7f13b2a410df0a" category="list-text">從登錄中刪除_system\CurrentControlSet\Services\EventLog\Application\Telewraf_機碼</block>
+  <block id="54bab0726441aa1bd7acb54e33ed0af1" category="list-text">刪除_C:\Program Files\Telewraf\Telewraf.conf</block>
+  <block id="e548b13be6208523f2daa7458e9ab258" category="list-text">刪除_C:\Program Files\Telewraf\Telewraf_exe_</block>
+  <block id="44bbcb23890d6d6f6e19f827fe6a3239" category="inline-link-macro">安裝新代理程式</block>
+  <block id="1e3047ccd30b2ed259aa8b3fe3e877d1" category="list-text"><block ref="67cec2de8f18c94e7ba97311262ff17e" category="inline-link-macro-rx"></block>。</block>
+  <block id="b523f646735e8e8381556641bbff1d1f" category="section-title">RHEL與CentOS</block>
+  <block id="267bedda4c5c4a640bb527d89667582d" category="list-text">下列命令必須可用：curl、Sudo、ping、shav256sum、openssl、 和dmidecode</block>
+  <block id="d45fc0c2a28126623498664c1e032858" category="list-text">如果您使用Proxy、則必須遵循*設定RHEL/CentOS* Proxy支援一節中的指示。</block>
+  <block id="019f11868271c32347a01f45447d4e72" category="section-title">設定RHEL/CentOS的Proxy支援</block>
+  <block id="80b682b4c5b4642df4eae385b21569a1" category="paragraph">對於位於Proxy之後的系統、請執行下列步驟*先前*、以安裝Telegraf代理程式：</block>
+  <block id="b28d80fd10a0256acc49b263b43162c6" category="list-text">為目前使用者設定_https_proxy_和/或_https_proxy_環境變數：</block>
+  <block id="1572d13b281f402b801b3e8fe53aa37b" category="list-text">建立/etc/default/Telegraf_、並插入_https_proxy_和/或_https_proxy_變數的定義：</block>
+  <block id="e0d7a90b12ef3cae3c8429a34b69736a" category="inline-image-macro">安裝RHEL/CentOS代理程式</block>
+  <block id="530723ab95ea5239b9c308f8890b5069" category="paragraph"><block ref="530723ab95ea5239b9c308f8890b5069" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c9a13bf8b19a106ff517d02fffbce168" category="list-title">在RHEL/CentOS上安裝代理程式的步驟：</block>
+  <block id="371155faf9e65eedebc467c42881ab64" category="list-text">開啟Bash視窗</block>
+  <block id="cb672d725b5532024df625e16f4b2c0c" category="list-text">將命令貼到Bash視窗中、然後按Enter鍵。</block>
+  <block id="9fdc20ebb14c5dab6824fe28b1600c94" category="paragraph">如果您的作業系統使用systemd（CentOS 7+和RHEL 7+）：</block>
+  <block id="e16e46804943331d9caf8452c87dfa2b" category="paragraph">如果您的作業系統未使用systemd（CentOS 7+和RHEL 7+）：</block>
+  <block id="58cbdcc7fe2213684c932ead0296c88a" category="paragraph">若要在RHEL/CentOS上解除安裝代理程式、請在Bash終端機中執行下列動作：</block>
+  <block id="561c2b82227ce1633c89ee229e9285c3" category="list-text">停止Telegraf服務：</block>
+  <block id="4092367a698b248c0ef54aa8fa6d6589" category="list-text">移除Telegraf代理程式：</block>
+  <block id="00685c25e29deb7cd384ac57b9da8a6a" category="list-text">移除可能留下的任何組態或記錄檔：</block>
+  <block id="8454d961e549d71d53dc014fde0b5dff" category="list-text">停止Telewraf服務：</block>
+  <block id="4a1301eea91ca5bc33f38eb5756f1f68" category="list-text">移除先前的Telewraf代理程式：</block>
+  <block id="bf2c36be7f2bc4dd2e37e375e76d6d4a" category="list-text"><block ref="8fae6fa4f132bafa12a111b0e12ddf22" category="inline-link-macro-rx"></block>。</block>
+  <block id="7ae220dde836123a83ab52aa985caa47" category="section-title">Ubuntu與DEBIAN</block>
+  <block id="5c45aaf7999f2a6de4e86ca7726bce2b" category="list-text">如果您使用的是代理服務器，則必須按照*配置Ubuntu / DEBIAN*代理支持一節中的說明操作。</block>
+  <block id="777a7eacf1727a42155a716a8fa767e9" category="section-title">設定Ubuntu / Debian的Proxy支援</block>
+  <block id="0d0d38b5222d561807cc4ef53f325bd5" category="list-text">建立/etc/default/Telegraf、並插入_https_proxy_和/或_https_proxy_變數的定義：</block>
+  <block id="3fcd2752c343d8536926bfb628eec3dc" category="inline-image-macro">安裝Ubuntu / Debian代理程式</block>
+  <block id="49d620df1cdf6184275e83524131195e" category="paragraph"><block ref="49d620df1cdf6184275e83524131195e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2ccb8fda807f639572273dc350f43bbf" category="list-title">在Debian或Ubuntu上安裝代理程式的步驟：</block>
+  <block id="6271d65c06a7a1fd244d963c100a1a1c" category="paragraph">如果您的作業系統使用systemd：</block>
+  <block id="b5648f15565fb8185bfc83aaabee9577" category="paragraph">如果您的作業系統未使用systemd：</block>
+  <block id="936ff88b3ce432ac2624f7f2bb4998a4" category="paragraph">若要在Ubuntu / Debian上解除安裝代理程式、請在Bash終端機中執行下列作業：</block>
+  <block id="7f3a9bda6122a676154f73d5edf02232" category="list-text"><block ref="760050cb55c606cd7ef0af21f798bf45" category="inline-link-macro-rx"></block>。</block>
+  <block id="99b7973dda927022b1a7232d7b78e926" category="section-title">驗證Checksum</block>
+  <block id="25334cc3e68d534ebb5ad59907c70159" category="paragraph">雖然無法執行完整性檢查、Cloud Insights 但有些使用者可能想在安裝或套用下載的成品之前、先執行自己的驗證。您可以下載安裝程式並為下載的套件產生Checksum、然後將Checksum與安裝說明中顯示的值進行比較、以完成此作業。</block>
+  <block id="1078df24543dad61e1b5b51f611f5b0f" category="section-title">無需安裝即可下載安裝程式套件</block>
+  <block id="48feb91430f93bd8ac9740e9cdc40c75" category="paragraph">若要執行純下載作業（而非預設的下載與安裝）、使用者可以編輯從UI取得的代理程式安裝命令、並移除後置「install」選項。</block>
+  <block id="deadee5e2cfce7600cfd5def40a7d618" category="paragraph">請遵循下列步驟：</block>
+  <block id="8c386e0a7a8cfc20ef9a26dacd925e69" category="list-text">依照指示複製代理程式安裝程式程式片段。</block>
+  <block id="225b18b0098145b352b8fbf6c04e8098" category="list-text">不要將程式碼片段貼到命令視窗中、而是貼到文字編輯器中。</block>
+  <block id="98cd1da81daac82fdd86ce7412e50a24" category="list-text">從命令中刪除結尾的 "--install" （ Linux ）或 "-install" （ Windows ）。</block>
+  <block id="34e3334224025c0302c21ab69b535b6e" category="list-text">從文字編輯器複製整個命令。</block>
+  <block id="d2a9c05594a3807487efd306f7e06ff5" category="list-text">現在請將其貼到命令視窗（工作目錄）中、然後執行。</block>
+  <block id="02761a47fb2c7ca60e3b94426c0516d2" category="paragraph">非Windows（這些範例適用於Kubernetes；實際的指令碼名稱可能有所不同）：</block>
+  <block id="051ab73b0c77a3e60cd6e6de57fc9319" category="list-text">下載並安裝（預設）：</block>
+  <block id="a3ef489d553e0422ea8926faf65bf77a" category="list-text">僅限下載：</block>
+  <block id="140710a8dd48496a1ea3b09f2799c408" category="paragraph">Windows：</block>
+  <block id="10835cdc0c344b8183321c8a0e88269e" category="paragraph">純下載命令會將Cloud Insights 所有必要的成品從功能性資訊下載到工作目錄。這些成品包括但不限於：</block>
+  <block id="8d4a361a3f25b78818c569d8f15cf4a6" category="list-text">安裝指令碼</block>
+  <block id="b015398c226e1e3576258432ece31819" category="list-text">環境檔案</block>
+  <block id="004cac3ce7d67014b5fadcffaf9b5b70" category="list-text">Y反 洗錢檔案</block>
+  <block id="9f32134bbefffdc9df70a2d73c2df6a6" category="list-text">Checksum 檔案（結尾為 sho256.signed 或 sho256.ps1 ）</block>
+  <block id="4f1c754cd67cd57cebe0be2f5e8638a4" category="paragraph">安裝指令碼、環境檔案及Yaml檔案均可使用目視檢查進行驗證。</block>
+  <block id="d8f6d626cfe2a4f97d97ff93d95db51b" category="section-title">產生Checksum值</block>
+  <block id="d1703bc5bb53c90ffbbae52dfe829603" category="paragraph">若要產生Checksum值、請針對您的適當平台執行下列命令：</block>
+  <block id="9374ddadb9776b458a2963573b22f63d" category="list-text">RHEL/Ubuntu：</block>
+  <block id="aacd43790bd404cab1a350cb047a9a9d" category="section-title">驗證 Checksum</block>
+  <block id="43e3c65a555911ad6d7235d9e9206e4c" category="paragraph">從 Checksum 檔案擷取預期的 Checksum</block>
+  <block id="47a6cd89e04d0d805a75aa0fe5822c20" category="list-text">非Windows：</block>
+  <block id="b59ea01f26635c31c3c1df660848f6c8" category="section-title">安裝下載的套件</block>
+  <block id="6c32334bfce9f857b0fdbdca68040a0b" category="paragraph">一旦所有成品都已通過驗證、即可執行下列步驟來啟動代理程式安裝：</block>
+  <block id="19032097e8464bc9b326d59737b0bdbc" category="paragraph">如果您在設定代理程式時遇到問題、請嘗試下列事項：</block>
+  <block id="2c53f37725165d35104102da8d88caf1" category="cell">試用：</block>
+  <block id="3a0f609bf65bf53f905fdcfae464bcae" category="cell">設定新的外掛程式並重新啟動Telegraf之後、Telegraf無法啟動。記錄顯示類似下列的錯誤：
+
+"[telegraf] 執行代理程式時發生錯誤：載入組態檔 /etc/telegraf/telegraf.d/couvidsess-default.conf 時發生錯誤：外掛程式輸出 .http ： Line &lt;linenumber&gt; ：組態已指定欄位 ["use_system_proxy"], 但未使用 "</block>
+  <block id="39930ddf87d2960ef2f5a8ff06e4993e" category="cell">安裝的Telegraf版本已過時。請依照本頁的步驟*升級您適當平台的代理程式*。</block>
+  <block id="90388b17e672eeaae8e092ebd4bf6362" category="cell">我在舊安裝上執行安裝程式指令碼、現在代理程式並未傳送資料</block>
+  <block id="7cc579c6f20ffbe0b9452d6f5fff9167" category="cell">解除安裝Telewraf代理程式、然後重新執行安裝指令碼。請依照本頁上的*升級代理程式*步驟、以取得適當的平台。</block>
+  <block id="fb0132b157c251ea47224310ff68ee9b" category="cell">我已經用Cloud Insights 了這個功能來安裝代理程式</block>
+  <block id="1fed0141939f301599f8ba56fcb40b18" category="cell">如果您已在主機/ VM上安裝代理程式、則不需要重新安裝代理程式。在這種情況下、只要在「代理程式安裝」畫面中選擇適當的平台和金鑰、然後按一下*繼續*或*完成*即可。</block>
+  <block id="eca45129c8446e68f5ce8f765f25b4c7" category="cell">我已經安裝了代理程式、但沒有使用Cloud Insights 這個安裝程式</block>
+  <block id="ceba88aab9e14c687ffb3ce263a229a1" category="cell">移除先前的代理程式並執行Cloud Insights 安裝程序、以確保預設的組態檔設定正確無誤。完成後、按一下*繼續*或*完成*。</block>
+  <block id="5ea8c0bc0f3ff2ad5a8ecd87179c69f1" category="inline-link-macro">資料收集器支援對照表</block>
+  <block id="47c66df8007a6168673191bfaef7dfab" category="paragraph">如需其他資訊、請參閱 <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> 頁面或中的 <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>。</block>
+  <block id="98f1b16edd9c418c18f29042ee157677" category="summary">Telegraf資料顯示選項</block>
+  <block id="59a039b9bdde97f886d094af635410bd" category="doc">轉型指標</block>
+  <block id="d66e199a7109fa5e8cb92ddc071162c4" category="paragraph">針對小工具中的某些指標提供不同的*轉換*選項（特別是稱為「自訂」或「整合指標」的指標、例如Kubernetes、《進階資料》、「電話介面」外掛程式等）、讓您以多種方式顯示資料。Cloud Insights ONTAP將可轉型的度量新增至小工具時、系統會顯示下拉式清單、提供下列轉換選項：</block>
+  <block id="6adf97f83acf6453d4a6a4b1070f3754" category="list-text">無</block>
+  <block id="8dff9b3275d903bce911a227cbed3634" category="list-text">資料會顯示為「現用」、不會有任何操作。</block>
+  <block id="dcb66ff6e4a2517ade22183779939c9d" category="list-text">費率</block>
+  <block id="9b3e9f4a548e4f107c31fe2a21eed22a" category="list-text">目前值除以上次觀察後的時間範圍。</block>
+  <block id="eb2527806a7e1ef48009eaaa785368fe" category="list-text">累計</block>
+  <block id="81be1e144a5ed592ed4813fe9a14b16d" category="list-text">先前值和目前值總和的累積。</block>
+  <block id="db1f4ab5845def61a83d5df13e0c2397" category="list-text">差異</block>
+  <block id="a1933dae1248a2768b141e98f357f4e1" category="list-text">先前觀察值與目前值之間的差異。</block>
+  <block id="182287f79b18308934050eed051fa06e" category="list-text">差異率</block>
+  <block id="c4b4b6e9c3267be39ae1c34d6560414a" category="list-text">差異值除以上次觀察後的時間範圍。</block>
+  <block id="bef0e8af1d9f29c6ecb74d3390d4f227" category="list-text">累計率</block>
+  <block id="71d65ae1cbf6688be0226ae6c7ce8a47" category="list-text">累計值除以上次觀察後的時間範圍。</block>
+  <block id="7ade6c64e9a88c6a4e7b10ff7debb111" category="paragraph">請注意、轉換指標並不會變更基礎資料本身、只會變更資料的顯示方式。</block>
+  <block id="1914b55914b6ee44bc0dcd84cc7caeb3" category="summary">Apache資料收集器組態</block>
+  <block id="a2c447b19901c50472d86c46b78e4269" category="doc">Apache Data Collector</block>
+  <block id="7f9a66bbf7786386f3da129eb0ca4ce8" category="paragraph">此資料收集器可從您環境中的Apache伺服器收集資料。</block>
+  <block id="e11da9afe91d381489a365c86cc614ab" category="list-title">先決條件</block>
+  <block id="1194c1f585884540788ba8946023cc33" category="list-text">您必須設定Apache HTTP伺服器並正確執行</block>
+  <block id="6b1dbef46026830edbb8a38bb35f7c07" category="list-text">您必須擁有代理主機/ VM的Sudo或系統管理員權限</block>
+  <block id="c16390c8cf2123acd316f38a743628ab" category="list-text">通常、Apache _mod_STATUS_模組會設定為在Apache伺服器的「/server-STATUS」自動位置公開頁面。必須啟用「_ExtendedStatus」選項、才能收集所有可用欄位。如需如何設定伺服器的相關資訊、請參閱Apache模組文件：<block ref="7174f93683616a9a4040d970e3c6eb19" category="inline-link-rx"></block></block>
+  <block id="b0896396e0f3a7aa981b2ef8957b9208" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。選擇 Apache 。</block>
+  <block id="db3b3ca5f6c31a760f5aa49a9a809802" category="inline-image-macro">Apache組態</block>
+  <block id="5ec6fd62051ccff5584535e6108b55ba" category="paragraph"><block ref="5ec6fd62051ccff5584535e6108b55ba" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ed6e8b2146d5bd121cfea083307611f3" category="paragraph">Telegraf的Apache HTTP伺服器外掛程式仰賴要啟用的「mod_STATUS」模組。啟用此功能時、Apache的HTTP伺服器會公開一個HTML端點、您可以在瀏覽器上檢視、或擷取所有Apache HTTP伺服器組態的狀態。</block>
+  <block id="8461c6dd6dfb26c96b75667840908e25" category="paragraph">組態是根據Apache的HTTP伺服器2.4.38版而開發。</block>
+  <block id="5e35671340e6c9c7b25787ff637f0d95" category="section-title">啟用mod_STATUS：</block>
+  <block id="0f3bcff634f4d3862c37ca9068d609a1" category="paragraph">啟用和展示「mod_STATUS」模組需要兩個步驟：</block>
+  <block id="efb59b39eb3bfe8e4da0936bb46519fc" category="list-text">啟用模組</block>
+  <block id="3b817156f776bb94b972cf7a91ba3184" category="list-text">展示單元的統計資料</block>
+  <block id="27c3a633e4b056a5469dc8064c89f668" category="section-title">啟用模組：</block>
+  <block id="44371abdc5e441e96423652f2b9d834b" category="paragraph">模組的載入是由「/usr/local/apache/conf/httpd.conf」下的組態檔所控制。編輯組態檔並取消註釋下列行：</block>
+  <block id="5096c93091356730cc76dca2451a6d0c" category="section-title">展示單元的統計資料：</block>
+  <block id="553822327e85ab49367d681e24c3df28" category="paragraph">「mod_STATUS」的曝光是由「usr/local/ap2/conf/Extra / httpd-info.conf」下的組態檔所控制。請確定該組態檔中有下列項目（至少會有其他指令）：</block>
+  <block id="bc34f8d241b1e1bccaf9d0575c5b92b3" category="inline-link-macro">Apache文件</block>
+  <block id="7727bb6b0739435252f5c813bbbdb290" category="paragraph">如需「mod_STATUS」模組的詳細說明、請參閱 <block ref="1384449c324b5981491fad302f32d968" category="inline-link-macro-rx"></block></block>
+  <block id="e9713ae04a02a810d6f33dd956f42794" category="cell">Apache</block>
+  <block id="aaba4d734bb5c6c1cd828a66a204028f" category="cell">節點 IP
+節點名稱
+連接埠
+父伺服器組態產生
+父伺服器 MPM 世代
+伺服器正常運作時間
+正在停止</block>
+  <block id="af40aea2350db56f2ccf87bd2e878384" category="cell">忙碌的員工
+每個要求的位元組數
+每秒位元組數
+CPU 子系系統
+CPU 子使用者
+CPU 負載
+CPU 系統
+CPU 使用者
+非同步連線關閉
+非同步連線保持活動狀態
+非同步連線寫入
+連線總數
+每個要求的持續時間
+閒置的員工
+平均負載（最後 1 公尺）
+平均負載（前 15 分鐘）
+平均負載（最後 5 分鐘）
+流程
+每秒要求數
+總存取量
+總持續時間
+總 KB 數
+記分板關閉
+記分板 DNS 查詢
+記分板完成
+記分板閒置清除
+記分板保持活動狀態
+記分板記錄
+記分板開啟
+記分板讀取
+記分板傳送中
+記分板開始
+記分板等待中</block>
+  <block id="a1151f371f1db5ddea0adcadbc49738e" category="summary">PostgreSQL資料收集器組態</block>
+  <block id="28279ca1d2fa23440d64e252b10c2f2e" category="doc">PostgreSQL資料收集器</block>
+  <block id="45946606e52c951c2b379ff7a77d2b76" category="paragraph">此資料收集器可用來收集PostgreSQL的數據。Cloud Insights</block>
+  <block id="0ba3615a02f45b8a7b485192d849f02b" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。選擇 PostgreSQL 。</block>
+  <block id="9efde47a7f6913de0fa15c50384c3916" category="inline-image-macro">PostgreSQL組態</block>
+  <block id="ee807d599c86ec0cddb65a95252754a9" category="paragraph"><block ref="ee807d599c86ec0cddb65a95252754a9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="939acd793e013bec3f238716d1e5a1e9" category="inline-link-macro">PostgreSQL文件</block>
+  <block id="5d213cdd76206e521a99ee763867f286" category="paragraph">如需相關資訊、請參閱 <block ref="3b5af5b1f584ca750656ee54bcf2acd9" category="inline-link-macro-rx"></block>。</block>
+  <block id="b3cba72c5eaf0e9b001ad474d3a7f104" category="cell">PostgreSQL伺服器</block>
+  <block id="9eb39642e01cf00ecfb6933ae0d8c91e" category="cell">命名空間
+資料庫
+伺服器</block>
+  <block id="8439f36077726e546877845c0ee98c4a" category="cell">節點名稱
+節點 IP</block>
+  <block id="416d97bf6aa220146cd29e24d4f5ae1f" category="cell">分配的緩衝區
+緩衝後端
+緩衝後端檔案同步
+緩衝 Checkpoint
+緩衝區清理
+檢查點同步時間
+檢查點寫入時間
+檢查點要求
+檢查點計時
+最大寫入清除量</block>
+  <block id="f9fa8e4ec8d4dfd8388984164c7cfd07" category="cell">PostgreSQL資料庫</block>
+  <block id="47587388fb25edfeb337d39473d4183f" category="cell">資料庫 OID
+節點名稱
+節點 IP</block>
+  <block id="03ccb35e4244ef1cc7ff8662031b0a7f" category="cell">封鎖讀取時間
+區塊寫入時間
+區塊命中
+區塊讀取
+衝突
+死鎖
+用戶端號碼
+臨時檔案位元組
+臨時檔案編號
+列已刪除
+擷取的資料列
+插入的列
+傳回資料列
+資料列已更新
+已提交交易
+交易已滾轉</block>
+  <block id="f23d43a2f8827bf71755047f9233d1d7" category="summary">Flink資料收集器組態</block>
+  <block id="43b4fe530611e0a29d40ae51f1110192" category="doc">節點資料收集</block>
+  <block id="a95bc37c275448ac1c6069158f92b809" category="paragraph">從安裝代理程式的節點收集度量。Cloud Insights</block>
+  <block id="baaf023f6d75d85198bf4906a1760b9a" category="list-text">從 * 可服務性 &gt; 收集器 * 中、選擇作業系統 / 平台。請注意、安裝任何整合資料收集器（Kubernetes、Docker、Apache等）也會設定節點資料收集。</block>
+  <block id="5f6ce12582c69bad9341e28467c0c0d0" category="list-text">依照指示設定代理程式。這些指示會因您用來收集資料的作業系統或平台類型而有所不同。</block>
+  <block id="c166791fe89a8eb17ee0a37ad809ba2b" category="paragraph">下列物件及其計數器會收集為節點度量：</block>
+  <block id="1f8c535824144ce794fd8ac5fdcfe9f1" category="cell">節點檔案系統</block>
+  <block id="8fcdaf1e82ebe454e557f94d0676e94b" category="cell">節點UUID
+裝置
+路徑
+類型</block>
+  <block id="1f887fd15f6189f871338dd33033cd43" category="cell">節點 IP
+節點名稱
+節點作業系統
+模式</block>
+  <block id="ad06ad8b4ea618930277691a7ca85b8a" category="cell">免費
+inode 免費
+inode 總數
+使用的 inode
+總計
+已用總計
+已使用</block>
+  <block id="995a8be8130452c3880f8f3a8efb892f" category="cell">節點磁碟</block>
+  <block id="8d31b98bd62df2c8e71a8ccda6950620" category="cell">節點UUID
+磁碟</block>
+  <block id="395504c5fc3cdba387d8e31a83c56f88" category="cell">節點 IP
+節點名稱
+節點作業系統</block>
+  <block id="504e0980cd10557e0d0eeeadb727d763" category="cell">IO 時間總計
+IOPS 進行中
+讀取位元組（每秒）
+讀取時間總計
+讀取（每秒）
+加權 IO 時間總計
+寫入位元組（每秒）
+寫入時間總計
+寫入（每秒）
+目前磁碟佇列長度
+寫入時間
+讀取時間
+IO 時間</block>
+  <block id="9560e0d605d2cc7aa05155382b767318" category="cell">節點 CPU</block>
+  <block id="7f0dc83c5502913a601c96af73494913" category="cell">節點UUID
+CPU</block>
+  <block id="19e5a412b9d9ce58d147c936a5bf221e" category="cell">系統 CPU 使用率
+使用者 CPU 使用率
+閒置 CPU 使用率
+處理器 CPU 使用率
+中斷 CPU 使用率
+DPC CPU 使用率</block>
+  <block id="16d2c29487805cc97063b63f5f00c68e" category="cell">核心開機時間
+核心內容交換器（每秒）
+可用的核心 Entropy
+核心中斷（每秒）
+核心處理程序分段（每秒）
+記憶體作用中
+可用記憶體總計
+可用記憶體
+記憶體緩衝
+快取記憶體
+記憶體認可限制
+記憶體認可為
+記憶體髒污
+可用記憶體
+記憶體可用空間高
+記憶體總計高
+記憶體大頁面大小
+可用記憶體大量頁面
+記憶體大量總頁數
+可用記憶體不足
+記憶體總容量不足
+已對應記憶體
+記憶體分頁表
+共享的記憶體
+記憶體區間
+快取記憶體交換
+可用的記憶體交換空間
+記憶體交換總計
+記憶體總計
+已用記憶體總計
+已使用的記憶體
+記憶體 Vmalloc 區塊
+記憶體 Vmalloc 總計
+已使用記憶體 Vmalloc
+記憶體有線
+記憶體回寫總計
+記憶體寫回 Tmp
+記憶體快取故障
+記憶體需求零故障
+記憶體分頁錯誤
+記憶體頁面
+非分頁記憶體
+記憶體分頁
+記憶體快取核心
+記憶體待命快取正常
+記憶體待命快取保留
+記憶體轉換故障
+程序遭封鎖
+處理程序失效
+處理閒置
+處理分頁
+執行中的處理程序
+處理程序休眠
+處理程序已停止
+處理程序總計
+處理執行緒總數
+處理程序未知
+處理殭屍
+處理器佇列長度
+可用交換
+交換總計
+已用交換總數
+已使用交換
+切換至
+切換
+系統正常運作時間
+系統編號 CPU
+系統編號使用者
+系統通話</block>
+  <block id="695c8433fb0290581bae584e00feeee4" category="cell">節點網路</block>
+  <block id="0a7c391bbf4a5a2942fabe6c508c95eb" category="cell">網路介面
+節點UUID</block>
+  <block id="7e497ea07b0bb26a9fccfea169adadb5" category="cell">節點名稱
+節點 IP
+節點作業系統</block>
+  <block id="228775e556bb7d0b1893a0069479cc55" category="cell">已接收位元組
+已傳送位元組
+封包外包已捨棄
+封包 Outboud 錯誤
+已捨棄接收的封包
+封包接收錯誤
+已接收的封包
+已傳送封包</block>
+  <block id="620f85b913de46972f8dc2d9791d0335" category="inline-link-macro">設定代理程式</block>
+  <block id="11e9a60bae5c09e0b15ee77e596f4b30" category="paragraph">如需設定與疑難排解資訊、請參閱 <block ref="253f1bddd94d888bccb7868889c4eaa6" category="inline-link-macro-rx"></block> 頁面。</block>
+  <block id="d500a402a0f4d5ab2dedb2c5a7ec2eaf" category="summary">memcached資料收集器組態</block>
+  <block id="0f5c57f0abc7ee69be3379cf9f5ede78" category="doc">memcached資料收集器</block>
+  <block id="353f811fa170b612fa3a1340d62d9219" category="paragraph">使用此資料收集器從Memcached收集度量資料。Cloud Insights</block>
+  <block id="589728f32967406f1fdbd032c3fe018d" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。選擇 Memcached 。</block>
+  <block id="198cd654ded33685760b4676e579ff66" category="inline-image-macro">memcached組態</block>
+  <block id="a986c1bc689361d60658b48c116b9bda" category="paragraph"><block ref="a986c1bc689361d60658b48c116b9bda" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e26124564f900a300b66ae6ad54d0791" category="inline-link-macro">memcached wikik</block>
+  <block id="275cfcf9eff65ee82ad249d1a35cadfb" category="paragraph">如需相關資訊、請參閱 <block ref="5ded07e322e421e6ecffb5f41bada1c9" category="inline-link-macro-rx"></block>。</block>
+  <block id="05894ba2c918dd33592bf1bd21c347f6" category="cell">memcached</block>
+  <block id="05345376e590de98cc623cdd4392065e" category="cell">接受連線
+已處理的驗證要求
+驗證失敗
+使用的位元組
+讀取位元組（每秒）
+寫入的位元組（每秒）
+CA Badval
+CA 命中
+CA 未命中
+清除要求（每秒）
+取得要求（每秒）
+設定要求（每秒）
+點選要求（每秒）
+連線產生量（每秒）
+連線結構
+開啟連線
+目前儲存的項目
+Decr 要求命中次數（每秒）
+Decr 要求未命中次數（每秒）
+刪除要求命中次數（每秒）
+刪除要求遺漏（每秒）
+項目被逐出
+有效的遷離
+過期項目
+取得命中次數（每秒）
+取得未命中次數（每秒）
+使用的雜湊位元組
+雜湊正在擴充
+雜湊功率位準
+Incr 要求命中次數（每秒）
+Incr 要求遺漏（每秒）
+伺服器最大位元組
+偵聽停用的 Num
+回收
+工作者執行緒計數
+開啟的連線總數
+儲存的項目總數
+輕觸 Hits
+點選未命中
+伺服器正常運作時間</block>
+  <block id="83fbc11c171008ea835730f7922a6417" category="summary">OpenZFS資料收集器組態</block>
+  <block id="280698a257edec445fc9d2a3c41f9089" category="doc">OpenZFS Data Collector</block>
+  <block id="9109116c1e875f98e978783a131e4466" category="paragraph">此資料收集器可用來收集OpenZFS的度量資料。Cloud Insights</block>
+  <block id="5888b2a0267a27f9f34b34863d7a8110" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。選擇 OpenZFS 。</block>
+  <block id="c5ea32057bfe11187d339d524ccea393" category="inline-image-macro">Linux OpenZFS組態</block>
+  <block id="252ab915aaf37678f2c31259844d9830" category="paragraph"><block ref="252ab915aaf37678f2c31259844d9830" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b016f6d8b58fbc57dff98ba0460cd713" category="inline-link-macro">OpenZFS文件</block>
+  <block id="5f9f2125ea94bc8ee63a894e33ebaf33" category="paragraph">如需其他資訊、請參閱 <block ref="0ee1b5ccb1dd9edb24ef60d421e0c18a" category="inline-link-macro-rx"></block>。</block>
+  <block id="3ed1623d8dee972d71ef8f8f97d1e7b7" category="summary">JVM資料收集器組態</block>
+  <block id="83940d42e25b16f92792429af8696c02" category="doc">JVM資料收集器</block>
+  <block id="1df30fc376f79b28898758816aee8108" category="paragraph">此資料收集器可用來收集來自JVM的度量資料。Cloud Insights</block>
+  <block id="2f646a2871ea4aa3befe55d29f178062" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。選擇 JVM 。</block>
+  <block id="cfc15582c99f2d93d641ceef808c0dea" category="inline-image-macro">JVM 組態</block>
+  <block id="a1a11aab15942415d5fa3dbff92e14bd" category="paragraph"><block ref="a1a11aab15942415d5fa3dbff92e14bd" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1d4d54ae01b1b207ad71b19545e065d0" category="inline-link-macro">JVM 文件</block>
+  <block id="a6915e59acb56cb585cb472961b7fcf4" category="paragraph">如需相關資訊、請參閱 <block ref="d6ec76238b83ccbfb02cd8a51ed9fed7" category="inline-link-macro-rx"></block>。</block>
+  <block id="18b5a217c4dad25662d3a05edb0e39d7" category="cell">jvm</block>
+  <block id="ba34515ac828f8372a3b624324d6c279" category="cell">命名空間
+jvm</block>
+  <block id="803c4a5e4b5f34cadc25972b0c14aa04" category="cell">作業系統架構
+作業系統名稱
+作業系統版本
+執行時間規格
+執行時間規格廠商
+執行階段規格版本
+正常運作時間
+執行階段 VM 名稱
+執行階段 VM 廠商
+執行階段 VM 版本
+節點名稱
+節點 IP</block>
+  <block id="a53a32f48009c614f61507a6499dfbf6" category="cell">類別已載入
+類別已載入總計
+類別已卸載
+已認可記憶體堆積
+記憶體堆積初始化
+記憶體堆積已使用上限
+使用的記憶體堆積
+記憶體非堆積已認可
+記憶體非堆積初始化
+記憶體非堆積上限
+未使用記憶體堆積
+記憶體物件等待完成
+作業系統處理器可用
+作業系統認可的虛擬記憶體大小
+OS 可用實體記憶體大小
+OS 可用交換空間大小
+OS 檔案描述元計數上限
+OS 開啟檔案描述元計數
+作業系統處理器 CPU 負載
+作業系統處理器 CPU 時間
+作業系統系統 CPU 負載
+作業系統系統負載平均值
+作業系統實體記憶體總大小
+OS 總交換空間大小
+執行緒精靈計數
+執行緒尖峰計數
+執行緒計數
+執行緒已開始總數
+垃圾收集器複本收集計數
+垃圾收集器複本收集時間
+垃圾收集器標記掃出收集計數
+垃圾收集器標記掃出收集時間
+廢棄項目收集器 G1 舊一代收集計數
+廢棄項目收集器 G1 舊一代收集時間
+垃圾收集器 G1 年輕一代收集計數
+垃圾收集器 G1 年輕一代收集時間
+垃圾收集器並行標記掃出收集計數
+垃圾收集器並行標記掃出收集時間
+垃圾收集器平行收集計數
+垃圾收集器平行收集時間
+垃圾收集器平行 Scavenge Mark-Sweep Collection Count
+垃圾收集器平行收集器標記掃出收集時間
+垃圾收集器平行 Scavenge 收集計數
+垃圾收集器平行 Scavenge 收集時間</block>
+  <block id="ccb06b64aa7e8cb6a869d22deb1de8bd" category="summary">Kubernetes資料收集器組態</block>
+  <block id="5c7f848c8021f50b6420b0c983ceafd0" category="doc">Kubernetes資料收集器</block>
+  <block id="e93e9e1daf8e7243cd54ae6878bcbd91" category="paragraph">使用此資料收集器來收集Kubernetes Pod、Node和Container指標。Cloud Insights</block>
+  <block id="9a3185d3dd699a74f8c315584250a80c" category="inline-link-macro">代理程式安裝</block>
+  <block id="853a529a2cb031ba8c442d361b80f74e" category="paragraph">如需Kubernetes安裝說明、請參閱 <block ref="83baed86820f9347147bd19d20167e7d" category="inline-link-macro-rx"></block> 頁面。</block>
+  <block id="9202ccff1bbfb1125df09b7eb605eb6c" category="admonition">關於* kube狀態指標*的資訊已移至 <block ref="83baed86820f9347147bd19d20167e7d" category="inline-link-macro-rx"></block> 頁面。</block>
+  <block id="2c1099d2eb2a8a08bba13169800b9ecb" category="cell">Kubernetes Container</block>
+  <block id="5415e066c63454268882855520be8f45" category="cell">命名空間
+Pod
+容器
+叢集</block>
+  <block id="7bc7c32edd5f6378984b7385ffc0ed80" category="cell">Kubernetes節點
+節點名稱
+節點作業系統
+節點UUID
+節點 IP</block>
+  <block id="5ef967423ece776ba4ee9c6e0f94650f" category="cell">CPU 納秒
+CPU 使用率 Nanocores
+記憶體主要頁面錯誤
+記憶體駐留集大小（ RSS ）
+記憶體工作集
+記憶體分頁錯誤
+記憶體使用量
+可用的根檔案系統
+根檔案系統容量
+使用的根檔案系統</block>
+  <block id="201aa8b6df1bf9b6d3e7978dd379f568" category="cell">Kubernetes節點</block>
+  <block id="58c8faf6f85ccaa7fc8d2d01063a95b9" category="cell">Kubernetes節點
+叢集</block>
+  <block id="484a187381025ea8b53e38a49719005d" category="cell">節點名稱
+節點作業系統
+節點UUID
+節點 IP</block>
+  <block id="67505af3915f51555c02bfad9febc3b5" category="cell">CPU 使用率 Nanocores
+CPU 使用量（納秒）
+檔案系統可用
+檔案系統總計
+使用的檔案系統
+可用記憶體
+記憶體使用量
+記憶體主要頁面錯誤
+記憶體分頁錯誤
+記憶體駐留集大小（ RSS ）
+記憶體工作集
+網路 RX 錯誤（每秒）
+網路 RX 位元組（每秒）
+網路 TX 錯誤（每秒）
+網路 TX 位元組（每秒）
+可用的執行階段映像檔案系統
+使用執行階段影像檔案系統
+執行階段映像檔案系統容量</block>
+  <block id="d34c4d1c2c5e1fd5027617805f18d578" category="cell">Kubernetes Pod</block>
+  <block id="b93534eac0ffef15e4bc6e622b649edb" category="cell">命名空間
+Pod
+叢集</block>
+  <block id="9fa53e6369971b13a4de86d77930fa7d" category="cell">Kubernetes節點
+節點名稱
+節點 IP
+節點作業系統
+節點UUID</block>
+  <block id="d5da5a0488eed8f6bd2a7b8ff56baa7d" category="cell">網路 TX 位元組（每秒）
+網路 TX 錯誤（每秒）
+網路 RX 位元組（每秒）
+網路 RX 錯誤（每秒）</block>
+  <block id="71c7112b40180e67cc433b17314c1e5a" category="cell">Kubernetes Pod Volume</block>
+  <block id="95177894fca839bb4f125dc82e11bcd5" category="cell">Volume
+Pod
+叢集
+命名空間</block>
+  <block id="23be9b4dfda51095be8d72ec54e75785" category="cell">Kubernetes節點
+節點名稱
+節點UUID
+節點 IP
+節點作業系統</block>
+  <block id="872a1fa9654389ef8254b1ea3c159c67" category="cell">可用
+容量
+已使用</block>
+  <block id="31b831445602d4355cb2a53eb882ccb0" category="cell">Kubernetes系統Container</block>
+  <block id="bba6b40acdcc344bcea91f489658ca7f" category="cell">系統容器
+Kubernetes節點
+叢集</block>
+  <block id="a5ebe27628fe912bf017622a96de6fe3" category="cell">節點名稱
+節點 IP
+節點作業系統
+節點UUID</block>
+  <block id="963d5703dfad66d7b08aef8039584b0f" category="cell">CPU 使用率 Nanocores
+CPU 使用量核心（ nanoseconds ）
+記憶體主要頁面錯誤
+記憶體分頁錯誤
+記憶體駐留集大小（ RSS ）
+記憶體使用量
+記憶體工作集
+可用的根檔案系統
+根檔案系統容量
+記錄可用的檔案系統
+記錄檔案系統容量</block>
+  <block id="79617508491cde046161eba3cfb5fd1e" category="cell">我執行了 Kubernetes 代理程式安裝程式命令、但看不到 Telegraf 代理程式 Pod 透過下列方式執行：
+
+ sudo kubectl --namespace CI-Monitoring Get Pod</block>
+  <block id="da2a3d7c97da2247d78d19b6b5451992" category="cell">檢查部署示範集時是否發生任何錯誤：
+
+ Sudo kubectl --namespace CI-Monitoring 說明 DS Telegraf-DS
+
+如果出現與 SecurityContextConstraints 相關的錯誤、請執行下列步驟：
+
+1. 製作 Telegraf 示範 YAML
+
+ Sudo kubectl --namespace CI-Monitoring Get DS telegraf-DS -o yaml &gt; /tmp/telegraf-ds.yaml
+
+2. 停止 Telegraf 服務
+
+ Sudo kubectl --namespace CI-Monitoring 刪除 DS telegraf-DS
+
+3. 建立必要的 SecurityContextConstraint （請參閱「設定代理程式以收集資料」一節）
+
+4. 重新建立 Telegraf 示範集</block>
+  <block id="fd2109b8b8dd431e9abcb1057799aa87" category="cell">我將Telegraf設定為取得Kubernetes叢集的相關資訊、但Cloud Insights 在這個過程中卻看不到任何資訊。我在我設定的Kubernetes輸入外掛程式相關的Telegraf記錄檔中看到「無效的標頭欄位值」錯誤。</block>
+  <block id="4fcad48adea3c25275399dda7aa9b491" category="cell">請確定參考的bear_token檔案沒有結尾的換行字元。若要驗證、請執行下列命令、並確認傳回 0 ：
+
+ tail -C1 &lt;bearer_token_file&gt;</block>
+  <block id="689738a624a7f72a8b98c8ed8f1ab58b" category="summary">Apache Zookkeeper資料收集器組態</block>
+  <block id="b640a79fa52794aecc8878f82be8c28e" category="doc">Zookkeeper Data Collector</block>
+  <block id="7c19206117ce83d65989db0a25c382ee" category="paragraph">此資料收集器可用來收集Apache Zookkeeper的數據。Cloud Insights</block>
+  <block id="6f449010e727da85fc5dba4dc0566129" category="list-text">從*管理&gt;資料收集器*、按一下*+資料收集器*。選擇 Apache Zookeper 。</block>
+  <block id="8429b9b7552e9131928dae7613de806c" category="inline-image-macro">Zookkeeper組態</block>
+  <block id="95e6ebb37419864b276c313f8f6c3cbb" category="paragraph"><block ref="95e6ebb37419864b276c313f8f6c3cbb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fb4ac192a5f039c2e2c335ba5ced3583" category="inline-link-macro">Zookkeeper</block>
+  <block id="c3a641e09298ba4de1409a1510576930" category="paragraph">至少您需要允許Zookkeeper四個字母伺服器命令_Mntr_、_Srvr_和_stat_。
+您可以使用下列格式來啟用這些命令：_4lw.commands.whitelist=mntr、Srvr、stat_、位於_zu.cfc_檔案中。
+您的組態可能還需要其他四個字母命令。請參閱 <block ref="228947e8a732f5af21701eca589dabd2" category="inline-link-macro-rx"></block> 如需詳細資訊、請參閱文件。</block>
+  <block id="acbfb3e07bc6528e76ff58b9441ce7e6" category="cell">Zookkeeper</block>
+  <block id="30cda581f57d507b5c4e7230009bb6ff" category="cell">州/省
+節點 IP
+節點名稱
+連接埠</block>
+  <block id="263026a1c82c98e0f26e5963c3c57811" category="cell">資料大小約略值
+平均延遲
+星曆數
+檔案描述元計數上限
+最大延遲
+最小延遲
+活動連線數量
+開啟檔案描述元計數
+未處理的要求
+Watch Count
+Znode Count</block>
+  <block id="dc1e65eec84ecdddd9d944665f004c81" category="summary">Kafka資料收集器組態</block>
+  <block id="20c91ea30ac10f88575658fade0888da" category="doc">Kafka資料收集器</block>
+  <block id="2f36f64899c7519b8c8cd9277f2bb502" category="paragraph">此資料收集器可用來收集卡夫卡的數據。Cloud Insights</block>
+  <block id="e71ca37de84258d54f5428c43e7d7278" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。選擇 Kafka 。</block>
+  <block id="a57380b3846ffa1f0e4bfb5181cdd4cc" category="inline-image-macro">Kafka組態</block>
+  <block id="581191fc8057a11baa82fdf0c8a4684d" category="paragraph"><block ref="581191fc8057a11baa82fdf0c8a4684d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="13369c33358db64680a157cf34f27d9c" category="paragraph">Kafka外掛程式是以Telewraf的Jolokia外掛程式為基礎。例如、需要從所有的Kafka代理商收集資訊、需要透過Jolkia設定和公開所有元件的JMX。</block>
+  <block id="df9c715f20aaf58fb3926cc02b08ec53" category="section-title">相容性</block>
+  <block id="85d4881f2910a8efd14957d8ea3ad22f" category="paragraph">組態是針對Kafka 0.11.0.2版所開發。</block>
+  <block id="c550ee824967bc436f44d06626836b46" category="section-title">設定</block>
+  <block id="842dbc10bf2936a69101c9ada487cfb9" category="paragraph">以下所有指示均假設您的Kafka安裝位置為「/opt/Kafka」。您可以調整下列指示、以反映您的安裝位置。</block>
+  <block id="74f1c760151734cb26fb8795538faefc" category="section-title">Jolokia代理程式Jar</block>
+  <block id="56f18825a76309ae6391073aeb14f1b3" category="inline-link-macro">已下載</block>
+  <block id="b4492a410e1a2bd30cdf9f247f446872" category="paragraph">Jokia代理程式Jar檔案的版本必須是 <block ref="03eda4c0436e65ce27568c6a2dfc2a07" category="inline-link-macro-rx"></block>。測試的版本是Joslokia代理1.6.0.</block>
+  <block id="9494328c2f532a3a7698d443b58084c9" category="paragraph">以下說明假設下載的Jar檔案（jolokia -jvm-1.6.0-agent.jar）位於「/opt / Kafka/libs/」的位置。</block>
+  <block id="c85a72d841365870905b8d39edf7008f" category="section-title">卡夫卡經紀人</block>
+  <block id="952eb44621cfe8be5bf3ffac42243da9" category="paragraph">若要設定Kafka代理商以公開Jolokia API、您可以在「Kafka-rer-class.sh」通話之前、在&lt;Kafka_hom&gt;/bin/Kafka-server-start.sh中新增下列項目：</block>
+  <block id="c7a51c522cf686cccad4634633637a98" category="paragraph">請注意、上述範例使用「主機名稱-I」來設定「RMI_HOSTNAME」環境變數。在多個IP機器中、需要調整此設定、才能收集您所關心的RMI連線IP。</block>
+  <block id="a2ca14d29d006aa3bc52960c80f3ec10" category="paragraph">您可以為JMx（上方9999）和Joslokia（8778）選擇不同的連接埠。如果您有內部IP來鎖定Jolokia、您可以用自己的IP來取代「全部抓出」0．0．0。請注意、此IP必須從遠端工作人員外掛程式存取。如果您不想驗證、可以使用「-Dcom.sun.management.jmxremote.authenticate=false'」選項。使用風險由您自行承擔。</block>
+  <block id="edea81abf1b2e3f44366dbd2866631eb" category="cell">卡夫卡代理人</block>
+  <block id="80d610f6ec2e0d70bb310ea6b21d8e09" category="cell">叢集
+命名空間
+代理程式</block>
+  <block id="344d982f50f03dc86d09f356f5f05441" category="cell">複本管理程式 Fetcher Max Lag
+Zookkeeper Client Connections
+Zookeeper 用戶端連線（ 15 分鐘費率）
+Zookkeeper 用戶端連線（ 5 分鐘費率）
+Zookeper 用戶端連線（平均速率）
+Zookeeper 用戶端連線（ 1 公尺速率）
+複本管理程式分割計數
+執行緒計數精靈
+執行緒計數尖峰
+執行緒計數目前
+執行緒總數已開始
+離線分割區
+產生要求總時間（第 50 百分位數）
+產生要求總時間（第 75 個百分位數）
+產生要求總時間（第 95 個百分位數）
+產生要求總時間（ 98 百分位數）
+產品申請總時間（第 999 百分位數）
+產生要求總時間（第 99 個百分位數）
+產生要求總時間
+產生要求總時間上限
+產生要求總時間平均值
+產生要求總時間最小值
+產生要求總時間 stddev
+Replication Manager ISR 收縮
+Replication Manager ISR 收縮（ 15m 速率）
+Replication Manager ISR 收縮（ 5 公尺速率）
+Replication Manager ISR 收縮（平均速率）
+Replication Manager ISR 收縮（ 1 公尺速率）
+要求處理常式平均閒置
+要求處理常式平均閒置（ 15 分鐘率）
+要求處理常式平均閒置（ 5 分鐘速率）
+要求處理常式平均閒置（平均速率）
+要求處理常式平均閒置（ 1 公尺速率）
+廢棄項目收集 G1 舊一代計數
+廢棄項目收集 G1 舊一代時間
+垃圾回收 G1 年輕一代計數
+垃圾回收 G1 年輕世代時間
+Zookeper 只讀連接
+Zookkeeper 唯讀連線（ 15 分鐘費率）
+Zookkeeper 唯讀連線（ 5 分鐘速率）
+Zookeper 唯讀連線（平均速率）
+Zookeper 只讀連接（ 1 公尺速率）
+網路處理器平均閒置
+申請 Fetch Follower 總時間（第 50 個百分位數）
+要求擷取追蹤總時間（ 75 個百分位數）
+申請 Fetch Follower 總時間（第 95 個百分位數）
+要求擷取追蹤總時間（第 98 個百分位數）
+申請 Fetch Follower 總時間（ 999 百分位數）
+要求擷取追蹤總時間（第 99 個百分位數）
+要求擷取追蹤總時間
+要求擷取追蹤器總時間上限
+要求擷取追蹤總時間平均值
+申請擷取追蹤總時間最小值
+要求擷取追蹤器總時間 stddev
+等待產生通知的要求
+網路要求擷取消費者
+網路要求擷取消費者（ 5 分鐘速率）
+網路要求擷取消費者（ 15 分鐘費率）
+網路要求擷取消費者（平均速率）
+網路要求擷取消費者（ 1 公尺速率）
+不幹凈的領導人選舉
+不乾淨的 Leader 選項（ 15 分鐘費率）
+不乾淨的領導人選舉（ 5 分鐘率）
+不乾淨的領導人選舉（平均率）
+不潔的領導者選舉（ 1 公尺率）
+主動式控制器
+堆積記憶體已認可
+堆積記憶體初始化
+堆積記憶體上限
+使用的堆積記憶體
+Zookkeeper 工作階段已過期
+Zookkeeper 工作階段已過期（ 15 分鐘費率）
+Zookkeeper 工作階段過期（ 5 分鐘費率）
+Zookkeeper 工作階段過期（平均速率）
+Zookkeeper 工作階段過期（ 1 公尺費率）
+Zookeper 驗證失敗
+Zookeper 驗證失敗（ 15 分鐘率）
+Zookeper 驗證失敗（ 5 分鐘率）
+Zookeper 驗證失敗（平均速率）
+Zookeper 驗證失敗（ 1 公尺率）
+領導者選舉時間（第 50 百分位數）
+領導者選舉時間（第 75 百分位數）
+領導者選舉時間（第 95 個百分位數）
+領導者選舉時間（第 98 個百分位數）
+領導者選舉時間（第 999 百分位數）
+領導者選舉時間（第 99 個百分位數）
+Leader 選舉計數
+Leader 選舉時間（ 15 分鐘費率）
+Leader 選舉時間（ 5 分鐘率）
+Leader 選擇時間上限
+Leader 選舉時間代表
+領導者選舉時間（平均速率）
+Leader 選舉時間最短
+領導者選舉時間（ 1 公尺速率）
+領導者選舉時間（ stddev ）
+網路要求 Fetch Follower
+網路要求 Fetch Follower （ 15 分鐘速率）
+網路要求 Fetch Follower （ 5 分鐘速率）
+網路要求 Fetch Follower （平均速率）
+網路要求 Fetch Follower （ 1 公尺速率）
+代理人主題訊息
+代理人主題訊息（ 15 分鐘費率）
+代理人主題訊息（ 5 分鐘速率）
+代理人主題訊息（平均速率）
+代理人主題訊息（ 1 公尺速率）
+代理主題位元組
+代理主題位元組（ 15 分鐘速率）
+代理主題位元組（ 5 分鐘速率）
+代理主題位元組（平均速率）
+代理主題位元組（ 1 公尺速率）
+Zookeeper Disconns Count
+Zookeeper 中斷連線（ 15 分鐘費率）
+Zookeeper 中斷連線（ 5 分鐘費率）
+Zookeeper 中斷連線（平均速率）
+Zookeeper 中斷連線（ 1 公尺費率）
+網路要求擷取使用者總時間（第 50 個百分位數）
+網路要求擷取使用者總時間（ 75 百分位數）
+網路要求擷取使用者總時間（ 95 百分位數）
+網路要求擷取使用者總時間（第 98 個百分位數）
+網路要求擷取使用者總時間（ 999 百分位數）
+網路要求擷取使用者總時間（第 99 百分位數）
+網路要求擷取使用者總時間
+網路要求擷取取使用者總時間上限
+網路要求擷取消費者總時間平均值
+網路要求擷取使用者總時間最小值
+網路要求擷取取取使用者總時間 stddev
+LeaderCount
+在 Fetch Purgatory 中等待的要求
+代理主題位元組輸出
+代理程式主題位元組輸出（ 15 分鐘速率）
+代理程式主題位元組輸出（ 5 分鐘速率）
+代理程式主題位元組輸出（平均速率）
+Broker 主題位元組輸出（ 1 公尺速率）
+Zookeper 驗證
+Zookeper 驗證（ 15 分鐘率）
+Zookkeeper 驗證（ 5 分鐘速率）
+Zookeper 驗證（平均速率）
+Zookeper 驗證（ 1 公尺速率）
+要求產生計數
+申請產品（ 15 分鐘費率）
+申請產品（ 5 分鐘費率）
+申請產品（平均費率）
+申請產品（ 1 公尺費率）
+複本管理器 ISR 將展開
+複本管理器 ISR 擴充（ 15 分鐘費率）
+複本管理器 ISR 擴充（ 5 分鐘速率）
+複本管理器 ISR 擴充（平均速率）
+複本管理器 ISR 擴充（ 1 公尺速率）
+複本管理程式位於複寫分割下</block>
+  <block id="d1f2d0eb68a6b45c8dc6a6dba792539e" category="summary">Dcos組態</block>
+  <block id="072a17ceb11d2f7027c8a1539261d0b0" category="doc">資料中心/作業系統資料收集器</block>
+  <block id="54005140701b4d1ac4638683a951ef68" category="paragraph">支援此資料收集器、可從資料中心/作業系統收集數據。Cloud Insights</block>
+  <block id="ada6106f548a6369154652d4ea69d9a1" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。選擇 *DC/OS* 。</block>
+  <block id="906f9dd57fb2872473e89e09bf5bf50e" category="list-text">請依照「DC-OS組態」畫面中的指示來設定資料收集器。這些指示會因您用來收集資料的作業系統或平台類型而有所不同。</block>
+  <block id="169d74d7790e089aeca58cb836db2fcc" category="inline-link">資料中心/作業系統文件</block>
+  <block id="b0f77e8918eef13e0142c8675b792231" category="paragraph">如需設定資訊、請參閱<block ref="bcf6b27a44ba394f1a86a682cd050dc1" category="inline-link-rx"></block>。</block>
+  <block id="90fd43f146814c9c0cb1e9040b914fa0" category="cell">資料點</block>
+  <block id="c43575a6656a31d36fd3cee9520b5838" category="cell">dcos_nod</block>
+  <block id="a675bd36bf3917644534c43b4ba2e55f" category="cell">dcos_container
+dcos_app</block>
+  <block id="022435a7e2f917aa3bce64222061f83d" category="cell">叢集
+主機名稱
+路徑（僅限檔案系統欄位）
+介面（僅限網路欄位）
+conter_id
+task_name</block>
+  <block id="2cf0eab79c0db36a5df9e2deeba2b2c2" category="cell">system_uptime （浮動）
+CPU_核心 （浮動）
+CPU_total （浮動）
+CPU_user （浮動）
+CPU_SYSTEM （浮動）
+CPU_ 閒置（浮動）
+CPU_WAIT （浮動）
+load_1 分鐘（浮動）
+負載 _ 5 分鐘（浮動）
+load_15 分鐘（浮動）
+filesystem_capimal_bytes （ int ）
+filesystem_capimal_USed_bytes （ int ）
+filesystem_capimal_free 位元組（ int ）
+filesystem_inode_total （浮動）
+filesystem_inode_used （浮點型）
+filesystem_inode_free （浮動）
+memory_total_bytes （ int ）
+memory_free 位元組（ int ）
+memory_buffer_bytes （ int ）
+memory_netapped_bytes （ int ）
+swap_total_bytes （ int ）
+swap_free 位元組（ int ）
+swap_used 位元組（ int ）
+network_in_bytes （ int ）
+network_Out_bytes （ int ）
+network_in_packets （浮動）
+network_Out_packets （浮動）
+NETWORD_IN_DOUBLE （浮動）
+NETWORD_OUT 捨棄（浮動）
+NETWORD_IN_errors （浮動）
+NETWORD_Out_errors （浮點型）
+處理序數（浮動）</block>
+  <block id="bc9c01f26c422a397298e3d733c43cb5" category="paragraph">如需其他資訊、請參閱 <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> 頁面。</block>
+  <block id="3dc395f34d5747fa5d58e08302ab67fd" category="summary">Nginx資料收集器組態</block>
+  <block id="21a6c8824057335f8e9dc232584c6ea0" category="doc">Nginx資料收集器</block>
+  <block id="a04ac927bc32d4712f954795733890da" category="paragraph">此資料收集器可用來收集來自於Ngin像 的數據。Cloud Insights</block>
+  <block id="993b018a6d59665db1ee4e45e62026f4" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。選擇 Nginx 。</block>
+  <block id="e7e86cae130886a78274ae9b77db6f35" category="inline-image-macro">Linux Nginx組態</block>
+  <block id="de93697b48f7103f9289abf65ca587b4" category="paragraph"><block ref="f310f9809260b458b5b99732eb2d720e" category="inline-image-macro-rx" type="image"></block>
+<block ref="884ba5b9c64ace436091d4a7d4619c6c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ed8b6bdc341556c944fb012aca6b84d4" category="inline-link-macro">http_stub_STATUS_module</block>
+  <block id="6d1ee9bcac1552cb3e77bfff99ff625e" category="paragraph">必須要有Ngin像 才能收集指標 <block ref="9b25bbc6607a95e9c0486769f8ad1d09" category="inline-link-macro-rx"></block> 已啟用。</block>
+  <block id="3cbf4d6ad75e10ca79741aee2213bd64" category="inline-link-macro">Ngin像 文件</block>
+  <block id="55c28d13135e5d996f9471516e4d7523" category="paragraph">如需其他資訊、請參閱 <block ref="f61e491fe5dc644cc25aa0f3a87b7491" category="inline-link-macro-rx"></block>。</block>
+  <block id="62e0b5b350c9e3d2c19aa801d9442ba9" category="cell">恩靈思</block>
+  <block id="b5044973d8a3d9239bbbeaeeee9db4a5" category="cell">節點 IP
+節點名稱
+連接埠</block>
+  <block id="359d1921d88a2e1a27105eb5a262c103" category="cell">接受
+使用中
+已處理
+讀取
+要求
+等待中
+寫入</block>
+  <block id="4bfbaf73f806e0f2e37658d94bd02b1d" category="summary">Puppet資料收集器組態</block>
+  <block id="4f3343312b305965c29f8f14046d895c" category="doc">Puppet Agent資料收集器</block>
+  <block id="3fb67cc5cc9f9143457c24db7b7dd502" category="paragraph">使用此資料收集器從Puppet Agent收集數據。Cloud Insights</block>
+  <block id="8a8e72cdfe9e0062f257b6b3af0a66fc" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。選擇 Puppet 。</block>
+  <block id="f28ce6829aadfe8650a22f9c6a697a20" category="inline-image-macro">Puppet組態</block>
+  <block id="f02b842ccd15155934dc65921239d4f0" category="paragraph"><block ref="f02b842ccd15155934dc65921239d4f0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4c6265f8b688769e31b9b757f9e54749" category="inline-link">Puppet文件</block>
+  <block id="1554b3e5df91d78952d35aa9c0ee325f" category="paragraph">如需相關資訊、請參閱<block ref="114b9d35c3c72b635a83707f2087ecd5" category="inline-link-rx"></block></block>
+  <block id="774594156e74c09914941ef11ed2caa5" category="cell">Puppet代理程式</block>
+  <block id="ff5f20e069b5c2643ec78dffe736ccad" category="cell">命名空間
+節點UUID</block>
+  <block id="2d6d04c4d20bee58922505cce875cd62" category="cell">節點名稱
+位置
+節點 IP
+版本設定字串
+版本 Puppet</block>
+  <block id="61bb9c3d200381413da5b615c1c8f827" category="cell">變更總計
+事件失敗
+活動成功
+活動總計
+資源已變更
+資源失敗
+資源無法重新啟動
+資源 Outofsync
+資源已重新啟動
+排程的資源
+已略過資源
+資源總計
+時間固定點
+時間組態擷取
+Time Cron
+Time Exec
+時間檔案
+Time FileBucket
+時間段
+時間套件
+時間排程
+時間服務
+Time Sshauthorizedkey
+總時間
+時間使用者</block>
+  <block id="1d292eb6751a0db171502dec84f9f7c0" category="summary">NetApp Kubernetes 監控營運者有許多可設定的選項。</block>
+  <block id="57e4cf9437210e6248eb8a2137609c4e" category="doc">NetApp Kubernetes 監控營運者組態選項</block>
+  <block id="92631a8aee2d30caecb661301eccee48" category="inline-link-macro">NetApp Kubernetes監控操作員</block>
+  <block id="c35a33c9875991494585fbfbed175784" category="paragraph">。 <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> 您可以自訂安裝與組態。</block>
+  <block id="7753286779cc80ff196972ced13aef62" category="paragraph">下表列出 AgentConfiguration 檔案的可能選項：</block>
+  <block id="b33aed8f3134996703dc39f9a7c95783" category="cell">代理程式</block>
+  <block id="4e49d105e5ecfd95da78eb980f698488" category="cell">操作員可以安裝的所有元件通用的組態選項。這些選項可視為「整體」選項。</block>
+  <block id="286bec770910c4da609323e21222e283" category="cell">dockerRepo</block>
+  <block id="73a46ab7157abd31c3ea3ef600cb7798" category="cell">相較於 Cloud Insights 泊塢視窗 repo 、 dockerRepo 會置換以從客戶的「私有」泊塢視窗資源中拉出影像。預設為 Cloud Insights 泊塢視窗 repo</block>
+  <block id="994be3a18bf7e0a16ab2be2d5c1643ae" category="cell">dockerImagePullSecret</block>
+  <block id="9f033a5b208feb9ef67ab1def3051525" category="cell">選用：客戶的秘密私人回購</block>
+  <block id="343d28c140c3f5ce20a1ac3f8f7dae2c" category="cell">叢集名稱</block>
+  <block id="c21207144818cb50a67a3aa45ad90cc1" category="cell">可唯一識別所有客戶叢集的任意文字欄位。這在 Cloud Insights 租戶中應該是唯一的。預設是客戶在 UI 中輸入的「叢集名稱」欄位</block>
+  <block id="b5249bb082b669e275606cdef10879b6" category="cell">Proxy
+格式：
+Proxy ：
+  伺服器：
+  連接埠：
+  使用者名稱：
+  密碼：
+  NoProxy ：
+  啟用 ISTelegrafProxy: 
+  已啟用的 isAuProxy: 
+  已啟用 isFluentbitProxy: 
+  啟用的 isCollectorProxy:</block>
+  <block id="f430d84b3603b6c921d2a45741baab1e" category="cell">客戶可選擇設定 Proxy 。這通常是客戶的公司代理。</block>
+  <block id="aa3a0177193f5479812eadbbb3e6c303" category="cell">Telegraf</block>
+  <block id="0c8011c6947aae43789eb8972c306e85" category="cell">可自訂電信業者安裝的組態選項</block>
+  <block id="fe071453b5b9af9d9a481afb504f78cb" category="cell">CollectionInterval</block>
+  <block id="43087b2e6dfc2a4eecd03be4305fb0cb" category="cell">度量收集時間間隔（以秒為單位）（最大 = 60 秒）</block>
+  <block id="2129471bf14899d19206e2b1aa6c00ca" category="cell">dsCpuLimit</block>
+  <block id="718918f6bff9fdd2a6292afbe4549d0b" category="cell">Telegraf DS 的 CPU 限制</block>
+  <block id="5eeea2f6351dff2df3a80bcff5cdd5be" category="cell">dsMemLimit</block>
+  <block id="bf35f5b9d6933443b78e7cd6b5b24039" category="cell">Telegraf DS 的記憶體限制</block>
+  <block id="32baad7599efdd63fc7dd0ebd6fb0462" category="cell">dsCpuRequest</block>
+  <block id="fb50fe579fe2186737910f4faafbfae2" category="cell">對 Telegraf DS 的 CPU 要求</block>
+  <block id="4fd630053ba42e53bf847444b5857abf" category="cell">dsMemRequest</block>
+  <block id="03a9d404d5e9073d007d6e38a710ebb1" category="cell">對 Telegraf DS 的記憶體要求</block>
+  <block id="00edda16a430ed1a43f73b6b6f8e5230" category="cell">rsCpuLimit</block>
+  <block id="be5f478627c9d3676f638d423c9b320b" category="cell">Telegraf RS 的 CPU 限制</block>
+  <block id="19db0dd97225788d8cd2ac82554de9d3" category="cell">rsMemLimit</block>
+  <block id="7ad3bdf2f332902d109247d0c3970fb4" category="cell">Telegraf RS 的記憶體限制</block>
+  <block id="1be922c4a70261e6656d70f9cc86dde2" category="cell">rsCpuRequest</block>
+  <block id="76b9e3aaffb44c3c4a7084bd7430088d" category="cell">適用於 Telegraf RS 的 CPU 要求</block>
+  <block id="b3e9404f7fb1acb7c3d66e587a4c411b" category="cell">rsMemRequest</block>
+  <block id="dce1fa2cb47347aa09d7dceac624c5f7" category="cell">對 Telegraf RS 的記憶體要求</block>
+  <block id="04808c0fd1505eb55198b91e2910694e" category="cell">dockerMountPoint</block>
+  <block id="8b4f648381c209aa11d7baaf654c5f90" category="cell">dockerMountPoint 路徑的置換。這適用於在 k8s 平台（例如 Cloud Foundry ）上安裝非標準泊塢視窗</block>
+  <block id="986b967d4a19de83ed59389872e2eb46" category="cell">dockerUnixSocket</block>
+  <block id="4dccb3941fc9760d547f9ae348685ad3" category="cell">dockerUnixSocket 路徑的置換。這適用於在 k8s 平台（例如 Cloud Foundry ）上安裝非標準泊塢視窗。</block>
+  <block id="6ae45dc429d1f96b8c63fba54419b0f7" category="cell">CrioSockPath</block>
+  <block id="eeec0978474a40f056df3ffd9acfa360" category="cell">crioSockPath 路徑的置換。這適用於在 k8s 平台（例如 Cloud Foundry ）上安裝非標準泊塢視窗。</block>
+  <block id="6fd605953233d5564943f85815683d62" category="cell">RunPrivileged</block>
+  <block id="06b131db41fa22ef6ac7de5a7eae4aef" category="cell">以特殊權限模式執行 Telegraf 容器。如果您的 k8s 節點上已啟用 SELinux 、請將此設定為 True</block>
+  <block id="986b07451fa1766c43f2eead1470731c" category="cell">批次大小</block>
+  <block id="f73038607dbfd988c8ed06aa707b67b6" category="inline-link-macro">Telegraf 組態文件</block>
+  <block id="4a686d41d5d06d7af488bce13a4b6b1c" category="cell">請參閱 <block ref="1220f98ff4e67fb30a54b092e87489e7" category="inline-link-macro-rx"></block></block>
+  <block id="977c5d665ca82fa3d9d007ab47991cab" category="cell">bufferLimit</block>
+  <block id="3d5beabcc75357b9f0517b37a51d848b" category="cell">圓週期間隔</block>
+  <block id="0457354b493031778121a8634e49db5e" category="cell">CollectionJitter</block>
+  <block id="e2794d8f12719281eff5601251c8a680" category="cell">精度</block>
+  <block id="43a58acb58cbbbfc1abb27f189ec375c" category="cell">FlushInterval</block>
+  <block id="e177bfc26cdd2bb790365e538eef32a6" category="cell">FlushJitter</block>
+  <block id="8bdbcdcecbcc5e3e45877e3a15ebe124" category="cell">輸出逾時</block>
+  <block id="a3f0ee128de7eabdc5dbd73136882ab6" category="cell">啟用 DockerMetricCollection</block>
+  <block id="0710c2522c29e39ba719becf4972a9aa" category="cell">收集 Docker 指標。根據預設、此值會設為 true 、並會針對內部部署、泊塢視窗型的 k8s 部署收集泊塢視窗度量。若要停用泊塢視窗度量集合、請將此設定為假。</block>
+  <block id="bb0a12c3834207119851374142a76ac0" category="cell">dsTolerations</block>
+  <block id="77e9ea38d66b01840eaf712dab598ce0" category="cell">Telegraf-DS 額外的容忍度。</block>
+  <block id="569d3e422e1e57a8d8f17b102bb10bfc" category="cell">RsTolerations</block>
+  <block id="0a1cb9f6e7c89d89c765fdd1efa6183b" category="cell">Telegraf-RS 額外容忍度。</block>
+  <block id="58af01fce51ad07206150454f8b829be" category="cell">Kube-state 指標</block>
+  <block id="81beb48dd63a014bf8c446eeeb319a2e" category="cell">可自訂操作員的 kbe 狀態度量安裝的組態選項</block>
+  <block id="8804d25db5f16b9db006116b6edf45bc" category="cell">cpuLimit</block>
+  <block id="8b673d5f702e58efd947465ead5c9647" category="cell">kube 狀態度量部署的 CPU 限制</block>
+  <block id="65a010afe1e2186ecb5c9ef8cf978e2d" category="cell">MemLimit</block>
+  <block id="e49ddab01d68c08aeef7fdff59e6def6" category="cell">kube 狀態度量部署的記憶體限制</block>
+  <block id="664e65ce2a5a996437f898217e74c9dd" category="cell">cpuRequest</block>
+  <block id="3237c3bd0df775b78c9dafaf3c9bf9e6" category="cell">CPU 要求進行 kube 狀態指標部署</block>
+  <block id="c8f947b6b972e9866cc682a82d5ec34a" category="cell">MemRequest</block>
+  <block id="03dd8511b379b0b92595299b980d36e4" category="cell">kube 狀態指標部署的記憶體要求</block>
+  <block id="55b558c7ef820e6e00e5993b9e55d93b" category="cell">資源</block>
+  <block id="3b720d9649ae501d73e8f8c4a7a15348" category="cell">以逗號分隔的資源清單、可供擷取。
+範例： cronjobs 、 daemonsets 、部署、擷取、工作、命名空間、節點、持續不斷的 voleclaims 、
+持續磁碟區、 Pod 、複製集、資源等量、服務、狀態集</block>
+  <block id="d6c26478ca41a23cc9741a4e92576269" category="cell">公差</block>
+  <block id="c511c601aee805f46f3767063104cdd8" category="cell">Kube-state - 衡量其他容忍度。</block>
+  <block id="42cecfeff00cc916fef4f64e7b921079" category="cell">標籤</block>
+  <block id="cea61529c4fbcfd86c0a3459bc229a87" category="cell">kube 狀態度量應擷取的資源清單（以逗號分隔）
+
+++
+範例： cronjobs=[*],daemonsets=[*],targets=[*],jobs=[*],命名 空間 =[*],nodes=[*],
+永久卷冊 =[*] 、持續卷 =[*] 、 Pod =[*] 、複製集 =[*] 、資源 equotas=[*] 、服務 =[*] 、狀態集 =[*]
+++</block>
+  <block id="d795ec2d0a164433572a8d5d91b8fae0" category="cell">可自訂記錄收集和安裝操作員的組態選項</block>
+  <block id="031104420a282e1bdb63e280c40a4938" category="cell">readFromHead</block>
+  <block id="d7ff51440723c6bba696ef19f757a8af" category="cell">是非題、應能流暢地從標頭讀取記錄</block>
+  <block id="90272dda245ae1fb3cf197e91a8689dc" category="cell">逾時</block>
+  <block id="6136e8e4f59c6ebf3a47733e15cd8f8f" category="cell">逾時、以秒為單位</block>
+  <block id="a28f540659f42fa52be34b45558bb6c6" category="cell">dnsMode</block>
+  <block id="5c0864cc25dbf397d47948de9ac342f1" category="cell">TCP/UDP 、 DNS 模式</block>
+  <block id="7e7b391c65060e4613a7fb96bfd2ef31" category="cell">流暢的位元容忍度</block>
+  <block id="035bf5f67349238f72eae5d508efac99" category="cell">Fluent-bit-DS 額外公差。</block>
+  <block id="8776d1f0ee4232b1c2ff5bc38e4b2603" category="cell">事件導出者容忍度</block>
+  <block id="bac5ce71f32beb834c27a988cad33543" category="cell">事件導出者額外容忍度。</block>
+  <block id="6f70b1b29646b4f3864aa8abbbca1c59" category="cell">工作負載對應</block>
+  <block id="061016eea4bb256a8b08c9190fbefeec" category="cell">可自訂工作負載對應集合及安裝 Operator 的組態選項</block>
+  <block id="3a8e375aaa03d4b48cdd1a1758a69d81" category="cell">Net 觀察者 DS 的 CPU 上限</block>
+  <block id="3803b93f400a67f6fef5fecdec95cb8c" category="cell">net 觀察者 DS 的記憶體限制</block>
+  <block id="967cc12aa2f5f95e9e26d28fae3bd7b3" category="cell">CPU 要求取得 Net 觀察者 DS</block>
+  <block id="0ae1bca85ce414d0f1862e84b9f66acc" category="cell">net 觀察者 DS 的記憶體要求</block>
+  <block id="1de805c2687b2c30b46a937270519488" category="cell">MetricAggergationInterval.</block>
+  <block id="8d5efaeb90931394d0afdcc8d00b6b90" category="cell">度量集合時間間隔（以秒為單位）</block>
+  <block id="c561450e999b4dfedfdbbc8b48e36db7" category="cell">bpfPollInterval.</block>
+  <block id="a75c6546b06d6f58867213c5349a5f15" category="cell">BPF 輪詢時間間隔（秒）</block>
+  <block id="3b7c5615013c6b42362845591653e503" category="cell">enabledDNSookup</block>
+  <block id="1d2b775d8b166dda0a22ca0ffa3f537c" category="cell">是非題、啟用 DNS 查詢</block>
+  <block id="287ab13fa00dc2700e0567bc50f5a663" category="cell">L4-公差</block>
+  <block id="bef6178937f26cf5776d5c67e6c1d23c" category="cell">net-觀察者 -L4-DS 額外容忍度。</block>
+  <block id="349a396fe021418ac0edbee3b447f4d5" category="section-title">AgentConfiguration 檔案範例</block>
+  <block id="fc8a8119975d70c9ea4470d26aa4640b" category="paragraph">以下是 AgentConfiguration 檔案範例。請注意、此處並未擷取所有選項：</block>
+  <block id="170ac79db4abf3af53c36b5ba23d297a" category="summary">CouchDB資料收集器組態</block>
+  <block id="1aa7fb61fdaf60c81a318c790c7e545e" category="doc">CouchDB資料收集器</block>
+  <block id="2aa655c0610f5e45884f5257e54d539e" category="paragraph">使用此資料收集器從CouchDB收集數據。Cloud Insights</block>
+  <block id="c3dba9c80e9fa5a82c71abb7fa5cf37f" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。選擇 CouchDB 。</block>
+  <block id="9d3601e78c51a4b184d2fe86128539e4" category="inline-image-macro">CouchDB組態</block>
+  <block id="61d7e3da551b2e4c1549750fbb518e22" category="paragraph"><block ref="61d7e3da551b2e4c1549750fbb518e22" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8a7006055e2291f0b9e46ee915f0ad0c" category="inline-link-macro">CouchDB文件</block>
+  <block id="bc781ab763b71df7b975bbfe7c860bba" category="paragraph">如需相關資訊、請參閱 <block ref="3147fac008aa304c440ef0d367c93828" category="inline-link-macro-rx"></block>。</block>
+  <block id="dea8b0c01ac3c8f22d85423d187ec3d2" category="cell">CouchDB</block>
+  <block id="64f2993184c14c565d6ba3100a20ca05" category="cell">驗證快取命中次數
+驗證快取遺失
+資料庫讀取
+資料庫寫入
+資料庫已開啟
+開啟 OS 檔案
+最長要求時間
+最短要求時間
+複製 httpd 要求方法
+httpd 要求方法刪除
+httpd Request Methods Get
+httpd Request Methods Head
+http Request Methods Post
+已採用的 http 要求方法
+狀態代碼 200
+狀態代碼 201.
+狀態代碼 202.19
+狀態代碼 301
+狀態代碼 304.
+狀態代碼 400
+狀態代碼 401
+狀態代碼 403.
+狀態代碼 404
+狀態代碼 405
+狀態代碼 409.
+狀態代碼 412.
+狀態代碼 500</block>
+  <block id="13b9b5c6c0fb1445ca79a2155f4dc602" category="summary">Hadoop資料收集器組態</block>
+  <block id="38af629ca8cce22e7b7e641b96f8197b" category="doc">Hadoop Data Collector</block>
+  <block id="20bacb7d7672e3432126a809496c0ace" category="paragraph">使用此資料收集器從Hadoop收集指標。Cloud Insights</block>
+  <block id="65f4403a1570898156c13c0053e0d957" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。選擇 Hadoop 。</block>
+  <block id="e844ff1ebc3eef465aed7960b58160c3" category="inline-image-macro">Hadoop組態</block>
+  <block id="026b451ea6f45b0c92de7f54611efaf2" category="paragraph"><block ref="47353d83abd9981302d8e2ae7057d5b3" category="inline-image-macro-rx" type="image"></block>
+<block ref="7afda35c9e63e32c054b3ad27f5a4ccb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f420dce044ac00b84abcfafd6e9f994a" category="paragraph">完整的Hadoop部署包含下列元件：</block>
+  <block id="d713d040466c91cefd2167bcebd60062" category="list-text">NameNode：Hadoop分散式檔案系統（HDFS）主要系統。協調一系列DataNode。</block>
+  <block id="da8ea8d009db4b0c889dc3686a8d9638" category="list-text">次要NameNode：主NameNode的暖容錯移轉。在Hadoop中、不會自動升級至NameNode。次要NameNode會從NameNode收集資訊、以便在需要時隨時升級。</block>
+  <block id="a4c57bdec853ab95919855b4747bfa32" category="list-text">DataNode：資料的實際擁有者。</block>
+  <block id="9c600745fb11557034d343ea8107d75a" category="list-text">資源管理器：運算主系統（Yarn）。協調一系列的NodeManager。</block>
+  <block id="39f4bb6feff48cfe7b9520c7318f9767" category="list-text">NodeManager：運算資源。執行應用程式的實際位置。</block>
+  <block id="f95e602d74c2ca81c1416dbb467a0df7" category="list-text">JobhistoryServer：負責服務所有工作歷程記錄相關要求。</block>
+  <block id="c1917bdd072d470e050bd2c06f83e344" category="paragraph">Hadoop外掛程式是以Telewraf的Jolokia外掛程式為基礎。例如、需要從所有Hadoop元件收集資訊、需要在所有元件上透過Jolokia設定和公開的JMX。</block>
+  <block id="0f37fe3dfe5894ca54f816b3a822ab75" category="paragraph">組態是根據Hadoop 2.2.9版開發而成。</block>
+  <block id="0eb08f5b635663822078f16d3fc578db" category="section-title">設定</block>
+  <block id="788386447f3336a53e1c2ce1bfe69253" category="inline-link-macro">約洛基亞代理商1.6.0</block>
+  <block id="12b5a09ab5184ab662baeccbd4410892" category="paragraph">對於所有個別元件、必須下載Jolokia代理程式Jar檔案的版本。測試版本為 <block ref="adb2184741946d946bb10cd791c6089f" category="inline-link-macro-rx"></block>。</block>
+  <block id="cdd86f53b4b8b0d623b6a8ee7a48c7bc" category="paragraph">以下說明假設下載的Jar檔案（jolokia -jvm-1.6.0-agent.jar）位於「/op/Hadoop /lib/」位置。</block>
+  <block id="32b6eea89ffa772d5a299a3fa2ae0f4e" category="section-title">NameNode</block>
+  <block id="232e93d6785b24d7d392240ca50f3ae2" category="paragraph">若要設定NameNode以公開Jolokia API、您可以在&lt;Hadoop主頁&gt;/etc/Hadoop / Hadoop -env.sh中設定下列項目：</block>
+  <block id="9bc82d5913c313160e8e66d24078bba0" category="section-title">次要NameNode</block>
+  <block id="f18509f1fb2f9a71f232159773b2fd87" category="paragraph">若要將次要NameNode設定為公開Jolokia API、您可以在&lt;Hadoop主目錄&gt;/etc/Hadoop / Hadoop -env.sh中設定下列項目：</block>
+  <block id="315104928eaa5842590c6ce58545354d" category="section-title">DataNode</block>
+  <block id="45fef23823b56451d4fe53fc6c8d98c7" category="paragraph">若要將DataNode設定為公開Jolokia API、您可以在&lt;Hadoop主頁&gt;/etc/Hadoop / Hadoop -env.sh中設定下列項目：</block>
+  <block id="ed760e01ef8cb789b502ad1c9a3829a2" category="section-title">資源管理程式</block>
+  <block id="b475783ddb9124cc9510e5e42cf8e80f" category="paragraph">若要設定資源管理程式以公開Jolokia API、您可以在&lt;Hadoop主頁&gt;/etc/Hadoop / Hadoop -env.sh中設定下列項目：</block>
+  <block id="1acfb853dd9d284090a1f6804f68d238" category="section-title">NodeManager</block>
+  <block id="08dc29be4fde03fbd2b992b1227f2990" category="paragraph">若要設定NodeManager以公開Jolokia API、您可以在&lt;Hadoop主頁&gt;/etc/Hadoop / Hadoop -env.sh中設定下列項目：</block>
+  <block id="ff3d03ec141ab7e4f5faa0c83687126c" category="section-title">作業歷史伺服器</block>
+  <block id="4087664a919c61abae79b6d518148613" category="paragraph">若要將JobHistoryServer設定為公開Jolokia API、您可以在&lt;Hadoop主頁&gt;/etc/Hadoop / Hadoop -env.sh中設定下列項目：</block>
+  <block id="bfa0ceac01bc6e1226697171b0d5b352" category="cell">Hadoop次要NameNode</block>
+  <block id="cc4f08bdf048f36eae4a37c7b9b75ba1" category="cell">叢集
+命名空間
+伺服器</block>
+  <block id="fe1a99e660c022ae82cc4f285f9c1fae" category="cell">節點名稱
+節點 IP
+編譯資訊
+版本</block>
+  <block id="ec47af2c19dd80097f2d69a8d2df39de" category="cell">GC 計數
+GC 複本計數
+GC Marks Sweep Compact Count
+超過 GC 號碼資訊臨界值
+超過 GC 號碼警告臨界值
+GC 時間
+GC 複製時間
+GC Marks 掃出時間過短
+GC 總額外睡眠時間
+記錄錯誤計數
+記錄致命計數
+記錄資訊計數
+記錄警告計數
+已認可記憶體堆積
+記憶體堆積上限
+使用的記憶體堆積
+記憶體最大
+記憶體非堆積已認可
+記憶體非堆積上限
+未使用記憶體堆積
+執行緒已封鎖
+全新執行緒
+執行緒 Runnable
+執行緒已終止
+執行緒逾時等待
+等待的執行緒</block>
+  <block id="7c1a0861b825b536f9d829a1bb1e2d51" category="cell">Hadoop NodeManager</block>
+  <block id="42c247c7d7aab3cc05a61467ea1c6d4b" category="cell">已分配的容器
+記憶體分配
+已分配的記憶體 Oportunic
+虛擬核心已配置的開放式
+已分配的虛擬核心
+可用記憶體
+可用的虛擬核心
+目錄錯誤的本機
+目錄不良記錄
+清除前的快取大小
+容器啟動持續時間平均時間
+Container Launch Duration 營運次數
+容器已完成
+容器失敗
+容器咬合
+容器已遭殺害
+已啟動的容器
+容器重新輸入
+容器在故障時回溯
+執行中的容器
+磁碟使用率良好的本機目錄
+磁碟使用率良好記錄目錄
+已刪除位元組私人
+已刪除位元組公開
+執行投機的容器
+刪除的位元組總數
+隨機播放連線
+隨機播放輸出位元組
+隨機輸出失敗
+隨機輸出正常
+GC 計數
+GC 複本計數
+GC Marks Sweep Compact Count
+超過 GC 號碼資訊臨界值
+超過 GC 號碼警告臨界值
+GC 時間
+GC 複製時間
+GC Marks 掃出時間過短
+GC 總額外睡眠時間
+記錄錯誤計數
+記錄致命計數
+記錄資訊計數
+記錄警告計數
+已認可記憶體堆積
+記憶體堆積上限
+使用的記憶體堆積
+記憶體最大
+記憶體非堆積已認可
+記憶體非堆積上限
+未使用記憶體堆積
+執行緒已封鎖
+全新執行緒
+執行緒 Runnable
+執行緒已終止
+執行緒逾時等待
+等待的執行緒</block>
+  <block id="df6174495390f87b029379629c6f2b33" category="cell">Hadoop資源管理程式</block>
+  <block id="df7b62f4d6c4d5682ffa7d976584d4d4" category="cell">ApplicationMaster 啟動延遲平均
+ApplicationMaster 啟動延遲編號
+ApplicationMaster 註冊延遲平均
+ApplicationMaster 註冊延遲編號
+NodeManager 作用中號碼
+NodeManager 取消編號
+NodeManager 取消編號
+NodeManager 遺失編號
+NodeManager 重新啟動的編號
+NodeManager 關機編號
+NodeManager 健全狀況編號
+NodeManager 記憶體限制
+NodeManager 虛擬核心限制
+已用容量
+作用中應用程式
+作用中使用者
+已分配的 Aggregate Container
+已搶佔 Aggregate Container
+已發行 Aggregate Container
+已搶佔 Aggregate Memory 秒數
+已分配的 Aggregate Node 本機容器
+已配置的 Aggregate off 交換器容器
+已分配 Aggregate Ack 本機容器
+集合式虛擬核心數秒預先搶佔
+已分配的容器
+已分配的記憶體
+已分配的虛擬核心
+應用程式第一次嘗試 Container 分配延遲平均時間
+應用程式嘗試第一個 Container Allocation Delay Number
+應用程式已完成
+應用程式失敗
+應用程式遭殺害
+應用程式擱置中
+執行中的應用程式
+已提交申請
+可用記憶體
+可用的虛擬核心
+容器擱置中
+記憶體擱置中
+虛擬核心擱置中
+保留的容器
+保留的記憶體
+保留虛擬核心
+已使用記憶體 ApplicationMaster
+使用的虛擬核心 ApplicationMaster
+已使用容量
+GC 計數
+GC 複本計數
+GC Marks Sweep Compact Count
+超過 GC 號碼資訊臨界值
+超過 GC 號碼警告臨界值
+GC 時間
+GC 複製時間
+GC Marks 掃出時間過短
+GC 總額外睡眠時間
+記錄錯誤計數
+記錄致命計數
+記錄資訊計數
+記錄警告計數
+已認可記憶體堆積
+記憶體堆積上限
+使用的記憶體堆積
+記憶體最大
+記憶體非堆積已認可
+記憶體非堆積上限
+未使用記憶體堆積
+執行緒已封鎖
+全新執行緒
+執行緒 Runnable
+執行緒已終止
+執行緒逾時等待
+等待的執行緒</block>
+  <block id="569b69985a3ba9860b112ed47851e6f3" category="cell">Hadoop DataNode</block>
+  <block id="8751de48b6635b7a5598ab69137093dc" category="cell">節點名稱
+節點 IP
+叢集 ID
+版本</block>
+  <block id="5f3d32367ec5caecbbe837295ddebebb" category="cell">收發器計數
+傳輸進行中
+快取容量
+已使用快取
+容量
+使用的 DFS
+預估容量損失總計
+上次 Volume 失敗率
+區塊編號快取
+區塊編號無法快取
+區塊編號無法取消快取
+Volume 編號失敗
+剩餘容量
+GC 計數
+GC 複本計數
+GC Marks Sweep Compact Count
+超過 GC 號碼資訊臨界值
+超過 GC 號碼警告臨界值
+GC 時間
+GC 複製時間
+GC Marks 掃出時間過短
+GC 總額外睡眠時間
+記錄錯誤計數
+記錄致命計數
+記錄資訊計數
+記錄警告計數
+已認可記憶體堆積
+記憶體堆積上限
+使用的記憶體堆積
+記憶體最大
+記憶體非堆積已認可
+記憶體非堆積上限
+未使用記憶體堆積
+執行緒已封鎖
+全新執行緒
+執行緒 Runnable
+執行緒已終止
+執行緒逾時等待
+等待的執行緒</block>
+  <block id="5a0c1fdf2f2b483f386886e066dfae1b" category="cell">Hadoop NameNode</block>
+  <block id="637b504f65b25d54361a662bf71a4164" category="cell">節點名稱
+節點 IP
+交易 ID 上次寫入
+上次載入編輯後的時間
+HA 狀態
+檔案系統狀態
+區塊集區 ID
+叢集 ID
+編譯資訊
+明確版本計數
+版本</block>
+  <block id="551ce6b2e6cc4e5633e4ebd59fde4056" category="cell">區塊容量
+區塊總數
+容量總計
+已使用容量
+使用容量非 DFS
+區塊毀損
+預估容量損失總計
+封鎖過多的資料
+心跳已過期
+檔案總數
+檔案系統鎖定佇列長度
+區塊遺失
+利用第一因素封鎖遺失的複寫
+用戶端作用中
+資料節點停用
+資料節點解除張力已停用
+資料節點解除運作中的資料
+資料節點取消配置
+加密區域編號
+資料節點進入維護
+檔案正在建置中
+資料節點在維護中停用
+Data Node Live In Maintenance
+資料節點即時運作
+儲存過時
+複寫擱置逾時
+資料節點訊息擱置中
+區塊擱置刪除
+區塊擱置中的複寫
+區塊複寫錯誤延遲
+封鎖排程複寫
+快照
+Snapshottable 目錄
+資料節點過時
+檔案總數
+總負載
+同步計數總計
+自上次檢查點以來的交易
+自上次記錄檔記錄以來的交易
+區塊不足複寫
+磁碟區故障總計
+同步時間總計
+物件上限
+作業區塊新增
+作業允許快照
+作業區塊批處理
+作業區塊已排入佇列
+作業區塊已接收及刪除
+作業報告平均時間
+營運封鎖報告編號
+快取報告平均時間
+快取報告編號
+作業建立檔案
+作業建立即時資料
+Operations 建立 symlink
+作業刪除檔案
+作業刪除 Snapshot
+作業不允許 Snapshot
+作業檔案輸入 / 輸出
+附加檔案
+檔案已建立
+檔案已刪除
+檔案清單
+檔案已重新命名
+檔案遭截斷
+檔案系統載入時間
+作業產生 EDEK 平均時間
+營運部門產生 EDEK
+作業取得額外的資料節點
+區塊會取得位置
+取得編輯平均時間
+取得編輯編號
+取得影像平均時間
+取得影像編號
+作業取得連結目標
+營運取得清單
+Operations List Snapshottable 目錄
+複寫非排程號碼
+將影像平均時間
+放置影像編號
+作業重新命名即時資料
+資源檢查時間平均時間
+資源檢查時間號碼
+安全模式時間
+作業 Snapshot 差異報告
+營運儲存區塊報告
+複寫成功
+同步平均時間
+Operations Sync 編號
+複寫逾時
+營運總計
+交易平均時間
+交易 Batchd 同步
+交易編號
+EDEK WAMEUP 時間平均
+EDEK Warmup 號碼
+區塊集區已用空間
+快取容量
+已使用快取
+可用容量
+使用的區塊集區百分比
+剩餘百分比
+使用百分比
+執行緒
+GC 計數
+GC 複本計數
+GC Marks Sweep Compact Count
+超過 GC 號碼資訊臨界值
+超過 GC 號碼警告臨界值
+GC 時間
+GC 複製時間
+GC Marks 掃出時間過短
+GC 總額外睡眠時間
+記錄錯誤計數
+記錄致命計數
+記錄資訊計數
+記錄警告計數
+已認可記憶體堆積
+記憶體堆積上限
+使用的記憶體堆積
+記憶體最大
+記憶體非堆積已認可
+記憶體非堆積上限
+未使用記憶體堆積
+執行緒已封鎖
+全新執行緒
+執行緒 Runnable
+執行緒已終止
+執行緒逾時等待
+等待的執行緒</block>
+  <block id="0460c951ea9c38503a35b138121da86c" category="cell">Hadoop作業歷史伺服器</block>
+  <block id="0982f7ddf38c72531e91321d3b4e198e" category="summary">Docker資料收集器組態</block>
+  <block id="d80788e8d22d139775039533ead6bae8" category="doc">Docker Data Collector</block>
+  <block id="6e48769f92efb7218705b56e64b2cc22" category="paragraph">使用此資料收集器從Docker收集指標。Cloud Insights</block>
+  <block id="9ee6c12aac4505f529c285b136202ce5" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。選擇 Docker 。</block>
+  <block id="0f4a5a5b8072d8e43816253b9197d0f1" category="list-text">請依照Docker組態畫面中的指示來設定資料收集器。這些指示會因您用來收集資料的作業系統或平台類型而有所不同。</block>
+  <block id="4ed4e51db0aa02d2ed7e8fb292cc39c8" category="inline-image-macro">Docker組態</block>
+  <block id="ee96e45eed0143814810825fc37d2fa8" category="paragraph"><block ref="ee96e45eed0143814810825fc37d2fa8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2622d06a8a5a13f122149c79381978f8" category="paragraph">適用於Docker的Telegraf輸入外掛程式會透過指定的UNIX通訊端或TCP端點收集度量資料。</block>
+  <block id="047938f8b934d1717dddfdf0dbb9f6bc" category="paragraph">組態是根據Docker 1.12.6版開發而成。</block>
+  <block id="43d4b6a220eea649b1a53bac845809d2" category="section-title">透過UNIX套接字存取Docker</block>
+  <block id="ce07d3c38928e864e20e82c242ae0f98" category="paragraph">如果Telegraf代理程式是在裸機上執行、請執行下列命令、將Telegraf Unix使用者新增至Docker Unix群組：</block>
+  <block id="0c38156add26ac675264862ed09bc25d" category="paragraph">如果Telegraf代理程式是在Kubernetes Pod內執行、請將套接字對應至Pod中的Volume、然後將該磁碟區安裝至/var/run / Docker。  例如、將下列項目新增至Podcast規格：</block>
+  <block id="69821e3ecac0b5542b2dfa0b6083a7be" category="paragraph">然後、將下列項目新增至Container：</block>
+  <block id="b9aa3f7cd738fe521730a211a77f68d6" category="paragraph">請注意Cloud Insights 、Kubernetes平台所提供的支援程序會自動處理此對應作業。</block>
+  <block id="73553149828f2c198e9e7df4807e33bf" category="section-title">透過TCP端點存取Docker</block>
+  <block id="b4f5dd84e7c731654efa53663ef21180" category="paragraph">根據預設、Docker會使用連接埠2375進行未加密存取、而連接埠2376則用於加密存取。</block>
+  <block id="681992b8581f6d4247af5523a14d0ce4" category="cell">Docker引擎</block>
+  <block id="f4a3b0c461a1d83562753ce679c373cc" category="cell">命名空間
+Docker引擎</block>
+  <block id="8ab71e8b7ccb8786b890c85e686d1dbf" category="cell">節點名稱
+節點 IP
+節點UUID
+節點作業系統
+Kubernetes 叢集
+Docker 版本
+單位</block>
+  <block id="efb21860adb0899b80a09ed3d53daca5" category="cell">記憶體
+容器
+容器已暫停
+執行中的容器
+容器已停止
+CPU
+Go 例行訓練
+映像
+接聽程式事件
+使用的檔案描述元
+可用資料
+資料總計
+使用的資料
+可用的中繼資料
+中繼資料總計
+使用的中繼資料
+Pool Blocksize</block>
+  <block id="c4d05fe785e9118926263f1d8d731968" category="cell">Docker Container</block>
+  <block id="ef6673f2b613d194f98744f7a7d34b5d" category="cell">命名空間
+容器名稱
+Docker引擎</block>
+  <block id="85251df3c314f73ff378bbb53d0cbb1f" category="cell">Kubernetes Container 雜湊
+Kubernetes Container 連接埠
+Kubernetes Container 重新啟動計數
+Kubernetes Container 終止訊息路徑
+Kubernetes Container 終止訊息原則
+Kubernetes Pod 終止寬限期
+Container 映像
+容器狀態
+Container 版本
+節點名稱
+Kubernetes Container 記錄路徑
+Kubernetes Container 名稱
+Kubernetes Docker 類型
+Kubernetes Pod 名稱
+Kubernetes Pod 命名空間
+Kubernetes Pod UID
+Kubernetes 沙箱 ID
+節點 IP
+節點UUID
+Docker 版本
+Kubernetes IO 組態已見
+Kubernetes IO 組態來源
+OpenShift IO SCC
+Kubernetes 說明
+Kubernetes 顯示名稱
+OpenShift 標記
+Kom擺 式服務
+Pod 範本雜湊
+控制器修訂雜湊
+產生 Pod 範本
+授權
+架構建置日期
+架構授權
+架構名稱
+架構 URL
+架構 VCS URL
+架構廠商
+架構版本
+架構架構版本
+維護人員
+客戶 Pod
+Kubernetes StatefulSet Pod 名稱
+租戶
+WebCONSOLE
+架構
+授權來源 URL
+建置日期
+RH Build Host
+RH 元件
+發佈範圍
+安裝
+版本
+執行
+摘要
+解除安裝
+VCS 參考
+VCS 類型
+廠商
+版本
+健全狀況狀態
+容器 ID</block>
+  <block id="5ff8370214b985307753a0ff9465c15b" category="cell">Active Anonymous 記憶體
+記憶體作用中檔案
+記憶體快取
+記憶體階層限制
+Memory Inactive Anonymous
+記憶體非使用中檔案
+記憶體限制
+記憶體對應檔案
+記憶體最大使用量
+記憶體分頁錯誤
+記憶體分頁主要故障
+記憶體分頁
+記憶體分頁
+記憶體駐留集大小
+記憶體駐留集大小龐大
+Active Anonymous 總記憶體數
+記憶體作用中檔案總計
+記憶體總快取
+未啟用的匿名記憶體總數
+記憶體非使用中檔案總計
+記憶體對應檔案總計
+記憶體總頁面錯誤
+記憶體總頁數主要錯誤
+記憶體分頁總容量
+記憶體分頁總容量
+記憶體總駐留集大小
+記憶體總駐留集大小龐大
+記憶體總容量
+記憶體更新
+記憶體使用量
+記憶體使用量百分比
+結束代碼
+Oom 死亡
+PID
+開始於
+失敗的 Streak</block>
+  <block id="213eaa882abd038ecefb94d1c9ad53dd" category="cell">Docker Container IO</block>
+  <block id="b6c8eb0e1f3a075790a46177f5f664a9" category="cell">命名空間
+容器名稱
+裝置
+Docker引擎</block>
+  <block id="a8ca9934ba37964ab75dc00b1fa3e8fe" category="cell">Kubernetes Container 雜湊
+Kubernetes Container 連接埠
+Kubernetes Container 重新啟動計數
+Kubernetes Container 終止訊息路徑
+Kubernetes Container 終止訊息原則
+Kubernetes Pod 終止寬限期
+Container 映像
+容器狀態
+Container 版本
+節點名稱
+Kubernetes Container 記錄路徑
+Kubernetes Container 名稱
+Kubernetes Docker 類型
+Kubernetes Pod 名稱
+Kubernetes Pod 命名空間
+Kubernetes Pod UID
+Kubernetes 沙箱 ID
+節點 IP
+節點UUID
+Docker 版本
+Kubernetes 組態已見
+Kubernetes 組態來源
+OpenShift SCC
+Kubernetes 說明
+Kubernetes 顯示名稱
+OpenShift 標記
+架構架構版本
+Pod 範本雜湊
+控制器修訂雜湊
+產生 Pod 範本
+Kom擺 式服務
+架構建置日期
+架構授權
+架構名稱
+架構廠商
+客戶 Pod
+Kubernetes StatefulSet Pod 名稱
+租戶
+WebCONSOLE
+建置日期
+授權
+廠商
+架構
+授權來源 URL
+RH Build Host
+RH 元件
+發佈範圍
+安裝
+維護人員
+版本
+執行
+摘要
+解除安裝
+VCS 參考
+VCS 類型
+版本
+架構 URL
+架構 VCS URL
+架構版本
+容器 ID</block>
+  <block id="34792b46d5f4d118993b97dc65a3ed9b" category="cell">IO 服務位元組遞迴非同步
+IO 服務位元組遞迴讀取
+IO 服務位元組遞迴同步
+IO 服務位元組遞歸總計
+IO 服務位元組遞迴寫入
+IO 服務式遞迴非同步
+IO 服務式遞迴讀取
+IO 服務式遞迴同步
+IO 服務式遞迴總計
+IO 服務式遞迴寫入</block>
+  <block id="c19b7a0868fcc8b657cf119904c8f4ee" category="cell">Docker Container Network</block>
+  <block id="831c5d0c57dec418323ed2d160458d81" category="cell">命名空間
+容器名稱
+網路
+Docker引擎</block>
+  <block id="6fcf9c483cfa3017433456584bcd7f8f" category="cell">Container 映像
+容器狀態
+Container 版本
+節點名稱
+節點 IP
+節點UUID
+節點作業系統
+K8s 叢集
+Docker 版本
+容器 ID</block>
+  <block id="3fcbd1f352221dab310964db15bbae4d" category="cell">Rx 已捨棄
+Rx 位元組
+Rx 錯誤
+Rx 封包
+傳輸中斷
+傳輸位元組
+Tx 錯誤
+Tx 封包</block>
+  <block id="e11e2314917505f9b82d06bdd3c6e4b2" category="cell">Docker Container CPU</block>
+  <block id="722c21d9c801a7b062bf40cd7bd5ae06" category="cell">命名空間
+容器名稱
+CPU
+Docker引擎</block>
+  <block id="51accef59e0d9b09555ad4a6b152e847" category="cell">Kubernetes Container 雜湊
+Kubernetes Container 連接埠
+Kubernetes Container 重新啟動計數
+Kubernetes Container 終止訊息路徑
+Kubernetes Container 終止訊息原則
+Kubernetes Pod 終止寬限期
+Kubernetes 組態已見
+Kubernetes 組態來源
+OpenShift SCC
+Container 映像
+容器狀態
+Container 版本
+節點名稱
+Kubernetes Container 記錄路徑
+Kubernetes Container 名稱
+Kubernetes Docker 類型
+Kubernetes Pod 名稱
+Kubernetes Pod 命名空間
+Kubernetes Pod UID
+Kubernetes 沙箱 ID
+節點 IP
+節點UUID
+節點作業系統
+Kubernetes 叢集
+Docker 版本
+Kubernetes 說明
+Kubernetes 顯示名稱
+OpenShift 標記
+架構版本
+Pod 範本雜湊
+控制器修訂雜湊
+產生 Pod 範本
+Kom擺 式服務
+架構建置日期
+架構授權
+架構名稱
+架構廠商
+客戶 Pod
+Kubernetes StatefulSet Pod 名稱
+租戶
+WebCONSOLE
+建置日期
+授權
+廠商
+架構
+授權來源 URL
+RH Build Host
+RH 元件
+發佈範圍
+安裝
+維護人員
+版本
+執行
+摘要
+解除安裝
+VCS 參考
+VCS 類型
+版本
+架構 URL
+架構 VCS URL
+架構版本
+容器 ID</block>
+  <block id="01515237e5a51a70ac5f1a57ab2c74a5" category="cell">節流期間
+節流節流期間
+節流節流時間
+核心模式的使用
+使用者模式
+使用率百分比
+使用系統
+使用量總計</block>
+  <block id="be43542983d169babaee275ec60ecb75" category="cell">依照組態頁面上的指示、我看不到Cloud Insights Docker指標。</block>
+  <block id="905bf4f9d8189256f8247dcef263d5cb" category="cell">檢查 Telegraf 值機員記錄、查看是否報告下列錯誤：
+
+ 好！外掛程式錯誤 [Inputs.泊 塢視窗 ] ：嘗試連線至 Docker 常駐程式套接字時、取得權限遭拒
+
+如果有、請採取必要步驟、讓 Telegraf 代理程式存取如上所述的 Docker Unix 插槽。</block>
+  <block id="c75d4b042f6604bc016e5b15ff4dea18" category="summary">支援Telegraf做為其代理程式、可在Kubernetes上收集整合資料。Cloud Insights</block>
+  <block id="562442a302f1457c8c9df7cbde80c0b4" category="doc">設定NetApp Kubernetes監控操作員</block>
+  <block id="b9f54c4d152facdb82c18e1719662b9f" category="paragraph">提供* NetApp Kubernetes監控操作員*（NKMO）的Kubernetes系列產品。Cloud Insights新增資料收集器時、只要選擇「Kubernetes」方塊即可。</block>
+  <block id="4f39aea7decea72af93c7cb4ba3fe487" category="admonition">如果您有 Cloud Insights 聯邦版、您的安裝和組態指示可能與本頁的指示不同。依照 Cloud Insights 中的指示安裝 NetApp Kubernetes 監控操作員。</block>
+  <block id="f34adaf8e760e7cb58ba333e44c4dc52" category="inline-image-macro">Kubernetes資料收集器Tile</block>
+  <block id="a0eda368f17db54a54c6f0246fd5c816" category="paragraph"><block ref="a0eda368f17db54a54c6f0246fd5c816" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="eaee203e2e728070e3c454936f257fdf" category="paragraph">從 Cloud Insights Docker 登錄下載操作員和資料收集器。安裝完成後、NKMO便會管理Kubernetes叢集節點中部署的任何與營運者相容的收集器、以取得資料、包括管理這些收集器的生命週期。在這條鏈之後、資料會從收集器中擷取、並傳送至Cloud Insights</block>
+  <block id="6a65175f7f76169aeeaf32acdda0d82f" category="section-title">安裝NetApp Kubernetes監控操作員之前</block>
+  <block id="3e4299c002d64ba4e1a384acbdafad4c" category="inline-link-macro">* 安裝或升級之前 *</block>
+  <block id="449735a59883598ca6b4afe7cb57336a" category="admonition">閱讀 <block ref="98b00674e05edc386cc19257d013cae8" category="inline-link-macro-rx"></block> 安裝或升級 NetApp Kubernetes 監控操作員之前的文件。</block>
+  <block id="143bc427903e01a7afe2d41b83643f5e" category="section-title">安裝NetApp Kubernetes監控操作員</block>
+  <block id="e6955fda6db57ce036906d2f15519731" category="paragraph"><block ref="0ac387629bcb7a9ba3f6f8e72a2f2cd7" category="inline-image-macro-rx" type="image"></block>
+<block ref="6ba665c891b77a3a5dfb5c061b6e2ba3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7591998776b8f5daf9acfbbe7be1312b" category="list-title">在Kubernetes上安裝NetApp Kubernetes監控操作員代理程式的步驟：</block>
+  <block id="b1709369b19b51deac976f5fc9dce527" category="inline-xref">升級</block>
+  <block id="c22968bfe7941ac13825abafc2a7f5b1" category="list-text">輸入唯一的叢集名稱和命名空間。如果您是 <block ref="0aef99036de6ea3b65be8c21025bb151" category="inline-xref-macro-rx"></block> 從先前的 Kubernetes 運算子中、使用相同的叢集名稱和命名空間。</block>
+  <block id="14acb12fc5baee38469b462494a56a68" category="list-text">一旦輸入這些指令碼、您就可以將 Download Command 片段複製到剪貼簿。</block>
+  <block id="492eb11b2ab5e4b044176b40a2eebeac" category="list-text">將程式碼片段貼到_bash_視窗中並執行。將下載操作員安裝檔案。請注意、程式碼片段具有獨特的金鑰、有效時間為24小時。</block>
+  <block id="aa976aff83a7c1132e171f3598f5502c" category="list-text">如果您有自訂或私有儲存庫、請複製選用的「影像」抽取片段、將其貼入 _bash_ Shell 並加以執行。影像擷取完成後、請將其複製到您的私有儲存庫。請務必維持相同的標記和資料夾結構。更新 _operer-deployment.yaml_ 中的路徑、以及 _operer-config.yaml_ 中的泊塢視窗儲存庫設定。</block>
+  <block id="cae73b6a00921ef48cee176b0d4336fe" category="inline-link-macro">組態選項</block>
+  <block id="ca9e0cae80a67833d83894f2324f8945" category="list-text">如有需要、請檢閱可用的組態選項、例如 Proxy 或私有儲存庫設定。您可以深入瞭解 <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>。</block>
+  <block id="2d9b30e80afc5eb380c508d14b4f0676" category="list-text">準備好之後、請複製 KUBECtl 套用程式碼片段、下載並執行、以部署操作員。</block>
+  <block id="cc56bec82b2c1d802e942018b5923042" category="list-text">安裝會自動繼續進行。完成後、按一下 _ 下一步 _ 按鈕。</block>
+  <block id="512795526de87931c50ae79cb1cb0a2b" category="list-text">安裝完成後、按一下 _ 下一步 _ 按鈕。請務必刪除或安全儲存 _operer-Secrets 。 yaml_ 檔案。</block>
+  <block id="faaf8961a729f548e51c3b9f1af0f7e8" category="inline-xref">設定 Proxy</block>
+  <block id="038f6519626a44bf13147d0f6bf585c1" category="paragraph">深入瞭解 <block ref="1a6ccc12a618fccf7330b5bee5bca7b7" category="inline-xref-macro-rx"></block>。</block>
+  <block id="c149af672528f58d22f99809653add8a" category="inline-xref">使用自訂 / 私有泊塢視窗儲存庫</block>
+  <block id="868b132e8ef5a6adb3f9c30cc2596dfc" category="paragraph">深入瞭解 <block ref="5616d0aefbf2e33b5f6c94a93c02e259" category="inline-xref-macro-rx"></block>。</block>
+  <block id="d815ee1e41746ef06fd66b3b30d2bc78" category="paragraph">安裝 NetApp Kubernetes Monitoring Operator 時、依預設會啟用 Kubernetes EMS 記錄收集。若要在安裝後停用此集合、請按一下 Kubernetes 叢集詳細資料頁面頂端的 * 修改部署 * 按鈕、然後取消選取「記錄集合」。</block>
+  <block id="88b2095fc7879662ec05b3f703681a11" category="inline-image-macro">「修改部署」畫面顯示「記錄集合」核取方塊</block>
+  <block id="5afc0f33a3c779dc228b788e5b0cae22" category="paragraph"><block ref="5afc0f33a3c779dc228b788e5b0cae22" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f9f142ab6222e3ae7de290d8287b2920" category="paragraph">此畫面也會顯示目前的記錄收集狀態。以下是可能的狀態：</block>
+  <block id="b9f5c797ebbf55adccdd8539a65a0241" category="list-text">已停用</block>
+  <block id="00d23a76e43b46dae9ec7aa9dcbebb32" category="list-text">已啟用</block>
+  <block id="5e7360afad9787a415b6f706e486423c" category="list-text">啟用 - 安裝進行中</block>
+  <block id="d5461aa4ef1df0b08d1c023caca59a6e" category="list-text">已啟用 - 離線</block>
+  <block id="3a7ceac4689e5c9ea84be781707cd148" category="list-text">已啟用 - 線上</block>
+  <block id="be85cefb4673c1f486c73de818be2056" category="list-text">錯誤 - API 金鑰權限不足</block>
+  <block id="edcc6d64ff09289fd7b549c0265f3ea6" category="section-title">升級</block>
+  <block id="20e38ff1d741d05cb351043049612af2" category="section-title">升級至最新的NetApp Kubernetes監控操作員</block>
+  <block id="59f9e8b92a6bc55e991031f0b5fea324" category="paragraph">判斷現有運算子是否存在 AgentConfiguration （如果您的命名空間不是預設的 _NetApp-monitoring 、請改用適當的命名空間）：</block>
+  <block id="bb5c0afa0b80550de02b1ac19c1226b4" category="paragraph">如果存在 AgentConfiguration ：</block>
+  <block id="349838fb1d851d3e2014b9fe39203275" category="inline-xref">安裝</block>
+  <block id="7f7436ae77d35f1d44077fc6a514e554" category="list-text"><block ref="1fa08d04c08db5225793f360e12d623f" category="inline-xref-macro-rx"></block> 現有運算子的最新運算子。</block>
+  <block id="f60428f53f8ec06db7eeb3c6dc8a3ec1" category="inline-xref">擷取最新的容器映像</block>
+  <block id="727021f9728a61f5f57027c22e99ed17" category="list-text">確保您是 <block ref="70886476cda3a9669d1d2ba99218e076" category="inline-xref-macro-rx"></block> 如果您使用的是自訂儲存庫。</block>
+  <block id="a7e8df3295c386ff0d7a33ebd0ce4762" category="paragraph">如果 AgentConfiguration 不存在：</block>
+  <block id="62648df30f88e4c53ea40e1b390e145a" category="list-text">請記下 Cloud Insights 所識別的叢集名稱（如果您的命名空間不是預設的 NetApp-Monitoring 、請改用適當的命名空間）：</block>
+  <block id="af43624bdc80303ec074448a745b7a3c" category="list-text">建立現有運算子的備份（如果您的命名空間不是預設的 NetApp 監控功能、請改用適當的命名空間）：</block>
+  <block id="a27dfe771799a09fd55fea73286eb6ab" category="inline-xref">解除安裝</block>
+  <block id="9fc345bef178837fdc05e65957ebec12" category="list-text"><block ref="202bdd2c16e54d75fc99028d87bc1bc6" category="inline-xref-macro-rx"></block> 現有的運算子。</block>
+  <block id="98dc8e0a1ca4088c0cc75feb9c6a5560" category="list-text"><block ref="1fa08d04c08db5225793f360e12d623f" category="inline-xref-macro-rx"></block> 最新的運算子。</block>
+  <block id="4c42e83b5a46ef16402aa2bea7ab525e" category="list-text">請使用相同的叢集名稱。</block>
+  <block id="9e274d61eab1c1a3b088854ed50639ff" category="list-text">下載最新的 Operator YAML 檔案之後、請先將 agent_backup.yaml 中的任何自訂項目連接至下載的 operator-config.yaml 、然後再進行部署。</block>
+  <block id="447ede71efbff97ddd4418212a6b52c9" category="section-title">停止並啟動NetApp Kubernetes監控操作員</block>
+  <block id="450670e2626f71fbb9a492373158ed02" category="paragraph">若要停止NetApp Kubernetes監控操作員：</block>
+  <block id="c1bdaebddc4968d3e08193cf297db84b" category="paragraph">若要啟動NetApp Kubernetes監控操作員：</block>
+  <block id="c2aaea4dacecce78b34302e41fcef75e" category="section-title">正在解除安裝</block>
+  <block id="f9d83bcd2ea0c04a50e5e1cd5bc469ac" category="section-title">移除NetApp Kubernetes監控操作員</block>
+  <block id="7a8d7f509007f2970254571be4a339db" category="paragraph">請注意、NetApp Kubernetes監控操作員的預設命名空間為「NetApp監控」。  如果您已設定自己的命名空間、請在這些名稱空間以及所有後續命令和檔案中取代該命名空間。</block>
+  <block id="12deeaac5f633c54b730f8c247dbf7e0" category="paragraph">可使用下列命令解除安裝較新版本的監控操作員：</block>
+  <block id="aee5f180cc531b30ec6cf8dcf509d9b8" category="paragraph">如果監控操作員部署在其專屬命名空間中、請刪除命名空間：</block>
+  <block id="97e76f0c81cc1c26b3d8ffe0d972c5af" category="paragraph">如果第一個命令傳回「找不到資源」、請依照下列指示解除安裝舊版監控操作員。</block>
+  <block id="0b14d0fbc4256c7ec7c3bb39b2c28854" category="paragraph">依序執行下列每個命令。視您目前的安裝情況而定、其中一些命令可能會傳回「找不到物件」訊息。這些訊息可能會被安全忽略。</block>
+  <block id="82a8cca794947463478c2f08445a8ff4" category="paragraph">如果先前已建立安全性內容限制：</block>
+  <block id="a945216a5c61e628c867b8948c797454" category="section-title">關於Kube-state指標</block>
+  <block id="bacf6d7427784a1658e1d5fb278300f8" category="paragraph">NetApp Kubernetes監控操作員會自動安裝Kube-state指標、不需要使用者互動。</block>
+  <block id="8f5d4322bbada1e271bc144d48fbd530" category="section-title">Kube-state指標計數器</block>
+  <block id="0868aed0151117af81e4d8a3bf48f5d1" category="paragraph">請使用下列連結來存取這些kube狀態度量計數器的資訊：</block>
+  <block id="dcd18b6a9c1c857332184b4ab6b6b876" category="inline-link">ConfigMap指標</block>
+  <block id="43c0e039eb7d522a6d4d124fdff7e06f" category="list-text"><block ref="43c0e039eb7d522a6d4d124fdff7e06f" category="inline-link-rx"></block></block>
+  <block id="8369bd4693cb273c71ad92f42fb3e791" category="inline-link">示範設定指標</block>
+  <block id="9c6d0e0120fcf6c4d873e186cc9739bf" category="list-text"><block ref="9c6d0e0120fcf6c4d873e186cc9739bf" category="inline-link-rx"></block></block>
+  <block id="b1a7a1cd05f9351c6bef8223f686cd0b" category="inline-link">部署指標</block>
+  <block id="aa7c0000dea1ded472606bf83241d554" category="list-text"><block ref="aa7c0000dea1ded472606bf83241d554" category="inline-link-rx"></block></block>
+  <block id="3743b47b26a692a03362afc5a67c0463" category="inline-link">入口指標</block>
+  <block id="4cb7ce0b5790952cc6bda2997a7dabc9" category="list-text"><block ref="4cb7ce0b5790952cc6bda2997a7dabc9" category="inline-link-rx"></block></block>
+  <block id="e1f5942f12d62c7e887c901f5f6c7e30" category="inline-link">命名空間度量</block>
+  <block id="5fdc0df1bae486ee24716c612b24ca02" category="list-text"><block ref="5fdc0df1bae486ee24716c612b24ca02" category="inline-link-rx"></block></block>
+  <block id="1e8f3ee4ce1dbb00442a7fb041fa09e7" category="inline-link">節點度量</block>
+  <block id="8b04a06b05700061d42a433c93746a63" category="list-text"><block ref="8b04a06b05700061d42a433c93746a63" category="inline-link-rx"></block></block>
+  <block id="551df464e5bd2444d259057c7eacc9f7" category="inline-link">持續Volume指標</block>
+  <block id="69207fca599a65027f8a0597b95b093d" category="list-text"><block ref="69207fca599a65027f8a0597b95b093d" category="inline-link-rx"></block></block>
+  <block id="ea541521b7c5e710af931c8e4f58eb87" category="inline-link">持續Volume報銷標準</block>
+  <block id="628462d67f17543dc95a839333690c0e" category="list-text"><block ref="628462d67f17543dc95a839333690c0e" category="inline-link-rx"></block></block>
+  <block id="7fc93683f45a50f207241b90641f402b" category="inline-link">Pod指標</block>
+  <block id="3962a47d5b09f2b1246c86d8bc272414" category="list-text"><block ref="3962a47d5b09f2b1246c86d8bc272414" category="inline-link-rx"></block></block>
+  <block id="0017245fe792a61975ebc02c48b109c5" category="inline-link">ReplicaSet度量</block>
+  <block id="5df76f1cf3ae3096632fd05036cd39a0" category="list-text"><block ref="5df76f1cf3ae3096632fd05036cd39a0" category="inline-link-rx"></block></block>
+  <block id="8f9fbab4275b3c6156f4a1e2bd589d5e" category="inline-link">機密數據</block>
+  <block id="94500053c0d8262e7a0caa0908ba6f8d" category="list-text"><block ref="94500053c0d8262e7a0caa0908ba6f8d" category="inline-link-rx"></block></block>
+  <block id="de3e236a6c33c06117bf9ae35e2b9bb0" category="inline-link">服務指標</block>
+  <block id="4e3e0b949c1506c4eb21f3ebfc141e3b" category="list-text"><block ref="4e3e0b949c1506c4eb21f3ebfc141e3b" category="inline-link-rx"></block></block>
+  <block id="e0c0cc3c69b0271b0179dc71d1e9bfa7" category="inline-link">StatefulSet指標</block>
+  <block id="3a41cf72ebe7dd71e2b8cb6f1a7e14ff" category="list-text"><block ref="3a41cf72ebe7dd71e2b8cb6f1a7e14ff" category="inline-link-rx"></block></block>
+  <block id="cac54dc379f23a7aed8745bde8386662" category="inline-link-macro">可用的設定</block>
+  <block id="cfda62a17e54042dffdf6eb6a74c7977" category="paragraph">在較新版本的運算子中、最常修改的設定可在 _AgentConfiguration_ 自訂資源中進行設定。您可以編輯 _operer-config.yaml_ 檔案、在部署運算子之前編輯此資源。此檔案包含一些設定的註解範例。請參閱清單 <block ref="d0a687c4569dc784e63f3960b33ab7c7" category="inline-link-macro-rx"></block> 適用於最新版的運算子。</block>
+  <block id="342414165099895140bbfbd3ffb613ca" category="paragraph">您也可以使用下列命令在部署運算子之後編輯此資源：</block>
+  <block id="3ab04e244a91c8a73c48633c62ac613a" category="paragraph">若要判斷您部署的營運者版本是否支援 AgentConfiguration 、請執行下列命令：</block>
+  <block id="51ba9262aad7e83aa5f74ed6dc93a039" category="paragraph">如果您看到「錯誤來自伺服器（ NotFound ）」訊息、則必須先升級您的營運商、才能使用 AgentConfiguration 。</block>
+  <block id="b33361bde0bcb58125ffdc8fc36d8b99" category="section-title">設定Proxy支援</block>
+  <block id="4ce29774235b5ad70135520aad0c4a92" category="paragraph">您可以在兩個地方使用Proxy來安裝NetApp Kubernetes監控操作員。這些可能是相同或獨立的Proxy系統：</block>
+  <block id="b30dfc4554e987d8435414f85e0afc5c" category="list-text">在執行安裝程式碼片段時（使用「Curl」）需要Proxy、以便將執行程式碼片段的系統連接Cloud Insights 至您的作業系統環境</block>
+  <block id="58b692b7f72614bb3545960fa7db5fde" category="list-text">目標Kubernetes叢集需要Proxy才能與Cloud Insights 您的支援環境進行通訊</block>
+  <block id="7a9065c97476c0400d1ffaaa20c4bbe5" category="paragraph">如果您使用其中一種或兩種Proxy、為了安裝NetApp Kubernetes作業監視器、您必須先確定您的Proxy已設定為允許與Cloud Insights 您的點菜環境進行良好的通訊。如果您有Proxy、而且可以Cloud Insights 從要安裝該運算子的伺服器/ VM存取功能、則您的Proxy可能設定正確。</block>
+  <block id="73689eeba538dc0b4e24b0c08682858c" category="paragraph">對於用來安裝NetApp Kubernetes作業監視器的Proxy、請先設定_http代理伺服器/https代理伺服器環境變數、然後再安裝「運算子」。在某些Proxy環境中、您可能也需要設定_no_proxyEnvironments _變數。</block>
+  <block id="05de88b1f0962d418af51426b2e42b5c" category="paragraph">若要設定變數、請在系統*安裝NetApp Kubernetes監控操作員之前*執行下列步驟：</block>
+  <block id="601e2f4bdb8c8d256c0862eb39ab26dd" category="list-text">如果正在設定的Proxy沒有驗證（使用者名稱/密碼）、請執行下列命令：</block>
+  <block id="aec78dde754edc4769d775d718da8408" category="list-text">如果正在設定的Proxy具有驗證（使用者名稱/密碼）、請執行下列命令：</block>
+  <block id="a4e1e6009cd02048a3c4c625810efdde" category="paragraph">若要讓Kubernetes叢集用於與Cloud Insights 您的環境進行通訊的Proxy、請在閱讀所有這些指示之後、安裝NetApp Kubernetes監控操作員。</block>
+  <block id="6a487db38d52ee4c14d91f1b1ddd2fac" category="paragraph">在部署 NetApp Kubernetes Monitoring Operator 之前、請先在 operator-config.yaml 中設定 AgentConfiguration 的 Proxy 區段。</block>
+  <block id="ba5a4399ff89e39d6d73b55b320d32dc" category="section-title">使用自訂或私有泊塢視窗儲存庫</block>
+  <block id="496310011786854d1bf0863b20b159b3" category="paragraph">根據預設、 NetApp Kubernetes Monitoring Operator 會從 Cloud Insights 儲存庫中提取容器影像。如果您使用 Kubernetes 叢集做為監控目標、且該叢集設定為僅從自訂或私有 Docker 儲存庫或容器登錄中提取容器映像、則必須設定對 NetApp Kubernetes Monitoring Operator 所需容器的存取權。</block>
+  <block id="664cfa316d48b417a500c0e898f37409" category="paragraph">從 NetApp Monitoring Operator 安裝方塊執行「影像提取片段」。此命令會登入 Cloud Insights 儲存庫、擷取操作員的所有映像相依性、然後登出 Cloud Insights 儲存庫。出現提示時、請輸入提供的儲存庫暫存密碼。此命令會下載操作員所使用的所有影像、包括選用功能。請參閱下方、瞭解這些影像的用途。</block>
+  <block id="e353fb1c241718a57c3f1ebea2f2eda2" category="paragraph">核心營運者功能與 Kubernetes 監控</block>
+  <block id="aadb900c6eaeed8ade58660fe972acec" category="list-text">NetApp 監控</block>
+  <block id="4a3ecd51c30dc55cebd7ed9babbb7931" category="list-text">Kube-RBAC 代理程式</block>
+  <block id="7b1808ad616c2f87f5c28aa1d89f75f7" category="list-text">無 distrouse-root 使用者</block>
+  <block id="f8dcd7540ab5947fed469158330013cc" category="paragraph">事件記錄</block>
+  <block id="bb84790255aac66744320e4417143dd8" category="list-text">Fluent 位元</block>
+  <block id="2941fa605b5a46d4cf07aade64af8b6e" category="list-text">Kubernetes-event-Exporter</block>
+  <block id="e081b29a739e8831bbe1f8ad1c2a2859" category="paragraph">網路效能與地圖</block>
+  <block id="a050c9f3e338616510e46bf6d9714f64" category="list-text">CI-net-觀察者</block>
+  <block id="a3cdf80b89a5235481aa9bc21b5857e9" category="paragraph">根據您的企業原則、將「operator」泊塢視窗影像推送到您的「私有/本機/企業」泊塢視窗儲存庫。確保儲存庫中這些映像的映像標記和目錄路徑與 Cloud Insights 儲存庫中的映像標記和目錄路徑一致。</block>
+  <block id="8b4599b5810466dc4e8956fc5bc3c54c" category="paragraph">在 operer-deployment.yaml 中編輯監控營運者部署、並修改所有映像參照以使用您的私有 Docker 儲存庫。</block>
+  <block id="49174c164a8c6cc17236236504f05c4e" category="paragraph">在 operer-config.yaml 中編輯 AgentConfiguration 、以反映新的泊塢視窗 repo 位置。為您的私有儲存庫建立新的 imagePullSecret 、如需詳細資料、請參閱 _https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/_</block>
+  <block id="90e3576ed0e73e03c00705419f3411a3" category="section-title">OpenShift指示</block>
+  <block id="ed8127bf6d6013cbef18d300d151a78a" category="paragraph">如果您是在 OpenShift 4.6 或更新版本上執行、則必須在 _operer-config.yaml_ 中編輯 AgentConfiguration 、才能啟用 _runPrivileged_ 設定：</block>
+  <block id="493c4ff608e06cc5a02d0561f6bb02a3" category="paragraph">OpenShift可能會實作額外的安全層級、以封鎖對某些Kubernetes元件的存取。</block>
+  <block id="d8c9294ea12d1c7d12e34008f3ecee39" category="section-title">關於機密的備註</block>
+  <block id="1169bc31edb2122ab9876b9b0289225c" category="paragraph">若要移除 NetApp Kubernetes 監控操作員檢視整個叢集機密的權限、請在安裝之前從 _operer-setup.yaml_ 檔案中刪除下列資源：</block>
+  <block id="1790cdbccc4ddd4389eb90d73e043f4b" category="paragraph">如果是升級、也請從叢集中刪除資源：</block>
+  <block id="a66e68a20b3b94a700f3a3b9baa06764" category="paragraph">如果啟用變更分析、請修改 _AgentConfiguration_ 或 _operer-config.yaml_ 以取消變更管理區段的註解、並在變更管理區段下包含 _kindsToIgnoreFromWatch ：「 Secrets 」。請注意此行中單引號和雙引號的存在和位置。</block>
+  <block id="342761835c95d3618833ced82b6260ac" category="section-title">正在驗證Kubernetes Checksum</block>
+  <block id="06da10bf5b15bdaae23d623ecea6b7f6" category="paragraph">雖然無法執行完整性檢查、Cloud Insights 但有些使用者可能想在安裝或套用下載的成品之前、先執行自己的驗證。若要執行純下載作業（而非預設的下載與安裝）、這些使用者可以編輯從UI取得的代理程式安裝命令、並移除後續的「install」選項。</block>
+  <block id="8ff498fedef16be83cafa8d00c04dd6d" category="list-text">從命令中刪除後端"--install"。</block>
+  <block id="9f38037f1d71ce0a3fe1ba3e1c8aa8e1" category="paragraph">純下載命令會將Cloud Insights 所有必要的成品從功能性資訊下載到工作目錄。  這些成品包括但不限於：</block>
+  <block id="700459827d4941a6a127bc7de7938d5d" category="list-text">簽署的Checksum檔案（sh256.signed）</block>
+  <block id="e1f4fa985535cfb2dd4b3f50c918b7eb" category="list-text">用於簽名驗證的一個PES檔案（NetApp_CERT.pem）</block>
+  <block id="7c9f5399bb10652ab7e06778c4de02e1" category="paragraph">您可以確認其指紋為下列項目、以驗證該PEM檔案：</block>
+  <block id="7a2babd4fa48c9b0c07e4b865ff53efa" category="paragraph">更具體地說、</block>
+  <block id="76dfc651463ab4e67ce2140b8aadb473" category="paragraph">簽署的Checksum檔案可以使用PEM檔案進行驗證：</block>
+  <block id="72e6fd543a67010efd03f7fdc1a1e1bc" category="paragraph">如果您在設定NetApp Kubernetes監控操作員時遇到問題、請嘗試下列事項：</block>
+  <block id="3dcf0a51075fbcf98f9e53d661506adf" category="cell">我看不到Kubernetes持續Volume與對應的後端儲存設備之間的超連結/連線。我的Kubernetes持續Volume是使用儲存伺服器的主機名稱來設定。</block>
+  <block id="31374f026fd34f38c1768e8bcae58183" category="cell">請依照步驟解除安裝現有的Telegraf代理程式、然後重新安裝最新的Telegraf代理程式。您必須使用Telegraf 2.0版或更新版本、而且Kubernetes叢集儲存設備必須由Cloud Insights 效益管理系統主動監控。</block>
+  <block id="a603e86bb87b54e9b7acc7e242269514" category="cell">我在記錄中看到類似下列內容的訊息：
+
+E0901 15 ： 21 ： 39.962145 1 個反射器。前往： 178 ） k8s.io/kube-state 指標 / 內部 / 儲存 / 建置器。前往： 352 ：無法列出 * v1.MutatingWebhookConfiguration ：伺服器找不到要求的資源
+E0901 15 ： 21 ： 43.168161 1 個反射器。前往： 178 ： k8s.io/kube-state - 規格 / 內部 / 儲存 / 建置器。前往： 352 ：無法列出 * v1. 租用：伺服器找不到要求的資源（ Get scales.calation.k8s.io ）
+等等</block>
+  <block id="0428b79968fc5aa0a5b6d427e6815d82" category="cell">如果您執行Kubernetes版本低於1.20的Kubernetes 2.0.0版或更新版本之Kube-state度量、則可能會出現這些訊息。
+
+
+若要取得 Kubernetes 版本：
+
+ _kubectl 版本 _
+
+若要取得 kube 狀態度量版本：
+
+ _kubectl Get deploy/kube-state-metabs -o jsonpath='{.image}'_
+
+為了防止這些訊息發生、使用者可以修改其 kube 狀態度量部署、以停用下列簡化：
+
+_ 互斥網路連帽組態 _
+_validatingwebhookconfigurations _
+_vole附件 資源 _
+
+更具體地說、他們可以使用下列 CLI 引數：
+
+resources= 憑證命名查詢、組態對應、可頌工作、取消設定、部署、端點、水平播客自動轉接器、擷取、工作、限制範圍、命名空間、網路原則、節點、持續不斷的卷冊、持續不斷的預算、群組、複製集、控制器、資源等量、機密、服務、狀態集
+
+預設資源清單為：
+
+" 憑證命名查詢、組態對應、可頌工作、取消設定集、部署、端點、水平播客自動轉接器、擷取、工作、租用、限制範圍、互動式網路連線組態、命名空間、網路原則、節點、持續不斷的磁碟區、持續不斷的預算、群組、複製控制器、資源集、資源等狀態服務、 驗證 webhookconfigurations 、 volume附件 "</block>
+  <block id="b8ce784188c470b3c8ff0c7cc1a403e1" category="cell">我看到 Telegraf 的錯誤訊息類似下列內容、但 Telegraf 確實啟動並執行：
+
+10 月 11 日 14 ： 23 ： 41 IP-172-31-39-47 系統 d[1] ：啟動外掛程式導向的伺服器代理程式、將計量標準回報至影響資料庫。
+10月11日14：23：41 IP-172-31-39-47 Telewraf[1827]：Times="2021：10-11T14：23：41Z" level =錯誤msg="failed to create cache directory./etc/telegraf/.cache/snowflake 、 err: mkdir /etc/telegraf/.ca
+Che ：權限遭拒。忽略 \n" func="gosnowflake.(*defaultLogger).Errorf" file="log.go:120"
+10 月 11 日 14 ： 23 ： 41 IP-172-31-39-47 Teledraf[1827] ： Time="2021-10-11T14:23:41Z" Level=error msg=" 無法開啟。忽略。開啟 /etc/telegraf/.cache/snowflake/OCSP 回應 _cache.json ：否
+檔案或目錄 \n" func="gosnowflake.(*defaultLogger).Errorf" file="log.go:120"
+10 月 11 日 14 ： 23 ： 41 《 IP-172-31-39-47 電臺》 [1827] ： 2021-10-11T14 ： 23 ： 41Z I ！啟動Telegraf 1.19.3</block>
+  <block id="0ccd64b2e6202fbb544d22cd48a872b2" category="inline-link-macro">這篇GitHub文章</block>
+  <block id="8f176f657f418586c2a4828045ab0c37" category="cell">這是已知的問題。  請參閱 <block ref="23bd9a1f0b26414ad35f4299a95464f0" category="inline-link-macro-rx"></block> 以取得更多詳細資料。只要Telegraf已啟動且正在執行、使用者就可以忽略這些錯誤訊息。</block>
+  <block id="9aab00e938cede2932654042bc507309" category="cell">在 Kubernetes 上、我的 Telegraf Pod 回報下列錯誤：
+" 處理 mountstats 時發生錯誤資訊：無法開啟 mountstats 檔案： /hostfs/proc/1/mountstats 、錯誤：開啟 /hostfs/proc/1/mountstats ：權限遭拒 "</block>
+  <block id="cf0c5ed1e47d7431af16b71ad06bfcba" category="cell">如果啟用並強制執行 SELinux 、則可能會阻止 Telegraf Pod 存取 Kubernetes 節點上的 /proc/1/mountstats 檔案。若要克服此限制、請編輯 agentconfiguration 、然後啟用 RunPrivileged 設定。如需詳細資訊、請參閱：<block ref="b799c83c0330c0824f3118282f39ee9e" category="inline-link-rx"></block>。</block>
+  <block id="f997e79142f159c33823b9deeab809eb" category="cell">在 Kubernetes 上、我的 Telegraf ReplicicaSet Pod 回報下列錯誤：
+
+ [ 外掛程式中的 inputs.prometheus] 錯誤：無法載入 keypair /etc/kubernetes/pi/etcd/server.crt ： /etc/kubernetes/pi/etcd/server.key ：開啟 /etc/kubernetes/pi/etcd/server.crt ：無此類檔案或目錄</block>
+  <block id="9df12d675c4f61381132e45173ef90d0" category="cell">Telegraf ReplicaSet Pod可在指定為主節點或etcd節點上執行。如果ReplicaSet Pod未在其中一個節點上執行、您將會收到這些錯誤。檢查您的主節點/ etcd節點是否有問題。如果有、請將必要的容許值新增至Telegraf ReplicaSet、Telegraf-RS。
+
+例如、編輯 ReplicaSet...
+
+ Kubectl 編輯 RS telegraf-RS
+
+並在規格中加入適當的公差。然後重新啟動ReplicaSet Pod。</block>
+  <block id="7f213685ee85ff84e10c6c9b9c633789" category="cell">我有PSP/PSA.環境。這是否會影響我的監控操作員？</block>
+  <block id="180998c51dd0da936f3ebbeb1b922f6b" category="cell">如果您的Kubernetes叢集正在執行Pod安全政策（PSP）或Pod安全許可（PSA）、您必須升級至最新的NetApp Kubernetes監控操作員。請依照下列步驟升級至目前支援 PP/PSA 的 NKMO ：
+
+1. <block ref="a7177598d8f3c4f7d3503ecefe58c480" category="inline-xref-macro-rx"></block> 先前的監控業者：
+
+ kubectl delete agent agent-monitoring （ kubectl 刪除代理代理監視） -netapp -n netapp 監控
+ kubectl delete ns netapp 監控
+ kubectl delete crd agents.monitoring.netapp.com
+ kubectl delete clusterrole agent-manager-role agent-proxy-role agent-eterms-reader
+ kebectl delete clusterrolebinding agent-manager-rolebinding agent-proxy-rolebinding agent-cluster-admin-rolebinding
+
+2. <block ref="8e5c51a62ab45f504ec71f39c03c1633" category="inline-xref-macro-rx"></block> 監控操作員的最新版本。</block>
+  <block id="6ae137903bc328659928ed818d9ee78a" category="cell">我在嘗試部署NKMO時遇到問題、我使用PP/PSA.</block>
+  <block id="63c5c26973f4cb2983185abedde31f4b" category="cell">1. 使用下列命令編輯代理程式：
+
+kubectl -n &lt;name-space&gt; 編輯代理程式
+
+2. 將「安全性原則啟用」標示為「假」。這會停用Pod安全政策和Pod安全許可、並允許NKMO部署。使用下列命令確認：
+
+Kubectl Get PSP （應顯示 Pod 安全政策已移除）
+kubectl Get all -n &lt;namespace&gt; | grep -i PSP （應顯示找不到任何項目）</block>
+  <block id="59e3026f71d01a624108642cdb778ebd" category="cell">出現「ImagePullBackOff」錯誤</block>
+  <block id="43340e6cc4e88197d57f8d6d5ea50a46" category="inline-xref">瞭解更多資訊</block>
+  <block id="d18743173cd6691e1637fd7bb6299057" category="cell">如果您擁有自訂或私有泊塢視窗儲存庫、但尚未設定NetApp Kubernetes監控操作員來正確辨識、就可能會看到這些錯誤。  <block ref="64c2e35c96e92fc99426098fae703fff" category="inline-xref-macro-rx"></block> 關於設定自訂/私有repo。</block>
+  <block id="6da3e5f4ef4407262c741e8325a8249d" category="cell">我的監控操作員部署有問題、目前的文件無法協助我解決問題。</block>
+  <block id="368fbe1d48012e8e4f24249e2b27a8dd" category="paragraph">擷取或記下下列命令的輸出、然後聯絡技術支援團隊。</block>
+  <block id="0538684ab7c9197cd8966c3859e59c6a" category="cell">NKMO 命名空間中的網路觀察者（工作負載對應） Pod 位於 CrashLoopBackOff</block>
+  <block id="b1dd812a8bc65d5769e88b945f591999" category="cell">這些 Pod 對應於網路可觀察性的工作負載對應資料收集器。請嘗試下列項目：
+•檢查其中一個 Pod 的記錄、確認最低核心版本。例如：
+
+---
+｛ "CI-租 戶 -id" ： "your －租戶 -id" 、 "collector － cluster " ： "your － k8s-cluster － name" 、 "Environment ： "prod" 、 "Level" ： "error" 、 "msg" ：驗證失敗。原因：核心版本 3.10.0 低於最低核心版本 4.18.0 、 "Time" ： "2022-11-09T08:23:08Z"}
+---
+
+• Net 觀察者 Pod 要求 Linux 核心版本至少為 4.18.0 。使用命令 "uname -r " 檢查核心版本、並確定它們 &gt;=4.18.0</block>
+  <block id="c37dcb848a7244594adc1af67cc44fb5" category="cell">Pod 在 NKMO 命名空間中執行（預設值： NetApp-Monitoring ）、但查詢中的工作負載對應或 Kubernetes 度量、 UI 中不會顯示任何資料</block>
+  <block id="b301a7b156c241fb466de1bca776811c" category="cell">檢查 K8S 叢集節點上的時間設定。為了準確地進行稽核和資料報告、強烈建議您使用網路時間傳輸協定（ NTP ）或簡易網路時間傳輸協定（ SNTP ）、同步代理機器上的時間。</block>
+  <block id="4ded7a1a9e117c3e40fb8fd746b0652d" category="cell">NKMO 命名空間中的某些網路觀察者 Pod 處於「擱置中」狀態</block>
+  <block id="c55a7a21faf06d9f162882100bc46e42" category="cell">Net-觀察者 是一組示範集、在 k8s 叢集的每個節點上執行 Pod 。
+•記下處於「擱置中」狀態的 Pod 、並檢查它是否發生 CPU 或記憶體資源問題。確保節點中有可用的必要記憶體和 CPU 。</block>
+  <block id="04e7b6395fd3a2be3a25869ea1196f3d" category="cell">安裝 NetApp Kubernetes 監控操作員之後、我會立即在記錄中看到下列內容：
+
+[inputs.prometheus] 外掛程式錯誤：向發出 HTTP 要求時發生錯誤<block ref="189319aba70d8b3a1cf8eef70b48f546" category="inline-link-rx"></block> 取得<block ref="189319aba70d8b3a1cf8eef70b48f546" category="inline-link-rx"></block> 撥號 TCP ： LOOKUP kube-state - 規格。 &lt;namespace&gt; 。 Svc.cluster 。本機：無這類主機</block>
+  <block id="d232f49a9877a99204dde54474c23ce6" category="cell">此訊息通常只有在安裝新的營運者、且_Telefra-Rs_ pod在_ksm_ pod啟動之前就已啟動時才會出現。所有Pod都在執行時、這些訊息應該會停止。</block>
+  <block id="02230bab9788e4843408e124331bb1ca" category="cell">我沒有看到叢集中存在的 Kubernetes CronJobs 正在收集任何度量。</block>
+  <block id="81467098050f12a1f4ece9dea82405f0" category="cell">驗證 Kubernetes 版本（即<block ref="4fc58818ca77fb3a60cbd34a7f7d5071" prefix=" " category="inline-code"></block>）。  如果是 v1.2.x 或更低版本、這是預期的限制。  NetApp Kubernetes 監控操作員部署的 kube-state - 度量版本僅支援 v1.cronjob.  使用 Kubernetes 1.2.x 及以下版本時、 cronjob 資源為 v1beta 。 cronjob.  因此、 kube 狀態度量無法找到 cronjob 資源。</block>
+  <block id="45698e13b1c2f7241751839133834506" category="cell">安裝操作員之後、 Telegraf-DS Pod 會進入 CrashLoopBackOff 、 Pod 記錄會顯示「 su ：驗證失敗」。</block>
+  <block id="856e2dfd00ab497c6f91560e87be666f" category="cell">在 _AgentConfiguration_ 中編輯 NetApp-monitoring 組態區段、並將 _dockerMetricCollectionEnabled_ 設為 false 。如需詳細資訊、請參閱操作員的 <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>。
+
+附註： 如果您使用的是 Cloud Insights 聯邦版、則限制使用 _su_ 的使用者將無法收集泊塢視窗計量、因為存取泊塢視窗插槽需要以 root 身分執行 telegraf 容器、或使用 _su_ 將 telegraf 使用者新增至泊塢視窗群組。Docker 度量集合和使用 _su_ 預設為啟用；若要停用兩者、請移除 _AgentConfiguration_ 檔案中的 _telegraf.泊 塢視窗項目：
+
+...
+規格：
+...
+Telegraf ：
+    ...
+     - 名稱： Docker
+            執行模式：
+              –示範
+            替代：
+              - 索引鍵：泊塢視窗 _UNIX 襪子 _placeholder
+                值： UNIX ： //RUN / Docker 。 sock
+    ...
+...</block>
+  <block id="9de497f607f8a73311408d3d7b337399" category="cell">我在 Telegraf 記錄檔中看到類似以下內容的重複錯誤訊息：
+
+ 好！[agent] 寫入 outputs.http ： POST 時發生錯誤 <block ref="95209f65da8fece27c962b4b503ef61a" category="inline-link-rx"></block> 已超過內容期限（等待標頭時超過 Client.Timeout ）</block>
+  <block id="34e1dafcca7166ebef6820ec79ddd7cf" category="cell">編輯每個 Telegraf 組態檔案（例如 /etc/telegraf/telegraf.d/ * 。 conf ）、並增加 Telegraf 輸出外掛程式的逾時時間。  例如、在每個 .conf 檔案中、取代 ... 的所有執行個體。
+
+[[outputs.http]]
+...
+逾時 = 「 5s 」
+...
+
+
+... 包含下列項目：
+
+[[outputs.http]]
+...
+逾時 = 「 10s 」
+...
+
+然後重新啟動 Telegraf 。</block>
+  <block id="4f05106cca363b0f3c492314ab777534" category="cell">我遺失某些事件記錄的 _ 參與物件 _ 資料。</block>
+  <block id="67ee92e19812baa7cedb346320ca0182" category="cell">請務必遵循中的步驟 <block ref="d9283cdb1b027ed2a61fa92c8dc3e314" category="inline-link-macro-rx"></block> 上一節。</block>
+  <block id="5e77ada1a807785ef1b03c3f1b96779c" category="cell">為什麼我看到兩個監控營運商 Pod 正在執行、一個名為 NetApp-CI-monitoring 、 &lt;pod&gt; 、另一個名為 monitoring 、 &lt;pod&gt; ？</block>
+  <block id="1c1bebc9155c93bfe8263d7dd59e4d97" category="inline-xref">移除舊的運算子</block>
+  <block id="3aadd91c93bca2d335851fd692f310be" category="inline-xref">安裝新的</block>
+  <block id="e7d6cf6485500824df0535ac307eb301" category="cell">截至 2023 年 10 月 12 日、 Cloud Insights 已重新考慮營運商、以便為使用者提供更好的服務；若要充分採用這些變更、您必須 <block ref="860504374016936ed59489a365e20672" category="inline-xref-macro-rx"></block> 和 <block ref="d0e6f11bd593aa32efc140a3c31c51b6" category="inline-xref-macro-rx"></block>。</block>
+  <block id="23cda888e57eaac9d48f4167127da1b8" category="cell">我的 Kubernetes 事件意外停止回報 Cloud Insights 。</block>
+  <block id="0f21fa822dc46792cc163d7e77fe6c2c" category="paragraph">擷取事件導出者 Pod 的名稱：</block>
+  <block id="9df5220f9f1e94f2849e58be10655af5" category="paragraph">應為「 NetApp-CI-EVENT - Exporter 」或「 EVENT - Exporter 」。  接著、編輯監控代理程式<block ref="254deec50834604297ddd3caab0d8ce7" prefix=" " category="inline-code"></block>，然後設置 log_file 的值以反映上一步中找到的適當事件導出程序 Pod 名稱。  更具體地說、 log_file 應該設定為「 /var/log/container/NetApp-CI-event-Exporter.log 」或「 /var/log/containers/event-Exporter.log 」</block>
+  <block id="fe98497efedbe156ecc4b953aea77e07" category="inline-xref">解除安裝</block>
+  <block id="7b4d917229221f1292dd0dc7b693cccf" category="inline-xref">重新安裝</block>
+  <block id="8878dc3c5cd3e696f38ddc994eba9593" category="paragraph">或者、您也可以 <block ref="eb03b2f692ebf826fa07016cc9fa15a6" category="inline-xref-macro-rx"></block> 和 <block ref="2be7be71447d2c340aab35ab29970e30" category="inline-xref-macro-rx"></block> 代理程式。</block>
+  <block id="5be7a9b90aa61d46f99cd06715e40a54" category="cell">我看到 NetApp Kubernetes 監控營運者部署的 Pod 因為資源不足而當機。</block>
+  <block id="740cd109d583d1b28a1ebd66338906b7" category="cell">請參閱 NetApp Kubernetes 監控操作員 <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block> 視需要增加 CPU 和 / 或記憶體限制。</block>
+  <block id="8250aff5bf291c0fd6c60d86a94af326" category="summary">Couchbase資料收集器組態</block>
+  <block id="c85700224d4de4029d47e8f7419f121a" category="doc">Couchbase Data Collector</block>
+  <block id="2cc7a39d9220b0a6ca309f2f84801606" category="paragraph">使用此資料收集器從Couchbase收集數據。Cloud Insights</block>
+  <block id="80502f098bcf776c1d9ceec1ba9d636a" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。選擇 Couchbase 。</block>
+  <block id="d7712cfab308e47f5bb1445e9fbcb070" category="inline-image-macro">Couchbase組態</block>
+  <block id="64fffda04d6b10150c8c8726100e6239" category="paragraph"><block ref="64fffda04d6b10150c8c8726100e6239" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="41bdcd289793051395a360769595211c" category="inline-link-macro">Couchbase文件</block>
+  <block id="f2b2ffbd53b392b14604a492426ea7ac" category="paragraph">如需相關資訊、請參閱 <block ref="6a0d18e0abc795e5bc07d2ebcfb2d123" category="inline-link-macro-rx"></block>。</block>
+  <block id="c3a20296fdda109e5a387244bb33fbf6" category="cell">Couchbase節點</block>
+  <block id="e4ef366ae6be226c757b37e27fcb263c" category="cell">命名空間
+叢集
+Couchbase 節點主機名稱</block>
+  <block id="5c89437098c8abb0c4893d4e1c655f2c" category="cell">可用記憶體
+記憶體總計</block>
+  <block id="a852fa80ca1bc5024319d7b5d7d84b6d" category="cell">Couchbase鏟斗</block>
+  <block id="d62c713a51121af573c0ef402ab3a282" category="cell">命名空間
+鏟斗
+叢集</block>
+  <block id="4e6556682c31b5913aa78d687bb53082" category="cell">使用的資料
+資料擷取
+使用的磁碟
+項目計數
+已使用的記憶體
+每秒作業次數
+已使用配額</block>
+  <block id="760f80f90fb384d40bb66a9f0b4823fd" category="doc">Flink Data Collector</block>
+  <block id="54387b91997cebc2b9f94c02572ea7c8" category="paragraph">使用此資料收集器從Flink收集指標。Cloud Insights</block>
+  <block id="b9edb2d8cbff35711b7021f32a2692dd" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。選擇 Flink 。</block>
+  <block id="c1a584a645c5a21efa505b7deca25b2b" category="inline-image-macro">Flink組態</block>
+  <block id="2462dee15f2229ca8b824af60aa5037f" category="paragraph"><block ref="2462dee15f2229ca8b824af60aa5037f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="88f3c1a97fbc332ad9adb7ff5179d0f5" category="paragraph">完整的Flink部署包含下列元件：</block>
+  <block id="5ec659a1960f3ec4bb0ed146c2fe29e8" category="paragraph">JobManager：Flink主要系統。協調一系列的工作管理員。在高可用度設定中、系統會有多個JobManager。
+TaskManager：這是執行Flink運算子的位置。
+Flink外掛程式是以Telewraf的Jolokia外掛程式為基礎。例如、需要從所有Flink元件收集資訊、需要在所有元件上透過Jolokia進行設定和公開。</block>
+  <block id="56b6a44368589d2180398c17050693ba" category="paragraph">組態是根據Flink 1.5.0版開發而成。</block>
+  <block id="0fafe075396c21ab32ba5bed2f6b04cb" category="paragraph">以下說明假設下載的Jar檔案（jolokia -jvm-1.6.0-agent.jar）位於「/opt / flink/lib/」位置。</block>
+  <block id="d6625a003ca97117da4294ef2332bec8" category="section-title">JobManager</block>
+  <block id="ac48db67fd50d761b0cc801e21516f81" category="paragraph">若要將JobManager設定為公開Jolokia API、您可以在節點上設定下列環境變數、然後重新啟動JobManager：</block>
+  <block id="be858081216aea340977594f6274fe6e" category="paragraph">您可以為Jolokia選擇不同的連接埠（8778）。如果您有內部IP來鎖定Jolokia、您可以用自己的IP來取代「全部抓出」0．0．0。請注意、此IP必須從遠端工作人員外掛程式存取。</block>
+  <block id="dad4668bc0b8e79cd460bf9f0e0a9700" category="section-title">工作管理員</block>
+  <block id="239187f7984607b4dbabb4a154679050" category="paragraph">若要設定「工作管理員」以顯示「Jolokia API」、您可以在節點上設定下列環境變數、然後重新啟動「工作管理員」：</block>
+  <block id="fed9c829468f01ad78cb54dd7cce7c1e" category="cell">Flink工作管理員</block>
+  <block id="4a6c9bd53c6d064a543027eaa563c583" category="cell">節點名稱
+工作管理員 ID
+節點 IP</block>
+  <block id="4fd8a1981a5b46d96897012d9e9b9168" category="cell">網路可用記憶體區段
+網路總記憶體區段
+垃圾回收 PS MarkSweep Count
+垃圾回收 PS MarkSweep 時間
+垃圾回收 PS Scavenge 計數
+垃圾回收 PS Scavenge 時間
+堆積記憶體已認可
+堆積記憶體初始化
+堆積記憶體上限
+使用的堆積記憶體
+執行緒計數精靈
+執行緒計數尖峰
+執行緒計數
+執行緒總數已開始</block>
+  <block id="e5bcf79e43b1cb79fa38d8773f5c9876" category="cell">Flink工作</block>
+  <block id="846a72770c317ead4062aedae5f893c8" category="cell">叢集
+命名空間
+伺服器
+工作ID</block>
+  <block id="6a2c2989b258eae68f76754fa5d41c6f" category="cell">節點名稱
+工作名稱
+節點 IP
+上次檢查點外部路徑
+重新啟動時間</block>
+  <block id="5cada8907c93eaad28b0ddd4ec957602" category="cell">停機
+完全重新啟動
+上次檢查點對齊緩衝
+上次檢查點持續時間
+上次檢查點大小
+已完成的檢查點數目
+失敗的檢查點數目
+進行中的檢查點數目
+檢查點數量
+正常運作時間</block>
+  <block id="3d7a81a763fb0e456c06be07d13566ea" category="cell">Flink工作管理員</block>
+  <block id="97f03473b1053f9ddc2ebac96e570fbf" category="cell">垃圾回收 PS MarkSweep Count
+垃圾回收 PS MarkSweep 時間
+垃圾回收 PS Scavenge 計數
+垃圾回收 PS Scavenge 時間
+堆積記憶體已認可
+堆積記憶體初始化
+堆積記憶體上限
+使用的堆積記憶體
+已註冊的工作經理人數
+執行中工作的數目
+可用的工作插槽
+工作插槽總數
+執行緒計數精靈
+執行緒計數尖峰
+執行緒計數
+執行緒總數已開始</block>
+  <block id="4c6db84f5a8ecb130c48fbe482bd0407" category="cell">Flink工作</block>
+  <block id="d14c367e94317a3e6e27568781bb8c3c" category="cell">叢集
+命名空間
+工作ID
+工作ID</block>
+  <block id="5843feb1d224110026d8762d7faffc66" category="cell">伺服器
+節點名稱
+工作名稱
+子工作索引
+工作嘗試 ID
+工作嘗試次數
+工作名稱
+工作管理員 ID
+節點 IP
+目前輸入浮水印</block>
+  <block id="fd3f7cc527e3ec659d722c45c30e0117" category="cell">集區使用量中的緩衝區
+佇列長度中的緩衝區
+緩衝資源池使用率
+緩衝超出佇列長度
+本機緩衝區數目
+每秒本地數量的緩衝數
+每秒本機緩衝區數
+遠端中的緩衝區數目
+遠端每秒緩衝區數
+遠端每秒傳輸速率中的緩衝區數目
+Number Buffers Out
+每秒緩衝區輸出數
+每秒緩衝區輸出數
+本機的位元組數
+每秒本機數的位元組數
+每秒本機傳輸率的位元組數
+遠端中的位元組數
+每秒遠端計數中的位元組數
+遠端每秒傳輸速率中的位元組數
+輸出位元組數
+每秒輸出數位元組數
+每秒輸出的位元組數
+中的記錄數
+每秒記錄數
+每秒記錄數
+號碼記錄輸出
+每秒輸出的記錄數
+每秒輸出次數記錄</block>
+  <block id="612f6074a0c92f40ddbce389e1bcf2fc" category="cell">Flink工作操作員</block>
+  <block id="efa07c862dd433cfd3278ef665cd62bf" category="cell">叢集
+命名空間
+工作ID
+營運者 ID
+工作ID</block>
+  <block id="2aa96940f26ed9cf171b1aba30346ffa" category="cell">伺服器
+節點名稱
+工作名稱
+營運者名稱
+子工作索引
+工作嘗試 ID
+工作嘗試次數
+工作名稱
+工作管理員 ID
+節點 IP</block>
+  <block id="36492bf47ea19332301e1b80a8878538" category="cell">目前輸入浮水印
+目前輸出浮水印
+中的記錄數
+每秒記錄數
+每秒記錄數
+號碼記錄輸出
+每秒輸出的記錄數
+每秒輸出次數記錄
+遺失的延遲記錄數
+指派的分割區
+位元組使用率
+平均提交延遲
+最大提交延遲
+提交率
+認可失敗
+認可成功
+連線關閉率
+連線計數
+連線建立率
+數
+平均擷取延遲
+擷取最長延遲
+擷取速率
+平均擷取大小
+擷取大小上限
+平均擷取節流時間
+擷取最大節流時間
+心跳速率
+傳入位元組速率
+IO 比率
+IO 時間平均（ ns ）
+IO 等待比率
+IO 平均等待時間（ ns ）
+加入率
+平均加入時間
+上一次心跳前
+網路 IO 速率
+傳出位元組速率
+記錄使用率
+記錄延遲上限
+每個要求的記錄平均
+要求率
+平均要求大小
+要求大小上限
+回應率
+選擇速率
+同步速度
+平均同步時間
+活動訊號回應時間上限
+最長加入時間
+同步時間上限</block>
+  <block id="4c35289465431b7541002dd365bad198" category="summary">MySQL資料收集器組態</block>
+  <block id="d1f43c925400e37adcd15285deaac430" category="doc">MySQL Data Collector</block>
+  <block id="5d1d986fa74eaeda0a328a24da34dc8f" category="paragraph">此資料收集器可用來收集MySQL的數據。Cloud Insights</block>
+  <block id="53a22ff7bf05343afd43baa85e5c7883" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。選擇 MySQL 。</block>
+  <block id="cfe3b09f39613d05db4ca7532b374386" category="inline-image-macro">MySQL組態</block>
+  <block id="acd86359b435b0d32d73a66fa03be887" category="paragraph"><block ref="acd86359b435b0d32d73a66fa03be887" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0281cf739776a9c6b7c6cb01c1accf40" category="inline-link-macro">MySQL文件</block>
+  <block id="6292388c6e8693ea6c73e72a49ab4655" category="paragraph">如需相關資訊、請參閱 <block ref="4319c63c14adb8b966feb7239cf0a2bb" category="inline-link-macro-rx"></block>。</block>
+  <block id="7b13a5e1284d961b045ce256aaf8121b" category="cell">命名空間
+MySQL 伺服器</block>
+  <block id="aa0de5a29cbb206ae9a2819913271064" category="cell">中止的用戶端（每秒）
+已中止連線（每秒）
+接收位元組（每秒）
+傳輸位元組（每秒）
+命令管理（每秒）
+命令 Alter Event
+命令 Alter 功能
+命令 Alter Instance
+命令變更程序
+命令 Alter Server
+命令 Alter Table
+命令 Alter Tablespace
+命令 Alter User
+命令分析
+指派給 Keycache 的命令
+命令開始
+命令 Binlog
+命令通話程序
+命令變更資料庫
+命令變更主控制器
+命令變更回應篩選器
+命令檢查
+命令「檢驗值」
+命令認可
+命令建立資料庫
+命令建立事件
+命令建立功能
+命令建立索引
+命令建立程序
+命令 Create Server
+命令 Create Table
+命令建立觸發程序
+命令 Create UDF
+命令建立使用者
+命令建立檢視
+命令 Dealloc SQL
+接受連線錯誤
+已建立 TMP 磁碟表
+延遲錯誤
+Flush 命令
+處理常式認可
+InnoDB 緩衝池位元組資料
+金鑰區塊未清除
+金鑰讀取要求
+金鑰寫入要求
+金鑰寫入
+已超過執行時間上限
+使用的連線數量上限
+開啟檔案
+效能架構帳戶遺失
+準備的 Stmt 計數
+Qcache 可用區塊
+查詢
+問題
+選取「完整加入」
+選取「全頻段加入」
+選取範圍檢查
+選取掃描
+桌檯立即鎖定</block>
+  <block id="f675ac1ea34754aba3279d7f93746721" category="summary">Kibana資料收集器組態</block>
+  <block id="d6678652208f4e26109690d4ab6151e5" category="doc">Kibana資料收集器</block>
+  <block id="75ac4fff844290c8b306aced90a6ad0d" category="paragraph">此資料收集器可用來收集Kibana的數據。Cloud Insights</block>
+  <block id="710ec696cccefe4c3faa1d7ebf8fca87" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。選擇 Kibana 。</block>
+  <block id="ed9f8d76b0ccacc02aa67a13d6c1e9a8" category="inline-image-macro">Kibana組態</block>
+  <block id="18785da9c6be5397773e5c495dcc23f4" category="paragraph"><block ref="18785da9c6be5397773e5c495dcc23f4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3c84e442bbf213b7d0e5047d09d7aef4" category="inline-link-macro">Kibana文件</block>
+  <block id="a8bdbad6177ca64d397d863b68fe3fe9" category="paragraph">如需相關資訊、請參閱 <block ref="07c833901243190735d960ff17f32792" category="inline-link-macro-rx"></block>。</block>
+  <block id="5228fdd6f613af63fc73ee7c02ef8fb5" category="cell">Kibana</block>
+  <block id="22591bcc5e32570096ba46abc2143b90" category="cell">命名空間
+地址</block>
+  <block id="a78ce0ccaaa47b18906f1de5d019d817" category="cell">節點 IP
+節點名稱
+版本
+狀態</block>
+  <block id="159dbe63e44af239ee60fabff2752f0e" category="cell">並行連線
+堆積上限
+使用的堆積
+每秒要求數
+平均回應時間
+回應時間上限
+正常運作時間</block>
+  <block id="3e647ef93d862cebdd7fa80573f126aa" category="summary">MongoDB資料收集器組態</block>
+  <block id="53e70a8dd3a918a24f705909a168c35c" category="doc">MongoDB資料收集器</block>
+  <block id="5365ec2fc489501ed613b8ad5b954e9c" category="paragraph">使用此資料收集器從MongoDB收集數據。Cloud Insights</block>
+  <block id="c71f6654a45927e285ab22a697438b43" category="list-text">從 * 可伺服 &gt; 收集器 * 、按一下 * + 資料收集器 * 。選擇 MongoDB 。</block>
+  <block id="06dc92e8ae707ce9c6046e102df5a214" category="inline-image-macro">MongoDB組態</block>
+  <block id="0f54e55841a24b143c2104aab4935f7b" category="paragraph"><block ref="0f54e55841a24b143c2104aab4935f7b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="38d4b2dc2b4a57b1ac9fd3ffb91a1e4e" category="inline-link-macro">MongoDB文件</block>
+  <block id="6d44425175e1033dd7e44ad93e6c1716" category="paragraph">如需相關資訊、請參閱 <block ref="03dc511ffabb03f2ed77b5dbe821f120" category="inline-link-macro-rx"></block>。</block>
+  <block id="206e3718af092fd1d12f80cae771ccac" category="cell">MongoDB</block>
+  <block id="7c33c5b9bc17f5cdef2a6e9af34ec2ba" category="cell">命名空間
+主機名稱</block>
+  <block id="03a2f43be2bb9fe29ee41afceec0ffcd" category="cell">MongoDB資料庫</block>
+  <block id="53de6191c5a3773a175198e9140b6c2b" category="cell">命名空間
+主機名稱
+資料庫名稱</block>
+  <block id="d5712dd84650ff1cb4915da1c121ffbb" category="paragraph">如需相關資訊、請參閱 <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> 頁面。</block>
 </blocks>

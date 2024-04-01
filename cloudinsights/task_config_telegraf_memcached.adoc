@@ -1,0 +1,100 @@
+---
+sidebar: sidebar 
+permalink: task_config_telegraf_memcached.html 
+keywords: telegraf, installation, install, memcached 
+summary: memcached資料收集器組態 
+---
+= memcached資料收集器
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+使用此資料收集器從Memcached收集度量資料。Cloud Insights
+
+
+
+== 安裝
+
+. 從 * 可伺服 > 收集器 * 、按一下 * + 資料收集器 * 。選擇 Memcached 。
++
+選取安裝Telegraf代理程式的作業系統或平台。
+
+. 如果您尚未安裝代理程式以供收集、或想要為不同的作業系統或平台安裝代理程式、請按一下「_顯示指示_」以展開 link:task_config_telegraf_agent.html["代理程式安裝"] 說明。
+. 選取要搭配此資料收集器使用的代理程式存取金鑰。您可以按一下「*+代理程式存取金鑰*」按鈕來新增代理存取金鑰。最佳實務做法：只有當您想要將資料收集器分組時、才使用不同的代理程式存取金鑰、例如依作業系統/平台。
+. 請依照組態步驟設定資料收集器。這些指示會因您用來收集資料的作業系統或平台類型而有所不同。
+
+
+image:MemcachedDCConfigWindows.png["memcached組態"]
+
+
+
+== 設定
+
+如需相關資訊、請參閱 link:https://github.com/memcached/memcached/wiki["memcached wikik"]。
+
+
+
+== 物件與計數器
+
+收集下列物件及其計數器：
+
+[cols="<.<,<.<,<.<,<.<"]
+|===
+| 物件： | 識別碼： | 屬性： | 資料點： 
+
+
+| memcached | 命名空間
+伺服器 | 節點 IP
+節點名稱 | 接受連線
+已處理的驗證要求
+驗證失敗
+使用的位元組
+讀取位元組（每秒）
+寫入的位元組（每秒）
+CA Badval
+CA 命中
+CA 未命中
+清除要求（每秒）
+取得要求（每秒）
+設定要求（每秒）
+點選要求（每秒）
+連線產生量（每秒）
+連線結構
+開啟連線
+目前儲存的項目
+Decr 要求命中次數（每秒）
+Decr 要求未命中次數（每秒）
+刪除要求命中次數（每秒）
+刪除要求遺漏（每秒）
+項目被逐出
+有效的遷離
+過期項目
+取得命中次數（每秒）
+取得未命中次數（每秒）
+使用的雜湊位元組
+雜湊正在擴充
+雜湊功率位準
+Incr 要求命中次數（每秒）
+Incr 要求遺漏（每秒）
+伺服器最大位元組
+偵聽停用的 Num
+回收
+工作者執行緒計數
+開啟的連線總數
+儲存的項目總數
+輕觸 Hits
+點選未命中
+伺服器正常運作時間 
+|===
+
+
+== 疑難排解
+
+如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面。

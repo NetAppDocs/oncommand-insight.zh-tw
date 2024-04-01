@@ -1,0 +1,263 @@
+---
+sidebar: sidebar 
+permalink: task_config_telegraf_haproxy.html 
+keywords: telegraf, installation, install, haproxy 
+summary: HAProxy資料收集器組態 
+---
+= HAProxy資料收集器
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+使用此資料收集器從HAProxy收集指標。Cloud Insights
+
+
+
+== 安裝
+
+. 從 * 可伺服 > 收集器 * 、按一下 * + 資料收集器 * 。選擇 HAProxy 。
++
+選取安裝Telegraf代理程式的作業系統或平台。
+
+. 如果您尚未安裝代理程式以供收集、或想要為不同的作業系統或平台安裝代理程式、請按一下「_顯示指示_」以展開 link:task_config_telegraf_agent.html["代理程式安裝"] 說明。
+. 選取要搭配此資料收集器使用的代理程式存取金鑰。您可以按一下「*+代理程式存取金鑰*」按鈕來新增代理存取金鑰。最佳實務做法：只有當您想要將資料收集器分組時、才使用不同的代理程式存取金鑰、例如依作業系統/平台。
+. 請依照組態步驟設定資料收集器。這些指示會因您用來收集資料的作業系統或平台類型而有所不同。
+
+
+image:HAProxyDCConfigLinux.png["HAProxy組態"]
+
+
+
+== 設定
+
+Telegraf的HAProxy外掛程式仰賴HAProxy統計資料功能。這是HAProxy內建的組態、但並未隨裝即用。啟用後、HAProxy會顯示HTML端點、以便在瀏覽器上檢視或擷取所有HAProxy組態的狀態。
+
+
+
+=== 相容性：
+
+組態是根據HAProxy 1.1.4版開發而成。
+
+
+
+=== 設定：
+
+若要啟用統計資料、請編輯HaProxy組態檔案、並使用您自己的使用者/密碼和/或HaProxy URL、在「資料錯誤」區段之後新增下列行：
+
+[listing]
+----
+stats enable
+stats auth myuser:mypassword
+stats uri  /haproxy?stats
+----
+以下是啟用統計資料的簡化範例組態檔：
+
+[listing]
+----
+global
+  daemon
+  maxconn 256
+
+defaults
+  mode http
+  stats enable
+  stats uri /haproxy?stats
+  stats auth myuser:mypassword
+  timeout connect 5000ms
+  timeout client 50000ms
+  timeout server 50000ms
+
+frontend http-in
+  bind *:80
+  default_backend servers
+
+frontend http-in9080
+  bind *:9080
+  default_backend servers_2
+
+backend servers
+  server server1 10.128.0.55:8080 check ssl verify none
+  server server2 10.128.0.56:8080 check ssl verify none
+
+backend servers_2
+  server server3 10.128.0.57:8080 check ssl verify none
+  server server4 10.128.0.58:8080 check ssl verify none
+----
+如需完整且最新的指示、請參閱 link:https://cbonte.github.io/haproxy-dconv/1.8/configuration.html#4-stats%20enable["HAProxy文件"]。
+
+
+
+== 物件與計數器
+
+收集下列物件及其計數器：
+
+[cols="<.<,<.<,<.<,<.<"]
+|===
+| 物件： | 識別碼： | 屬性： | 資料點： 
+
+
+| HAProxy前端 | 命名空間
+地址
+Proxy | 節點 IP
+節點名稱
+Proxy ID
+模式
+處理序識別碼
+工作階段速率限制
+伺服器 ID
+工作階段限制
+狀態 | 位元組
+位元組輸出
+快取命中次數
+快取查詢
+略過壓縮位元組
+壓縮位元組
+壓縮位元組輸出
+壓縮回應
+連線速率
+連線速率上限
+連線總數
+連線規則拒絕的要求
+安全疑慮拒絕的要求
+因安全考量而拒絕回應
+工作階段規則拒絕的要求
+要求錯誤
+回應 1xx
+回應 2xx
+回應 3xx
+回應 4xx
+回應 5xx
+回應其他
+攔截的要求
+工作階段速率
+工作階段速率上限
+要求率
+申請費率上限
+申請總數
+工作階段
+工作階段上限
+工作階段總計
+要求重新寫入 
+
+
+| HAProxy伺服器 | 命名空間
+地址
+Proxy
+伺服器 | 節點 IP
+節點名稱
+檢查完成時間
+檢查秋季組態
+檢查健全狀況值
+檢查 Rise 組態
+檢查狀態
+Proxy ID
+上次變更時間
+上次工作階段時間
+模式
+處理序識別碼
+伺服器 ID
+狀態
+重量 | 作用中伺服器
+備份伺服器
+位元組
+位元組輸出
+檢查草場
+檢查失敗
+用戶端中止
+連線
+連線平均時間
+停機時間總計
+拒絕回應
+連線錯誤
+回應錯誤
+回應 1xx
+回應 2xx
+回應 3xx
+回應 4xx
+回應 5xx
+回應其他
+伺服器選取的總計
+佇列目前
+佇列上限
+佇列平均時間
+每秒工作階段數
+每秒工作階段數上限
+連線重複使用
+平均回應時間
+工作階段
+工作階段上限
+伺服器傳輸中止
+工作階段總計
+工作階段總時間平均
+要求重新分派
+要求重試
+要求重新寫入 
+
+
+| HAProxy後端 | 命名空間
+地址
+Proxy | 節點 IP
+節點名稱
+Proxy ID
+上次變更時間
+上次工作階段時間
+模式
+處理序識別碼
+伺服器 ID
+工作階段限制
+狀態
+重量 | 作用中伺服器
+備份伺服器
+位元組
+位元組輸出
+快取命中次數
+快取查詢
+檢查草場
+用戶端中止
+略過壓縮位元組
+壓縮位元組
+壓縮位元組輸出
+壓縮回應
+連線
+連線平均時間
+停機時間總計
+安全疑慮拒絕的要求
+因安全考量而拒絕回應
+連線錯誤
+回應錯誤
+回應 1xx
+回應 2xx
+回應 3xx
+回應 4xx
+回應 5xx
+回應其他
+伺服器選取的總計
+佇列目前
+佇列上限
+佇列平均時間
+每秒工作階段數
+每秒工作階段數上限
+申請總數
+連線重複使用
+平均回應時間
+工作階段
+工作階段上限
+伺服器傳輸中止
+工作階段總計
+工作階段總時間平均
+要求重新分派
+要求重試
+要求重新寫入 
+|===
+
+
+== 疑難排解
+
+如需其他資訊、請參閱 link:concept_requesting_support.html["支援"] 頁面。
