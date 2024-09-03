@@ -75,9 +75,9 @@ NetApp Unified Manager可在儲存陣列的「設備管理」層運作、針對�
 
 
 
-== Automation Storefront中提到什麼是「二線ETL」OnCommand Insight ？
+== 什麼是 OnCommand Insight 次要 ETL ？
 
-部分OnCommand Insight 《自動化Storefront》報告下載中提及的「次要ETL」需求、是指用來叫用擷取資料的額外擷取、轉換及載入（ETL）、以供填入OnCommand Insight 「不實資料」倉儲的已開發專業服務實作。
+「次要 ETL 」是指開發出的專業服務實作、用於叫用擷取資料的額外擷取、轉換和載入（ ETL ）、以將資料移入 OnCommand Insight 資料倉儲。
 
 次要ETL程序的主要用途是預先擷取「批次」資料、以便更複雜的報告能夠更快產生、或排定每日執行。
 

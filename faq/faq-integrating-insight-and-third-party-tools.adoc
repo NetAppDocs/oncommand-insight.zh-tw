@@ -55,7 +55,7 @@ BMC版的《BMC版》整合了《BMC Atrium Configuration Management Database》
 
 == OCI是否與工作流程自動化器（WFA）搭配運作？
 
-OCI與第三方CMDB的整合功能、計費與協調技術是成功的關鍵價值、WFA也不例外。NetApp的專業服務部門已成功整合目前的WFA工作流程和OCI。NetApp Automation Storefront上有一個WFA連接器可供下載、以供OCI使用。
+OCI與第三方CMDB的整合功能、計費與協調技術是成功的關鍵價值、WFA也不例外。NetApp的專業服務部門已成功整合目前的WFA工作流程和OCI。
 
 
 
@@ -71,4 +71,4 @@ OCI效能輪詢時間間隔可由使用者自行設定。大多數廠商的儲�
 
 == 是否有任何效能規劃報告？
 
-是的、OCI提供數份報告、而我們的專業服務目錄中也有許多其他報告、視使用案例而定。資料倉儲模組也隨附一組Cognos報告撰寫工具、可讓使用者建立自己的報告。此外、NetApp Automation Storefront也提供社群產生的報告範本和其他下載項目的輔助功能。
+是的、OCI提供數份報告、而我們的專業服務目錄中也有許多其他報告、視使用案例而定。資料倉儲模組也隨附一組Cognos報告撰寫工具、可讓使用者建立自己的報告。

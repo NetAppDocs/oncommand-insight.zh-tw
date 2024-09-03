@@ -208,16 +208,6 @@ entries:
     url: "/howto/processing-cloud-cost-data-in-insight.html"
   - title: 在Insight中報告雲端成本資料
     url: "/howto/reporting-on-cloud-cost-data-task.html"
-- title: 與ServiceNow整合
-  url: "/howto/integrating-with-servicenow.html"
-  entries:
-  - title: 立即服務整合的準備與先決條件
-    url: "/howto/preparation-and-prerequisites-for-servicenow-integration.html"
-    entries:
-    - title: 正在下載ServiceNow Python連接器
-      url: "/howto/downloading-the-servicenow-connector.html"
-  - title: 設定ServiceNow以進行整合
-    url: "/howto/configuring-servicenow-for-integration.html"
     entries:
     - title: 提升角色
       url: "/howto/servicenow-integration-elevate-role.html"
