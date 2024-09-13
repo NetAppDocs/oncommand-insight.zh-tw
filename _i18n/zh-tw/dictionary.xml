@@ -7849,4 +7849,8 @@
   <block id="bcc7ff777637bae2501eae2f8ccdf7d1" category="paragraph">「次要 ETL 」是指開發出的專業服務實作、用於叫用擷取資料的額外擷取、轉換和載入（ ETL ）、以將資料移入 OnCommand Insight 資料倉儲。</block>
   <block id="85dd174d18eb0c4d3fd90177f2a31485" category="paragraph">OCI與第三方CMDB的整合功能、計費與協調技術是成功的關鍵價值、WFA也不例外。NetApp的專業服務部門已成功整合目前的WFA工作流程和OCI。</block>
   <block id="b220d44db6780bcb3edb81b057ad8db8" category="paragraph">是的、OCI提供數份報告、而我們的專業服務目錄中也有許多其他報告、視使用案例而定。資料倉儲模組也隨附一組Cognos報告撰寫工具、可讓使用者建立自己的報告。</block>
+  <block id="082d4fc1b30e86ee41f3aee683450d1e" category="summary">資料收集器（資料來源）支援對照表提供支援的資料收集器相關資訊。</block>
+  <block id="2fcf0efc6b86f1c82038c0503c617ffb" category="doc">OnCommand Insight 資料收集器支援對照表</block>
+  <block id="0509ce941df7b1b926535ae26a759985" category="paragraph">Data Collector Support Matrix 提供 OCI 支援的 Data Collectors 參考資料、包括廠商和機型資訊。</block>
+  <block id="929760a91ec2d785d90375c3e050830f" category="paragraph">此頁面是預留位置。</block>
 </blocks>

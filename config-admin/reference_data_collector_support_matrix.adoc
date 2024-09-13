@@ -1,0 +1,16 @@
+---
+permalink: config-admin/reference_data_collector_support_matrix.html 
+sidebar: sidebar 
+keywords:  
+summary: 資料收集器（資料來源）支援對照表提供支援的資料收集器相關資訊。 
+---
+= OnCommand Insight 資料收集器支援對照表
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Data Collector Support Matrix 提供 OCI 支援的 Data Collectors 參考資料、包括廠商和機型資訊。
+
+此頁面是預留位置。
