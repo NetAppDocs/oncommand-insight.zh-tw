@@ -25,7 +25,9 @@ summary: 您可以新增SSL憑證來啟用增強的驗證和加密功能、以�
 
 [NOTE]
 ====
-在嘗試執行此程序之前、您應該先備份現有的 `server.keystore` 檔案、並命名備份 `server.keystore.old`。毀損或毀損 `server.keystore` 重新啟動Insight伺服器後、檔案可能導致Insight伺服器無法運作。如果您建立備份、當發生問題時、可以還原至舊檔案。
+強烈建議您在升級之前備份資料保險箱。
+
+如需有關資料保險箱和密碼管理的詳細資訊、請參閱link:../config-admin\/security-management.html["安全性管理工具"]指示。
 
 ====
 
@@ -34,10 +36,6 @@ summary: 您可以新增SSL憑證來啟用增強的驗證和加密功能、以�
 
 . 建立原始Keystore檔案的複本： `cp c:\Program Files\SANscreen\wildfly\standalone\configuration\server.keystore "c:\Program Files\SANscreen\wildfly\standalone\configuration\server.keystore.old`
 . 列出Keystore的內容： `C:\Program Files\SANscreen\java64\bin\keytool.exe -list -v -keystore "c:\Program Files\SANscreen\wildfly\standalone\configuration\server.keystore"`
-+
-.. 當系統提示輸入密碼時、請輸入 `changeit`。
-
-
 +
 系統會顯示Keystore的內容。金鑰庫中至少應有一個憑證、 `"ssl certificate"`。
 

@@ -39,6 +39,14 @@ summary: 使用命令列安裝支援OnCommand Insight 。
 +
 `sudo ./oci-<version>-linux-x86_64/oci-install.sh`
 
++
+在 CentOS 9 Stream 、 Red Hat Enterprise Linux 9.4 或 Oracle Linux 9.4 上安裝 Insight Server 時、您必須先變更至包含安裝程式檔案的目錄、然後使用「 --install-mySQL 相依性」命令列選項來執行安裝命令：
+
++
+....
+cd /tmp/oci-7.3.16.1.297-linux-x86_64
+sudo ./oci-install.sh --install-mysql-dependencies
+....
 . 請閱讀授權合約、接受並遵循提示進行。
 . 如果您使用的是Insight Consumption授權模式、則必須啟用傳送使用資訊給NetApp的功能。輸入 `Y` 在這個提示下。
 
@@ -48,3 +56,24 @@ summary: 使用命令列安裝支援OnCommand Insight 。
 == 結果
 
 在您回答所有提示之後、安裝將會開始、大約需要10分鐘、視安裝的應用程式而定。
+
+. 如果您要安裝遠端擷取單元（ Rau ）、則必須執行 securityadmin Tool 、為 _Acquisition 使用者建立密碼。安裝 Rau 時需要使用此密碼。
++
+附註：如果您已建立此密碼、則不需要如下所述同步伺服器和 Rau 。
+
+
+
+
+
+== 將伺服器與 DWH 和 Rau 同步
+
+
+IMPORTANT: 安裝遠端擷取單元和 / 或資料倉儲後、您 * 必須 * 將 Rau/DWH 與 OnCommand Insight 伺服器同步。請遵循下列步驟：
+
+link:../install-windows/installing-a-remote-acquisition-unit-rau.html#synchronize-server-and-rau["同步伺服器與 Rau （ Windows ）"]
+
+link:../install-windows/installing-the-oncommand-insight-data-warehouse-and-reporting.html#synchronize-server-and-dwh["同步伺服器與 DWH （ Windows ）"]
+
+link:../install-linux/installing-a-remote-acquisition-unit-rau-linux.html#synchronize-server-and-rau["同步伺服器與 Rau （ Linux ）"]
+
+link:../install-linux/installing-oncommand-insight-data-warehouse-linux.html#synchronize-server-and-dwh["同步伺服器與 DWH （ Linux ）"]

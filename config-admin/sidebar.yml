@@ -30,8 +30,8 @@ entries:
       url: "/config-admin/deleting-a-user-account.html"
   - title: 設定登入警告訊息
     url: "/config-admin/configuring-a-login-warning-message.html"
-  - title: Insight Security
-    url: "/config-admin/security-management.html"
+  - title: Insight Security （安全性管理工具）
+    url: "/config-admin/securityadmin-tool.html"
     entries:
     - title: 管理Insight伺服器上的安全性
       url: "/config-admin/managing-security-on-the-insight-server.html"
@@ -59,24 +59,10 @@ entries:
       url: "/config-admin/cac-configuration-for-linux.html"
     - title: 設定資料倉儲以進行智慧卡和憑證登入
       url: "/config-admin/host-configuration-for-smart-card-and-certificate-login-dwh.html"
-    - title: 設定Cognos以登入智慧卡和憑證（OnCommand Insight 從版本號到版本號7.3.9）
-      url: "/config-admin/cognos-configuration-for-smart-card-and-certificate-login-7-3-5-through-7-3-9.html"
     - title: 設定Cognos以登入智慧卡和憑證（OnCommand Insight 更新版本：
       url: "/config-admin/cognos-configuration-for-smart-card-and-certificate-login-7-3-10-and-later.html"
-    - title: 匯入Cognos和DWH的CA簽署SSL憑證（Insight 7.3.5至7.3.9）
-      url: "/config-admin/importing-ca-signed-ssl-certificates-for-cognos-and-dwh-insight-7-3-5-to-7-3-9.html"
     - title: 匯入Cognos和DWH的CA簽署SSL憑證（Insight 7.3.10及更新版本）
       url: "/config-admin/importing-ca-signed-ssl-certificates-for-cognos-and-dwh-insight-7-3-10-and-later.html"
-  - title: 設定資料倉儲以進行智慧卡和憑證登入
-    url: "/config-admin/host-configuration-for-smart-card-and-certificate-login-dwh.html"
-  - title: 設定Cognos以登入智慧卡和憑證（OnCommand Insight 從版本號到版本號7.3.9）
-    url: "/config-admin/cognos-configuration-for-smart-card-and-certificate-login-7-3-5-through-7-3-9.html"
-  - title: 設定Cognos以登入智慧卡和憑證（OnCommand Insight 更新版本：
-    url: "/config-admin/cognos-configuration-for-smart-card-and-certificate-login-7-3-10-and-later.html"
-  - title: 匯入Cognos和DWH的CA簽署SSL憑證（Insight 7.3.5至7.3.9）
-    url: "/config-admin/importing-ca-signed-ssl-certificates-for-cognos-and-dwh-insight-7-3-5-to-7-3-9.html"
-  - title: 匯入Cognos和DWH的CA簽署SSL憑證（Insight 7.3.10及更新版本）
-    url: "/config-admin/importing-ca-signed-ssl-certificates-for-cognos-and-dwh-insight-7-3-10-and-later.html"
   - title: 匯入SSL憑證
     url: "/config-admin/importing-an-ssl-certificate.html"
   - title: 為Insight資料庫設定每週備份
@@ -241,22 +227,14 @@ entries:
     url: "/config-admin/cac-configuration-for-linux.html"
   - title: 設定資料倉儲以進行智慧卡和憑證登入
     url: "/config-admin/host-configuration-for-smart-card-and-certificate-login-dwh.html"
-  - title: 設定Cognos以登入智慧卡和憑證（OnCommand Insight 從版本號到版本號7.3.9）
-    url: "/config-admin/cognos-configuration-for-smart-card-and-certificate-login-7-3-5-through-7-3-9.html"
   - title: 設定Cognos以登入智慧卡和憑證（OnCommand Insight 更新版本：
     url: "/config-admin/cognos-configuration-for-smart-card-and-certificate-login-7-3-10-and-later.html"
-  - title: 匯入Cognos和DWH的CA簽署SSL憑證（Insight 7.3.5至7.3.9）
-    url: "/config-admin/importing-ca-signed-ssl-certificates-for-cognos-and-dwh-insight-7-3-5-to-7-3-9.html"
   - title: 匯入Cognos和DWH的CA簽署SSL憑證（Insight 7.3.10及更新版本）
     url: "/config-admin/importing-ca-signed-ssl-certificates-for-cognos-and-dwh-insight-7-3-10-and-later.html"
 - title: 設定資料倉儲以進行智慧卡和憑證登入
   url: "/config-admin/host-configuration-for-smart-card-and-certificate-login-dwh.html"
-- title: 設定Cognos以登入智慧卡和憑證（OnCommand Insight 從版本號到版本號7.3.9）
-  url: "/config-admin/cognos-configuration-for-smart-card-and-certificate-login-7-3-5-through-7-3-9.html"
 - title: 設定Cognos以登入智慧卡和憑證（OnCommand Insight 更新版本：
   url: "/config-admin/cognos-configuration-for-smart-card-and-certificate-login-7-3-10-and-later.html"
-- title: 匯入Cognos和DWH的CA簽署SSL憑證（Insight 7.3.5至7.3.9）
-  url: "/config-admin/importing-ca-signed-ssl-certificates-for-cognos-and-dwh-insight-7-3-5-to-7-3-9.html"
 - title: 匯入Cognos和DWH的CA簽署SSL憑證（Insight 7.3.10及更新版本）
   url: "/config-admin/importing-ca-signed-ssl-certificates-for-cognos-and-dwh-insight-7-3-10-and-later.html"
 - title: 匯入SSL憑證
@@ -703,3 +681,5 @@ entries:
     url: "/config-admin/nas-path-for-vms.html"
   - title: 容量即時間序列
     url: "/config-admin/capacity-as-time-series.html"
+- title: 資料收集器支援對照表
+  url: "/config-admin/reference_data_collector_support_matrix.html"

@@ -13,6 +13,13 @@ summary: 升級Insight伺服器軟體之後、您必須升級遠端擷取軟體�
 [role="lead"]
 升級Insight伺服器軟體之後、您必須升級遠端擷取軟體。
 
+[NOTE]
+====
+強烈建議您在升級 DWH 之前備份資料保險箱和資料庫。
+
+如需有關資料保險箱的詳細資訊、請參閱link:../config-admin\/security-management.html["安全性管理工具"]指示。
+
+====
 
 
 == 步驟

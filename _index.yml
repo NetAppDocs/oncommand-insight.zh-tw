@@ -1,5 +1,8 @@
 ---
 indexpage:
+  title: OnCommand Insight 文件
+  summary: 此解決方案可簡化混合式IT基礎架構的作業管理、適用於內部部署環境、以及公有雲和私有雲OnCommand Insight 。
+  keywords: oci, insight
   lead: 此解決方案可簡化混合式IT基礎架構的作業管理、適用於內部部署環境、以及公有雲和私有雲OnCommand Insight 。
   tiles:
   - title: 開始使用

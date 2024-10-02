@@ -20,5 +20,7 @@ sidebar:
   - section: reporting
   - section: faq
   - section: howto
+  - title: 資料收集器支援對照表
+    url: "/config-admin/reference_data_collector_support_matrix.html"
   - title: 法律聲明
     url: "/legal-notices.html"

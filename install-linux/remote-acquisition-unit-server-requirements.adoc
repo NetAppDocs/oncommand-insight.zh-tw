@@ -24,9 +24,9 @@ summary: 您必須安裝遠端擷取單元（Rau）、才能從防火牆後的SA
  a| 
 執行下列其中一種授權版本的電腦、不執行其他應用程式層級的軟體：
 
-* Red Hat Enterprise Linux 7.3 、 7.4 、 7.5 、 7.6 、 7.7 、 7.8 、 7.9 、 8.1 、 8.2 、 8.3 、 8.4 、 8.5 、 8.8 、 9.2
-* CentOS 7.2 、 7.5 、 7.6 、 7.7 、 7.8 、 7.9 、 CentOS 8 Stream 、 CentOS 9 Stream
-* Oracle Enterprise Linux 7.5 、 7.6 、 7.7 、 7.8 、 7.9 、 8.1 、 8.2 、 8.3 、 8.4 、 8.5 、 8.8.8
+* Red Hat Enterprise Linux 7.9 、 8.10 、 9.4
+* CentOS 8 Stream 、 CentOS 9 Stream
+* Oracle Enterprise Linux 7.9 、 8.10 、 9.4
 
 
 建議使用專屬伺服器。

@@ -55,3 +55,24 @@ Rau伺服器和OnCommand Insight 支援該伺服器之間必須至少開啟一�
 在您回答所有提示之後、安裝將會開始、大約需要10分鐘、視安裝的應用程式而定。
 
 
+
+如果您的資料開始擷取、您都已設定好；您不需要同步伺服器和 Rau 、如下所述。
+
+
+
+== 同步伺服器與 Rau
+
+
+IMPORTANT: 如果在安裝遠端擷取單元之後資料並未開始擷取、請將 Rau 與 OnCommand Insight 伺服器同步。請遵循下列步驟：
+
+. 在 OnCommand Insight 伺服器系統上、以互動模式啟動 *securityadmin* 工具
++
+ securityadmin -i
+. 將 Insight Server 的 _Acquisition 使用者密碼變更為您選擇的密碼。* 請記下此密碼 * 、因為您將在下方要求此密碼。
+. 重新啟動伺服器 /Lau 。
+. 在遠端擷取單元（ Rau ）系統上、以互動模式啟動 * 安全管理 * 工具。您將需要上述步驟 2 中記下的密碼。
++
+ securityadmin -i
+. 將 _Acquisition 使用者的密碼變更為步驟 2 中使用的密碼。
+. 重新啟動 RAU 。
+

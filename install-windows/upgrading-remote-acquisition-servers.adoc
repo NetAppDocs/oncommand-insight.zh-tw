@@ -21,11 +21,19 @@ summary: 完成所有必要的工作之後、您可以登入遠端擷取單元�
 * 此安裝套件必須位於伺服器上OnCommand Insight 。
 
 
+[NOTE]
+====
+您必須在升級之前備份資料保險箱。
+
+如需有關資料保險箱的詳細資訊、請參閱link:../config-admin\/security-management.html["安全性管理工具"]指示。
+
+====
 
 
 == 步驟
 
 . 使用具有Windows本機系統管理員權限的帳戶登入遠端擷取單元伺服器。
+. 備份資料保險箱。
 . 找到Insight安裝套件 (`RAU-x64-version_number-build_number.msi`）使用Windows檔案總管、然後按兩下。
 +
 畫面會顯示「BIOS設定精靈」OnCommand Insight 。

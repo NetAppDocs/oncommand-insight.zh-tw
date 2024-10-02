@@ -13,6 +13,13 @@ summary: 在您開始升級Insight之前、請務必瞭解升級程序。大多�
 [role="lead"]
 在您開始升級Insight之前、請務必瞭解升級程序。大多數Insight版本的升級程序都相同。
 
+[NOTE]
+====
+* 升級 OnCommand Insight 之前、您必須備份資料保險箱 * 。
+
+如需詳細資訊、請參閱link:../config-admin\/security-management.html["安全性管理工具"]指示。
+
+====
 Insight升級程序包括下列高層級工作：
 
 * 正在下載安裝套件

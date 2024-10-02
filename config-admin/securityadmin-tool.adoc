@@ -1,17 +1,17 @@
 ---
-permalink: config-admin/security-management.html 
+permalink: config-admin/securityadmin-tool.html 
 sidebar: sidebar 
 keywords: SecurityAdmin, security, password, keystore, truststore, trustore, 
 summary: OnCommand Insight 的安全性管理工具包括可讓 Insight 環境以增強的安全性運作的功能、包括加密、密碼雜湊、以及變更內部使用者密碼和密碼加密和解密金鑰配對的功能。 
 ---
-= Insight Security
+= 安全性管理工具
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-OnCommand Insight 提供的功能可讓 Insight 環境以增強的安全性運作。這些功能包括加密、密碼雜湊、以及變更內部使用者密碼和密碼加密和解密金鑰配對的能力。您可以使用 securityadmin Tool 在 Insight 環境中的所有伺服器上管理這些功能。
+OnCommand Insight 提供的功能可讓 Insight 環境以增強的安全性運作。這些功能包括加密、密碼雜湊、以及變更內部使用者密碼和密碼加密和解密金鑰配對的能力。您可以使用 *securityadmin Tool* 在 Insight 環境中的所有伺服器上管理這些功能。
 
 
 
@@ -105,6 +105,8 @@ NOTE: 如果資料保險箱中的根密碼不正確、而且密碼未知、而�
 * ACQ/conf/vVault/*
 
 
+請注意 , 強烈建議您在備份 OnCommand Insight 資料庫時備份資料保險箱。
+
 
 
  a| 
@@ -124,9 +126,8 @@ NOTE: 如果資料保險箱中的根密碼不正確、而且密碼未知、而�
 
 
  a| 
-change-trust 儲存區密碼
  a| 
-變更用於信任存放區的密碼、並將新密碼儲存在資料保險箱中。信任存放區的目前密碼必須為「已知」。
+change-trust 儲存區密碼變更用於信任儲存區的密碼、並將新密碼儲存在資料保險箱中。信任存放區的目前密碼必須為「已知」。
 
 
 
@@ -203,29 +204,6 @@ change-trust 儲存區密碼
 置換鍵
  a| 
 建立新的空資料保險箱（其金鑰與現有的資料保險箱不同）。然後將項目從目前的資料保險箱複製到新的資料保險箱。然後從執行個體讀取每個加密值、使用目前資料保險箱的加密服務將其解密、使用還原的資料保險箱加密服務重新加密、並儲存重新加密的值。
-
-|===
-
-
-=== 隱藏命令
-
-SA 工具提供下列命令、這些命令不需要驗證、但必須對安裝進行協調的變更。
-
-[cols="25a,75a"]
-|===
-
-
- a| 
-清單金鑰升級（伺服器）
- a| 
-如果使用者尚未驗證、請使用目前資料保險箱中的內部帳戶和密碼進行驗證。然後以備份檔案中的資料保險箱取代目前的資料保險箱 , 並執行協調的動作。
-
-
-
- a| 
-升級（併購）
- a| 
-以備份檔案中的資料保險箱取代目前的資料保險箱 , 並執行協調的動作。
 
 |===
 

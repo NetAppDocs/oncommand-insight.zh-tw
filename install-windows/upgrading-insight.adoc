@@ -19,6 +19,13 @@ summary: 完成所有必要的工作之後、請登入Insight伺服器並執行�
 
 Insight安裝套件必須位於伺服器上。
 
+[NOTE]
+====
+* 升級 OnCommand Insight 之前、您必須備份資料保險箱 * 。
+
+如需詳細資訊、請參閱link:../config-admin\/security-management.html["安全性管理工具"]指示。
+
+====
 
 
 == 步驟

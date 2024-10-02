@@ -41,6 +41,7 @@ Rau伺服器和OnCommand Insight 支援該伺服器之間至少需要開啟一�
 ** * OnCommand Insight 《伺服器名稱或位址*》-識別OnCommand Insight 該伺服器的主機名稱或IP位址。Rau使用此名稱/IP來開啟與伺服器的通訊連結。如果您指定主機名稱、請確定它可以透過DNS解析。
 ** *擷取單位名稱*-識別Rau的唯一名稱。
 ** *《受保護的遠端擷取連接埠（HTTPS）*》-遠端擷取單元用來將環境變更資訊傳送至該伺服器的連接埠OnCommand Insight OnCommand Insight 。此設定應符合安裝OnCommand Insight 此伺服器時輸入的值、且在所有Raus上必須相同。
+** 輸入 _ 取得 _ 使用者密碼。
 
 
 . 檢閱您的選擇。按一下*上一步*即可返回並進行變更。單擊 * 下一步 * 。
@@ -55,3 +56,24 @@ Rau伺服器和OnCommand Insight 支援該伺服器之間至少需要開啟一�
 == 完成後
 
 安裝完成後、會出現最後一個視窗。按一下「*啟動遠端擷取服務*」方塊以啟動Rau、然後按一下「*完成*」以結束此作業。
+
+如果您的資料開始擷取、您都已設定好；您不需要同步伺服器和 Rau 、如下所述。
+
+
+
+== 同步伺服器與 Rau
+
+
+IMPORTANT: 如果在安裝遠端擷取單元之後資料並未開始擷取、請將 Rau 與 OnCommand Insight 伺服器同步。請遵循下列步驟：
+
+. 在 OnCommand Insight 伺服器系統上、以互動模式啟動 *securityadmin* 工具
++
+ securityadmin -i
+. 將 Insight Server 的 _Acquisition 使用者密碼變更為您選擇的密碼。* 請記下此密碼 * 、因為您將在下方要求此密碼。
+. 重新啟動伺服器 /Lau 。
+. 在遠端擷取單元（ Rau ）系統上、以互動模式啟動 * 安全管理 * 工具。您將需要上述步驟 2 中記下的密碼。
++
+ securityadmin -i
+. 將 _Acquisition 使用者的密碼變更為步驟 2 中使用的密碼。
+. 重新啟動 RAU 。
+

@@ -99,8 +99,6 @@ entries:
       entries:
       - title: 在資料倉儲升級期間保留自訂Cognos設定
         url: "/install-windows/preserving-custom-settings-when-upgrading-data-warehouse.html"
-    - title: 備份安全組態
-      url: "/install-windows/back-up-the-security-configuration.html"
     - title: 升級遠端擷取單元伺服器
       url: "/install-windows/upgrading-remote-acquisition-servers.html"
   - title: 完成升級後的工作

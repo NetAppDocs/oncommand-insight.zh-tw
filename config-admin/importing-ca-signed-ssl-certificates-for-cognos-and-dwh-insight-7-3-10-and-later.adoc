@@ -46,7 +46,8 @@ summary: 您可以新增SSL憑證、為Data倉儲和Cognos環境啟用增強的�
 . 從Cognos產生憑證加密要求。在管理CMD視窗中、執行：
 +
 .. CD `“\Program Files\sanscreen\cognos\analytics\bin”`
-.. `ThirdPartyCertificateTool.bat -java:local -c -e -p NoPassWordSet -a RSA -r c:\temp\encryptRequest.csr -d “CN=server.domain.com,O=NETAPP,C=US” -H “server.domain.com” -I “ipaddress”`。附註：此處-H和-I是新增subectAltNames、例如DNS和IP地址。
+.. `ThirdPartyCertificateTool.bat -java:local -c -e -p <password> -a RSA -r c:\temp\encryptRequest.csr -d “CN=server.domain.com,O=NETAPP,C=US” -H “server.domain.com” -I “ipaddress”`。附註：此處-H和-I是新增subectAltNames、例如DNS和IP地址。
+.. 若為 <password> 、請使用來自 __/dat/bin/cognos SANscreen 資訊 .dat 檔案的密碼。
 
 
 . 開啟 `c:\temp\encryptRequest.csr` 歸檔並複製產生的內容。
@@ -93,14 +94,16 @@ summary: 您可以新增SSL憑證、為Data倉儲和Cognos環境啟用增強的�
 . 使用管理CMD提示字元、將最新的Cognos憑證匯出至Cognos。CRT：
 +
 .. CD「'C:\Program Files\SANSANSANSANSAND"
-.. Java\BIN\keytool.exe -exportcert -file c：\temp\Cogns.crt -keystore Cognos \分析\組態\ certs\CAMKeystore -storetype PKCS12 -storepass NoPassWordSet -alias加密
+.. Java\bin\keytool.exe -exportcert -file c:\temp\Cognos 。 crt -keystore Cognos \ anature\configuration\certs\CAMKeystore -storetype PKCS12 -storepass <password> -alias 加密
+.. 若為 <password> 、請使用來自 __/dat/bin/cognos SANscreen 資訊 .dat 檔案的密碼。
 
 
 . 備份DWH伺服器信任資源``..\SANscreen\wildfly\standalone\configuration\server.trustore``
 . 使用管理CMD提示視窗、將「'c:\emp\Cognes.crt'」匯入DWH信任區、以建立Cognos與DWH之間的SSL通訊。
 +
 .. CD「'C:\Program Files\SANSANSANSANSAND"
-.. Java\BIN\keytool.exe -importcert -file c:\emp\Cognos.crt -keystore wildfly\sisonal\configuration \server.trustore -storepass changit -alias cognos3rca
+.. Java\bin\keytool.exe -importcert -file c:\temp\Cognos.crt -keystore wildfly\inold\configuration\server.trustore -storepass <password> -alias cognos3rdca
+.. 若為 <password> 、請使用來自 __/dat/bin/cognos SANscreen 資訊 .dat 檔案的密碼。
 
 
 . 重新啟動SANscreen 此服務。
@@ -108,7 +111,7 @@ summary: 您可以新增SSL憑證、為Data倉儲和Cognos環境啟用增強的�
 . 即使只變更「sSL憑證」、而且預設的Cognos憑證保持不變、仍應執行下列步驟。否則、Cognos可能會抱怨新SANscreen 的不合格證書、或無法建立DWH備份。
 +
 .. `cd “%SANSCREEN_HOME%cognos\analytics\bin\”`
-.. `“%SANSCREEN_HOME%java64\bin\keytool.exe” -exportcert -file “c:\temp\sanscreen.cer” -keystore “%SANSCREEN_HOME%wildfly\standalone\configuration\server.keystore” -storepass changeit -alias “ssl certificate”`
+.. `“%SANSCREEN_HOME%java64\bin\keytool.exe” -exportcert -file “c:\temp\sanscreen.cer” -keystore “%SANSCREEN_HOME%wildfly\standalone\configuration\server.keystore” -storepass <password> -alias “ssl certificate”`
 .. `ThirdPartyCertificateTool.bat -java:local -i -T -r “c:\temp\sanscreen.cer”`
 
 

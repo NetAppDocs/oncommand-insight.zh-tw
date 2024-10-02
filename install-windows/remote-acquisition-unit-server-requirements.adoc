@@ -22,7 +22,7 @@ summary: 您必須安裝遠端擷取單元（Rau）、才能從防火牆後的SA
  a| 
 作業系統
  a| 
-執行 64 位元 Microsoft Windows Server 2016 、 2019 或 2022 的電腦、附有最新的 Service Pack 。
+執行 64 位元 Microsoft Windows Server 2016 、 2019 或 2022 的電腦、附有最新的 Service Pack 。安裝 OnCommand Insight 之前、必須先安裝 Windows .NET Framework 3.5 版。
 
 
 

@@ -20,6 +20,9 @@ summary: 您可以使用「BIOS設定精靈」輕鬆安裝OnCommand Insight 「T
 您必須已完成所有安裝先決條件。
 
 
+NOTE: 如果您要升級 OnCommand Insight 、 * 必須先備份資料保險箱、然後再解除安裝或升級 * 您目前的版本。
+
+
 
 == 步驟
 
@@ -32,6 +35,7 @@ summary: 您可以使用「BIOS設定精靈」輕鬆安裝OnCommand Insight 「T
 +
 *最佳實務做法：*使用客戶名稱做為網站的前置詞：例如NetApp。
 
+. 輸入管理員密碼。確認密碼。
 . 在*客戶資訊：設定NetApp ASUP*視窗中、執行下列動作：
 +
 .. 選取下列其中一個選項、以選取含有您要上傳至ASUP之資料的資料庫：
@@ -90,4 +94,23 @@ ASUP是使用HTTPS傳輸協定來提供。
 視安裝的應用程式而定、安裝大約需要20分鐘。
 
 . 單擊*完成*。
+. 如果您要安裝遠端擷取單元（ Rau ）、則必須執行 securityadmin Tool 、為 _Acquisition 使用者建立密碼。安裝 Rau 時需要使用此密碼。
++
+附註：如果您已建立此密碼、則不需要如下所述同步伺服器和 Rau 。
 
+
+
+
+
+== 將伺服器與 DWH 和 Rau 同步
+
+
+IMPORTANT: 安裝遠端擷取單元和 / 或資料倉儲後、您必須將 Rau/DWH 與 OnCommand Insight 伺服器同步。請遵循下列步驟：
+
+link:../install-windows/installing-a-remote-acquisition-unit-rau.html#synchronize-server-and-rau["同步伺服器與 Rau （ Windows ）"]
+
+link:../install-windows/installing-the-oncommand-insight-data-warehouse-and-reporting.html#synchronize-server-and-dwh["同步伺服器與 DWH （ Windows ）"]
+
+link:../install-linux/installing-a-remote-acquisition-unit-rau-linux.html#synchronize-server-and-rau["同步伺服器與 Rau （ Linux ）"]
+
+link:../install-linux/installing-oncommand-insight-data-warehouse-linux.html#synchronize-server-and-dwh["同步伺服器與 DWH （ Linux ）"]

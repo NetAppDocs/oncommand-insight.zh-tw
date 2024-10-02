@@ -38,17 +38,20 @@ summary: 您必須修改OnCommand Insight 「SesvetData倉儲」組態、才能�
 . 將憑證授權單位（CA）新增至Cognos受託者。
 +
 .. 在命令視窗中、前往 `..\SANscreen\cognos\analytics\configuration\certs\`
-.. 使用 `keytool` 列出信任CA的公用程式： `..\..\ibm-jre\jre\bin\keytool.exe -list -keystore CAMKeystore.jks -storepass NoPassWordSet`
+.. 使用 `keytool`公用程式列出信任的 CA ： `..\IBM-JRE\JRE\bin\keytool.exe -list -keystore CAMKeystore.jks -storepass <password>
+
+
 +
 每行的第一個字表示CA別名。
 
++
 .. 如果不存在適當的檔案、請提供CA憑證檔案、通常是 `.pem` 檔案：
 .. 若要將客戶的CA納入OnCommand Insight 可靠的可靠CA、請前往 `..\SANscreen\cognos\analytics\configuration\certs\`。
 .. 使用 `keytool` 匯入的公用程式 `.pem` 檔案： `..\..\ibm-jre\jre\bin\keytool.exe -importcert -keystore CAMKeystore.jks -alias my_alias -file 'path/to/my.pem' -v -trustcacerts`
 +
-`my_alias` 通常是容易識別中CA的別名``keytool -list`` 營運。
+`my_alias`通常是一個別名、可在作業中輕鬆識別 CA ``keytool -list``。
 
-.. 當系統提示輸入密碼時、請輸入 `NoPassWordSet`。
+.. 當系統提示您輸入密碼時、請輸入來自 __/m/bin/Cognos SANscreen info.dat 檔案的密碼。
 .. 答 `yes` 當系統提示您信任憑證時。
 
 

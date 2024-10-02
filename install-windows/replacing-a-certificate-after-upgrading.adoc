@@ -31,7 +31,7 @@ summary: 升級後開啟OnCommand Insight 的功能會導致認證警告。由�
 
 . 列出Keystore的內容： `C:\Program Files\SANscreen\java64\bin>keytool.exe -list -v -keystore "c:\Program Files\SANscreen\wildfly\standalone\configuration\server.keystore"`
 +
-當系統提示輸入密碼時、請輸入 `changeit`。
+如需設定或變更 Keystore 密碼的詳細資訊、請參閱link:../config-admin/securityadmin-tool.html["安全性管理"]文件。
 
 +
 金鑰庫中至少應有一個憑證、 `ssl certificate`。

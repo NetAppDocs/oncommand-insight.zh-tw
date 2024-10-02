@@ -51,7 +51,7 @@ summary: 您必須修改OnCommand Insight 「支援Smart Card（CAC）」和憑�
 . 將憑證授權單位（CA）新增至資料倉儲信任庫：
 +
 .. 在命令視窗中、前往 `..\SANscreen\wildfly\standalone\configuration`。
-.. 使用 `keytool` 列出信任CA的公用程式： `C:\Program Files\SANscreen\java64\bin\keytool.exe -list -keystore server.trustore -storepass changeit`
+.. 使用 `keytool`公用程式列出信任的 CA ： `C:\Program Files\SANscreen\java64\bin\keytool.exe -list -keystore server.trustore -storepass <password>` + 如需設定或變更 server_trustore 密碼的詳細資訊、請參閱link:../config-admin/securityadmin-tool.html["安全性管理"]文件。
 +
 每行的第一個字表示CA別名。
 

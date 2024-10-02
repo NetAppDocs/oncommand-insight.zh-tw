@@ -21,29 +21,33 @@ summary: 完成所有必要的工作之後、您可以登入資料倉儲伺服�
 
 [NOTE]
 ====
-升級DWH時、會刪除包含_securityadmin_工具資料庫備份的資料夾。強烈建議在升級DWH之前備份保存庫。為供參考、預設的資料保險箱資料夾如下：
+* 升級 DWH 之前、您必須備份資料保險箱 * 。
 
-* 保存資料夾（使用中的保存庫）：``%SANSCREEN_HOME%\wildfly\standalone\configuration\vault``
-* 保存庫備份： `%SANSCREEN_HOME%\backup\vault`
-
-
-請參閱 http://ie-docs.rtp.openeng.netapp.com/oci-73_ram/topic/com.netapp.doc.oci-acg/GUID-E3351676-2088-4767-AAB5-CB1D8476291C.html?resultof=%22%76%61%75%6c%74%22%20["管理資料倉儲的安全性"] 以取得更多資訊。
+如需詳細資訊、請參閱link:../config-admin\/security-management.html["安全性管理工具"]指示。
 
 ====
 
 
 == 步驟
 
+升級 Data Warehouse 時、您必須執行下列動作：
+
+. 安裝 DWH 7.3.16 之後、請依下列順序還原資料保險箱和資料庫：
++
+.. 資料保險箱
+.. 資料庫
+
+
 . 使用具有Windows本機系統管理員權限的帳戶登入DWH伺服器。
 . 使用DWH入口網站介面備份DWH DB和報告。
-. 如果伺服器使用非預設的安全性組態、請備份安全性組態。
+. 備份資料保險箱。請參閱link:../config-admin/security-management.html["安全性管理"]文件。
 . 從伺服器解除安裝DWH軟體。
 . 重新啟動伺服器、從記憶體中移除元件。
 . 在伺服器上安裝新版DWH。
 +
 安裝約需2小時。最佳做法是選擇所有預設值。
 
-. 將非預設的安全性組態還原至DWH伺服器。
+. 將資料保險箱還原至 DWH 伺服器。
 . 將DWH資料庫還原至伺服器。
 
 

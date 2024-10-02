@@ -13,4 +13,11 @@ summary: 如有需要、您可以解除安裝OnCommand Insight 這些元件。�
 [role="lead"]
 如有需要、您可以解除安裝OnCommand Insight 這些元件。您必須OnCommand Insight 個別解除安裝這些元件。
 
+[NOTE]
+====
+* 強烈建議在解除安裝 OnCommand Insight 之前備份資料保險箱 * 。
+
+如需詳細資訊、請參閱link:../config-admin\/security-management.html["安全性管理工具"]指示。
+
+====
 每個元件都會個別解除安裝。

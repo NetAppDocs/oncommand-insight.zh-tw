@@ -13,4 +13,11 @@ summary: 在升級之前、您應該先備份資料倉儲OnCommand Insight 和�
 [role="lead"]
 在升級之前、您應該先備份資料倉儲OnCommand Insight 和還原資料庫。升級需要備份Data倉儲資料庫、以便稍後在升級程序中還原資料庫。Insight的就地升級會備份資料庫、不過您應該在升級之前備份資料庫、以作為最佳實務做法。
 
+[NOTE]
+====
+* 升級 OnCommand Insight 之前、您必須備份資料保險箱 * 。
+
+如需詳細資訊、請參閱link:../config-admin\/security-management.html["安全性管理工具"]指示。
+
+====
 為了避免資料誤報、您應該在備份Insight資料庫之前、先備份Data倉儲資料庫。此外、如果您有測試環境、建議您務必先還原備份、再繼續升級。

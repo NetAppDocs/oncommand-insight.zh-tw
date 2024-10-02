@@ -13,6 +13,13 @@ summary: 您可以在OnCommand Insight 登入伺服器後檢查是否有更新�
 [role="lead"]
 您可以在OnCommand Insight 登入伺服器後檢查是否有更新的功能。
 
+[NOTE]
+====
+強烈建議您在升級 OnCommand Insight 之前先備份資料保險箱和資料庫。
+
+如需有關資料保險箱的詳細資訊、請參閱link:../config-admin\/security-management.html["安全性管理工具"]指示。
+
+====
 
 
 == 步驟

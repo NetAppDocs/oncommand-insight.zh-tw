@@ -17,6 +17,13 @@ summary: 您可以使用所提供的檢查清單、在準備升級時記錄您�
 
 == 準備升級的檢查清單（必填）
 
+[NOTE]
+====
+* 升級 OnCommand Insight 之前、您必須備份資料保險箱 * 。
+
+如需詳細資訊、請參閱link:../config-admin\/security-management.html["安全性管理工具"]指示。
+
+====
 |===
 
 

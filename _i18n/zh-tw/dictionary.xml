@@ -56,7 +56,6 @@
   <block id="b1ff5704b48e42d700d43961dd415064" category="doc">商標</block>
   <block id="a93bc0a57623c2facaa010825c808507" category="paragraph"><block ref="a93bc0a57623c2facaa010825c808507" category="inline-link-rx"></block></block>
   <block id="44255ed683c528ba0c41166a56d37b96" category="summary">此解決方案可簡化混合式IT基礎架構的作業管理、適用於內部部署環境、以及公有雲和私有雲OnCommand Insight 。</block>
-  <block id="086156bc9cbd8e4be148e68dde15c618" category="doc">資訊文件OnCommand Insight</block>
   <block id="db5eb84117d06047c97c9a0191b5fffe" category="section-title">支援</block>
   <block id="85bb29b6974d74c0f5e52c1e2c5e5b9e" category="summary">使用命令列安裝支援OnCommand Insight 。</block>
   <block id="376a187b7d9e2058cf562785bebc5f68" category="doc">安裝OnCommand Insight The功能</block>
@@ -1622,7 +1621,6 @@
   <block id="82b48650bef5d4cf1577fa4ab65da01b" category="list-text">如果「DB2使用者」是_本機_使用者、您必須具備下列條件：</block>
   <block id="e5c91feeac6b579e37af50aa512238f2" category="list-text">使用者的使用者名稱和密碼、以DB2使用者身分執行。如果此使用者不存在、安裝將會建立此使用者。</block>
   <block id="ffc4c51a24ebf1f8f5efd3f5e4a1c095" category="list-text">[附註]</block>
-  <block id="0c2e9b6e6aa7cb3ddda85f78acec808e" category="paragraph">DB2使用者名稱和Windows登入名稱具有下列限制：*有效字元為：「A」至「Z」；「A」至「z」；「0」至「9」；「#」；「@」； '_'；'!'；'('；')'；'{'； 「｝」；「-」；及「.」。*如果使用特殊字元「！」；「（」；「）」；「｛」；「｝」； '-'；及'.' 使用者名稱必須使用全部大寫字母。*字串中的第一個字元必須是字母字元@、#或$；不能是數字或字母順序_SYS_、_DBM_或_IBM_*、長度不得超過128個位元組。*不得為使用者、系統管理員、訪客、公共、本機或任何SQL保留字。</block>
   <block id="738522fddc75560e280b30db3e0be296" category="list-text">DB2使用者不能與執行安裝的使用者相同。</block>
   <block id="f181c0f7be710a9dbf18b4428db454ce" category="list-text">使用具有管理員權限的帳戶登入資料倉儲伺服器。</block>
   <block id="f31255441841d799ec9583c33ef9aad2" category="list-text">下載Data Warehouse with Reporting .zip檔案、並將檔案解壓縮至安裝資料夾。</block>
@@ -1770,7 +1768,6 @@
   <block id="e78b597a7f3a4a98338cff74f8dff14b" category="paragraph">您的系統必須符合最低加密位元層級（1024位元）。</block>
   <block id="3938a7dd369f5b456fecfdcd1f016fc5" category="paragraph">認證警告不會影響系統的使用性。在訊息提示下、您可以指出您瞭解風險、然後繼續使用Insight。</block>
   <block id="87fa78fb7919c373e3a41005a63c6a39" category="list-text">列出Keystore的內容：<block ref="76a629a352cbae035ab5cecf567da259" prefix=" " category="inline-code"></block></block>
-  <block id="759804645d00adff9eb773aec5bd4f1a" category="paragraph">當系統提示輸入密碼時、請輸入<block ref="b91cd1a54781790beaa2baf741fa6789" prefix=" " category="inline-code"></block>。</block>
   <block id="2a70d3160efbf7dd3904037d4b71c31c" category="paragraph">金鑰庫中至少應有一個憑證、<block ref="2f14d50daa934408ff667debf9d977e9" prefix=" " category="inline-code"></block>。</block>
   <block id="7fb8516ecde4c6bc0884f96d8fc8465c" category="list-text">刪除<block ref="2f14d50daa934408ff667debf9d977e9" prefix=" " category="inline-code"></block>：<block ref="e61120ef06034f84c392d9467d17eb01" prefix=" " category="inline-code"></block></block>
   <block id="a3676dff8aa4c49d4b7945bf09c3492b" category="list-text">產生新金鑰：<block ref="df6cc6b33f3bb26a2b192edba739e691" prefix=" " category="inline-code"></block></block>
@@ -1797,19 +1794,13 @@
   <block id="0e633d8f24d81b8d2903e5bd108cd160" category="summary">完成所有必要的工作之後、您可以登入資料倉儲伺服器、然後執行安裝套件來完成升級。</block>
   <block id="0ff090b1b1a60051c892dcd3504847a3" category="doc">升級資料倉儲</block>
   <block id="37c99511f0256de4a77204d84a119ba7" category="paragraph">資料倉儲（DWH）不支援即時升級。請使用下列步驟升級至DWH軟體的新版本。</block>
-  <block id="d063dfe18619a883025d6dd40f8fc195" category="paragraph">升級DWH時、會刪除包含_securityadmin_工具資料庫備份的資料夾。強烈建議在升級DWH之前備份保存庫。為供參考、預設的資料保險箱資料夾如下：</block>
-  <block id="c9a69c0764bcfc70f9b9e4b3c3b1364e" category="list-text">保存資料夾（使用中的保存庫）：<block ref="95be2c10e53cc73f6028d2d5d12cdd62" prefix="" category="inline-code"></block></block>
-  <block id="79f560a2ab2d6eec57f476895256dd3c" category="list-text">保存庫備份：<block ref="d649d842d7b9b318e0432437a926bfb0" prefix=" " category="inline-code"></block></block>
   <block id="2a376bb95e9f9290d451675ea81a6d26" category="inline-link">管理資料倉儲的安全性</block>
-  <block id="bcb31d6b2e54004f6d43f5fd9ec172b4" category="paragraph">請參閱<block ref="7f3370a6df5397120827b2e0fbf9e0aa" category="inline-link-rx"></block> 以取得更多資訊。</block>
   <block id="63dd4f2a28008d836776c7fd306628a7" category="list-text">使用具有Windows本機系統管理員權限的帳戶登入DWH伺服器。</block>
   <block id="617fe155bd7ad7f894fcada029768f82" category="list-text">使用DWH入口網站介面備份DWH DB和報告。</block>
-  <block id="7e49ef41446de457f8fa42c4ec7d3def" category="list-text">如果伺服器使用非預設的安全性組態、請備份安全性組態。</block>
   <block id="dd4ae90cccfad505a78c8fc8d40afb6e" category="list-text">從伺服器解除安裝DWH軟體。</block>
   <block id="9fa12f171ca52b6f6a596cf63d280bde" category="list-text">重新啟動伺服器、從記憶體中移除元件。</block>
   <block id="8ff1c2354dd0ca69214eb647dc050bdc" category="list-text">在伺服器上安裝新版DWH。</block>
   <block id="52948cc8a9826727670f3245e5603390" category="paragraph">安裝約需2小時。最佳做法是選擇所有預設值。</block>
-  <block id="babb1a298f24ef83f173464efcfca407" category="list-text">將非預設的安全性組態還原至DWH伺服器。</block>
   <block id="de6386722d9194dda29f674626b32883" category="list-text">將DWH資料庫還原至伺服器。</block>
   <block id="34ee46f5c70d35071cf5854b32f2322d" category="paragraph">升級之後、您必須還原Data倉儲資料庫、這可能需要比升級更長或更長的時間。</block>
   <block id="aba05ad896ee451e78ad11ae6d00a6e0" category="paragraph">在進行升級時、客戶切換至不同的Insight伺服器並不罕見OnCommand Insight 。如果您已變更Insight伺服器、在還原資料倉儲資料庫之後、現有的連接器會指向先前的伺服器IP位址或主機名稱。最佳做法是刪除連接器並建立新的連接器、以避免可能的錯誤。</block>
@@ -2496,13 +2487,10 @@
   <block id="92f45190ae635c18a35e9c2d3dfd1167" category="paragraph">此程序適用於執行OnCommand Insight 支援更新版本的系統。</block>
   <block id="5201bc8ef38b5c0be4c3b4f97fb13fbe" category="list-text">將憑證授權單位（CA）新增至Cognos受託者。</block>
   <block id="eb205e993122b3f2203a7c7a20bf073c" category="list-text">在命令視窗中、前往<block ref="47d51740945d7f9a7ac85ac6fd415da5" prefix=" " category="inline-code"></block></block>
-  <block id="b2c4b25f4381e1a2cd49e9e1ead8160d" category="list-text">使用<block ref="64392b8d1e3ba08576d89af33ed6cea9" prefix=" " category="inline-code"></block> 列出信任CA的公用程式：<block ref="e03d7ecc74f3841b2314c5e23c98d8ad" prefix=" " category="inline-code"></block></block>
   <block id="0b8f9c9ddf524d6e7dc0504b71ac3edf" category="paragraph">每行的第一個字表示CA別名。</block>
   <block id="0039da7e48c7ac5da9e2716e042b994c" category="list-text">如果不存在適當的檔案、請提供CA憑證檔案、通常是<block ref="bdf46f9562b038d0163af0feba0b1dfa" prefix=" " category="inline-code"></block> 檔案：</block>
   <block id="982a29a9fbe3bfee5b2fb69d0a49639c" category="list-text">若要將客戶的CA納入OnCommand Insight 可靠的可靠CA、請前往<block ref="47d51740945d7f9a7ac85ac6fd415da5" prefix=" " category="inline-code"></block>。</block>
   <block id="4069d49531ab9cf349fe6a1261c62384" category="list-text">使用<block ref="64392b8d1e3ba08576d89af33ed6cea9" prefix=" " category="inline-code"></block> 匯入的公用程式<block ref="bdf46f9562b038d0163af0feba0b1dfa" prefix=" " category="inline-code"></block> 檔案：<block ref="8cd647637e0ddc46a5d7164ef93cccaf" prefix=" " category="inline-code"></block></block>
-  <block id="b422d680d6e0078b27e59604791cfd1a" category="paragraph"><block ref="65a076030818b385ff494c6bc4ba5707" prefix="" category="inline-code"></block> 通常是容易識別中CA的別名<block ref="ffada47d849d7cba2ebbf32039b9a430" prefix="" category="inline-code"></block> 營運。</block>
-  <block id="f9ebeb58036bdcd031f9e46fb45e5856" category="list-text">當系統提示輸入密碼時、請輸入<block ref="9c8299cfba19467458d7048c5fa7d7d9" prefix=" " category="inline-code"></block>。</block>
   <block id="ea05d2b7f408bf3d2b54f17dbc610ecf" category="list-text">答<block ref="a6105c0a611b41b08f1209506350279e" prefix=" " category="inline-code"></block> 當系統提示您信任憑證時。</block>
   <block id="57defb40c798f71ed1024d2b21c6f07d" category="list-text">若要啟用CAC模式、請執行下列步驟：</block>
   <block id="f74186972938597a7faf9b5564793524" category="list-text">使用下列步驟設定CAC登出頁面：</block>
@@ -2675,8 +2663,6 @@
   <block id="36677f555f88873d5fa38e3cc19f0042" category="paragraph">您必須知道已在LDAP網域中針對Insight設定的使用者和群組屬性。</block>
   <block id="48969889af4dc8a9fd201f6c24ead314" category="paragraph">支援透過Microsoft Active Directory伺服器的LDAP和LDAPS OnCommand Insight 。其他LDAP實作可能仍可運作、但尚未符合Insight資格。此程序假設您使用的是Microsoft Active Directory版本2或3 LDAP（輕量型目錄存取傳輸協定）。</block>
   <block id="2d53cded4163b6580d04629b69121b81" category="paragraph">LDAP使用者與本機定義的使用者一起顯示在*管理*&gt;功能表：設定[使用者]清單中。</block>
-  <block id="f5a20139a00a267882fc16a454c41976" category="list-text">捲動至LDAP區段、如下所示。</block>
-  <block id="b386d7a46a1b497f4df55bf480b671e7" category="image-alt">LDAP設定</block>
   <block id="577f29802170304954a82cc36b337db7" category="list-text">按一下*「啟用LDAP*」以允許LDAP使用者驗證與授權。</block>
   <block id="0281ad4452eb507038954f4f6039eb56" category="list-text">填寫欄位：</block>
   <block id="044f9074bf19b6016ad5acab23764bb9" category="list-text"><block ref="d8504c66dbb60123fbbf5e2f16a8d866" prefix="" category="inline-code"></block>：Insight接受以逗號分隔的LDAP URL列表。Insight會嘗試連線至提供的URL、但不驗證LDAP傳輸協定。</block>
@@ -2857,31 +2843,7 @@
   <block id="89b807c612a641b6b17572be567a7bed" category="list-text">qtree</block>
   <block id="b19292cad601553e06435e12582db069" category="list-text">虛擬機器</block>
   <block id="84b0309095a6646558293a3507208c1e" category="list-text">區域成員</block>
-  <block id="b0d9596ea0f6d1971a480d38a91d404f" category="summary">7.3.1版OnCommand Insight 的功能介紹安全功能、可讓Insight環境以增強的安全性運作。這些功能包括加密、密碼雜湊、以及變更加密和解密密碼的內部使用者密碼和金鑰配對的能力。您可以在Insight環境中的所有伺服器上管理這些功能。</block>
   <block id="dc396a5c16ffc81f2bf1b9cf04d3be22" category="doc">Insight Security</block>
-  <block id="e5b8c26769a57497cd0405722a44be63" category="paragraph">Insight的預設安裝包括安全性組態、讓您環境中的所有站台共用相同的金鑰和相同的預設密碼。為了保護敏感資料、NetApp建議您在安裝或升級後變更預設金鑰和擷取使用者密碼。</block>
-  <block id="a5edb97398e7d5a08c2891c614679390" category="paragraph">資料來源加密密碼儲存在Insight Server資料庫中。伺服器具有公開金鑰、當使用者在WebUI資料來源組態頁面中輸入密碼時、會加密這些密碼。伺服器沒有解密儲存在伺服器資料庫中的資料來源密碼所需的私密金鑰。只有擷取單位（Lau、Rau）擁有解密資料來源密碼所需的資料來源私密金鑰。</block>
-  <block id="5b167c00b4cea056d00dede9ae3aafbd" category="section-title">重新輸入伺服器金鑰</block>
-  <block id="cf564c8539cb7d07e82c41ca1029e242" category="paragraph">使用預設金鑰會在您的環境中引進安全性弱點。根據預設、資料來源密碼會加密儲存在Insight資料庫中。加密時會使用所有Insight安裝通用的金鑰。在預設組態中、傳送至NetApp的Insight資料庫包含理論上可由NetApp解密的密碼。</block>
-  <block id="d056987cec9890c85832108da69770a9" category="section-title">變更擷取使用者密碼</block>
-  <block id="47abfd3cf84087bb168f3e87acb39d14" category="paragraph">使用預設的「擷取」使用者密碼會在您的環境中引入安全性弱點。所有擷取設備都會使用「擷取」使用者與伺服器通訊。使用預設密碼的Raus理論上可以使用預設密碼連線至任何Insight伺服器。</block>
-  <block id="f24e839c52e7d6d17545ee4e29f7db51" category="section-title">升級與安裝考量</block>
-  <block id="f34f4da3ecad57724d33e1e38e93e1e3" category="paragraph">如果Insight系統包含非預設的安全性組態（您已重新輸入或變更密碼）、則必須備份安全性組態。安裝新軟體、或在某些情況下升級軟體、會將系統還原為預設的安全組態。當系統恢復為預設組態時、您必須還原非預設組態、系統才能正常運作。</block>
-  <block id="93e58e098991c399f4036e7af54296ce" category="section-title">在複雜的服務供應商環境中管理金鑰</block>
-  <block id="a9f2795724ac1c91c875ccbb39563f71" category="paragraph">服務供應商可以託管OnCommand Insight 多個收集資料的客戶。這些金鑰可防止Insight伺服器上的多個客戶未經授權存取客戶資料。每位客戶的資料都受到其特定金鑰配對的保護。</block>
-  <block id="b865cef7b2e92d726dab264f22b65ee0" category="paragraph">Insight實作可設定如下圖所示。</block>
-  <block id="f7f76e72928d6658590ed09068349de5" category="image-alt">服務供應商金鑰</block>
-  <block id="e17c564bef82a445472b60526984525f" category="paragraph">您需要在此組態中為每位客戶建立個別的金鑰。客戶A需要兩個Raus相同的金鑰。客戶B需要一組金鑰。</block>
-  <block id="84506c8c4172ce240cb523f8e603d4d9" category="paragraph">您將採取哪些步驟來變更客戶A的加密金鑰：</block>
-  <block id="130ba24391a7e8d255b15a3bc20c53f7" category="list-text">遠端登入裝載RAU1的伺服器。</block>
-  <block id="ba0c922884b29460fe3aef86d29c4a68" category="list-text">啟動安全性管理工具。</block>
-  <block id="5e07c6a1670364591b29c61684e35b54" category="list-text">選取變更加密金鑰以取代預設金鑰。</block>
-  <block id="a4eb7815a237bffec6505f82290f791f" category="list-text">選取備份以建立安全性組態的備份壓縮檔。</block>
-  <block id="52da3b25df090851fd140ca0af278d66" category="list-text">遠端登入裝載RAU2的伺服器。</block>
-  <block id="51a6c5dff40e98caca0a271e985752e5" category="list-text">將安全組態的備份壓縮檔複製到RAU2。</block>
-  <block id="9e0731f37e1329ffa666fa8b7460ae74" category="list-text">將安全備份從RAU1還原至目前的伺服器。</block>
-  <block id="4d33e3aa37cb0836888bcf79a725a358" category="paragraph">變更客戶B加密金鑰的步驟：</block>
-  <block id="d3af6fb93f78e32b00be499e32e1e130" category="list-text">遠端登入裝載RAU3的伺服器。</block>
   <block id="d8a518871baf1a0cd13c201007b16ce9" category="summary">您可以定義企業實體、以更精細的層級追蹤及報告環境資料。資產頁面的「使用者資料」區段可讓您變更指派給資產的企業實體、或是從資產中移除企業實體。</block>
   <block id="8006e257f93db5b1937f59f9c35fa5ce" category="doc">使用「使用者資料」區段來指派或修改商業實體</block>
   <block id="bca860382cbf07c7fcc904e21ff880bc" category="list-text">按一下*儀表板*、選取*資產儀表板*、找出資產名稱、然後按一下。隨即顯示「資產」頁面。</block>
@@ -3193,22 +3155,7 @@
   <block id="a7b579a25b5d41da716ab5133bb4ef4c" category="paragraph">您可以使用<block ref="4924cdf1992856713a11ebac184ceb81" prefix=" " category="inline-code"></block> 管理安全性的工具：</block>
   <block id="ae5ec4adfd829d0ce42eda85f1bf19f3" category="list-text">Windows -<block ref="09b50f27173fab90f2f09515f3322532" prefix=" " category="inline-code"></block></block>
   <block id="6d43f414975e3172b0e6b0387f3c9660" category="list-text">Linux -<block ref="9363a944a51c65486664aed0f6e192fa" prefix=" " category="inline-code"></block></block>
-  <block id="2d805e40f048f8ac5921fd582a426f41" category="list-text">遠端登入資料倉儲伺服器。</block>
-  <block id="1e0243d49be54f99f7eef9855a7cee80" category="paragraph">系統會要求登入認證資料。</block>
-  <block id="445ee2e4288af83712e4c04825cf6c34" category="list-text">輸入具有「admin」認證的帳戶使用者名稱和密碼。</block>
-  <block id="c10f995fef645bfed0597a66f5e22e68" category="paragraph">系統會顯示資料倉儲的安全管理功能表：</block>
-  <block id="ad52c55c1186c01cd67df056c7652971" category="list-text">*備份*</block>
-  <block id="71f2ec507a9f990be82fc7e46457e674" category="paragraph">建立包含所有密碼和金鑰的資料保險箱備份壓縮檔、並將檔案放置在使用者指定的位置、或是預設位置：</block>
-  <block id="653705cc37796eb20b95b4ae6be0fddd" category="list-text">Windows -<block ref="6185ae679572d880e43ae94bee7ccc80" prefix=" " category="inline-code"></block></block>
-  <block id="4b2062bd7a4f4632199a058501a407d8" category="list-text">Linux -<block ref="43fa4273f6caa83af83378022c88b9b6" prefix=" " category="inline-code"></block></block>
-  <block id="aa1ec7cb01562da3b2fe6b08d32a8cc3" category="list-text">*還原*</block>
-  <block id="0de47ee5de6bc6440821ee27a42c53ee" category="paragraph">還原所建立之資料保存庫的壓縮備份。還原之後、所有密碼和金鑰都會還原為建立備份時的現有值。</block>
-  <block id="08416cac58e00534d1fb6a4e51841b7b" category="paragraph">還原可用於同步多個伺服器上的密碼和金鑰、例如：-變更一部伺服器上的加密金鑰-建立資料庫備份-將資料庫備份還原至第二部伺服器</block>
   <block id="26b17225b626fb9238849fd60eabdf60" category="paragraph">+</block>
-  <block id="cbe69276a5f8ac6078226b78fe8b77ce" category="list-text">*變更加密金鑰*</block>
-  <block id="278bad3681be22ad49e66628599c98f0" category="paragraph">變更用於加密或解密密碼的DWH加密金鑰、例如連接器密碼和SMPT密碼。</block>
-  <block id="6452df111f6cd67c3e3dc44b19723518" category="list-text">*更新密碼*</block>
-  <block id="8f0abb8a69f3f76fdbc929fb22e81382" category="paragraph">變更特定使用者帳戶的密碼。</block>
   <block id="bb0ec0d040c15cc1966364daaddca611" category="list-text">內部_</block>
   <block id="b61259ea2cb15785f049428a202b425f" category="list-text">Cogns_admin</block>
   <block id="3be8160fe30b74ee9ca2c935eddc1392" category="list-text">dwh</block>
@@ -3216,11 +3163,6 @@
   <block id="4ee3992cf2c1e96c768a535eeea0c754" category="list-text">dwhuser</block>
   <block id="85cf4e6d42a71e693fd780c8b29accdd" category="list-text">主機</block>
   <block id="63a9f0ea7bb98050796b649e85481845" category="list-text">根</block>
-  <block id="880f53fa156a5ea863c6fb04deffc34f" category="paragraph">當您變更dwhuser、hosts、inventory或root密碼時、您可以選擇使用SHA-256密碼雜湊。此選項需要所有存取帳戶的用戶端都使用SSL連線。</block>
-  <block id="77428ceb24ba07e196166065585704a4" category="list-text">*重設為預設值*</block>
-  <block id="c6b61342182772ead8b800863ecfda6e" category="paragraph">將加密金鑰和密碼重設為預設值。預設值為安裝期間提供的值。</block>
-  <block id="444316a65f8562dac9ea2de5bb9d051e" category="list-text">*退出*</block>
-  <block id="64c20389c59e3bc6de8e4bcdfcbd89f2" category="paragraph">結束<block ref="4924cdf1992856713a11ebac184ceb81" prefix=" " category="inline-code"></block> 工具：</block>
   <block id="4cb0b7445e1c297bb70f124559ad7756" category="summary">擁有安全環境的客戶需要與NetApp客戶服務部門溝通、以便在不影響資料庫資訊的情況下疑難排解所產生的問題。利用此功能、您可以OnCommand Insight 設定完整的關鍵字與模式字典、以便「清除」敏感資料、並將清理的檔案傳送給客戶支援部門。</block>
   <block id="a944fd102cd4cbadee81a2a72ba90a2d" category="doc">資料清理、以便傳輸至支援部門</block>
   <block id="682c65a39f3cea50bfcf4b1a70c38862" category="list-text">在Web UI中、按一下「*管理*」、然後選取「*疑難排解*」。</block>
@@ -3527,12 +3469,6 @@
   <block id="d681be6d9db8fc40c143215eeb1b37d4" category="list-text">若要變更使用者資訊、請從清單中選取使用者、然後按一下使用者說明右側的*編輯使用者帳戶*符號。</block>
   <block id="57be1d1b72d1c40a6cfeb399920c4f25" category="list-text">若要從OnCommand Insight 這個系統移除使用者、請從清單中選取使用者、然後按一下使用者說明右側的*刪除使用者帳戶*。</block>
   <block id="1f950ca38f02b58cfb6ffef3012dc064" category="paragraph">當使用者登入OnCommand Insight 到NetApp時、伺服器會先嘗試透過LDAP驗證（如果已啟用LDAP）。如果OnCommand Insight 無法在LDAP伺服器上找到使用者、則會在本機Insight資料庫中搜尋。</block>
-  <block id="5b62ed1f83211ba9dbc7165c0752bb25" category="doc">設定Cognos以登入智慧卡和憑證（OnCommand Insight 從版本號到版本號7.3.9）</block>
-  <block id="ad1486be0e9286cf5d22e5662176ff2f" category="paragraph">此程序適用於執行OnCommand Insight VMware 7.3.5到7.3.9的系統。</block>
-  <block id="6a3873737d5a703cbec7b6a984173b3f" category="list-text">使用<block ref="64392b8d1e3ba08576d89af33ed6cea9" prefix=" " category="inline-code"></block> 列出信任CA的公用程式：<block ref="e5a2f1030b7553cb67ebd30f5475a53b" prefix=" " category="inline-code"></block></block>
-  <block id="d8f089dd97205aad8edc4408ae64729a" category="list-text">使用<block ref="64392b8d1e3ba08576d89af33ed6cea9" prefix=" " category="inline-code"></block> 匯入的公用程式<block ref="bdf46f9562b038d0163af0feba0b1dfa" prefix=" " category="inline-code"></block> 檔案：<block ref="a24502edd714c6709b0187bc9498872e" prefix=" " category="inline-code"></block></block>
-  <block id="417929fd03cad0c1f483099ef8b451df" category="list-text">若要啟用CAC模式、請執行<block ref="18ae016acb7b801873619b542d263ab6" prefix=" " category="inline-code"></block></block>
-  <block id="58f139f85104244104dd2daea57992d4" category="list-text">若要停用CAC模式、請執行<block ref="65e443b2598053db6bcae11524de03a4" prefix=" " category="inline-code"></block></block>
   <block id="d2cc523695a5e8edc4222762156c4d33" category="summary">安全性原則可能需要您在OnCommand Insight 您的環境中變更密碼。某部伺服器上的某些密碼存在於環境中的不同伺服器上、需要您變更兩部伺服器上的密碼。例如、當您變更Insight Server上的「詳細目錄」使用者密碼時、您必須符合Data倉儲伺服器連接器上針對該Insight Server所設定的「詳細目錄」使用者密碼。</block>
   <block id="cec508381cd38c96e79a8afc25d4e84d" category="doc">變更OnCommand Insight 內部使用者密碼</block>
   <block id="1d3c1d99933fd99c6104a83115c4e035" category="paragraph">安全性原則可能需要您在OnCommand Insight 您的環境中變更密碼。某部伺服器上的某些密碼存在於環境中的不同伺服器上、需要您變更兩部伺服器上的密碼。例如、當您變更Insight Server上的「Inventory」使用者密碼時、您必須符合Data倉儲伺服器Connector上針對該Insight Server所設定的「Inventory」使用者密碼。</block>
@@ -3798,17 +3734,10 @@
   <block id="7c2bb576d2bdb3fddcede284c8193594" category="list-text">IOPS：所有磁碟的IOPs總和、可為此儲存資源池提供容量。</block>
   <block id="2874762702c5c98a83b2476d88a9e3a7" category="list-text">處理量：所有磁碟的總處理量、可為此儲存資源池提供容量。</block>
   <block id="2937cf5b3aef73d7472d5d30890503fa" category="summary">您可以新增SSL憑證、為Data倉儲和Cognos環境啟用增強的驗證和加密功能。</block>
-  <block id="0852b1df73bb603bbbf65c6fb1857cf9" category="doc">匯入Cognos和DWH的CA簽署SSL憑證（Insight 7.3.5至7.3.9）</block>
-  <block id="29d91b457177c87c568f8d8b5f924dc5" category="paragraph">此程序適用於執行OnCommnand Insight 7.3.5到7.3.9的系統。</block>
   <block id="b1e2f6e60ca5aed248bcdc5d43a46f5e" category="paragraph">您必須擁有管理權限才能執行此程序。</block>
-  <block id="7ccf81f1fe3427be9a03ba44ffecfc08" category="list-text">建立的備份<block ref="814293a559d07f9e68fdaac355b60ba3" prefix=" " category="inline-code"></block>。</block>
-  <block id="35ada12dd772fa49b03b8ab77f0484f0" category="list-text">在下建立「certs」和「'csk'」資料夾的備份<block ref="b3ef8fa79390a864881fbf6e020e783c" prefix=" " category="inline-code"></block>。</block>
   <block id="4e812eea5e14ed776139fecf8cc776c4" category="list-text">從Cognos產生憑證加密要求。在管理CMD視窗中、執行：</block>
   <block id="e45cdd8cf68764615646b754671dc0f1" category="list-text">CD<block ref="83057408c302951ae258fd581bb40e7a" prefix=" " category="inline-code"></block></block>
-  <block id="eaf037ade57806ae5c506d61363fc0b3" category="list-text"><block ref="66fbeece7438b76844e23002747f5abb" prefix="" category="inline-code"></block></block>
   <block id="ebf05b7ddf62a8eb95aa44e58615c6b9" category="list-text">開啟<block ref="02f76d3b63494cdd808b9bd651c9c0b8" prefix=" " category="inline-code"></block> 歸檔並複製產生的內容。</block>
-  <block id="16df5dac47cf83db8220ac4d764c6c99" category="list-text">將加密Request。CSR傳送至憑證授權單位（CA）以取得SSL憑證。</block>
-  <block id="7a3f0b10a655d33b1b863d6879282742" category="paragraph">請務必新增其他屬性、例如「「：DNS = FQDN」（例如、hostname.netapp.com)`"以新增SubjectAltName。Google Chrome 58版及更新版本會抱怨憑證中是否遺漏SubjectAltName。</block>
   <block id="35943023e14122f48d800c7e4c6b9a3b" category="list-text">使用PKCS7格式加入根憑證、即可下載鏈結憑證</block>
   <block id="a9b3d80ef8f35dbfd79a1a88fe4e30ed" category="paragraph">這會下載FQDN。p7b檔案</block>
   <block id="79cfa9a142978793fd5b4b88fcc033d4" category="list-text">從CA取得.p7b格式的憑證。使用名稱將其標示為Cognos Webserver的憑證。</block>
@@ -3818,27 +3747,16 @@
   <block id="705abfcffb7e56b92380fcb069c55e26" category="list-text">在根CA上按一下滑鼠右鍵&gt;「All Tasks（所有工作）」&gt;「Export（匯出</block>
   <block id="a0ecbbc4f239a9e8db7144a1221a67bd" category="list-text">選取Base64輸出。</block>
   <block id="53e3047826118cc0d9c73551780732ca" category="list-text">輸入檔案名稱、將其識別為根憑證。</block>
-  <block id="2a6f79a205d5596c0c69f9a2e4064a4a" category="list-text">重複步驟8a到8c、分別將所有憑證匯出至.cer檔案。</block>
   <block id="bb736f20e611d5e6c1af52246bc6c86d" category="list-text">將檔案命名為merginate.cer和Cogns.cer。</block>
   <block id="1bbd5e28bd81a79111348e198d0878b0" category="list-text">如果您只有一個CA憑證、請忽略此步驟、否則請將root.cer和merinateX.cer合併成一個檔案。</block>
-  <block id="46b2c642f1a2058e235bc04cc6907984" category="list-text">使用「記事本」開啟mintermed.cer並複製內容。</block>
-  <block id="58c4900fac7b8fcbf67daf95de91f5f3" category="list-text">使用「記事本」開啟root.cer、並儲存9a的內容。</block>
-  <block id="2352c70fbc5653d3a12dfcb10489b8ec" category="list-text">將檔案另存為CA.cer。</block>
   <block id="aec660d6840076874d3a831e453282cc" category="list-text">使用管理CMD提示將憑證匯入Cognos Keystore：</block>
   <block id="0ce1060a3fbe5eddae7e8c8add40c26c" category="list-text">CD「Program Files\SANSANSANSANSANSANPC\Cognos /分析\BIN'」</block>
-  <block id="69108880ddac3f744816fd308054d24b" category="list-text">ThirdPartyCertificateTool.bat -Java:local -I -T -r c：\temp\ca.cer</block>
-  <block id="e9235d19fe071e12c01b5cd56f1da098" category="paragraph">這會將CA.cer設為根憑證授權單位。</block>
-  <block id="0d153f36463b00d3b0632778773f2920" category="list-text">ThirdPartyCertificateTool.bat -Java:local -i -e -r c：\emp\Cogns.cer -t c：\emp\ca.cer</block>
-  <block id="b2d3112a307dfa5d9f0a457cbbb5c4ee" category="paragraph">這會將Cogns.cer設為由CA.cer簽署的加密憑證。</block>
   <block id="878dd328a326af64c673d31f2b112978" category="list-text">開啟IBM Cognos組態。</block>
   <block id="986315603422cbcfeab3c771a468c7ba" category="list-text">選取「本機組態」-&gt;「安全性」-&gt;「密碼編譯」-&gt;「Cognos」</block>
   <block id="b94acbb57403cfcc401cd53a69326355" category="list-text">變更「Use third party CA？」 為真。</block>
   <block id="25812ed1432cfe46632186b5957ebe26" category="list-text">儲存組態。</block>
   <block id="b95654abc76791ffe05131877717f64e" category="list-text">重新啟動Cognos</block>
   <block id="8c56e576029e9e5d76102044606eb747" category="list-text">使用管理CMD提示字元、將最新的Cognos憑證匯出至Cognos。CRT：</block>
-  <block id="f47ab624eb68bba4772ca7ef7e41232e" category="list-text">「d:\Program Files\SANSANSANSANSANP\Java\BIN\keytool.exe」-exportcert -file「'c:\temp\Cogns.crt」-keystore「d:\Program Files\SANSANSANSANSANsce\Cognos \analystation\configuration \certs\CAMKeystore」-storeetype PKCS12 -storeNoPassSet Word-alias加密</block>
-  <block id="91f0b2ee4b1e2130ca4bff1ba9891d0c" category="list-text">使用管理CMD提示視窗、將「'c:\emp\Cognes.crt」匯入DWh信任區、以建立Cognos與DWH之間的SSL通訊。</block>
-  <block id="81905a43907532ef79f98ac8ccafdc24" category="list-text">"d:\Program Files\SANSANSANSANSANSANp\Java\BIN\keytool.exe"-importcert -file "''c:\emp\Cognos.crt"-keystore "D:\Program Files\SANSANscove\wildfly\sonsolation\configuration \server.trustore"-storeepass changit -alias cognoscert</block>
   <block id="43dc6e8c48223839666ca75fb264d5f4" category="list-text">重新啟動SANscreen 此服務。</block>
   <block id="7dd4c634d9ba6f8d676f941ff5c8ec44" category="list-text">執行DWH備份、確保DWH與Cognos通訊。</block>
   <block id="ea55f00450fedf0179bc94daa9b90d45" category="summary">如果使用者想要在電子郵件帳戶中接收Insight報告、您必須設定電子郵件伺服器才能啟用此功能。</block>
@@ -4052,7 +3970,6 @@
   <block id="1eb6b3f1bf5afffed975d2dfa2c01e0f" category="summary">您可以新增SSL憑證來啟用增強的驗證和加密功能、以增強OnCommand Insight 您的支援環境的安全性。</block>
   <block id="813a61b4e43a1832a3809c259191c6e1" category="doc">匯入SSL憑證</block>
   <block id="ba1fbbc5012eec189f464eca8296aa73" category="paragraph">您必須確保系統符合所需的最低位元層級（1024位元）。</block>
-  <block id="aae848401088feb6b8aa9894d6585335" category="paragraph">在嘗試執行此程序之前、您應該先備份現有的<block ref="05364f7aae12c726f9af42a871f5b60a" prefix=" " category="inline-code"></block> 檔案、並命名備份<block ref="61363c0cacd338825dad409c1184c3e9" prefix=" " category="inline-code"></block>。毀損或毀損<block ref="05364f7aae12c726f9af42a871f5b60a" prefix=" " category="inline-code"></block> 重新啟動Insight伺服器後、檔案可能導致Insight伺服器無法運作。如果您建立備份、當發生問題時、可以還原至舊檔案。</block>
   <block id="c029130dc962300877364a150006824d" category="list-text">建立原始Keystore檔案的複本：<block ref="46db7096175255d5a3762f893f4d8f2c" prefix=" " category="inline-code"></block></block>
   <block id="2b6a52f66555f674ee57e0f8d1fc81eb" category="list-text">列出Keystore的內容：<block ref="26f05ce16727b477426b38de07bd5ba7" prefix=" " category="inline-code"></block></block>
   <block id="d9f7fb022f0b8569b4c23eb03db6aae2" category="paragraph">系統會顯示Keystore的內容。金鑰庫中至少應有一個憑證、<block ref="d33bec22cdb583bf5a7a870effeda2bf" prefix=" " category="inline-code"></block>。</block>
@@ -4140,18 +4057,6 @@
   <block id="c75f28f938445a4ae759bd64830aee18" category="summary">安全性管理工具可讓您管理Insight伺服器上的安全性選項。安全管理包括變更密碼、產生新金鑰、儲存及還原您建立的安全組態、或將組態還原為預設設定。</block>
   <block id="166ace9389f2989154d4edf8ca669668" category="doc">管理Insight伺服器上的安全性</block>
   <block id="d71586f0584584e73897bf02e9802afa" category="paragraph">。<block ref="4924cdf1992856713a11ebac184ceb81" prefix=" " category="inline-code"></block> 工具可讓您管理Insight伺服器上的安全選項。安全管理包括變更密碼、產生新金鑰、儲存及還原您建立的安全組態、或將組態還原為預設設定。</block>
-  <block id="34466f85207045ded27b393581889d20" category="list-text">遠端登入Insight伺服器。</block>
-  <block id="4b2f543780a949ab3938618b76a6aeb5" category="list-text">選取*伺服器*。</block>
-  <block id="15cf432cc55f528ff3c57c6406d8bcd4" category="paragraph">提供下列伺服器組態選項：</block>
-  <block id="55ef7bc8b50b24453b764be4b80da043" category="paragraph">建立包含所有密碼和金鑰的資料保險箱備份壓縮檔、並將檔案放置在使用者指定的位置、或是下列預設位置：</block>
-  <block id="563224b05777d494f82277d419c03919" category="paragraph">還原可用於同步多個伺服器上的密碼和金鑰、例如：-變更單一伺服器上的伺服器加密金鑰-建立資料庫備份-將資料庫備份還原至第二個伺服器</block>
-  <block id="91cebb71bb14bbae4a5bc93a40e9901c" category="list-text">*變更加密金鑰*</block>
-  <block id="a2871ee9dd2334ada20e4a66d013317d" category="paragraph">變更用來加密或解密Proxy使用者密碼、SMTP使用者密碼、LDAP使用者密碼等的伺服器加密金鑰。</block>
-  <block id="e2c5eaab8769cb6a8fa50dc9141e2625" category="paragraph">變更加密金鑰時、您應該備份新的安全性組態、以便在升級或安裝之後還原。</block>
-  <block id="59b3762c2272ae8512fb2c7c9e46ec69" category="paragraph">變更Insight使用的內部帳戶密碼。畫面會顯示下列選項：</block>
-  <block id="b2b29733f57d043399a6cf94cb33bccc" category="paragraph">有些帳戶需要在密碼變更時進行同步處理。例如、如果您變更伺服器上「擷取」使用者的密碼、則需要變更劉、Rau和DWH上「擷取」使用者的密碼以進行比對。此外、當您變更密碼時、也應該備份新的安全組態、以便在升級或安裝之後還原。</block>
-  <block id="3a58172ddfaf6eb80d7e23f6fbb03c6f" category="paragraph">將金鑰和密碼重設為預設值。預設值為安裝期間提供的值。</block>
-  <block id="fa91c17face4c440ea85ac0631602948" category="list-text">選擇您要變更的選項、然後依照提示進行。</block>
   <block id="a67de20a047be39323adc8c1f82babea" category="summary">HDS NAS（HNAS）資料來源是一種庫存和組態資料來源、可支援探索HDS NAS叢集。Insight支援探索NFS與CIFS共用、檔案系統（Insight內部磁碟區）及跨區（Insight Storage Pools）。</block>
   <block id="0936fac4487635497099193277449acc" category="doc">HDS NAS（HNAS）資料來源</block>
   <block id="a8d9462962878f53a1ffb96587e6ac80" category="paragraph">HDS NAS（HNAS）資料來源是一種庫存和組態資料來源、可支援探索HDS NAS叢集。Insight支援探索NFS和CIFS共用、檔案系統（Insight內部Volume）和跨區（Insight Storage Pools）。</block>
@@ -4200,7 +4105,6 @@
   <block id="a1cfdaff350bf06f6ba975cd592472fc" category="paragraph">對於大部分的資料來源、這些選項將是「庫存與效能」。庫存一律預設為選取狀態、無法取消選取。請注意、某些資料來源可能有不同的選項。您選取的集合選項會變更「組態」和「進階組態」區段中的可用欄位。</block>
   <block id="f7642adc1bc7f9503c780db24ec41ac6" category="list-text">按一下「*組態*」連結、輸入所選資料收集類型之資料來源所需的基本設定資訊。</block>
   <block id="d6d94de2956e4579e7edadf35832ba56" category="list-text">如果此類資料來源通常需要更詳細的資訊才能在網路中設定、請按一下*進階組態*連結以輸入其他資訊。</block>
-  <block id="bf22aff674e838a4d9407d625fb8349c" category="list-text">如需特定資料來源所需或可用的組態或進階組態資訊詳細資訊、請參閱 <block ref="3d3141ba472fdd3aa41cb4fe5fbe64e3" category="inline-link-macro-rx"></block>。</block>
   <block id="9f2c56b8c47763f8c44055863b959886" category="list-text">按一下「* Test*」連結、確定資料來源已正確設定。</block>
   <block id="a14b9738cdec9e6d515e07fc282fa7c3" category="summary">若要解決平衡問題、請使用資產頁面找出問題、並找出未充分使用的大容量磁碟區。</block>
   <block id="2517f08cdc93369a7bf14b1419e6c88a" category="doc">平衡網路資源</block>
@@ -4812,14 +4716,7 @@
   <block id="d94838b2dfffb3c008f39a72c3186fc8" category="summary">安全性管理工具可讓您管理Rous上的安全性選項。您可能需要備份或還原資料保險箱組態、變更加密金鑰、或更新擷取單位的密碼。</block>
   <block id="d969be87e8535562a9e12a2651976423" category="doc">管理Rau的安全性</block>
   <block id="9cd06773848a6fa21bbf5d50dac47783" category="paragraph">。<block ref="4924cdf1992856713a11ebac184ceb81" prefix=" " category="inline-code"></block> 工具可讓您管理Rous上的安全選項。您可能需要備份或還原資料保險箱組態、變更加密金鑰、或更新擷取單位的密碼。</block>
-  <block id="14a2f8df100130ed2c4c65381ad1f78e" category="paragraph">更新Lau安全性組態的其中一種案例是、在伺服器上變更該使用者的密碼時、更新「擷取」使用者密碼。所有的Raus和Lau都使用與伺服器「擷取」使用者相同的密碼來與伺服器通訊。</block>
   <block id="00423cc856c14e656de8197ab4f7b0c7" category="paragraph">「擷取」使用者僅存在於Insight伺服器上。當Rau或Lau連線至伺服器時、會以該使用者的身分登入。</block>
-  <block id="b203bcf2ebd0e6a2f7f04e51f9f7d217" category="paragraph">請使用下列步驟來管理Rau上的安全性選項：</block>
-  <block id="3dcdd199a29b8039d55b7143b058621e" category="list-text">遠端登入執行Rau的伺服器</block>
-  <block id="71eaf8160af50ef968d94d2e57c0fad0" category="paragraph">系統會顯示Rau功能表。</block>
-  <block id="b363b82f1d4de8a1415903d93788f7ee" category="list-text">*變更加密金鑰*</block>
-  <block id="6e9398f20fdab74346ae99fabdca3285" category="paragraph">變更用來加密或解密裝置密碼的Rau加密金鑰。</block>
-  <block id="5eb23cf8af1fa4acc187083ab93c9427" category="paragraph">變更「擷取」使用者帳戶的密碼。</block>
   <block id="febf200b4322023deae044f089881ec2" category="summary">此資料收集器使用保健專業人員管理API支援Hitachi Content Platform（HCP\）。</block>
   <block id="70ea222f664797981b68bd7929e53c36" category="doc">Hitachi Content Platform（HCP）資料來源</block>
   <block id="70751eb50dc631e5b8d4123b7b34e201" category="paragraph">此資料收集器使用保健專業人員管理API支援Hitachi內容平台（HCPs）。</block>
@@ -5117,7 +5014,6 @@
   <block id="cd0cd481ab3a655f12a8d54db1cc60b5" category="paragraph">若為Linux、請修改<block ref="13492faf172bcfc7922257dad8668f43" prefix=" " category="inline-code"></block> 參數輸入<block ref="008b3285c122976090969cd0ec1843e6" prefix=" " category="inline-code"></block></block>
   <block id="af6d592858b78cf912002d9361ac3beb" category="list-text">將憑證授權單位（CA）新增至資料倉儲信任庫：</block>
   <block id="7615ffec011c31dcec23147fd3533cda" category="list-text">在命令視窗中、前往<block ref="29a1fa40c043f8b2d1b25c898535b565" prefix=" " category="inline-code"></block>。</block>
-  <block id="b1fcc1a8e4b3047b60cee8567948bd13" category="list-text">使用<block ref="64392b8d1e3ba08576d89af33ed6cea9" prefix=" " category="inline-code"></block> 列出信任CA的公用程式：<block ref="4fe1421e06e5ee8361541221f6421246" prefix=" " category="inline-code"></block></block>
   <block id="2dcb4844e5c071891007c1193a31c8a4" category="list-text">如有必要、請提供CA憑證檔案、通常是<block ref="bdf46f9562b038d0163af0feba0b1dfa" prefix=" " category="inline-code"></block> 檔案：若要將客戶的CA納入資料倉儲信任的CA、請前往<block ref="29a1fa40c043f8b2d1b25c898535b565" prefix=" " category="inline-code"></block> 並使用<block ref="64392b8d1e3ba08576d89af33ed6cea9" prefix=" " category="inline-code"></block> 匯入命令：<block ref="c119dcaf9531cfff7d609c9e46fba309" prefix=" " category="inline-code"></block></block>
   <block id="871591fee3f48c92bb25faa70cb99001" category="paragraph">my_alias通常是容易識別中CA的別名<block ref="ffada47d849d7cba2ebbf32039b9a430" prefix="" category="inline-code"></block> 營運。</block>
   <block id="04281f6ce0f312df4a11799797e6013b" category="list-text">在伺服器上OnCommand Insight<block ref="da35e257d259856481d737aea8d8f5cd" prefix=" " category="inline-code"></block> 檔案必須透過將驗證用戶端更新為中的「要求的」來修改 <block ref="9ff9416c4e4d8ca052fe5d50a2470f1e" prefix="" category="inline-code"></block>以啟用CAC。登入Insight伺服器並執行適當的命令：</block>
@@ -5879,18 +5775,11 @@
   <block id="d583cd7f7e3baff42ff71463f16bc96e" category="doc">在Linux伺服器上啟用CAC</block>
   <block id="13f1d05bfa964366894291106828f0ce" category="list-text">瀏覽至<block ref="0db27be7d832f6bf803cef010ff1f881" prefix=" " category="inline-code"></block></block>
   <block id="6566a1d8e4c8cdfb230692e295750c59" category="list-text">編輯<block ref="eb25af2e1ab5aeb27466e91fe1b2a0e1" prefix=" " category="inline-code"></block> 並變更的值<block ref="e51a81598765ad00e232814c42bd5af4" prefix=" " category="inline-code"></block> 至「真」</block>
-  <block id="d6c81735d862f14e66894edd8dda777d" category="list-text">匯入下的「root憑證」<block ref="d007259da2865337d68e24fa472455d9" prefix=" " category="inline-code"></block></block>
   <block id="38ea074c6a7bf70a529654f12bedb968" category="list-text">重新啟動伺服器</block>
   <block id="1beb570b523e1b14bbcba521de505673" category="summary">安全性管理工具可讓您管理本機擷取使用者（Lau）的安全性選項。安全管理包括管理金鑰和密碼、儲存及還原您建立的安全組態、或將組態還原為預設設定。</block>
   <block id="0a03d1757c591cb47b67e3867b2aa573" category="doc">管理本地採購單位的安全性</block>
   <block id="1843d0ce10aa71f1d72edd6683f93064" category="paragraph">。<block ref="4924cdf1992856713a11ebac184ceb81" prefix=" " category="inline-code"></block> 此工具可讓您管理本機擷取使用者（Lau）的安全選項。安全管理包括管理金鑰和密碼、儲存及還原您建立的安全組態、或將組態還原為預設設定。</block>
   <block id="70ba259bdcb1df4b8b8840343db3ba72" category="paragraph">您必須擁有<block ref="21232f297a57a5a743894a0e4a801fc3" prefix=" " category="inline-code"></block> 執行安全組態工作的權限。</block>
-  <block id="bf598265068097bdfb964fb65b464993" category="list-text">選取*本機擷取單位*以重新設定本機擷取單位安全性組態。</block>
-  <block id="3efa8859202eff1b280ec70c247e9ef0" category="paragraph">畫面會顯示下列選項：</block>
-  <block id="db48c1af350671c4ffd32d01200d5950" category="paragraph">還原可用於同步多個伺服器上的密碼和金鑰、例如：-變更Lau上的加密金鑰-建立資料庫備份-將資料庫備份還原至每個Raus</block>
-  <block id="58fad370faf96d43acd14616d579f6ec" category="paragraph">變更用於加密或解密裝置密碼的AU加密金鑰。</block>
-  <block id="2df04d24bac801c2f370c45144ff5275" category="paragraph">將擷取使用者密碼和擷取使用者加密金鑰重設為預設值、預設值為安裝期間提供的值。</block>
-  <block id="f37f463d204520f26facfb587ab3bf4d" category="list-text">選擇您要設定的選項、然後依照提示進行。</block>
   <block id="66ad42ef324e4a338153e7c79d95cd88" category="summary">如果您想要追蹤與環境中執行之特定應用程式相關的資料、則必須定義這些應用程式。</block>
   <block id="75dd729d790e03fe77ed31cea6363b6e" category="doc">定義應用程式</block>
   <block id="197cbdbf26b402d599e24441ba7c4695" category="paragraph">如果您想要將應用程式與企業實體建立關聯、您必須已經建立企業實體。</block>
@@ -5919,7 +5808,6 @@
   <block id="c8089a8df7595a4fab897fbfe485958b" category="doc">匯入Cognos和DWH的CA簽署SSL憑證（Insight 7.3.10及更新版本）</block>
   <block id="fbc2e92f488b538993235e930b7abed8" category="list-text">使用IBM Cognos組態工具來停止Cognos。關閉Cognos。</block>
   <block id="3c679ad3118a4c7b190c283a80108c8c" category="list-text">建立的備份<block ref="94c8e860bd90030ce45ae786086cac4c" prefix=" " category="inline-code"></block> 和<block ref="bdb4a4c3d0a76ee18c228d514d2663cc" prefix=" " category="inline-code"></block> 資料夾：</block>
-  <block id="09f9080c307e2f189d54af906222d568" category="list-text"><block ref="7d8132fdc3e6480c84b673f9c948d6fe" prefix="" category="inline-code"></block>。附註：此處-H和-I是新增subectAltNames、例如DNS和IP地址。</block>
   <block id="9ddbf610c95141dba3ed9de859fa95b0" category="list-text">輸入加密Request。CSR內容、並使用CA簽署入口網站產生憑證。</block>
   <block id="8db03d886eeeeb6eb3b6d331e6004c48" category="list-text">重複步驟8a到8e、分別將所有憑證匯出至.cer檔案。</block>
   <block id="db08e08014684cfec73faa9091198d8e" category="list-text">使用「記事本」開啟root.cer並複製內容。</block>
@@ -5929,13 +5817,10 @@
   <block id="84758b76692c1a050bb911ed51e8d7e1" category="list-text">ThirdPartyCertificateTool.bat -Java:local -I -T -r c：\temp\minter.cer</block>
   <block id="2f974e01b4e622fe5e539e69cd5f9c0a" category="list-text">ThirdPartyCertificateTool.bat -Java:local -i -e -r c：\emp\Cogns.cer -t c：\emp\chain .cer</block>
   <block id="aba482300e89f2e5cab6b4cb223ed66d" category="list-text">CD「'C:\Program Files\SANSANSANSANSAND"</block>
-  <block id="d51fc478c365d9bd74642f2f59eb529c" category="list-text">Java\BIN\keytool.exe -exportcert -file c：\temp\Cogns.crt -keystore Cognos \分析\組態\ certs\CAMKeystore -storetype PKCS12 -storepass NoPassWordSet -alias加密</block>
   <block id="c63d59e29cf4a9a513c004c3b5e084be" category="list-text">備份DWH伺服器信任資源<block ref="408e9dd44ff5640fabf1789189a07111" prefix="" category="inline-code"></block></block>
   <block id="4fe9dd3b32678cb639ea9abfb204a508" category="list-text">使用管理CMD提示視窗、將「'c:\emp\Cognes.crt'」匯入DWH信任區、以建立Cognos與DWH之間的SSL通訊。</block>
-  <block id="0f165eb515190e541c662b5967dd1b8a" category="list-text">Java\BIN\keytool.exe -importcert -file c:\emp\Cognos.crt -keystore wildfly\sisonal\configuration \server.trustore -storepass changit -alias cognos3rca</block>
   <block id="c9741e3b3e74716b8c9613221854aa35" category="list-text">即使只變更「sSL憑證」、而且預設的Cognos憑證保持不變、仍應執行下列步驟。否則、Cognos可能會抱怨新SANscreen 的不合格證書、或無法建立DWH備份。</block>
   <block id="e8ba5f55a101af092f5ca9c99bea6b11" category="list-text"><block ref="938aedb3a3fd09be07b8169818365184" prefix="" category="inline-code"></block></block>
-  <block id="12e082f8ede249b1858467b8cf265806" category="list-text"><block ref="282da95d430f5cd271b5f9389680d324" prefix="" category="inline-code"></block></block>
   <block id="ad390e013d70b00f6a8405b84de5b7ce" category="list-text"><block ref="8921f04fcd8dfd2b6cb1b73ccdc1aeae" prefix="" category="inline-code"></block></block>
   <block id="42fa9dd065c22b2a00c691f0626b6a51" category="paragraph">這些步驟通常是在中所述的Cognos憑證匯入程序中執行<block ref="abc22bdd3ec6e1b77dc5dad16d618be3" category="inline-link-rx"></block></block>
   <block id="edf11a102e8133ea06a706fb4297ea9b" category="summary">EMC RecoverPoint資料來源會從EMC RecoverPoint儲存設備收集庫存資訊。對於組態設定、資料來源需要儲存處理器的IP位址、以及唯讀使用者名稱和密碼。</block>
@@ -7813,15 +7698,10 @@
   <block id="e245ed75c6b828ee4ae338a39e57c9bc" category="cell">篩選裝置清單</block>
   <block id="0f6a3a02976086b90f48da7e5992aa82" category="cell">要包含或排除的裝置序號以逗號分隔的清單</block>
   <block id="7cde90d1aea7fffbc619c41625a35c52" category="cell">效能輪詢之間的時間間隔。預設值為300。</block>
-  <block id="16d15d3f29508a543513f5bccddd527e" category="paragraph">支援跨網域、多廠商資源管理與分析的單一解決方案、適用於實體與虛擬環境中的網路、儲存設備及伺服器OnCommand Insight 。Insight可協助您最佳化目前的基礎架構、讓您擁有適當規模的作業來滿足業務需求。它簡化了決定購買內容和購買時間的程序。它也能識別哪些工作負載是雲端移轉的候選對象、藉此降低複雜技術移轉（例如移轉至混合雲）期間的風險。有了Insight、您可以將資源整合到公司的整個IT服務供應鏈中、將IT基礎架構管理為端點對端點服務。</block>
-  <block id="1cb3ec988e29678c641cba59564947b3" category="list-text">以互動模式啟動安全管理工具：</block>
-  <block id="f098be646546d6fe2a75059a01c330f7" category="list-text">Windows -<block ref="6fc3ad2c3aa4e51a6e001ff98a533c91" prefix=" " category="inline-code"></block></block>
-  <block id="a8b0a56b2ae62eec476aea5806960a1a" category="list-text">Linux -<block ref="7e8977b89fc4dcb2507a133fc2b8b1fe" prefix=" " category="inline-code"></block></block>
   <block id="f648cec7948633bd979fd848cdf2369a" category="paragraph">如果沒有連線狀態、請嘗試重新啟動服務。登入 Remote Acquisition Unit 系統並執行下列命令：</block>
   <block id="ddf4df92bd698540e3e452308e7fb41e" category="paragraph">如果仍無法連線、請聯絡技術支援部門。</block>
   <block id="e276ba2c5bd80694669009690b87bf11" category="summary">通常、必須在所有 Insight 伺服器上執行升級（ Insight 伺服器、 Data Warehouse 伺服器、遠端擷取單元）。如需OnCommand Insight 更新版本的更新需求、請務必參閱版本說明。</block>
   <block id="19a851f5755b0da57262c1e741895d63" category="paragraph">通常、必須在所有 Insight 伺服器（ Insight 伺服器、 Data Warehouse 伺服器、遠端擷取單元）上執行升級。如需OnCommand Insight 更新版本的更新需求、請務必參閱版本說明。</block>
-  <block id="4639e803c16722ca949a12d75760ea9e" category="paragraph">執行 64 位元 Microsoft Windows Server 2016 、 2019 或 2022 的電腦、附有最新的 Service Pack 。</block>
   <block id="24eb1f52641cde599dfde45198fa8072" category="image-alt">OCI 架構 2024</block>
   <block id="5921e1ea45be7b6035711356c873b5d7" category="summary">安裝時需要安裝數個 OnCommand Insight 元件、包括 Insight Server 、以及 Data Warehouse 和 Reporting 。</block>
   <block id="1ff027229c4cca8959bcd6dfaae4b428" category="paragraph">安裝時需要安裝數個 OnCommand Insight 元件、包括 Insight Server 、以及 Data Warehouse 和 Reporting 。
@@ -7833,12 +7713,8 @@
   <block id="6a3a0531aeb37d13c9f75dc09613fbf5" category="list-text">Guest可讓您登入Insight並檢視各種頁面。</block>
   <block id="b790ca7a49082e3bbad9cfbf5ececf5e" category="list-text">然後使用 Data Warehouse ** Annotations** 選項將註釋導入 Data Warehouse 。</block>
   <block id="a822ae654536d773f803970c634e3b9b" category="paragraph">OCI的關聯分析有助於識別指定服務路徑的貪用和降級資源。關聯功能所產生的分析會在檢視每個物件時即時執行。所提供的分析可大幅縮短疑難排解效能問題和找出根本原因所需的時間。探索所產生的違反已定義效能原則的行為、是探索貪資源或降級資源的一項入門。使用最新查詢功能的小工具和儀表板都有助於篩選、排序及視覺化資源、其IOPS（貪系）、使用率或延遲均高於預期。</block>
-  <block id="b73694a08aa1e17986f7d2ef7a7619a7" category="list-text">Red Hat Enterprise Linux 7.3 、 7.4 、 7.5 、 7.6 、 7.7 、 7.8 、 7.9 、 8.1 、 8.2 、 8.3 、 8.4 、 8.5 、 8.8 、 9.2</block>
-  <block id="604712f524f66ebbf730593255d579b0" category="list-text">CentOS 7.2 、 7.5 、 7.6 、 7.7 、 7.8 、 7.9 、 CentOS 8 Stream 、 CentOS 9 Stream</block>
-  <block id="ca69e87e6021e18fe43c490a1c0bff02" category="list-text">Oracle Enterprise Linux 7.5 、 7.6 、 7.7 、 7.8 、 7.9 、 8.1 、 8.2 、 8.3 、 8.4 、 8.5 、 8.8.8</block>
   <block id="1767cf140ccb13b28bdcc76c42d20028" category="summary">安裝需要安裝數個 OnCommand Insight 元件、 Insight Server 和 Data Warehouse 。</block>
   <block id="91d2987029cf3cc4274c5eb4680b41dc" category="inline-link-macro">版本資訊 .PDF</block>
-  <block id="4a72f4d610aba1b283b741c8990f9bb9" category="paragraph"><block ref="698989a8d25ebae051898deae3187b3f" category="inline-link-macro-rx"></block> （在新視窗中開啟）</block>
   <block id="a025a7deda19d8febe29b4915330a80f" category="inline-link">OnCommand Insight 7.3.15 注意事項</block>
   <block id="3c68b49692fae1f44d5bcc3f3ff40570" category="paragraph"><block ref="3c68b49692fae1f44d5bcc3f3ff40570" category="inline-link-rx"></block></block>
   <block id="1eeac4787b3b9277406496e9c0b0460d" category="inline-link">OnCommand Insight 7.3.14 注意事項</block>
@@ -7849,8 +7725,976 @@
   <block id="bcc7ff777637bae2501eae2f8ccdf7d1" category="paragraph">「次要 ETL 」是指開發出的專業服務實作、用於叫用擷取資料的額外擷取、轉換和載入（ ETL ）、以將資料移入 OnCommand Insight 資料倉儲。</block>
   <block id="85dd174d18eb0c4d3fd90177f2a31485" category="paragraph">OCI與第三方CMDB的整合功能、計費與協調技術是成功的關鍵價值、WFA也不例外。NetApp的專業服務部門已成功整合目前的WFA工作流程和OCI。</block>
   <block id="b220d44db6780bcb3edb81b057ad8db8" category="paragraph">是的、OCI提供數份報告、而我們的專業服務目錄中也有許多其他報告、視使用案例而定。資料倉儲模組也隨附一組Cognos報告撰寫工具、可讓使用者建立自己的報告。</block>
-  <block id="082d4fc1b30e86ee41f3aee683450d1e" category="summary">資料收集器（資料來源）支援對照表提供支援的資料收集器相關資訊。</block>
-  <block id="2fcf0efc6b86f1c82038c0503c617ffb" category="doc">OnCommand Insight 資料收集器支援對照表</block>
   <block id="0509ce941df7b1b926535ae26a759985" category="paragraph">Data Collector Support Matrix 提供 OCI 支援的 Data Collectors 參考資料、包括廠商和機型資訊。</block>
-  <block id="929760a91ec2d785d90375c3e050830f" category="paragraph">此頁面是預留位置。</block>
+  <block id="e02add3ccfa86a470efa7415246067a9" category="list-text">如需特定資料來源所需或可用之組態或進階組態資訊的詳細<block ref="59373d0a89c40649d3ee53d53ab5a38f" category="inline-link-macro-rx"></block>資訊，請參閱。</block>
+  <block id="ab94f02b0631499dec8037230ab3518a" category="paragraph">根 CA 必須匯入信任存放區。</block>
+  <block id="e5ce20a31a5beea280ce04b7668728a0" category="list-text">匯入下的「根憑證」<block ref="3cdc96550e37f1c3727be8e83177120f" prefix=" " category="inline-code"></block></block>
+  <block id="20cf835c7c753bc7471956cba9df4d50" category="list-text">使用<block ref="64392b8d1e3ba08576d89af33ed6cea9" prefix=" " category="inline-code"></block>公用程式列出信任的 CA ： `..\IBM-JRE\JRE\bin\keytool.exe -list -keystore CAMKeystore.jks -storepass &lt;password&gt;</block>
+  <block id="c73796fc3543b4d5fdf7766794712240" category="paragraph"><block ref="65a076030818b385ff494c6bc4ba5707" prefix="" category="inline-code"></block>通常是一個別名、可在作業中輕鬆識別 CA <block ref="ffada47d849d7cba2ebbf32039b9a430" prefix="" category="inline-code"></block>。</block>
+  <block id="d55fdd9cf0b801f47efa1dfb7b6096a8" category="list-text">當系統提示您輸入密碼時、請輸入來自 __/m/bin/Cognos SANscreen info.dat 檔案的密碼。</block>
+  <block id="0fc4772928dee56703274ac83cde4b97" category="list-text">捲動至 LDAP 區段。</block>
+  <block id="140321aacc59af1f6d7147e034bb6ff0" category="inline-link-macro">安全性管理</block>
+  <block id="fdc721eb3636a0d919ba3b3e137298d2" category="list-text">使用<block ref="64392b8d1e3ba08576d89af33ed6cea9" prefix=" " category="inline-code"></block>公用程式列出信任的 CA ：<block ref="e3581997c9499fad09cd579802e19c6f" prefix=" " category="inline-code"></block> + 如需設定或變更 server_trustore 密碼的詳細資訊、請參閱<block ref="639f828649b90c889f7b9b1be3c612f3" category="inline-link-macro-rx"></block>文件。</block>
+  <block id="e1d0a3ae68ae3bf3d33e364e211c1847" category="paragraph">強烈建議您在升級之前備份資料保險箱。</block>
+  <block id="06e93fcb3c37a2437f4b2d3bc4750cf3" category="inline-link-macro">安全性管理工具</block>
+  <block id="aaedaf8de404408dfc5c58a248ce4df8" category="paragraph">如需有關資料保險箱和密碼管理的詳細資訊、請參閱<block ref="56b8f1713db5748cf5088e9f00373784" category="inline-link-macro-rx"></block>指示。</block>
+  <block id="b1a9597f50cfc5ac72202879c8ba0ebd" category="list-text"><block ref="2c5f7023f44aca5ed1d54393aeda8d58" prefix="" category="inline-code"></block>。附註：此處-H和-I是新增subectAltNames、例如DNS和IP地址。</block>
+  <block id="873030c1c6f2a3ef4592c3124ed9f7d4" category="list-text">若為 &lt;password&gt; 、請使用來自 __/dat/bin/cognos SANscreen 資訊 .dat 檔案的密碼。</block>
+  <block id="72db37934e519dd4c7324755370dcb51" category="list-text">Java\bin\keytool.exe -exportcert -file c:\temp\Cognos 。 crt -keystore Cognos \ anature\configuration\certs\CAMKeystore -storetype PKCS12 -storepass &lt;password&gt; -alias 加密</block>
+  <block id="c25809f5f5ac01b2cd6f66e083c09dce" category="list-text">Java\bin\keytool.exe -importcert -file c:\temp\Cognos.crt -keystore wildfly\inold\configuration\server.trustore -storepass &lt;password&gt; -alias cognos3rdca</block>
+  <block id="17987e84a830ab282250a7de4d24c42b" category="list-text"><block ref="534186b52de0dfeaacf1a17522ecfaa6" prefix="" category="inline-code"></block></block>
+  <block id="7e28f18027bb8b7955aa0f5c1f7bcfd6" category="paragraph">更新 LaU/Rau 安全性組態的其中一個案例、是在伺服器上變更該使用者的密碼時、更新「取得」使用者密碼。Lau 和所有的 Raus 都使用與伺服器「取得」使用者相同的密碼來與伺服器通訊。</block>
+  <block id="c362e7d28fcfb1f75731ab591137e8f5" category="paragraph">如需詳細資訊、請參閱<block ref="56b8f1713db5748cf5088e9f00373784" category="inline-link-macro-rx"></block>指示。</block>
+  <block id="b4f08df4574ab6e4ba50db6c96c2ea6c" category="paragraph">如需詳細資訊、請參閱<block ref="639f828649b90c889f7b9b1be3c612f3" category="inline-link-macro-rx"></block>文件。</block>
+  <block id="cd83da6b8675e2660027f1d689252b6f" category="summary">資料收集器支援對照表包含有關支援的資料收集器的詳細資訊。</block>
+  <block id="5eaa66f8965be015a154e7d05c5858d1" category="doc">OCI 資料收集器支援對照表</block>
+  <block id="42dcbfa5bf86ee5b5b8828619d00cc03" category="section-title">HP Enterprise 3PAR / Alletra 9000/ Primera StoreServ 儲存設備</block>
+  <block id="4511f2a211688512da3a86b3400de7ff" category="paragraph">此資料收集器支援的機型和版本：</block>
+  <block id="25ac429f9072293d27a836ee2a148f47" category="cell">模型</block>
+  <block id="798084429970e88fa1f49f12b5f60f32" category="cell">韌體版本</block>
+  <block id="be209ca84bff62cc8606dc71a055f326" category="cell">HPE_3PAR 20450 HPE_3PAR 7200 HPE_3PAR 7400 HPE_3PAR 7440c HPE_3PAR 7450c HPE_3PAR 8200 HPE_3PAR 8400 HPE_3PAR 8440 HPE_3PAR 8450 HPE_3PAR A670 HP_3P7200 P400c HP 7200_P400c</block>
+  <block id="b2f66a81e1101f8f0d811f862dabe2bd" category="cell">3.2.2 （ MU2 ） 3.2.2 （ MU4 ） 3.2.2 （ MU6 ） 3.3.1 （ MU2 ） 3.3.1 （ MU5 ） 4.4.1 版本類型：標準支援版本</block>
+  <block id="e9f6271a49020907aa1e305c5f6b83d2" category="paragraph">此資料收集器支援的產品：</block>
+  <block id="deb10517653c255364175796ace3553f" category="cell">產品</block>
+  <block id="14c3221394982b060bb874fd101a4564" category="cell">功能/屬性</block>
+  <block id="ec53a8c4f07baed5d8825072c89799be" category="cell">狀態</block>
+  <block id="9209f3fbacc56941a634acaf4243d473" category="cell">使用的傳輸協定</block>
+  <block id="092bf78f9c97ba171b8232ddff585392" category="cell">其他資訊</block>
+  <block id="01baf36bbdfd6958a8f4fa68b8eb9138" category="cell">基礎</block>
+  <block id="28a9f0e91de2ca9a5a927953fb10813a" category="cell">裝置群組</block>
+  <block id="5bd958f78294c57d3763204b3b3a3f5d" category="cell">實作</block>
+  <block id="765553e6c7ac8592c389acb9878a050a" category="cell">SSH</block>
+  <block id="32b772638ff99c31326af82c9279e67b" category="cell">儲存管理ID</block>
+  <block id="466b98ca0f38bd8bf2260246c91f6882" category="cell">落差</block>
+  <block id="87ac67e16fa6efcc775b8fda5acedb4e" category="cell">容量（GB）</block>
+  <block id="10fd66f5b4802aee3a88de2a537a57b4" category="cell">已用容量</block>
+  <block id="2b6ab62cf39a19f857f0b90ab838d72b" category="cell">磁碟ID</block>
+  <block id="0575ba8b3de2a093ac1c8f7999f6d53e" category="cell">在陣列中唯一識別此磁碟</block>
+  <block id="ce5bf551379459c1c61d2a204061c455" category="cell">位置</block>
+  <block id="727f68bbe2be673442f7254cc743874c" category="cell">此磁碟實體位於陣列中的位置</block>
+  <block id="a3b822e9b7fc9153f5593ec750cb7443" category="cell">可能的傳輸率</block>
+  <block id="bbbabdbe1b262f75d99d62880b953be1" category="cell">角色</block>
+  <block id="e82b09d21eb2198b167d4cd2ed715b06" category="cell">角色環境</block>
+  <block id="1095759d6c7aa0d1db5fda4002f00aee" category="cell">磁碟角色的列舉</block>
+  <block id="91ce008b7da13548c83365a5eb07e063" category="cell">搜尋時間</block>
+  <block id="78cf8ce506d5cd24bcd85ed03795e147" category="cell">序號</block>
+  <block id="44877c6aa8e93fa5a91c9361211464fb" category="cell">速度</block>
+  <block id="fc104690076528afbc53ac5662460473" category="cell">磁碟速度（RPM）</block>
+  <block id="25d76dffbdd21f5c4232e06c05f6d009" category="cell">狀態環境</block>
+  <block id="83e3f416507dce818d217481ca80faef" category="cell">磁碟狀態的列舉</block>
+  <block id="5b194842a4d9add55bd76ba48403b3cc" category="cell">輸入Enum</block>
+  <block id="ac785707bd747db037410e29a975bcfa" category="cell">磁碟類型的列舉</block>
+  <block id="4059b0251f66a18cb56f544728796875" category="cell">資訊</block>
+  <block id="0696b0b7a79fe810767fc56d100fe9be" category="cell">API名稱</block>
+  <block id="938e0f491e66c780a2d952df0fccdf90" category="cell">API版本</block>
+  <block id="0c158178daa0ba003e3212e295331f88" category="cell">資料來源名稱</block>
+  <block id="2ea3b0f6afbc5d22bca6c482c0bf54ca" category="cell">建立者ID</block>
+  <block id="66dd8dbc40f1ea2184689ce0298fbc4e" category="cell">顯示IP</block>
+  <block id="fe602599e3d257924db1f762dc597c27" category="cell">原始容量失敗</block>
+  <block id="77ca1f32dd520c4ac24f6c1d12ecda48" category="cell">故障磁碟的原始容量（所有故障磁碟的總和）</block>
+  <block id="cefc4f7cbc8c34762e0f76703e7e174e" category="cell">家庭</block>
+  <block id="854ad18980f79dfec85984afdddd270f" category="cell">儲存產品系列可能是Clariion、Symmetrix等</block>
+  <block id="c0bd7654d5b278e65f21cf4e9153fdb4" category="cell">製造商</block>
+  <block id="2ed1a976c9964840b559b27516a0638e" category="cell">微碼版本</block>
+  <block id="17a88204bd7aca01d277ef859ea3d6ad" category="cell">總原始容量</block>
+  <block id="4aaedf1d727682cdc9f916b585dda8a0" category="cell">總原始容量（陣列上所有磁碟的總和）</block>
+  <block id="94f8c4a3d192d67e7ae1dc89ef993dee" category="cell">備用原始容量</block>
+  <block id="5f74db3052fd919ac2aa53259ceb1aef" category="cell">備用磁碟的原始容量（所有備援磁碟的總和）</block>
+  <block id="615e6f9baca5553d44683a098d342b70" category="cell">虛擬化</block>
+  <block id="86e8565005314e436f24af8cba43b1d6" category="cell">這是儲存虛擬化設備嗎？</block>
+  <block id="fa4665ac784c14b8a22483b7f6707e27" category="cell">記憶體大小</block>
+  <block id="9cf97098128022e09338f8348db15517" category="cell">裝置記憶體（單位：MB）</block>
+  <block id="59b8ad678543d433553b003eefaa7040" category="cell">處理器數</block>
+  <block id="22a26f0cddb017301f2eef7f1a420f34" category="cell">裝置CPU</block>
+  <block id="46a2a41cc6e552044816a2d04634545d" category="cell">州/省</block>
+  <block id="3ff0e3a48b615548aefce755e33941c3" category="cell">說明裝置狀態的免費文字</block>
+  <block id="5a54d9ad87f7c4c1c70c8f05b9515d5a" category="cell">UUID</block>
+  <block id="15b37d252d8bcabdb3f2521c97c579fe" category="cell">正常運作時間</block>
+  <block id="a4863ea80556e361b3125fe070e9df7b" category="cell">時間（以毫秒為單位）</block>
+  <block id="34b6cd75171affba6957e308dcbd92be" category="cell">版本</block>
+  <block id="2130b56fc79fc38dbed55257839c0261" category="cell">軟體版本</block>
+  <block id="d09bf209749e39ff2ede8ce60732a80d" category="cell">自動分層</block>
+  <block id="7522b70f3d9423171e4d16ec9436fb41" category="cell">指出此儲存集區是否參與與其他集區的自動分層</block>
+  <block id="0baf5eb0e862ee9c1202a8b191166ded" category="cell">壓縮已啟用</block>
+  <block id="e9b7203a999246d2da22b52301324aaa" category="cell">是否在儲存資源池上啟用壓縮</block>
+  <block id="8a78a23b30fd79b77d26a6d6c4c6c250" category="cell">壓縮節約效益</block>
+  <block id="be4e14b8a3b1e8180c8545c12f6040d7" category="cell">壓縮節約比率（以百分比表示）</block>
+  <block id="5e43f93d85eaafc2d3f7f57a2e46cd56" category="cell">分配給資料的容量</block>
+  <block id="2256535d3f3b1535d221b91123140e3e" category="cell">已啟用重複資料刪除</block>
+  <block id="7f53a412e8e28b995426c2954734537f" category="cell">是否在儲存資源池上啟用重複資料刪除功能</block>
+  <block id="926f6258ce260652ef8ea5eb22445140" category="cell">重複資料刪除技術的節約效益</block>
+  <block id="ee395fb91b64d2a3e6e8534a6976ea62" category="cell">重複資料刪除技術的節約比率（以百分比表示）</block>
+  <block id="779e06394f4a280166f19617e8ef5717" category="cell">包括在DWh容量中</block>
+  <block id="3a02997589ec83b551ece558ef97b541" category="cell">從 ACQ 控制 DWH 容量感興趣的儲存池</block>
+  <block id="2b827ed06bc12e2efe951fbc13ff7d7a" category="cell">其他已分配容量</block>
+  <block id="304bad0dc54522eb48374fb8085f80ae" category="cell">分配給其他（非資料而非快照）的容量</block>
+  <block id="9820087cff724c72b84cf4ba97cccba2" category="cell">其他已用容量（MB）</block>
+  <block id="a584b894d429df1d9d8b6be8c5d5f84c" category="cell">資料與快照以外的任何容量</block>
+  <block id="5c04c311b8d47b29e194b80bd5dec946" category="cell">實體磁碟容量（MB）</block>
+  <block id="96a760e0b89761d5937ae358ad54fa70" category="cell">用作儲存資源池的原始容量</block>
+  <block id="72f740f92483312ab6d77576d8d634e7" category="cell">指出此storagePool是否為RAID群組</block>
+  <block id="69f7c7260db3f3676fa20c26d9f677f4" category="cell">原始對可用比率</block>
+  <block id="561174cd7b73365c927e26c69290af7b" category="cell">從可用容量轉換為原始容量的比率</block>
+  <block id="f10475ef438ec27ff53b1f5ce5e4f5d8" category="cell">備援</block>
+  <block id="19d5328f000eee28a48d38d51304b69f" category="cell">備援層級</block>
+  <block id="5c189e243f3c3d270f8331ed3069ff41" category="cell">Snapshot分配容量</block>
+  <block id="53ef105c874917210c0b7bec0abda492" category="cell">快照的已分配容量（以MB為單位）</block>
+  <block id="ea63b5fcdb2e53e942ad81740e394f67" category="cell">儲存資源池ID</block>
+  <block id="aa11c5ffe4ee508de4c8ca0c5cde4469" category="cell">支援精簡配置</block>
+  <block id="229422b70dca17f2c6301fa414a25d77" category="cell">此內部磁碟區是否支援其上的磁碟區層精簡配置</block>
+  <block id="c3deac8aaa20a4b31e33cf86b037734e" category="cell">已分配容量總計</block>
+  <block id="63adb36ab4a3c0299517ab6ec2edf4f0" category="cell">總容量（單位：MB）</block>
+  <block id="039d028e03e2c91a871ca192320fbcb5" category="cell">廠商層級</block>
+  <block id="c39607a954bffa3e032ae2bf60acb194" category="cell">廠商專屬層級名稱</block>
+  <block id="650be61892bf690026089544abbd9d26" category="cell">模式</block>
+  <block id="5e9947436adc8d80ab9d1c9975d5d8db" category="cell">模式環境</block>
+  <block id="bc4c28b83b9ed203ab891d609f17e4b7" category="cell">來源儲存設備</block>
+  <block id="6b381cadf674c5e31b229c76f56806c5" category="cell">來源Volume</block>
+  <block id="ca7e5ad61236641a7f04e889c2ab6e11" category="cell">國家環境</block>
+  <block id="97ba585b67bdc69a079ed75dd7163fa9" category="cell">目標儲存設備</block>
+  <block id="f21d65d3a928c0db51da67287c43c4b9" category="cell">目標Volume</block>
+  <block id="e7e767d7c0e58b16e57d3ab16150db80" category="cell">技術</block>
+  <block id="b8b5c171014cb310fa65ec6785b97294" category="cell">改變儲存效率的技術</block>
+  <block id="fb901972cfa1afe064d32b4c05f2ff39" category="cell">自動層級原則識別碼</block>
+  <block id="0bfdc9533ba547dab2174aed9a384d5a" category="cell">動態層級原則識別碼</block>
+  <block id="6fb0356357126364e18f856cc191b3c3" category="cell">Snapshot使用容量（單位：MB）</block>
+  <block id="31722a69be06f07fc75bdff8b5958447" category="cell">資源隨需配置</block>
+  <block id="d708a286e3d4444a9f20700ea8640b98" category="cell">後端LUN的名稱</block>
+  <block id="766c0fe3ad87081ffdeef77065e37ec8" category="cell">傳輸協定控制器</block>
+  <block id="b7492de4589c7d8f07e7da32a0a223a6" category="cell">儲存連接埠</block>
+  <block id="5a97b31fff9341e11e86fc37c7199905" category="cell">Volume Ref</block>
+  <block id="4bf26b373e3485c1f2c7e36eda8409dc" category="cell">儲存IP</block>
+  <block id="f4c2282d259612648709a5e6695b3367" category="cell">WWN別名</block>
+  <block id="75f0e4b043129fbf3599caefccfc08e4" category="cell">主機別名</block>
+  <block id="677fc7835e7f805a8a48251a08740e89" category="cell">物件類型</block>
+  <block id="112cb92cc34886188271993bb7a5d78d" category="cell">IOPS讀取</block>
+  <block id="cfc2491ccb7efa580470e9e15a712369" category="cell">SMI-S</block>
+  <block id="14731a54eec6457016b47123d8481edf" category="cell">磁碟上的讀取 IOP 數</block>
+  <block id="a8246d471a59bb08ec552486b5292669" category="cell">IOPS總計</block>
+  <block id="3cc1e0b40beae2563f380e8f7f638a32" category="cell">IOPS寫入</block>
+  <block id="bb149a60e36dad22aec22d6ee2620af0" category="cell">伺服器ID</block>
+  <block id="6e2a30781aae73d2fdb531dd3deaab69" category="cell">處理量讀取</block>
+  <block id="41225d13580edd01f087f6228c4ce952" category="cell">總處理量</block>
+  <block id="974ef3646531975170c261484b1f44cb" category="cell">平均磁碟總速率（橫跨所有磁碟的讀寫）、單位為MB/s</block>
+  <block id="a69a10df6f8fca20d2c7092ffe2fed67" category="cell">處理量寫入</block>
+  <block id="3858ac252c453bdf36d3377f80b2f344" category="cell">讀取使用率</block>
+  <block id="7be81de33ef4384b7e08bb7cd0525ef3" category="cell">使用率總計</block>
+  <block id="e8294a34b4111104ecdc994cad4468f7" category="cell">使用率寫入</block>
+  <block id="09fa205aa96346c175da1d1c720425ee" category="cell">已配置的容量</block>
+  <block id="e09dc7945acb6ec6caf41c962f679916" category="cell">原始容量</block>
+  <block id="207e174801113bba5afa048ccd3450bf" category="cell">總容量</block>
+  <block id="55b4d6e594a778dccfba1b621b6ac69f" category="cell">過度使用容量比率</block>
+  <block id="41f4349e91623a39e15201514a6a4d1d" category="cell">報告為時間序列</block>
+  <block id="7ac6531007710c9596adc8f86cc5de5b" category="cell">容量使用率</block>
+  <block id="4ca822ed3d79a8f15adfdf558f76d750" category="cell">其他總容量</block>
+  <block id="e0fe12387c323b3816613907a8523851" category="cell">Snapshot使用容量比率</block>
+  <block id="55ddb309e8913781ccee9a736dde14b8" category="cell">快取命中率讀取</block>
+  <block id="f74d9997389745b9983fd5c8886e52ef" category="cell">快取命中率總計</block>
+  <block id="e0c3105158d48c3101e0436a4ae39f97" category="cell">快取命中率寫入</block>
+  <block id="63ea93e1ce3302d0fd815a6e21633d6d" category="cell">寫入的容量比率</block>
+  <block id="090b0c879856b100a039fbd3b638aefc" category="cell">延遲讀取</block>
+  <block id="9dc36323a98f40d0712abb1421a27a8c" category="cell">總延遲</block>
+  <block id="396f6e005d87a7682425e02ad210c68f" category="cell">延遲寫入</block>
+  <block id="2289d8987af1125d5fc0824cdc3c8b55" category="cell">部分封鎖比率</block>
+  <block id="384350a63e0acea0fd7702a8daf98980" category="cell">寫入擱置中</block>
+  <block id="d747293035c6735343764948d4bd3bbd" category="cell">等待寫入總計</block>
+  <block id="efc565e62bb45e0104d2d4bad32b3470" category="paragraph">此資料收集器使用的管理 API ：</block>
+  <block id="db974238714ca8de634a7ce1d083a14f" category="cell">API</block>
+  <block id="f7b7c5fc8e97bd9344908a9e06ffb8f0" category="cell">使用傳輸層傳輸層傳輸協定</block>
+  <block id="80c1c169c1569d11d926649ef6b0d58c" category="cell">使用的傳入連接埠</block>
+  <block id="4a35fe6891ff0a0b0cbe899182979e18" category="cell">使用的傳出連接埠</block>
+  <block id="7dc1884c0b2d9fc56cd8ead683e1263f" category="cell">支援驗證</block>
+  <block id="a9fc775cf77354c7e37cf46fde0f6af1" category="cell">僅需要「唯讀」認證</block>
+  <block id="cc647acd83f1f121497c1991fa0465bd" category="cell">支援加密</block>
+  <block id="238b12b0efaecb41b39f86004d5195db" category="cell">防火牆易用（靜態連接埠）</block>
+  <block id="1b408cbb511380911f5ca7833a3a6234" category="cell">3PAR SMI-S</block>
+  <block id="e6b75b0a590239501ffe6bf717b345e2" category="cell">HTTP / HTTPS</block>
+  <block id="490dfc6d7d3cc195f6f1635fd47aaa22" category="cell">5988/5989</block>
+  <block id="b326b5062b2f0e69046810717534cb09" category="cell">是的</block>
+  <block id="7c66134758a1231967900b1324c83c0e" category="cell">3PAR CLI</block>
+  <block id="b6d767d2f8ed5d21a44b0e5886680cb9" category="cell">22</block>
+  <block id="68934a3e9455fa72420237eb05902327" category="cell">錯</block>
+  <block id="e58c27818bf68b1f92513ad4f99972c4" category="inline-xref">返回頁首</block>
+  <block id="9bf2c4cb7192740e06519a5e67f22e59" category="paragraph"><block ref="5166de7f06aaa174e185aec47426a1b7" category="inline-xref-macro-rx"></block></block>
+  <block id="7d964a677df15c513f1f0dee98d77997" category="section-title">Amazon AWS EC2</block>
+  <block id="d1d0848fd9db162d999c32260709d8f8" category="paragraph">API 版本：</block>
+  <block id="fca305053b0aa4da40eb77c13c037773" category="list-text">2014-10-01</block>
+  <block id="0e8433f9a404f1f3ba601c14b026d321" category="cell">HTTPS</block>
+  <block id="98e2b78df17d18343b3f029c6d14db05" category="cell">MOID</block>
+  <block id="aebf756f0ff50a1552ea668ebd31c9d6" category="cell">oID</block>
+  <block id="ca417e12e3bdfd0126be45ef198553cb" category="cell">已配置的容量</block>
+  <block id="f24cffc45d091c87ed86a42b52b19b64" category="cell">虛擬中心IP</block>
+  <block id="6e7dbf028148fab3225cd97fcd186266" category="cell">訂購ID</block>
+  <block id="0dbae4d42c7a0db53e2eb32adee12892" category="cell">叢集名稱</block>
+  <block id="30918b15e18157fe9435be642839add5" category="cell">資料中心名稱</block>
+  <block id="22c77b61a6a867305a47252585060a95" category="cell">主機oID</block>
+  <block id="32e6b9c4da8267329fa570562ff34246" category="cell">資料存放區oID</block>
+  <block id="21b124e71fb11c8753f19ce8c09f3427" category="cell">為收費項目</block>
+  <block id="110328389a2fc9dd5d71bd86cb615879" category="cell">是Snapshot</block>
+  <block id="61251ec3a7d52d61e900f50b2271561a" category="cell">虛擬機器</block>
+  <block id="15344adfc5b282a3d50b6918399d0654" category="cell">DNS名稱</block>
+  <block id="88bb8f64504972894412a78dc8066f47" category="cell">訪客狀態</block>
+  <block id="fef48b3b39a9c7cdf35ffca8bf736a75" category="cell">IPS</block>
+  <block id="b82a8e736139293b9409cd1434dc167d" category="cell">電源狀態</block>
+  <block id="5b65d74a2272925557041c5bc6442645" category="cell">狀態變更時間</block>
+  <block id="5eef2922bee262fba019bc051ab7de8c" category="cell">處理器</block>
+  <block id="2bea05c5b856292ae6634abc6331d573" category="cell">執行個體類型</block>
+  <block id="04a8949e5e2cc1fd98f41b4ba15a5cf5" category="cell">上市時間</block>
+  <block id="11906e0c1d7f348c995bb659ce6d0927" category="cell">生命週期</block>
+  <block id="cac10293b035526c606491e65647ae22" category="cell">公共IPS</block>
+  <block id="fe11e14b29ee1462bdb7764b3ba2f4bd" category="cell">安全性群組</block>
+  <block id="700bf8a021afc03cba62fc9286a1b84f" category="cell">虛擬機器磁碟</block>
+  <block id="12ce533069f943e5411e292fd08a3e24" category="cell">虛擬磁碟oID</block>
+  <block id="52b61fd70f0cf5f931258444ab0dbfc6" category="cell">虛擬機器oID</block>
+  <block id="0437eec9c1ba5909642a99ee90c5a546" category="cell">主機作業系統</block>
+  <block id="f5c4fb0ae637f3624271d22521cf38d0" category="cell">API說明</block>
+  <block id="d8b121a18158a4aa57f05dc106c8a568" category="cell">建立者金鑰</block>
+  <block id="1bab32ec3987612a69115ca8ffc764a2" category="cell">EC2 API</block>
+  <block id="13f3cf8c531952d72e5847c4183e6910" category="cell">443</block>
+  <block id="cc4856057eb6a162f1fd9a2b32c845e0" category="section-title">Brocade光纖通道交換器</block>
+  <block id="93624c502e61ead83624a6d129a224e2" category="cell">184.0 Brocade 200E Brocade 300E Brocade Brocade 4024 內嵌式 Brocade 4100 Brocade 4900 Brocade 5000 Brocade 5100 Brocade 5480 內嵌式 Brocade 6505 Brocade 6510 Brocade 6520 Brocade 7800 Brocade 7840 Brocade DCX8510-4 Brocade DCX8510-8 Brocade G610 Brocade G620 Brocade G630 Brocade M5424 內嵌式 Brocade M6505 Brocade VA-40FC Brocade X6-4 Brocade X6-8 Brocade X8-8</block>
+  <block id="96b1f5e8666564e3b72c20bdcfe5fbfd" category="cell">v5.3.0a v6.1.0c v6.1.9.1.3 v9.1.9.7.2.1 v6.2d v6.2.2d v6.2.2d v6.3.2b v6.4.2d v6.4.8.2.1d</block>
+  <block id="22b991799b8241e1ade0192865f9b429" category="cell">FC名稱伺服器項目</block>
+  <block id="f8696d8889d2d13a878e3b5aa8768789" category="cell">FC ID</block>
+  <block id="53c6fd08130593d1c56a7122fc0d697e" category="cell">NX連接埠WWN</block>
+  <block id="a226f89d9ef4e309dc8360113cea166b" category="cell">實體連接埠 WWN</block>
+  <block id="7a942a50f198aee542fc21ef74f505c5" category="cell">交換器連接埠WWN</block>
+  <block id="1638bbd4664fd745118d95786b7e37b9" category="cell">手動輸入</block>
+  <block id="5b565cd8e56007724018b6130825f1ec" category="cell">vSAN已啟用</block>
+  <block id="efd2d501d8f05f2dead3b0712e9062e7" category="cell">VSANId</block>
+  <block id="058a5a6c4d66e33827b6904af7c82631" category="cell">IVR實體架構</block>
+  <block id="3b3f04a2e159b7475f64b7082793ab63" category="cell">IVR機箱WWN</block>
+  <block id="557d0c8c8a409800c957ceb06cd331a8" category="cell">以英文分隔的已啟用IVR的機箱WWN清單</block>
+  <block id="638510a219f4b13657f8558372e4b3f3" category="cell">最低的 IVR 機箱 WWN</block>
+  <block id="ff5d0564392a7810bd2c76c027640222" category="cell">IVR網路的識別碼</block>
+  <block id="5c74550adebd1e0f0f8cb8e2fd349689" category="cell">機箱WWN</block>
+  <block id="129ce9ff43c56238a6184da12b2a5b4e" category="cell">網域ID</block>
+  <block id="1b753d520e7631f0c67566896bc0c4af" category="cell">韌體版本</block>
+  <block id="a2b26c184457aca773727ab033fa1c81" category="cell">交換器角色</block>
+  <block id="83176e03baeaf345bbc1f330296ccf5d" category="cell">交換器狀態</block>
+  <block id="87812b62c0fb71cfab318fad368a467e" category="cell">交換器狀態</block>
+  <block id="1ea52f26e7e0ce08e462f87f5e35096c" category="cell">刀鋒伺服器</block>
+  <block id="af7b9d395234a1a9e4739a824ccf3439" category="cell">FC4 傳輸協定</block>
+  <block id="0b385e8b872fe691ffa60477bfb5582a" category="cell">GBIC 類型</block>
+  <block id="5c5f06440fcb85cd5c8cfafe32e34b78" category="cell">已產生</block>
+  <block id="6648b733058a8095d076f0e828779bb3" category="cell">節點 WWN</block>
+  <block id="874c17fcc02b3cd3252fff9f890062f7" category="cell">如果 WWN 不存在、則必須使用 portID 報告</block>
+  <block id="de2ee10f18740433fc508e3d7dcb902c" category="cell">連接埠ID</block>
+  <block id="b81dbdcd51802845e275c5bd54d84e17" category="cell">連接埠號碼</block>
+  <block id="90d80b71e6e4515405d0541b58077671" category="cell">連接埠速度</block>
+  <block id="1a08875a2acb1c5d8ea92d08b8ae7f94" category="cell">連接埠狀態</block>
+  <block id="0e2f87274b5b4af9b5c551ac2c59591a" category="cell">連接埠狀態</block>
+  <block id="bd9f125b279a19f0d5b7f09c7d793d35" category="cell">連接埠類型</block>
+  <block id="67d9811eca3cd8616bde82d3a5ac9108" category="cell">原始連接埠狀態</block>
+  <block id="78fc8e61b09d5906dc9183099ee4d95b" category="cell">原始速度 Gb</block>
+  <block id="c9b9a99303707d3ef0f72b2766c4f7c6" category="cell">未知的連線能力</block>
+  <block id="44e62798eee2e3551f748a95428b45f7" category="cell">管理 URL</block>
+  <block id="b5143ddf44325b4014285e2362e6d2eb" category="cell">區域名稱</block>
+  <block id="b0e58b956c7a5c807a6627c29f3da471" category="cell">分區功能</block>
+  <block id="0aca422762b0cf0426ab0c433c9443b0" category="cell">作用中組態</block>
+  <block id="5973510ea863952ac60299cc0a18fc10" category="cell">組態名稱</block>
+  <block id="28189d45e939e4dd0e85a1e076edf8c8" category="cell">連接埠資料</block>
+  <block id="de9e687c272e4633df94c3a7f92c295c" category="cell">已收到 BB Credit Zero</block>
+  <block id="305af65222ed3fff91f5c8bcdfe17162" category="cell">SNMP</block>
+  <block id="f0d6bd96c9f84add944df8d5060dd505" category="cell">BB Credit Zero Total</block>
+  <block id="9e877574819be34335e4842ad03c3463" category="cell">BB Credit Zero 已傳輸</block>
+  <block id="4ba93ddbedc42074f8c866cdb853d32b" category="cell">傳輸的 BB Credit Zero M</block>
+  <block id="9ebd189a2535b5c5f077bac84cb548af" category="cell">連接埠錯誤類別 3 捨棄</block>
+  <block id="984512a4632a2dac603a9939a93b9bf3" category="cell">連接埠錯誤 CRC</block>
+  <block id="625217f8f44ee63daf196b073a5d207b" category="cell">連接埠錯誤環境</block>
+  <block id="5c394e06e1a337867eb1585523e7df4d" category="cell">portErrors.encOut</block>
+  <block id="940c7770350bceaced3c9719f011e9c4" category="cell">連接埠錯誤長訊框</block>
+  <block id="97764bd9d14500421402a118e910080b" category="cell">由於長訊框而導致連接埠錯誤</block>
+  <block id="2c98b48ffd85ac841ee9bad35b47a9ee" category="cell">連接埠錯誤短訊框</block>
+  <block id="40cf1a82ffecefa301e97b88ef2d2516" category="cell">短框架導致連接埠錯誤</block>
+  <block id="3e75235453f258867730103a9181b6f2" category="cell">連接埠錯誤連結失敗</block>
+  <block id="1b753dba9291c3ba4813c8947aca51e7" category="cell">連接埠錯誤連結失敗</block>
+  <block id="46d31f6595967a81ce62461fd617a430" category="cell">連接埠錯誤連結重設 Rx</block>
+  <block id="361b3853018aaa4301398bbc054ea961" category="cell">連接埠錯誤傳輸連結重設</block>
+  <block id="a0fc5d7e3524d0afb46f31eedf0b6d78" category="cell">連接埠因連結重設而發生錯誤</block>
+  <block id="560df5fb1590844a55a48814b462dd79" category="cell">連接埠錯誤訊號遺失</block>
+  <block id="c36ab3da3727266f0ca30c59fc733c86" category="cell">連接埠錯誤訊號遺失</block>
+  <block id="e84b3dabdd74420138d318a1361b6bbf" category="cell">連接埠錯誤同步遺失</block>
+  <block id="7a42895ca113258204c11197d4362517" category="cell">連接埠錯誤同步遺失</block>
+  <block id="ba2c2322bca1effdb5ec6a239eb1cab1" category="cell">連接埠錯誤傳輸捨棄逾時</block>
+  <block id="1795f08a1e40ddad6681ae8682fa9ac7" category="cell">連接埠錯誤逾時捨棄</block>
+  <block id="647a8ab49c869d21aff22c9c5b440750" category="cell">連接埠錯誤總數</block>
+  <block id="557885d8fdc0fa05f3a759a1030aa216" category="cell">連接埠錯誤總計</block>
+  <block id="95842224e67f548b32cf6a40694bc93c" category="cell">交通路況影格速率</block>
+  <block id="66ecba979e4c0593a85349db952d786b" category="cell">總流量影格速率</block>
+  <block id="279f963d0e306688793ef38fc2b904e8" category="cell">平均影格大小</block>
+  <block id="0ae25e87a8bc8dc203c30a2f42f7bb84" category="cell">流量的平均影格大小</block>
+  <block id="d50bacde9fff9c8cdc3cb6b8f211ce2a" category="cell">傳輸框架</block>
+  <block id="68af77c90ab8d6ca116b64a27598df5e" category="cell">流量平均影格大小</block>
+  <block id="e50f84c8ec3b271bcb58e11a44e38a6b" category="cell">已接收流量</block>
+  <block id="d4d9c6e406b7849c3f27d6ef4b56c383" category="cell">總流量</block>
+  <block id="1cbc66743e29ca6f88d0254ed7d3c4cf" category="cell">流量傳輸率</block>
+  <block id="8a5f03924fbc02859be696012a68088a" category="cell">已接收流量使用率</block>
+  <block id="84eb7a551425ddf565e7d2512276c051" category="cell">總流量使用率</block>
+  <block id="1233fa55158f486f5bbd29842c06ea60" category="cell">總流量使用率</block>
+  <block id="46fd3cae12922cb0a543e2871c723eef" category="cell">流量傳輸使用率</block>
+  <block id="2f53549a73098820cf8cf4ea9ac78731" category="cell">Brocade SNMP</block>
+  <block id="b11e9b395b002d7acc96aa829b6a73d5" category="cell">SNMPv1、SNMPv2、v3</block>
+  <block id="bd4c9ab730f5513206b999ec0d90d1fb" category="cell">161</block>
+  <block id="1d5c153f4cffcf41dfd2e4aa0265af22" category="cell">Brocade SSH</block>
+  <block id="9a7ce4f20c6c7386dec1aa36308cd937" category="cell">資料來源精靈組態</block>
+  <block id="1589c0dc03c78d7945ff3f4a2b07995e" category="section-title">Brocade網路顧問HTTP</block>
+  <block id="ab9f6c2ae40ccefa9530dc4a81811de5" category="list-text">14.4.5</block>
+  <block id="652cae0b6c479d32c012a2cbd2a6cb76" category="cell">HTTP/S</block>
+  <block id="901555fb06e346cb065ceb9808dcfc25" category="cell">連接埠</block>
+  <block id="e7ae8eefc55ebbce4c2ae493458c9511" category="cell">Brocade網路顧問REST API</block>
+  <block id="c59814c5745505a7a040fa82a314dad7" category="cell">80/443</block>
+  <block id="bf2e398e4b4a71557453fba2eb1e54fe" category="section-title">Cisco MDS 與 Nexus Fabric 交換器</block>
+  <block id="22f4f7caad65f669da61310e4a0b68ed" category="cell">8978-E16 DS-C9124-2-K9 DS-C9124-K9 DS-C9124-K9 DS-C9139148-K9 DS-C9148-K9 DS-C9148-32P-DS-DS-C9148-48P-K9</block>
+  <block id="399d36f28a6c93897d3c991798f2dde2" category="cell">3.2(2c)4.1(3a)5.0(1a)5.0(3)N2(3.13e)5.0(3)N2(44.04i )5.0(3)N2(4.13j)5.0222a(44.21k)8.2(8)5.2(8)5.2(8)5.2(8c)5.2(8)7.2(7)6.2(7)</block>
+  <block id="0d1da8be32a393e6c2b527cbe79d7cf8" category="cell">網域ID類型</block>
+  <block id="502996d9790340c5fd7b86a5b93b1c9f" category="cell">優先順序</block>
+  <block id="a49b6b6027788b76ff58b7cd4e63deca" category="cell">SANRoute已啟用</block>
+  <block id="2a50fa6a5b65a9aa453fd3fc17cc446c" category="cell">指出此機箱是否已啟用SAN路由（例如、ivr等...）</block>
+  <block id="9b001c69726efc0b7ef4876759a01874" category="cell">區域類型</block>
+  <block id="99c08ecdd2c144c31f173cc2dc42a473" category="cell">預設分區行為</block>
+  <block id="65dc23b0f9ac642bd4a4e92889ef4321" category="cell">合併控制</block>
+  <block id="5e87a04e84bfa9d81110bc491cf552b8" category="cell">Cisco SNMP</block>
+  <block id="4bfaedd3a71f4a6c68e4ed7389df4540" category="cell">SNMPv1（僅限庫存）、SNMPv2、v3</block>
+  <block id="32b206e1063dfaad6a69643c2c618aa3" category="section-title">EMC Celerra（SSH）</block>
+  <block id="de59f22877fe91479b1b9396ade48c15" category="cell">NSX VG8 VNX5600</block>
+  <block id="781715a0725450baff4f0a1835500f43" category="cell">5.5.38-1 7.1.76-4 7.1.79-8.1.9-184</block>
+  <block id="633890c55ebb7bc068a1f71cc7393584" category="cell">是InternalVolume</block>
+  <block id="b0de63e7254b90535555e3dfe56db445" category="cell">檔案共用區代表內部磁碟區（NetApp磁碟區）、或是內部磁碟區內的qtree /資料夾</block>
+  <block id="2c1e5a2720eac64f3d4d8db2e0b74299" category="cell">共享</block>
+  <block id="9f2110e50837733c09310ef1a135a67e" category="cell">此檔案共用區是否有與其相關的任何共用區</block>
+  <block id="078f367ea2c7fdd337cff739053aab32" category="cell">檔案網格路徑</block>
+  <block id="9185a09f2d37fe701cd8a5943b5d411d" category="cell">qtree ID</block>
+  <block id="890a88bf28a33e8270139db6976bce9b" category="cell">qtree的唯一ID</block>
+  <block id="6fec124be964bb040691707e2ee32714" category="cell">內部Volume ID</block>
+  <block id="94a5a2c33ed1d620b31389632e2b5e4f" category="cell">上次快照時間</block>
+  <block id="975531451dc05d1682bfc7214f98167d" category="cell">內部磁碟區上的快照數量</block>
+  <block id="169b63f90579c0f402545a5cc83b258b" category="cell">使用容量總計（MB）</block>
+  <block id="be9410f3cad94c178de8d816e9198b0d" category="cell">將已用容量的支架置於從裝置讀取的位置</block>
+  <block id="fb0687dda0660191a80307ec79e09fb3" category="cell">虛擬儲存設備</block>
+  <block id="a0b99bd1d68e1faa3edab368a3ec5344" category="cell">擁有虛擬儲存設備（VFiler）</block>
+  <block id="71676bb324ac0415565369fda6598f49" category="cell">硬容量限制配額（MB）</block>
+  <block id="6bc07b9c218b1efa55e76439b3569378" category="cell">配額目標允許的最大磁碟空間量</block>
+  <block id="bde0336211a8279916dd97405ba427e8" category="cell">配額SoftCapacity限制（MB）</block>
+  <block id="09e3298c457b3cb7128262f566cab4cd" category="cell">配額使用容量</block>
+  <block id="3607e421c70ec935f3c65f70672cb7f5" category="cell">目前使用的空間（以MB為單位）</block>
+  <block id="2d660b8d906a87b150358e2df39cf41f" category="cell">硬容量限制（MB）</block>
+  <block id="2369b6d14ce1678bd1248db2ff073a53" category="cell">配額目標允許的磁碟空間上限（硬限制）</block>
+  <block id="87410105ab181f9c334dbc2dcba33319" category="cell">配額ID</block>
+  <block id="65d4def37f3da33dac02cac374cde985" category="cell">配額的唯一ID</block>
+  <block id="9c0cdbce9f0e7b49f7dae66bad6b4f2b" category="cell">軟容量限制（MB）</block>
+  <block id="384c24d6c249c5e68c5b0978f76707c4" category="cell">軟體檔案限制</block>
+  <block id="1c2890a632792b1c162a5862d41695be" category="cell">配額目標允許的檔案數目上限</block>
+  <block id="837cef41bfefeb54c062084189798feb" category="cell">已用檔案</block>
+  <block id="db789bab8ce64172bc558e26815ced3d" category="cell">目前使用的檔案數</block>
+  <block id="2292efd59a9a10431f5772d186232d65" category="cell">IP介面</block>
+  <block id="508c9c26fe33ed52db69e0a454b4842c" category="cell">以逗號分隔的IP位址清單、其中顯示此共用區</block>
+  <block id="b1f951a171927c73bd5dd6d97f98f017" category="cell">共享傳輸協定的列舉</block>
+  <block id="2b41a61f2dc6b55a9c5749a01055e1cf" category="cell">共用啟動器</block>
+  <block id="ed5dea09095f671b801bee34ea28a319" category="cell">權限</block>
+  <block id="b440fbb86ede4987364f36c681bd291c" category="cell">此特定共用的權限</block>
+  <block id="4e7efb3abf42438be66cc7eee11af885" category="cell">CPU計數</block>
+  <block id="2eb6f9c791d4456e610437be53a864bc" category="cell">儲存設備的CPU計數</block>
+  <block id="5d626be8921bba852f30e8f7b76b6c4f" category="cell">Celerra CLI</block>
+  <block id="6bffb0a09ef4822cf14de5c78f72857b" category="section-title">EMC CLARiiON（導航CLI）</block>
+  <block id="3337a607cd5a33d6b8d3f27ce7da458d" category="cell">API 版本</block>
+  <block id="905b4a107a5dbff9d67d4c594c2bbaf0" category="cell">6.28 7.32 7.33</block>
+  <block id="3679cf38729d0b2d5fb7f21bee0c585f" category="cell">CX4-120 VNX5200 VNX5400 VNX5500 VNX5600 VNX5700 VNX5800 VNX7600 VNX8000</block>
+  <block id="a7da9cc47efa1078fdec8beeaa246b98" category="cell">04.28.000.5.008 05.32.000.5.218 05.32.000.5.219 05.32.000.5.221 05.32.000.5.249 05.33.009.5.155 05.33.009.5.184 05.33.009.5.186 05.33.009.5.218 05.33.009.5.231 05.33.009.5.238 05.33.021.5.021.256 5.33.021.032.66</block>
+  <block id="91af5705f16502125e8b2187e64202c0" category="cell">CLI</block>
+  <block id="03937134cedab9078be39a77ee3a48a0" category="cell">群組</block>
+  <block id="54821ac5da4d26f36fcf925593467491" category="cell">用戶端API名稱</block>
+  <block id="8a1f02293377c1e0cbbc8658793f6e89" category="cell">用戶端API版本</block>
+  <block id="11617eafbdb7381c8096b2c1bb8435bf" category="cell">網路管道</block>
+  <block id="abd4328c725637aabedbd02d3b7ffd40" category="cell">雙向</block>
+  <block id="607e8085710c8bd209a61cea07da5655" category="cell">來源ID</block>
+  <block id="46e3f29921c5834939ac0d300fab994f" category="cell">目標ID</block>
+  <block id="cbcb113d072cf4437ec6292d80535ef7" category="cell">網路管路連接埠WWN</block>
+  <block id="1867075201f3fb264845a25c0e5e8514" category="cell">傳輸協定端點</block>
+  <block id="b718adec73e04ce3ec720dd11a06a308" category="cell">ID</block>
+  <block id="98bc7af02e50a3fd7d2ed494f54b3236" category="cell">SupportActive</block>
+  <block id="8b6e90e2ddb09ebe834a9bdae9fcf2ae" category="cell">指定儲存設備是否支援雙主動式組態</block>
+  <block id="fe387ce3e6ab6dac04ef1237179cf3c3" category="cell">管理Ip位址</block>
+  <block id="45fad1b9543e44cd687799bdcd5647b4" category="cell">磁碟群組</block>
+  <block id="b8b01d87cb13cbc4ecd1785226d0ce6e" category="cell">磁碟群組類型</block>
+  <block id="03ee637c263451ac2520c7f758e64614" category="cell">磁碟類型</block>
+  <block id="67c19e107de33cab7ea9a9db8bc9ccd2" category="cell">無法使用</block>
+  <block id="2b20636173a684fa0d66246f2351348f" category="cell">交會路徑</block>
+  <block id="b6755d218d5f4e1cef9cce9cc39aeda9" category="cell">中繼資料</block>
+  <block id="1805b600d57126032f3deb62c8db3d38" category="cell">旗標指出此Volume是否為中繼Volume、是否含有memeber。中繼磁碟區的磁碟群組為空！</block>
+  <block id="78127ff99c24188bc6b9c434464f4075" category="cell">複本來源</block>
+  <block id="cc5a1935e52aa282b156d9a7294182e6" category="cell">複本目標</block>
+  <block id="cd34b31ccabe859be97f3a96105215d5" category="cell">Volume成員</block>
+  <block id="021da1b20f73dc252361a54d80497ef3" category="cell">排名</block>
+  <block id="0a482f9333c7767e0ae44654c8b4a4ff" category="cell">StoragePools容量</block>
+  <block id="648ac6f84fd11f680f4930e28dcc48db" category="cell">Snapshot保留容量</block>
+  <block id="e33d9a21974ff6bdd21be69d55902b46" category="cell">新版CLI</block>
+  <block id="a12becc8af138ab4fa60fa13e0d34585" category="cell">6389、2162、2163、443（HTTPS）/80（HTTP）</block>
+  <block id="61d005913edc6d572aca506d0732d8e2" category="section-title">EMC資料網域（SSH）</block>
+  <block id="c2b7ab2b71d8af9d21b097b7d99383f2" category="cell">DD2500 DD4200 DD4500 DD6300 DD670 DD6800 DD6900 DD9300 DD9400 DD990</block>
+  <block id="f6d0d377b5a9d77b54dfe8d384213a3d" category="cell">5.4.6.0-503967 5.5.0.9-471508 5.5.2.1-486308 6.1.0.5-567091 6.2.30-663869 6.2.1.50-680189 7.10.1.1.15-1078832 7.10.1.1.20-1090468 7.2.0.70-686757.6.0.40-691389</block>
+  <block id="bfa1b9a3bb0e99995951ed53583f13d1" category="cell">廠商ID</block>
+  <block id="2974ee84ee6098a6cbbb0a39f3ed689a" category="cell">Data Domain CLI</block>
+  <block id="1044c8fb5028d43ba6ecf95164980347" category="section-title">EMC ECS</block>
+  <block id="c8f63ecaff5e983a2441126a241c4cfa" category="cell">ECS</block>
+  <block id="6b52f5e131d52c96decb1fc3b071f7cf" category="cell">3.6.1.3 3.7.0.6 3.8.0.6 3.8.1.1</block>
+  <block id="ce8c80d09164befdcf723e3f912cd2ac" category="cell">磁碟群組ID</block>
+  <block id="dd54739e5dea73dc878745af033f6163" category="cell">磁碟群組的唯一ID</block>
+  <block id="47b75ba86bc9631012976f9c3bbab804" category="cell">EMC ECS REST API</block>
+  <block id="e1c3c69291771830d53f0b78396c9230" category="section-title">Dell EMC Isilon / PowerScale （ CLI ）</block>
+  <block id="3fc9bd539901c7e4306f381f959a37d8" category="cell">A200 A2000 A300 A3000 F800 H400 H500 H500-4U-Single-128GB-1x1GE-2X10GE SFP+ -30TB-1638GB SSD H700 NL400 NL410 追溯（最近通話時間最後一通）： X210 X400 Sudo python</block>
+  <block id="2b469675f5b546f0cdf848162fcb2347" category="cell">9.2.1.12 9.4.0.14 9.4.0.17 9.5.0.7 v8.0.0.6 v8.0.0.7</block>
+  <block id="4ba8649862a0113bf0990d4564064285" category="cell">廠商磁碟群組類型</block>
+  <block id="cd4221ee8d901dbd43eb91164d6bcf33" category="cell">廠商指定的磁碟群組類型</block>
+  <block id="fae8f9203bd2bb47a79ab914ec61fbf6" category="cell">硬檔案限制</block>
+  <block id="0b58a9de9e72a27fa77f5c4ffb8ecb0d" category="cell">配額目標允許的檔案數目上限</block>
+  <block id="3804f025b9b768ee6db8fd73a054573a" category="cell">臨界值（MB）</block>
+  <block id="ab8085175a91a88968fcb56b8c76f8c8" category="cell">配額目標的磁碟空間臨界值</block>
+  <block id="f98f7d98c1fa7ae100310b74cd66f715" category="cell">使用者/群組目標</block>
+  <block id="eef3a0a4949a4e576b78bb29a4108562" category="cell">此配額指的使用者/群組目標</block>
+  <block id="2e24a64f661bb25d79cdb67855a0d38d" category="cell">儲存節點資料</block>
+  <block id="0e9aedb63e1a465880ff2335f6d74111" category="cell">檔案系統上的讀取IOPs數目</block>
+  <block id="2c76507d67249ac88a39439b3555ca8e" category="cell">檔案系統的IOPS寫入</block>
+  <block id="0bbf52d1fa8d04665f971a021a8ce244" category="cell">檔案處理量讀取</block>
+  <block id="d558759d6341204145804b0ba70193e2" category="cell">檔案系統處理量</block>
+  <block id="911d26b7250324e4f58bb2fec8a90659" category="cell">檔案系統處理量寫入</block>
+  <block id="58ebcd17c13c92b031d8870f4360619f" category="cell">Isilon SSH</block>
+  <block id="45a62a8ae256e48199c3cb271a260e21" category="section-title">EMC PowerStore REST</block>
+  <block id="fd8ecac2685ead441e9d0c2556ab928d" category="cell">PowerStore 1000T PowerStore 5000T PowerStore 5200T</block>
+  <block id="3cc6fe4598e9d1e1781040405de305e2" category="cell">2.1.1.3.2.1.03.5.0.2</block>
+  <block id="c56b3ac48cc041e08ee5d9a2fd6e1869" category="cell">iSCSI網路入口網站</block>
+  <block id="d608f7deedb1f7b2cae3f33a7f6d4ea7" category="cell">接聽連接埠</block>
+  <block id="d259c7823c18eb4275c4915fd55026f0" category="cell">NIC</block>
+  <block id="bf75904763807babb09d285ee835a969" category="cell">iSCSI網路入口網站群組</block>
+  <block id="908e7f9cb0e20c9f71415d5be8757f2b" category="cell">入口網站群組名稱</block>
+  <block id="cc2881e470592a79eb5c1a24c29f7d51" category="cell">入口網站群組標記</block>
+  <block id="a34f9f23d9e8b4ed126e13d3308c1397" category="cell">iSCSI節點</block>
+  <block id="b42e7e9f43276548d600d26ad21cd252" category="cell">節點名稱</block>
+  <block id="86a8fb3f5dbc54a1ddb9e4e66ada2915" category="cell">合作夥伴節點UUID</block>
+  <block id="b4f161c8fe26c799d33016c385f6fb33" category="cell">HA配對的UUID</block>
+  <block id="4f7de25ed8f099cc30aa75bbb3b896de" category="cell">父序號</block>
+  <block id="70eda6cf3169df9e5c7a4f47825c9328" category="cell">QoS -原則</block>
+  <block id="b231f764525753f8a789f224b1d6ab55" category="cell">需要遮罩</block>
+  <block id="2123eb0a47bc255b754144805d4b079a" category="cell">IOPS其他</block>
+  <block id="2f4b1075fd1ed28c7acb3b13c46bba1c" category="cell">EMC PowerStore REST API</block>
+  <block id="94b28c491047940f499bb7ba2258992e" category="section-title">EMC RecoverPoint（HTTP）</block>
+  <block id="78814f3852ff02a5c06c73000467afca" category="cell">RecoverPoint</block>
+  <block id="9c3f39564ec6f80a2727d380d706f8a1" category="cell">5.1.SP3.P1（ g.69 ） 5.1.SP4.HF1 （ h.86 5.4.SP4.P1 （ h.89 ）</block>
+  <block id="5ea93ac7e9175685461a3aa7ecd6678d" category="cell">RecoverPoint REST API</block>
+  <block id="305f24249d52ff8168d1b27f40c147f2" category="section-title">EMC Symmetrix CLI</block>
+  <block id="6af15b7baefa3b0c5e3779145fcc9bbd" category="cell">V10.0.0.0 V10.0.0.3 V10.0.1.0 V10.0.1.3 V10.1.0.0.0 V10.1.0.0.3 V10.1.0.0.6 V9.1.0.15 V9.2.0.0 V9.2.3.0 V9.2.3.4 V9.2.3.6 V9.2.4.1 V9.2.4.2 V9.2.4.6</block>
+  <block id="9927ac700ae81f7aa4517e72e2535b60" category="cell">PMax8000 PowerMax_2000 PowerMax_8000 VMAX-1 VMAX250F VMAX40K VMAX450F VMAX950F</block>
+  <block id="48429764e647937ee7f575fbacb95ce4" category="cell">5876.286.194(16F40000) 建置 1155978.479.479(175A0000) 建置 3725978.711.711(175A0000) 建置 175978.714</block>
+  <block id="def09fa4a833717d38298eb37c861af8" category="cell">加密</block>
+  <block id="ce160a2c5bc8a350f1079c835c90b0b6" category="cell">iSCSI節點對應</block>
+  <block id="9d7b69b0af6ffadea4bba899938aadcc" category="cell">入口網站群組oID</block>
+  <block id="6781eef4befd1d5fc37df3b788fa547d" category="cell">iSCSI工作階段</block>
+  <block id="a9e4f9871a7943bdd69da7576c5b7f12" category="cell">啟動器IPS</block>
+  <block id="1aa5596463d9bafd2ae1ae5bac9ff997" category="cell">啟動器oID</block>
+  <block id="e217d6d936cda7d607db07da027830bb" category="cell">最大連線數</block>
+  <block id="6467cf1c40321da62630b970f5b881f5" category="cell">連線數</block>
+  <block id="2fae32629d4ef4fc6341f1751b405e45" category="cell">安全性</block>
+  <block id="69a35504044cfa0ed20e3f78fb1fb666" category="cell">用戶端API說明</block>
+  <block id="931eb3a8b95aeb16cb0dd2a81318ac65" category="cell">軟限制（MB）</block>
+  <block id="8c7a7a3c946f66f41d757534affbea7b" category="cell">在磁碟區建立或調整作業大小期間所定義的邏輯磁碟區大小</block>
+  <block id="11c692a68a660cc9a1641a4fb8f71b5a" category="cell">磁碟大小</block>
+  <block id="d5dddc416db33cf2559e34680d27cc85" category="cell">以英文分隔的磁碟大小清單（GB）</block>
+  <block id="a83c1eefc7fca7514ddc960021a3dc7f" category="cell">以英文分隔的磁碟速度（rpm）清單</block>
+  <block id="5640ee4b2a998e5e30c09401c3dd4542" category="cell">大型電腦</block>
+  <block id="d90da70f094acaecf15768c7e27d2b06" category="cell">指出此Volume是否為大型主機Volume</block>
+  <block id="d4e2713d1b1725a1592f9268589f990d" category="cell">Snapshot</block>
+  <block id="716db86e78c842ddd6593c2c0b2ddc02" category="cell">寫入容量</block>
+  <block id="97163465f980ded0b72ef8474de095c4" category="cell">主機寫入此磁碟區的總容量（以MB為單位）</block>
+  <block id="b61c79f1934bc51262894507a720552e" category="cell">QoS 限制 IOPS</block>
+  <block id="06252d2ae9b132eed353887bd3eb817e" category="cell">QoS限制Mbps</block>
+  <block id="642252a0528a1c6c2ffa4dac60cf3fd0" category="cell">儲存群組</block>
+  <block id="1f2784105a791fa003743c4b56191bda" category="cell">汽缸</block>
+  <block id="ff7b5fce5e9223c087cecbbb4beb0b6a" category="cell">SYMCLI</block>
+  <block id="65f2a94c8c2d56d5b43a1a3d9d811102" category="cell">2707</block>
+  <block id="2291f088bb6260a7b8f29b4966d2ee58" category="cell">Symmetrix SMI-S</block>
+  <block id="48ffcee6e99f3e10a7e5934acb136202" category="section-title">Dell Unisphere REST</block>
+  <block id="2140f68a5e813b23e3ed99035c12ad77" category="cell">V10.0.1.3 V10.1.0.0.1 V10.1.0.0.5 V10.1.0.6.V9.2.4.7 V9.2.4.9</block>
+  <block id="982593940190cf8a127d1195a43bf5e3" category="cell">PowerMax_2000 PowerMax_2500 PowerMax_8000 PowerMax_8500 VMAX250F VMAX950F</block>
+  <block id="819f94f49486aca85161e2e9f6e1a9f6" category="cell">5978.714.714 5978.714.714 組建 6 5978.714.714 組建 61 5978.714.714 組建 85 組建 6079.225.0 組建 127 組建 6079.225.0 組建 216</block>
+  <block id="37fee28dbf15d67e74df4abbebeb7e6c" category="cell">有效使用容量百分比</block>
+  <block id="248a2ada600649dd9a0defecae5a2871" category="cell">Dell Unisphere API</block>
+  <block id="68c87bc16048b7ab1db3119e879590f7" category="section-title">EMC VNX（SSH）</block>
+  <block id="6f0150f6bda53e72513ad8effe98c4ca" category="cell">VNX5300 VNX5400 VNX5800 VNX7500</block>
+  <block id="e62f7556fc1a8035de4e80088e736cd7" category="cell">05.32.000.5.219 05.32.000.5.221 05.32.000.5.225 05.33.009.5.186</block>
+  <block id="f043a08758706c0551863a8b0cfc84cd" category="cell">VNX SSH 和 CLI</block>
+  <block id="d805560a2796d5cb8d0b7d6d581b5c63" category="section-title">EMC VNXe 與 Unity Unisphere （ CLI ）</block>
+  <block id="71c9ab6051a4f60bf01939123024d1b4" category="cell">Unity 300 Unity 300F Unity 350F Unity 450F Unity 480F Unity 550F Unity 600 Unity 600F Unity 650F Unity 680 Unity 680F Unity 880 Unity 880F VNXe3200</block>
+  <block id="d78e0c85358e3eede907cae5cc16f76e" category="cell">3.1.17.102239064.2.3.96706354.5.0.5.001 5.0.2.0.5.009 5.0.6.0.005.008.0.7.0.005.008.0.5.0085.1.0.5.394.2.0.5.007.2.0.5.007.1.2.0.5.00751.3.0.5.0035.2.0.0135.2.2.0.5.004.5.0.5.005.3.0.5.1205.3.1.0.5.008.0.005.4.0.0.5.094</block>
+  <block id="68d13764f7761df0def3e72de99042be" category="cell">VNXe 和 UnEthisphere CLI</block>
+  <block id="0d0679d541823c0d0d5fa3f8521a681e" category="section-title">EMC VPLEX</block>
+  <block id="9a82bc7d59b7ff440c08c1e56c857ad4" category="cell">VPLEX</block>
+  <block id="e2470fc943626398a4be6fe59a2eaf3d" category="cell">6.1.0.00.00.236.1.0.01.00.136.1.0.02.00.04</block>
+  <block id="6b46051fc6711bf70599ead288d0a90a" category="cell">EMC VPLEX CLI</block>
+  <block id="dfaab1339734d2399b253d2c86d08a0a" category="cell">EMC VPLEX API</block>
+  <block id="cecc3b667dcb6cfacfe39e7910093e18" category="section-title">EMC XtremIO（HTTP）</block>
+  <block id="69c001b217de573c82cf8578ff6f1040" category="cell">4.2.2 6.2.1 6.3.1 6.3.2 6.3.3 6.4.0</block>
+  <block id="468fc1373903310d88ae31e4eeb9b4ab" category="cell">1 塊磚、 48TB 1X20TB 2 塊磚塊、 251TB 2X20TB 3 塊磚塊、 283TB 4 塊磚塊、 503TB 4X10TB 6X20TB 8X20TB</block>
+  <block id="9f75d4a885a98f9c3fe18c9ab89ed5df" category="cell">4.0.25-274.0.31-11 6.1.0-99_X2 6.2.1-36_X2 6.3.3-8_X2 6.4.0-36_hotfix_2_X2</block>
+  <block id="6cacc8dd39dbd60947aaa200f1f574d4" category="cell">EMC XtremIO REST API</block>
+  <block id="3f0ca6a8202a9018ed738eb7d458ac5a" category="section-title">NetApp E系列</block>
+  <block id="f126b7f2b049166c2d39449dcb500a62" category="cell">2650 2660 2704 2806 5600 5700</block>
+  <block id="3265d2905304f935373714af719b637b" category="cell">8.10.15.0 8.20.11.60 8.20.16.0 8.20.5.60 8.40.0.3 8.40.60.2 8.63.0.2 8.72.0.0 8.72.1.0 8.72.2.0 8.73.0.0 8.74.2.0</block>
+  <block id="ab7c13788cae2eff01d1255b815725d7" category="cell">RMI</block>
+  <block id="40391a3671202eba588cf010846ee33e" category="cell">快取大小</block>
+  <block id="113c69aaaeb7806c3953bbc1398afc81" category="cell">裝置快取大小（以MB為單位）</block>
+  <block id="52df6fad58380f14b532f856eb5bbe65" category="cell">總資料容量</block>
+  <block id="245fcf2da08337a16deae97b9417f373" category="cell">部分API SANtricity</block>
+  <block id="b136ef5f6a01d816991fe3cf7a6ac763" category="cell">TCP</block>
+  <block id="f3856c7e096c52f1bcea0e237cd6f33a" category="section-title">HDS HCPs（HTTPS）</block>
+  <block id="de9af54682ac41397db654efb63c031a" category="cell">Hitachi內容平台</block>
+  <block id="3c3391fc45e72a6f0195417bf2ce7325" category="cell">9.6.2.37 9.6.3.33</block>
+  <block id="8ba5a01a291075248a9fb648699c4b8b" category="cell">HDS HCP REST API</block>
+  <block id="38f629170ac3ab74b9d6d2cc411c2f3c" category="cell">9090</block>
+  <block id="a2099e963cf5983d81dc9e12f00afe22" category="section-title">Hndvice管理程式</block>
+  <block id="8a99f92e59830576b68c91e6dba83cee" category="cell">8.6.48.7.8.8.8.8.8.8.8.8.5</block>
+  <block id="a801c37f75b6b5ed10b33986ebd061d7" category="cell">D850XS HM700 HM800M R800</block>
+  <block id="d48e406b479d93758c78beee9a7a9c07" category="cell">0988/J-W DKC:73-03-69-00/00 DKC:80-06-92-00/00 DKC:83-05-48-00 DKC:83-05-50-40/00 SVP:73-03-68/00 SVP:80-06-87/00 SVP:83-05-52-40/00 SVP:80-06-40/00-05-40/00</block>
+  <block id="054d32c5203253d8f851a6d5a2c67159" category="cell">HDS XML API</block>
+  <block id="2f412c240cac35e48beb96e1bb550342" category="cell">匯出/CLI</block>
+  <block id="b173eaa0fda50923922975250a698acd" category="cell">匯出公用程式（USPV）/ SNM CLI（AMS）</block>
+  <block id="fa88c9439486746e95052c570d09f290" category="cell">HiCommand Device Manager XML API</block>
+  <block id="d0fb963ff976f9c37fc81fe03c21ea7b" category="cell">2001</block>
+  <block id="b47d5567b66b2c2d7d44a9625a934052" category="section-title">HDS HNAS（CLI）</block>
+  <block id="380ac4f5660ae29cc852c55b754ebddc" category="cell">G600 HNAS 4100</block>
+  <block id="dff0343d645943dce6998b082754f125" category="cell">14.6.7520.04</block>
+  <block id="18b2b0426959c6ff5ef1e2b73137cb5c" category="cell">HDS HNAS CLI</block>
+  <block id="ea126fc7094292a7eafddaa5f79bc629" category="section-title">HPE Nimble / Alletra 6000儲存設備</block>
+  <block id="6654c734ccab8f440ff0825eb443dc7f" category="cell">v1</block>
+  <block id="3966e057d0a5cb9788b48ba20ffbf4fa" category="cell">AFF 40 AFF 80 HF60</block>
+  <block id="03e3e88be74aaa3f38e615e799313064" category="cell">5.0.3.100-575430-opt 5.2.1.6600-841103 選項</block>
+  <block id="4261623eb364ceabdf81868a93e8d685" category="cell">保留容量</block>
+  <block id="0c35f4ba2a30997ea5cf014a5ae58b0e" category="cell">保留容量（以MB為單位）</block>
+  <block id="d7576ac715ac6cef050f42e555aa9b5b" category="cell">HP Nimble REST API</block>
+  <block id="2a10665525774fa2501c2c8c4985ce61" category="cell">5392</block>
+  <block id="d8a9c0973aff634fea36b1ea1a3021a2" category="section-title">Huawei海洋儲存設備（REST / HTTPS）</block>
+  <block id="daa86c896d1feda9065084ee252f1665" category="cell">5500 V3 6800 V3</block>
+  <block id="9a6aa29fd187e7afc2a2d0a9a18deed1" category="cell">V300R006C50</block>
+  <block id="b99d9e6339c66107303cc64a9c47c625" category="cell">Huawei OceanStor REST API</block>
+  <block id="172ef5a94b4dd0aa120c6878fc29f70c" category="cell">8088</block>
+  <block id="6a56cccbc57bc9da92069fa8f49c91f9" category="cell">Huawei OceanStor Performance REST API</block>
+  <block id="f10ebf10385784ef6c531e432c6747e5" category="section-title">IBM SVC（CLI）</block>
+  <block id="86af96ee37735363f259f7abb729148d" category="cell">2076-112 20766-124 2076-12F 2076-212 2076-224 2076-224 F 2076-224G 20766-52420766-624 20766-724 2077-24F 20777-324 467-924 4662-6H2 9840-AE1 9843-AE2 9843-AE3 服務</block>
+  <block id="a3d52e580e4ab7687ee57476e2daec20" category="cell">1.5.2.5 1.6.1.0 1.6.1.5 7.8.1.11 7.8.1.13.7.8.1.5 7.8.1.7 7.8.1.8.1.3.5 8.1.3.6.8.2.1.11.8.2.1.8.3.1.2 8.3.1.5 8.4.0.10 8.4.0.11 8.5.0.11 8.5.0.12 8.5.0.9.8.5.3.16.6.0.4</block>
+  <block id="0f151f12e5bfc4508260d20ebc5fef43" category="cell">使用FlashPools</block>
+  <block id="03a52eb6b4bc772c112d1ab81b7dc2f0" category="cell">指出此儲存庫是否使用Flash Pool（NetApp專屬）</block>
+  <block id="98921133d10fbdb0fb6dbb7b2648befe" category="cell">標題</block>
+  <block id="d761a5c8d00a0bbb8fb068e3b40c9011" category="cell">指定此Volume的標頭（在NetApp中）</block>
+  <block id="59c3fdf35bd621ae2f98d332917d6736" category="cell">保護類型</block>
+  <block id="139fddbdd4b220cf12dda59ee49de66d" category="cell">IBM SVC CLI</block>
+  <block id="64ca9f1efd950d3e7815f291e83db0ae" category="section-title">Infinidat Infinidat Infinbox（HTTP）</block>
+  <block id="6d1d2854ec462e15deca14be6686ff85" category="cell">F4304 F4304T F6260 F6306</block>
+  <block id="d95e4febba151013d97682a0fb1e75ab" category="cell">7.1.14.0</block>
+  <block id="47f7060be7cf2bba280a7fc28fd9a923" category="cell">Infinidat REST API</block>
+  <block id="bbc2d665b02dc421c5c756db4b973610" category="section-title">Microsoft Hyper-V</block>
+  <block id="84aeb1b1950c32a3a3160dc01316df5c" category="cell">WMI</block>
+  <block id="c973e90dcaabd088ed09204eebc51539" category="cell">NASShare資料存放區</block>
+  <block id="464c14d5afd04fff34472bb910adf7b1" category="cell">NAS共用oID</block>
+  <block id="3958f022a586f518094cdaf34fdfae01" category="cell">NASShare主機</block>
+  <block id="2c1a8654e21b67728f6c336c3b91e12e" category="cell">唯讀</block>
+  <block id="a8b85b40ef2419a77a5e70cf586e3aa2" category="cell">磁碟名稱</block>
+  <block id="703fb2898407d085357b23bdb7f1b113" category="cell">TID</block>
+  <block id="a3d81d0c8a84b8e7c42bc0b9fa52ec60" category="cell">NAS共用</block>
+  <block id="8c17213787bc78306b39f40f1dbc835a" category="cell">已分配容量（單位：MB）</block>
+  <block id="6836645ccd02142158d4728891212ead" category="cell">檔案管理器IP</block>
+  <block id="fe71f46c6d162e0131e562bccca8ecdb" category="cell">檔案管理器名稱</block>
+  <block id="a0abbb0e17a1f7467715d55f2fdc0f0c" category="cell">共用路徑</block>
+  <block id="63fa3e20a1bed688a270c9994bbc3445" category="cell">讓HvNasShare與共用配對</block>
+  <block id="4d3d769b812b6faa6b76e1a8abaece2d" category="cell">使用中</block>
+  <block id="04c1c356a348ae7fd4935ea0da26992b" category="cell">LUN oID</block>
+  <block id="a4d0b620c1f9b7b9a2a9dfe5851669a6" category="cell">主機連接埠WWPN</block>
+  <block id="d45b73e93937e9b5293e7ffbfab1a57c" category="cell">儲存連接埠WWPN</block>
+  <block id="5de66cbc1db9ca5996d0a960b59125b5" category="cell">已用容量報告（MB）</block>
+  <block id="8fa17b6ff7c88b22b8e94f51617bbc07" category="cell">主機CPU計數</block>
+  <block id="821fe7ee7ddce033a9ddbaa8730df557" category="cell">主機CPU速度</block>
+  <block id="43cf09ab2a067f468a044680309f9307" category="cell">主機網域</block>
+  <block id="c54a4bffd8280b8d11dbfb5482b80aed" category="cell">主機安裝的記憶體</block>
+  <block id="ec7a2166da937e7ec019a165ca1c13aa" category="cell">主機模式</block>
+  <block id="035896890f7fd31777ca1c1621d1374e" category="cell">NIC數</block>
+  <block id="8e094ad099d692bf5b0eae0e8bc7d7d7" category="cell">NIC速度</block>
+  <block id="1cf34a855e141c48fbc42273e5748ab9" category="cell">平台類型</block>
+  <block id="3d265b4e1eeef0ddf17881fa003b18cc" category="cell">PowerShell</block>
+  <block id="24b362b50a44247426c15810b2e0631e" category="cell">WS 管理</block>
+  <block id="293c9ea246ff9985dc6f62a650f78986" category="cell">HTTP</block>
+  <block id="fccc64972a9468a11f125cadb090e89e" category="cell">5985</block>
+  <block id="7f1de29e6da19d22b51c68001e7e0e54" category="cell">135</block>
+  <block id="a61a9c39243f1f0af5e6bc0eee7e4206" category="section-title">NetApp 7 模式</block>
+  <block id="3170522648367d21423b781343eec922" category="cell">1.12 1.17 1.19 1.20 1.21</block>
+  <block id="dd5a6a5261f4cafaff719e41bab30adf" category="cell">FAS2220 FAS2240-2 FAS2240-4 FAS2554 FAS3210 FAS32250 FAS6240 FAS8040 FAS8060 N6070</block>
+  <block id="24c7dfcc75fd0f1ecd372a97902be14f" category="cell">8.1.1 7-Mode 8.1.4P6 7-Mode 8.2.3P2 7-Mode 8.2.3P3 7-Mode 8.2.3P6 7-Mode 8.2.4P4 7-Mode 8.2.4P5 7-Mode 8.2.5P3 7-Mode 8.2.5P5 7-Mode 8.2P5 7-Mode 8.2P4 7-Mode Data ONTAP 7.3.3 Data ONTAP 7.3.4 版</block>
+  <block id="fa97f6975c9b94a252d204cd22159ff4" category="cell">能力</block>
+  <block id="82e3d407504f0d6040bbcb3cf5e0cee8" category="cell">授權</block>
+  <block id="019d1ca7d50cc54b995f60d456435e87" category="cell">已使用</block>
+  <block id="b2630c1a73e14e07d89019b761a85bf7" category="cell">啟用oplocks</block>
+  <block id="1a9879ab1b221052d644c9c0beba7553" category="cell">FileShare上是否啟用投機性鎖定</block>
+  <block id="d5b3f55cf578ad75b136acb2a4d422df" category="cell">安全性類型</block>
+  <block id="8af35792f5b036ab613422b4a458459e" category="cell">iSCSI安全資訊</block>
+  <block id="0c15c885a2f36acea55c932a2207ebcb" category="cell">驗證類型</block>
+  <block id="d1baccf8234b8c4892c1176f3891aec8" category="cell">啟動器節點名稱</block>
+  <block id="bb4030467d037406ead663537c543b8c" category="cell">目標節點名稱</block>
+  <block id="a05dae5ed3d2ab9186ed568f63301748" category="cell">啟動器工作階段ID</block>
+  <block id="635cd18aa82d7ae6eda148146e93d860" category="cell">目標工作階段ID</block>
+  <block id="a41f92b40ec03a010f2ac82c94ba6f89" category="cell">複製來源</block>
+  <block id="fd1440d605649ff0f097f69b98c6f54a" category="cell">來源內部Volume的名稱</block>
+  <block id="2121c770d8948a4d648bb9ab2e622cbb" category="cell">最後一次知道對Volume的存取</block>
+  <block id="6945317d8b0db275e1b767843815fe73" category="cell">空間保證</block>
+  <block id="58c14dfec007748adfcfd9d7798f2a82" category="cell">空間限制原則（檔案、磁碟區或無）</block>
+  <block id="f514d8a6a16e40f4a76fc4e5f293283f" category="cell">完整複製儲存容量總計（ MB ）</block>
+  <block id="4e49e73a98ae8193e1399cec9caf9e4f" category="cell">來源內部Volume</block>
+  <block id="58cfc3b89daf19c66b2ecbbb3462d99b" category="cell">目標內部Volume</block>
+  <block id="f55f6181900936e07234ac7b41933273" category="cell">oplocks</block>
+  <block id="3a2f864765dcc20e6d83754d6808e471" category="cell">指出是否在Qtree上啟用投機性鎖定</block>
+  <block id="5d4eed453fc4bdbbfcfb8af4661c2dbf" category="cell">安全風格</block>
+  <block id="b5fd99e8a0fdd5d8b695bcb0d14579ad" category="cell">目錄的安全樣式：UNIX、NTFS或混合式</block>
+  <block id="120097aae43f642350aa4ea6b7db5bbc" category="cell">已更換磁碟讀取總數</block>
+  <block id="b25d1f10591ecf26b3978de4f3228bc7" category="cell">NetApp 7 模式 ZAPI</block>
+  <block id="837e5317f8f1d06276bea49ab62e99d9" category="cell">ZAPI</block>
+  <block id="9faca164fbcd544d1981957d0b4e8fef" category="section-title">NetApp叢集Data ONTAP 式NetApp 8.1.1以上</block>
+  <block id="8011ed7b5d788e1d891ec1545b90163f" category="cell">AFF AFF FAS500f A150 FAS2240-A200 FAS2520 FAS8040 FAS8040 FAS8040 AFF AFF AFF FAS8200 FAS8300 FAS8700 FAS9000 FAS9500 FAS30252552 FAS802050 AFF FAS2620 FAS2650 FAS2720 FAS2750 ： A250 AFF 、 A300 AFF 、 A400 AFF 、 A700s 、 AFF 、 A800 AFF 、 A900 AFF 、 C190 AFF 、 C250 FAS2240-2 FAS2520 FAS8040 AFF8080 CDVM200 AFF 、 FAS802552</block>
+  <block id="cb92ca5a52bfdd4e95ead03336b58688" category="cell">8.2.3P5 8.2.4P3 8.3.1P2 8.3.2.3.2.2P12 8.3.2P5 8.3.2P8 9.1.09.1.0P15 9.1.0P19 9.1.0P2 9.1.09.1.0P20 9.10.1P11 9.10.1P12 9.P12</block>
+  <block id="69938172a08f678d3f5416c37c342593" category="cell">傳入關鍵字</block>
+  <block id="15b72b6d740e99dbf49a92f1e130bb31" category="cell">傳出關鍵字</block>
+  <block id="6dd181b66104328be632f9193563f2a1" category="cell">FlashPool資格</block>
+  <block id="3730a8f51f1477ec133a27a39eb1038f" category="cell">內部磁碟區是否可以參與混合式快取</block>
+  <block id="dc3a382f5cbca87a35fdc4deba8f8826" category="cell">調適性QoS原則</block>
+  <block id="0be8406951cdfda82f00f79328cf4efc" category="cell">留言</block>
+  <block id="ac56726c6a22130ed1fe9f64c6315a34" category="cell">說明：說明SVM的免費文字註解</block>
+  <block id="23ce9725e955780387f54c0d83eea722" category="cell">群組ID</block>
+  <block id="28974c2c793e780427dfb571b26443e6" category="cell">群組名稱</block>
+  <block id="f965d4cc285124f2f3a3cd9e6da27e63" category="cell">QoS限制原始</block>
+  <block id="370d3b539e9e26d82380fec431804da0" category="cell">此儲存設備是否為叢集</block>
+  <block id="41790c6e5a05b27da6f3e809724f8c38" category="cell">已啟用CompactionSavings</block>
+  <block id="341a7ed392b3acf42503f54b89dd0954" category="cell">使用授權百分比</block>
+  <block id="900eec7e211843c41dcd66956d0bc396" category="cell">QoS等待</block>
+  <block id="23a83856d88ced986d392a149164b32d" category="cell">QoS等待時間總計</block>
+  <block id="3663f05a29b6539b77860da6ca259231" category="cell">配額硬限制</block>
+  <block id="603de9381d1a7234baaca06cda3e6dea" category="cell">容量配額硬限制</block>
+  <block id="387d72402ae248356930194964bdfa8b" category="cell">配額軟限制</block>
+  <block id="e4f6684ad98e9b133ae9741729a084ea" category="cell">容量配額軟限制</block>
+  <block id="1467ebf61cb3c2b832448a89003897e8" category="cell">檔案總數</block>
+  <block id="096fbdc80c146b3b29d148259155197a" category="cell">部分保留（包含在已分配的資料容量中）</block>
+  <block id="5522aeccb55610d8b86a0a1a766a57ca" category="cell">CompactionsSavingsPercent.Total</block>
+  <block id="07cd5b48617414af21268990f0ec4794" category="cell">Compaction空間總計</block>
+  <block id="f490bbfe1c6761ba2e315375e05f67cd" category="cell">總壓縮節約量</block>
+  <block id="41d5b2ba273c2ea7c2cebca8fcd494f7" category="cell">壓縮節約空間</block>
+  <block id="dd870e838b8b6020497c58ab3e520037" category="cell">重複資料刪除SavingsPercent.Total</block>
+  <block id="5fe5faada3d804e4f4e45d8af43d6858" category="cell">重複資料刪除節省空間</block>
+  <block id="759a84c731a74f1d5a0ff967d1a26377" category="cell">使用的物件存放區實體空間</block>
+  <block id="0977007191b72def27e12c414b52f929" category="cell">物件存放區空間參考空間</block>
+  <block id="d0ef851de9d11c9d5222fcdc81d24047" category="cell">已儲存物件儲存空間 SIS 空間</block>
+  <block id="a5fed773013bf44d7fc3c090dba7be01" category="cell">使用的物件存放區空間</block>
+  <block id="502de0ca02b6a1c74a8a9c374793c768" category="cell">NetApp ONTAP API</block>
+  <block id="e90757a1a3f3e8a4b40daae00fcc1b61" category="section-title">NetApp SolidFire RJ8.1以上</block>
+  <block id="3821d5dceb53966d31f954947ec2170a" category="cell">H410S-1 SF19210 SF2405 SF38410 SF4805 FC0025 FCCN001 H410S-0H610S-1 SF19210 SF2405 SF38410 SF4805</block>
+  <block id="1a35e8c09351f41df4e7b89bfff9101e" category="cell">11.1.0.72 11.3.1.5 12.3.0.958 12.3.1.103 12.3.2.3 12.5.0.897 12.7.0.380 9.3.0.40</block>
+  <block id="af0a5cd61b6efca604f162ab970d4ecf" category="cell">帳戶識別碼</block>
+  <block id="5d55785a871474b5490ecc8da433a32d" category="cell">帳戶名稱</block>
+  <block id="642a34dc59e1f45b52246e81378e86e6" category="cell">QoS爆發IOPS</block>
+  <block id="7816688caa253ba9627537f17066fb4c" category="cell">QoS最低IOPS</block>
+  <block id="e2448c89743cd1dd4759858e0b83ae4f" category="cell">SolidFire REST API</block>
+  <block id="cdae224de44c7ca9779763280e90b457" category="section-title">NetApp StorageGRID （ HTTPS ）</block>
+  <block id="9b421b4d46417a513776e234031691c1" category="cell">Webscale</block>
+  <block id="2139eefbe1e1266190a11745e239faf7" category="cell">11.6.0.11 11.6.0.7 11.7.0.4 11.7.0.8 11.8.0.5 3.3.4 3.5 4.0</block>
+  <block id="ebf7787778d7d227624dbcac732c76cf" category="cell">GuidKey 1.</block>
+  <block id="0ada6fe3d2dceaa115002ac5f86da4d3" category="cell">GuidKey1是指自OCI 7.2.5版以來、其GUID金鑰未變更的所有物件。</block>
+  <block id="b7362eb6c4fb4b475f8bd7ab576a4f17" category="cell">GuidKey 2.</block>
+  <block id="c2bef82ea99d92562d5bdb34de727594" category="cell">GuidKey2是指自OCI 7.2.5版以來、其GUID金鑰未變更的所有物件。</block>
+  <block id="dfd2bfc8d7a5d7d3f94a57b772ffb204" category="cell">節點容量使用量允許的中繼資料（以 MB 為單位）</block>
+  <block id="89669295cd8238d8ba8c5acc85f8f101" category="cell">節點容量使用量總計（ MB ）</block>
+  <block id="fc334056c2786b8f00e51787c80bc5bc" category="cell">可用的節點容量使用率（ MB ）</block>
+  <block id="cfa57e411a32ae463c4d417e2f3bc066" category="cell">以 MB 為單位的節點容量使用率</block>
+  <block id="1dd3a78893ed38f568415e1e82060632" category="cell">節點容量使用率使用中繼資料（以 MB 為單位）</block>
+  <block id="668445f09da337d276dc852bb6a0dbb3" category="cell">站台名稱</block>
+  <block id="af002e7b28db9eb92392e4a88668401e" category="cell">節點容量使用量允許的中繼資料</block>
+  <block id="7bd9f4cba4d80556cefa4a2e36cd8388" category="cell">節點容量使用量總計</block>
+  <block id="98ca9d494ed0a7500119f4c81e753402" category="cell">可用的節點容量使用率</block>
+  <block id="e3d522e209910662c18f5e32bd073eab" category="cell">使用的節點容量使用率</block>
+  <block id="2e743137d5bf45f513a853852894e4e1" category="cell">節點容量使用率使用的中繼資料</block>
+  <block id="f8e695a68b2cc6a03c28f54dfffb7e5d" category="cell">靜態API StorageGRID</block>
+  <block id="389f5255791b76256678f54d2aa8d9aa" category="section-title">Nutanix儲存設備（REST）</block>
+  <block id="68781df3a498f1f188a013211fb259ce" category="cell">HX3310 NX-8150-G5 HX3310 HX3321 HX5510 NX-8155-G6 NX-8155-G7 XC640-10 核心 XC740xd-12 XC740xd-12 核心</block>
+  <block id="1e589a23680964317500d00ed5ac6278" category="cell">5.20.2.1.5.20.4.6.5.46.5.5.6.5.6.5.7.6.6.7.1.76.8.1.</block>
+  <block id="5833254d196e4a1b64f41ef17f3948c3" category="cell">Nutanix REST API</block>
+  <block id="a5a401d1937bde9ceea96e2345f7c9d8" category="section-title">Oracle ZFS（HTTPS）</block>
+  <block id="7cb44c5f6c555a4ff8cc04a4410ac83a" category="cell">Sun ZFS Storage 7330 Sun ZFS Storage 7420 Sun ZFS Storage 7430</block>
+  <block id="b9deb27d899f42c11abbd5e0a2a12968" category="cell">1-1.1 2013.06.05.7.28</block>
+  <block id="55799eddc9f10f989c2583f4b951cf96" category="cell">Oracle ZFS REST API</block>
+  <block id="3b8a614226a953a8cd9526fca6fe9ba5" category="cell">215</block>
+  <block id="9425abd0b36053580d0284f0d9fbe9a2" category="section-title">Pure Storage FlashArray（HTTP）</block>
+  <block id="b1fa46190ece9bb0323ecd1d4628d15d" category="cell">DFSC1 FA-X20R3 FA-X50R2 FA-X70R3 FA-X70R4 FA-X90R2 FA-X90R3 FA-X90R4</block>
+  <block id="15104c0fffc9c5f6b0b8b88d0f6fc288" category="cell">6.1.21 6.3.16.3.106.3.96.5.16.5.26.5.4.</block>
+  <block id="f7ade9e282e08c1d6d53cd5f4fc13a47" category="cell">Pure Storage REST API</block>
+  <block id="0ad0d30d976e28ead46bff59a349da08" category="section-title">VMware vSphere（Web服務）</block>
+  <block id="1d048c5d8ff43dd47a2fa58a37940547" category="cell">VMware vCenter Server 5.5.0 build 1750787 VMware vCenter Server 5.5.0 build 3252642 VMware vCenter Server 5.5.0 build 4180647 VMware vCenter Server 5.5.0 build 9911218 VMware vCenter Server 6.0.0 build 13638472 VMware vCenter Server 6.0.0 build 14510545 VMware vCenter Server 6.0.0 build 4541947 VMware vCenter Server 6.0.0</block>
+  <block id="32a17b9c6b3373bcd5a29ae9bcc5c1b9" category="cell">VMware vCenter Server 7.0.3 build 19234570 VMware vCenter Server 7.0.3 build 19717403 VMware vCenter Server 7.0.3 build 7.0.3 VMware vCenter Server 7.0.3 VMware vCenter Server 7.230.2-227.0 VMware vCenter Server 8.230.3-227.0 VMware vCenter Server build 2230.2-227.0 VMware vCenter Server 8.230.3-227.0 VMware vCenter Server build 27230.3-2230.3-2230.3VMware vCenter Server build 27230.3-27230.3-27230.3VMware vCenter Server 內部版本 VMware vCenter Server 內部版本</block>
+  <block id="2c10282d2a9ce8be1576d7af8091d09e" category="cell">Web服務</block>
+  <block id="51359e8b51c63b87d50cb1bab73380e2" category="cell">原則</block>
+  <block id="584f8eaacb1a0c605080be390dd2c14a" category="cell">Volume UUID</block>
+  <block id="daadad26e1c264cad9b4346b69b75269" category="cell">VMware REST API</block>
+  <block id="c2e4da331d79257f0f92e53caf4b0b54" category="summary">OnCommand Insight 的安全性管理工具包括可讓 Insight 環境以增強的安全性運作的功能、包括加密、密碼雜湊、以及變更內部使用者密碼和密碼加密和解密金鑰配對的功能。</block>
+  <block id="fafc7945f92d3381a67db94f300e92f4" category="paragraph">OnCommand Insight 提供的功能可讓 Insight 環境以增強的安全性運作。這些功能包括加密、密碼雜湊、以及變更內部使用者密碼和密碼加密和解密金鑰配對的能力。您可以使用 securityadmin Tool 在 Insight 環境中的所有伺服器上管理這些功能。</block>
+  <block id="24481711deaba6b074c5156c42fd694f" category="section-title">什麼是安全性管理工具？</block>
+  <block id="924f7792a931faa39ba594a4a9a86ac9" category="paragraph">安全性管理工具支援變更資料保險箱的內容、以及協調一致地變更 OnCommand Insight 安裝。</block>
+  <block id="a2b5dd694839ed854058dc9279795f10" category="paragraph">安全性管理工具的主要用途是 * 備份 * 和 * 還原 * 安全性組態（即資料保險箱）和密碼。例如、您可以在本機擷取單元上備份資料保險箱、並在遠端擷取單元上還原資料保險箱、確保整個環境都能協調密碼。或者、如果您的環境中有多部 OnCommand Insight 伺服器、您可能需要備份伺服器資料保險箱、並將其還原至其他伺服器、以保持密碼相同。以下只是安全性管理可用於確保環境內凝聚力的兩個範例。</block>
+  <block id="fb107e819ce3bcca51fb1b43301d69b4" category="paragraph">強烈建議您在備份 OnCommand Insight 資料庫時 * 備份資料保險箱 * 。否則可能導致存取中斷。</block>
+  <block id="c20fcaf12ecfe5147107594ab11e77ab" category="paragraph">此工具同時提供 * 互動 * 和 * 命令列 * 模式。</block>
+  <block id="0cd2b1a6d3e6dfa77d0fb372d4501950" category="paragraph">許多 securityadmin Tool 作業會變更資料保險箱的內容、也會變更安裝、確保資料保險箱和安裝保持同步。</block>
+  <block id="cabbc139b7f74771c47e3eb24d94c92b" category="paragraph">例如、</block>
+  <block id="bd87b44c6be43f36f0038d22d487f75f" category="list-text">當您變更 Insight 使用者密碼時、 SANscreen 。 Users 表格中的使用者項目將會以新的雜湊更新。</block>
+  <block id="c438ccc0aca0db970bb13ebc0d134012" category="list-text">當您變更 MySQL 使用者密碼時、將會執行適當的 SQL 陳述式、以更新 MySQL 執行個體中的使用者密碼。</block>
+  <block id="4db6b10d73a0fe37aef9ecf720e82980" category="paragraph">在某些情況下、會對安裝進行多項變更：</block>
+  <block id="147560103995f78fe048d9d60d6eb89e" category="list-text">修改 dwh MySQL 使用者時、除了更新 MySQL 資料庫中的密碼之外、也會更新多個 ODBC 登錄項目。</block>
+  <block id="ceda6f3d804fada6f1ce0b50e99194a0" category="paragraph">在下列各節中、使用「協調式變更」一詞來描述這些變更。</block>
+  <block id="3a43acde16fee20c3dfc667415e319dc" category="section-title">執行模式</block>
+  <block id="d03091e682aac9d91745bfcefeff7fcc" category="list-text">正常 / 預設操作 - SANscreen 伺服器服務必須執行</block>
+  <block id="850095d037d0948beb9df744969f332c" category="paragraph">對於默認執行模式， securityadmin Tool 要求 SANscreen 服務器服務 * 正在運行。伺服器用於驗證、許多協調一致的安裝變更都是透過呼叫伺服器來進行。</block>
+  <block id="0cc4ce13c616a14debabba9d1d104720" category="list-text">直接操作 - SANscreen 伺服器服務可能正在執行或停止。</block>
+  <block id="25581e4e6d1eb4843e4813f1959dcaac" category="paragraph">在 OCI 伺服器或 DWH 安裝上執行時、工具也可以在「直接」模式下執行。在此模式中、驗證和協調變更是使用資料庫來執行。未使用伺服器服務。</block>
+  <block id="3688f4e6adeb2d0a0862005a883624aa" category="paragraph">操作與一般模式相同、但有下列例外：</block>
+  <block id="8542576822630a806db5fac3df11524c" category="list-text">驗證僅支援非網域管理員使用者。（密碼和角色位於資料庫中的使用者、而非 LDAP ）。</block>
+  <block id="57c2a15f75aec51460e94c76d1e883ab" category="list-text">不支援「置換金鑰」操作。</block>
+  <block id="d9acdd4f362cbc48a7cf2cd17661735e" category="list-text">會略過資料保險箱還原的重新加密步驟。</block>
+  <block id="c2ce9f850c10b7e39485fe8235e59b64" category="list-text">恢復模式即使無法同時存取伺服器和資料庫、也可能執行此工具（例如、因為資料保險箱中的根密碼不正確）。</block>
+  <block id="546243936cdf0dfafca1fb7186af3707" category="paragraph">在此模式下執行時、無法進行驗證、因此無法執行協調變更安裝的作業。</block>
+  <block id="6d2f29045244dd26780e641f666933be" category="paragraph">恢復模式可用於：</block>
+  <block id="a01f5c48bfc93da4ff4bc3ce24ddf5bf" category="list-text">判斷哪些資料保險箱項目錯誤（使用驗證作業）</block>
+  <block id="125929c5a2da02ad2722f0e067328f01" category="list-text">請以正確的值取代不正確的根密碼。（這不會變更密碼。使用者必須輸入目前的密碼。）</block>
+  <block id="e7661abd56f5e1cac72d4c48edf50c55" category="admonition">如果資料保險箱中的根密碼不正確、而且密碼未知、而且沒有正確的根密碼備份資料保險箱、則無法使用 securityadmin Tool 還原安裝。恢復安裝的唯一方法是按照中介紹的步驟重置 MySQL 實例的密碼<block ref="627cd758a6ece2cd1ceb11c68b88335e" category="inline-link-rx"></block>。執行重設程序後、請使用正確的儲存密碼操作、將新密碼輸入資料保險箱。</block>
+  <block id="c441ee50c88f6e5e3a7c69fc69dad8b8" category="section-title">命令</block>
+  <block id="9ff476002c0d40256cd7c48abffcddaa" category="section-title">無限制命令</block>
+  <block id="7809fe99fa50d9bece04a838f3bc9261" category="paragraph">無限制命令會對安裝進行任何協調的變更（信任存放區除外）。不受限制的命令可在不進行使用者驗證的情況下執行。</block>
+  <block id="ee97be03cb04119af45014d815621ce1" category="paragraph">命令</block>
+  <block id="3f2392c12884132a8a9aa7c8b6ce0749" category="paragraph">備份資料保險箱</block>
+  <block id="0c2902a04c4b5b9bbf08d798a67095b8" category="paragraph">建立包含資料保險箱的 zip 檔案。至資料保險箱檔案的相對路徑將與相對於安裝根目錄的資料保險箱路徑相符。</block>
+  <block id="e86a04011378373ae8aaa17a0a872160" category="list-text">Wildfly / 獨立 / 組態 / 資料保險箱 / *</block>
+  <block id="ac160bd273fa0fe270ac067daba6c429" category="list-text">ACQ/conf/vVault/*</block>
+  <block id="7966f77fe929ebfebd689aab0597d75b" category="paragraph">檢查預設金鑰</block>
+  <block id="9534dd81ef5582ebfbb57cd41169a790" category="paragraph">檢查資料保險箱的金鑰是否與 7.3.16 之前版本中使用的預設資料保險箱金鑰相符。</block>
+  <block id="4bf9a0a90e38ee241815ca1b01aa99c4" category="paragraph">正確儲存的密碼</block>
+  <block id="66f6a4f7dbef6a7a1f9d2be2a4f858ca" category="paragraph">以使用者已知的正確密碼取代儲存在資料保險箱中的（不正確）密碼。</block>
+  <block id="74ef0789d1832e4c819703dda7c98f2e" category="paragraph">當資料保險箱和安裝不一致時、可能會使用此選項。* 請注意、它不會變更安裝中的實際密碼。 *</block>
+  <block id="7d64f9ee6b6f6ab531eadbc81689ed46" category="paragraph">change-trust 儲存區密碼</block>
+  <block id="09a94f8774a554032cd91998b09618a0" category="paragraph">變更用於信任存放區的密碼、並將新密碼儲存在資料保險箱中。信任存放區的目前密碼必須為「已知」。</block>
+  <block id="56c050982c5ca87bda691b1c9d15efae" category="paragraph">驗證 Keystore</block>
+  <block id="097f375cea2c8a440fe39f083c070116" category="paragraph">檢查資料保險箱中的值是否正確：</block>
+  <block id="fb3024d8fefd1e53cbe1132b30dbffec" category="list-text">對於 OCI 使用者、密碼雜湊是否與資料庫中的值相符</block>
+  <block id="f3a8443d363adaf1cb028d974fd8f157" category="list-text">對於 MySQL 使用者、可以建立資料庫連線</block>
+  <block id="c5fef5097c28f98b2c4a263f4cb6af6b" category="list-text">對於 Keystore 、是否可以載入 Keystore 及其金鑰（如果有）讀取</block>
+  <block id="32d669c3d16ba0b0d381f2215b33b260" category="paragraph">清單鍵</block>
+  <block id="6a93b8ced68de9112f2c64b37fba49c0" category="paragraph">列出資料保險箱中的項目（不顯示儲存的值）</block>
+  <block id="adb18484fe4c62f5fe824acf38175e29" category="section-title">受限命令</block>
+  <block id="ed9478b8c7d12644d31daa3c8adf2486" category="paragraph">任何對安裝進行協調變更的非隱藏命令都需要驗證：</block>
+  <block id="e02bf5a4ba466bf3da9f446df52a9aa0" category="paragraph">還原資料保險箱備份</block>
+  <block id="c8e975922bdac4c90a726de6bdfb96e1" category="paragraph">以包含在指定資料保險箱備份檔案中的資料保險箱取代目前的資料保險箱。</block>
+  <block id="7954433c594c5d46b2087c7033cdf705" category="paragraph">執行所有協調的動作來更新安裝以符合還原資料保險箱中的密碼：</block>
+  <block id="88d1488822057a7a604eecdc330a5a15" category="list-text">更新 OCI 通訊使用者密碼</block>
+  <block id="23d208d89c9994831ed5d0fdcf0e91ab" category="list-text">更新 MySQL 使用者密碼、包括 root</block>
+  <block id="957bc4dd556b534e50b991527a653621" category="list-text">對於每個 Keystore 、如果 Keystore 密碼為「已知」、請使用還原資料保險箱中的密碼來更新 Keystore 。</block>
+  <block id="1ec6fcccedbc55e2ec526dffa5e42398" category="paragraph">以正常模式執行時、也會從執行個體讀取每個加密值、使用目前資料保險箱的加密服務將其解密、使用還原的資料保險箱加密服務重新加密、以及儲存重新加密的值。</block>
+  <block id="67d7b3653a84429c75aafe9a54b3969a" category="paragraph">與資料保險箱同步</block>
+  <block id="5cd627ba3fd4133c452a368222c7c65b" category="paragraph">執行所有協調的動作來更新安裝 , 以符合還原資料保險箱中的使用者密碼 :</block>
+  <block id="8175ef68a46c42a8c01b459c4c94a693" category="list-text">更新 OCI 通訊使用者密碼</block>
+  <block id="de01963838cba896a8c44d5e98f43f49" category="list-text">更新 MySQL 使用者密碼、包括 root</block>
+  <block id="717c10b2cccb36ca57ed94c149694d2b" category="paragraph">變更密碼</block>
+  <block id="d48ba6005553fb81b84c1507d6df4dc5" category="paragraph">變更資料保險箱中的密碼並執行協調的動作。</block>
+  <block id="e32f053a270ce75de0cd373763ae6765" category="paragraph">置換鍵</block>
+  <block id="e7bb93d208855f47af2340e13017c374" category="paragraph">建立新的空資料保險箱（其金鑰與現有的資料保險箱不同）。然後將項目從目前的資料保險箱複製到新的資料保險箱。然後從執行個體讀取每個加密值、使用目前資料保險箱的加密服務將其解密、使用還原的資料保險箱加密服務重新加密、並儲存重新加密的值。</block>
+  <block id="da277c65c536be8c72a250c92f693a41" category="section-title">隱藏命令</block>
+  <block id="0fc66a8aa174612af247def075a04ba7" category="paragraph">SA 工具提供下列命令、這些命令不需要驗證、但必須對安裝進行協調的變更。</block>
+  <block id="2d4473cb05fdab03f65b0c638a2cedc7" category="paragraph">清單金鑰升級（伺服器）</block>
+  <block id="857565320f4fdd719b08c608bc808ef6" category="paragraph">如果使用者尚未驗證、請使用目前資料保險箱中的內部帳戶和密碼進行驗證。然後以備份檔案中的資料保險箱取代目前的資料保險箱 , 並執行協調的動作。</block>
+  <block id="d9a48d1bee1dba50a1a99a2a3f921d4d" category="paragraph">升級（併購）</block>
+  <block id="26df4bd2565e3ab79aadb7c745ca3cc4" category="paragraph">以備份檔案中的資料保險箱取代目前的資料保險箱 , 並執行協調的動作。</block>
+  <block id="2551d0cb7270db218d0b7e7c7dc8ab26" category="section-title">協調行動</block>
+  <block id="77e1f3eb2652566d7476d1de697ec481" category="section-title">伺服器資料保險箱</block>
+  <block id="cfd9b1303807d7e49ba7b2b9a4ecabee" category="paragraph">更新資料庫中使用者的密碼雜湊</block>
+  <block id="361ec13a5f187f231346e304b4067a43" category="paragraph">如果有擷取資料保險箱、請同時更新擷取資料保險箱中的項目</block>
+  <block id="4007207a78dc953447b39d5de377c0a5" category="paragraph">如果是 DWH 和 Windows 、請更新 SANscreen / Cognos / 分析 / 組態 / SANscreenAP.properties 、將 Cognos ． admin 屬性設定為密碼。</block>
+  <block id="482c76686c82e7244a19e22e755a9d80" category="paragraph">執行 SQL 以更新 MySQL 執行個體中的使用者密碼</block>
+  <block id="4eb319055356c6b6aeb21fc690217b7c" category="paragraph">如果是 DWH 和 Windows 、請更新 Windows 登錄、將下列與 ODBC 相關的項目設定為新密碼：</block>
+  <block id="f584cc7b0ba43c1c1ead61326dec1108" category="list-text">HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\ODBC\ODBC.INI\dwh_capies\PWD</block>
+  <block id="0d800cfcad900c18e9ba22544b4b9d54" category="list-text">HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\ODBC\ODBC.INI\dwh_capal_Efficiation\PWD</block>
+  <block id="d7738dd18214804d875683004c0b64a8" category="list-text">HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\ODBC\ODBC.INI\dwh_FS_util\PWD</block>
+  <block id="fdbc263e248c326dc38e99a2cf1b6665" category="list-text">HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\ODBC\ODBC.INI\dwh_inventory\PWD</block>
+  <block id="bdc07fe7dbe8ed49ed31a09f7dad266d" category="list-text">HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\ODBC\ODBC.INI\dwh_Performance \PWD</block>
+  <block id="77f615a4e17d811ab76424270b936583" category="list-text">HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\ODBC\ODBC.INI\dwh_ports \PWD</block>
+  <block id="6afa37b0ec42aaeae5ef08abf685e304" category="list-text">HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\ODBC\ODBC.INI\dwh_sa\PWD</block>
+  <block id="ea5c01cfeded0373466684ffa7540ad9" category="list-text">HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\ODBC\ODBC.INI\dwh_Cloud 成本 \PWD</block>
+  <block id="67a231149410a304044f3cfd6b0a6db2" category="paragraph">Keystore 密碼</block>
+  <block id="4bc6ba6e1ea4e3095c8572a422fd8b3a" category="paragraph">使用新密碼重新寫入金鑰儲存區： wildfly/standbed/configuration/server.keystore</block>
+  <block id="72a2c7fd864d00308db3c6635df87228" category="paragraph">truststore_password</block>
+  <block id="1f8e8e3df3446b7218d1657dcab033ac" category="paragraph">使用新密碼重新寫入金鑰儲存區： wildfly/standbed/configuration/server.trustore</block>
+  <block id="f7c0918660f6430dbef770010ecc8484" category="paragraph">key_password</block>
+  <block id="1248a89eb361f717fa8867359b4e58ce" category="paragraph">使用新密碼重新寫入金鑰儲存區： wildfly/standbed/configuration/sso.jks</block>
+  <block id="f657e815d9dcf268a4bef105ade09239" category="paragraph">Cognos 歸檔</block>
+  <block id="6adf97f83acf6453d4a6a4b1070f3754" category="paragraph">無</block>
+  <block id="4f2e3cdb3d13ec9c4707ab23431bebfd" category="section-title">擷取 Vault</block>
+  <block id="6157ac3dc9177ce38ba3c5041c55cb5e" category="paragraph">使用新密碼（如果存在）重新寫入密鑰庫 - acq/conf/cert / client.keystore</block>
+  <block id="f5ba0167bbeb7ae06f6f7ef19364be81" category="section-title">執行安全管理工具 - 命令列</block>
+  <block id="c5388c58d9cf5715c279452471ea9d07" category="paragraph">在命令列模式中執行 SA 工具的語法如下：</block>
+  <block id="2a01d572b1447155c310cabafac3fae9" category="paragraph">附註：</block>
+  <block id="61621d6e6a5904d57a10f48e5f163077" category="list-text">命令列上可能沒有「 -I 」選項（因為這會選取互動模式）。</block>
+  <block id="bc9fcf728869566e44855e721523dac8" category="list-text">對於 "-s" 和 "-au" 選項：</block>
+  <block id="1599e34b5acba2e47d213dba2791b6e5" category="list-text">Rau 不允許使用 "-s"</block>
+  <block id="f4311c583942ac9ffba9730e5c539715" category="list-text">DWH 不允許使用 "-au"</block>
+  <block id="c43c7202e0823d859d6bed8196264427" category="list-text">如果兩者都不存在、則</block>
+  <block id="a0c59297001cb92aa1c633f218e8f349" category="list-text">伺服器資料保險箱是在伺服器、 DWH 和雙工上選取</block>
+  <block id="cf22f0469daffabd2485b9f44e1fe9e8" category="list-text">擷取資料保險箱是在 Rau 上選取</block>
+  <block id="1ce5595343a8b7b4ec9af8ba37fb690d" category="list-text">Lu 和 -lp 選項用於使用者驗證。</block>
+  <block id="c987bec6fc3a6c9e2ec24b49969659e6" category="list-text">如果已指定 &lt;user&gt; 且未指定 &lt;password&gt; 、則系統會提示使用者輸入密碼。</block>
+  <block id="76510b299b86f94495059752d5941f15" category="list-text">如果未提供 &lt;user&gt; 且需要驗證、則系統會提示使用者輸入 &lt;user&gt; 和 &lt;password&gt; 。</block>
+  <block id="8459c050b6b6fc8d4145bfd2acb3e4f8" category="section-title">命令：</block>
+  <block id="c64518704ce0c0d5501a45763f464276" category="paragraph">使用量</block>
+  <block id="1c11c0e70f0bbc791b995b245df20557" category="paragraph">檢查鍵</block>
+  <block id="538ff02d861750d5e906497d6c083e55" category="paragraph">VERIF-keystore （伺服器）</block>
+  <block id="ae26b3d8e556703291282149e3ae894f" category="paragraph">升級</block>
+  <block id="c71eac7efc7ed121bdd1236f30f700c6" category="paragraph">變更密碼（伺服器）</block>
+  <block id="8de86aadfc3be699d54411a274578759" category="paragraph">擷取使用者的變更密碼（擷取）</block>
+  <block id="1ddbfb3c476a9f22c467fdbe5307d0c5" category="paragraph">truststore--_password 的 change-password （取得）</block>
+  <block id="97a42f32d6218c9efc6b7e8e66d36df4" category="paragraph">與資料保險箱同步（伺服器）</block>
+  <block id="0dcd2b2640422c9c80852c57925efb32" category="section-title">執行安全管理工具 - 互動模式</block>
+  <block id="29cf2908ca5f379b92a575644a1730da" category="section-title">互動式 - 主功能表</block>
+  <block id="2f11f79ed5521805fede323121b7c1a0" category="paragraph">若要以互動模式執行 SA 工具、請輸入下列命令：</block>
+  <block id="d81a8b1485af8ae26373c16e0a1a338d" category="paragraph">在伺服器或雙安裝上、 securityadmin 會提示使用者選擇伺服器或本機擷取單元。</block>
+  <block id="618c7dfd7bce055496ff5bf990b774dd" category="paragraph">偵測到伺服器和擷取單元節點！選取需要重新設定安全性的節點：</block>
+  <block id="ef63c9453a63806e56bbd63b7c483de3" category="paragraph">在 DWH 上、會自動選取「伺服器」。在遠端 AU 上、系統會自動選取「擷取單元」。</block>
+  <block id="783023c9c9a58c635d4123c6a0db2115" category="section-title">互動式 - 伺服器：根密碼還原</block>
+  <block id="6c47cb5a58faa78f22778e8736b964f1" category="paragraph">在伺服器模式中、 securityadmin Tool 會先檢查儲存的根密碼是否正確。如果沒有、工具會顯示 root 密碼恢復畫面。</block>
+  <block id="2fcecab4c0d98b1bc2a44f3836e4ee41" category="paragraph">如果選擇選項 1 、系統會提示使用者輸入正確的密碼。</block>
+  <block id="392d7384c90efcc73686da802c9ef0b1" category="paragraph">如果輸入正確的密碼、將會顯示下列內容。</block>
+  <block id="d61329ea4faeab01cb7e67634c3ec481" category="paragraph">按下 ENTER 會顯示伺服器不受限制的功能表。</block>
+  <block id="7f6237a3417215b6c91252271a82059f" category="paragraph">如果輸入的密碼錯誤、將會顯示下列內容</block>
+  <block id="db76615d6e7f764656e86c7e81f224fe" category="paragraph">按下 ENTER 會返回恢復功能表。</block>
+  <block id="5f4742406a0d72457a29b71c7140a41f" category="paragraph">如果選取選項 2 、系統會提示使用者提供備份檔案的名稱、以便從中讀取正確的密碼：</block>
+  <block id="e0475856c79cdf046ac9e6513d5cd707" category="paragraph">如果備份的密碼正確、則會顯示下列內容。</block>
+  <block id="98a833317dd5130c52277e8f174dc7fe" category="paragraph">如果備份中的密碼不正確、則會顯示下列內容</block>
+  <block id="1487fd45724473007a936f11adae2314" category="section-title">互動式 - 伺服器：正確密碼</block>
+  <block id="37b273773ee7bd70810f217e7a9ffa15" category="paragraph">「正確密碼」動作用於變更儲存在資料保險箱中的密碼、使其符合安裝所需的實際密碼。此命令在安全性管理工具以外的地方變更安裝時非常有用。範例包括：</block>
+  <block id="4ed518c6ae9090ca3e3bf7e8ae1f4c7d" category="list-text">SQL 使用者的密碼是透過直接存取 MySQL 來修改的。</block>
+  <block id="7ebee17ef573ce3eb86f5324e854c292" category="list-text">使用 keytool 替換密鑰庫或更改密鑰庫的密碼。</block>
+  <block id="187f36be9d9b96c4e3c6f204e1b85384" category="list-text">OCI 資料庫已還原、且該資料庫有不同的內部使用者密碼</block>
+  <block id="0d301d181747910c6057a8f842672745" category="paragraph">「正確密碼」會先提示使用者選擇要儲存正確值的密碼。</block>
+  <block id="edcfc85be46ae49241e7feba8d542c04" category="paragraph">選取要修正的項目之後、系統會提示使用者提供值的方式。</block>
+  <block id="ed2c634d45c7705f94ea79eafa14d313" category="paragraph">按下 ENTER 會返回伺服器不受限制的功能表。</block>
+  <block id="0a3ba9d2f7dd4b62f3df19dc943f2224" category="section-title">互動式 - 伺服器：驗證 Vault 內容</block>
+  <block id="c0f144600747526e1e1194c63c237d72" category="paragraph">確認 Vault 內容會檢查資料保險箱是否有與以舊版 OCI 發佈的預設資料保險箱相符的金鑰、並檢查資料保險箱中的每個值是否與安裝相符。</block>
+  <block id="a33d8c33470037ad0770a1e61441a501" category="paragraph">每個關鍵字的可能結果如下：</block>
+  <block id="e0aa021e21dddbd6d8cecec71e9cf564" category="cell">好的</block>
+  <block id="61adfbf67c89d6027fa2db838f0a346a" category="cell">資料保險箱值正確</block>
+  <block id="f0c49f49661670cb88d2fd060c4d6a68" category="cell">未核取</block>
+  <block id="b934ee13c03362b5aea035ba1ce5ee5f" category="cell">無法對照安裝檢查此值</block>
+  <block id="f1b68d66337a81cfa0d2076171cba2a8" category="cell">不良</block>
+  <block id="451080bcd3b3ee42293447137aa2fac2" category="cell">此值與安裝不符</block>
+  <block id="2aee0be2678ee90fd327cc186826438e" category="cell">遺失</block>
+  <block id="a310d7f2bbc3684e225f942e74c52f49" category="cell">缺少預期的項目。</block>
+  <block id="9adc4826c27724c52257ee58ba5ccc48" category="section-title">互動式 - 伺服器：備份</block>
+  <block id="7408107be7b14b53678b404fbbb2cca5" category="paragraph">備份將提示輸入儲存備份 zip 檔案的目錄。目錄必須已存在、且檔案名稱為 ServerSecurityBackup-yyyy-mm-dd-hh-mm.zip 。</block>
+  <block id="0f1ad8d57fb8f844cd250faa41a34c0a" category="section-title">互動式 - 伺服器：登入</block>
+  <block id="dfb7463320663c43bd972fbcd3bbe1e6" category="paragraph">登入動作用於驗證使用者、並存取修改安裝的作業。使用者必須擁有管理 Privileges 。與伺服器一起執行時、可以使用任何管理員使用者；在直接模式下執行時、使用者必須是本機使用者、而非 LDAP 使用者。</block>
+  <block id="e81c4e4f2b7b93b481e13a8553c2ae1b" category="paragraph">或</block>
+  <block id="8eaf9ef3d0d9886712be7df83a77aa0c" category="paragraph">如果密碼正確且使用者是管理員使用者、則會顯示受限功能表。</block>
+  <block id="5bdfc68aa27707acf44bb373de39213f" category="paragraph">如果密碼不正確、則會顯示下列內容：</block>
+  <block id="f338a6313b14b9628630d6bca987caf8" category="paragraph">如果使用者不是管理員、則會顯示下列內容：</block>
+  <block id="6b2ffc79e0101d654da5639d0d1dc8c4" category="section-title">互動式 - 伺服器：受限功能表</block>
+  <block id="8149276739b6c73154fd1d323bcad81c" category="paragraph">使用者登入後、工具會顯示「受限制的功能表」。</block>
+  <block id="63efd71dcaca4449e7ae75ee20133427" category="section-title">互動式 - 伺服器：變更密碼</block>
+  <block id="69cd23e17686429365aefb31d07e59b2" category="paragraph">「變更密碼」動作用於將安裝密碼變更為新值。</block>
+  <block id="571992f59aab8524ccec305c1799018d" category="paragraph">「變更密碼」會先提示使用者選擇要變更的密碼。</block>
+  <block id="f491eb0ccbf368d2cd08088b9a7d0d18" category="paragraph">選取要修正的項目之後、如果使用者是 MySQL 使用者、系統會詢問使用者是否要加強密碼雜湊</block>
+  <block id="fe5b15f23ef6088e59026b05f6701e6b" category="paragraph">接著、系統會提示使用者輸入新密碼。</block>
+  <block id="61bee0b8670ca0bdbc7edadd40c26dad" category="paragraph">如果輸入非空密碼、系統會提示使用者確認密碼。</block>
+  <block id="c4a8ee99179b38f1a2f5451ffb8a149b" category="paragraph">如果變更不成功、則會顯示錯誤或例外。</block>
+  <block id="e449f4e704f39a497f888952122e2585" category="section-title">互動式 - 伺服器：還原</block>
+  <block id="bc92c969762ef39bae8ae928724da625" category="section-title">互動式 - 伺服器：變更加密金鑰</block>
+  <block id="19f33616660061bc23f346cba60f4503" category="paragraph">「變更加密金鑰」動作將取代用於加密資料保險箱項目的加密金鑰、並取代用於資料保險箱加密服務的加密金鑰。由於加密服務的金鑰已變更、因此資料庫中的加密值將會重新加密；這些值將會讀取、以目前金鑰解密、以新金鑰加密、並儲存回資料庫。</block>
+  <block id="673b312876cda1cdbe7d52384286c6a8" category="paragraph">直接模式不支援此動作、因為伺服器會為某些資料庫內容提供重新加密作業。</block>
+  <block id="f76a15a693d2ee1624a5670d358912b2" category="section-title">互動式 - 伺服器：修復安裝</block>
+  <block id="9996734f032e94e26b7aeedfacfd9618" category="paragraph">「修復安裝」動作將會更新安裝。所有可透過安全管理工具變更的安裝密碼（ root 除外）都會設為資料保險箱中的密碼。</block>
+  <block id="01f1fc066eb323828cd02a194328a135" category="list-text">保監處內部使用者的密碼將會更新。</block>
+  <block id="f82b7e6175af66ae573f2dc57c4d5e6e" category="list-text">MySQL 使用者的密碼（ root 除外）將會更新。</block>
+  <block id="123c5baa329054786cbae85537d83cd8" category="list-text">Keystone 的密碼將會更新。</block>
+  <block id="ed1043648922ebe34d579812230d4ae9" category="paragraph">此動作將在第一次不成功的更新時停止、並顯示錯誤或例外。</block>
+  <block id="bc96a907474ae52a206fb2c682dc20f3" category="paragraph">OnCommand Insight 提供的功能可讓 Insight 環境以增強的安全性運作。這些功能包括加密、密碼雜湊、以及變更內部使用者密碼和密碼加密和解密金鑰配對的能力。您可以使用 *securityadmin Tool* 在 Insight 環境中的所有伺服器上管理這些功能。</block>
+  <block id="fcd61e12d9c614b4f8c25523ad9c74d1" category="list-text">當您變更 Insight 使用者密碼時、 SANscreen 。 Users 表格中的使用者項目將會以新的雜湊更新。</block>
+  <block id="f2994986d9a504d2179c8bc5a5690b4d" category="list-text">當您變更 MySQL 使用者密碼時、將會執行適當的 SQL 陳述式、以更新 MySQL 執行個體中的使用者密碼。</block>
+  <block id="d2a7a0b806360ae571ec0a296013cfef" category="list-text">修改 dwh MySQL 使用者時、除了更新 MySQL 資料庫中的密碼之外、也會更新多個 ODBC 登錄項目。</block>
+  <block id="72e847e65e699484797822ca6c1c0de6" category="paragraph">請注意 , 強烈建議您在備份 OnCommand Insight 資料庫時備份資料保險箱。</block>
+  <block id="4d07594c4f15a8da01ce32c55072389f" category="paragraph">change-trust 儲存區密碼變更用於信任儲存區的密碼、並將新密碼儲存在資料保險箱中。信任存放區的目前密碼必須為「已知」。</block>
+  <block id="a95d82e1c41b849937c0d448a844630f" category="paragraph">更新資料庫中使用者的密碼雜湊</block>
+  <block id="27edb3c7b9345fbd153b2752e55d5711" category="paragraph">如果有擷取資料保險箱、請同時更新擷取資料保險箱中的項目</block>
+  <block id="51ef5306f1d5148fc79a299c50d29c27" category="paragraph">如果是 DWH 和 Windows 、請更新 SANscreen / Cognos / 分析 / 組態 / SANscreenAP.properties 、將 Cognos ． admin 屬性設定為密碼。</block>
+  <block id="63f727a2450b02966597bfbb98988bb4" category="paragraph">執行 SQL 以更新 MySQL 執行個體中的使用者密碼</block>
+  <block id="ff8e7086cc2de7a2f0c1bc1f85d60264" category="paragraph">如果是 DWH 和 Windows 、請更新 Windows 登錄、將下列與 ODBC 相關的項目設定為新密碼：</block>
+  <block id="388d36506504fc8f929f8ba22076ca9c" category="paragraph">使用新密碼重新寫入金鑰儲存區： wildfly/standbed/configuration/server.keystore</block>
+  <block id="0b63d78600b7cedb76b75474be57d950" category="paragraph">使用新密碼重新寫入金鑰儲存區： wildfly/standbed/configuration/server.trustore</block>
+  <block id="5a45e44e7d918459a9e780f30f69b5d8" category="paragraph">使用新密碼重新寫入金鑰儲存區： wildfly/standbed/configuration/sso.jks</block>
+  <block id="334c4a4c42fdb79d7ebc3e73b517e6f8" category="paragraph">無</block>
+  <block id="84ab1390367b94969a415b0eec06e7b8" category="paragraph">使用新密碼（如果存在）重新寫入密鑰庫 - acq/conf/cert / client.keystore</block>
+  <block id="9b414bda987d15df42909b303d56c21d" category="list-text">Red Hat Enterprise Linux 7.9 、 8.10 、 9.4</block>
+  <block id="e50db748240304d4cfbede78da08aec4" category="list-text">CentOS 8 Stream 、 CentOS 9 Stream</block>
+  <block id="c4a870ebe296bb24b9fa84c6ea622503" category="list-text">Oracle Enterprise Linux 7.9 、 8.10 、 9.4</block>
+  <block id="fbd973a8f9f093b93a08bb0a70663f3c" category="paragraph">如果您的資料開始擷取、您都已設定好；您不需要同步伺服器和 Rau 、如下所述。</block>
+  <block id="28c5eaeb549f94ace5cd060f9dd81384" category="section-title">同步伺服器與 Rau</block>
+  <block id="7c90fb6f7f51c1a71c726c9698bce32a" category="admonition">如果在安裝遠端擷取單元之後資料並未開始擷取、請將 Rau 與 OnCommand Insight 伺服器同步。請遵循下列步驟：</block>
+  <block id="bd016306b8914bb607be4852fae2a0f6" category="list-text">在 OnCommand Insight 伺服器系統上、以互動模式啟動 *securityadmin* 工具</block>
+  <block id="6d86a770e4304d6aaa48ac58f5e0140d" category="list-text">將 Insight Server 的 _Acquisition 使用者密碼變更為您選擇的密碼。* 請記下此密碼 * 、因為您將在下方要求此密碼。</block>
+  <block id="9bb3dde49054b76ae38fbeb4c8c6d356" category="list-text">重新啟動伺服器 /Lau 。</block>
+  <block id="07c1180292ae2ead0a4af77ffcb019bd" category="list-text">在遠端擷取單元（ Rau ）系統上、以互動模式啟動 * 安全管理 * 工具。您將需要上述步驟 2 中記下的密碼。</block>
+  <block id="f542801a545fd1fc1836b7b3622347f7" category="list-text">將 _Acquisition 使用者的密碼變更為步驟 2 中使用的密碼。</block>
+  <block id="5aa95547aca182d274bdd44507f20e6c" category="list-text">重新啟動 RAU 。</block>
+  <block id="d0676ee83cf39ae1584e25555cb1d683" category="paragraph">在 CentOS 9 Stream 、 Red Hat Enterprise Linux 9.4 或 Oracle Linux 9.4 上安裝 Insight Server 或 Data Warehouse 時、您必須先變更至包含安裝程式檔案的目錄、然後使用「 --install-mysql 相依性」命令列選項來執行安裝命令：</block>
+  <block id="556be286023c494b4ead46bd9cf42c54" category="section-title">同步伺服器與 DWH</block>
+  <block id="f1715130e2ab8a30bfa342f3c29b2c71" category="admonition">安裝資料倉儲之後、您 * 必須 * 將資料倉儲與 OnCommand Insight 伺服器同步。請遵循下列步驟：</block>
+  <block id="ee21dd6310c5d7ec86b60b0d3e41695d" category="list-text">將 _inventory_ 和 _dwh_internal 使用者的密碼變更為您選擇的密碼。* 請記下這些密碼 * 、因為您將在下方要求這些密碼。</block>
+  <block id="1daa31f7a4eabf0fd0cae2fe11e47338" category="list-text">重新啟動 DWH 服務</block>
+  <block id="7f5498bbfca2bdfbdbd1400c57650344" category="list-text">在 * 每個 Connector* 上、以互動模式啟動 * securityadmin* 工具。您將需要上述步驟 2 中記下的密碼。</block>
+  <block id="ec40029c7ad896690cebde56b1680e55" category="list-text">將 _inventory_ 和 _dwh_internal 使用者的密碼變更為步驟 2 所使用的密碼。</block>
+  <block id="d53eee5d569fb3981f54c67770371bca" category="list-text">重新啟動 Connectors 上的服務。</block>
+  <block id="d228a56d28f4653e598aed464f235e69" category="list-text">使用步驟 2 中的 _inventory_ 和 _dwh_internal 使用者密碼、將連接器新增至 DWH</block>
+  <block id="d546555c6a30c4fbea07e66c7984206d" category="paragraph">在 CentOS 9 Stream 、 Red Hat Enterprise Linux 9.4 或 Oracle Linux 9.4 上安裝 Insight Server 時、您必須先變更至包含安裝程式檔案的目錄、然後使用「 --install-mySQL 相依性」命令列選項來執行安裝命令：</block>
+  <block id="37c2dfb8cace655eac6a5639cf980999" category="list-text">如果您要安裝遠端擷取單元（ Rau ）、則必須執行 securityadmin Tool 、為 _Acquisition 使用者建立密碼。安裝 Rau 時需要使用此密碼。</block>
+  <block id="03190541d75be4e1bbcc18d0f0bb9a10" category="paragraph">附註：如果您已建立此密碼、則不需要如下所述同步伺服器和 Rau 。</block>
+  <block id="6e113128f82182bec51d9c8979f79863" category="section-title">將伺服器與 DWH 和 Rau 同步</block>
+  <block id="7d0de06b1aad5e91edfb3d397cee1ee7" category="admonition">安裝遠端擷取單元和 / 或資料倉儲後、您 * 必須 * 將 Rau/DWH 與 OnCommand Insight 伺服器同步。請遵循下列步驟：</block>
+  <block id="fcc8aff5a678817c9c6afef006b2c9e6" category="inline-link-macro">同步伺服器與 Rau （ Windows ）</block>
+  <block id="7d32aaac99d0982bc6ec0b80f2e6990b" category="paragraph"><block ref="7d32aaac99d0982bc6ec0b80f2e6990b" category="inline-link-macro-rx"></block></block>
+  <block id="4883de23712c1b05d689414cc44849f9" category="inline-link-macro">同步伺服器與 DWH （ Windows ）</block>
+  <block id="ba987b792e0623cccc624f834b024b98" category="paragraph"><block ref="ba987b792e0623cccc624f834b024b98" category="inline-link-macro-rx"></block></block>
+  <block id="149f60bd179305a317402835c2891002" category="inline-link-macro">同步伺服器與 Rau （ Linux ）</block>
+  <block id="ad8ddb78bb6177c56c947861d23146ed" category="paragraph"><block ref="ad8ddb78bb6177c56c947861d23146ed" category="inline-link-macro-rx"></block></block>
+  <block id="33a6201d8474785645f281a692ac82e5" category="inline-link-macro">同步伺服器與 DWH （ Linux ）</block>
+  <block id="e1a153525090bb5df9764e66ac19ce8e" category="paragraph"><block ref="e1a153525090bb5df9764e66ac19ce8e" category="inline-link-macro-rx"></block></block>
+  <block id="316983aa9895dd8e35fcd5b48e4a7a90" category="paragraph">* 強烈建議在解除安裝 OnCommand Insight 之前備份資料保險箱 * 。</block>
+  <block id="849579c47ab1823b16776d0a355b4be1" category="paragraph">強烈建議您在升級 DWH 之前備份資料保險箱和資料庫。</block>
+  <block id="832565378185c40200aab23901bde433" category="paragraph">如需有關資料保險箱的詳細資訊、請參閱<block ref="56b8f1713db5748cf5088e9f00373784" category="inline-link-macro-rx"></block>指示。</block>
+  <block id="ad604f71fd0a5400125da5882931bba6" category="paragraph">強烈建議您在升級 OnCommand Insight 之前先備份資料保險箱和資料庫。</block>
+  <block id="9ec96f5b035d64254c469516cc613b61" category="paragraph">* 升級 OnCommand Insight 之前、您必須備份資料保險箱 * 。</block>
+  <block id="7580db52e57590de6215c9feb5c69207" category="paragraph">執行 64 位元 Microsoft Windows Server 2016 、 2019 或 2022 的電腦、附有最新的 Service Pack 。安裝 OnCommand Insight 之前、必須先安裝 Windows .NET Framework 3.5 版。</block>
+  <block id="c70405d53133429bb49a9f6b4a9cb34d" category="list-text">輸入 _ 取得 _ 使用者密碼。</block>
+  <block id="4eb419db6db4b5af065fb2e484bd6db8" category="paragraph">DB2 使用者名稱和 Windows 登入名稱具有下列限制： * 有效字元為：「 A 」至「 Z 」；「 A 」至「 z 」；「 0 」至「 9 」；「 @ 」；「 _ 」；「！」；「（」；「）」；「 ｛ ' ； ｝ 」；「 - 」；和「 . 」。*如果使用特殊字元「！」；「（」；「）」；「｛」；「｝」； '-'；及'.' 使用者名稱必須使用全部大寫字母。*字串中的第一個字元必須是字母字元@、#或$；不能是數字或字母順序_SYS_、_DBM_或_IBM_*、長度不得超過128個位元組。*不得為使用者、系統管理員、訪客、公共、本機或任何SQL保留字。</block>
+  <block id="101df74d76105947f477e9b77185354b" category="list-text">重新啟動 DWH 服務。</block>
+  <block id="c0a9e4ae648c169469a95619517cf78e" category="admonition">如果您要升級 OnCommand Insight 、 * 必須先備份資料保險箱、然後再解除安裝或升級 * 您目前的版本。</block>
+  <block id="243b66ef9839ad7d30e21f0efd021d4b" category="list-text">輸入管理員密碼。確認密碼。</block>
+  <block id="b0b399eebdd01b6e6ab71f881dbaa2f7" category="admonition">安裝遠端擷取單元和 / 或資料倉儲後、您必須將 Rau/DWH 與 OnCommand Insight 伺服器同步。請遵循下列步驟：</block>
+  <block id="c98c82e78c5842b5016938cb86d3827d" category="paragraph">如需設定或變更 Keystore 密碼的詳細資訊、請參閱<block ref="639f828649b90c889f7b9b1be3c612f3" category="inline-link-macro-rx"></block>文件。</block>
+  <block id="16c0c6352f3d8748d685715041450c42" category="paragraph">* 強烈建議在解除安裝 OnCommand Insight 之前備份資料保險箱 * 。* 如果您要升級 OnCommand Insight 、則必須備份資料保險箱 * 。</block>
+  <block id="68511dcbab1fc6bff009bd6a8ee5064b" category="paragraph">* 升級 DWH 之前、您必須備份資料保險箱 * 。</block>
+  <block id="d0b07235f2e92645d555957ba7ea473a" category="paragraph">升級 Data Warehouse 時、您必須執行下列動作：</block>
+  <block id="71df69ad4b3494fb23c538872b44f24f" category="list-text">安裝 DWH 7.3.16 之後、請依下列順序還原資料保險箱和資料庫：</block>
+  <block id="5b70a213f150f01f0776fa9481ef2ddf" category="list-text">資料保險箱</block>
+  <block id="e307db07b3975fef922a80d07455ee5e" category="list-text">資料庫</block>
+  <block id="1b02c1c739a838b5fb5ef9ec6b7e3943" category="list-text">備份資料保險箱。請參閱<block ref="1f5fba458b18bfe72dcdda5cec5a5573" category="inline-link-macro-rx"></block>文件。</block>
+  <block id="e2306824bd82e866a3f829300760acd2" category="list-text">將資料保險箱還原至 DWH 伺服器。</block>
+  <block id="19352fc74f396de7952dae39763fff2f" category="paragraph">您必須在升級之前備份資料保險箱。</block>
+  <block id="3b567ef0594052e743b39181ba1d8102" category="list-text">備份資料保險箱。</block>
+  <block id="0d0981a681077107b168ee4f75accde5" category="inline-link">OnCommand Insight 7.3.16 注意事項</block>
+  <block id="76e6c2273b68a166b06d0dae5dad5924" category="paragraph"><block ref="76e6c2273b68a166b06d0dae5dad5924" category="inline-link-rx"></block></block>
+  <block id="f7b7a1b1a856c7ac177e1c92c26b3afb" category="paragraph"><block ref="ae0b59332fa590490bf630696a44568c" category="inline-link-macro-rx"></block>（在新視窗中開啟）</block>
+  <block id="90264ebb70e49e99bceb1035bdcc8307" category="sidebar">OnCommand Insight 文件</block>
+  <block id="5ea8c0bc0f3ff2ad5a8ecd87179c69f1" category="sidebar">資料收集器支援對照表</block>
+  <block id="b0430548e2edafebde6bfdf10cf93cc6" category="sidebar">Insight Security （安全性管理工具）</block>
 </blocks>

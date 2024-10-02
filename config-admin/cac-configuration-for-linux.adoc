@@ -13,12 +13,14 @@ summary: 在Linux OnCommand Insight 支援伺服器上啟用CAC需要進行一�
 [role="lead"]
 在Linux OnCommand Insight 支援伺服器上啟用CAC需要進行一些修改。
 
+根 CA 必須匯入信任存放區。
+
 
 
 == 步驟
 
 . 瀏覽至 `/opt/netapp/oci/conf/`
 . 編輯 `wildfly.properties` 並變更的值 `CLIENT_AUTH_ENABLED` 至「真」
-. 匯入下的「root憑證」 `/opt/netapp/oci/wildfly/standalone/configuration/server.keystore`
+. 匯入下的「根憑證」 `/opt/netapp/oci/wildfly/standalone/configuration/server.truststore`
 . 重新啟動伺服器
 

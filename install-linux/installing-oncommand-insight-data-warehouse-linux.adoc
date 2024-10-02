@@ -45,6 +45,14 @@ summary: 安裝是獨立的、包含執行OnCommand Insight 和操作《不必�
 +
 `sudo ./oci-dwh-<version>-linux-x86_64/oci-install.sh`
 
++
+在 CentOS 9 Stream 、 Red Hat Enterprise Linux 9.4 或 Oracle Linux 9.4 上安裝 Insight Server 或 Data Warehouse 時、您必須先變更至包含安裝程式檔案的目錄、然後使用「 --install-mysql 相依性」命令列選項來執行安裝命令：
+
++
+....
+cd /tmp/oci-7.3.16.1.297-linux-x86_64
+sudo ./oci-install.sh --install-mysql-dependencies
+....
 . 請閱讀授權合約、接受並遵循提示進行。
 
 
@@ -53,3 +61,23 @@ summary: 安裝是獨立的、包含執行OnCommand Insight 和操作《不必�
 == 結果
 
 在您回答所有提示之後、安裝將會開始、大約需要10分鐘、視安裝的應用程式而定。
+
+
+
+== 同步伺服器與 DWH
+
+
+IMPORTANT: 安裝資料倉儲之後、您 * 必須 * 將資料倉儲與 OnCommand Insight 伺服器同步。請遵循下列步驟：
+
+. 在 OnCommand Insight 伺服器系統上、以互動模式啟動 *securityadmin* 工具
++
+ securityadmin -i
+. 將 _inventory_ 和 _dwh_internal 使用者的密碼變更為您選擇的密碼。* 請記下這些密碼 * 、因為您將在下方要求這些密碼。
+. 重新啟動 DWH 服務
+. 在 * 每個 Connector* 上、以互動模式啟動 * securityadmin* 工具。您將需要上述步驟 2 中記下的密碼。
++
+ securityadmin -i
+. 將 _inventory_ 和 _dwh_internal 使用者的密碼變更為步驟 2 所使用的密碼。
+. 重新啟動 Connectors 上的服務。
+. 使用步驟 2 中的 _inventory_ 和 _dwh_internal 使用者密碼、將連接器新增至 DWH
+
