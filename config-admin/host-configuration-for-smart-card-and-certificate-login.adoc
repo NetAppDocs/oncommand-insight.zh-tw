@@ -21,6 +21,9 @@ summary: 您必須修改OnCommand Insight 支援Smart Card（CAC）和憑證登�
 * LDAP `User principal account name` 屬性必須符合包含使用者ID的LDAP欄位。
 
 
+
+NOTE: 如果使用更改了 _server.keystore 和 / 或 _server.trustore 密碼link:../config-admin/security-management.html["安全性管理"]，請 SANscreen 在導入 LDAP 證書之前重新啓動 _LDAP_ 服務。
+
 [NOTE]
 ====
 如需最新的CAC和憑證指示、請參閱下列知識庫文章（需要支援登入）：

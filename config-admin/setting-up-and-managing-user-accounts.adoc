@@ -25,6 +25,9 @@ summary: 使用者帳戶、使用者驗證和使用者授權、可透過兩種�
 * 指派正確的使用者角色。
 
 
+
+NOTE: 如果您正在匯入 LDAP 憑證、並使用變更 _server.keystore 和 / 或 _server.trustore 密碼link:../config-admin/security-management.html["安全性管理"]、請 SANscreen 在匯入 LDAP 憑證之前重新啟動 _LDAP_ 服務。
+
 [NOTE]
 ====
 安全性最佳實務做法要求系統管理員設定主機作業系統、以防止非系統管理員/標準使用者互動登入。

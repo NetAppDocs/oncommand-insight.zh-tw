@@ -22,6 +22,9 @@ summary: 管理員可從Data倉儲入口網站設定資料倉儲與報告的LDAP
 對於所有安全的Active Directory（即LDAPS）使用者、您必須使用與憑證中定義完全相同的AD伺服器名稱。您無法使用IP位址進行安全的AD登入。
 
 
+NOTE: 如果您使用變更 _server.keystore 和 / 或 _server.trustore 密碼link:../config-admin/security-management.html["安全性管理"]、請在匯入 LDAP 憑證之前重新啟動 SANscreen 服務。
+
+
 
 == 步驟
 
