@@ -7914,8 +7914,6 @@
   <block id="7c66134758a1231967900b1324c83c0e" category="cell">3PAR CLI</block>
   <block id="b6d767d2f8ed5d21a44b0e5886680cb9" category="cell">22</block>
   <block id="68934a3e9455fa72420237eb05902327" category="cell">錯</block>
-  <block id="e58c27818bf68b1f92513ad4f99972c4" category="inline-xref">返回頁首</block>
-  <block id="9bf2c4cb7192740e06519a5e67f22e59" category="paragraph"><block ref="5166de7f06aaa174e185aec47426a1b7" category="inline-xref-macro-rx"></block></block>
   <block id="7d964a677df15c513f1f0dee98d77997" category="section-title">Amazon AWS EC2</block>
   <block id="d1d0848fd9db162d999c32260709d8f8" category="paragraph">API 版本：</block>
   <block id="fca305053b0aa4da40eb77c13c037773" category="list-text">2014-10-01</block>
@@ -8429,8 +8427,6 @@
   <block id="15104c0fffc9c5f6b0b8b88d0f6fc288" category="cell">6.1.21 6.3.16.3.106.3.96.5.16.5.26.5.4.</block>
   <block id="f7ade9e282e08c1d6d53cd5f4fc13a47" category="cell">Pure Storage REST API</block>
   <block id="0ad0d30d976e28ead46bff59a349da08" category="section-title">VMware vSphere（Web服務）</block>
-  <block id="1d048c5d8ff43dd47a2fa58a37940547" category="cell">VMware vCenter Server 5.5.0 build 1750787 VMware vCenter Server 5.5.0 build 3252642 VMware vCenter Server 5.5.0 build 4180647 VMware vCenter Server 5.5.0 build 9911218 VMware vCenter Server 6.0.0 build 13638472 VMware vCenter Server 6.0.0 build 14510545 VMware vCenter Server 6.0.0 build 4541947 VMware vCenter Server 6.0.0</block>
-  <block id="32a17b9c6b3373bcd5a29ae9bcc5c1b9" category="cell">VMware vCenter Server 7.0.3 build 19234570 VMware vCenter Server 7.0.3 build 19717403 VMware vCenter Server 7.0.3 build 7.0.3 VMware vCenter Server 7.0.3 VMware vCenter Server 7.230.2-227.0 VMware vCenter Server 8.230.3-227.0 VMware vCenter Server build 2230.2-227.0 VMware vCenter Server 8.230.3-227.0 VMware vCenter Server build 27230.3-2230.3-2230.3VMware vCenter Server build 27230.3-27230.3-27230.3VMware vCenter Server 內部版本 VMware vCenter Server 內部版本</block>
   <block id="2c10282d2a9ce8be1576d7af8091d09e" category="cell">Web服務</block>
   <block id="51359e8b51c63b87d50cb1bab73380e2" category="cell">原則</block>
   <block id="584f8eaacb1a0c605080be390dd2c14a" category="cell">Volume UUID</block>
@@ -8701,4 +8697,54 @@
   <block id="280dd41aa1500bfa7ef3a8678e713080" category="admonition">如果您使用變更 _server.keystore 和 / 或 _server.trustore 密碼<block ref="5055fc7731112a1043a6604413e43539" category="inline-link-macro-rx"></block>、請在匯入 LDAP 憑證之前重新啟動 SANscreen 服務。</block>
   <block id="ec4ef90f124e4475455cd66560c26fde" category="admonition">如果使用更改了 _server.keystore 和 / 或 _server.trustore 密碼<block ref="5055fc7731112a1043a6604413e43539" category="inline-link-macro-rx"></block>，請 SANscreen 在導入 LDAP 證書之前重新啓動 _LDAP_ 服務。</block>
   <block id="a10389a2280f5287a5b5a38c80d3521f" category="admonition">如果您正在匯入 LDAP 憑證、並使用變更 _server.keystore 和 / 或 _server.trustore 密碼<block ref="5055fc7731112a1043a6604413e43539" category="inline-link-macro-rx"></block>、請 SANscreen 在匯入 LDAP 憑證之前重新啟動 _LDAP_ 服務。</block>
+  <block id="1302adc28e5abb22ced3b70e1b5e672a" category="list-text">VMware vCenter Server 5.5.0 內部版本 -1750787</block>
+  <block id="c486570fe0a987ac4e2262def8128fd6" category="list-text">VMware vCenter Server 5.5.0 組建 - 3252642</block>
+  <block id="fb67f5a19e2e99b8f829d411e0a9926e" category="list-text">VMware vCenter Server 5.5.0 組建編號： 4180647</block>
+  <block id="d80f29266c5582ddf8d319d2781753c7" category="list-text">VMware vCenter Server 5.5.0 建置 -9911218</block>
+  <block id="5d38709739d43fd979729dac27e37f76" category="list-text">VMware vCenter Server 6.0.0 組建 - 13638472</block>
+  <block id="054ab0940019d1deeaa30375b5c7c6ec" category="list-text">VMware vCenter Server 6.0.0 內部版本 -14510545</block>
+  <block id="a598ceba54d9f9a752fc475e6ceaf14a" category="list-text">VMware vCenter Server 6.0.0 內部版本 -4541947</block>
+  <block id="cb4e75c2d282fca78d5a3741ff19f497" category="list-text">VMware vCenter Server 6.0.0 內部版本 - 5318200</block>
+  <block id="03ecfb828e3ec48e0cb8eb49793e2b6c" category="list-text">VMware vCenter Server 6.0.0 內部版本 -9313458</block>
+  <block id="1282e3716b60599413610132093318a7" category="list-text">VMware vCenter Server 6.5.0 內部版本 -10964411</block>
+  <block id="e14b385fcfcd8f74dfadfb8c5570e2f9" category="list-text">VMware vCenter Server 6.5.0 內部版本 -17994927</block>
+  <block id="cc2f2731350046a14701ebd0e8eb994e" category="list-text">VMware vCenter Server 6.5.0 組建編號： 18499837</block>
+  <block id="f8a21d6909203de5525712b4332b88c8" category="list-text">VMware vCenter Server 6.5.0 建置 -18711281</block>
+  <block id="2c4a045039ada648ef7b0c7ca65e7d58" category="list-text">VMware vCenter Server 6.5.0 內部版本 -19757181</block>
+  <block id="6f2b468a118315047707aa5e882d3dc1" category="list-text">VMware vCenter Server 6.5.0 組建 - 22499743</block>
+  <block id="c60bc5f3e86e2b58266c7199fb2da7a1" category="list-text">VMware vCenter Server 6.5.0 內部版本 -7515524</block>
+  <block id="a41dcadfb6635f34271f459bf05940b2" category="list-text">VMware vCenter Server 6.5.0 組建版 - 9451637</block>
+  <block id="69db56c3c515f3ff7137d59d874cd63f" category="list-text">VMware vCenter Server 6.7.0 內部版本 -16046713</block>
+  <block id="ed57678693c91a8fdc1e99dbd28c1ed2" category="list-text">VMware vCenter Server 6.7.0 內部版本 -18485185</block>
+  <block id="1f4d95178a913185d195cf51c4b1fb4d" category="list-text">VMware vCenter Server 6.7.0 內部版本 -19299595</block>
+  <block id="9a9b6e91c28c2770ae65b840a2abb66e" category="list-text">VMware vCenter Server 6.7.0 內部版本 -19832280</block>
+  <block id="5580863871992d3da017ceedf4f43c28" category="list-text">VMware vCenter Server 6.7.0 組建版本 -20504362</block>
+  <block id="7bb8e6c2b62facfb14fd976742217ad7" category="list-text">VMware vCenter Server 6.7.0 內部版本 -22509732</block>
+  <block id="21d04a81bd484445558d5395b4042ad7" category="list-text">VMware vCenter Server 6.7.0 內部版本 -22509751</block>
+  <block id="82e495bfe1a53e5e566fedbb6a515602" category="list-text">VMware vCenter Server 7.0.1 內部版本 -17491160</block>
+  <block id="457742c8b098f86a96a9da1a76b60026" category="list-text">VMware vCenter Server 7.0.3 內部版本 -19234570</block>
+  <block id="f975e03c7a2e30d04409e925e39ed5e0" category="list-text">VMware vCenter Server 7.0.3 內部版本 -19717403</block>
+  <block id="736e638792dd2ff897287510104168e9" category="list-text">VMware vCenter Server 7.0.3 build -20051473</block>
+  <block id="5049f0c3b0f25073df471705811f09a3" category="list-text">VMware vCenter Server 7.0.3 build -20150588</block>
+  <block id="1ccce22a4188acff0051ba4528a6c800" category="list-text">VMware vCenter Server 7.0.3 build -20395099</block>
+  <block id="ccf8289a707296e28136f90a039b13c1" category="list-text">VMware vCenter Server 7.0.3 組建 -20845200</block>
+  <block id="a94db55e880fec4d5e4cdef4c8b04b9b" category="list-text">VMware vCenter Server 7.0.3 build -20990077</block>
+  <block id="3f7bb2730801a009f7f6a41010d35ca7" category="list-text">VMware vCenter Server 7.0.3 build 21290409</block>
+  <block id="1ac0ec7b9546fb475bba6c014c194262" category="list-text">VMware vCenter Server 7.0.3 build -2147706</block>
+  <block id="5ca60e4e36031112b8ba7ec048bf3abf" category="list-text">VMware vCenter Server 7.0.3 build -21784236</block>
+  <block id="d55f3568c7e833ab89895bee61c09acb" category="list-text">VMware vCenter Server 7.0.3 build -22357613</block>
+  <block id="3ab83c43d750d530878aed2417380b3d" category="list-text">VMware vCenter Server 7.0.3 build -22837322</block>
+  <block id="70b838a29ab361938962bdb01fe6a40f" category="list-text">VMware vCenter Server 7.0.3 組建 - 23788036</block>
+  <block id="83ca694ba839c425fd7dd7b2a175fca7" category="list-text">VMware vCenter Server 7.0.3 組建 - 24026615</block>
+  <block id="ae99c7b67f8d89f77963b4ea4bd03b98" category="list-text">VMware vCenter Server 8.0.1 組建 - 22368047</block>
+  <block id="054d7ca115ea8b5fcabdb0ab8d6e99c8" category="list-text">VMware vCenter Server 8.0.1 build 22742005</block>
+  <block id="08501c4a4258f91738b89b4d61317724" category="list-text">VMware vCenter Server 8.0.1 組建 - 23525738</block>
+  <block id="f781be2b19f1cdb362de12df23fe1d08" category="list-text">VMware vCenter Server 8.0.1 內部版本 - 2405165</block>
+  <block id="99b6aac4c2dc02692b7b48c3f5bf748e" category="list-text">VMware vCenter Server 8.0.2 組建 - 22385739</block>
+  <block id="f4f140c8240b1118ea5972cdcb8c4bb7" category="list-text">VMware vCenter Server 8.0.2 組建編號 22617221</block>
+  <block id="edfc3cf4d3e62e776a873dd8d403d68f" category="list-text">VMware vCenter Server 8.0.2 內部版本 23319993</block>
+  <block id="227125526019d3c42f592ac68badb583" category="list-text">VMware vCenter Server 8.0.2 組建 - 23504390</block>
+  <block id="ad3f5dc223e3dedcdbadf8c3de542841" category="list-text">VMware vCenter Server 8.0.2 組建編號 23929136</block>
+  <block id="cf4af5823bd57e760c4b4d3820c2ee06" category="list-text">VMware vCenter Server 8.0.3 build 24022515</block>
+  <block id="20fc1d192a8b7f3d4679b450f328a779" category="list-text">VMware vCenter Server 8.0.3 build 24091160</block>
 </blocks>
